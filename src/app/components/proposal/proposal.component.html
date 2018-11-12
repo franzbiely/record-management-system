@@ -1,0 +1,76 @@
+<header>
+  <section class="header-container"> 
+      <div class="header-mask" >
+          <p class="text-small-light">PROPOSAL NAME: </p>
+        
+          <div class="title-container" >
+            <p class="text-big-light space">Chris & Kristy Retirement Proposal</p>
+            <div class="line"></div>
+          </div>
+  
+          <div class="proposed-value-box">
+            <p class="text-small-light">Proposed Value</p>
+            <p class="text-normal-bold">$0.00</p>
+          </div>
+  
+        <br>
+  
+          <div class="status-container">
+            
+            <div class="padding-right-50">
+              <button class="dropbtn"><img class="btn-add-icon">In Progress</button>
+            </div>
+  
+           <div class="padding-right-50">
+              <p class="text-normal">ID: </p>
+              <p class="text-small-light">3457</p> 
+           </div>
+  
+            <div class="padding-right-50">
+                <i class="icon"></i> <p class="text-normal space-left "> CANDELARIA HOUSEHOLD</p>
+              <p class="text-small-light">Active</p>
+            </div>
+          </div>
+      </div>
+</section>
+</header>
+       
+   
+<div class="container">
+  <div class="box">  
+    <mat-tab-group>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            1. Account
+          </ng-template>
+          <app-account></app-account>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            2. Risk Assessment
+          </ng-template>
+          <app-risk-assessment></app-risk-assessment>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            3. Portfolio
+          </ng-template>
+          <app-portfolio></app-portfolio>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            4. Simulation
+          </ng-template>
+          <!-- <app-simu></app-risk-assessment> -->
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            5. Create Documents
+          </ng-template>
+          <app-documentation></app-documentation>
+        </mat-tab>
+      </mat-tab-group>
+    
+  </div>
+</div>
+

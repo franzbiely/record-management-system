@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+
+table { 
+    border-radius: 10px;
+    font-family: montserrat;
+    width: 100%; 
+    border-collapse: collapse; 
+   
+    background-color: #ffffff;
+
+    th {        
+        text-transform: uppercase;
+        font-size:10px;
+        background: #fafbfc; 
+        color: #414042; 
+        font-weight: bold; 
+        padding: 2em; 
+        text-align: center; 
+      }
+      td {
+        font-size: 11px;
+        text-align: center;
+        padding: 0em 1.5em;
+        
+
+      }
+      tr {
+          border-bottom: 1px solid rgba(64, 64, 65, 0.2);
+      }
+
+      tr.last {
+        border-bottom: none;
+        border-top:none;
+        
+    }
+    .btn-account {  width: 233px;
+        height: 45px;
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+        border: solid 1px #ffffff;
+        background-color: #ffffff;}
+
+         .btn-account-text {   
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: 0.9px;
+            color: #77787b; }
+  }
+
+    //Text Style//
+
+    .text-small-light {  
+        font-family:Montserrat;
+        font-size: 10px;
+        font-weight: 200;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 2px;
+        color: #ffffff;}
+
+        .text-small-dark {  
+        
+            font-family:Montserrat;
+            font-size: 10px;
+            font-weight: 200;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: 2px;
+            color: #ffffff;}
+
+    .text-big-light {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 200;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: -1px;
+        color: #ffffff;
+    }
+
+    
+    .text-normal {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 1px;
+        color: #ffffff;
+    }
+    .text-normal-bold {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+    .align-center {
+        text-align: center;
+    }
+    .align-left {
+        text-align: left;
+    }
+
+    .space-left {
+        padding-left: 1.5em;
+    }
+
+
+
+input[type='checkbox'] {
+        width: 20px;
+        height: 20px;
+      
+    }

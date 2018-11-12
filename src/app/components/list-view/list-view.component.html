@@ -1,0 +1,75 @@
+<section class="container-display">
+  <header>
+    <div class="container  flex-2">
+      <h2>Proposals by Household</h2>
+    </div>
+    <div class="container">
+      <div class="padding-10">
+        <button class="btn"><i class="btn-add-icon"></i>Add</button>
+      </div>
+      <div class="padding-left-right">
+        <button class="btn"><i class="btn-search-gray"></i></button>
+        <input type="text" class="input-search" placeholder="Search this page"/>
+      </div>
+      <div class="padding-left-right">
+        <input type="text" class="input-filter" placeholder="FILTER"/>
+        <button class="btn btn-width"><i class="btn-filter-down"></i></button>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="content">
+        <header>
+          <div class="table-header">
+            <div class="flex-2">Name <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+            <div class="flex-1">ID <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+            <div class="flex-1">$ Value <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+            <div class="flex-1"># <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+            <div class="flex-1">State/Status <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+            <div class="flex-1">Created <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+            <div class="flex-1">Last Updated <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+            <div class="flex-1">Actions <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
+          </div>
+        </header>
+        <section>
+          <div class="container-item" *ngFor="let list of lists">
+            <div class="table-row">
+              <div class="flex-2 table-row-name">
+                <a (click)="toggleContent()"><i class="toggle-icon"></i>{{ list.name }}</a> 
+              </div>
+              <div class="flex-1"><p>{{ list.id }}</p></div>
+              <div class="flex-1"><p>{{ list.value }}</p></div>
+              <div class="flex-1"><p>{{ list.num }}</p></div>
+              <div class="flex-1"><p class="active-gray">{{ list.status }}</p></div>
+              <div class="flex-1">
+                <p>{{ list.created[0] }}</p>
+                <span class="text-bold">by: {{ list.created[1] }}</span>
+              </div>
+              <div class="flex-1">
+                <p>{{ list.updated[0] }}</p>
+                <span class="text-bold">by: {{ list.updated[1] }}</span>
+              </div>
+              <div class="flex-1"><button class="btn"><i class="btn-three-dots-gray"></i></button></div>
+            </div>
+            <div class="table-row-toggle" *ngIf="!toggleActive">
+              <div class="flex-2">Candelaria Proposal</div>
+              <div class="flex-1">34567</div>
+              <div class="flex-1">$ 800,000.00</div>
+              <div class="flex-1"></div>
+              <div class="flex-1">Implemented</div>
+              <div class="flex-1">
+                  <p>7/51/2018 | 5:30 PM</p>
+                  <span>by: Jennica Fermin</span>
+              </div>
+              <div class="flex-1"><p>7/51/2018 | 5:30 PM</p>
+                <p>by: Jennica Fermin</p></div>
+              <div class="flex-1">dot</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+</section>

@@ -1,0 +1,242 @@
+$primaryFont: Montserrat;
+$secondaryFont: MuseoSans;
+$primaryColor: #ffffff;
+$itemDivider: 1px solid #dedede;
+$itemFontSize: 9pt;
+$btnFontSize: 10pt;
+
+%container-attr{
+    width: 400px;
+    height: 300px;
+    background-color: #1598cb;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
+    color: $primaryColor;
+    margin: 10px 10px;
+
+    @media screen and(max-width: 767px){
+        margin: 10px auto;
+    }
+}
+
+%header-title{
+    display: inline-block;
+    height: 20px;
+    font-family: $primaryFont;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    padding: 10px;
+}
+
+%container-info{
+    height: 100%;
+    width: 100%;
+    background-color: $primaryColor;
+}
+
+%grey-text{
+    font-family: $primaryFont;
+    font-weight: 0;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #77787b;
+    text-transform: uppercase;
+}
+
+@mixin info-item($top: null, $right: null, $bottom: null, $left: null){
+    width: auto;
+    height: auto;
+
+    @if top != null and $right == null or $bottom == null or $left == null {
+        padding-top: $top;
+        padding-right: $top;
+        padding-bottom: $top;
+        padding-left: $top;
+    }@else{
+        padding-top: $top;
+        padding-right: $right;
+        padding-bottom: $bottom;
+        padding-left: $left;
+    }
+
+    display: flex;
+    color: #000000;
+    font-family: $primaryFont;
+}
+
+@mixin textStyle($color, 
+       $font, $style, 
+       $stretch, $size, 
+       $weight, $align, 
+       $line, $spacing){
+    color: $color;
+    font-family: $font;
+    font-style: $style;
+    font-stretch: $stretch;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    line-height: $line;
+    letter-spacing: $spacing;  
+}
+
+.btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    float: right;
+    margin: 5px;
+    color: $primaryColor;
+    text-transform: uppercase;
+    font-size: $btnFontSize;
+    font-family: $primaryFont;
+
+    .icon-add{
+        position: relative;
+        top: 5px;
+        right: 4px;
+        // content: url('../../../../assets/component/section/btn-add/add-white.png');
+    }
+}
+.text-right{
+    text-align: right;
+}
+
+.icon{
+    // content: url('../../../../assets/component/section/');
+}
+
+
+.home-container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+        
+        .container-divider{
+            display: flex;
+            flex-direction: column;
+
+            .container{
+                display: flex;
+                @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
+            }
+
+            .container:last-child(){
+                border-top: $itemDivider;
+                margin-top: 40px;
+                flex-direction: column;
+                
+                .test{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                        @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
+                            .title-proposal{
+                                padding: 20px;
+                                padding-top: 60px;
+                                @include textStyle(#414042, $primaryFont, normal, normal, 18px, 600, center, 0.94, 1.4px);
+                                    .hide-show{
+                                        @include textStyle(#c5c5c5, $primaryFont, normal, normal, 10px, 600, none, 1, 0.9px);
+                                    }
+                            }
+                }
+            }
+        }
+
+        .households{
+            @extend %container-attr;
+                h2{@extend %header-title;}
+                    .container-info{
+                        @extend %container-info;        
+                            .info-item{
+                                @include info-item(12px, 20px, 12px, 20px);    
+                                .item-one, .item-two{
+                                    flex: 1;
+                                    flex-direction: column;
+                                        .item-two-amount, .item-two-date{
+                                            text-align: right;
+                                            font-size: $itemFontSize;
+                                        }
+                                }
+                            }
+                            .info-item:nth-child(odd){
+                                border-bottom: $itemDivider;
+                                border-top: $itemDivider;
+                            }
+                    }
+        }
+
+        .proposals{
+            @extend %container-attr;
+                h2{@extend %header-title;}
+                .container-info{
+                    @extend %container-info;
+                        .info-item{
+                            @include info-item(11px);
+                            font-size: 8pt;
+                                .item-top{
+                                    flex: auto;
+                                    .grey-text{
+                                    @extend %grey-text; 
+                                    }
+                                }
+                                .item-bottom{
+                                    padding: 0;
+                                    text-align: right;
+                                        .grey-text{@extend %grey-text;}
+                                }
+                        }
+                        .info-item:nth-child(odd){
+                            border-bottom: $itemDivider;
+                            border-top: $itemDivider;
+                        }
+                }
+        }   
+
+        .documents{
+            @extend %container-attr;
+                 h2{@extend %header-title;}
+        
+            .container-info{
+                @extend %container-info;
+                    .info-item{
+                        @include info-item(12px);
+                        font-size: 8pt;
+                        .container-flex{
+                            flex: auto;
+                            .item-column{
+                                flex-direction: column;
+                            }
+                            .sub-text{
+                                @include textStyle(#77787b, $primaryFont, 
+                                            normal ,normal, 
+                                            10px, 300, none, 
+                                            1, 0.4px);
+                            }
+        
+                            .status-text{
+                                @include textStyle(#414042, $secondaryFont, 
+                                            normal, normal, 
+                                            11px, 300, right, 
+                                            1, normal);
+                            }
+                        }
+                        .document-icon{
+                            max-width: 40px;
+                        }
+        
+                    }
+                    .info-item:nth-child(odd){
+                        border-bottom: $itemDivider;
+                        border-top: $itemDivider;
+                    }
+            }
+        }
+}

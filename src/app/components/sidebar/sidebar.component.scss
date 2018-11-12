@@ -1,0 +1,88 @@
+$fontLink : Montserrat;
+$navbarHeight : 100vh;
+$navbarBgColor : #ffffff;
+$icon : 20px;
+$linkActive : #1598cb;
+$linkInActive : #c5c5c5;
+
+.navbar{
+    position: fixed;
+    display: flex;
+    height: $navbarHeight;
+    background-color: $navbarBgColor;
+    padding: 150px 25px;
+
+    @media screen and (max-width: 767px){
+        width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
+        padding: 10px;
+        bottom: 0;  
+    }
+    
+    ul{
+        text-align: center;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        @media screen and (max-width: 767px){
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        li{ 
+            height: 50px; 
+            @media screen and (max-width: 767px){
+                height: auto;
+
+                    img{
+                        padding: 0;
+                    }
+            }
+        
+        }    
+    }
+
+    .link-active {
+        font-family: $fontLink;
+        font-size: 8px;
+        line-height: 1.25;
+        letter-spacing: 0.6px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        text-align: center;
+        color: $linkActive;
+        text-decoration: none;
+
+        .icon-active{
+            width: $icon;
+            height: $icon;
+            object-fit: contain;
+        }
+    }
+
+    .link-inactive {
+        font-family: $fontLink;
+        font-size: 8px;
+        line-height: 1.25;
+        letter-spacing: 0.6px;
+        height: 80px;
+        padding-top: 40px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        text-align: center;
+        color: $linkInActive;
+        text-decoration: none;
+
+        .icon-inactive{
+            width: $icon;
+            height: $icon;
+            object-fit: contain;
+        } 
+    }
+}
