@@ -56,6 +56,7 @@
                     
                     .assessment-front{
                         text-align: center;
+                        padding: 40px 0 40px 0;
                         margin: 20px 0 0 20px;
 
                         h2{
@@ -122,6 +123,31 @@
                                 line-height: 1;
                                 letter-spacing: -0.6px;
                                 color: #1598cb;
+                            }
+
+                            label{
+                                margin-top: 5px;
+                            }
+
+                            p{
+                                margin: 0;
+                            }
+                            span{
+                                text-transform: uppercase;
+                                font-family: Montserrat;
+                                font-size: 10px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1;
+                                letter-spacing: 0.6px;
+                                color: #77787b;
+                            }
+
+                            input[type=checkbox]{
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 15px;
                             }
 
                             .checkbox-label{
@@ -425,3 +451,69 @@
 
             }            
 
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+            /* Hide the browser's default radio button */
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            
+            /* Create a custom radio button */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border:.50px solid #eee;
+                border-radius: 50%;
+            }
+            
+            /* On mouse-over, add a grey background color */
+            .container:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+            
+            /* When the radio button is checked, add a blue background */
+            .container input:checked ~ .checkmark {
+                background-color: #2196F3;
+            }
+            
+            /* Create the indicator (the dot/circle - hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            
+            /* Show the indicator (dot/circle) when checked */
+            .container input:checked ~ .checkmark:after {
+                display: block;
+            }
+            
+            /* Style the indicator (dot/circle) */
+            .container .checkmark:after {
+                 top: 9px;
+                left: 9px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: white;
+            }
+
+.radio-container{
+    display: flex;
+}

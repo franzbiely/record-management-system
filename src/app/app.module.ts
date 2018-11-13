@@ -16,7 +16,9 @@ import { ProposalComponent } from './components/proposal/proposal.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule, MatIconModule } from '@angular/material';
+import { MatTabsModule, MatRadioModule, MatCheckboxModule } from '@angular/material';
+import { MatIconModule  } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { MatTabsModule, MatIconModule } from '@angular/material';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    MatRadioModule,
+    MatCheckboxModule,
     MatIconModule
   ],
  
