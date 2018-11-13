@@ -4,7 +4,7 @@
       <h2>Proposals by Household</h2>
     </div>
     <div class="container">
-      <div class="padding-10">
+      <!-- <div class="padding-10">
         <button class="btn"><i class="btn-add-icon"></i>Add</button>
       </div>
       <div class="padding-left-right">
@@ -14,24 +14,63 @@
       <div class="padding-left-right">
         <input type="text" class="input-filter" placeholder="FILTER"/>
         <button class="btn btn-width"><i class="btn-filter-down"></i></button>
-      </div>
+      </div> -->
     </div>
   </header>
   <section>
     <div class="container">
       <div class="content">
-        <header>
-          <div class="table-header">
-            <div class="flex-2">Name <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-            <div class="flex-1">ID <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-            <div class="flex-1">$ Value <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-            <div class="flex-1"># <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-            <div class="flex-1">State/Status <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-            <div class="flex-1">Created <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-            <div class="flex-1">Last Updated <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-            <div class="flex-1">Actions <button class="btn btn-width"><i class="btn-arrow-gray"></i></button></div>
-          </div>
-        </header>
+   
+          <table>
+    
+              <tr class="last heads">
+                <th width="25%" class="align-left">Name<mat-icon>keyboard_arrow_down</mat-icon></th>
+                <th width="5%" class="align-center">ID </th>
+                <th class="align-left">Value</th>
+                <th class="align-center">#</th>
+                <th class="align-left">STATE/STATUS</th>
+                <th class="align-right">CREATED</th>
+                <th class="align-right">LAST UPDATED</th>
+                <th class="align-center">ACTIONS</th> 
+              </tr>
+          
+       
+              <tr>
+                  <td class="align-left">Candelaria Household</td>
+                  <td class="align-center">3456</td>
+                  <td class="align-left">$917,000.00</td>
+                  <td class="align-center">2</td>
+                  <td class="align-left">Active</td>
+                  <td class="align-right"><p>7/31/2018 | 5:30 PM</p><p>By: Jennica Fernen</p></td>
+                  <td class="align-right">Candelaria Household</td>
+                  <td class="align-center">	<mat-icon>more_vert</mat-icon></td>
+              </tr>
+                
+              <tr class="try">
+                  <td style="padding-left: 5%; height:20px; border-right:none; background:linear-gradient(to right, transparent 15%, #f2fafc 0%);" class="align-left td-dropdown"><div style="">Candelaria Household</div></td>
+                  <td class="align-center">3456</td>
+                  <td class="align-left">$917,000.00</td>
+                  <td class="align-center">2</td>
+                  <td class="align-left">Active</td>
+                  <td class="align-right"><p>7/31/2018 | 5:30 PM</p><p>By: Jennica Fernen</p></td>
+                  <td class="align-right">Candelaria Household</td>
+                  <td class="align-center">	<mat-icon>more_vert</mat-icon></td>
+              </tr>
+
+              <tr class="try">
+                  <td style="padding-left: 5%; height:20px; border-right:none; background:linear-gradient(to right, transparent 15%, #f2fafc 0%);" class="align-left td-dropdown"><div style="">Candelaria Household</div></td>
+                  <td class="align-center">3456</td>
+                  <td class="align-left">$917,000.00</td>
+                  <td class="align-center">2</td>
+                  <td class="align-left">Active</td>
+                  <td class="align-right"><p>7/31/2018 | 5:30 PM</p><p>By: Jennica Fernen</p></td>
+                  <td class="align-right">Candelaria Household</td>
+                  <td class="align-center">	<mat-icon>more_vert</mat-icon></td>
+              </tr>
+        
+          
+            </table>
+    
         <section>
           <div class="container-item" *ngFor="let list of lists">
             <div class="table-row">
