@@ -90,11 +90,19 @@ $btnFontSize: 10pt;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    span{
+        font-size: 8pt;
+        margin: 0;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
 }
 .btn-right-space {
     padding-right: 10px;
 }
 .btn{
+    display: flex;
     background: transparent;
     border: none;
     outline: none;
@@ -279,4 +287,10 @@ $btnFontSize: 10pt;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.icon-title{
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
 }

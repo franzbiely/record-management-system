@@ -9,6 +9,11 @@ export class ListViewScreenComponent implements OnInit {
 
   constructor() { }
 
+  list = [
+    {  name: "Justin", lastname: "Cedeno", age: 21},
+    {  name: "Mariah", lastname: "Carrieh", age: 100}
+  ];
+
   ngOnInit() {
   }
 

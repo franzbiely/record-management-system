@@ -16,7 +16,7 @@ import { ProposalComponent } from './components/proposal/proposal.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule, MatRadioModule, MatCheckboxModule } from '@angular/material';
+import { MatTabsModule, MatRadioModule, MatCheckboxModule, MatTableModule } from '@angular/material';
 import { MatIconModule  } from '@angular/material/icon';
 
 
@@ -43,6 +43,7 @@ import { MatIconModule  } from '@angular/material/icon';
     MatTabsModule,
     MatRadioModule,
     MatCheckboxModule,
+    MatTableModule,
     MatIconModule
   ],
  
