@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+@import url('~@angular/material/prebuilt-themes/indigo-pink.css');
 
 .header-container{
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 80px;
     box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
-    z-index: 9999999;
+    z-index: 1;
     background-color: #ffffff;
     display: flex;
 
@@ -30,6 +31,7 @@
         border-bottom: solid 3px #74c2cf;
       
     }
+  
 
     .space {
         margin-top: 10px;
@@ -52,7 +54,7 @@
 
     .text-small-light {  
         
-        font-family:Montserrat;
+        font-family:'Montserrat', sans-serif;
         font-size: 10px;
         font-weight: 200;
         font-style: normal;
@@ -125,7 +127,7 @@
         margin-top: -1px;
         width: 15px;
         height: 15px;
-        // content: url('../../../assets/component/accounts-header/household-white.png');
+        content: url('../../../assets/component/header/household-white@3x.png');
     }
     .icon-progress{
         position: absolute;
@@ -134,7 +136,7 @@
         margin-top: 1px;
         padding-left: 5px;
       
-        // content: url('../../../assets/component/accounts-header/status-in-progress-white@3x.png');
+        content: url('../../../assets/component/header/status-in-progress-white@3x.png');
     }
 
     .icon-check{
@@ -145,7 +147,7 @@
         margin-left: -2px;
         padding-left: 5px;
       
-        // content: url('../../../assets/component/Portfolio/state-active-white@3x.png');
+        content: url('../../../assets/component/header/state-active-white@3x.png');
     }
 
     .logo-holder{flex:2;padding: 5px}
@@ -559,7 +561,7 @@
     input[type='checkbox'] {
             width: 20px;
             height: 20px;
-            float: right;
+        
         }
 
     input[type=text].text-doc, select {
@@ -580,44 +582,16 @@
         border-radius: 4px;
         box-sizing: border-box;
         }
-    div.sticky-btn {
+    button.sticky-btn {
         width: 620px;
         height: auto;
         border-radius: 6px;
         box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
         background-color: #ffffff;
-        padding: 15px;
-        margin: 10px 0 0 0 ;
-
-        font-family: Montserrat;
-        font-size: 15px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1;
-        letter-spacing: 0.2px;
-        color: #414042;
-    }
-
-    .orientation-selection{
-        border-radius: 6px;
-        border: solid 1px #1598cb;
-        background-color: #ffffff;
-        margin-left: 10px;
-
-        font-family: MuseoSans;
-        font-size: 14px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1;
-        letter-spacing: normal;
-        color: #808284;
-        padding: 5px;
     }
 
     .forms-container {
-        width: 90%;
+        width: 100%;
      }
 
      //spacing
@@ -633,3 +607,93 @@
      .stick-left {
         left: 0;
      }
+     .btn-group div {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
+        background-color: #ffffff;
+        border: none;
+        padding: 24px 20px 24px 60px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        color: #414042;
+        display: block; /* Make the buttons appear below each other */
+        text-align: left;
+        
+    }
+    .btn-group-orient div {
+        border-radius: 6px;
+        background-color: #ffffff;
+        font-family: MuseoSans;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #808284;
+        
+    }
+    .orient-container {
+        padding: 10px 15px;
+        border: solid 1px #c5c5c5;
+        
+    }
+
+    .active {
+        border-color: #1598cb;
+    }
+    .radio-holder {
+        padding:0px;
+    }
+    .radio-text{
+       
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+     
+    }
+ 
+    .btn-group-orient {
+        padding: 0px 30px;
+    }
+
+    input[type=radio] span {
+        top: -15px;
+  
+        
+    }
+    input[type=radio] {
+        height: 20px;
+        width: 20px;
+    }
+    .color-blue{
+        border-color:#1598cb;
+    }
+    .btn-icon-action{
+        vertical-align: middle;
+        padding-left: 30px;
+        content: url('../../../assets/component/documentation/move-page-light-gray.png');
+    }
+    .btn-group div{
+        margin-bottom: 10px;
+
+        width: 80%;
+    }
+
+    .btn-group {
+        margin-left: -60px;
+    }
+    button.btn-text {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.2px;
+        
+    }
+ 
+    
+
+ 

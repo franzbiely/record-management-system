@@ -17,6 +17,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule, MatIconModule } from '@angular/material';
+import { DocumentationScreenComponent } from './screens/documentation-screen/documentation-screen.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MatTabsModule, MatIconModule } from '@angular/material';
     RiskAssessmentComponent,
     ProposalComponent,
     PortfolioComponent,
-    DocumentationComponent
+    DocumentationComponent,
+    DocumentationScreenComponent
   ],
   imports: [
     BrowserModule,

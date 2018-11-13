@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
 import { ListViewScreenComponent } from './screens/list-view-screen/list-view-screen.component';
 import { AccountScreenComponent } from './screens/account-screen/account-screen.component';
-
+import { DocumentationScreenComponent } from './screens/documentation-screen/documentation-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -17,6 +17,11 @@ const routes: Routes = [
   {
     path: 'accounts',
     component: AccountScreenComponent
+  }
+  ,
+  {
+    path: 'documentation',
+    component: DocumentationScreenComponent
   }
 ];
 
