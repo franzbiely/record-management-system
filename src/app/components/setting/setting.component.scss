@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+@import url('~@angular/material/prebuilt-themes/indigo-pink.css');
+$mainfont : montserrat;
+
+
+
+
+.settings-container {
+    padding: 20px;
+   
+
+}
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-1 {
+    flex: 2;
+}
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.content-container {
+    border-radius: 6px;
+    box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+    background-color: #ffffff;
+    
+}
+.padding {
+    padding:15px;
+    width: 400px;
+}
+.container {
+    width:100%;
+    justify-content: space-around;
+}
+.box-head {
+    height: auto;
+    background-color: #1598cb;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 23px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.box-body {
+    height:auto;
+    padding: 20px 0px; 
+}
+.header-title {
+    font-family: $mainfont;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+.small-title {
+    font-family:$mainfont;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: #77787b;
+    text-transform: uppercase;
+    margin-left:15px;
+}
+.title-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.normat-text {
+    font-family: $mainfont;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0;
+    letter-spacing: normal;
+    color: #404041;
+}
+.text-box-container  {
+    padding: 0px 20px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    margin-top:20px;
+}
+.text-box-head {
+    padding: 15px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border: solid 1px #e7e6e6;
+    background-color: #ffffff;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #404041;
+}
+.text-box-body {
+    height: 170px;
+    padding: 15px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px #e7e6e6;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #414042;
+    overflow-y: scroll;
+}
+.edit-text {
+    text-transform: uppercase;
+    font-family: $mainfont;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    color: #ffffff;    
+}

@@ -18,7 +18,10 @@ import { DocumentationComponent } from './components/documentation/documentation
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule, MatIconModule } from '@angular/material';
 import { DocumentationScreenComponent } from './screens/documentation-screen/documentation-screen.component';
-
+import { SupportScreenComponent } from './screens/support-screen/support-screen.component';
+import { SupportComponent } from './components/support/support.component';
+import { SettingComponent } from './components/setting/setting.component';
+import { SettingsScreenComponent } from './screens/settings-screen/settings-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,11 @@ import { DocumentationScreenComponent } from './screens/documentation-screen/doc
     ProposalComponent,
     PortfolioComponent,
     DocumentationComponent,
-    DocumentationScreenComponent
+    DocumentationScreenComponent,
+    SupportScreenComponent,
+    SupportComponent,
+    SettingComponent,
+    SettingsScreenComponent
   ],
   imports: [
     BrowserModule,
