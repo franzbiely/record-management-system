@@ -86,13 +86,18 @@ $btnFontSize: 10pt;
     line-height: $line;
     letter-spacing: $spacing;  
 }
-
+.box-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-right-space {
+    padding-right: 10px;
+}
 .btn{
     background: transparent;
     border: none;
     outline: none;
-    float: right;
-    margin: 5px;
     color: $primaryColor;
     text-transform: uppercase;
     font-size: $btnFontSize;
@@ -109,6 +114,30 @@ $btnFontSize: 10pt;
     text-align: right;
 }
 
+.add-container {
+           
+    margin-top: -25%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    position: relative ; 
+    z-index: 50; 
+    color:blue; 
+
+    text-align: center; 
+  }
+  .add-box-container {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-big-add{
+    content: url('../../../../src/assets/component/home/add-blue@3x.png');
+}
+
 .icon{
     // content: url('../../../../assets/component/section/');
 }
@@ -119,34 +148,30 @@ $btnFontSize: 10pt;
     display: flex;
     justify-content: space-around;
         
-        .container-divider{
-            display: flex;
-            flex-direction: column;
-
             .container{
-                display: flex;
                 @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
+            }   
+
+            .row-container{
+                display: flex; 
+                justify-content: center; 
             }
 
+            .row-container-add {
+                display: flex; 
+                justify-content: flex-start; 
+            }
+
+
             .container:last-child(){
-                border-top: $itemDivider;
-                margin-top: 40px;
                 flex-direction: column;
-                
                 .test{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
                         @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
-                            .title-proposal{
-                                padding: 20px;
-                                padding-top: 60px;
-                                @include textStyle(#414042, $primaryFont, normal, normal, 18px, 600, center, 0.94, 1.4px);
-                                    .hide-show{
-                                        @include textStyle(#c5c5c5, $primaryFont, normal, normal, 10px, 600, none, 1, 0.9px);
-                                    }
-                            }
-                }
+                          
+                
             }
         }
 
@@ -239,4 +264,19 @@ $btnFontSize: 10pt;
                     }
             }
         }
+}
+.title-proposal{
+    padding: 20px;
+    @include textStyle(#414042, $primaryFont, normal, normal, 18px, 600, center, 0.94, 1.4px);
+        .hide-show{
+            @include textStyle(#c5c5c5, $primaryFont, normal, normal, 10px, 600, none, 1, 0.9px);
+        }
+}
+.divider {
+    width:100%;
+    border:solid 0.5px #e7e6e6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
