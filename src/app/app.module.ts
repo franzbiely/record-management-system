@@ -22,6 +22,10 @@ import { SupportScreenComponent } from './screens/support-screen/support-screen.
 import { SupportComponent } from './components/support/support.component';
 import { SettingComponent } from './components/setting/setting.component';
 import { SettingsScreenComponent } from './screens/settings-screen/settings-screen.component';
+import { PortfolioAdminComponent } from './components/portfolio-admin/portfolio-admin.component';
+import { PortfolioAdminScreenComponent } from './screens/portfolio-admin-screen/portfolio-admin-screen.component';
+import { HouseholdComponent } from './components/household/household.component';
+import { HouseholdScreenComponent } from './screens/household-screen/household-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +45,11 @@ import { SettingsScreenComponent } from './screens/settings-screen/settings-scre
     SupportScreenComponent,
     SupportComponent,
     SettingComponent,
-    SettingsScreenComponent
+    SettingsScreenComponent,
+    PortfolioAdminComponent,
+    PortfolioAdminScreenComponent,
+    HouseholdComponent,
+    HouseholdScreenComponent
   ],
   imports: [
     BrowserModule,

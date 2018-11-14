@@ -7,6 +7,8 @@ import { AccountScreenComponent } from './screens/account-screen/account-screen.
 import { DocumentationScreenComponent } from './screens/documentation-screen/documentation-screen.component';
 import { SettingsScreenComponent } from './screens/settings-screen/settings-screen.component';
 import { SupportScreenComponent } from './screens/support-screen/support-screen.component';
+import { PortfolioAdminScreenComponent } from './screens/portfolio-admin-screen/portfolio-admin-screen.component';
+import { HouseholdScreenComponent } from './screens/household-screen/household-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -34,6 +36,16 @@ const routes: Routes = [
   {
     path: 'support',
     component: SupportScreenComponent
+  }
+  ,
+  {
+    path: 'portfolio',
+    component: PortfolioAdminScreenComponent
+  }
+  ,
+  {
+    path: 'household',
+    component: HouseholdScreenComponent
   }
 ];
 
