@@ -9,6 +9,8 @@ import { SettingsScreenComponent } from './screens/settings-screen/settings-scre
 import { SupportScreenComponent } from './screens/support-screen/support-screen.component';
 import { PortfolioAdminScreenComponent } from './screens/portfolio-admin-screen/portfolio-admin-screen.component';
 import { HouseholdScreenComponent } from './screens/household-screen/household-screen.component';
+import { AdviserSearchScreenComponent } from './screens/adviser-search-screen/adviser-search-screen.component';
+import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -47,6 +49,18 @@ const routes: Routes = [
     path: 'household',
     component: HouseholdScreenComponent
   }
+  ,
+  {
+    path: 'adviser-search',
+    component: AdviserSearchScreenComponent
+  }
+  ,
+  {
+    path: 'information',
+    component: InformationScreenComponent
+  }
+
+
 ];
 
 @NgModule({

@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$mainfont : 'montserrat';
+
+    .align-right {
+        text-align: right;
+    }
+    .align-center {
+        text-align: center;
+    }
+    .align-left {
+        text-align: left;
+    }
+
+    .space-left {
+        padding-left: 10px;
+    }
+    .household-container {
+        width: 100%;
+       
+    }
+    .content-container {
+        padding:30px 40px;  
+        display: flex;  
+        justify-content: center;
+       
+    }
+    .box-container{
+       
+        border-radius: 6px;
+        box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+        background-color: #ffffff;
+        }
+    .first-box-size {
+        width:380px;
+    }
+        input[type=text].text-try {
+            border-radius: 6px;
+            border: none;
+            box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+            height: 45px;
+            width:240px;
+            padding-left:30px;
+        } 
+        ::placeholder {
+            font-family: $mainfont;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #c5c5c5;
+           
+        }
+  
+    .box-head {
+        height:65px;
+        background-color: #1598cb;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 0px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .table-container{
+        height: auto;
+    }
+    .box-body {
+        height:auto;
+    }
+    .normal-text {
+        font-family: $mainfont;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0;
+        letter-spacing: normal;
+        color: #404041;
+    }
+    .text-box-container  {
+        padding: 0px 20px;
+        border-radius: 6px;
+        background-color: #ffffff;
+        margin-top:20px;
+    }
+    .text-box-head {
+        padding: 15px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border: solid 1px #e7e6e6;
+        background-color: #ffffff;
+        border-bottom: none;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #404041;
+    }
+    .text-box-body {
+        height: 170px;
+        padding: 15px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border: solid 1px #e7e6e6;
+        background-color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #414042;
+        overflow-y: scroll;
+    }
+    .edit-text {
+        text-transform: uppercase;
+        font-family: $mainfont;
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        color: #ffffff;    
+    }
+    .small-title {
+        font-family:$mainfont;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0;
+        letter-spacing: 2px;
+        color: #77787b;
+        text-transform: uppercase;
+        margin-left:15px;
+    }
+    .title-box{
+        align-items: center;
+        
+    }
+    .header-title {
+        font-family: $mainfont;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+    }
+    .title {
+        font-family:$mainfont;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+    }
+    .subtitle {
+        font-family: $mainfont;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: -0.2px;
+        color: #ffffff;
+    }
+    .member-name {
+        font-family: $mainfont;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #414042;
+        padding-left: 20px;
+        
+    }
+    .member-info {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        border-bottom: solid 0.5px #e7e6e6;
+        padding: 15px 0px 15px 0px;
+    }
+    .member-info:last-child {
+        border-bottom: none;
+    }
+    .phone-email {
+        height: auto;
+        font-family: $mainfont;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #414042;
+        padding-right: 20px;
+        
+    }
+    .margin-left{
+        margin-left: 30px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+       }
+       tr.header {
+        background-color: #fafbfc;
+       }
+       
+       
+       th {
+           font-family: $mainfont;
+           font-size: 10px;
+           font-weight: 700;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: 1;
+           letter-spacing: 0.8px;
+           color: #414042;
+           text-transform: uppercase;
+           padding: 19px 20px;
+           white-space: nowrap;
+           text-align: left;
+          
+           
+         }
+       td {
+           padding: 16px 20px;
+           font-family: montserrat;
+           font-size: 11px;
+           font-weight: 500;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: 1;
+           letter-spacing: normal;
+           color: #414042;
+           white-space: nowrap;
+           text-align: left;
+        
+       }
+       tr.checked {
+        background-color: #f2fafc;
+       }
+       tr.dropdown-item td{
+        color:#414042;
+    }
+    .profile-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .profile-pic-container {
+        padding-right: 30px;
+    }
+    .profile-pic{
+        width: 100px;
+        height: 100px;
+        border: .5px black dashed;
+        border-radius:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name-subtitle {
+        font-family: $mainfont;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.07;
+        letter-spacing: normal;
+        color: #404041;
+    }
+    
+    .name {
+      font-family: $mainfont;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.2px;
+      color: #414042;
+    }
+    .content-box{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .title-text {
+        font-family: $mainfont;
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        color: #77787b;
+        text-transform: uppercase;
+    }
+    .title-info {
+        font-family: $mainfont;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #414042;
+    }
+    .text-create{
+        font-family: $mainfont;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        color: #ffffff;
+        text-transform:uppercase;
+        padding-right: 10px;
+    }
+    .full-width {
+        width: 100%;
+    }
+    .logo {
+        margin-top: 10px;
+        margin-left:-15px;
+        width: 250px;
+        content: url('../../../assets/component/information/loring-ward-color@3x.png');
+    }
+    .padding {
+        padding:30px 20px 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .color-selector-container{
+        margin-top:20px;
+        display: flex;
+       
+    }
+    .color-selector {
+        border-radius: 6px;
+        box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
+        background-color: #ffffff;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        height:60px;
+        width: auto;
+       
+    }
+    .color {
+        height: 100%;
+        width: 60px;
+        background-color: #1598cb;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+
+    }
+    .color-name-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:160px;
+    }
+    .color-name{
+      height: 100%;
+      width: auto;
+     
+    }
+    .brand-name{
+  
+        font-family: $mainfont;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #414042;
+     
+      }
+    .brand-color{
+        font-family: $mainfont;
+        font-size: 10px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        color: #77787b;
+    }
+    .textarea {
+        padding: 15px;
+        width:500px;
+        height: 265px;
+        border-radius: 6px;
+        border: solid 1px #e7e6e6;
+        background-color: #ffffff;
+        overflow-y: scroll;
+        margin-top: 8px;
+    }
+    .textarea span{
+        font-family: $mainfont;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #414042;
+    }
+    .textarea-title {
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        color: #77787b;
+        margin-left:10px;
+        text-transform: uppercase;
+    }
+    .second-col {
+        margin-left: 80px;
+    }
+
