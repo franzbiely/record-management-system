@@ -14,13 +14,15 @@ const DATA_LIST: Lists[] = [
 @Component({
   selector: 'app-list-view-screen',
   templateUrl: './list-view-screen.component.html',
-  styleUrls: ['./list-view-screen.component.scss']
+  styleUrls: ['./list-view-screen.component.scss'],
+  
+
 })
 
 
 export class ListViewScreenComponent  {
-
-  lists: DATA_LIST;
-
+  lists = DATA_LIST;
+  expandedElement:  Lists;
+  
 }
 
