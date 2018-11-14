@@ -214,3 +214,12 @@ i{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.mat-checkbox-frame{
+    border: 1px solid grey;
+    border-width: 10px;
+}
+
+.md-checkbox.md-checked .md-icon {
+    background-color:yellow!important;   
+ }
