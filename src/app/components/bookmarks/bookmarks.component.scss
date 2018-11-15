@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+@import url('~@angular/material/prebuilt-themes/indigo-pink.css');
+$mainfont : montserrat;
+
+
+
+
+.support-container {
+    padding: 110px 0px;
+   
+
+}
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-1 {
+    flex: 2;
+}
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.right-arrow {
+    height: 15px;
+    width: 15px;
+    content: url('../../../assets/component/bookmark/right-arrow.png');
+  
+}
+.white {
+    color: white;
+
+ 
+
+}
+.content-container {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: none;
+    box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+    background-color: #ffffff;
+    width: 310px;
+}
+.gray {
+    color: lightgray;
+}
+.container {
+    width:100%;
+    justify-content: flex-start;
+}
+.box-head {
+    height: auto;
+    background-color: #1598cb;
+    border-top-right-radius: 6px;
+    padding: 23px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.box-body {
+    height:auto;
+}
+.header-title {
+    font-family: $mainfont;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+.small-title {
+    font-family:$mainfont;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: #77787b;
+    text-transform: uppercase;
+    margin-left:15px;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.option-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.option {
+    padding: 10px;
+    border-bottom: solid 0.5px #e7e6e6;
+}
+.option:last-child {
+    border-bottom: none;
+}
+.option-name {
+    margin-left: 10px;
+}
+.option-text{
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #414042;
+    font-family: $mainfont;
+}
+.normat-text {
+    font-family: $mainfont;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0;
+    letter-spacing: normal;
+    color: #404041;
+}
+.text-box-container  {
+    padding: 0px 20px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    margin-top:20px;
+}
+.text-box-head {
+    padding: 15px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: #ffffff;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #404041;
+}
+.text-box-body {
+    height: 170px;
+    padding: 15px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px #e7e6e6;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #414042;
+    overflow-y: scroll;
+}
+.profile-box {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.profile-pic-container {
+    padding-right: 30px;
+}
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    border: .5px black dashed;
+    border-radius:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+  font-family: $mainfont;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  color: #414042;
+}
+.title {
+    font-family: $mainfont;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #77787b;
+    text-transform: uppercase;
+}
+.title-info {
+    font-family: $mainfont;
+    font-size: 14px;
+    font-weight:600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #414042;
+}

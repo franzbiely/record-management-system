@@ -32,6 +32,8 @@ import { InformationComponent } from './components/information/information.compo
 import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
 import { AssumptionComponent } from './components/assumption/assumption.component';
 import { AssumptionScreenComponent } from './screens/assumption-screen/assumption-screen.component';
+import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
+import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-screen.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { AssumptionScreenComponent } from './screens/assumption-screen/assumptio
     InformationComponent,
     InformationScreenComponent,
     AssumptionComponent,
-    AssumptionScreenComponent
+    AssumptionScreenComponent,
+    BookmarksComponent,
+    BookmarksScreenComponent
   ],
   imports: [
     BrowserModule,
