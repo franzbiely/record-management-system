@@ -27,6 +27,10 @@ import { PortfolioAdminComponent } from './components/portfolio-admin/portfolio-
 import { PortfolioAdminScreenComponent } from './screens/portfolio-admin-screen/portfolio-admin-screen.component';
 import { HouseholdComponent } from './components/household/household.component';
 import { HouseholdScreenComponent } from './screens/household-screen/household-screen.component';
+import { AdviserSearchComponent } from './components/adviser-search/adviser-search.component';
+import { AdviserSearchScreenComponent } from './screens/adviser-search-screen/adviser-search-screen.component';
+import { InformationComponent } from './components/information/information.component';
+import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,11 @@ import { HouseholdScreenComponent } from './screens/household-screen/household-s
     PortfolioAdminComponent,
     PortfolioAdminScreenComponent,
     HouseholdComponent,
-    HouseholdScreenComponent
+    HouseholdScreenComponent,
+    AdviserSearchComponent,
+    AdviserSearchScreenComponent,
+    InformationComponent,
+    InformationScreenComponent
   ],
   imports: [
     BrowserModule,
