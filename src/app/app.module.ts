@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -31,6 +30,10 @@ import { AdviserSearchComponent } from './components/adviser-search/adviser-sear
 import { AdviserSearchScreenComponent } from './screens/adviser-search-screen/adviser-search-screen.component';
 import { InformationComponent } from './components/information/information.component';
 import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
+import { AssumptionComponent } from './components/assumption/assumption.component';
+import { AssumptionScreenComponent } from './screens/assumption-screen/assumption-screen.component';
+import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
+import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-screen.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,11 @@ import { InformationScreenComponent } from './screens/information-screen/informa
     AdviserSearchComponent,
     AdviserSearchScreenComponent,
     InformationComponent,
-    InformationScreenComponent
+    InformationScreenComponent,
+    AssumptionComponent,
+    AssumptionScreenComponent,
+    BookmarksComponent,
+    BookmarksScreenComponent
   ],
   imports: [
     BrowserModule,

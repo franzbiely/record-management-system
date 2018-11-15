@@ -11,6 +11,8 @@ import { PortfolioAdminScreenComponent } from './screens/portfolio-admin-screen/
 import { HouseholdScreenComponent } from './screens/household-screen/household-screen.component';
 import { AdviserSearchScreenComponent } from './screens/adviser-search-screen/adviser-search-screen.component';
 import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
+import { AssumptionScreenComponent } from './screens/assumption-screen/assumption-screen.component';
+import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -59,6 +61,17 @@ const routes: Routes = [
     path: 'information',
     component: InformationScreenComponent
   }
+  ,
+  {
+    path: 'assumption',
+    component: AssumptionScreenComponent
+  }
+  ,
+  {
+    path: 'bookmarks',
+    component: BookmarksScreenComponent
+  }
+
 
 
 ];

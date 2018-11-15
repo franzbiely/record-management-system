@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$mainfont : 'montserrat';
+
+.assumption-container {
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right-side-container{
+    padding:33px 110px;
+}
+.page-container {
+    padding: 60px 40px 50px 40px; 
+    width: 612px;
+    height: 900px;
+    display:flex;
+    border-radius: 6px;
+    box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+    background-color: #ffffff;
+    flex-direction: column;
+}
+.name-container {
+    text-align: right;
+}
+.title-container {
+    display: flex;
+    justify-content: flex-end;
+   width: 100%;
+}
+
+.space-top {
+    padding-top:20px;
+}
+.space-bottom {
+    padding-bottom:20px;
+}
+.title-section {
+    background-color: rgb(238, 238, 238);
+    color: rgb(44, 44, 44);
+    font-family: $mainfont;
+    padding: 20px 10px;
+    font-size:12px;
+    font-weight: 700 ;
+    flex:3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+  
+   
+}
+.description-section {
+    text-align: left;
+    padding: 20px 20px 20px 10px;;
+    font-family: $mainfont;
+    font-size:8px;
+    flex: 7;
+    display: flex;
+    line-height: 1.5;
+    justify-content: flex-start;
+    text-align: left;
+
+}
+.title {
+    padding-right: 60px;
+    font-family: $mainfont;
+    text-align: left;
+}
+.title-item:not(:first-child) {
+    margin-top: 25px;
+}
+.title-name {
+    font-weight:600;
+    font-size: 14px;
+    color: #1598cb;
+    line-height: 1;
+    
+}
+.subitle-name {
+    font-weight:600;
+    font-size: 12px;
+    color: #1598cb;
+    line-height: 1;
+    
+}
+.subtitle {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1;
+    color: black;
+}
+.page-space {
+    margin-top: 40px;
+}
+.heading{
+    margin-top: 60px;
+    font-family: montserrat;
+}
+.divider {
+    height: 1px;
+    background-color: #f2f2f2 ;
+}
+
+.heading-title-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.heading-title{
+    
+    text-align: right;
+}
+.heading-name {
+    text-align: right;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: #1598cb;
+}
+.heading-subtitle {
+    display: block;
+    line-height: 1.5;
+    text-align: right;
+    font-weight: 700;
+    font-size: 10px;
+    color: #1598cb;
+}
+.table-info {
+    font-style: italic;
+    font-size: 7px;
+    padding: 5px 0px;
+    margin-top: 30px;
+}
+.page {
+    width:100%;
+    height: 100%;
+
+}
+.flex-1 {
+    flex: 1;
+}
+.table-container {
+    width: 100%;
+
+}
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th {
+    background-color: #1598cb;
+    color: white;
+    font-family: $mainfont;
+    font-size:10px;
+    padding: 5px;
+    font-weight: 500px;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #e2e2e2;
+}
+tr:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+td {
+    white-space: nowrap;
+    font-family: $mainfont;
+    padding: 5px;
+    font-size:10px;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 7px;
+    padding: 5px 0px;
+    font-family: monsterrat;
+}
+.footer-container { 
+    bottom: 0px;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+}
+.flex-box {
+    display: flex;
+}
+
+span.page-text {
+    font-family: monsterrat;
+    font-weight: 500;
+    font-size: 7px;
+    margin-top: 10px;
+  
+}
+.test {
+    height:100%;
+    margin-top: 30px;
+  
+    display: block;
+  
+}
+.column-container {
+    display: flex;
+    height: 700px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }   
+  .column-box {
+    display: flex;
+ 
+   width: 100%;
+  }
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 200px;
+}
+
+button.update {
+    border-radius: 6px;
+    border: solid 1px #1598cb;
+    background-color: #ffffff;
+    padding: 16px 26.5px;
+    font-family: $mainfont;
+    color: #1598cb;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    
+}
+button.save {
+    border-radius: 6px;
+    border: solid 1px #808284;
+    background-color: #ffffff;
+    padding: 16px 26.5px;
+    font-family: $mainfont;
+    letter-spacing: 0.9px;
+    color: #808284;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.btn-update {
+    padding-right: 30px;
+}
+.desciption-bottom {
+    width:100%;
+    font-family: $mainfont;
+    font-style: italic;
+    display: flex;
+    justify-content:flex-start;
+    font-size: 7px;
+    padding: 5px 0px;
+    font-family: monsterrat;
+    margin-left: -10px;
+}
