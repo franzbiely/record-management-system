@@ -1,6 +1,7 @@
 <div class="container">
   <div class="list-view-container">
     <div class="list-view-header">
+
       <div class="list-view-header-left">
         <h2>Proposals by Household</h2>
       </div>
@@ -9,46 +10,43 @@
           <a><i class="material-icons">add_circle</i><span class="text-icon">Add</span></a>
         </div>
         <div class="search">
-          <button><i class="material-icons">search</i></button><input type="text" placeholder="Search ">
+            <div class="input-text"><input type="text" placeholder="Search This Page"></div>
         </div>
-        <div class="filter">
-          <button><i class="material-icons">settings_input_component</i>Filter</button>
+        <div class="filter" >
+            <div class="filter-text"><button>Filter <i class="dropdown-icon"></i></button> </div>
         </div>
       </div>
+
     </div>
     <div class="list-view-content">
       <table>
           <thead>
             <tr>
-              <th *ngFor="let column of columns" [colSpan]="column == 'name' ? 5 : 1" [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <th *ngFor="let column of columns" [ngClass]="column=='name' ? 'text-left' : 'text-right'">
                 <a><span>{{ column }}</span><i class="material-icons th_expand_more">expand_more</i></a>
               </th>
             </tr>
           </thead>   
           <tbody *ngFor="let list of lists">
-            <tr >
-                <td [ngClass]="['col-name']" colspan="5"><a (click)="list.open=!list.open"><i class="material-icons td_arrow_right">keyboard_arrow_right</i><span>{{ list.name }}</span></a></td>
-                <td [ngClass]="['col-other']">{{ list.id }}</td>
-                <td [ngClass]="['col-other']">{{ list.value }}</td>
-                <td [ngClass]="['col-other']">{{ list.num }}</td>
-                <td [ngClass]="['col-other']">{{ list.state }}</td>
-                <td [ngClass]="['col-other']">{{ list.created }}</td>
-                <td [ngClass]="['col-other']">{{ list.updated }}</td>
+            <tr width="100%" class="selected-dropdown" >
+                <td [ngClass]="['col-name']" colspan="1"><a (click)="list.open=!list.open"><i class="material-icons td_arrow_right">keyboard_arrow_right</i><span class="item">{{ list.name }}</span></a></td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.id }}</span></td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.value }}</span> </td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.num }}</span></td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.state }}</span></td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.created }}</span></td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.updated }}</span></td>
                 <td [ngClass]="['col-action']"><i class="material-icons icon-action">more_vert</i></td>
             </tr>
-            <tr *ngIf="!list.open">
-              <td colspan="12">
-                <table>
-                  <tr>
-                    <td colspan="7">test</td>
-                    <td colspan="1">test</td>
-                    <td colspan="1">test</td>
-                    <td colspan="1">test</td>
-                    <td colspan="1">test</td>
-                    <td colspan="1">test</td>
-                  </tr>
-                </table>
-              </td>
+            <tr class="dropdown-tr" *ngIf="list.open">
+              <td class="dropdown-td">test</td>
+              <td class="dropdown-td align-right">test</td>
+              <td class="dropdown-td align-right">test</td>
+              <td class="dropdown-td align-right">test</td>
+              <td class="dropdown-td align-right">test</td>
+              <td class="dropdown-td align-right">test</td>
+              <td class="dropdown-td align-right">test</td>
+              <td class="dropdown-td align-center"><i class="material-icons icon-action action-button">more_vert</i></td>
             </tr>
           </tbody>
         </table>
