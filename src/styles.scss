@@ -72,7 +72,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 
   .mat-radio-button.mat-accent .mat-radio-inner-circle {
-    background-color: rgb(66, 134, 244);
+    background-color: #fff;
   }
 
   .mat-radio-container .mat-radio-outer-circle {
@@ -87,4 +87,31 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
     border-color: rgb(66, 134, 244);
+    background-color: rgb(66, 134, 244);
   }
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:#fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    
+    height: 100px;
+    opacity: 0.4;
+    border-radius: 5px;
+    background-color: #c5c5c5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
