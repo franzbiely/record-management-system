@@ -9,11 +9,11 @@
           <div class="btn-right-space"><button class="btn"><i class="material-icons">add_circle</i><span class="icon-title">Add</span></button></div> 
         </div>
         <div class="container-info">
-          <div class="info-item">
-            <div class="item-one">Candelaria</div>
+          <div class="info-item" *ngFor="let household of households">
+            <div class="item-one">{{ household.name }}</div>
             <div class="item-two">
-              <div class="item-two-amount">$900,000.00</div>
-              <div class="item-two-date">7/9/2018</div>
+              <div class="item-two-amount">{{ household.value }}</div>
+              <div class="item-two-date">{{ household.date }}</div>
             </div>
           </div>
         </div>

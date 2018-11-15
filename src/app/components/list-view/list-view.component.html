@@ -36,8 +36,19 @@
                 <td [ngClass]="['col-other']">{{ list.updated }}</td>
                 <td [ngClass]="['col-action']"><i class="material-icons icon-action">more_vert</i></td>
             </tr>
-            <tr *ngIf="list.open">
-              <td colspan="8">test</td>
+            <tr *ngIf="!list.open">
+              <td colspan="12">
+                <table>
+                  <tr>
+                    <td colspan="7">test</td>
+                    <td colspan="1">test</td>
+                    <td colspan="1">test</td>
+                    <td colspan="1">test</td>
+                    <td colspan="1">test</td>
+                    <td colspan="1">test</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
           </tbody>
         </table>

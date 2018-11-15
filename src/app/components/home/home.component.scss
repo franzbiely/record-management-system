@@ -189,7 +189,7 @@ $btnFontSize: 10pt;
                     .container-info{
                         @extend %container-info;        
                             .info-item{
-                                @include info-item(12px, 20px, 12px, 20px);    
+                                @include info-item(10px, 20px, 10px, 20px);    
                                 .item-one, .item-two{
                                     flex: 1;
                                     flex-direction: column;
@@ -197,7 +197,18 @@ $btnFontSize: 10pt;
                                             text-align: right;
                                             font-size: $itemFontSize;
                                         }
+                                        .item-two-amount{
+                                            font-size: 9pt;
+                                        }
+                                        .item-two-date{
+                                            font-size: 8pt;
+                                        }
                                 }
+                                .item-one{
+                                    font-size: 10pt;
+                                }
+
+                            
                             }
                             .info-item:nth-child(odd){
                                 border-bottom: $itemDivider;
