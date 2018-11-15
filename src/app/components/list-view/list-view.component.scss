@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $padding: 30px;
 $backgroundColor: #ffffff;
 $backgroundColorHeader: #1598cb;
@@ -42,55 +43,101 @@ $textColor: #ffffff;
             display: flex;
             background-color: $backgroundColorHeader;
             color: $textColor;
+            align-items: center;
             border-radius: 6px 6px 0 0;
+            justify-content: space-between;
+            height: auto;
+            padding: 10px 20px;
             .list-view-header-left{
-                flex-grow: 2;
-                padding: 0 0 0 20px;
+               
+               
                 h2{@extend %header-text-style;}
             }
             .list-view-header-right{
-                flex-grow: 1;
+             
                 display: flex;
-                justify-content: space-evenly;
+                align-items: center;
+                height:40px;
+                justify-content: space-between;
+
                 .add{
-                    padding: 15px;
+                    padding-right: 15px;
+                    display: flex;
+                    align-items: center;
                 }
                 .search{
-                    button{
-                        padding: 12px;
-                        background-color: #ffffff;
-                        border: none;
-                        position: relative;
-                        top: 9px;
-                        height: 44px;
-                        border-radius: 5px 0 0 5px;
-                        color: darkgray;
-                    }
-
-                    input{
+                    margin-top:-4px;
+                    color: black;
+                  
+                    input[type=text]{
+                        background: url('../../../assets/component/listview/search-gray.png') no-repeat  15px 10px;
                         width: 253px;
-                        height: 40px;
-                        border-radius: 0 6px 6px 0;
+                        height: 37px;
+                        border-radius:6px;
                         border: solid 1px #e7e6e6;
                         background-color: #ffffff;
                         margin-top: 4px;
-                        border: none;
-                        padding: 2px;
+                        font-size: 14px;
+                        border: solid 1px #e7e6e6;
+                        padding-left:40px;
+                        color: black;
+                        margin-right:15px;
+                        font-family: montserrat;
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+
+                    }
+                    ::placeholder {
+                        font-family: montserrat;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #c5c5c5;
+                  
+                  
                     }
                 }
-
+                .dropdown-icon{
+                    float: right;
+                }
                 .filter{
-                    padding-top: 8px;
-
+                    display: flex;
+                    justify-content: space-between;
+                    
                     button{
+                        background: url('../../../assets/component/listview/filter-gray-1.png') no-repeat  15px 5px;
+                        text-align: left;
                         width: 200px;
-                        height: 45px;
+                        height: 40px;
                         border-radius: 6px;
                         box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
                         background-color: #ffffff;
                         border: none;
-                        outline: none;
+                        font-family: Montserrat;
+                        font-size: 12px;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 1px;
+                        color: #77787b;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        padding: 0px 15px 0px 55px;
                     }
+                    .dropdown-icon {
+                        margin-top: 2px;
+                        width:12px;
+                        content: url('../../../assets/component/listview/dropdown.png');
+                    }
+
                 }
             }
         }
@@ -106,7 +153,7 @@ $textColor: #ffffff;
                     th{
                         font-family: Montserrat;
                         font-size: 10px;
-                        font-weight: 600;
+                        font-weight: 700;
                         font-style: normal;
                         font-stretch: normal;
                         line-height: 4;
@@ -119,7 +166,7 @@ $textColor: #ffffff;
                         padding-left: 10px;
                     }
                     th:last-child(){
-                        padding-right: 10px;
+                        text-align: center;
                     }
                     .text-right{
                         text-align: right;
@@ -154,7 +201,7 @@ $textColor: #ffffff;
                     .col-other{
                         font-family: Montserrat;
                         font-size: 11px;
-                        font-weight: 300;
+                        font-weight: 500;
                         font-style: normal;
                         font-stretch: normal;
                         line-height: 1;
@@ -180,7 +227,7 @@ $textColor: #ffffff;
 .text-icon{
     position: relative;
     top: -8px;
-    left: 2px;
+    left: 6px;
     @extend %icon-text-style;
     text-transform: uppercase;
 }
@@ -190,3 +237,44 @@ $textColor: #ffffff;
     font-size: 12pt;
 }
 
+.dropdown-td {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #414042;
+    background-color: #f2fafc;
+    padding-left: 40px;
+}
+.dropdown-tr {
+ width: 100%;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+
+//When tr is selected
+tr.selected-dropdown {
+    box-shadow: 0 4px 20px 0 rgba(65, 64, 66, 0.1);
+    background-image: linear-gradient(to left, #4db6c5, #1598cb);
+    color: white;
+ 
+}
+.item {
+    color: white;
+}
+
+td.dropdown-td:first-child {
+    border-left: 190px white  solid;
+}
+.action-button {
+    padding-right: 40px;
+}
