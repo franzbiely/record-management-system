@@ -310,3 +310,59 @@ $btnFontSize: 10pt;
     top: 5px;
     margin-left: 5px;
 }
+.dialog-container{
+    position: absolute;
+    left: 0;
+    z-index: 99999999;
+    width: 100%;
+    top: 0px;
+    background-color: #ffffffb3;
+    padding-top: 120px;
+    padding-bottom: 30px;
+
+    .open-dialog{
+        position: relative;
+        width: calc(100vw - 100px);
+        margin: auto;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+        background-color: #ffffff;
+
+        .dialog-header{
+            border-bottom: 1px solid #dedede;
+            padding: 20px;
+            h2{
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: -0.6px;
+                text-align: center;
+                color: #1598cb;
+                margin: 0;
+            }
+        }
+
+        .dialog-content{
+            display: flex;
+            width: inherit;
+        
+            .box-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding: 10px;
+
+                .box{
+                    margin-top: 20px;
+                    width: 300px;
+                    height: 300px;
+                    border: 1px solid #dedede;
+                }
+            }
+        }
+    }
+}

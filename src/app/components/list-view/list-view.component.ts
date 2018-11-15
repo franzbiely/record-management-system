@@ -19,7 +19,8 @@ export class ListViewComponent implements OnInit {
 
   constructor() { }
 
-  displayedColumns = ["name", "id", "$ value", "#", "state/status", "created", "last updated", "actions"];
+
+  columns = ["name", "id", "$ value", "#", "state/status", "created", "last updated", "actions"];
 
   ngOnInit() {
   }

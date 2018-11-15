@@ -1,50 +1,46 @@
-<div class="container-display">
-  <header>
-    <div class="container  flex-2">
-      <h2>Proposals by Household</h2>
-    </div>
-    <div class="container">
-      <!-- <div class="padding-10">
-        <button class="btn"><i class="btn-add-icon"></i>Add</button>
+<div class="container">
+  <div class="list-view-container">
+    <div class="list-view-header">
+      <div class="list-view-header-left">
+        <h2>Proposals by Household</h2>
       </div>
-      <div class="padding-left-right">
-        <button class="btn"><i class="btn-search-gray"></i></button>
-        <input type="text" class="input-search" placeholder="Search this page"/>
-      </div>
-      <div class="padding-left-right">
-        <input type="text" class="input-filter" placeholder="FILTER"/>
-        <button class="btn btn-width"><i class="btn-filter-down"></i></button>
-      </div> -->
-    </div>
-  </header>
-  <section>
-    <div class="container">
-      <div class="content">
-          <table mat-table [dataSource]="lists" multiTemplateDataRows class="mat-elevation-z8">
-              <ng-container matColumnDef="{{column}}" *ngFor="let column of displayedColumns">
-                <th mat-header-cell *matHeaderCellDef> {{column}} </th>
-                <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
-              </ng-container>
-            
-              <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
-              <ng-container matColumnDef="expandedDetail">
-                <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumns.length">
-                  <div class="example-element-detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
-                   test
-                  </div>
-                </td>
-              </ng-container>
-            
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let element; columns: displayedColumns;"
-                  class="example-element-row"
-                  [class.example-expanded-row]="expandedElement === element"
-                  (click)="expandedElement = element">
-              </tr>
-              <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
-            </table> 
+      <div class="list-view-header-right">
+        <div class="add">
+          <a><i class="material-icons">add_circle</i><span class="text-icon">Add</span></a>
+        </div>
+        <div class="search">
+          <button><i class="material-icons">search</i></button><input type="text" placeholder="Search ">
+        </div>
+        <div class="filter">
+          <button><i class="material-icons">settings_input_component</i>Filter</button>
+        </div>
       </div>
     </div>
-  </section>
-
+    <div class="list-view-content">
+      <table>
+          <thead>
+            <tr>
+              <th *ngFor="let column of columns" [colSpan]="column == 'name' ? 2 : 1" [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+                <a><span>{{ column }}</span><i class="material-icons th_expand_more">expand_more</i></a>
+              </th>
+            </tr>
+          </thead>   
+          <tbody *ngFor="let list of lists">
+            <tr >
+                <td [ngClass]="['col-name']" [colSpan]="2"><a (click)="list.open=!list.open"><i class="material-icons td_arrow_right">keyboard_arrow_right</i><span>{{ list.name }}</span></a></td>
+                <td [ngClass]="['col-other']">{{ list.id }}</td>
+                <td [ngClass]="['col-other']">{{ list.value }}</td>
+                <td [ngClass]="['col-other']">{{ list.num }}</td>
+                <td [ngClass]="['col-other']">{{ list.state }}</td>
+                <td [ngClass]="['col-other']">{{ list.created }}</td>
+                <td [ngClass]="['col-other']">{{ list.updated }}</td>
+                <td [ngClass]="['col-action']"><i class="material-icons icon-action">more_vert</i></td>
+            </tr>
+            <tr *ngIf="list.open">
+              <td colspan="8">test</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
 </div>
