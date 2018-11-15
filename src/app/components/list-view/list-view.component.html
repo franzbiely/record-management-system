@@ -20,14 +20,14 @@
       <table>
           <thead>
             <tr>
-              <th *ngFor="let column of columns" [colSpan]="column == 'name' ? 2 : 1" [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <th *ngFor="let column of columns" [colSpan]="column == 'name' ? 5 : 1" [ngClass]="column=='name' ? 'text-left' : 'text-right'">
                 <a><span>{{ column }}</span><i class="material-icons th_expand_more">expand_more</i></a>
               </th>
             </tr>
           </thead>   
           <tbody *ngFor="let list of lists">
             <tr >
-                <td [ngClass]="['col-name']" [colSpan]="2"><a (click)="list.open=!list.open"><i class="material-icons td_arrow_right">keyboard_arrow_right</i><span>{{ list.name }}</span></a></td>
+                <td [ngClass]="['col-name']" colspan="5"><a (click)="list.open=!list.open"><i class="material-icons td_arrow_right">keyboard_arrow_right</i><span>{{ list.name }}</span></a></td>
                 <td [ngClass]="['col-other']">{{ list.id }}</td>
                 <td [ngClass]="['col-other']">{{ list.value }}</td>
                 <td [ngClass]="['col-other']">{{ list.num }}</td>
