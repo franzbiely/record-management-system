@@ -67,21 +67,21 @@
 
     <div class="row-container">
     
-      <div class="test">
+      <div class="container-analytics">
         <div class="title-proposal">
           <p>Proposal Analytics</p>
-          <span class="hide-show"><i class="icon"></i>Hide</span>
+          <a class="hide-show" (click)="hideShow()"><i class="material-icons icon-font-size">{{ analyticShow == true ? "visibility" : "visibility_off" }}</i><span class="span-hide-show">{{ analyticShow == true ? "show" : "hide" }}</span></a>
         </div>
       </div>
 
     </div>  
 
-    <div class="row-container"></div>
-      <div class="test">
+  
+      <div class="container-analytics" *ngIf="!analyticShow">
         <div class="households">
             <div class="box-head">
               <div><h2>Opportunity AUM<br><span>Forecast Overtime</span></h2></div>              
-              <div class="btn-right-space"><button class="btn"><i class="material-icons">add_circle</i><span class="icon-title">Add</span></button></div>
+              <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
             </div>
             <div class="container-info">
            
@@ -91,7 +91,7 @@
           <div class="proposals">
             <div class="box-head">
               <div><h2># of Proposals<br><span>In Progress</span></h2></div>
-              <div class="btn-right-space"><button class="btn"><i class="material-icons">add_circle</i><span class="icon-title">Add</span></button></div>
+              <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
             </div>
             <div class="container-info">
          
@@ -101,7 +101,7 @@
           <div class="documents">
             <div class="box-head">
               <div><h2>Implemented Proposals<br><span>Overtime</span></h2></div>
-              <div class="btn-right-space"><button class="btn"><i class="icon-add"></i>Add</button></div>      
+              <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>      
             </div>
             <div class="container-info">
               <div class="info-item">
@@ -109,24 +109,27 @@
               </div>
             </div>
           </div>  
+
+          <div class="row-container-add">
+            <div class="documents" >
+                
+                <div class="box-head">
+                  <div><h2>&nbsp;</h2></div>
+                </div>
+                <div class="container-info">
+                  <div class="add-box-container">
+                    <div class="add-container flex">
+                      <div class="flex-1" style="margin-top: 50px;"><i class="icon-big-add"></i></div>
+                      <div class="flex-1"><h2 style="color:#1598cb;"> Add Household </h2></div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
         </div>
    
-        <div class="row-container-add">
-          <div class="documents" >
-              
-              <div class="box-head">
-                <div><h2>&nbsp;</h2></div>
-              </div>
-              <div class="container-info">
-                <div class="add-box-container">
-                  <div class="add-container flex">
-                    <div class="flex-1" style="margin-top: 50px;"><i class="icon-big-add"></i></div>
-                    <div class="flex-1"><h2 style="color:#1598cb;"> Add Household </h2></div>
-                  </div>
-                  </div>
-              </div>
-            </div>
-        </div>
+        
    </div>
   </div>
 </div>
