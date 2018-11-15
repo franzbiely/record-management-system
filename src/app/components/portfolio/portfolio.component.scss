@@ -336,20 +336,20 @@
           td {
             font-size: 11px;
             
-            padding: 0em 1.5em;
+            padding: 10px;
+            font-weight: 500;
             
 
           }
-          tr {
-              border-bottom: 1px solid rgba(64, 64, 65, 0.2);
-          }
 
-          tr.last {
-            border-bottom: none;
-            border-top:none;
-            
-        }
-        .btn-account {  width: 233px;
+        p{margin: 0;}
+
+        tr {border-bottom: 1px solid rgba(64, 64, 65, 0.2);}
+
+        tr.last {border-bottom: none;border-top:none;}
+        
+        .btn-account {  
+            width: 233px;
             height: 45px;
             border-radius: 6px;
             box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
@@ -367,8 +367,6 @@
                 color: #77787b; }
      
           
-
-
     //Portfolio
 
     .p-text-small-blue{
@@ -599,10 +597,65 @@
     .uppercase {
         text-transform: uppercase;
     }
-
-input[type='checkbox'] {
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Hide the browser's default radio button */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
         width: 20px;
-        height: 20px; 
-   
-      
+        border:.50px solid #eee;
+        border-radius: 50%;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* Show the indicator (dot/circle) when checked */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    /* Style the indicator (dot/circle) */
+    .container .checkmark:after {
+         top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
     }

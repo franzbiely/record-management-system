@@ -90,11 +90,19 @@ $btnFontSize: 10pt;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    span{
+        font-size: 8pt;
+        margin: 0;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
 }
 .btn-right-space {
     padding-right: 10px;
 }
 .btn{
+    display: flex;
     background: transparent;
     border: none;
     outline: none;
@@ -165,10 +173,10 @@ $btnFontSize: 10pt;
 
             .container:last-child(){
                 flex-direction: column;
-                .test{
+                .container-analytics{
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content: space-between;
                         @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
                           
                 
@@ -268,8 +276,24 @@ $btnFontSize: 10pt;
 .title-proposal{
     padding: 20px;
     @include textStyle(#414042, $primaryFont, normal, normal, 18px, 600, center, 0.94, 1.4px);
+
+        p{margin: 5px}
         .hide-show{
             @include textStyle(#c5c5c5, $primaryFont, normal, normal, 10px, 600, none, 1, 0.9px);
+            margin: 0 auto;
+        }
+        a{
+            cursor: pointer;
+        }
+        .span-hide-show{
+            position: relative;
+            top: -5px;
+            left: 5px;
+            text-transform: uppercase;
+            
+        }
+        .icon-font-size{
+            font-size: 12pt;
         }
 }
 .divider {
@@ -279,4 +303,10 @@ $btnFontSize: 10pt;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.icon-title{
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
 }

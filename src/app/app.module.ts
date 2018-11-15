@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,7 +15,8 @@ import { ProposalComponent } from './components/proposal/proposal.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule, MatIconModule } from '@angular/material';
+import { MatTabsModule, MatRadioModule, MatCheckboxModule, MatTableModule } from '@angular/material';
+import { MatIconModule  } from '@angular/material/icon';
 import { DocumentationScreenComponent } from './screens/documentation-screen/documentation-screen.component';
 import { SupportScreenComponent } from './screens/support-screen/support-screen.component';
 import { SupportComponent } from './components/support/support.component';
@@ -32,6 +32,7 @@ import { InformationComponent } from './components/information/information.compo
 import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
 import { AssumptionComponent } from './components/assumption/assumption.component';
 import { AssumptionScreenComponent } from './screens/assumption-screen/assumption-screen.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +69,9 @@ import { AssumptionScreenComponent } from './screens/assumption-screen/assumptio
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    MatRadioModule,
+    MatCheckboxModule,
+    MatTableModule,
     MatIconModule
   ],
  
