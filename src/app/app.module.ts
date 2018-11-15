@@ -30,6 +30,8 @@ import { AdviserSearchComponent } from './components/adviser-search/adviser-sear
 import { AdviserSearchScreenComponent } from './screens/adviser-search-screen/adviser-search-screen.component';
 import { InformationComponent } from './components/information/information.component';
 import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
+import { AssumptionComponent } from './components/assumption/assumption.component';
+import { AssumptionScreenComponent } from './screens/assumption-screen/assumption-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +59,9 @@ import { InformationScreenComponent } from './screens/information-screen/informa
     AdviserSearchComponent,
     AdviserSearchScreenComponent,
     InformationComponent,
-    InformationScreenComponent
+    InformationScreenComponent,
+    AssumptionComponent,
+    AssumptionScreenComponent
   ],
   imports: [
     BrowserModule,
