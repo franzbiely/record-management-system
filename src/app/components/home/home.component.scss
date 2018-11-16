@@ -273,7 +273,14 @@ $btnFontSize: 10pt;
                             }
                         }
                         .document-icon{
-                            max-width: 40px;
+                                display: flex;
+                                width: 30px;
+                                height: 27px;
+                                justify-content: center;
+                                align-items: center;
+                                overflow: hidden;
+
+                                img{width: 20px;}
                         }
         
                     }
@@ -375,5 +382,17 @@ $btnFontSize: 10pt;
                 }
             }
         }
+    }
+}
+
+.temp{
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img{
+        width: 400px;
     }
 }
