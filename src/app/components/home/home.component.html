@@ -26,8 +26,8 @@
           <div class="btn-right-space"><button class="btn"><i class="material-icons">add_circle</i><span class="icon-title">Add</span></button></div>
         </div>
         <div class="container-info">
-          <div class="info-item">
-            <div class="item-top">
+          <div class="info-item" *ngFor="let household of households">
+            <div class="item-top" >
               <div>Chris & Kristy Retirement Proposal</div>
               <div><span class="grey-text">Candelaria Household</span></div>
             </div>
@@ -47,9 +47,11 @@
           <div class="btn-right-space"><button class="btn"><i class="material-icons">add_circle</i><span class="icon-title">Add</span></button></div>      
         </div>
         <div class="container-info">
-          <div class="info-item">
-            <div class="container-flex document-icon">
-              <i class="icon"></i>
+          <div class="info-item" *ngFor="let household of households">
+            <div class="container-flex">
+              <div class="document-icon">
+
+              </div>
             </div>
             <div class="container-flex item-column">
               <div>Christ & Kristy Proposal IPS GAP</div>
