@@ -34,6 +34,10 @@ import { AssumptionComponent } from './components/assumption/assumption.componen
 import { AssumptionScreenComponent } from './screens/assumption-screen/assumption-screen.component';
 import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
 import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-screen.component';
+import { AddHouseholdComponent } from './components/add-household/add-household.component';
+import { AddHouseholdScreenComponent } from './screens/add-household-screen/add-household-screen.component';
+import { HomeAddHouseholdComponent } from './components/home-add-household/home-add-household.component';
+import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +70,11 @@ import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-s
     AssumptionComponent,
     AssumptionScreenComponent,
     BookmarksComponent,
-    BookmarksScreenComponent
+    BookmarksScreenComponent,
+    AddHouseholdComponent,
+    AddHouseholdScreenComponent,
+    HomeAddHouseholdComponent,
+    HomeAddHouseholdScreenComponent
   ],
   imports: [
     BrowserModule,
