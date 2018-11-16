@@ -7,7 +7,22 @@
     background-color: #ffffff;
     display: flex;
 
-    .logo-holder{flex:2;padding: 5px; object-fit: contain}
+    .logo-holder{
+        flex:2;
+        padding: 5px;
+        object-fit: contain;
+
+        .logo-container{
+            width: 250px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img{width: 250px;}
+        }
+    }
 
     .header-components{
         flex: 1;
@@ -185,7 +200,19 @@
 
         .header-profile{
             position: relative;
-            padding: 10px;
+            padding: 10px 20px 0 20px;
+
+            .profile-pic{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                overflow: hidden;
+
+                img{width: 80px;}
+            }
 
             .btn-search {
                 width: 18px;
@@ -261,6 +288,7 @@
                 border: none;
                 right: 10px;
                 top: 25px;
+                cursor: pointer;
             }    
         }
     }

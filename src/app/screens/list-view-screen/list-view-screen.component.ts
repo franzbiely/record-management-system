@@ -11,6 +11,7 @@ export interface Lists{
   createdBy: string;
   updated: string;
   updatedBy: string;
+  [data: string] : any;
 }
 
 
@@ -25,7 +26,29 @@ const DATA_LIST: Lists[] = [
      created: "7/31/3018 | 3:30 PM", 
      createdBy: "jennica fernen", 
      updated: "7/31/3018 | 3:30 PM",
-     updatedBy: "jennica fernen" 
+     updatedBy: "jennica fernen",
+     data: [
+        {
+           name: "Chris & Kristy Retirement Proposal",
+           id: 3457,
+           value: 800000,
+           state: "implemented",
+           created: "7/31/2018 | 3:30 PM",
+           createdBy: "Jennica Fernen",
+           updated: "7/31/2018 | 3:30 PM",
+           updatedBy: "Jennica Fernen"
+        },
+        {
+            name: "Chris & Kristy Retirement Proposal",
+            id: 3457,
+            value: 800000,
+            state: "implemented",
+            created: "7/31/2018 | 3:30 PM",
+            createdBy: "Jennica Fernen",
+            updated: "7/31/2018 | 3:30 PM",
+            updatedBy: "Jennica Fernen"
+         }
+     ]
   },
   {  
      open: false,

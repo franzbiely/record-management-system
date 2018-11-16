@@ -144,6 +144,7 @@ $textColor: #ffffff;
 
         .list-view-content{
             height: calc(100vh - 200px);
+            border-radius: 0 0 6px 6px;
             overflow: scroll;
             table{
                 width: 100%;
@@ -262,19 +263,58 @@ $textColor: #ffffff;
 }
 
 //When tr is selected
-tr.selected-dropdown {
+// tr.selected-dropdown {
+//     box-shadow: 0 4px 20px 0 rgba(65, 64, 66, 0.1);
+//     // background-image: linear-gradient(to left, #4db6c5, #1598cb);
+//     color: white;
+ 
+// }
+// .item {
+//     color: white;
+// }
+
+
+.active{
     box-shadow: 0 4px 20px 0 rgba(65, 64, 66, 0.1);
     background-image: linear-gradient(to left, #4db6c5, #1598cb);
-    color: white;
- 
-}
-.item {
-    color: white;
+    color: white;  
+
+    .item{
+        color: #ffffff;
+    }
 }
 
+td.dropdown-td{
+    border-bottom: none !important;
+    font-family: MuseoSans;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #414042;
+}
 td.dropdown-td:first-child {
     border-left: 190px white  solid;
 }
 .action-button {
+    font-size: 12pt;
     padding-right: 40px;
+}
+
+.icon-chevron-right{
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    content: url('../../../assets/icons/chevron-right.png');
+}
+
+.icon-chevron-down{
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    margin-right: 5px;
+    content: url('../../../assets/icons/chevron-down.png');
 }

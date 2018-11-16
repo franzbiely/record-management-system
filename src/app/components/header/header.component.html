@@ -1,19 +1,21 @@
 <header>
-  <section class="header-container">
+  <div class="header-container">
     <div class="logo-holder">
-      <a>
-        <img src="assets/loring-ward-color.png"
-              srcset="assets/loring-ward-color@2x.png 2x,
-                      assets/loring-ward-color@3x.png 3x"
-                class="logo-loring-ward">
-      </a>
+      <div class="logo-container">
+        <a>
+          <img src="assets/loring-ward-color.png"
+                srcset="assets/loring-ward-color@2x.png 2x,
+                        assets/loring-ward-color@3x.png 3x"
+                  class="logo-loring-ward">
+        </a>  
+      </div>
     </div>
 
     <div class="header-components">
       <div class="header-search-bar">
-          <button  class="btn-search">
-           <i class="material-icons">search</i>
-          </button>   
+        <button  class="btn-search">
+          <i class="material-icons">search</i>
+        </button>   
         <input type="text" class="search-input" placeholder="Search"/>
       </div>
 
@@ -23,14 +25,17 @@
       </div>
 
       <div class="header-profile">
-        <img src="assets/avatar-image.png"
+        <div class="profile-pic">
+            <img src="assets/avatar-image.png"
               srcset="assets/avatar-image@2x.png,
-                      assets/avatar-image@3x.png"
-              class="avtr-img"/>
-        <a class="btn-drop">
-            <i class="material-icons">expand_more</i>
-        </a>
+                      assets/avatar-image@3x.png"/>
+        </div>
+        <div>
+          <a class="btn-drop">
+              <i class="material-icons">expand_more</i>
+          </a>
+        </div> 
       </div>
     </div>
-  </section>
+  </div>
 </header>

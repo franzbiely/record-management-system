@@ -245,6 +245,9 @@ th {
     background-color: #fafbfc;
     
   }
+tr{
+    border-bottom: 1px solid #dedede;
+}
 td {
     font-family: $mainfont;
     font-size: 11px;
@@ -254,7 +257,10 @@ td {
     line-height: 1;
     letter-spacing: normal;
     color: #414042;
-    padding: 19px 30px;
+    padding: 10px 30px;
+}
+td:first-child{
+    font-weight: 600;
 }
 .range-text{
     font-weight: 600;
