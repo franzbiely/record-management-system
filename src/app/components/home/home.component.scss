@@ -34,7 +34,8 @@ $btnFontSize: 10pt;
 }
 
 %container-info{
-    height: 100%;
+    height: 250px;
+    overflow: scroll;
     width: 100%;
     background-color: $primaryColor;
 }
@@ -223,18 +224,20 @@ $btnFontSize: 10pt;
                 .container-info{
                     @extend %container-info;
                         .info-item{
-                            @include info-item(11px);
+                            @include info-item(10px);
                             font-size: 8pt;
                                 .item-top{
                                     flex: auto;
                                     .grey-text{
-                                    @extend %grey-text; 
+                                    @extend %grey-text;
+                                    font-size: 7pt;
                                     }
                                 }
                                 .item-bottom{
                                     padding: 0;
                                     text-align: right;
-                                        .grey-text{@extend %grey-text;}
+                                     
+                                    .grey-text{@extend %grey-text;font-size: 7pt;}
                                 }
                         }
                         .info-item:nth-child(odd){
@@ -251,7 +254,7 @@ $btnFontSize: 10pt;
             .container-info{
                 @extend %container-info;
                     .info-item{
-                        @include info-item(12px);
+                        @include info-item(9px);
                         font-size: 8pt;
                         .container-flex{
                             flex: auto;
@@ -340,7 +343,7 @@ $btnFontSize: 10pt;
 
     .open-dialog{
         position: relative;
-        width: calc(100vw - 100px);
+        width: calc(100vw - 150px);
         margin: auto;
         height: auto;
         border-radius: 6px;
@@ -371,14 +374,52 @@ $btnFontSize: 10pt;
             .box-container{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
+                justify-content: center;
                 padding: 10px;
 
                 .box{
-                    margin-top: 20px;
-                    width: 300px;
-                    height: 300px;
-                    border: 1px solid #dedede;
+                    width: 360px;
+                    height: 272.8px;
+                    border-radius: 5.6px;
+                    box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+                    background-color: #ffffff;
+                    margin: 10px 10px 10px 10px;
+
+                    .box-header{
+                        width: inherit;
+                        height: 52.5px;
+                        background-color: #1598cb;
+                        border-radius: 5px 5px 0 0;
+                    
+                        .box-title{
+                           padding: 5px;
+                           display: inline-block;
+
+                            h2, p{
+                                margin: 0;
+                                color: #ffffff;
+                            }
+                            h2{
+                                font-size: 15pt;
+                            }
+                            p{
+                                font-size: 12pt;
+                            }
+                        }
+
+                        .box-checkbox{
+                            float: right;
+                            padding: 15px;
+                        }
+
+                       
+                    }
+
+                    .box-content{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
             }
         }
@@ -395,4 +436,72 @@ $btnFontSize: 10pt;
     img{
         width: 400px;
     }
+}
+
+.icon-side{
+    font-size: 8pt;
+}
+
+.icon-text{
+    position: relative;
+    top: -2px;
+}
+
+.container-btn{
+    background-color: white;
+    padding: 170px;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: flex-end;
+
+    .btn-cancel{
+        width: 160px;
+        height: 45px;
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+        border: solid 1px #ffffff;
+        background-color: #ffffff;
+        margin: 0px 30px 0 20px;
+
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-align: center;
+        color: #808284;
+        text-transform: uppercase;
+    }
+
+    .btn-save{
+        width: 160px;
+        height: 45px;
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+        border: solid 1px #1598cb;
+        background-color: #1598cb;
+
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+}
+
+.btn-modal-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
 }

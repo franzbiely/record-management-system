@@ -9,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   analyticShow : boolean = false;
+  openModal : boolean = false;
 
   hideShow(){
     this.analyticShow = !this.analyticShow;
+  }
+
+  openCloseModal(){
+    this.openModal = !this.openModal;
   }
 
   constructor() { }
