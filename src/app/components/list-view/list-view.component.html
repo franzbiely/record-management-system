@@ -34,19 +34,19 @@
                 <td [ngClass]="['col-other']"><span class="item">{{ list.value }}</span> </td>
                 <td [ngClass]="['col-other']"><span class="item">{{ list.num }}</span></td>
                 <td [ngClass]="['col-other']"><span class="item">{{ list.state }}</span></td>
-                <td [ngClass]="['col-other']"><span class="item"><p>{{ list.created }}</p><p><b>By:&nbsp;{{ list.createdBy }}</b></p></span></td>
-                <td [ngClass]="['col-other']"><span class="item"><p>{{ list.updated }}</p><p><b>By:&nbsp;{{ list.updatedBy }}</b></p></span></td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.created }}</span><br/><span class="item strong">By:&nbsp;{{ list.createdBy }}</span></td>
+                <td [ngClass]="['col-other']"><span class="item">{{ list.updated }}</span><br/><span class="item strong">By:&nbsp;{{ list.updatedBy }}</span></td>
                 <td [ngClass]="['col-action']"><i class="material-icons icon-action">more_vert</i></td>
             </tr>
             <ng-container *ngIf="list.open && list.data != null">
               <tr class="dropdown-tr" *ngFor="let info of list.data">
-                <td class="dropdown-td">{{ info.name }}</td>
-                <td class="dropdown-td align-right">{{ info.id }}</td>
-                <td class="dropdown-td align-right">{{ info.value }}</td>
+                <td class="dropdown-td"><span class="name-td">{{ info.name }}</span></td>
+                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.id }}</span></td>
+                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.value }}</span></td>
                 <td class="dropdown-td align-right"></td>
-                <td class="dropdown-td align-right">{{ info.state}}</td>
-                <td class="dropdown-td align-right"><p>{{ info.created }}</p><p><b>By:&nbsp;{{ info.createdBy }}</b></p></td>
-                <td class="dropdown-td align-right"><p>{{ info.updated }}</p><p><b>By:&nbsp;{{ info.updatedBy }}</b></p></td>
+                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.state}}</span></td>
+                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
+                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
                 <td class="dropdown-td align-center"><i class="material-icons icon-action action-button">more_vert</i></td>
               </tr>
             </ng-container>
