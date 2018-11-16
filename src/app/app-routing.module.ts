@@ -13,6 +13,8 @@ import { AdviserSearchScreenComponent } from './screens/adviser-search-screen/ad
 import { InformationScreenComponent } from './screens/information-screen/information-screen.component';
 import { AssumptionScreenComponent } from './screens/assumption-screen/assumption-screen.component';
 import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-screen.component';
+import { AddHouseholdScreenComponent } from './screens/add-household-screen/add-household-screen.component';
+import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -71,7 +73,16 @@ const routes: Routes = [
     path: 'bookmarks',
     component: BookmarksScreenComponent
   }
-
+  ,
+  {
+    path: 'listview-add-household',
+    component: AddHouseholdScreenComponent
+  }
+  ,
+  {
+    path: 'home-add-household',
+    component: HomeAddHouseholdScreenComponent
+  }
 
 
 ];
