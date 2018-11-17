@@ -43,6 +43,7 @@ import { FirmInformationScreenComponent } from './screens/firm-information-scree
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
 import { DropdownActionsComponent } from './components/dropdown-actions/dropdown-actions.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
+import { InputPercentComponent } from './components/input-percent/input-percent.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { TestScreenComponent } from './screens/test-screen/test-screen.component
     FirmInformationScreenComponent,
     DocumentPreviewComponent,
     DropdownActionsComponent,
-    TestScreenComponent
+    TestScreenComponent,
+    InputPercentComponent
   ],
   imports: [
     BrowserModule,
