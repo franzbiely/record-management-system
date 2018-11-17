@@ -1,0 +1,29 @@
+<section class="popup popup-create-portfolio">
+  <section class="top">
+    <div class="container">
+      <app-portfolio-risk-score></app-portfolio-risk-score>
+      <div>
+        <input type="text" class="txt-portfolio-name" placeholder="Enter Portfolio Name"/>
+      </div>
+      <div>
+        <select class="dd-target-risk-name">
+          <option>Under construction</option>
+        </select>
+      </div>
+      <div class="portfolio-group">
+        <span>Portfolio Group:</span>
+        <strong>Jennica Fernen Portfolios</strong>
+      </div>  
+    </div>
+  </section>
+  <section class="main">
+    <section class="sidebar">
+      <app-target-asset-allocation></app-target-asset-allocation>
+    </section>
+    <section class="content">
+      <app-quick-add></app-quick-add>
+      <app-add-security></app-add-security>
+      <app-cancel-save></app-cancel-save>
+    </section>
+  </section>
+</section>
