@@ -127,3 +127,11 @@ input[type="text"] {
     font-weight: 300;
     border: 1px solid #e7e6e6;
 }
+
+details{
+    summary {
+        &::-webkit-details-marker { 
+            display: none;
+        }
+    }
+}

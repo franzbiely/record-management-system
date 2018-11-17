@@ -50,6 +50,7 @@ import { TargetAssetAllocationComponent } from './components/target-asset-alloca
 import { QuickAddComponent } from './components/quick-add/quick-add.component';
 import { AddSecurityComponent } from './components/add-security/add-security.component';
 import { CancelSaveComponent } from './components/cancel-save/cancel-save.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +99,8 @@ import { CancelSaveComponent } from './components/cancel-save/cancel-save.compon
     TargetAssetAllocationComponent,
     QuickAddComponent,
     AddSecurityComponent,
-    CancelSaveComponent
+    CancelSaveComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

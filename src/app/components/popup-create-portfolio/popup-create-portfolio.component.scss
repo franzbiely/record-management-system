@@ -62,4 +62,13 @@
         }
         
     }
+    .main {
+        flex-direction: row;
+        display:flex;
+        justify-content: space-around;
+    }
+    .sidebar {
+        margin-top: 40px;
+        margin-left: 40px;
+    }
 }
