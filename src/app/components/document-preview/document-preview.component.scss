@@ -1,0 +1,76 @@
+.document-preview-header{
+    padding: 20px 0 20px 0;
+    box-shadow: 0 0 12px 0 rgba(65, 64, 66, 0.2);
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+
+    .document-title{
+        h3{
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: #414042;
+            margin: 0;
+        }
+
+        p{
+            font-family: MuseoSans;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.29;
+            letter-spacing: normal;
+            color: #77787b;
+            margin: 0;
+        }
+    }
+
+    .document-paging{
+        input[type=text]{
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            border: 1px solid #cacaca;
+        }
+    }
+
+    .document-controls{
+        display: flex;
+
+        .btn-group{
+            &.plus-minus{
+                padding-top: 10px;
+
+                button{
+                    width: 27px;
+                    height: 27px;
+                    box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.2);
+                    background-color: #ffffff;
+                    border-radius: 100%;
+                    color: #dedede;
+                    border: none;
+                    margin-right: 10px;
+                }
+            }
+
+            &.portrait{
+                button{
+                    width: 142px;
+                    height: 45px;
+                    border-radius: 6px;
+                    background-color: #ffffff;
+                    border: 1px solid #dedede;
+                    margin-right: 10px;                    
+                }
+            }
+        }    
+      
+    }
+}

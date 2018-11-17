@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $padding: 20px;
 $padding-left: 35px;
-$container-padding: 60px;
+$container-padding: 40px;
 $mainfont: montserrat;
 
 .information-container {
@@ -64,16 +64,15 @@ $mainfont: montserrat;
       
     
     .btn-browse-container {
-       
-        text-align:center;
 
         .btn-browse{
-            padding: 34px;
             width: 100%;
             border-radius: 58px;
             background-color: transparent;
             box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
             border: dashed 1px #c5c5c5;
+
+            
         }
     }
     .colors-selector-container {
@@ -404,8 +403,48 @@ $mainfont: montserrat;
     font-weight: 700;
 }
 
+#droppable-text{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+#droppable{
+    box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
+    background-color: #ffffff;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    border-radius: 55px;
+    display: none;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &.circle{
+        width: 100px;
+    }
+}
+
+
+#fileList{
+    padding: 20px;
+}
+
 .resizable {
+    width: 200px;
+}
+
+#resizable1{
     width: 150px;
     height: 150px;
     padding: 0.5em;
-  }
+}   
+
+#browse-holder{
+    display: flex;
+    justify-content: center;
+}

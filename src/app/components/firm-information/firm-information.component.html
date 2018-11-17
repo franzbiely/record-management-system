@@ -18,15 +18,17 @@
         <hr class="full-width divider">
         </div>
         <div class="row-padding btn-browse-container">
-          <div>
-            <button class="btn-browse"> 
-              <div>
-              <div><span class="btn-title"> Drag & Drop or Browse For Image </span></div>
-              <div><span class="btn-subtitle">You may use *.png; *.jpeg; *.tiff files. Recommended Size 500x500 less than 5 Mb </span></div>
+          <div class="btn-browse"> 
+            <div id="browse-holder">
+              <div id="droppable">
+              
               </div>
-            </button>
+              <div id="droppable-text">
+                <div><span class="btn-title"> Drag & Drop or Browse For Image </span></div>
+                <div><span class="btn-subtitle" >You may use *.png; *.jpeg; *.tiff files. Recommended Size 500x500 less than 5 Mb </span></div>
+              </div>
+            </div>
           </div>
-          
         </div>
         <div>
           <hr class="full-width divider">
@@ -135,21 +137,22 @@
     </div>  -->
 
     <!----YOUR INFORMATION PAGE------------------------------------------------------------->
-<!--      
+     
     <div class="information-container">
         <div class="information-box flex" style="flex-direction: column;">
           <div class="row-padding btn-browse-container">
-            <div>
-              <button class="btn-browse"> 
-                <div>
-                <div><span class="btn-title"> Drag & Drop or Browse For Image </span></div>
-                <div><span class="btn-subtitle" >You may use *.png; *.jpeg; *.tiff files. Recommended Size 500x500 less than 5 Mb </span></div>
-                <div></div>
+            <div class="btn-browse"> 
+              <div id="browse-holder">
+                <div id="droppable" class="circle">
+                
+                </div>
+                <div id="droppable-text">
+                  <div><span class="btn-title"> Drag & Drop or Browse For Image </span></div>
+                  <div><span class="btn-subtitle" >You may use *.png; *.jpeg; *.tiff files. Recommended Size 500x500 less than 5 Mb </span></div>
+                </div>
               </div>
-              </button>
             </div>
           </div>
-          <div  class="ui-widget-content" style="width:300px; height: 300px;"></div>
           <div>
             <hr class="full-width divider">
             </div>
@@ -232,11 +235,6 @@
                       <i class="icon-save"></i><button  class="btn-info btn-text-color">Save</button>
                   </div>  
                 </div>
-            
-           
            </div>
-             
-  
         </div>
-  
-      </div> -->
+      </div>

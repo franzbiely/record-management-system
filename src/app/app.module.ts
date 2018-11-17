@@ -40,6 +40,7 @@ import { HomeAddHouseholdComponent } from './components/home-add-household/home-
 import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
 import { FirmInformationComponent } from './components/firm-information/firm-information.component';
 import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
+import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { FirmInformationScreenComponent } from './screens/firm-information-scree
     HomeAddHouseholdComponent,
     HomeAddHouseholdScreenComponent,
     FirmInformationComponent,
-    FirmInformationScreenComponent
+    FirmInformationScreenComponent,
+    DocumentPreviewComponent,
   ],
   imports: [
     BrowserModule,

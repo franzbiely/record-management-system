@@ -11,13 +11,12 @@ export class FirmInformationComponent implements OnInit {
   constructor() { 
     $(document).ready(function(){
       var nr =0;
-      $('#droppable').on({
+      $('#browse-holder').on({
         'dragover dragenter': function(e) {
           e.preventDefault();
           e.stopPropagation();
         },
         'drop': function(e, ui) {
-          //console.log(e.originalEvent instanceof DragEvent);
           var dataTransfer = e.originalEvent.dataTransfer;
           if (dataTransfer && dataTransfer.files.length) {
             e.preventDefault();
@@ -26,30 +25,24 @@ export class FirmInformationComponent implements OnInit {
               var reader = new FileReader();
               reader.onload = $.proxy(function(file, $fileList, event) {
                 nr++;
-                var img = file.type.match('image.*') ? "<img  id=\"resizable"+nr+"\" class=\"resizable\" src='" + event.target.result + "' /> " : "";
-                $fileList.prepend($("<span>").append(img + file.name));
-                // this.setResizable("resizable"+nr);
-              }, this, file, $("#fileList"));
+                var img = file.type.match('image.*') ? "<img  id=\"resizable"+nr+"\" class=\"resizable\" style='width: 200px;'  src='" + event.target.result + "' /> " : "";
+                $fileList.append(img);
+
+              }, this, file, $("#droppable"));
+              $("#browse-holder").css("justify-content", "space-between");
+              $("#droppable").css("display", "flex");
               reader.readAsDataURL(file);
             });
           }
           $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
         }
-
-        
       });
     });  
 
   }
 
-  setResizable(id){
-    // $("#" + id).resizable({
-    //   stop: function(event, ui) {
-    //     height = $("#" + id).height();
-    //     width = $("#" + id).width();
-    //     console.log("width=height=" + width + "==" + height);
-    //   }
-    // });
+  setResizable(id) {
+    console.log("setResizable");
   }
 
   ngOnInit() {
