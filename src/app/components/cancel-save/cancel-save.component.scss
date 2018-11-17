@@ -1,0 +1,21 @@
+.btn-can-save-container {
+  button {
+    width: 160px;
+    height: 45px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #808284;
+    .icon-save {
+    	background: url('../../../assets/save-blue.svg');
+    	width: 20px;
+		height: 20px;
+		object-fit: contain;
+		display:inline-block;
+    }
+  }
+}
