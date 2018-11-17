@@ -16,6 +16,8 @@ import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-s
 import { AddHouseholdScreenComponent } from './screens/add-household-screen/add-household-screen.component';
 import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
 import { FilterDropdownComponent } from './components/filter-dropdown/filter-dropdown.component';
+import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
+import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -89,8 +91,15 @@ const routes: Routes = [
     path: 'filter-dropdown',
     component: FilterDropdownComponent
   }
-
-
+  ,
+  {
+    path: 'firm-information',
+    component: FirmInformationScreenComponent
+  },
+  {
+    path: 'laboratory',
+    component: TestScreenComponent
+  }
 ];
 
 @NgModule({

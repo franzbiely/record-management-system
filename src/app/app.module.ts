@@ -39,6 +39,10 @@ import { AddHouseholdScreenComponent } from './screens/add-household-screen/add-
 import { HomeAddHouseholdComponent } from './components/home-add-household/home-add-household.component';
 import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
 import { FilterDropdownComponent } from './components/filter-dropdown/filter-dropdown.component';
+import { FirmInformationComponent } from './components/firm-information/firm-information.component';
+import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
+import { DropdownActionsComponent } from './components/dropdown-actions/dropdown-actions.component';
+import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +80,11 @@ import { FilterDropdownComponent } from './components/filter-dropdown/filter-dro
     AddHouseholdScreenComponent,
     HomeAddHouseholdComponent,
     HomeAddHouseholdScreenComponent,
-    FilterDropdownComponent
+    FilterDropdownComponent,
+    FirmInformationComponent,
+    FirmInformationScreenComponent,
+    DropdownActionsComponent,
+    TestScreenComponent
   ],
   imports: [
     BrowserModule,

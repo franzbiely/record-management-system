@@ -1,3 +1,4 @@
+<!--------MAIN------------->
 <div id="form-row-1" style="padding: 20px 60px;">
   <div>
     <span class="title-text"> Cover page details </span>
@@ -97,22 +98,23 @@
 <div class="flex-1">
  <div class="flex btn-group-orient">
 
-     <div class="orient-container active flex">
-    
+     <div class="orient-container active">
+      <div class="align-center">
        <div class="radio-holder">
          <mat-radio-button></mat-radio-button>
        </div>
-
          <div class="radio-text">
            <span class="text-orient"> 
              Portrait 
            </span>
+           <div><img class="portrait-icon"></div>
+           </div>
          </div>
-
+         
      </div>
 
-     <div class="orient-container flex" style="margin-left: 30px;">
- 
+     <div class="orient-container" style="margin-left: 30px;">
+        <div class="align-center">
        <div class="radio-holder">
          <mat-radio-button></mat-radio-button>
        </div>
@@ -121,11 +123,168 @@
          <span class="text-orient"> 
          Landscape
          </span>
+         <i class="landscape-icon"></i>
        </div>
-   
+       </div>
      </div>
 
  </div>
 </div>
 </div>
 </div>
+<!-------------------------------------------------------with each option------------------------------------------------>
+<!-- <div class="documentation-container">
+<div class="row-1">
+<div id="form-row-1" style="padding: 20px 60px;">
+    <div>
+      <span class="title-text"> Cover page details </span>
+      
+     <div class="forms-container flex"> 
+         <div class="text-input-1 flex-1">
+           <p class="title-small"> Document Title </p>
+           <input type="text" class="text-doc" placeholder="Chris &amp; Kristy Retirement Proposal">
+         </div>
+         <div class="text-input-1 flex-1">
+           <p class="title-small"> File Name </p>
+           <input type="text" class="text-doc-full" placeholder="Chris &amp; Kristy Retirement Proposal">
+         </div>
+     </div>
+    </div>
+    <div class="forms-container flex vertical-space "> 
+     <div class="text-input-1 flex-1">
+       <p class="title-small"> Prepared By: </p>
+       <input type="text" class="text-doc" placeholder="Chris &amp; Kristy Retirement Proposal">
+     </div>
+     <div class="text-input-1 flex-1">
+       <p class="title-small"> Prepared For: </p>
+       <input type="text" class="text-doc" placeholder="Chris &amp; Kristy Retirement Proposal">
+     </div>
+     <div class="text-input-1 flex-1">
+       <p class="title-small"> Date: </p>
+       <input type="text" class="text-doc-full" placeholder="Chris &amp; Kristy Retirement Proposal">
+     </div>
+  </div> 
+</div>
+<div class="row-2">
+  <div class="flex vertical-space">
+     <div class="flex-1">
+       <p class="title-text ">  Documents: </p>
+     </div>
+
+  </div>
+</div>
+<div class="row-3">
+  <div class="flex">
+  <div class="btn-group flex-1" >
+  <div class="btn-text">
+   <span>Proposal</span>
+   <span style="float: right;">
+       <mat-checkbox></mat-checkbox>
+       <i class="btn-icon-action"></i>
+     </span>
+  </div>
+  <div class="btn-text">
+   <span>GAP Analysis</span>
+   <span style="float: right;">
+       <mat-checkbox></mat-checkbox> 
+       <i class="btn-icon-action"></i>
+   </span>
+  </div>
+  <div class="btn-text">
+   <span>Investment Policy Statement</span>
+   <span style="float: right;">
+       <mat-checkbox></mat-checkbox>
+       <i class="btn-icon-action"></i>
+   </span>
+  </div>
+  <div class="btn-text">
+   <span>Portfolio Allocation Statement</span>
+   <span style="float: right;">
+       <mat-checkbox></mat-checkbox>
+       <i class="btn-icon-action"></i>
+   </span>
+  </div>
+  <div class="btn-text">
+   <span>Proposal Assumptions Summary</span>
+   <span style="float: right;">
+       <mat-checkbox></mat-checkbox>
+       <i class="btn-icon-action"></i>
+   </span>
+  </div>
+  <div class="btn-text">
+   <span>Account Opening Checklist</span>
+   <span style="float: right;">
+       <mat-checkbox></mat-checkbox>     
+       <i class="btn-icon-action"></i>
+   </span>
+  </div>
+  <div class="btn-text">
+   <span>Risk Assessment Questionnaire</span>
+   <span style="float: right;">
+       <mat-checkbox></mat-checkbox>
+       <i class="btn-icon-action"></i>
+   </span>
+  </div>
+</div>
+
+  <div class="flex-1">
+    <div class="option-container">
+      <div class="btn-group-top">
+        <div class="left-section">
+        <div class="dropdown-checkbox"><mat-checkbox></mat-checkbox> <i class="dropdown-icon"></i></div>
+        <div class="required"><div class="required-box"><i class="asterisk"></i></div><span>Required</span></div>
+      </div>
+      <div class="right-section">
+        <div class="btn-default"><button><span>Save as default</span></button></div>
+        <div class="btn-save"><button><span>Save & close</span></button></div>
+      </div>
+    </div>
+      <div class="option-div-group">
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="row-4">
+  <div  class="flex-1">
+      <p class="title-text">  Orientation </p>
+     </div>
+  <div class="flex btn-group-orient">
+     
+      <div class="orient-container active">
+       <div class="align-center">
+        <div class="radio-holder">
+          <mat-radio-button></mat-radio-button>
+        </div>
+          <div class="radio-text">
+            <span class="text-orient"> 
+              Portrait 
+            </span>
+            <div><img class="portrait-icon"></div>
+            </div>
+          </div>
+          
+      </div>
+ 
+      <div class="orient-container" style="margin-left: 30px;">
+         <div class="align-center">
+        <div class="radio-holder">
+          <mat-radio-button></mat-radio-button>
+        </div>
+ 
+        <div class="radio-text">
+          <span class="text-orient"> 
+          Landscape
+          </span>
+          <i class="landscape-icon"></i>
+        </div>
+        </div>
+      </div>
+ 
+  </div>
+  </div>
+</div>
+  </div> -->

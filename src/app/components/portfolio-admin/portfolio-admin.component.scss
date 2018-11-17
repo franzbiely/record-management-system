@@ -68,17 +68,6 @@ input[type=text].text-try {
     width:100%;
     justify-content: flex-start;
 }
-::placeholder {
-    font-family: $mainfont;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #c5c5c5;
-    padding-left:20px;
-}
 .box-head {
    
     background-color: #1598cb;
@@ -271,4 +260,88 @@ td:first-child{
 }
 .align-left {
     text-align: left;
+}
+
+.search{
+    margin-top:-4px;
+    color: black;
+  
+    input[type=text]{
+        background: url('../../../assets/component/listview/search-gray.png') no-repeat  15px 10px;
+        width: 253px;
+        height: 37px;
+        border-radius:6px;
+        border: solid 1px #e7e6e6;
+        background-color: #ffffff;
+        margin-top: 4px;
+        font-size: 14px;
+        border: solid 1px #e7e6e6;
+        padding-left:40px;
+        color: black;
+        margin-right:15px;
+        font-family: montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+
+    }
+    ::placeholder {
+        font-family: montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #c5c5c5;
+  
+  
+    }
+}
+.btn-add-container {
+    display: flex;
+    align-items:center;
+   
+}
+.add-icon {
+    height: 20px;
+    width: 20px;
+    padding-right: 6px;
+    content: url('../../../assets/component/home/add-white.png');
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    
+    button{
+        background: url('../../../assets/component/listview/filter-gray-1.png') no-repeat  15px 5px;
+        text-align: left;
+        width: 200px;
+        height: 40px;
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+        background-color: #ffffff;
+        border: none;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #77787b;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 0px 15px 0px 55px;
+    }
+    .dropdown-icon {
+        margin-top: 2px;
+        width:12px;
+        float: right;
+        content: url('../../../assets/component/listview/dropdown.png');
+    }
+
 }
