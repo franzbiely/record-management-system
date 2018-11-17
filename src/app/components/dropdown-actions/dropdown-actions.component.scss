@@ -1,0 +1,102 @@
+.dropdown-actions {
+    font-family: Montserrat sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 50px;
+    width: 196px;
+    background-color: #fafbfc;
+    margin-bottom:30px;
+    details {
+        summary {
+            cursor: pointer;
+            position:relative;
+            height: 47px;
+            display:flex;
+            background-color: #1598cb;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            &::-webkit-details-marker { 
+                display: none;
+            }
+            &:focus {
+                outline: none;
+            }
+            .title {
+                color: #ffffff;
+                flex:1;
+                margin-left: 20px;
+            }
+            .icon-action {
+                right: 13px;
+                color: #ffff;
+            }
+        }
+        ul {
+            padding: 0;
+            margin:0;
+            list-style: none;
+            li {
+                position:relative;
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    display:flex;
+                    height:47px;
+                    color: #77787b;
+                    flex: 1;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-bottom: 1px solid #e7e6e6;
+                    .title {
+                        flex:1;
+                        margin-left: 20px;
+                    }
+                    .icon {
+                        right: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+.icon {
+    &.view-gray {
+        background: url('../../../assets/view-gray.svg');
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+    &.modify-gray {
+        background: url('../../../assets/modify-gray.svg');
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+    &.duplicate-gray {
+        background: url('../../../assets/duplicate-gray.svg');
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+    &.delete-gray {
+        background: url('../../../assets/delete-gray.svg');
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+    &.fact-sheet-gray {
+        background: url('../../../assets/fact-sheet-gray.svg');
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+}

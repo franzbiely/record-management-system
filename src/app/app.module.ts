@@ -41,6 +41,8 @@ import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-sc
 import { FirmInformationComponent } from './components/firm-information/firm-information.component';
 import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
+import { DropdownActionsComponent } from './components/dropdown-actions/dropdown-actions.component';
+import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +83,8 @@ import { DocumentPreviewComponent } from './components/document-preview/document
     FirmInformationComponent,
     FirmInformationScreenComponent,
     DocumentPreviewComponent,
+    DropdownActionsComponent,
+    TestScreenComponent
   ],
   imports: [
     BrowserModule,

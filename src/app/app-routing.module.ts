@@ -18,6 +18,7 @@ import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-sc
 import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
 
+import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -94,8 +95,11 @@ const routes: Routes = [
   {
     path: 'document-preview',
     component: DocumentPreviewComponent
+  },
+  {
+    path: 'laboratory',
+    component: TestScreenComponent
   }
-
 ];
 
 @NgModule({
