@@ -15,6 +15,7 @@ import { AssumptionScreenComponent } from './screens/assumption-screen/assumptio
 import { BookmarksScreenComponent } from './screens/bookmarks-screen/bookmarks-screen.component';
 import { AddHouseholdScreenComponent } from './screens/add-household-screen/add-household-screen.component';
 import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
+import { FilterDropdownComponent } from './components/filter-dropdown/filter-dropdown.component';
 const routes: Routes = [
   {
     path: '',
@@ -82,6 +83,11 @@ const routes: Routes = [
   {
     path: 'home-add-household',
     component: HomeAddHouseholdScreenComponent
+  }
+  ,
+  {
+    path: 'filter-dropdown',
+    component: FilterDropdownComponent
   }
 
 
