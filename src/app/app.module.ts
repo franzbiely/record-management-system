@@ -43,6 +43,14 @@ import { FirmInformationScreenComponent } from './screens/firm-information-scree
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
 import { DropdownActionsComponent } from './components/dropdown-actions/dropdown-actions.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
+import { InputPercentComponent } from './components/input-percent/input-percent.component';
+import { PopupCreatePortfolioComponent } from './components/popup-create-portfolio/popup-create-portfolio.component';
+import { PortfolioRiskScoreComponent } from './components/portfolio-risk-score/portfolio-risk-score.component';
+import { TargetAssetAllocationComponent } from './components/target-asset-allocation/target-asset-allocation.component';
+import { QuickAddComponent } from './components/quick-add/quick-add.component';
+import { AddSecurityComponent } from './components/add-security/add-security.component';
+import { CancelSaveComponent } from './components/cancel-save/cancel-save.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +92,15 @@ import { TestScreenComponent } from './screens/test-screen/test-screen.component
     FirmInformationScreenComponent,
     DocumentPreviewComponent,
     DropdownActionsComponent,
-    TestScreenComponent
+    TestScreenComponent,
+    InputPercentComponent,
+    PopupCreatePortfolioComponent,
+    PortfolioRiskScoreComponent,
+    TargetAssetAllocationComponent,
+    QuickAddComponent,
+    AddSecurityComponent,
+    CancelSaveComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
