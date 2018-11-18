@@ -5,6 +5,32 @@
     display:flex;
     flex-direction: column;
 }
+#form-row-1 {
+   padding: 20px 60px;
+   .link-container{
+       margin-top: 42px;
+       display: flex;
+       align-items: center;
+
+       .link-icon {
+            height: 20px;
+            width: 20px;
+            content: url('../../../assets/component/documentation/link.png');
+       }
+       .link-text {
+        padding-left: 8px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #c5c5c5;
+        text-decoration: underline;
+       }
+   }
+}
 .header-container{
     position: absolute;
     width: 100%;
@@ -637,6 +663,7 @@
         color: #808284;
         
     }
+  
     .orient-container {
         padding: 10px 15px;
         border: solid 1px #c5c5c5;
@@ -656,10 +683,6 @@
      
     }
  
-    .btn-group-orient {
-        padding: 0px 30px;
-    }
-
     input[type=radio] span {
         top: -15px;
   
@@ -682,8 +705,7 @@
         width: 80%;
     }
 
-    .btn-group {
-        
+    .btn-group {   
     }
     button.btn-text {
         font-family: Montserrat;
@@ -719,8 +741,14 @@
         content: url('../../../assets/icons/landscape-gray.png');
     }
 
+    .option-right-section {
+        background-color: #f8f8f8;
+        box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
+        border-radius: 6px 0px 0px 6px;
     .option-container {
         height: auto;
+        padding: 10px 0px 10px 30px;
+      
         .btn-group-top {
             display:flex; 
             align-items: center;
@@ -730,7 +758,7 @@
             display: flex;
         }
         .dropdown-checkbox {
-            border: 1px solid #e7e6e6;
+            border: 1px solid #bdbdbd;
             border-radius: 6px;
             padding:15px;
             display: flex;
@@ -748,8 +776,13 @@
         .required {
             display: flex;
             align-items: center;
+            color: #808284;
+            text-transform: uppercase;
+            font-family: montserrat;
+            font-size:12px;
+            font-weight: 700;
             .required-box{
-                border: 1px solid #e7e6e6;
+                border: 1px solid #bdbdbd;
                 display: flex;
                 align-items: center;
                 border-radius: 6px;
@@ -762,10 +795,88 @@
                 }
             }
         }
-        .btn-default {
-
+        .right-section {
+            padding-right: 20px;
+            
         }
-        .btn-save {
+        .btn-default-container {
+            padding-right: 20px;
+            .btn-default {
+                text-transform: uppercase;
+                border-radius: 6px;
+                border: none;
+                background-color: #ffffff;
+                padding: 16px 26.5px;
+                font-family: montserrat;
+                letter-spacing: 0.9px;
+                color: #808284;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 12px;
+                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+            }
+        }
 
+        .btn-save {
+            text-transform: uppercase;
+            border-radius: 6px;
+            border: none;
+            background-color: #1598cb;
+            padding: 16px 26.5px;
+            font-family: montserrat;
+            letter-spacing: 0.9px;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 12px;
+            box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
         }
     }
+    .div-group {
+        padding:10px 0px 20px 30px;  
+        
+    
+    .div-option-container{
+        
+        .div-option{
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px 10px 20px;
+            border-radius: 6px 0px 0px 6px;
+            box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
+            background-color: #ffffff;
+            cursor: pointer; 
+            color: #414042;    
+            height:20px;
+            
+            .right-items{
+                .drag-icon{
+                    height:15px;
+                    width: 15px;
+                    content: url('../../../assets/component/documentation/move-page-light-gray.png');
+                }
+            }
+            .left-items, .right-items{
+                display: flex;
+                .div-option-text{
+                    font-size: 14px;
+                    font-family: monsterrrat;
+                    font-weight: 500;
+                    padding-left: 10px;
+                }
+                
+            }
+
+
+        }
+        .div-option:not(:first-child) {
+            margin-top:5px;
+        }
+    }
+}}
+
+.portfolio-allocation {
+    height: 290px;
+}
