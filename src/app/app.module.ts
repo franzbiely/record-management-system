@@ -51,6 +51,7 @@ import { QuickAddComponent } from './components/quick-add/quick-add.component';
 import { AddSecurityComponent } from './components/add-security/add-security.component';
 import { CancelSaveComponent } from './components/cancel-save/cancel-save.component';
 import { SearchComponent } from './components/search/search.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +101,8 @@ import { SearchComponent } from './components/search/search.component';
     QuickAddComponent,
     AddSecurityComponent,
     CancelSaveComponent,
-    SearchComponent
+    SearchComponent,
+    DisclaimerComponent
   ],
   imports: [
     BrowserModule,

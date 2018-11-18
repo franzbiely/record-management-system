@@ -17,6 +17,7 @@ import { AddHouseholdScreenComponent } from './screens/add-household-screen/add-
 import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
 import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 const routes: Routes = [
@@ -99,6 +100,10 @@ const routes: Routes = [
   {
     path: 'laboratory',
     component: TestScreenComponent
+  },
+  {
+    path: 'disclaimer',
+    component: DisclaimerComponent
   }
 ];
 

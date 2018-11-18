@@ -11,6 +11,7 @@ $linkInActive : #c5c5c5;
     height: $navbarHeight;
     background-color: $navbarBgColor;
     padding: 150px 25px;
+    z-index: 99999;
 
     @media screen and (max-width: 767px){
         width: 100%;
