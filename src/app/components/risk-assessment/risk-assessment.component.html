@@ -2,7 +2,7 @@
     <div class="container-box">
       <div class="container-tab"> 
         <div class="content">
-          <!-- <div class="assessment-front">
+          <div class="assessment-front" *ngIf="assessment">
             <div>
               <h2>Risk Assessment Questionnaire</h2>
             </div>
@@ -14,8 +14,8 @@
             <div>
               <a href="#">Copy Questionnaire Link</a>
             </div>
-          </div> -->
-          <!-- <div class="selected-assessed">
+          </div>
+          <div class="selected-assessed" *ngIf="survey" >
             <div class="assessed-left">
               <div>
                 <h3>Select Assessed Target Risk:</h3>
@@ -36,8 +36,8 @@
                 </section>    
               </article>
             </div>
-          </div>  -->
-          <!-- <div class="assessment-complete">
+          </div> 
+          <div class="assessment-complete" *ngIf="copied">
             <div class="box-message">
               <div>
                 <p>Status:</p>
@@ -51,8 +51,8 @@
                 <button>Re-Take Questionnaire</button>
               </div>
             </div>
-          </div>  -->
-          <!-- <div class="assessment-confirmation">
+          </div> 
+          <div class="assessment-confirmation" *ngIf="confirm">
               <div class="box-message">
                 <div>
                   <p>Status:</p>
@@ -68,9 +68,9 @@
                   <button>Re-Take Questionnaire</button>
                 </div>
               </div>
-          </div> -->
+          </div>
 
-          <div class="assessment-result">
+          <div class="assessment-result" *ngIf="result">
             <div class="container-left">
               <div><h3>Your Assessed Target Risk Type: Capital Appreciation</h3></div>
               <div>
