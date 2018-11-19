@@ -18,7 +18,7 @@ import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-sc
 import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
-
+import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 const routes: Routes = [
   {
@@ -104,6 +104,10 @@ const routes: Routes = [
   {
     path: 'disclaimer',
     component: DisclaimerComponent
+  },
+  {
+    path: 'documentation-bookmarks',
+    component: DocumentationBookmarkScreensComponent
   }
 ];
 

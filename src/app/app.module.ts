@@ -52,6 +52,8 @@ import { AddSecurityComponent } from './components/add-security/add-security.com
 import { CancelSaveComponent } from './components/cancel-save/cancel-save.component';
 import { SearchComponent } from './components/search/search.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
+import { DocumentationBookmarkComponent } from './components/documentation-bookmark/documentation-bookmark.component';
+import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +104,9 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
     AddSecurityComponent,
     CancelSaveComponent,
     SearchComponent,
-    DisclaimerComponent
+    DisclaimerComponent,
+    DocumentationBookmarkComponent,
+    DocumentationBookmarkScreensComponent
   ],
   imports: [
     BrowserModule,
