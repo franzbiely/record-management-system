@@ -1,0 +1,78 @@
+.rms-security-dd-autocomplete {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e7e6e6;
+    border-radius: 6px;
+
+    &, > * {
+        box-sizing: border-box;
+    }
+
+    &:not(.active) .rms-dd-data {
+        display: none;
+    }
+
+    &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 15px;
+        z-index: 2;
+        width: 18px;
+        height: 100%;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../../assets/search-gray.svg);
+    }
+
+    input[type="text"] {
+        display: block;
+        width: calc(100% - 43px);
+        height: 45px;
+        margin-left: auto;
+        padding: 10px;
+        color: #414042;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+    .rms-dd-data {
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+        background-color: #ffffff;
+
+        > div {
+            padding: 10px 10px 10px 43px;
+            color: #414042;
+            font-size: 11px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e7e6e6;
+            cursor: pointer;
+        }
+        > div:last-child {
+            border: 0
+        }
+        strong, span {
+            display: block;
+        }
+    }
+}
