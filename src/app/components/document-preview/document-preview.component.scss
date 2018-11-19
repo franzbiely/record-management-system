@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$mainfont : 'Montserrat',sans-serif;
+
 .document-preview-header{
     padding: 20px 0 20px 0;
     box-shadow: 0 0 12px 0 rgba(65, 64, 66, 0.2);
     background-color: #ffffff;
-
+    height: auto;
     display: flex;
     justify-content: space-between;
 
     .document-title{
         h3{
-            font-family: Montserrat;
+            font-family: $mainfont;
             font-size: 24px;
             font-weight: 600;
             font-style: normal;
@@ -90,19 +93,22 @@
         background-color: #ffffff;
         margin: 10px 0 0 0;
         padding: 40px;
-
+        .extra-side-padding{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
         .logo-holder{
             display: flex;
             justify-content: flex-start;
-            width: 300px;
-            height: 70px;
             overflow: hidden;
 
-            img{
-                width: 250px;
+            .company-logo{
+            content: url('../../../assets/loring-ward-color.png');
             }
-        }
 
+        }
+        .banner-container {
+            height: 760px;
         .banner{
             width: 100%;
             height: 400px;
@@ -115,20 +121,20 @@
 
                 h2{
                     font-size: 35pt;
-                    font-family: Montserrat;
+                    font-family: $mainfont;
                     width: fit-content;
                     border-bottom: 2px solid #dedede;
                 }
 
                 h3{
                     font-size: 20pt;
-                    font-family: Montserrat;
+                    font-family: $mainfont;
                     font-weight: 200;
                 }
 
                 span{
                     display: block;
-                    font-family: Montserrat;
+                    font-family: $mainfont;
                     font-weight: 600;
                     font-size: 10pt;
 
@@ -147,15 +153,306 @@
                 }
             }
         }
-
-        .caption{
-            position: absolute;
-            bottom: 40px;
-
-            p{
-                font-size: 10pt;
-                color: #c5c5c5;
+    }   .text-green{
+        color: #1bd139;
+        font-family: $mainfont;
+        font-weight: 600;
+        font-size: 12px;
+    }
+        .table-container {
+            padding:40px;
+        }
+         table{
+             border-collapse: collapse;
+            table-layout: fixed;
+             padding: 100px;
+             width:100%;
+            .first-cell{
+                width: 15%;
             }
+            .align-left{
+                text-align: left;
+            } 
+            tr.border-bottom td {
+                border-bottom: .5px #c5c5c5 solid;
+            }
+            .dropdown{
+                background-image: linear-gradient(to left, #4db6c5, #1598cb);
+                color: white;
+                font-weight: 600;
+            }
+            
+            
+             th{
+                 padding: 5px;
+                 font-family: $mainfont;
+                 font-size: 10px;
+                 font-weight: 600;
+                 text-align: center;
+             }
+              
+            tr.total td{
+                font-family: $mainfont;
+                font-size: 10px;
+                font-weight:600;
+                
+            }
+             td
+             {   
+                padding: 5px;
+                word-wrap:break-word;
+                font-family: $mainfont;
+                font-size: 10px;
+                font-weight: 500;
+            }
+         }
+        .title-container {
+            margin-left: 140px;
+            margin-top: 60px;
+            .divider {
+                margin-top: 10px;
+                width: 350px;
+                height: 5px;
+                opacity: 0.7;
+                background-color: #1598cb;
+            }
+            .title {
+                font-family: $mainfont;
+                font-weight:700;
+                font-size:45pt;
+                color: #1598cb;
+                text-transform: uppercase;
+            }
+            .date {
+                font-family: $mainfont;
+                font-weight:600;
+                font-size:25px;
+                color: #414042;
+            }
+            .text-normal {
+                font-family: $mainfont;
+                font-weight:500;
+                font-size:15px;
+                color: #414042;
+            }
+            .text-semibold {
+                font-family: monsterrat;
+                font-weight:600;
+                font-size:15px;
+                color: #414042;
+            }
+        }
+        .footer-divider{
+            margin-top:-1px;
+        }
+        .caption{
+
+            bottom: 40px;
+            .footer-text-semibold {
+                font-weight: 600;
+                font-size: 10px;
+                color: #535353;
+                font-family: $mainfont;
+                padding: 0px 40px;
+        
+            }
+
+            .footer-text {
+                font-size: 10px;
+                color:  #535353;
+                font-family: $mainfont;
+                font-weight:400;
+                padding: 0px 40px;
+               
+            }
+            
+            p{
+                display: flex;
+                font-size: 10px;
+                color: #c5c5c5;
+                font-family: $mainfont;
+                font-weight:400;
+                font-style: italic;
+            
+            }
+            .footer-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+               
+           
+            }
+        }
+        .p-title-holder {
+            margin-top: 40px;
+            .p-title{
+                font-size: 20px;
+                font-weight: 700;
+                font-family: $mainfont;
+                color: #1598cb;
+                text-transform: uppercase;
+            }
+        }
+        .p-container {
+            display: flex;
+            justify-content: space-between;
+            height:700px; 
+            overflow: scroll;
+
+        .left-container, .right-container {
+            flex: 1;
+        }
+            .left-section-p {
+                font-family: $mainfont;
+                font-size: 11px;
+                font-weight: 400;   
+                padding-right: 50px;    
+                display: block;
+                line-height:2;
+                
+                    .semi-strong {
+                        font-weight: 600;
+                   
+                   
+                }
+            }
+            .portfolio-pic {
+                width:400px;
+                content: url('../../../assets/component/document-preview/pic-4.PNG');
+            }
+            .right-section-p {
+                font-family: $mainfont;
+                font-size: 11px;
+                font-weight:400;
+                display: block;
+                line-height: 2;
+                padding: 0px 20px 20px 30px;
+                .strong {
+                    font-weight: 700;
+                }
+            }
+        }
+            hr {
+                opacity: 0.2;
+               border-color: #c5c5c5;
+            }
+            .row-container {
+                padding-bottom: 30px;
+                height: 650px;
+                overflow: hidden;
+            .row {
+                width: 100%;
+                display: flex;
+                .p-section{
+                font-family: $mainfont;
+                font-size: 11px;
+                font-weight:400;
+                display: block;
+                line-height: 2;
+                padding: 0px 20px 10px 40px;
+                    .subtitle{ 
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+                }
+                .left-section{
+                    flex: 1;
+                    padding-right: 50px; 
+
+
+                }
+                .right-section{
+                    flex: 2;
+                    padding-left: 30px;
+                    padding-right:20px;
+                    .first-pic{
+                        width:450px;
+                        content: url('../.././../assets/component/document-preview/pic-1.PNG');
+                    }
+                    .second-pic{
+                        width:450px;
+                        content: url('../.././../assets/component/document-preview/pic-2.PNG');
+                    }
+                    .third-pic{
+                        width:450px;
+                        content: url('../.././../assets/component/document-preview/pic-3.PNG');
+                    }
+                }
+            }
+        }
+    }
+
+}
+.btn-group-bottom {
+    display: flex;
+    margin-top: 100px;
+    .btn-back{
+        border-radius: 6px;
+        background-color: #ffffff;
+        border: 1px #1598cb solid;
+        color: #1598cb;
+
+        text-transform: uppercase;
+        font-family: $mainfont;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #1598cb;
+        width: 240px;
+        height: 45px;
+        margin-right: 20px;
+    }
+    .btn-save{
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+        background-color: #ffffff;
+        border:none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        color: #808284;
+        font-family: $mainfont;
+        width: 240px;
+        height: 45px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon-save{
+            padding-right: 10px;
+            width:20px;
+            height: 20px;
+            content: url('../../../assets/component/document-preview/save-gray@3x.png');
+        }
+    }
+    .btn-send{
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+        background-color: #1598cb;
+        border: none;
+        width: 240px;
+        height: 45px;
+        color: white;
+        text-transform: uppercase;
+        font-family: $mainfont;
+        font-weight: 600;
+        font-size:12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon-send{
+            padding-right: 10px;
+            width:20px;
+            height: 20px;
+            content: url('../../../assets/component/document-preview/send.png');
         }
     }
 }
