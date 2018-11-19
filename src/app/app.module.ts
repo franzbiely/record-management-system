@@ -54,6 +54,9 @@ import { SearchComponent } from './components/search/search.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { DocumentationBookmarkComponent } from './components/documentation-bookmark/documentation-bookmark.component';
 import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
+import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
+import { ViewAddGraphsComponent } from './components/view-add-graphs/view-add-graphs.component';
+import { AdviserSearchPopupComponent } from './components/adviser-search-popup/adviser-search-popup.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +109,10 @@ import { DocumentationBookmarkScreensComponent } from './screens/documentation-b
     SearchComponent,
     DisclaimerComponent,
     DocumentationBookmarkComponent,
-    DocumentationBookmarkScreensComponent
+    DocumentationBookmarkScreensComponent,
+    CreateNewHouseholdComponent,
+    ViewAddGraphsComponent,
+    AdviserSearchPopupComponent
   ],
   imports: [
     BrowserModule,

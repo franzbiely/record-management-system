@@ -19,6 +19,8 @@ import { FirmInformationScreenComponent } from './screens/firm-information-scree
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
+import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
+
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 const routes: Routes = [
   {
@@ -108,6 +110,9 @@ const routes: Routes = [
   {
     path: 'documentation-bookmarks',
     component: DocumentationBookmarkScreensComponent
+  },{
+    path: 'create-household',
+    component: CreateNewHouseholdComponent
   }
 ];
 

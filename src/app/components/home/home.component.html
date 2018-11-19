@@ -72,149 +72,68 @@
       <div class="container-analytics">
         <div class="title-proposal">
           <p>Proposal Analytics</p>
-          <a class="hide-show" (click)="hideShow()"><i class="material-icons icon-font-size">{{ analyticShow == true ? "visibility" : "visibility_off" }}</i><span class="span-hide-show">{{ analyticShow == true ? "show" : "hide" }}</span></a>
+          <a class="hide-show" (click)="analyticShow=!analyticShow"><i class="material-icons icon-font-size">{{ analyticShow == true ? "visibility" : "visibility_off" }}</i><span class="span-hide-show">{{ analyticShow == true ? "show" : "hide" }}</span></a>
         </div>
       </div>
 
     </div>  
 
-  
-      <div class="container-analytics" *ngIf="!analyticShow">
-        <div class="households">
-            <div class="box-head">
-              <div><h2>Opportunity AUM<br><span>Forecast Overtime</span></h2></div>              
-              <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
-            </div>
-            <div class="container-info">
-              <div class="temp">
-                <img src="../../../assets/first-graph.png">
-              </div>
+    <div class="container-analytics" *ngIf="!analyticShow">
+      <div class="households">
+          <div class="box-head">
+            <div><h2>Opportunity AUM<br><span>Forecast Overtime</span></h2></div>              
+            <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
+          </div>
+          <div class="container-info">
+            <div class="temp">
+              <img src="../../../assets/first-graph.png">
             </div>
           </div>
+      </div>
     
-          <div class="proposals">
-            <div class="box-head">
-              <div><h2># of Proposals<br><span>In Progress</span></h2></div>
-              <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
-            </div>
-            <div class="container-info">
-              <div class="temp">
-                  <img src="../../../assets/second-graph.png">
-              </div>
-            </div>
-          </div>
-    
-          <div class="households">
-              <div class="box-head">
-                <div><h2>Opportunity AUM<br><span>Forecast Overtime</span></h2></div>              
-                <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
-              </div>
-              <div class="container-info">
-                <div class="temp">
-                  <img src="../../../assets/third-graph.png">
-                </div>
-              </div>
-          </div>
-
-          <div class="row-container-add">
-            <div class="documents" >
-                
-                <div class="box-head">
-                  <div><h2>&nbsp;</h2></div>
-                </div>
-                <div class="container-info">
-                  <div class="add-box-container">
-                    <div class="add-container flex">
-                      <div class="flex-1" style="margin-top: 50px;"><a (click)="openCloseModal()"><i class="icon-big-add"></i></a></div>
-                      <div class="flex-1"><h2 style="color:#1598cb;"> Add Household </h2></div>
-                    </div>
-                    </div>
-                </div>
-              </div>
-          </div>
-
+      <div class="proposals">
+        <div class="box-head">
+          <div><h2># of Proposals<br><span>In Progress</span></h2></div>
+          <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
         </div>
-   
-        
+        <div class="container-info">
+          <div class="temp">
+              <img src="../../../assets/second-graph.png">
+          </div>
+        </div>
+      </div>
+    
+      <div class="households">
+        <div class="box-head">
+          <div><h2>Opportunity AUM<br><span>Forecast Overtime</span></h2></div>              
+          <div class="btn-right-space"><button class="btn"><i class="material-icons">more_vert</i></button></div>
+        </div>
+        <div class="container-info">
+          <div class="temp">
+            <img src="../../../assets/third-graph.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="row-container-add">
+        <div class="documents">
+            <div class="box-head">
+              <div><h2>&nbsp;</h2></div>
+            </div>
+            <div class="container-info">
+              <div class="add-box-container">
+                <div class="add-container flex">
+                  <div class="flex-1" style="margin-top: 50px;"><a (click)="openModal=!openModal" href="#modal"><i class="icon-big-add"></i></a></div>
+                  <div class="flex-1"><h2 style="color:#1598cb;"> Add Household </h2></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
    </div>
   </div>
 </div>
 
-<div class="dialog-container" *ngIf="openModal">
-    <div class="open-dialog">
-        <div class="dialog-header">
-          <h2>View & Add Analytics</h2>
-          <a class="btn-modal-close" (click)="openCloseModal()"><i class="material-icons">cancel</i></a>
-        </div> 
-        <div class="dialog-content">
-          <div class="box-container">
-            <div class="box">
-              <div class="box-header">
-                <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-              </div>
-              <div class="box-content">
-                <img src="../../../assets/second-graph.png">
-              </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/first-graph.png">
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/third-graph.png">
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/first-graph.png">
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/third-graph.png">
-                </div>
-              </div>
-              <div class="box">
-                  <div class="box-header">
-                    <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                    <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                  </div>
-                  <div class="box-content">
-                    <img src="../../../assets/second-graph.png">
-                  </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-btn">
-        <div class="btn-group">
-          <div>
-            <button class="btn-cancel">Cancel</button>
-          </div>
-          <div>
-            <button class="btn-save">Save</button>
-          </div>
-        </div>
-      </div>
-</div>
-
+<app-view-add-graphs [modal] = "openModal" ></app-view-add-graphs>
