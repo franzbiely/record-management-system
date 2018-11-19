@@ -1,0 +1,78 @@
+$mainfont : Montserrat;
+
+.select-advisor-container {
+    padding: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 12px 0 rgba(65, 64, 66, 0.2);
+    background-color: #f47a64;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+    .text-normal {
+        font-family: $mainfont;
+        font-size: 16px;
+        letter-spacing: -0.2;
+        font-weight: 500;
+        color: white;
+        padding-bottom: 11px;
+    }
+    .text-container{
+        padding-right: 30px;
+    }
+    .text-small {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.17;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .strong {
+        font-weight: 700;
+    }
+    .text-title {
+        opacity: 0.6;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        color: #ffffff;
+    }
+    .btn-text {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-align: center;
+        color: #808284;
+        text-transform: uppercase;
+    }
+    .text-bottom {
+        margin-top:11px;
+    }
+    .btn-select {
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+        border: solid 1px #ffffff;
+        background-color: #ffffff;
+        padding: 15px 18px;
+    }
+
+
+
+}

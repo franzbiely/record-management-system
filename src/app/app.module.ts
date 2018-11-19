@@ -52,6 +52,9 @@ import { AddSecurityComponent } from './components/add-security/add-security.com
 import { CancelSaveComponent } from './components/cancel-save/cancel-save.component';
 import { SearchComponent } from './components/search/search.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
+import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
+import { ViewAddGraphsComponent } from './components/view-add-graphs/view-add-graphs.component';
+import { AdviserSearchPopupComponent } from './components/adviser-search-popup/adviser-search-popup.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +105,10 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
     AddSecurityComponent,
     CancelSaveComponent,
     SearchComponent,
-    DisclaimerComponent
+    DisclaimerComponent,
+    CreateNewHouseholdComponent,
+    ViewAddGraphsComponent,
+    AdviserSearchPopupComponent
   ],
   imports: [
     BrowserModule,
