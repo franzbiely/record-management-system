@@ -1,0 +1,42 @@
+.dropdown {
+	width: 240px;
+	height: 45px;
+	border-radius: 6px;
+	background-color: #ffffff;
+	border:1px solid #e7e6e6;
+	summary {
+		cursor: pointer;
+        position:relative;
+        height: 47px;
+        display:flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &::-webkit-details-marker { 
+            display: none;
+        }
+        &:focus {
+            outline: none;
+        }
+		.title {
+			padding-left:15px;
+			flex:1;
+			color: #c5c5c5;
+			* {
+				display: block;
+			}
+			span {
+				font-size: 12px;
+			}
+			strong {
+				font-size: 10px;
+				letter-spacing: 0.6px;
+			}
+		}
+		.material-icons {
+			right: 13px;
+		}
+	}
+
+}

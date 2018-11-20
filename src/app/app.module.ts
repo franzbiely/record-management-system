@@ -57,6 +57,7 @@ import { DocumentationBookmarkScreensComponent } from './screens/documentation-b
 import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
 import { ViewAddGraphsComponent } from './components/view-add-graphs/view-add-graphs.component';
 import { AdviserSearchPopupComponent } from './components/adviser-search-popup/adviser-search-popup.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { AdviserSearchPopupComponent } from './components/adviser-search-popup/a
     DocumentationBookmarkScreensComponent,
     CreateNewHouseholdComponent,
     ViewAddGraphsComponent,
-    AdviserSearchPopupComponent
+    AdviserSearchPopupComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
