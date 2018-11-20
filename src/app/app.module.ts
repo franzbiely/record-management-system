@@ -58,6 +58,7 @@ import { CreateNewHouseholdComponent } from './components/create-new-household/c
 import { ViewAddGraphsComponent } from './components/view-add-graphs/view-add-graphs.component';
 import { AdviserSearchPopupComponent } from './components/adviser-search-popup/adviser-search-popup.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { ErrorLineComponent } from './components/error-line/error-line.component';
 
 @NgModule({
   declarations: [
@@ -114,7 +115,8 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
     CreateNewHouseholdComponent,
     ViewAddGraphsComponent,
     AdviserSearchPopupComponent,
-    DropdownComponent
+    DropdownComponent,
+    ErrorLineComponent
   ],
   imports: [
     BrowserModule,
