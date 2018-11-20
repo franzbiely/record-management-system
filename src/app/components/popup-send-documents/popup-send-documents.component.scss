@@ -1,0 +1,37 @@
+.popup-send-documents {
+  width: 1000px;
+  text-align: center;
+  h3 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  color: #1598cb;
+}
+  .container {
+    margin: auto;
+    width: 840px;
+    app-dropdown, input[type="text"], textarea {
+    	font-size: 14px;
+  		font-weight: 300;
+  		color: #c5c5c5;
+  		text-align:left;
+  		width: 100%;
+  		&::placeholder {
+  			color: #c5c5c5;
+  		}
+    }
+    textarea {
+    	margin-bottom:40px;
+    }
+    footer {
+    	text-align:right;
+    	button {
+    		margin-right:0;
+    		text-transform:uppercase;
+    		color: #1598cb;
+    		border-color:#1598cb;
+    		letter-spacing: 1px;
+    	}
+    }
+  }
+}

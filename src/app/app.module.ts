@@ -59,6 +59,7 @@ import { ViewAddGraphsComponent } from './components/view-add-graphs/view-add-gr
 import { AdviserSearchPopupComponent } from './components/adviser-search-popup/adviser-search-popup.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ErrorLineComponent } from './components/error-line/error-line.component';
+import { PopupSendDocumentsComponent } from './components/popup-send-documents/popup-send-documents.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +117,8 @@ import { ErrorLineComponent } from './components/error-line/error-line.component
     ViewAddGraphsComponent,
     AdviserSearchPopupComponent,
     DropdownComponent,
-    ErrorLineComponent
+    ErrorLineComponent,
+    PopupSendDocumentsComponent
   ],
   imports: [
     BrowserModule,
