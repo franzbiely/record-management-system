@@ -1,12 +1,28 @@
 <section class="popup popup-send-documents">
-	<h3 class="title">Send Documents</h3>
-	<div class="container">
+	<div class="container step-1" *ngIf="step === 1">
+		<h3 class="title">Send Documents</h3>
 		<app-dropdown></app-dropdown>
 		<input type="text" placeholder="Subject" />
 		<app-dropdown></app-dropdown>
 		<textarea placeholder="Message"></textarea>
 		<footer>
-			<button>Send Documents</button>
+			<button (click)="next()">Send Documents</button>
+		</footer>
+	</div>
+	<div class="container step-2" *ngIf="step === 2">
+		<h6>STATUS:</h6>
+		<h5>Documentation Has Been Sent To:</h5>
+		<p>
+			<strong>Chris Candelaria</strong> (ccandelaria@loringward.com), 
+			<strong>Kristy Candelaria</strong> (kristycandelaria@gmail.com)
+		</p>
+		<h6>Date Sent: 9/25/2018</h6>
+
+		<h4>Where would you like to go next?</h4>
+		<footer>
+			<button><i class="material-icons icon-action">home</i> Home</button>
+			<button><i class="material-icons icon-action">list</i> List View</button>
+			<button><i class="material-icons icon-action">group</i> Household</button>
 		</footer>
 	</div>
 </section>
