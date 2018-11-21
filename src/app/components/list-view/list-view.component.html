@@ -1,22 +1,28 @@
 <div class="container">
   <div class="list-view-container">
     <div class="list-view-header">
-
+      <div class="title-add-icon">
       <div class="list-view-header-left">
         <h2>Proposals by Household</h2>
       </div>
       <div class="list-view-header-right">
         <div class="add">
-          <a><i class="material-icons">add_circle</i><span class="text-icon">Add</span></a>
-        </div>
-        <div class="search">
-            <div class="input-text"><input type="text" placeholder="Search This Page"></div>
-        </div>
-        <div class="filter" >
-            <div class="filter-text"><button>Filter <i class="dropdown-icon"></i></button> </div>
+          <div class="add-container">
+          <div class="icon-container"><i class="material-icons">add_circle</i></div>
+          <div><span class="text-icon">Add</span></div>
+          </div>
         </div>
       </div>
-
+    </div>
+        <div class="btn-group" >
+        <div class="search">
+            <div class="input-text"><input type="text" class="search-box" placeholder="Search This Page"></div>
+        </div>
+        <div class="filter" >
+            <div class="filter-text"><button class="btn-filter">Filter <i class="dropdown-icon"></i></button> </div>
+        </div>
+      </div>
+    
     </div>
     <div class="list-view-content">
       <table>
@@ -29,25 +35,25 @@
           </thead>   
           <tbody *ngFor="let list of lists">
             <tr width="100%" class="selected-dropdown" [class.active]="list.open">
-                <td [ngClass]="['col-name']" colspan="1"><a (click)="list.open=!list.open"><i [ngClass]="{ 'icon-chevron-down' : list.open == true, 'icon-chevron-right' : list.open  == false}"></i><span class="item">{{ list.name }}</span></a></td>
-                <td [ngClass]="['col-other']"><span class="item">{{ list.id }}</span></td>
-                <td [ngClass]="['col-other']"><span class="item">{{ list.value | currency:'USD':true:'2.2' }}</span> </td>
-                <td [ngClass]="['col-other']"><span class="item">{{ list.num }}</span></td>
-                <td [ngClass]="['col-other']"><span class="item">{{ list.state }}</span></td>
-                <td [ngClass]="['col-other']"><span class="item">{{ list.created }}</span><br/><span class="item strong">By:&nbsp;{{ list.createdBy }}</span></td>
-                <td [ngClass]="['col-other']"><span class="item">{{ list.updated }}</span><br/><span class="item strong">By:&nbsp;{{ list.updatedBy }}</span></td>
-                <td [ngClass]="['col-action']"><i class="material-icons icon-action">more_vert</i></td>
+                <td class="name" [ngClass]="['col-name']" colspan="1"><a (click)="list.open=!list.open"><i [ngClass]="{ 'icon-chevron-down' : list.open == true, 'icon-chevron-right' : list.open  == false}"></i><span class="item">{{ list.name }}</span></a></td>
+                <td class="id" [ngClass]="['col-other']"><span class="item">{{ list.id }}</span></td>
+                <td class="value" [ngClass]="['col-other']"><span class="item">{{ list.value | currency:'USD':true:'2.2' }}</span> </td>
+                <td class="num" [ngClass]="['col-other']"><span class="item">{{ list.num }}</span></td>
+                <td class="state" [ngClass]="['col-other']"><span class="item">{{ list.state }}</span></td>
+                <td class="created" [ngClass]="['col-other']"><span class="item">{{ list.created }}</span><br/><span class="item strong">By:&nbsp;{{ list.createdBy }}</span></td>
+                <td class="updated" [ngClass]="['col-other']"><span class="item">{{ list.updated }}</span><br/><span class="item strong">By:&nbsp;{{ list.updatedBy }}</span></td>
+                <td class="action" [ngClass]="['col-action']"><i class="material-icons icon-action">more_vert</i></td>
             </tr>
             <ng-container *ngIf="list.open && list.data != null">
               <tr class="dropdown-tr" *ngFor="let info of list.data">
-                <td class="dropdown-td">{{ info.name }}</td>
-                <td class="dropdown-td align-right">{{ info.id }}</td>
-                <td class="dropdown-td align-right">{{ info.value | currency:'USD':true:'2.2' }}</td>
-                <td class="dropdown-td align-right"></td>
-                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.state}}</span></td>
-                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
-                <td class="dropdown-td align-right"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
-                <td class="dropdown-td align-center"><i class="material-icons icon-action action-button">more_vert</i></td>
+                <td class="dropdown-td name"><div class="twocolordiv">{{ info.name }}</div></td>
+                <td class="dropdown-td id align-right"><span class="dropdown-item">{{ info.id }}</span></td>
+                <td class="dropdown-td value align-right"><span class="dropdown-item">{{ info.value | currency:'USD':true:'2.2' }}</span></td>
+                <td class="dropdown-td num align-right"></td>
+                <td class="dropdown-td state align-right"><span class="dropdown-item">{{ info.state}}</span></td>
+                <td class="dropdown-td created align-right"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
+                <td class="dropdown-td updated align-right"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
+                <td class="dropdown-td action align-center"><i class="material-icons icon-action action-button">more_vert</i></td>
               </tr>
             </ng-container>
           </tbody>

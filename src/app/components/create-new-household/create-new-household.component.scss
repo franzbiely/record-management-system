@@ -3,18 +3,49 @@ $mainfont : 'Montserrat', sans-serif;
 .header-container{
   width: auto;
   height: 220px;
+  min-width:375px;
   box-shadow: 0 4px 10px 0 rgba(65, 64, 66, 0.18);
   background-image: linear-gradient(to left, #4db6c5, #1598cb);
-
+        @media only screen and (max-width: 767px) {
+            height:140px;
+        }
+ 
     .header-content{
         padding: 60px;
+        @media only screen and (max-width: 767px) {
+             padding: 20px 15px;
+        
+        .btn-container, .id-container {
+            display: none
+        }
+    }
 
         .header-title{
             color: #ffffff;
             font-family: Montserrat;
+            display: inline-block;
+            width: auto;
+            .line { 
+                margin-top: 10px;
+                width: auto;
+                height: 1px;
+                border-bottom: solid 3px #74c2cf;
+                @media only screen and (max-width: 767px){
+                    margin-top: 0px;
+                    width: 210px;
+                }
+              
+            }
 
             span{
+                font-family: Montserrat;
                 font-size: 10px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: 2px;
+                color: #ffffff;
                 text-transform: uppercase;
             }
             
@@ -116,13 +147,20 @@ $mainfont : 'Montserrat', sans-serif;
 
 .body-container{
     display: flex;
-    justify-content: center;
-    padding: 40px 30px 10px 60px;
-
+    padding: 30px;
+        @media only screen and (max-width: 767px){
+            flex-direction: column-reverse;
+            padding: 10px;
+        }
     .box-information{
+        flex: 2;
         width: 395px;
         height: 206px;
         border-radius: 6px;
+        @media only screen and (max-width: 767px){
+            width: 100%;
+            margin-top:20px;
+        }
         .box-header{
             width: auto;
             line-height: 60px;
@@ -233,12 +271,17 @@ $mainfont : 'Montserrat', sans-serif;
     }
   
     .box-proposal{
+        flex: 5;
         position: relative;
         width: 870px;
         height: 206px;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.9);
         margin-left: 20px;
+        @media only screen and (max-width: 767px){
+            width: 100%;
+            margin-left: 0px;
+        }
 
         .box-header{
             width: auto;
@@ -289,6 +332,13 @@ $mainfont : 'Montserrat', sans-serif;
                     }
 
                 }
+                @media only screen and (max-width: 767px){
+                    th:nth-child(2), th:nth-child(4), th:nth-child(5), th:nth-child(6), 
+                    td:nth-child(2), td:nth-child(4), td:nth-child(5), td:nth-child(6)  {
+                        display: none;
+                    }
+                }
+               
             }
 
          
