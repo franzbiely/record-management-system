@@ -195,4 +195,11 @@ button {
     color: #808284;
     width: 217px;
     height: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    i {
+        margin-right:15px;
+    }
 }
