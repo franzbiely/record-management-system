@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
@@ -10,7 +11,7 @@ export class FirmInformationComponent implements OnInit {
 
   step:number = 1;
 
-  constructor() { 
+  constructor(private router: Router) { 
     $(document).ready(function(){
       var nr =0;
       $(document).on('dragover dragenter', '#browse-holder', function(e) {
@@ -53,6 +54,8 @@ export class FirmInformationComponent implements OnInit {
     // do some transactions here...
     this.step++;
   }
-
+  toDashboard() {
+    this.router.navigateByUrl('/dashboard');
+  }
  
 }
