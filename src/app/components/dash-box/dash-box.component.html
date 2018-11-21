@@ -1,0 +1,26 @@
+<div class="dash-box" [ngClass]="{'new' : isNew}">
+	<div *ngIf="isNew" class="add-container flex">
+      <div class="flex-1" style="margin-top: 50px;"><a (click)="openModal=!openModal" href="#modal"><i class="icon-big-add"></i></a></div>
+      <div class="flex-1"><h2 style="color:#1598cb;">{{addLabel}} </h2></div>
+    </div>
+
+
+	<div class="box-head">
+	  <div><h2>{{title}}</h2></div>
+	  <div class="btn-right-space">
+	  	<span class="btn">
+	  		<i class="material-icons">add_circle</i>
+	  		<span class="icon-title">Add</span>
+	  	</span>
+	  </div> 
+	</div>
+	<div class="container-info">
+	  <div class="info-item" *ngFor="let household of households">
+	    <div class="item-one">{{ data.name }}</div>
+	    <div class="item-two">
+	      <div class="item-two-amount">{{ data.value }}</div>
+	      <div class="item-two-date">{{ data.date }}</div>
+	    </div>
+	  </div>
+	</div>
+</div>

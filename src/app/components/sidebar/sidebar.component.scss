@@ -1,4 +1,3 @@
-$fontLink : Montserrat;
 $navbarHeight : 100vh;
 $navbarBgColor : #ffffff;
 $icon : 20px;
@@ -59,7 +58,6 @@ $linkInActive : #c5c5c5;
     }
 
     .link-active {
-        font-family: $fontLink;
         font-size: 8px;
         line-height: 1.25;
         letter-spacing: 0.6px;
@@ -78,7 +76,6 @@ $linkInActive : #c5c5c5;
     }
 
     .link-inactive {
-        font-family: $fontLink;
         font-size: 8px;
         line-height: 1.25;
         letter-spacing: 0.6px;

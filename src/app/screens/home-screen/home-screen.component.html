@@ -1,1 +1,35 @@
-<app-home [households]="households"></app-home>
+<app-header></app-header>
+<main role="main">
+	<app-sidebar></app-sidebar>
+	<div class="content">
+		<div class="recent-container">
+			<app-dash-box [isNew]="true"
+	    				  [title]="'Recent Household'"
+	    				  [addLabel]="'Add Household'"></app-dash-box>
+			<app-dash-box [isNew]="true"
+	    				  [title]="'Recent Proposals'"
+	    				  [addLabel]="'Add Proposals'"></app-dash-box>
+			<app-dash-box [isNew]="true"
+	    				  [title]="'Recent Documents'"
+	    				  [addLabel]="'Add Documents'"></app-dash-box>
+    	</div>
+		<!-- <app-home [households]="households"></app-home> -->
+
+		<div class="divider"></div>
+
+		<div class="title-proposal">
+			<p>Proposal Analytics</p>
+			<a class="hide-show" (click)="analyticShow=!analyticShow">
+				<i class="material-icons icon-font-size">{{ analyticShow == true ? "visibility" : "visibility_off" }}</i>
+				<span class="span-hide-show">{{ analyticShow == true ? "show" : "hide" }}</span>
+			</a>
+		</div>
+
+		<div class="container-analytics" *ngIf="!analyticShow">
+			<app-dash-box [isNew]="true"
+    				  [title]="''"
+    				  [addLabel]="'Add'"></app-dash-box>
+		</div>
+	</div>
+</main>
+

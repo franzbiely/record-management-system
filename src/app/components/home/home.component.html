@@ -3,7 +3,8 @@
 
       <div class="container-divider">
       <div class="row-container">
-      <div class="households">
+
+            <div class="households">
         <div class="box-head">
           <div><h2>Recent Households</h2></div>
           <div class="btn-right-space"><button class="btn"><i class="material-icons">add_circle</i><span class="icon-title">Add</span></button></div> 
@@ -18,6 +19,13 @@
           </div>
         </div>
       </div>
+
+
+      <app-dash-box [isNew]="isRecentProposalNew"
+                    [title]="'household'"></app-dash-box>
+
+      
+      
    
       
       <div class="proposals">

@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
 
   analyticShow : boolean = false;
   openModal : boolean = false;
-
   constructor() { }
 
   ngOnInit() {

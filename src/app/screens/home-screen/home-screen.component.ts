@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeScreenComponent implements OnInit {
 
+  analyticShow : boolean = false;
+  openModal : boolean = false;
+  
   households = Household;
 
   constructor() { }

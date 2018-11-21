@@ -23,14 +23,15 @@ import { CreateNewHouseholdComponent } from './components/create-new-household/c
 
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 const routes: Routes = [
+{
+    path: 'dashboard',
+    component: HomeScreenComponent
+  },
   {
     path: '',
     component: FirmInformationScreenComponent
   },
-  {
-    path: 'dashboard',
-    component: HomeScreenComponent
-  },
+  
   {
     path: 'list-view',
     component: ListViewScreenComponent

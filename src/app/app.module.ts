@@ -60,6 +60,7 @@ import { AdviserSearchPopupComponent } from './components/adviser-search-popup/a
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ErrorLineComponent } from './components/error-line/error-line.component';
 import { PopupSendDocumentsComponent } from './components/popup-send-documents/popup-send-documents.component';
+import { DashBoxComponent } from './components/dash-box/dash-box.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +119,8 @@ import { PopupSendDocumentsComponent } from './components/popup-send-documents/p
     AdviserSearchPopupComponent,
     DropdownComponent,
     ErrorLineComponent,
-    PopupSendDocumentsComponent
+    PopupSendDocumentsComponent,
+    DashBoxComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body{
     background-color: #fafbfc;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: MuseoSans, 'sans'; }
+body { margin: 0; font-family: Montserrat; }
 .mat-tab-label{
     flex: 1;
 }
@@ -222,6 +223,6 @@ main {
     flex-direction: row;
     > .content {
         flex:1;
-        padding-bottom:50px;  
+        padding: 30px;
     }
 }
