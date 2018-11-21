@@ -1,12 +1,9 @@
 <header>
-  <div class="header-container">
+  <div class="header-container" [ngClass]="{'disabled' : isDisabled}">
     <div class="logo-holder">
       <div class="logo-container">
         <a>
-          <img src="assets/loring-ward-color.png"
-                srcset="assets/loring-ward-color@2x.png 2x,
-                        assets/loring-ward-color@3x.png 3x"
-                  class="logo-loring-ward">
+          <img src="{{logo_path}}" srcset="{{logo_path_2}}, {{logo_path_3}}">
         </a>  
       </div>
     </div>

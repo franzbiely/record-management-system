@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FirmInformationScreenComponent implements OnInit {
 
   constructor() { }
-
+  headerIsDisabled = true;
   ngOnInit() {
   }
 

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popup-send-documents.component.scss']
 })
 export class PopupSendDocumentsComponent implements OnInit {
-	public step:boolean = 1;
+	public step:number = 1;
   constructor() { }
 
   ngOnInit() {

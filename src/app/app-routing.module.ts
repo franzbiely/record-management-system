@@ -25,6 +25,10 @@ import { TestScreenComponent } from './screens/test-screen/test-screen.component
 const routes: Routes = [
   {
     path: '',
+    component: FirmInformationScreenComponent
+  },
+  {
+    path: 'dashboard',
     component: HomeScreenComponent
   },
   {
@@ -91,10 +95,6 @@ const routes: Routes = [
     component: HomeAddHouseholdScreenComponent
   }
   ,
-  {
-    path: 'firm-information',
-    component: FirmInformationScreenComponent
-  },
   {
     path: 'document-preview',
     component: DocumentPreviewComponent
