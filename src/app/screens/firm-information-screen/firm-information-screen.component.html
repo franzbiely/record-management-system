@@ -1,5 +1,7 @@
-<app-header [isDisabled]="headerIsDisabled"></app-header>
+<app-header [isDisabled]="headerSidebarIsDisabled"></app-header>
 <main role="main">
-	<app-sidebar></app-sidebar>
-	<app-firm-information> </app-firm-information>
+	<app-sidebar [isDisabled]="headerSidebarIsDisabled"></app-sidebar>
+	<div class="content">
+		<app-firm-information> </app-firm-information>
+	</div>
 </main>

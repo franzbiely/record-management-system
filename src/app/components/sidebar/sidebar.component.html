@@ -1,14 +1,14 @@
-<nav class="navbar">
+<nav class="navbar" [ngClass]="{'disabled' : isDisabled}">
   <ul>
     <li>
-      <a routerLink="" class="link-active">
+      <a routerLink="" [ngClass]="(current_page=='home') ? 'link-active' : 'link-inactive'">
         <i class="material-icons">home</i>
         <br>
         <span>Home</span>
       </a>
     </li>
     <li>
-      <a routerLink="/list-view" class="link-inactive">
+      <a routerLink="/list-view" [ngClass]="(current_page=='storage') ? 'link-active' : 'link-inactive'">
         <i class="material-icons">storage</i>    
         <br>
         <span>View</span>

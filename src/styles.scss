@@ -202,8 +202,26 @@ button {
     i {
         margin-right:15px;
     }
+    &:hover {
+        border-color:#808284;
+    }
+    &.primary {
+        border: solid 1px #1598cb;
+        color: #1598cb;
+        &:hover {
+            background:#1598cb;
+            color:#fff;
+            * {
+               color:#fff; 
+            }
+        }
+    }
 }
 main {
     display:flex;
     flex-direction: row;
+    > .content {
+        flex:1;
+        padding-bottom:50px;  
+    }
 }

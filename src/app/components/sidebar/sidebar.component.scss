@@ -9,8 +9,20 @@ $linkInActive : #c5c5c5;
     display: flex;
     height: $navbarHeight;
     background-color: $navbarBgColor;
-    padding: 150px 25px;
+    padding: 30px 25px;
     z-index: 99999;
+    &.disabled {
+        &::after {
+            position:absolute;
+            width:100%;
+            height:100%;
+            content:' ';
+            background: #fff;
+            opacity: 0.8;
+            left: 0;
+            top: 0;
+        }
+    }
 
     @media screen and (max-width: 767px){
         width: 100%;
