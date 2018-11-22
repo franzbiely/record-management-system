@@ -28,8 +28,10 @@
 		<div class="container-analytics" *ngIf="!analyticShow">
 			<app-dash-box [isNew]="true"
     				  [title]="''"
-    				  [addLabel]="'Add'"></app-dash-box>
+    				  [addLabel]="'Add'"
+    				  [addAction]="showViewAndAddAnalytics"></app-dash-box>
 		</div>
+		<app-view-add-graphs *ngIf="openModal"></app-view-add-graphs>
 	</div>
 </main>
 

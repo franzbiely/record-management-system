@@ -10,8 +10,9 @@ export class DashBoxComponent implements OnInit {
 	@Input() title: string;
 	@Input() addLabel : string;
 	@Input() data: any;
+  @Input() addAction: Function;
   constructor() { }
-
+  
   ngOnInit() {
   }
 

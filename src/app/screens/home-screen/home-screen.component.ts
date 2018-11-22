@@ -9,14 +9,16 @@ export class HomeScreenComponent implements OnInit {
 
   analyticShow : boolean = false;
   openModal : boolean = false;
-  
   households = Household;
-
+  showViewAndAddAnalytics : Function;
   constructor() { }
 
   ngOnInit() {
+    this.showViewAndAddAnalytics = this.showViewAndAddAnalyticsCallback.bind(this);
   }
-
+  showViewAndAddAnalyticsCallback = function() {
+    this.openModal = true;
+  }
 }
 
 export interface Households{
