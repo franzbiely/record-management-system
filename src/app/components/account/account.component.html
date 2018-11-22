@@ -1,3 +1,4 @@
+<div class="tab-title-mobile"><div><span class="title-text-mobile"> Account </span></div></div>
 <table>
     <thead>
       <tr class="last">
@@ -24,7 +25,7 @@
         <td>3456</td>
         <td>Simple IRA</td>
         <td>Chris Candelaria</td>
-        <td><p>$425,000.00</p><p>As of 10/1/2018</p></td>
+        <td class="cell-2-rows"><span class="normal-cell-text">$425,000.00</span><span class="small-cell-text">As of 10/1/2018</span></td>
         <td><i class="material-icons">more_vert</i></td>
       </tr>
       <tr>
@@ -36,16 +37,22 @@
           <td>3456</td>
           <td>Simple IRA</td>
           <td>Chris Candelaria</td>
-          <td><p>$425,000.00</p><p class="text-small-light">As of 10/1/2018</p></td>
+          <td class="cell-2-rows"><span class="normal-cell-text">$425,000.00</span><span class="small-cell-text">As of 10/1/2018</span></td>
           <td><i class="material-icons">more_vert</i></td>        
         </tr>
 
       <tr class="last" >
-        <td style="height:80px;">
-        <mat-checkbox [ngClass]="testing1"></mat-checkbox>
-        <p>Select All</p>
-        <td colspan=2> <button class="btn-account  btn-account-text  "> <i class="material-icons">add_circle</i> <span class="align-text-icon">ADD ACCOUNT OR CASH</span></button></td>
-        <td colspan="2">  <button class="btn-account btn-account-text"> <i class="material-icons">autorenew</i> <span class="align-text-icon">UPDATE ACCOUNT</span> <i class="material-icons">expand_more</i> </button></td>
+        <td>
+        <div class="select-all-container"><mat-checkbox [ngClass]="testing1"></mat-checkbox>
+        <p>Select All</p></div>
+        </td>
+        <td colspan="9"> 
+            <div class="btn-container">
+            <button class="btn-account  btn-account-text btn-add"><i class="material-icons">add_circle</i> <span class="align-text-icon">ADD ACCOUNT OR CASH</span></button>
+            <button class="btn-account btn-account-text btn-update"> <i class="material-icons">autorenew</i> <span class="align-text-icon">UPDATE ACCOUNT</span> <i class="material-icons">expand_more</i> </button>
+            </div>
+          </td>
+       
       </tr>
     </tbody>
     </table>

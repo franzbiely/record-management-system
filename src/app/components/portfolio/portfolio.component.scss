@@ -1,6 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 // @import url('~@angular/material/prebuilt-themes/indigo-pink.css');
+.tab-title-mobile {
+    display:none;
+    @media only screen and (max-width: 767px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px 0 rgba(64, 64, 65, 0.1);
+        background-color: #ffffff;
+        z-index: 999999;
+        position: relative;
+        .title-text-mobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size:15px;
+            background: #fafbfc; 
+            font-family: montserrat;
+            color:#1598cb;
+            font-weight: bold; 
+            padding:10px 0px; 
+            flex:1 ;
+            text-align: center; 
+        }
+    }
+}
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    @media only screen and (max-width:767px){
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }  
+    .left-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .space-left{
+        padding-left: 1.5em;
+        @media only screen and (max-width: 767px){
+            padding-left: 0px;
+        }
+    }
+    .right-section{
+        width: 100%;
+        display: flex;
+    }
+    .right-section-content {
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width:767px){
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
 
+        }
+    }
+
+
+}
 .header-container{
     position: fixed;
     width: 100%;
@@ -237,8 +302,42 @@
 
 
 }
+.header {
+    background-color: #1598cb;
+    padding: 10px 10px 10px 30px;
+    @media only screen and (max-width: 767px){
+        padding: 10px;
+    }
+.box-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 767px){
+        justify-content: center;
+        flex-direction: column;
+        .filter-btn {
+            display:none;
+        }
+        .text-box{
+            margin-top: 10px;
+            display: flex;
+            width: 100%;
+            .search-input{
+                flex: 1;
+            }
+        }
+   
+    }
+    .header-right-section{
+        display: flex;
+        align-items: center;
+      
+    }
+
+}
 
 
+}
 
     nav ul {
     padding: 0;
@@ -287,8 +386,15 @@
     }
     li.no-left-border {
         border: none;
-    }
-  
+    }   
+ 
+        .portfolio-box{
+           
+            padding: 20px 40px;
+            @media only screen and (max-width: 767px){
+                padding: 10px;
+            }
+        }
   
         .portfolio-box-container {
              box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
@@ -321,6 +427,13 @@
             border-collapse: collapse; 
            
             background-color: #ffffff;
+
+            @media only screen and (max-width:767px){
+                th:nth-child(3),th:nth-child(4),
+                td:nth-child(3),td:nth-child(4){
+                    display: none;
+                }
+            }
           }
         
           th {        
@@ -329,10 +442,8 @@
             background: #fafbfc; 
             color: #414042; 
             font-weight: bold; 
-            padding: 2em; 
-             
-            
-          }
+            padding: 1em;
+        }
           td {
             font-size: 11px;
             
@@ -401,13 +512,21 @@
         color: #414042;
         
     }
+    .btn-container{
+        display: flex;
+        width:100%;
+    }
     .btn-cap-app {
         padding: 10px 20px;
-        width: 300px;
+        flex: 1;
         border: solid 0.5px #bdbdbd; 
         background: white;
         border-radius: 6px;
         text-align: left;
+        @media only screen and (max-width:767px){
+            margin-top: 8px;
+           
+        }
     }
 
     //Text Style//
@@ -537,6 +656,7 @@
     }
     .align-right {
         text-align: right;
+        float: right; 
     }
     .align-center {
         text-align: center;
@@ -545,9 +665,6 @@
         text-align: left;
     }
 
-    .space-left {
-        padding-left: 1.5em;
-    }
 
     .flex {
         display: flex;
@@ -586,13 +703,10 @@
     .letter-spacing-1 {
         letter-spacing: 1px;
     }
-
     .vertical-middle {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+     display: flex;
+     align-items: center;
+     
     }
     .uppercase {
         text-transform: uppercase;

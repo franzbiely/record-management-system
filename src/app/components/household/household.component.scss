@@ -157,6 +157,7 @@ $mainfont : 'Montserrat', sans-serif;
         width: 395px;
         height: 206px;
         border-radius: 6px;
+        min-width: 375px;
         @media only screen and (max-width: 767px){
             width: 100%;
             margin-top:50px;
@@ -278,6 +279,7 @@ $mainfont : 'Montserrat', sans-serif;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.9);
         margin-left: 20px;
+        min-width: 375px;
         @media only screen and (max-width: 767px){
             width: 100%;
             margin-left: 0px;
@@ -316,6 +318,7 @@ $mainfont : 'Montserrat', sans-serif;
         }
 
         .box-content{
+            height: auto;
             table{
                 width: 100%;
                 border-collapse: collapse;
@@ -397,10 +400,6 @@ $mainfont : 'Montserrat', sans-serif;
    }
    tr.highlighted {
     background-image: linear-gradient(to left, #4db6c5, #1598cb);
-   
-    
-   }
-   tr.highlighted{
     vertical-align: middle;
     
    }
@@ -419,6 +418,9 @@ $mainfont : 'Montserrat', sans-serif;
            font-weight: 600;
            text-transform: uppercase;
            font-size: 9px;
+       }
+       @media only screen and (max-width: 767px){
+           padding:16px 10px;
        }
     
    }
@@ -444,7 +446,6 @@ $mainfont : 'Montserrat', sans-serif;
        content: url('../../../assets/component/household/down-arrow.png');
    }
    tr.dropdown-item {
-    border-left: 60px;
     font-family: $mainfont;
     font-size: 11px;
     font-weight: 500;
