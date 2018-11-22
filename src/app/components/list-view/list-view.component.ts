@@ -16,7 +16,8 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   ],
 })
 export class ListViewComponent implements OnInit {
-
+  hasData:boolean = false;
+  @Input() addLabel:string;
   constructor() { }
 
 

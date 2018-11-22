@@ -1,1 +1,14 @@
-<app-list-view [lists]="lists" expandedElement="expandedElement"></app-list-view>
+<app-header></app-header>
+<main role="main">
+	<app-sidebar [currentPage]="'view'"></app-sidebar>
+	<div class="content">
+		
+		<app-list-view [addLabel]="'Add household'" 
+					   [lists]="lists" expandedElement="expandedElement"></app-list-view>
+
+	</div>
+</main>
+
+
+
+
