@@ -21,6 +21,7 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
 import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
 import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
+import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 const routes: Routes = [
   
   {
@@ -115,6 +116,9 @@ const routes: Routes = [
   },{
     path: 'create-household',
     component: CreateNewHouseholdComponent
+  },{
+    path: 'simulation',
+    component: SimulationScreenComponent
   }
 ];
 

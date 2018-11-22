@@ -61,6 +61,8 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ErrorLineComponent } from './components/error-line/error-line.component';
 import { PopupSendDocumentsComponent } from './components/popup-send-documents/popup-send-documents.component';
 import { DashBoxComponent } from './components/dash-box/dash-box.component';
+import { SimulationComponent } from './components/simulation/simulation.component';
+import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +122,9 @@ import { DashBoxComponent } from './components/dash-box/dash-box.component';
     DropdownComponent,
     ErrorLineComponent,
     PopupSendDocumentsComponent,
-    DashBoxComponent
+    DashBoxComponent,
+    SimulationComponent,
+    SimulationScreenComponent
   ],
   imports: [
     BrowserModule,

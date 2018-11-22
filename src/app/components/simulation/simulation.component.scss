@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$primaryfont : 'montserrat', sans-serif;
+
+.simulation-container{
+    width: 100%;
+    .content-container{
+        display: flex;
+        width: 100%;
+        .left-section-container{
+            border-right: 1px black solid;
+            flex: 1;
+            align-items: center;
+            .left-head-container{
+                .left-head{
+                    padding: 0px 20px 0px 88px;
+                    height: 85px;
+                    background-color: #fafbfc;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .flex-right{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .btn-container{
+                            .btn-hide{
+                                display: flex;
+                                align-items: center;
+                                .hide-icon{
+                                    padding-left: 15px;
+                                    display: flex;
+                                    align-items: center;
+                                    height: 20px;
+                                    width: 20px;
+                                    content: url("../../../assets/component/simulation/hide-gray@3x.png");
+                                }
+                            }
+                        }
+                        .score-container{
+                            margin-right: 20px;
+                        }
+                        .btn-hide{
+                            border:none;
+                            border-radius: 6px;
+                            box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+                            background-color: #ffffff;
+                            padding:14px 15px;
+                        }
+                        .btn-hide-text{
+                            font-family: $primaryfont;
+                            font-size: 12px;
+                            font-weight: 700;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: 1px;
+                            color: #77787b;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            
+            .left-section-body{
+                background-color: white;
+                .img-container{
+                    padding-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .graph-1{
+                        content: url("../../../assets/component/simulation/current-portfolio.png");
+                    }
+                }
+            }
+        }
+        .right-section-container{
+            flex: 1;
+            align-items: center;
+            .right-head-container{
+                .right-head{
+                    padding: 0px 60px 0px 44px;
+                    height: 85px;
+                    background-color: #fafbfc;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                .flex-right{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .btn-container{
+                        .btn-action{
+                            display: flex;
+                            align-items: center;
+                        .action-icon{
+                          padding-left: 18px;
+                          display: flex;
+                          align-items: center;
+                          color: gray;
+                          width: 20px;
+                          height: 20px;
+                        }
+                    }
+                }
+                    .score-container{
+                        margin-right: 20px;
+                    }
+                    .btn-action{
+                        border:none;
+                        border-radius: 6px;
+                        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+                        background-color: #ffffff;
+                        padding:14px 15px;
+                    }
+                    .btn-action-text{
+                        font-family: $primaryfont;
+                        font-size: 12px;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 1px;
+                        color: #77787b;
+                        text-transform: uppercase;
+                    }
+
+                }
+
+            }
+        }
+            .right-section-body{
+                background: white;
+                .img-container{
+                    padding-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .graph-2{
+                        content: url("../../../assets/component/simulation/recommended-portfolio.png");
+                    }
+                }
+            }
+        }
+    }
+}
+//TEXT STYLES
+.text-small{
+    font-family: $primaryfont;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #414042;
+}
+.text-small-green{
+    font-family: $primaryfont;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    color: #67c072;
+    text-transform: uppercase;
+}
+.text-small-gray{
+    font-family: $primaryfont;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    color: #c5c5c5;
+    text-transform: uppercase;
+}
+.text-light{
+    font-family: $primaryfont;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #77787b;
+    text-transform: uppercase;
+}
+.text-bold{
+    font-family: $primaryfont;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #414042;
+}
+//TEXT STYLES ^
