@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./firm-information-screen.component.scss']
 })
 export class FirmInformationScreenComponent implements OnInit {
-
+	showDisclaimer: boolean = false;
   constructor() { }
   headerSidebarIsDisabled = true;
   ngOnInit() {
   }
-
+  receiveFirmEndEvent($event) {
+  	this.showDisclaimer = $event;
+  }
 }

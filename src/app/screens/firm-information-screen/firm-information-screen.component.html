@@ -2,6 +2,9 @@
 <main role="main">
 	<app-sidebar [isDisabled]="headerSidebarIsDisabled"></app-sidebar>
 	<div class="content">
-		<app-firm-information> </app-firm-information>
+		<ng-container *ngIf="!showDisclaimer">
+			<app-firm-information (endEvent)="receiveFirmEndEvent($event)"></app-firm-information>
+		</ng-container>
+		<app-disclaimer *ngIf="showDisclaimer"></app-disclaimer>
 	</div>
 </main>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 export class FirmInformationComponent implements OnInit {
 
   step:number = 1;
-
+  @Output() endEvent = new EventEmitter<boolean>();
   constructor(private router: Router) { 
     $(document).ready(function(){
       var nr =0;
@@ -53,9 +53,9 @@ export class FirmInformationComponent implements OnInit {
   toNext() {
     // do some transactions here...
     this.step++;
-  }
-  toDashboard() {
-    this.router.navigateByUrl('/dashboard');
+    if(this.step == 3) {
+      this.endEvent.emit(true);
+    }
   }
  
 }

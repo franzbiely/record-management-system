@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-disclaimer',
@@ -6,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./disclaimer.component.scss']
 })
 export class DisclaimerComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private router: Router) { }
+  toDashboard() {
+  	this.router.navigateByUrl('/dashboard');
+  }
   ngOnInit() {
   }
 
