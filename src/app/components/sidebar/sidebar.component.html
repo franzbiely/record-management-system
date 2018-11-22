@@ -1,17 +1,15 @@
 <nav class="navbar" [ngClass]="{'disabled' : isDisabled}">
   <ul>
     <li>
-      <a routerLink="" [ngClass]="(current_page=='home') ? 'link-active' : 'link-inactive'">
+      <a routerLink="/dashboard" [ngClass]="(currentPage=='home') ? 'link-active' : 'link-inactive'">
         <i class="material-icons">home</i>
-        <br>
         <span>Home</span>
       </a>
     </li>
     <li>
-      <a routerLink="/list-view" [ngClass]="(current_page=='storage') ? 'link-active' : 'link-inactive'">
-        <i class="material-icons">storage</i>    
-        <br>
-        <span>View</span>
+      <a routerLink="/list-view" [ngClass]="(currentPage=='view') ? 'link-active' : 'link-inactive'">
+        <i class="material-icons">storage</i>
+        <span>List View</span>
       </a>
     </li>
   </ul>

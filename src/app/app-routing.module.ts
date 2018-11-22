@@ -22,19 +22,26 @@ import { DocumentationBookmarkScreensComponent } from './screens/documentation-b
 import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 const routes: Routes = [
-{
-    path: 'dashboard',
-    component: HomeScreenComponent
-  },
+  
   {
     path: '',
     component: FirmInformationScreenComponent
   },
-  
   {
+    path: 'dashboard',
+    component: HomeScreenComponent
+  },
+  {
+    
     path: 'list-view',
     component: ListViewScreenComponent
+    // path: 'listview-add-household',
+    // component: AddHouseholdScreenComponent
   },
+  // {
+  //   path: 'list-view',
+  //   component: ListViewScreenComponent
+  // },
   {
     path: 'accounts',
     component: AccountScreenComponent
@@ -83,11 +90,6 @@ const routes: Routes = [
   {
     path: 'bookmarks',
     component: BookmarksScreenComponent
-  }
-  ,
-  {
-    path: 'listview-add-household',
-    component: AddHouseholdScreenComponent
   }
   ,
   {

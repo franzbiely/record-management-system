@@ -8,7 +8,6 @@ $linkInActive : #c5c5c5;
     display: flex;
     height: $navbarHeight;
     background-color: $navbarBgColor;
-    padding: 30px 25px;
     z-index: 99999;
     &.disabled {
         &::after {
@@ -38,14 +37,14 @@ $linkInActive : #c5c5c5;
         display: flex;
         flex-direction: column;
         padding: 0;
-
+        margin-top:20px;
         @media screen and (max-width: 767px){
             flex-direction: row;
             justify-content: space-evenly;
         }
 
-        li{ 
-            height: 100px; 
+        li{
+
             @media screen and (max-width: 767px){
                 height: auto;
 
@@ -53,7 +52,21 @@ $linkInActive : #c5c5c5;
                         padding: 0;
                     }
             }
-        
+            a {
+                display:flex;
+                flex-direction: column;
+                width: 77px;
+                height: 56px;
+                justify-content: space-evenly;
+                border-left: 3px solid transparent;
+                padding: 10px 0 15px;
+                &.link-active {
+                    border-left-color:#1598cb;
+                }
+                &:hover {
+                    color: #777;
+                }
+            }
         }    
     }
 
@@ -67,7 +80,7 @@ $linkInActive : #c5c5c5;
         text-align: center;
         color: $linkActive;
         text-decoration: none;
-
+        
         .icon-active{
             width: $icon;
             height: $icon;
@@ -80,7 +93,6 @@ $linkInActive : #c5c5c5;
         line-height: 1.25;
         letter-spacing: 0.6px;
         height: 80px;
-        padding-top: 40px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
