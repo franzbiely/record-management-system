@@ -1,12 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 @import url('~@angular/material/prebuilt-themes/indigo-pink.css');
 
+.tab-title-mobile {
+    display:none;
+    @media only screen and (max-width: 767px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title-text-mobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size:15px;
+            background: #fafbfc; 
+            font-family: montserrat;
+            color:#1598cb;
+            font-weight: bold; 
+            padding:10px 0px; 
+            flex:1 ;
+            text-align: center; 
+        }
+    }
+}
 .documentation-container {
     display:flex;
     flex-direction: column;
+    @media only screen and (max-width:767px){
+        padding-bottom: 20px;
+    }
+}
+.document-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media only screen and (max-width:767px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 #form-row-1 {
    padding: 20px 60px;
+   @media only screen and (max-width:767px){
+       padding: 30px 10px 10px 10px;
+   }
    .link-container{
        margin-top: 42px;
        display: flex;
@@ -602,6 +639,9 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+        @media only screen and (max-width:767px){
+            width: 100%;
+        }
         }
     input[type=text].text-doc-full, select {
         width: 100%;
@@ -622,6 +662,10 @@
 
     .forms-container {
         width: 100%;
+        @media only screen and (max-width: 767px){
+            display: flex;
+            flex-direction: column;
+        }
      }
 
      //spacing
@@ -643,11 +687,12 @@
         box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
         background-color: #ffffff;
         border: none;
-        padding: 24px 20px 24px 60px; /* Some padding */
-        cursor: pointer; /* Pointer/hand icon */
+        cursor: pointer; 
         color: #414042;
-        display: block; /* Make the buttons appear below each other */
         text-align: left;
+        @media only screen and (max-width:767px){
+            padding: 30px 10px;
+        }
         
     }
     .btn-group-orient div {
@@ -663,15 +708,29 @@
         color: #808284;
         
     }
+    .btn-group-orient {
+        @media only screen and (max-width: 767px){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
   
     .orient-container {
         padding: 10px 15px;
         border: solid 1px #c5c5c5;
+      
         
     }
-
+    .landscape-box {
+        @media only screen and (max-width: 767px){
+            width: 164px;
+        }
+    }
     .active {
         border-color: #1598cb;
+        @media only screen and (max-width: 767px){
+            width: 142px;
+        }
     }
     .radio-holder {
         padding:0px;
@@ -700,12 +759,26 @@
         padding-left: 30px;
         content: url('../../../assets/component/documentation/move-page-light-gray.png');
     }
-    .btn-group div{
-        margin-bottom: 10px;
-        width: 80%;
+    .btn-group {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding-right: 30px;
+        @media only screen and (max-width:767px){
+            margin-top: 10px;
+            padding-right: 10px;
+        }
     }
-
-    .btn-group {   
+    .btn-group div{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px 0px 60px; 
+        align-items: center;
+        margin-bottom: 10px;
+        flex: 1;
+        @media only screen and (max-width:767px){
+            padding: 30px 10px; 
+        }
     }
     button.btn-text {
         font-family: Montserrat;
@@ -714,20 +787,16 @@
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
-        letter-spacing: 0.2px;
-        
+        letter-spacing: 0.2px;  
     }
- 
     .align-center{
         display: flex;
         align-items: center;
-  
     }
     .radio-text {
         margin-top: 3px;
         align-items: center;
     }
-
     .portrait-icon {
         height: 20px;
         width: 20px;
@@ -740,7 +809,11 @@
         width: 20px;
         content: url('../../../assets/icons/landscape-gray.png');
     }
-
+    .right-section-container {
+        @media only screen and (max-width:767px){
+           float:right;
+        }
+    }
     .option-right-section {
         background-color: #f8f8f8;
         box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
@@ -753,6 +826,19 @@
             display:flex; 
             align-items: center;
             justify-content: space-between;
+            @media only screen and (max-width:767px){
+                flex-direction: column;
+                align-items: center;
+                .left-section{
+                    width: 100%;
+                    justify-content: space-between;
+                }
+                .right-section {
+                    margin-top: 15px;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
         }
         .left-section, .right-section {
             display: flex;
@@ -772,6 +858,7 @@
         }
         .required span {
             padding-left: 6px;
+            padding-right: 10px;
         }
         .required {
             display: flex;
@@ -797,7 +884,9 @@
         }
         .right-section {
             padding-right: 20px;
-            
+            @media only screen and (max-width:767px){
+                padding-right: 0px;
+            }
         }
         .btn-default-container {
             padding-right: 20px;
@@ -833,16 +922,13 @@
         }
     }
     .div-group {
-        padding:10px 0px 20px 30px;  
-        
-    
+        padding:10px 10px 20px 30px;  
     .div-option-container{
-        
         .div-option{
             border-radius: 6px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
             padding: 10px 30px 10px 20px;
             border-radius: 6px 0px 0px 6px;
             box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
@@ -850,7 +936,6 @@
             cursor: pointer; 
             color: #414042;    
             height:20px;
-            
             .right-items{
                 .drag-icon{
                     height:15px;
@@ -875,8 +960,50 @@
             margin-top:5px;
         }
     }
-}}
-
+}
+}
 .portfolio-allocation {
     height: 290px;
+}
+.btn-bottom-container{
+    display: none;
+    bottom: 0;
+    position: absolute;
+    @media only screen and (max-width: 767px){
+        display: flex;
+        justify-content: center;
+    }
+    .btn-save{
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+        background-color: #ffffff;
+        @media only screen and (max-width:767px){
+            padding-right: 10px;
+        }
+        .btn-save-text{
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            color: #808284;
+        }
+    }
+    .btn-send{
+        border-radius: 6px;
+        box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+        background-color: #1598cb;
+        .btn-send-text{
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            color: #ffffff;
+        }
+    }
 }

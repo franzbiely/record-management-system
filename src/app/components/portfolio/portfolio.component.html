@@ -1,12 +1,13 @@
-
-<div id="content" style="padding: 20px 0px 40px 100px; display: flex;">
-    <div style="display: block;">
+<div class="tab-title-mobile"><div><span class="title-text-mobile"> Portfolio </span></div></div>
+<div id="content" class="row-1">
+    <div class="left-section">
         <div><span class="p-text-small">ASSESSED TARGET RISK</span></div>
         <div><span class="p-text-big">Capital Appreciation: 72-86 (74)</span></div>
     </div>
-    <div style="position: absolute; display: flex; right: 70px;">
-        <div><span class="p-text-small uppercase vertical-middle">Target Risk Option:</span></div>
-        <div style="display: block; padding-left:150px;" class="space-left">
+    <div class="right-section">
+    <div class="right-section-content">
+        <div class="vertical-middle"><span class="p-text-small uppercase">Target Risk Option:</span></div>
+        <div class="btn-container space-left">
             <button class="btn-cap-app">
             <div><span class="p-text-small"> Capital Appreciation: </span></div> 
             <div ><span class="uppercase p-text-small-blue"> Risk score range:<strong> 72-86 </strong> </span></div> 
@@ -14,11 +15,13 @@
         </div>
     </div>
 </div>
+</div>
             
-<div id="portfolio-box" style="display:block;padding-bottom: 20px">
-    <div class="portfolio-box-container" style="display:block; width: 90%; height: auto; margin: 0 auto; ">
-        <header class="flex border-radius-top" style=" position: relative; height:65px; background-color: #1598cb; ">
-            <div class="vertical-middle" style=" padding-left: 30px;">
+<div id="portfolio-box" class="portfolio-box">
+    <div class="portfolio-box-container" style="display:block; width: 100%; height: auto; margin: 0 auto; ">
+        <header class="header flex border-radius-top">
+            <div class="box-head">
+            <div class="header-left-section">
                 <div>
                     <span class=" text-normal-bold">Select Portfolio</span>
                 </div> 
@@ -26,19 +29,20 @@
                     <span class="text-white-xsmall"> Select, View, and Modify Portfolios </span>
                 </div>
             </div>
-            <div class="vertical-middle" style=" right: 2%; display: flex;">
-                <input type="text" class="search-input" placeholder="Search"/>
-                <button class="filter-btn"> FILTER </button>
+            <div class="header-right-section">
+                <div class="text-box"><input type="text" class="search-input" placeholder="Search"/></div>
+                <div><button class="filter-btn"> FILTER </button></div>
             </div>
+        </div>
         </header>
         <div>
             <table >
                 <thead>
                     <tr class="last">
                     <th class="align-center">Select</th>
-                    <th class="align-left">Portfoli Name <i class="material-icons">expand_more</i></th>
-                    <th class="align-right">Target Risk Score <i class="material-icons">expand_more</i></th>
-                    <th class="align-left" > Portfolio Group <i class="material-icons">expand_more</i></th>
+                    <th class="align-left"><div class="vertical-middle">Portfolio Name <i class="material-icons">expand_more</i></div></th>
+                    <th class="align-right"><span class="vertical-middle">Target Risk Score <i class="material-icons">expand_more</i></span></th>
+                    <th class="align-left" ><div class="vertical-middle">Portfolio Group <i class="material-icons">expand_more</i></div></th>
                     <th class="align-center">Actions</th>
                 </thead>
                 <tbody>

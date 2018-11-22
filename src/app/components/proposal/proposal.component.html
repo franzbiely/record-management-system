@@ -1,36 +1,36 @@
 <header>
   <section class="header-container"> 
       <div class="header-mask" >
+        <div class="left-section-header">
           <p class="text-small-light">PROPOSAL NAME: </p>
         
           <div class="title-container" >
             <p class="text-big-light space">Chris & Kristy Retirement Proposal</p>
             <div class="line"></div>
           </div>
-  
-          <div class="proposed-value-box">
-            <p class="text-small-light">Proposed Value</p>
-            <p class="text-normal-bold">$0.00</p>
-          </div>
-  
-        <br>
-  
           <div class="status-container">
             
-            <div class="padding-right-50">
+            <div class="btn-container padding-right-50">
               <button class="dropbtn"><i class="material-icons">hourglass_empty</i> In Progress</button>
             </div>
   
-           <div class="padding-right-50 padding-top-10px">
+           <div class="id-container padding-right-50 padding-top-10px">
               <p class="text-normal">ID: </p>
               <p class="text-small-light">3457</p> 
            </div>
   
-            <div class="padding-right-50">
-              <p class="text-normal space-left "><i class="material-icons">home</i> CANDELARIA HOUSEHOLD</p>
-              <p class="text-small-light space-left"> <i class="material-icons">check</i> Active</p>
+            <div class="state-container padding-right-50">
+              <div class="center-align text-normal"><i class="material-icons">home</i><span class="candelaria-text"> CANDELARIA HOUSEHOLD</span></div>
+              <div class="center-align text-small-light"> <i class="material-icons">check</i>Active</div>
+            </div>
             </div>
           </div>
+          <div class="right-section-header">
+          <div class="proposed-value-box">
+              <span class="text-small-light">Proposed Value</span><br/>
+              <span class="text-normal-bold">$11110.00</span>
+            </div>
+            </div>
       </div>
 </section>
 </header>
@@ -41,31 +41,31 @@
     <mat-tab-group>
         <mat-tab>
           <ng-template mat-tab-label>
-            1. Account
+            <span class="tab-web">1. Account</span> <span class="tab-mobile">1</span>
           </ng-template>
           <app-account></app-account>
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            2. Risk Assessment 
+              <span class="tab-web">2. Risk Assessment</span><span class="tab-mobile">2</span>
           </ng-template>
           <app-risk-assessment></app-risk-assessment>
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            3. Portfolio
+              <span class="tab-web">3. Portfolio</span><span class="tab-mobile">3</span>
           </ng-template>
           <app-portfolio></app-portfolio>
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            4. Simulation
+              <span class="tab-web">4. Simulation</span><span class="tab-mobile">4</span>
           </ng-template>
           <!-- <app-simu></app-risk-assessment> -->
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            5. Create Documents
+              <span class="tab-web">5. Create Documents</span><span class="tab-mobile">5</span>
           </ng-template>
           <app-documentation></app-documentation>
         </mat-tab>

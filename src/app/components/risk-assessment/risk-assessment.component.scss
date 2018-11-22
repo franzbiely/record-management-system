@@ -1,3 +1,25 @@
+.tab-title-mobile {
+    display:none;
+    @media only screen and (max-width: 767px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title-text-mobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size:15px;
+            background: #fafbfc; 
+            font-family: montserrat;
+            color:#1598cb;
+            font-weight: bold; 
+            padding:10px 0px; 
+            flex:1 ;
+            text-align: center; 
+        }
+    }
+}
 @mixin p($textTransform : normal){
     font-family: Montserrat;
     font-size: 10px;

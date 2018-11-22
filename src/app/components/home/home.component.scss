@@ -1,3 +1,5 @@
+$primaryFont: Montserrat;
+$secondaryFont: MuseoSans;
 $primaryColor: #ffffff;
 $itemDivider: 1px solid #dedede;
 $itemFontSize: 9pt;
@@ -21,6 +23,7 @@ $btnFontSize: 10pt;
 %header-title{
     display: inline-block;
     height: 20px;
+    font-family: $primaryFont;
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
@@ -38,6 +41,7 @@ $btnFontSize: 10pt;
 }
 
 %grey-text{
+    font-family: $primaryFont;
     font-weight: 0;
     font-style: normal;
     font-stretch: normal;
@@ -65,13 +69,16 @@ $btnFontSize: 10pt;
 
     display: flex;
     color: #000000;
+    font-family: $primaryFont;
 }
 
-@mixin textStyle($color, $style, 
+@mixin textStyle($color, 
+       $font, $style, 
        $stretch, $size, 
        $weight, $align, 
        $line, $spacing){
     color: $color;
+    font-family: $font;
     font-style: $style;
     font-stretch: $stretch;
     font-size: $size;
@@ -103,6 +110,7 @@ $btnFontSize: 10pt;
     color: $primaryColor;
     text-transform: uppercase;
     font-size: $btnFontSize;
+    font-family: $primaryFont;
 
     .icon-add{
         position: relative;
@@ -156,7 +164,7 @@ $btnFontSize: 10pt;
             .row-container{
                 display: flex; 
                 justify-content: center; 
-                @media screen and (max-width: 767px){
+                @media screen and (max-width: 767px) {
                     flex-direction: column;
                 }
             }
@@ -257,14 +265,14 @@ $btnFontSize: 10pt;
                                 flex-direction: column;
                             }
                             .sub-text{
-                                @include textStyle(#77787b, 
+                                @include textStyle(#77787b, $primaryFont, 
                                             normal ,normal, 
                                             10px, 300, none, 
                                             1, 0.4px);
                             }
         
                             .status-text{
-                                @include textStyle(#414042, 
+                                @include textStyle(#414042, $secondaryFont, 
                                             normal, normal, 
                                             11px, 300, right, 
                                             1, normal);
@@ -291,11 +299,11 @@ $btnFontSize: 10pt;
 }
 .title-proposal{
     padding: 20px;
-    @include textStyle(#414042, normal, normal, 18px, 600, center, 0.94, 1.4px);
+    @include textStyle(#414042, $primaryFont, normal, normal, 18px, 600, center, 0.94, 1.4px);
 
         p{margin: 5px}
         .hide-show{
-            @include textStyle(#c5c5c5, normal, normal, 10px, 600, none, 1, 0.9px);
+            @include textStyle(#c5c5c5, $primaryFont, normal, normal, 10px, 600, none, 1, 0.9px);
             margin: 0 auto;
         }
         a{
@@ -350,6 +358,7 @@ $btnFontSize: 10pt;
             border-bottom: 1px solid #dedede;
             padding: 20px;
             h2{
+                font-family: Montserrat;
                 font-size: 24px;
                 font-weight: 600;
                 font-style: normal;
@@ -459,6 +468,8 @@ $btnFontSize: 10pt;
         border: solid 1px #ffffff;
         background-color: #ffffff;
         margin: 0px 30px 0 20px;
+
+        font-family: Montserrat;
         font-size: 12px;
         font-weight: 600;
         font-style: normal;
@@ -477,6 +488,8 @@ $btnFontSize: 10pt;
         box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
         border: solid 1px #1598cb;
         background-color: #1598cb;
+
+        font-family: Montserrat;
         font-size: 12px;
         font-weight: 600;
         font-style: normal;
