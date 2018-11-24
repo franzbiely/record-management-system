@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-screen.component.scss']
 })
 export class HomeScreenComponent implements OnInit {
-
+  isNew : boolean = false;
   analyticShow : boolean = false;
   openModal : boolean = false;
   households = Household;
@@ -22,6 +22,7 @@ export class HomeScreenComponent implements OnInit {
 
   closeModal($event) {
     this.openModal = false;
+    this.isNew = false;
   }
 }
 

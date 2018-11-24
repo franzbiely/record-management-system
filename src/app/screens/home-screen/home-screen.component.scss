@@ -1,3 +1,114 @@
+$itemDivider: 1px solid #dedede;
+$primaryFont: Montserrat;
+$secondaryFont: MuseoSans;
+
+@mixin textStyle($color, 
+       $font, $style, 
+       $stretch, $size, 
+       $weight, $align, 
+       $line, $spacing){
+    color: $color;
+    font-family: $font;
+    font-style: $style;
+    font-stretch: $stretch;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    line-height: $line;
+    letter-spacing: $spacing;  
+}
+@mixin info-item($top: null, $right: null, $bottom: null, $left: null){
+    width: auto;
+    height: auto;
+
+    @if top != null and $right == null or $bottom == null or $left == null {
+        padding-top: $top;
+        padding-right: $top;
+        padding-bottom: $top;
+        padding-left: $top;
+    }@else{
+        padding-top: $top;
+        padding-right: $right;
+        padding-bottom: $bottom;
+        padding-left: $left;
+    }
+
+    display: flex;
+    color: #000000;
+}
+%grey-text{
+    font-family: $primaryFont;
+    font-weight: 0;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #77787b;
+    text-transform: uppercase;
+}
+.info-item{
+    .icon-side{
+        font-size: 8pt;
+    }
+    @include info-item(10px, 20px, 10px, 20px);    
+    .item-one, .item-two{
+        flex: 1;
+        flex-direction: column;
+            .item-two-amount, .item-two-date{
+                text-align: right;
+                font-size: 14px;
+            }
+            .item-two-amount{
+                font-size: 9pt;
+            }
+            .item-two-date{
+                font-size: 8pt;
+            }
+    }
+    .item-one{
+        font-size: 10pt;
+    }
+    &:nth-child(odd){
+        border-bottom: $itemDivider;
+        border-top: $itemDivider;
+    }
+    .item-top{
+        flex: auto;
+        .grey-text{
+        @extend %grey-text;
+        font-size: 7pt;
+        }
+    }
+    .item-bottom{
+        padding: 0;
+        text-align: right;
+        .grey-text{@extend %grey-text;font-size: 7pt;}
+    }
+    .document-icon{
+        display: flex;
+        width: 30px;
+        height: 27px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        img{width: 20px;}
+    }
+    .sub-text{
+        @include textStyle(#77787b, $primaryFont, 
+                    normal ,normal, 
+                    10px, 300, none, 
+                    1, 0.4px);
+    }
+
+    .status-text{
+        @include textStyle(#414042, $secondaryFont, 
+                    normal, normal, 
+                    11px, 300, right, 
+                    1, normal);
+    }
+}
+
 @mixin textStyle($color, $style, 
        $stretch, $size, 
        $weight, $align, 
@@ -47,4 +158,10 @@
         .icon-font-size{
             font-size: 12pt;
         }
+}
+.container-analytics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
 }

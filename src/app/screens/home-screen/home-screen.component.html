@@ -3,17 +3,56 @@
 	<app-sidebar [currentPage]="'home'"></app-sidebar>
 	<div class="content">
 		<div class="recent-container">
-			<app-dash-box [title]="'Recent Household'"
+			<app-dash-box [isNew]="isNew"
+						  [title]="'Recent Household'"
 	    				  [addLabel]="'Add Household'"
-	    				  [headerRightType]="'add'"></app-dash-box>
-			<app-dash-box [isNew]="true"
+	    				  [headerRightType]="'add'">
+				<div class="info-item" *ngFor="let data of households">
+				    <div class="item-one">{{ data.name }}</div>
+				    <div class="item-two">
+				      <div class="item-two-amount">{{ data.value }}</div>
+				      <div class="item-two-date">{{ data.date }}</div>
+				    </div>
+				</div>
+	    	</app-dash-box>
+
+			<app-dash-box [isNew]="isNew"
 	    				  [title]="'Recent Proposals'"
 	    				  [addLabel]="'Add Proposals'"
-	    				  [headerRightType]="'add'"></app-dash-box>
-			<app-dash-box [isNew]="true"
+	    				  [headerRightType]="'add'">
+				<div class="info-item" *ngFor="let household of households">
+		            <div class="item-top" >
+		              <div>Chris & Kristy Retirement Proposal</div>
+		              <div><span class="grey-text">Candelaria Household</span></div>
+		            </div>
+		            <div class="item-bottom">
+		              <div>$900,000.00</div>
+		              <div class="grey-text">
+		                <span class="icon-text">Implemented</span> <i class="material-icons icon-side">lock</i>
+		              </div>
+		            </div>
+		        </div>
+	    	</app-dash-box>
+			<app-dash-box [isNew]="isNew"
 	    				  [title]="'Recent Documents'"
 	    				  [addLabel]="'Add Documents'"
-	    				  [headerRightType]="'add'"></app-dash-box>
+	    				  [headerRightType]="'add'">
+				<div class="info-item" *ngFor="let household of households">
+		            <div class="container-flex">
+		              <div class="document-icon">
+		                <img src="../../../assets/icons/docu.png">
+		              </div>
+		            </div>
+		            <div class="container-flex item-column">
+		              <div>Christ & Kristy Proposal IPS GAP</div>
+		              <div class="sub-text">Candelaria Household</div>
+		            </div>
+		            <div class="container-flex item-column">
+		              <div class="text-right">7/31/2018</div>
+		              <div class="text-right status-text "><span class="icon-text grey-text">Sent</span><i class="material-icons icon-side">send</i></div>
+		            </div>
+		        </div>
+	    	</app-dash-box>
     	</div>
 		<!-- <app-home [households]="households"></app-home> -->
 
@@ -28,6 +67,27 @@
 		</div>
 
 		<div class="container-analytics" *ngIf="!analyticShow">
+
+			<ng-container *ngIf="!isNew">
+				<app-dash-box [title]="'Opportunity AUM'" 
+                          [subTitle]="'Forecast Overtime'" 
+                          [headerRightType]="'select'">
+	              <img src="../../../assets/graph-1.png">
+	            </app-dash-box>
+
+	            <app-dash-box [title]="'# of Proposals'" 
+	                          [subTitle]="'In Progress'" 
+	                          [headerRightType]="'select'">
+	              <img src="../../../assets/graph-2.png">
+	            </app-dash-box>
+
+	            <app-dash-box [title]="'Implmented Proposals'" 
+	                          [subTitle]="'Overtime'" 
+	                          [headerRightType]="'select'">
+	              <img src="../../../assets/graph-3.png">
+	            </app-dash-box>
+			</ng-container>
+
 			<app-dash-box [isNew]="true"
     				  [title]="''"
     				  [addLabel]="'Add'"

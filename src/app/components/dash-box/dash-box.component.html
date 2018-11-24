@@ -25,15 +25,6 @@
 	  </div> 
 	</div>
 	<div class="container-info">
-		<ng-content></ng-content>
-
-		 <!--  WILL BE USED IN HOME/DASH
-		 <div class="info-item" *ngFor="let household of households">
-		    <div class="item-one">{{ data.name }}</div>
-		    <div class="item-two">
-		      <div class="item-two-amount">{{ data.value }}</div>
-		      <div class="item-two-date">{{ data.date }}</div>
-		    </div>
-		  </div> -->
+		<ng-content *ngIf="!isNew"></ng-content>
 	</div>
 </div>
