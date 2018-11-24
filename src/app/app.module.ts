@@ -62,6 +62,7 @@ import { ErrorLineComponent } from './components/error-line/error-line.component
 import { PopupSendDocumentsComponent } from './components/popup-send-documents/popup-send-documents.component';
 import { DashBoxComponent } from './components/dash-box/dash-box.component';
 import { SimulationComponent } from './components/simulation/simulation.component';
+import { NotificationComponentComponent } from './components/notification-component/notification-component.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 
 @NgModule({
@@ -124,7 +125,8 @@ import { SimulationScreenComponent } from './screens/simulation-screen/simulatio
     PopupSendDocumentsComponent,
     DashBoxComponent,
     SimulationComponent,
-    SimulationScreenComponent
+    SimulationScreenComponent,
+    NotificationComponentComponent
   ],
   imports: [
     BrowserModule,

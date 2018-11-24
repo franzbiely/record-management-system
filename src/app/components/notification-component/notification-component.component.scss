@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$padding: 30px;
+$backgroundColor: #ffffff;
+$backgroundColorHeader: #1598cb;
+$containerWidth: calc(100vw - 200px);
+$textColor: #ffffff;
+section{
+	float: center;
+}
+.container {
+	margin-top: 30px;
+	margin-bottom: 10px;
+  /*@media only screen and (max-width: 420px) {
+    padding:10px;
+    display: flex;
+  }*/
+	.notification-container {
+		position: relative;
+		flex: 1;
+		background-color: $backgroundColor;
+		height: auto;
+		margin: auto;
+		width: 428px;
+		height: 751.9px;
+		border-radius: 6px;
+		box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+
+		.Rectangle-3 {
+    		display: flex;
+    		align-items: center; ;
+    		flex-direction: row;
+  			width: 428px;
+  			height: 60px;
+  			border-top-left-radius: 10px !important;
+  			border-top-right-radius: 10px !important;
+  			background-color: #1598cb;
+  			border-top-right-radius: 5px;
+  			border-top-left-radius: 5px;
+  			.oval {
+  				width: 30px;
+  				height: 30px;
+  				margin-left: 13px;
+  				margin-top: 5px;
+  				border-radius: 50%;
+  				background-color: #e7e6e6;
+  				align-items: center;
+  				justify-content: center;
+			}
+			.oval small {
+  				  width: 13px;
+				  height: 12px;
+				  margin-left: 10px;
+				  font-family: Montserrat;
+				  font-size: 12px;
+				  font-weight: bold;
+				  font-style: normal;
+				  font-stretch: normal;
+				  line-height: 1;
+				  letter-spacing: normal;
+				  text-align: center;
+				  color: #414042;
+			}
+			.Activity {
+			  margin-left: 27px;
+			  margin-top: 5px;
+			  width: 80px;
+			  height: 20px;
+			  font-family: Montserrat;
+			  font-size: 20px;
+			  font-weight: 600;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: 1;
+			  letter-spacing: 0.2px;
+			  color: #ffffff;
+			}
+			.Remove-All {
+			  margin-left: 160px;
+			  margin-top: 5px;
+			  width: 62px;
+			  height: 12px;
+			  font-family: MuseoSans;
+			  font-size: 12px;
+			  font-weight: 300;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: 1;
+			  letter-spacing: normal;
+			  text-align: right;
+			  color: #ffffff;
+			}
+			i {
+				 margin-top: 5px;
+
+			}
+		}
+		.Rectangle-container{
+    		display: flex;
+    		flex-direction: column;
+  			.line_right {
+  				position: absolute;
+  				order:2;
+  				flex:1;
+  				line-height: 1;
+  				margin-left: 28px;
+    			flex-direction: column;
+    			padding: 5px;
+    			height: 693px;
+    			width: 393px;
+  				overflow: scroll;
+			}
+			.line_right small {
+				flex:1;
+				margin-left: 35px;
+
+				
+			}
+			.line_small_container .remove-container {
+				position: absolute;	
+				margin-top: 20px;
+				margin-left: 350px;			
+			}
+			.line-2 {
+				order:1;
+				flex: 1;
+				margin-top: -12px;
+				margin-left: 27px;
+				width: 2px;
+  				height: 693px;
+  				background-color: #e7e6e6;
+			}
+
+		}
+
+    }
+	.chris {
+		margin-top: 20px;
+		width: 109px;
+		height: 14px;
+		font-family: MuseoSans;
+		font-size: 14px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		color: #414042;
+	}
+	.risk {
+		width: 111px;
+		height: 10px;
+		font-family: Montserrat;
+		font-size: 10px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1;
+		letter-spacing: 1px;
+		color: #1598cb;
+	}
+	.completed {
+	  width: 132px;
+	  height: 10px;
+	  font-family: Montserrat;
+	  font-size: 10px;
+	  font-weight: 300;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1;
+	  letter-spacing: 1px;
+	  color: #77787b;
+	}
+	.line_small_container {
+
+		width: 393px;
+  		height: 68px;
+  		border-bottom: 1px solid rgba(65, 64, 66, 0.1);
+	}
+	.remove-icon {
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 2px 2px 0 rgba(65, 64, 66, 0.1);
+        content: url('../../../assets/component/notification/exit-white@3x.png');
+	}
+	.triangle {
+		margin-left: 320px;
+	    position: absolute;
+	    top: -19px;
+	    right: 15px;
+	    width:0;
+	    border-bottom:solid 24px  #1598cb;
+	    border-right:solid 27px transparent;
+	    border-left:solid 27px transparent;
+	}
+	/*.triangle .empty {
+	    position: absolute;
+	    top:9px;
+	    left:-21px;
+	    width:0;
+	    border-bottom:solid 36px  #1598cb;
+	    border-right:solid 21px transparent;
+	    border-left:solid 21px transparent;
+	}*/
+
+ }
