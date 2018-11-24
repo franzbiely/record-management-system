@@ -64,6 +64,8 @@ import { DashBoxComponent } from './components/dash-box/dash-box.component';
 import { SimulationComponent } from './components/simulation/simulation.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 import 'hammerjs';
+import { SimulationCurrentComponent } from './components/simulation-current/simulation-current.component';
+import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -124,7 +126,9 @@ import 'hammerjs';
     PopupSendDocumentsComponent,
     DashBoxComponent,
     SimulationComponent,
-    SimulationScreenComponent
+    SimulationScreenComponent,
+    SimulationCurrentComponent,
+    SimulationCurrentScreenComponent
   ],
   imports: [
     BrowserModule,
