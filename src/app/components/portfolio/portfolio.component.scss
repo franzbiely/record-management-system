@@ -46,10 +46,10 @@
     display: none; //WARNING MODAL SET TO FLEX
     align-items: center;
     justify-content: center;
-    z-index:9999999;
+    z-index:1;
     width: 100%;
     @media only screen and (max-width:767px){
-        display: flex;
+        display: none;
         padding: 0px 20px
     }
     .exit{

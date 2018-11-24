@@ -114,6 +114,7 @@ $primaryfont : 'montserrat', sans-serif;
     display:flex;
     background-color: white;
     .sidebar-container{
+        display:none;
         .sidebar{
             position: relative;
             width: 256px;
@@ -266,24 +267,26 @@ $primaryfont : 'montserrat', sans-serif;
                     align-items: center;
                     .left-head-container{
                         .left-head{
-                            padding: 0px 20px 0px 88px;
+                            padding: 0px 0px 0px 88px;
                             height: 85px;
                             background-color: #fafbfc;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-                            .flex-right{
+                            .flex-left{
                                 display: flex;
-                                flex-direction: row;
+                                width: 100%;
+                                justify-content: space-between;
                                 align-items: center;
+                                box-sizing: border-box;
+                            }
+                            .flex-right{
                                 .btn-container{
                                     .btn-hide{
-                                        display: flex;
-                                        align-items: center;
+                                        width: auto;
                                         .hide-icon{
-                                            padding-left: 15px;
-                                            display: flex;
-                                            align-items: center;
+                                            padding-left: 18px;
+                                            margin-right: -1px;
                                             height: 20px;
                                             width: 20px;
                                             content: url("../../../assets/component/simulation/hide-gray@3x.png");
@@ -291,14 +294,9 @@ $primaryfont : 'montserrat', sans-serif;
                                     }
                                 }
                                 .score-container{
-                                    margin-right: 20px;
-                                }
-                                .btn-hide{
-                                    border:none;
-                                    border-radius: 6px;
-                                    box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-                                    background-color: #ffffff;
-                                    padding:14px 15px;
+                                    flex:1;
+                                    width:100%;
+                                    border: #1598cb 1px solid;
                                 }
                                 .btn-hide-text{
                                     font-family: $primaryfont;
@@ -314,7 +312,6 @@ $primaryfont : 'montserrat', sans-serif;
                             }
                         }
                     }
-                    
                     .left-section-body{
                         background-color: white;
                         .img-container{
@@ -334,39 +331,40 @@ $primaryfont : 'montserrat', sans-serif;
                     align-items: center;
                     .right-head-container{
                         .right-head{
-                            padding: 0px 60px 0px 44px;
+                            padding: 0px 40px 0px 44px;
                             height: 85px;
                             background-color: #fafbfc;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                        .flex-left{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            justify-content: space-between;
+                        }
                         .flex-right{
                             display: flex;
                             flex-direction: row;
                             align-items: center;
                             .btn-container{
                                 .btn-action{
+                                    width: auto;
                                     display: flex;
                                     align-items: center;
                                 .action-icon{
-                                padding-left: 18px;
-                                display: flex;
-                                align-items: center;
-                                color: gray;
-                                width: 20px;
-                                height: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    color: gray;
+                                    padding-left: 18px;
+                                    margin-right: -1px;
+                                    height: 20px;
+                                    width: 20px;
                                 }
                             }
                         }
                             .score-container{
                                 margin-right: 20px;
-                            }
-                            .btn-action{
-                                border:none;
-                                border-radius: 6px;
-                                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-                                background-color: #ffffff;
-                                padding:14px 15px;
                             }
                             .btn-action-text{
                                 font-family: $primaryfont;
