@@ -15,8 +15,8 @@ import { ProposalComponent } from './components/proposal/proposal.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule, MatRadioModule, MatCheckboxModule, MatTableModule } from '@angular/material';
-import { MatIconModule  } from '@angular/material/icon';
+import { MatTabsModule, MatRadioModule, MatCheckboxModule, MatTableModule, MatSliderModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
 import { DocumentationScreenComponent } from './screens/documentation-screen/documentation-screen.component';
 import { SupportScreenComponent } from './screens/support-screen/support-screen.component';
 import { SupportComponent } from './components/support/support.component';
@@ -63,7 +63,7 @@ import { PopupSendDocumentsComponent } from './components/popup-send-documents/p
 import { DashBoxComponent } from './components/dash-box/dash-box.component';
 import { SimulationComponent } from './components/simulation/simulation.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
-
+import 'hammerjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -134,7 +134,8 @@ import { SimulationScreenComponent } from './screens/simulation-screen/simulatio
     MatRadioModule,
     MatCheckboxModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatSliderModule
   ],
  
   providers: [],

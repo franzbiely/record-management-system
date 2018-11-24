@@ -1,45 +1,98 @@
 <div class="simulation-container">
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-content-container">
+        <div class="sidebar-content">
+          <div class="box">
+            <div class="title-container"><span class="box-title">Investment Amount:</span><i class="icon-question"></i></div>
+            <span class="text-value first-box">$800,000.00</span>
+          </div>
+          <div class="box">
+            <div class="title-container"><span class="box-title">Goal:</span><i class="icon-question"></i></div>
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">Retirement</span><i class="icon-drop"></i></div></div>
+          </div>
+          <div class="box">
+            <div class="title-container"><span class="box-title">Annual Distribution:</span><i class="icon-question"></i></div>
+            <div class="radio-container"><div class="radio-content"><mat-radio-button><span  class="radio-text">Fixed Amount ($)</span></mat-radio-button><mat-radio-button class="radio-2"><span  class="radio-text">Fixed Rate (%)</span></mat-radio-button></div></div> 
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">$32,000</span></div></div>
+          </div>
+          <div class="box">
+            <div class="title-container"><span class="box-title">Inflation:</span><i class="icon-question"></i></div>
+            <div class="radio-container"><div class="radio-content"><mat-radio-button color="accent"><span class="radio-text">Estimate</span></mat-radio-button><mat-radio-button class="radio-2"><span  class="radio-text">User Defined</span></mat-radio-button></div></div>
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">2%</span></div></div>
+          </div>
+          <div class="box">
+              <div class="title-container"><span class="box-title">Fee Adjustment:</span><i class="icon-question"></i></div>
+              <div class="slider-container"><div class="slider-content"><mat-slider class="slider" min="0" max="2.5" step=".1" thumbLabel value="1"></mat-slider></div></div>
+              <div class="slider-label-container"><div class="slider-label"><span class="label-text">0</span><span class="label-text">2.5</span></div></div>
+              <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">1%</span></div></div>
+              <div class="radio-container"><div class="radio-content"><mat-radio-button><span  class="radio-text">Fixed Amount ($)</span></mat-radio-button></div></div>
+          </div>
+          <div class="box">
+            <div class="title-container"><span class="box-title">Current Age:</span><i class="icon-question"></i></div>
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">45</span></div></div>
+          </div>
+          <div class="box">
+            <div class="title-container"><span class="box-title">Distribution Age:</span><i class="icon-question"></i></div>
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">65</span></div></div>
+          </div>
+          <div class="box">
+            <div class="title-container"><span class="box-title">Life Expectancy:</span><i class="icon-question"></i></div>
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">$95</span></div></div>
+          </div>
+          <div class="box">
+            <div class="title-container"><span class="box-title">Annual Saving:</span><i class="icon-question"></i></div>
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">$0</span></div></div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <!-- <div class="btn-open-close"><span class="text-open-close">Close</span></div> -->
+  </div>
   <div class="content-container">
-      <div class="left-section-container">
-        <div class="left-head-container">
-          <div class="left-head">
-          <div class="flex-left">
-            <div><span class="text-light">Current Portfolio</span><br/><span class="text-bold">Current holdings</span></div>
-          </div>
-          <div class="flex-right">
-            <div class="score-container"><span class="text-small">Equity</span><br/><span class="text-small-gray">Risk score: 87-100 (87)</span></div>
-            <div class="btn-container"><button class="btn-hide"><span class="btn-hide-text">Hide</span><i class="hide-icon"></i></button></div>
-          </div>
-        </div>
-      </div>
-      <div class="left-section-body">
-          <div class="img-container"><img class="graph-1"></div>
-        </div>
-      </div>
-    <div class="right-section-container">
-        <div class="right-head-container">
-          <div class="right-head">
-          <div class="flex-left">
-            <div><span class="text-light">Recommended Portfolio</span><br/><span class="text-bold">Jennica Fernen Capital<br/>Appreciation - DFA</span></div>
-          </div>
-          <div class="flex-right">  
-            <div class="score-container"><span class="text-small">Capital Appreciation</span><br/><span class="text-small-green">Risk score: 72-86 (82)</span></div>
-            <div class="btn-container"><button class="btn-action"><span class="btn-action-text">Actions</span><i class="material-icons action-icon">more_vert</i></button></div>
+    <div class="row-1">  
+      <div class="row-1-content">
+        <div class="left-section-container">
+          <div class="left-head-container">
+            <div class="left-head">
+            <div class="flex-left">
+              <div><span class="text-light">Current Portfolio</span><br/><span class="text-bold">Current holdings</span></div>
+            </div>
+            <div class="flex-right">
+              <div class="score-container"><span class="text-small">Equity</span><br/><span class="text-small-gray">Risk score: 87-100 (87)</span></div>
+              <div class="btn-container"><button class="btn-hide"><span class="btn-hide-text">Hide</span><i class="hide-icon"></i></button></div>
+            </div>
           </div>
         </div>
-      </div>
-        <div class="right-section-body">
-            <div class="img-container"><img class="graph-2"></div>
+        <div class="left-section-body">
+            <div class="img-container"><img class="graph-1"></div>
           </div>
-      </div>
-  
-    <!-- <div class="row-2">
+        </div>
+      <div class="right-section-container">
+          <div class="right-head-container">
+            <div class="right-head">
+            <div class="flex-left">
+              <div><span class="text-light">Recommended Portfolio</span><br/><span class="text-bold">Jennica Fernen Capital<br/>Appreciation - DFA</span></div>
+            </div>
+            <div class="flex-right">  
+              <div class="score-container"><span class="text-small">Capital Appreciation</span><br/><span class="text-small-green">Risk score: 72-86 (82)</span></div>
+              <div class="btn-container"><button class="btn-action"><span class="btn-action-text">Actions</span><i class="material-icons action-icon">more_vert</i></button></div>
+            </div>
+          </div>
+        </div>
+          <div class="right-section-body">
+              <div class="img-container"><img class="graph-2"></div>
+            </div>
+        </div>
+      </div>  
+    </div>
+    <div class="row-2">
       <div class="row-2-content">
         <div class="graph-container"><img class="circle-graph-1"></div>
         <div class="table-container">
           <table>
             <tr>
-              <th colspan="3">Project</th>
+              <th colspan="3">Projected Returns vs. Volatility</th>
             </tr>
             <tr>
               <td>6.19%</td>
@@ -65,6 +118,99 @@
         </div>
         <div class="graph-container"><img class="circle-graph-2"></div>
       </div>
-    </div> -->
+    </div>
+    <div class="row-3">
+      <div class="row-3-content">
+        <div class="table-container">
+          <table>
+            <tr>
+            <th colspan="4">Portfolio Allocation Comparison & Results</th>
+            </tr>
+            <tr class="sub-header">
+              <td >Current Portfolio</td>
+              <td rowspan="2">Asset Class</td>
+              <td>Capital Appreciation (72-86)</td>
+              <td rowspan="2">Increase/<br/>Decrease</td>
+            </tr>
+            <tr class="sub-header">
+              <td>% of total</td>
+              <td>% of total</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-1"></div><div><span class="asset-class">Cash & Cash Alternatives</span></div></div></td>
+              <td>3%</td>
+              <td>3%</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-2"></div><div><span class="asset-class">U.S. Short Investment Grade Bonds</span></div></div></td>
+              <td>47%</td>
+              <td>47%</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-3"></div><div><span class="asset-class">Global Short Bonds</span></div></div></td>
+              <td>12%</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>81%</td>
+              <td><div class="td-2-container"><div class="circle color-4"></div><div><span class="asset-class">U.S. Small Neutral Stocks</span></div></div></td>
+              <td>9%</td>
+              <td>(72%)</td>
+            </tr>
+            <tr>
+              <td>14%</td>
+              <td><div class="td-2-container"><div class="circle color-5"></div><div><span class="asset-class">U.S. Large Neutral Stocks</span></div></div></td>
+              <td>0%</td>
+              <td>(14%)</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-6"></div><div><span class="asset-class">U.S. Stocks</span></div></div></td>
+              <td>6%</td>
+              <td>6%</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-7"></div><div><span class="asset-class">Emerging Markets Stocks</span></div></div></td>
+              <td>11%</td>
+              <td>11%</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-8"></div><div><span class="asset-class">International Small Neutral Stocks</span></div></div></td>
+              <td>5%</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-9"></div><div><span class="asset-class">International Large Neutral Stocks</span></div></div></td>
+              <td>4%</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td><div class="td-2-container"><div class="circle color-10"></div><div><span class="asset-class">REITs</span></div></div></td>
+              <td>3%</td>
+              <td>3%</td>
+            </tr>
+            <tr>
+              <td>5%</td>
+              <td><div class="td-2-container"><div class="circle color-11"></div><div><span class="asset-class">Other</span></div></div></td>
+              <td>0%</td>
+              <td>(5%)</td>
+            </tr>
+            <tr class="row-total">
+              <td>100%</td>
+              <td>Total:</td>
+              <td>100%</td>
+              <td>0%</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
