@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-cancel-save',
@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cancel-save.component.scss']
 })
 export class CancelSaveComponent implements OnInit {
+  
+  cancelFunc() {
+  	this.cancelEvent.emit(true);
+  }
+  saveFunc() {
+  	this.saveEvent.emit(true);
+  }
+
+  @Output() cancelEvent = new EventEmitter<boolean>();
+  @Output() saveEvent = new EventEmitter<boolean>();
+
+
 
   constructor() { }
-
-  ngOnInit() {
-  }
+  
+  
+  ngOnInit() {}
 
 }

@@ -66,6 +66,7 @@
         </div>
       </div>
   </div>
-  <app-cancel-save></app-cancel-save>
+  <!-- <app-cancel-save [saveFunc]="saveFunc" [cancelFunc]="closeMe()"></app-cancel-save> -->
+  <app-cancel-save (cancelEvent)=cancelReceiver($event) (saveEvent)=saveReceiver($event)></app-cancel-save>
 </ng-container>
 

@@ -14,6 +14,14 @@ export class ViewAddGraphsComponent implements OnInit {
   closeMe() {
     this.closeMeEvent.emit(true)
   }
+  
+  cancelReceiver($event) {
+    this.closeMe();
+  }
+  saveReceiver($event) {
+    alert('Saving!');
+    this.closeMe();
+  }
   constructor() { }
 
   ngOnInit() {
