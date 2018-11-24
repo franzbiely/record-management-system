@@ -1,13 +1,14 @@
 .dialog-container{
     position: absolute;
     left: 0;
-    z-index: 99999999;
+    z-index: 100;
     width: 100%;
     top: 0px;
     background-color: #ffffffb3;
     padding-top: 120px;
-    padding-bottom: 30px;
-
+    padding-bottom: 50px;
+    margin-bottom:150px;
+    
     .open-dialog{
         position: relative;
         width: calc(100vw - 150px);
@@ -126,4 +127,5 @@
     top: 10px;
     right: 10px;
     color: grey;
+    cursor:pointer;
 }

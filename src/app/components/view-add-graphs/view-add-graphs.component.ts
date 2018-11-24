@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-view-add-graphs',
@@ -9,17 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewAddGraphsComponent implements OnInit {
 
-  modal : boolean = false;
+ @Output() closeMeEvent = new EventEmitter<boolean>();
+
+  closeMe() {
+    this.closeMeEvent.emit(true)
+  }
   constructor() { }
 
   ngOnInit() {
 
   }
-  
-  openModal(e){
-    this.modal = e;
-  }
-
-
 
 }

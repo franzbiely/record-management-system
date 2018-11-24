@@ -1,3 +1,6 @@
+.cancel-save-container {
+    z-index:200;
+}
 .container-btn{
     position: fixed;
     left: 0;
@@ -5,7 +8,7 @@
     background-color: #ffffff;
     width: 100%;
     padding: 10px;
-
+    
         
     .btn-group{
         display: flex;

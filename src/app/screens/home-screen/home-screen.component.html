@@ -35,7 +35,7 @@
     				  [addAction]="showViewAndAddAnalytics"
     				  [headerRightType]="'add'"></app-dash-box>
 		</div>
-		<app-view-add-graphs *ngIf="openModal"></app-view-add-graphs>
+		<app-view-add-graphs *ngIf="openModal" (closeMeEvent)="closeModal($event)" ></app-view-add-graphs>
 	</div>
 </main>
 

@@ -19,6 +19,10 @@ export class HomeScreenComponent implements OnInit {
   showViewAndAddAnalyticsCallback = function() {
     this.openModal = true;
   }
+
+  closeModal($event) {
+    this.openModal = false;
+  }
 }
 
 export interface Households{

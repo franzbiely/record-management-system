@@ -219,10 +219,14 @@ button {
     }
 }
 main {
+    min-height: 1000px;
     display:flex;
     flex-direction: row;
     > .content {
         flex:1;
         padding: 30px;
     }
+}
+app-sidebar {
+    background: #fff;
 }
