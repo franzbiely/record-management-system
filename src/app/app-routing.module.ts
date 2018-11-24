@@ -22,6 +22,7 @@ import { DocumentationBookmarkScreensComponent } from './screens/documentation-b
 import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
+import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
 const routes: Routes = [
   {
     path: '',
@@ -113,9 +114,14 @@ const routes: Routes = [
   },{
     path: 'create-household',
     component: CreateNewHouseholdComponent
-  },{
+  },
+  {
     path: 'simulation',
     component: SimulationScreenComponent
+  },
+  {
+    path: 'simulation-current',
+    component: SimulationCurrentScreenComponent
   }
 ];
 

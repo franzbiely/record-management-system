@@ -60,6 +60,8 @@ import { AdviserSearchPopupComponent } from './components/adviser-search-popup/a
 import { SimulationComponent } from './components/simulation/simulation.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 import 'hammerjs';
+import { SimulationCurrentComponent } from './components/simulation-current/simulation-current.component';
+import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -116,7 +118,9 @@ import 'hammerjs';
     ViewAddGraphsComponent,
     AdviserSearchPopupComponent,
     SimulationComponent,
-    SimulationScreenComponent
+    SimulationScreenComponent,
+    SimulationCurrentComponent,
+    SimulationCurrentScreenComponent
   ],
   imports: [
     BrowserModule,

@@ -2,11 +2,11 @@
     <div class="container-box">
       <div class="container-tab"> 
         <div class="content">
-          <div class="assessment-front">
+          <div class="assessment-front" *ngIf="front">
             <div>
               <h2>Risk Assessment Questionnaire</h2>
             </div>
-            <div>
+            <div class="btn-container">
               <button>Take Questionnaire</button>
               <button>Send Questionnaire</button>
               <button>Select Target Risk</button>
@@ -15,26 +15,38 @@
               <a href="#">Copy Questionnaire Link</a>
             </div>
           </div>
-          <div class="selected-assessed" *ngIf="survey" >
+          <div class="selected-assessed" *ngIf="survey">
+            <div class="overlay"></div>
             <div class="assessed-left">
               <div>
                 <h3>Select Assessed Target Risk:</h3>
               </div>
               <div>
                 <div>
-                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Defensive</p><span>Risk Score Range: <b>1.14</b></span></div></div>
+                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Defensive</p><span>Risk Score Range: <b>1-14</b></span></div></div>
+                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Conservative</p><span>Risk Score Range: <b>15-29</b></span></div></div>
+                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Balanced</p><span>Risk Score Range: <b>30-43</b></span></div></div>
+                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Moderate</p><span>Risk Score Range: <b>44-57</b></span></div></div>
+                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Moderate Growth</p><span>Risk Score Range: <b>58-71</b></span></div></div>
+                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Capital Appreciation</p><span>Risk Score Range: <b>72-86</b></span></div></div>
+                    <div class="radio-container"><mat-radio-button></mat-radio-button><div class="checkbox-label"><p>Equity</p><span>Risk Score Range: <b>87-100</b></span></div></div>
                 </div>
               </div>
             </div>
             <div class="assessed-right">
-              <article>
-                <section>
-                  By submitting this risk assessment, I confirm that I am the client's investment adviser and have determined the assessment's suitability given the client's stated risk/reward profile, or that I have provided documentation to Loring Ward that reflects the assessment's suitability given the client's stated risk/reward profile. 
-                </section> 
-                <section> 
-                  By directly submitting the above-listed assessment or directing Loring Ward to submit the above-listed assessment, I confirm that have records to demonstrate, that the above-listed assessment is suitable. I also confirm I have an existing business relationship with the client. Based upon knowledge gained through this relationship and documentation contained in the client file, I affirm the client's suitability information to be accurate. I understand that Loring Ward may request additional client information prior to investing the account.
-                </section>    
-              </article>
+              <div class="article-container">
+                <mat-checkbox></mat-checkbox>
+                <article>
+                    <section>
+                    By submitting this risk assessment, I confirm that I am the client's investment adviser and have determined the assessment's suitability given the client's stated risk/reward profile, or that I have provided documentation to Loring Ward that reflects the assessment's suitability given the client's stated risk/reward profile. <br/><br/>
+                    By directly submitting the above-listed assessment or directing Loring Ward to submit the above-listed assessment, I confirm that have records to demonstrate, that the above-listed assessment is suitable. I also confirm I have an existing business relationship with the client. Based upon knowledge gained through this relationship and documentation contained in the client file, I affirm the client's suitability information to be accurate. I understand that Loring Ward may request additional client information prior to investing the account.
+                  </section>  
+                </article>    
+              </div>
+              <div class="btn-container">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-cancel">Confirm</button>
+              </div>
             </div>
           </div> 
           <div class="assessment-complete" *ngIf="copied">
@@ -52,7 +64,7 @@
               </div>
             </div>
           </div> 
-          <div class="assessment-confirmation" *ngIf="confirm">
+          <div class="assessment-confirmation"> <!----*ngIf="confirm"--->
               <div class="box-message">
                 <div>
                   <p>Status:</p>
