@@ -8,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DashBoxComponent implements OnInit {
 	@Input() isNew: boolean;
 	@Input() title: string;
+  @Input() subTitle: string;
 	@Input() addLabel : string;
 	@Input() data: any;
   @Input() addAction: Function;
+  @Input() headerRightType: string;
+
   constructor() { }
   
   ngOnInit() {

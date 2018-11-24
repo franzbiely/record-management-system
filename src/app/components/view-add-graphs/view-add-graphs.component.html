@@ -7,60 +7,61 @@
         </div> 
         <div class="dialog-content">
           <div class="box-container">
-            <div class="box">
-              <div class="box-header">
-                <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-              </div>
-              <div class="box-content">
-                <img src="../../../assets/second-graph.png">
-              </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/first-graph.png">
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/third-graph.png">
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/first-graph.png">
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                  <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                  <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                </div>
-                <div class="box-content">
-                  <img src="../../../assets/third-graph.png">
-                </div>
-              </div>
-              <div class="box">
-                  <div class="box-header">
-                    <div class="box-title"><h2>Opportunity AUM</h2><p>Forecast Time</p></div>
-                    <div class="box-checkbox"><mat-checkbox></mat-checkbox></div>
-                  </div>
-                  <div class="box-content">
-                    <img src="../../../assets/second-graph.png">
-                  </div>
-              </div>
+
+            <app-dash-box [title]="'Opportunity AUM'" 
+                          [subTitle]="'Forecast Overtime'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-1.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'# of Proposals'" 
+                          [subTitle]="'In Progress'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-2.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'Implmented Proposals'" 
+                          [subTitle]="'Overtime'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-3.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'Total Value of Proposals'" 
+                          [subTitle]="'By Month'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-4.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'Total Proposals'" 
+                          [subTitle]="'By Risk'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-5.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'Total Value of Proposals'" 
+                          [subTitle]="'By Portfolio'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-6.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'By Days Old (Last 30 Days)'" 
+                          [subTitle]="'By Days Old (Last 30 Days)'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-7.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'Of Proposals Status'" 
+                          [subTitle]="'Of Proposals Status'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-8.png">
+            </app-dash-box>
+
+            <app-dash-box [title]="'Count of Proposals'" 
+                          [subTitle]="'By Status'" 
+                          [headerRightType]="'select'">
+              <img src="../../../assets/graph-9.png">
+            </app-dash-box>
+
           </div>
         </div>
       </div>

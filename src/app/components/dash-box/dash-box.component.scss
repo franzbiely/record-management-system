@@ -20,21 +20,30 @@ $btnFontSize: 10pt;
 
 %header-title {
   display: inline-block;
-  height: 20px;
-  font-size: 20px;
+  font-size: 18.8px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: 0.2px;
   padding: 10px;
+  sub {
+    display: block;
+    font-size: 13.1px;
+    margin-top: 10px;
+  }
 }
 
 %container-info {
   height: 250px;
   overflow: scroll;
   width: 100%;
+  color:#222;
   background-color: $primaryColor;
+  margin:auto;
+  img {
+    width: 100%;
+  }
 }
 
 %grey-text {
@@ -117,7 +126,9 @@ $line, $spacing) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    .btn-right-space {
+      padding: 15px;
+    }
     span.btn {
       cursor: pointer;
       align-items: center;
@@ -151,6 +162,7 @@ $line, $spacing) {
   }
   .container-info {
     @extend %container-info;
+
     .info-item {
       @include info-item(10px,
       20px,
@@ -179,6 +191,9 @@ $line, $spacing) {
     .info-item:nth-child(odd) {
       border-bottom: $itemDivider;
       border-top: $itemDivider;
+    }
+    img {
+      width: 100%;
     }
   }
 }

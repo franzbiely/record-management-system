@@ -5,13 +5,16 @@
 		<div class="recent-container">
 			<app-dash-box [isNew]="true"
 	    				  [title]="'Recent Household'"
-	    				  [addLabel]="'Add Household'"></app-dash-box>
+	    				  [addLabel]="'Add Household'"
+	    				  [headerRightType]="'add'"></app-dash-box>
 			<app-dash-box [isNew]="true"
 	    				  [title]="'Recent Proposals'"
-	    				  [addLabel]="'Add Proposals'"></app-dash-box>
+	    				  [addLabel]="'Add Proposals'"
+	    				  [headerRightType]="'add'"></app-dash-box>
 			<app-dash-box [isNew]="true"
 	    				  [title]="'Recent Documents'"
-	    				  [addLabel]="'Add Documents'"></app-dash-box>
+	    				  [addLabel]="'Add Documents'"
+	    				  [headerRightType]="'add'"></app-dash-box>
     	</div>
 		<!-- <app-home [households]="households"></app-home> -->
 
@@ -29,7 +32,8 @@
 			<app-dash-box [isNew]="true"
     				  [title]="''"
     				  [addLabel]="'Add'"
-    				  [addAction]="showViewAndAddAnalytics"></app-dash-box>
+    				  [addAction]="showViewAndAddAnalytics"
+    				  [headerRightType]="'add'"></app-dash-box>
 		</div>
 		<app-view-add-graphs *ngIf="openModal"></app-view-add-graphs>
 	</div>

@@ -15,9 +15,11 @@ export class ViewAddGraphsComponent implements OnInit {
   ngOnInit() {
 
   }
-
+  
   openModal(e){
     this.modal = e;
   }
+
+
 
 }

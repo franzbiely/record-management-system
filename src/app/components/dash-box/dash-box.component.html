@@ -8,21 +8,32 @@
 
 
 	<div class="box-head">
-	  <div><h2>{{title}}</h2></div>
+	  <div>
+	  	<h2>{{title}} <sub *ngIf="subTitle">{{subTitle}}</sub></h2>
+	  </div>
+
 	  <div class="btn-right-space">
-	  	<span class="btn">
+
+	  	<span class="btn" *ngIf="headerRightType=='add'">
 	  		<i class="material-icons">add_circle</i>
 	  		<span class="icon-title">Add</span>
 	  	</span>
+		
+		<div class="box-checkbox" *ngIf="headerRightType=='select'">
+			<mat-checkbox></mat-checkbox>
+		</div>
 	  </div> 
 	</div>
 	<div class="container-info">
-	  <div class="info-item" *ngFor="let household of households">
-	    <div class="item-one">{{ data.name }}</div>
-	    <div class="item-two">
-	      <div class="item-two-amount">{{ data.value }}</div>
-	      <div class="item-two-date">{{ data.date }}</div>
-	    </div>
-	  </div>
+		<ng-content></ng-content>
+
+		 <!--  WILL BE USED IN HOME/DASH
+		 <div class="info-item" *ngFor="let household of households">
+		    <div class="item-one">{{ data.name }}</div>
+		    <div class="item-two">
+		      <div class="item-two-amount">{{ data.value }}</div>
+		      <div class="item-two-date">{{ data.date }}</div>
+		    </div>
+		  </div> -->
 	</div>
 </div>
