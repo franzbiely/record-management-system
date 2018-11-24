@@ -1,0 +1,13 @@
+.error-line {
+	color:#fc6860;
+	font-size: 12px;
+  	font-weight: 300;
+  	margin-bottom:13px;
+  	display: flex;
+    align-items: center;
+  	.i {
+  		background-color: #f47a64;
+  		color:#fff;
+  		margin-right:15px;
+  	}
+}
