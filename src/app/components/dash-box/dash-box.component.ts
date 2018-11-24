@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-dash-box',
   templateUrl: './dash-box.component.html',
   styleUrls: ['./dash-box.component.scss']
+
 })
 export class DashBoxComponent implements OnInit {
 	@Input() isNew: boolean;
@@ -11,9 +12,19 @@ export class DashBoxComponent implements OnInit {
 	@Input() addLabel : string;
 	@Input() data: any;
   @Input() addAction: Function;
+
+
+  modalHousehold: boolean = false;
   constructor() { }
   
   ngOnInit() {
+  }
+
+  @Output() addHousehold = new EventEmitter();
+  counter = 0;
+
+  showModalHousehold(){
+    this.addHousehold.emit(!this.modalHousehold);
   }
 
 }

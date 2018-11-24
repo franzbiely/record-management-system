@@ -3,7 +3,7 @@
 	<app-sidebar [currentPage]="'home'"></app-sidebar>
 	<div class="content">
 		<div class="recent-container">
-			<app-dash-box [isNew]="true"
+			<app-dash-box  (addHousehold)="household($event)"
 	    				  [title]="'Recent Household'"
 	    				  [addLabel]="'Add Household'"></app-dash-box>
 			<app-dash-box [isNew]="true"
@@ -32,6 +32,7 @@
     				  [addAction]="showViewAndAddAnalytics"></app-dash-box>
 		</div>
 		<app-view-add-graphs *ngIf="openModal"></app-view-add-graphs>
+		<app-household-list *ngIf="openHousehold"></app-household-list>
 	</div>
 </main>
 

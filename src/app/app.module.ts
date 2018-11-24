@@ -63,6 +63,7 @@ import { PopupSendDocumentsComponent } from './components/popup-send-documents/p
 import { DashBoxComponent } from './components/dash-box/dash-box.component';
 import { SimulationComponent } from './components/simulation/simulation.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
+import { HouseholdListComponent } from './components/household-list/household-list.component';
 
 
 @NgModule({
@@ -125,7 +126,8 @@ import { SimulationScreenComponent } from './screens/simulation-screen/simulatio
     PopupSendDocumentsComponent,
     DashBoxComponent,
     SimulationComponent,
-    SimulationScreenComponent
+    SimulationScreenComponent,
+    HouseholdListComponent
   ],
   imports: [
     BrowserModule,
