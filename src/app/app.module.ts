@@ -64,6 +64,7 @@ import { DashBoxComponent } from './components/dash-box/dash-box.component';
 import { SimulationComponent } from './components/simulation/simulation.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
