@@ -66,6 +66,8 @@ import { SimulationScreenComponent } from './screens/simulation-screen/simulatio
 import 'hammerjs';
 import { SimulationCurrentComponent } from './components/simulation-current/simulation-current.component';
 import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
+import { PopUpRotateComponent } from './components/pop-up-rotate/pop-up-rotate.component';
+import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
 
 
 @NgModule({
@@ -132,7 +134,9 @@ import { SimulationCurrentScreenComponent } from './screens/simulation-current-s
     SimulationCurrentComponent,
     SimulationCurrentScreenComponent,
     DropdownComponent,
-    ErrorLineComponent
+    ErrorLineComponent,
+    PopUpRotateComponent,
+    PopUpRotateScreenComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,7 @@ import { CreateNewHouseholdComponent } from './components/create-new-household/c
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
+import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
 const routes: Routes = [
   
   {
@@ -125,6 +126,10 @@ const routes: Routes = [
   {
     path: 'simulation-current',
     component: SimulationCurrentScreenComponent
+  },
+  {
+    path: 'pop-up-rotate',
+    component: PopUpRotateScreenComponent 
   }
 ];
 

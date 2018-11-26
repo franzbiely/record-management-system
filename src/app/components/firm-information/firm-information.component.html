@@ -92,7 +92,7 @@
               <span class="subtitle"> Add Your Firms Disclaimers by copy and pasting or upload a PDF. </span>
             </div>
           </div>
-          <div style="display: table-cell; vertical-align: middle;">
+          <div class="upload-container" style="display: table-cell; vertical-align: middle;">
             <div style="float: right; text-align: center;">
               <button class="btn-info btn-text-color">
               	<i class="icon-upload"></i> UPLOAD PDF
@@ -172,7 +172,7 @@
                   <input type="text" class="text-double flex-1" placeholder="Primary Phone #"> 
                 </div>
                 <div class="flex-1">
-                <button class="flex-1 btn-45 btn-dpn"> <span style="margin-left: -20px">Home</span></button>  <i class="icon-dpn"></i>
+                <button class="flex-1 btn-45 btn-dpn"><span>Home</span><i class="icon-dpn"></i></button>  
                 </div>
               </div>
               <div class="text-input-1 flex-1 flex">
@@ -180,7 +180,7 @@
                       <input type="text" class="text-double flex-1" placeholder="Secondary Phone #">
                     </div>
                     <div class="flex-1">
-                    <button class="flex-1 btn-45 btn-dpn"><span style="margin-left: -20px">Home</span></button>  <i class="icon-dpn"></i>
+                    <button class="flex-1 btn-45 btn-dpn"><span>Home</span><i class="icon-dpn"></i></button>
                     </div>
               </div>
               <div class="text-input-1 flex-1">
@@ -207,11 +207,11 @@
           </div>
           <div class="btn-can-save-container">
               <div class="vertical-space" style="display:inline-block; padding-right: 10px;">
-                <button class="btn-cancel" (click)="toPrev()">Cancel</button>
+                <button class="btn-cancel" (click)="toPrev()"><span class="btn-text">Cancel</span></button>
               </div> 
               <div style="display:inline-block;">
                   <button class="btn-info btn-text-color primary" (click)="toNext()">
-                  	<i class="material-icons">save</i> Save
+                  	<i class="material-icons">save</i> <span class="btn-text">Save</span>
                   </button>
               </div>  
             </div>

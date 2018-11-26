@@ -4,13 +4,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 2px 4px 0 rgba(64, 64, 65, 0.1);
+        background: #fafbfc; 
         .title-text-mobile{
             display: flex;
             justify-content: center;
             align-items: center;
             text-transform: uppercase;
             font-size:15px;
-            background: #fafbfc; 
             font-family: montserrat;
             color:#1598cb;
             font-weight: bold; 
@@ -36,11 +37,13 @@
                 min-width: 375px;
                 .container-tab{
                     width: calc(100% - 80px);
-                    padding: 10px 0 20px 0;
+                    padding: 10px 0 0px 0;
                     margin: 0 auto;
                     height: auto;
                     background-color: #ffffff;
-
+                    @media only screen and (max-width: 767px){
+                        width: 100%;
+                    }
                     .tab-holder{
 
                         nav{
@@ -222,6 +225,9 @@
                             display: flex;
                             justify-content: space-between;
                             flex-direction: column;
+                            @media only screen and (max-width: 767px){
+                                padding: 10px;
+                            }
                             .article-container{
                             display: flex;
                             padding: 20px;
@@ -260,81 +266,95 @@
                             }
                         }
                     }
-
-                    .assessment-complete{
-                        width: 300px;
-                        height: 300px;
-                        margin: 0 auto;
-                        background-color: #fafbfc;
-
-                        .box-message{
-                            text-align: center;
+                    .assessment-complete-container{
+                        @media only screen and (max-width: 767px){
+                            padding: 0px 10px;
+                        }
+                        .assessment-complete{
+                            width: 300px;
                             margin: 0 auto;
-                            width: 220px;
-                            padding-top: 20px;
-                            padding-bottom: 40px;
-                            
-                            div{
-                                margin-top: 10px;
-                                margin-bottom: 20px;
+                            background-color: #fafbfc;
+                            @media only screen and (max-width: 767px){
+                                width: 100%;
                             }
+                            .box-message-container{
+                                
+                            padding:20px;
+                                @media only screen and (max-width: 767px){
+                                   
+                                }
+                                .box-message{
+                                    padding:0px 40px;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                    .btn-container{
+                                        @media only screen and (max-width: 767px){
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                    }
+                                    div{
+                                        margin-top: 10px;
+                                        margin-bottom: 20px;
+                                    }
 
-                            button{
-                                width: 220px;
-                                height: 45px;
-                                border-radius: 6px;
-                                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-                                background-color: #ffffff;
-                                font-family: Montserrat;
-                                font-size: 12px;
-                                font-weight: 600;
-                                font-style: normal;
-                                font-stretch: normal;
-                                line-height: normal;
-                                letter-spacing: 1px;
-                                text-align: center;
-                                color: #77787b;
-                                border: none;
-                                outline: none;
-                                margin-top: 50px;
-                            }
+                                    button{
+                                        width: 220px;
+                                        height: 45px;
+                                        border-radius: 6px;
+                                        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+                                        background-color: #ffffff;
+                                        font-family: Montserrat;
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        line-height: normal;
+                                        letter-spacing: 1px;
+                                        text-align: center;
+                                        color: #77787b;
+                                        border: none;
+                                        outline: none;
+                                        margin-top: 50px;
+                                    }
 
-                            p{
-                                @include p(uppercase);
-                                color: #77787b;
-                                letter-spacing: 1px;
-                            }
+                                    p{
+                                        @include p(uppercase);
+                                        color: #77787b;
+                                        letter-spacing: 1px;
+                                    }
 
-                            h3{
-                                font-family: Montserrat;
-                                font-size: 16px;
-                                font-weight: 600;
-                                font-style: normal;
-                                font-stretch: normal;
-                                line-height: 1;
-                                letter-spacing: -0.4px;
-                                text-align: center;
-                                color: #414042;
-                                margin-top: 5px;
-                                margin-bottom: 5px;
-                            }
+                                    h3{
+                                        font-family: Montserrat;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        line-height: 1;
+                                        letter-spacing: -0.4px;
+                                        text-align: center;
+                                        color: #414042;
+                                        margin-top: 5px;
+                                        margin-bottom: 5px;
+                                    }
 
-                            h4{
-                                font-family: MuseoSans;
-                                font-size: 14px;
-                                font-weight: bold;
-                                font-style: normal;
-                                font-stretch: normal;
-                                line-height: 1;
-                                letter-spacing: normal;
-                                text-align: center;
-                                color: #414042;
-                                margin-top: 5px;
-                                margin-bottom: 40px;
+                                    h4{
+                                        font-family: MuseoSans;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        line-height: 1;
+                                        letter-spacing: normal;
+                                        text-align: center;
+                                        color: #414042;
+                                        margin-top: 5px;
+                                        margin-bottom: 40px;
+                                    }
+                                }
                             }
                         }
                     }
-
                     .assessment-confirmation{
                         width: 300px;
                         height: 300px;
@@ -415,11 +435,33 @@
                     }
 
                     .assessment-result{
+                        padding-top: 20px;
+                        width: 100%;
                         display: flex;
-
+                        align-items: center;
+                        @media only screen and (max-width: 767px){
+                            flex-direction: column;
+                        }
                         .container-left{
                             flex: 1;
-
+                            width: 100%;
+                            @media only screen and (max-width: 767px){
+                                box-shadow: 0 15px 30px 0 rgba(65, 64, 66, 0.1);
+                                background-color: #ffffff;
+                            }
+                            .left-section{
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                @media only screen and (max-width: 767px){
+                                    padding: 10px 10px 0px 10px;
+                                }
+                                .graph-1{
+                                    width: 100%;
+                                    margin-top: 32px;
+                                    content: url(/src/assets/component/risk-assessment/graph1.PNG)
+                                }
+                            }
                             h3{
                                 font-family: Montserrat;
                                 font-size: 16px;
@@ -450,12 +492,24 @@
                             flex: 1;
                             padding-left: 50px;
                             display: flex;
-
+                            width: 100%;    
+                            @media only screen and (max-width: 767px){
+                                flex-direction: column;
+                                padding:0px;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 30px;
+                            }
                             .container{
                                 flex: 1;
                                 display: flex;
                                 flex-direction: column;
-
+                                @media only screen and (max-width: 767px){
+                                display: flex;
+                                flex-direction: row;
+                                width: 100%;
+                                justify-content: space-evenly;
+                                }
                                 .item{
                                     padding: 10px;
 
@@ -538,6 +592,9 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
+                @media only screen and (max-width: 767px){
+                    padding:0px;
+                }
             }
             
             /* Hide the browser's default radio button */
