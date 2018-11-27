@@ -100,7 +100,8 @@
     				  [headerRightType]="'add'"></app-dash-box>
 		</div>
 		<app-view-add-graphs *ngIf="openModal" (closeMeEvent)="closeModal($event)" ></app-view-add-graphs>
-		<app-household-list *ngIf="openHousehold"></app-household-list>
+		<app-household-list *ngIf="openHousehold" (closeMeEvent)="household(false)"></app-household-list>
+
 	</div>
 </main>
 

@@ -1,4 +1,6 @@
-<section class="household-list-component">
+<app-household-member *ngIf="openMemberForm" (closeMeEvent)="memberForm(false)"></app-household-member>
+
+<section class="household-list-component" *ngIf="!openMemberForm">
 <div class="overlay"></div>
 
 <div class="box-container">
@@ -11,7 +13,9 @@
       </div>
 
       <div class="right-section">
-        <div class="add-container"><i class="icon-add"></i><span class="text-add">Add Manually</span></div> 
+        <div class="add-container" (click)="memberForm(true)">
+          <i class="icon-add"></i><span class="text-add">Add Manually</span>
+        </div> 
       </div>
 
     </div>
@@ -90,7 +94,7 @@
           </table>
           <div class="row-3">
             <div class="btn-container">
-              <button class="btn-cancel"><span>Cancel</span></button>
+              <button class="btn-cancel" (click)="closeMe()"><span>Cancel</span></button>
               <button class="btn-load"><span>Import</span></button>
             </div>
           </div>
@@ -109,7 +113,7 @@
           </div>
           <div class="row-3">
             <div class="btn-container">
-              <button class="btn-cancel"><span>Cancel</span></button>
+              <button class="btn-cancel" (click)="closeMe()"><span>Cancel</span></button>
               <button class="btn-load"><span>Load</span></button>
             </div>
           </div>
@@ -128,7 +132,7 @@
           </div>
           <div class="row-3">
             <div class="btn-container">
-              <button class="btn-cancel"><span>Cancel</span></button>
+              <button class="btn-cancel" (click)="closeMe()"><span>Cancel</span></button>
               <button class="btn-load"><span>Load</span></button>
             </div>
           </div>
@@ -137,3 +141,5 @@
       </div>
 </div>
 </div>
+
+

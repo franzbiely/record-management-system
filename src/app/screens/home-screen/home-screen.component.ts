@@ -12,6 +12,7 @@ export class HomeScreenComponent implements OnInit {
   openHousehold : boolean = false;
   households = Household; 
   showViewAndAddAnalytics : Function;
+
   constructor() { }
 
   ngOnInit() {
@@ -25,8 +26,7 @@ export class HomeScreenComponent implements OnInit {
     this.openModal = false;
     this.isNew = false;
   }
-
-  household($event){
+  household($event) {
     this.openHousehold = $event;
   }
 }
