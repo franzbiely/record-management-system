@@ -20,6 +20,7 @@ import { DocumentPreviewComponent } from './components/document-preview/document
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
 import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
+import { NotificationComponentComponent } from './components/notification-component/notification-component.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
 import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
@@ -119,6 +120,9 @@ const routes: Routes = [
     component: CreateNewHouseholdComponent
   },
   {
+    path: 'notification-component',
+    component: NotificationComponentComponent
+  },{
     path: 'simulation',
     component: SimulationScreenComponent
   },
