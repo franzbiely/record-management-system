@@ -51,7 +51,28 @@ import { QuickAddComponent } from './components/quick-add/quick-add.component';
 import { AddSecurityComponent } from './components/add-security/add-security.component';
 import { CancelSaveComponent } from './components/cancel-save/cancel-save.component';
 import { SearchComponent } from './components/search/search.component';
-import { SecurityDropdownAutocompleteComponent } from './components/security-dropdown-autocomplete/security-dropdown-autocomplete.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
+import { DocumentationBookmarkComponent } from './components/documentation-bookmark/documentation-bookmark.component';
+import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
+import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
+import { ViewAddGraphsComponent } from './components/view-add-graphs/view-add-graphs.component';
+import { AdviserSearchPopupComponent } from './components/adviser-search-popup/adviser-search-popup.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { ErrorLineComponent } from './components/error-line/error-line.component';
+import { PopupSendDocumentsComponent } from './components/popup-send-documents/popup-send-documents.component';
+import { DashBoxComponent } from './components/dash-box/dash-box.component';
+import { SimulationComponent } from './components/simulation/simulation.component';
+import { NotificationComponentComponent } from './components/notification-component/notification-component.component';
+import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
+import { SimulationCurrentComponent } from './components/simulation-current/simulation-current.component';
+import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
+import { PopUpRotateComponent } from './components/pop-up-rotate/pop-up-rotate.component';
+import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
+import { HouseholdListComponent } from './components/household-list/household-list.component';
+import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
+import { HouseholdMemberComponent } from './components/household-member/household-member.component';
+import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
+import { GraphProposalsComponent } from './components/graph-proposals/graph-proposals.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +123,30 @@ import { SecurityDropdownAutocompleteComponent } from './components/security-dro
     AddSecurityComponent,
     CancelSaveComponent,
     SearchComponent,
-    SecurityDropdownAutocompleteComponent
+    DisclaimerComponent,
+    DocumentationBookmarkComponent,
+    DocumentationBookmarkScreensComponent,
+    CreateNewHouseholdComponent,
+    ViewAddGraphsComponent,
+    AdviserSearchPopupComponent,
+    DropdownComponent,
+    ErrorLineComponent,
+    PopupSendDocumentsComponent,
+    DashBoxComponent,
+    SimulationComponent,
+    SimulationScreenComponent,
+    SimulationCurrentComponent,
+    SimulationCurrentScreenComponent,
+    DropdownComponent,
+    ErrorLineComponent,
+    NotificationComponentComponent,
+    PopUpRotateComponent,
+    PopUpRotateScreenComponent,
+    HouseholdListComponent,
+    HouseholdListScreenComponent,
+    HouseholdMemberComponent,
+    HouseholdMemberScreenComponent,
+    GraphProposalsComponent
   ],
   imports: [
     BrowserModule,

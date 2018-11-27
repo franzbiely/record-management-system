@@ -22,6 +22,10 @@ import { TestScreenComponent } from './screens/test-screen/test-screen.component
 const routes: Routes = [
   {
     path: '',
+    component: TestScreenComponent
+  },
+  {
+    path: 'dashboard',
     component: HomeScreenComponent
   },
   {
