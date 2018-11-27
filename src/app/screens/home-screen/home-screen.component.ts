@@ -9,7 +9,8 @@ export class HomeScreenComponent implements OnInit {
   isNew : boolean = false;
   analyticShow : boolean = false;
   openModal : boolean = false;
-  households = Household;
+  openHousehold : boolean = false;
+  households = Household; 
   showViewAndAddAnalytics : Function;
   constructor() { }
 
@@ -23,6 +24,10 @@ export class HomeScreenComponent implements OnInit {
   closeModal($event) {
     this.openModal = false;
     this.isNew = false;
+  }
+
+  household($event){
+    this.openHousehold = $event;
   }
 }
 

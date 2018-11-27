@@ -6,7 +6,8 @@
 			<app-dash-box [isNew]="isNew"
 						  [title]="'Recent Household'"
 	    				  [addLabel]="'Add Household'"
-	    				  [headerRightType]="'add'">
+	    				  [headerRightType]="'add'"
+	    				  (addHousehold)="household($event)">
 				<div class="info-item" *ngFor="let data of households">
 				    <div class="item-one">{{ data.name }}</div>
 				    <div class="item-two">
@@ -95,6 +96,7 @@
     				  [headerRightType]="'add'"></app-dash-box>
 		</div>
 		<app-view-add-graphs *ngIf="openModal" (closeMeEvent)="closeModal($event)" ></app-view-add-graphs>
+		<app-household-list *ngIf="openHousehold"></app-household-list>
 	</div>
 </main>
 

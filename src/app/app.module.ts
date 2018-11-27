@@ -67,6 +67,7 @@ import { SimulationScreenComponent } from './screens/simulation-screen/simulatio
 import 'hammerjs';
 import { SimulationCurrentComponent } from './components/simulation-current/simulation-current.component';
 import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
+import { HouseholdListComponent } from './components/household-list/household-list.component';
 
 @NgModule({
   declarations: [
@@ -133,7 +134,8 @@ import { SimulationCurrentScreenComponent } from './screens/simulation-current-s
     SimulationCurrentScreenComponent,
     DropdownComponent,
     ErrorLineComponent,
-    NotificationComponentComponent
+    NotificationComponentComponent,
+    HouseholdListComponent
   ],
   imports: [
     BrowserModule,
