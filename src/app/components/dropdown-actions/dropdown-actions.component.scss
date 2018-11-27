@@ -8,17 +8,16 @@
     letter-spacing: 1px;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 50px;
-    width: 196px;
-    background-color: #fafbfc;
     margin-bottom:30px;
     details {
+        background: #fff;
+        right: 55px;
+        position: absolute;
         summary {
             cursor: pointer;
             position:relative;
             height: 47px;
             display:flex;
-            background-color: #1598cb;
             flex: 1;
             flex-direction: row;
             justify-content: space-around;
@@ -33,11 +32,12 @@
                 color: #ffffff;
                 flex:1;
                 margin-left: 20px;
+                display:none;
             }
             .icon-action {
                 right: 13px;
-                color: #ffff;
             }
+
         }
         ul {
             padding: 0;
@@ -63,6 +63,21 @@
                     .icon {
                         right: 13px;
                     }
+                }
+            }
+        }
+        &[open] {
+                z-index: 9;
+
+            box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 50px;
+            width: 196px;
+            summary {
+                background-color: #1598cb;   
+                .title {
+                    display:block;
+                } 
+                .icon-action {
+                    color: #ffff;
                 }
             }
         }
