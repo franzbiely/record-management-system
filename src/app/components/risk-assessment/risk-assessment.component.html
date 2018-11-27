@@ -2,7 +2,7 @@
     <div class="container-box">
       <div class="container-tab"> 
         <div class="content">
-          <div class="assessment-front" *ngIf="front">
+          <div class="assessment-front" *ngIf="front" >
             <div>
               <h2>Risk Assessment Questionnaire</h2>
             </div>
@@ -64,7 +64,7 @@
               </div>
             </div>
           </div> 
-          <div class="assessment-confirmation"> <!----*ngIf="confirm"--->
+          <div class="assessment-confirmation" *ngIf="confirm">
               <div class="box-message">
                 <div>
                   <p>Status:</p>
@@ -82,10 +82,10 @@
               </div>
           </div>
 
-          <div class="assessment-result" *ngIf="result">
+          <div class="assessment-result" > <!--*ngIf="result"-->
             <div class="container-left">
               <div><h3>Your Assessed Target Risk Type: Capital Appreciation</h3></div>
-              <div>
+              <div class="left-section">
                 <article>
                     A Capital Appreciation target risk describes an investor that seeks long-term growth. 
                     These investors are interested in maximizing their investment’s growth potential and 
@@ -93,6 +93,7 @@
                     potentially achieve greater returns. These investors should have a long-term investment horizon, 
                     typically 15 years or more, to recover from potential market declines.
                 </article>
+                <div class="graph-container"><img class="graph-1"></div>
               </div>
               <div></div>
             </div>
@@ -126,20 +127,23 @@
                 </div>
                </div> 
               <div class="container"> 
-                  <div class="assessment-complete">
-                      <div class="box-message">
-                        <div>
-                          <p>Status:</p>
-                          <h3>Copied Risk Assessment Questionnaire Link By:</h3>
-                          <h4>Jennica Fermen</h4>
-                          
-                        </div>
-                        <div>
-                          <p>Date Copied: <b><span>9/20/2018</span></b></p>
-                          <p>View Results</p>
-                        </div>
-                        <div>
-                          <button>Re-Take Questionnaire</button>
+                <div class="assessment-complete-container">
+                    <div class="assessment-complete">
+                        <div class="box-message-container">
+                          <div class="box-message">
+                            <div>
+                              <p>Status:</p>
+                              <h3>Copied Risk Assessment Questionnaire Link By:</h3>
+                              <h4>Jennica Fermen</h4>
+                            </div>
+                            <div>
+                              <p>Date Copied: <b><span>9/20/2018</span></b></p>
+                              <p>View Results</p>
+                            </div>
+                            <div class="btn-container">
+                              <button>Re-Take Questionnaire</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

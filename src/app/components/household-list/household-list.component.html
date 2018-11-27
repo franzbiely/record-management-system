@@ -1,49 +1,113 @@
-<div class="household-list-modal-container fade">
-	<div class="household-list-modal">
-		<div class="header">
-			<div class="content">
-				<span class="title">Household List</span>
-				<span class="subtitle">Select from List</span>
-			</div>
-			<div class="content">
-				<span class="btn">
-			  		<i class="material-icons">add_circle</i>
-			  		<span class="icon-title">ADD HOUSEHOLD</span>
-		  		</span>
-			</div>
-		</div>
-		<div class="container-search">
-			<div class="add-padding"><span class="span-text">HOUSEHOLD CURRENTLY WITHIN THE SYSTEM</span></div>
-			<div>
-				<input type="text" class="search" placeholder="Search Name or ID">
-			</div>
-		</div>	
-		<div class="container-table">
-			<table>
-				<thead>
-					<tr>
-						<th>SELECT</th>
-						<th colspan="2">HOUSEHOLD NAME</th>
-						<th>ID</th>
-						<th>FIRST NAME</th>
-						<th>LAST NAME</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="padding-left-10"><mat-radio-button></mat-radio-button></td>
-						<td colspan="2">Rhoadees Household</td>
-						<td>9305</td>
-						<td>Wendy</td>
-						<td>Rhoades</td>
-					</tr>
 
-				</tbody>
-			</table>
-		</div>
-		<div class="container-event">
-			<button class="btn-cancel">CANCEL</button>
-			<button class="btn-cancel">NEXT</button>
-		</div>
-	</div>
+<div class="overlay"></div>
+
+<div class="box-container">
+  <div class="box-content">
+
+    <div class="box-head">
+
+      <div class="left-section">
+        <div class="box-title"><span class="text-title">Household List</span><span class="text-subtitle">Select From List</span></div>
+      </div>
+
+      <div class="right-section">
+        <div class="add-container"><i class="icon-add"></i><span class="text-add">Add Manually</span></div> 
+      </div>
+
+    </div>
+
+    <div class="box-body">
+
+      <div class="row-search">  
+
+        <div class="left-section">
+          <div class="text-search-container"><span class="text-search">Search In: </span></div>
+          <div class="option"><mat-radio-button class="text-radio-button">My Client Center</mat-radio-button><i class="icon-myclient"></i></div>
+          <div class="option"><mat-radio-button class="text-radio-button">Orion</mat-radio-button><i class="icon-orion"></i></div>
+          <div class="option"><mat-radio-button class="text-radio-button">Redtail</mat-radio-button><i class="icon-redtail"></i></div>
+        </div>
+
+        <div class="right-section">
+          <div class="search-container">
+            <input class="text-box" type="text" placeholder="Search Name or ID">
+          </div>
+        </div>
+      </div>
+
+      <div class="row-content">
+
+        <div class="table-container" *ngIf="list">
+          <table>
+            <tr>
+              <th>Select</th>
+              <th><span>Household name</span><i class="icon-dropdown"></i></th>
+              <th><span>ID</span><i class="icon-dropdown"></i></th>
+              <th><span>First Name</span><i class="icon-dropdown"></i></th>
+              <th><span>Last Name</span><i class="icon-dropdown"></i></th>
+            </tr>
+            <tr>
+              <td><mat-radio-button></mat-radio-button></td>
+              <td>Rhoades Household</td>
+              <td>9305</td>
+              <td>wendy</td>
+              <td>Rhoades</td>
+            </tr>
+            <tr>
+              <td><mat-radio-button></mat-radio-button></td>
+              <td>Rhoades Household</td>
+              <td>9305</td>
+              <td>wendy</td>
+              <td>Rhoades</td>
+            </tr>
+            <tr>
+              <td><mat-radio-button></mat-radio-button></td>
+              <td>Rhoades Household</td>
+              <td>9305</td>
+              <td>wendy</td>
+              <td>Rhoades</td>
+            </tr>
+            <tr>
+              <td><mat-radio-button></mat-radio-button></td>
+              <td>Rhoades Household</td>
+              <td>9305</td>
+              <td>wendy</td>
+              <td>Rhoades</td>
+            </tr>
+            <tr>
+              <td><mat-radio-button></mat-radio-button></td>
+              <td>Rhoades Household</td>
+              <td>9305</td>
+              <td>wendy</td>
+              <td>Rhoades</td>
+            </tr>
+            <tr>
+              <td><mat-radio-button></mat-radio-button></td>
+              <td>Rhoades Household</td>
+              <td>9305</td>
+              <td>wendy</td>
+              <td>Rhoades</td>
+            </tr>
+          </table>
+        </div>
+      
+      <div class="brand-container">
+        <div class="row-1">
+          <div class="brand-logo-container"><img class="logo-brand"></div>
+          <div class="information-container">
+            <span>Please enter your Orion Login and Password. We'll only store a related API key accessed from Orion and will never store your Login and Password</span>
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="email-container"><input class="email" type="text" placeholder="Email Address"></div>
+          <div class="password-container"><input class="password" type="password" placeholder="Enter your Password"></div>
+        </div>
+        <div class="row-3">
+          <div class="btn-container">
+            <button class="btn-cancel"><span>Cancel</span></button>
+            <button class="btn-load"><span>Load</span></button>
+          </div>
+        </div>
+      </div>
+
+      </div>
 </div>

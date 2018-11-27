@@ -43,7 +43,7 @@ body { margin: 0; font-family: Montserrat; }
 
 .mat-tab-label-active{
     box-shadow: 0 0 20px 2px rgba(65, 64, 66, 0.18);
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .mat-ink-bar{
@@ -119,21 +119,21 @@ body { margin: 0; font-family: Montserrat; }
 
 // global styles
 // input types
-input[type="text"] {
-    border-radius: 6px;
-    background-color: #ffffff;
-    font-size: 14px;
-    color: #c5c5c5;
-    font-family: MuseoSans;
-    font-size: 14px;
-    height: 45px;
-    line-height:45px;
-    font-weight: 300;
-    border: 1px solid #e7e6e6;
-    box-sizing: border-box;
-    padding: 15px;
-    margin-bottom: 10px;
-}
+// input[type="text"] {
+//     border-radius: 6px;
+//     background-color: #ffffff;
+//     font-size: 14px;
+//     color: #c5c5c5;
+//     font-family: MuseoSans;
+//     font-size: 14px;
+//     height: 45px;
+//     line-height:45px;
+//     font-weight: 300;
+//     border: 1px solid #e7e6e6;
+//     box-sizing: border-box;
+//     padding: 15px;
+//     margin-bottom: 10px;
+// }
 
 details{
     summary {
@@ -188,10 +188,8 @@ textarea {
 }
 button {
     border-radius: 6px;
-    box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
     border: solid 1px #ffffff;
     background-color: #ffffff;
-    margin: 0px 30px 0 20px;
     font-size: 12px;
     font-weight: 600;   
     color: #808284;
@@ -201,9 +199,6 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    i {
-        margin-right:15px;
-    }
     &:hover {
         border-color:#808284;
     }
@@ -223,6 +218,9 @@ main {
     min-height: 1000px;
     display:flex;
     flex-direction: row;
+    @media only screen and (max-width: 767px){
+        flex-direction: column-reverse;
+    }
     > .content {
         flex:1;
         padding: 30px;

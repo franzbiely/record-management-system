@@ -64,10 +64,12 @@ import { DashBoxComponent } from './components/dash-box/dash-box.component';
 import { SimulationComponent } from './components/simulation/simulation.component';
 import { NotificationComponentComponent } from './components/notification-component/notification-component.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
-import 'hammerjs';
 import { SimulationCurrentComponent } from './components/simulation-current/simulation-current.component';
 import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
+import { PopUpRotateComponent } from './components/pop-up-rotate/pop-up-rotate.component';
+import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
 import { HouseholdListComponent } from './components/household-list/household-list.component';
+import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
 
 @NgModule({
   declarations: [
@@ -135,7 +137,10 @@ import { HouseholdListComponent } from './components/household-list/household-li
     DropdownComponent,
     ErrorLineComponent,
     NotificationComponentComponent,
-    HouseholdListComponent
+    PopUpRotateComponent,
+    PopUpRotateScreenComponent,
+    HouseholdListComponent,
+    HouseholdListScreenComponent
   ],
   imports: [
     BrowserModule,

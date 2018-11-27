@@ -7,13 +7,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 2px 4px 0 rgba(64, 64, 65, 0.1);
+        background: #fafbfc; 
         .title-text-mobile{
             display: flex;
             justify-content: center;
             align-items: center;
             text-transform: uppercase;
             font-size:15px;
-            background: #fafbfc; 
             font-family: montserrat;
             color:#1598cb;
             font-weight: bold; 
@@ -706,20 +707,27 @@
         line-height: 1;
         letter-spacing: normal;
         color: #808284;
-        
+        display: flex;
+        align-items: center;
     }
-    .btn-group-orient {
+    .btn-orient{
+        width: 100%;
+    }
+    .btn-group-orient{
         @media only screen and (max-width: 767px){
             display: flex;
             justify-content: space-between;
         }
     }
-  
     .orient-container {
         padding: 10px 15px;
         border: solid 1px #c5c5c5;
-      
-        
+        div{
+            @media only screen and (max-width: 767px){
+            display: flex;
+            justify-content: space-between;
+            }
+        }   
     }
     .landscape-box {
         @media only screen and (max-width: 767px){
@@ -790,7 +798,6 @@
         letter-spacing: 0.2px;  
     }
     .align-center{
-        display: flex;
         align-items: center;
     }
     .radio-text {
@@ -892,6 +899,8 @@
             padding-right: 20px;
             .btn-default {
                 text-transform: uppercase;
+                margin: 0px;
+                width:auto;
                 border-radius: 6px;
                 border: none;
                 background-color: #ffffff;
@@ -910,6 +919,8 @@
             text-transform: uppercase;
             border-radius: 6px;
             border: none;
+            margin:0px;
+            width:auto;
             background-color: #1598cb;
             padding: 16px 26.5px;
             font-family: montserrat;
@@ -919,6 +930,11 @@
             text-transform: uppercase;
             font-size: 12px;
             box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+            @media only screen and (max-width: 767px){
+                margin:0px;
+                margin-right: 10px;
+                width:auto;
+            }
         }
     }
     .div-group {

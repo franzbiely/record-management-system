@@ -41,6 +41,7 @@ $linkInActive : #c5c5c5;
         @media screen and (max-width: 767px){
             flex-direction: row;
             justify-content: space-evenly;
+            margin: 0px;
         }
 
         li{
@@ -62,6 +63,10 @@ $linkInActive : #c5c5c5;
                 padding: 10px 0 15px;
                 &.link-active {
                     border-left-color:#1598cb;
+                    @media only screen and (max-width: 767px){
+                        border-left: none;
+                        border-bottom: 3px solid #1598cb;
+                    }
                 }
                 &:hover {
                     color: #777;
