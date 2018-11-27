@@ -70,6 +70,10 @@
 		<div class="container-analytics" *ngIf="!analyticShow">
 
 			<ng-container *ngIf="!isNew">
+				<app-dash-box [title]="'Adjust Parameters'" 
+                          [headerRightType]="'select'">
+                          <h2>Hello World</h2>
+                </app-dash-box>
 				<app-dash-box [title]="'Opportunity AUM'" 
                           [subTitle]="'Forecast Overtime'" 
                           [headerRightType]="'select'">
