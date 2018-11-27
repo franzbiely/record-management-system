@@ -28,6 +28,8 @@ import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-u
 import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
 import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
+import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-proposal-screen.component';
+
 const routes: Routes = [
   
   {
@@ -37,6 +39,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: HomeScreenComponent
+  },
+  {
+    path: 'proposal',
+    component: NewProposalScreenComponent
   },
   {
     
