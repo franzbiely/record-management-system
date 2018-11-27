@@ -8,7 +8,15 @@
     background-color: #ffffff;
     width: 100%;
     padding: 10px;
-    
+    &.block {
+        position: relative;
+        .btn-group {
+            padding:0;
+            > div {
+                margin:10px;
+            }
+        }
+    }
         
     .btn-group{
         display: flex;

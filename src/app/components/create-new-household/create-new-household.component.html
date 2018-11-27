@@ -1,6 +1,7 @@
 <app-household-member *ngIf="openHouseHoldModal" (closeMeEvent)="householdModal(false)"></app-household-member>
 
-<div class="modal-box-container">
+<div class="modal-box-container" *ngIf="openProposalForm">
+  <div class="overlay"></div>
   <div class="modal-box-content">
     <div class="modal-box">
       <div class="box-head">
@@ -9,6 +10,11 @@
       <div class="box-body">
         <div><span>Proposal Name:</span></div>
         <div class="text-box-container"><input type="text" class="text-box" placeholder="Enter Proposal Name Here..."></div>
+        <footer>
+          <app-cancel-save
+            (cancelEvent)="cancelReceiver()" (saveEvent)="nextReceiver($event)"
+            [containerStyle]="'block'" [primaryLabel]="'Next'"></app-cancel-save>
+        </footer>
       </div>
     </div>
   </div>
@@ -101,7 +107,7 @@
     </div>
     <div class="fade container-add"> 
       <a>
-        <div class="flex-block">
+        <div class="flex-block" (click)="openProposalForm=true">
         <div><i class="icon-circle-add"></i></div>
         <div><span>Add Proposals</span></div>
        </div>

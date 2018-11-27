@@ -1,10 +1,11 @@
-<div class="container-btn cancel-save-container">
+<div class="container-btn cancel-save-container" [ngClass]="containerStyle">
     <div class="btn-group">
       <div>
         <button class="btn-cancel" (click)="cancelFunc()">Cancel</button>
       </div>
       <div>
-        <button class="btn-save" (click)="saveFunc()"><i class="material-icons">save</i> Save</button>
+        <button class="btn-save" (click)="saveFunc()" *ngIf="!primaryLabel"><i class="material-icons">save</i> Save</button>
+        <button class="btn-save" (click)="saveFunc()" *ngIf="primaryLabel">{{primaryLabel}}</button>
       </div>
     </div>
   </div>
