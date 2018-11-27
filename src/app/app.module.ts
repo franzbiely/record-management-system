@@ -74,6 +74,8 @@ import { HouseholdMemberComponent } from './components/household-member/househol
 import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
 import { CreateHouseholdScreenComponent } from './screens/create-household-screen/create-household-screen.component';
 import { ActiveArchiveComponent } from './components/active-archive/active-archive.component';
+import { CalendarModalComponent } from './components/calendar-modal/calendar-modal.component';
+import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 
 @NgModule({
   declarations: [
@@ -148,7 +150,9 @@ import { ActiveArchiveComponent } from './components/active-archive/active-archi
     HouseholdMemberComponent,
     HouseholdMemberScreenComponent,
     CreateHouseholdScreenComponent,
-    ActiveArchiveComponent
+    ActiveArchiveComponent,
+    CalendarModalComponent,
+    CalendarModalScreenComponent
   ],
   imports: [
     BrowserModule,

@@ -27,6 +27,7 @@ import { SimulationCurrentScreenComponent } from './screens/simulation-current-s
 import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
 import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
 import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
+import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 const routes: Routes = [
   
   {
@@ -145,6 +146,10 @@ const routes: Routes = [
   {
     path: 'household-member',
     component: HouseholdMemberScreenComponent 
+  },
+  {
+    path: 'calendar-modal',
+    component: CalendarModalScreenComponent 
   }
 ];
 @NgModule({
