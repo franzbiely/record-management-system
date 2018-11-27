@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+
+.household-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box-container{
+        width: 1200px;
+        box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+        border-radius: 6px;
+        .box{
+            .box-head{
+                padding: 30px 50px 30px 60px;
+                display: flex;
+                flex-direction: column;
+                border-bottom: #ddd 1px solid;
+                .text-title-container{
+                    color: rgba(65, 64, 66,1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .text-required{
+                        font-family: montserrat;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: rgba(65, 64, 66,1)
+                    }
+                    .asterisk{
+                        font-weight: 700;
+                        color: #1598cb;
+                    }
+                }
+                .text-box-household-container{
+                    margin-top: 10px;
+                    display: flex;
+                    input[type=text]{
+                        flex:1;
+                        border-radius: 6px;
+                        border: 1px #ddd solid;
+                        padding: 15px 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .box-body{
+                overflow-y: scroll;
+                height: 400px;
+                .box-content:not(:first-child){
+                    border-top: #ddd 1px solid;
+                }
+                .box-content{
+                    padding: 30px 50px 30px 60px;
+                    .row-1, .row-2, .row-3, .row-4{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 20px;
+                        input[type=text]{
+                            border-radius: 6px;
+                            border: 1px #ddd solid;
+                            font-size: 12px;
+                            padding: 15px 10px;
+                        }
+                        
+                    }
+                    .row-1, .row-4{
+                        justify-content: space-between;
+                        .text-box-container{
+                            width:32%;
+                            display: flex;
+                            input[type=text]{
+                            flex:1; 
+                            }
+                            
+                        }   
+                    }
+                    .row-2{
+                        display: flex;
+                        justify-content: space-between;
+                        .text-box-container:not(:last-child){
+                            display: flex;
+                            width: 32%;
+                                input[type=text]:first-child{
+                                    flex:1;
+                                    border-radius: 6px 0px 0px 6px;
+                                    border-right:none;
+                                }
+                                .btn-dropdown{
+                                width: 30%;
+                                border-radius: 0px 6px 6px 0px;
+                                border: #ddd 1px solid;
+                                cursor: pointer;
+                                padding:0px;
+                                span{
+                                    font-family: montserrat;
+                                    font-size: 12px;
+                                    color: #ddd;
+                                    font-weight: 400; 
+                                }
+                                .icon-dropdown{
+                                    width: 10px;
+                                    padding-left: 10px;
+                                    content: url("/src/assets/component/household-member/arrow-gray.png")
+                                }
+                                }
+                            }
+                    
+                        .text-box-container:last-child{
+                            width:32%;
+                            display: flex;
+                            input[type=text]{
+                                flex:1;
+                            }
+                        }
+                    }
+                    .row-3{
+                        justify-content: space-between;
+                        .text-box-container:first-child{
+                            width:66%;
+                            display: flex;
+                            input[type=text]{
+                                flex:1;
+                            }
+                        }
+                        .text-box-container:last-child{
+                            width:32%;
+                            display: flex;
+                            input[type=text]{
+                                flex:1;
+                            }
+                        }
+                    }
+                    .row-3-member{
+                        justify-content: space-between;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 20px;
+                        .checkbox-address{
+                            width:66%;
+                            display: flex;
+                            input[type=text]{
+                                flex:1;
+                                border-radius: 6px;
+                                border: 1px #ddd solid;
+                                font-size: 12px;
+                                padding: 15px 140px 15px 10px;
+                            }
+                        }
+                        .text-box-container:last-child{
+                            width:32%;
+                            display: flex;
+                            input[type=text]{
+                                flex:1;
+                                border-radius: 6px;
+                                border: 1px #ddd solid;
+                                font-size: 12px;
+                                padding: 15px 10px;
+                            }
+                        }
+                    }
+                }
+            
+                .bottom-container{
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .left-section{
+                        display: flex;
+                        align-items: flex-start;
+                        .icon-add{
+                            content: url("/src/assets/component/household-member/add-blue.png");
+                            width:20px;
+                            padding-right: 10px;
+                        }
+                        span{
+                            margin-top: 1px;
+                        }
+                        div{
+                            cursor: pointer;
+                            font-family:montserrat;
+                            font-size: 14px;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            color: #1598cb;
+                            display: flex;
+                            align-items: center;
+                        }
+                        div:last-child{
+                            margin-left: 15px;
+                        }
+                    }
+                    .right-section{
+                        display: flex;
+                        flex-direction: row;
+                        button{
+                            width: auto;
+                            padding: 10px 30px;
+                        }
+                        button:first-child{
+                            display: flex;
+                            align-items: center;
+                            margin-right: 15px;
+                            text-transform: uppercase;
+                            font-weight:800;
+                            font-family: montserrat;
+                            letter-spacing: 1px;
+                            box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
+                        }
+                        .icon-save{
+                            width: 20px;
+                            padding-right: 10px;
+                            content: url("/src/assets/component/household-member/save-blue.png");
+                        }
+                        button:last-child{
+                            display: flex;
+                            align-items: center;
+                            margin-right: 15px;
+                            text-transform: uppercase;
+                            font-weight:800;
+                            font-family: montserrat;
+                            letter-spacing: 1px;
+                            color: #1598cb;
+                            border: 1px #1598cb solid;
+                            box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .text-title{
+        color: rgb(43, 43, 43);
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    ::placeholder{
+        color: #ddd;
+    }
+}
+.input-placeholder {
+    position: relative;
+    width: 32%;
+    display:flex;
+    input[type=text]{
+        flex: 1;
+    }
+  }
+ .checkbox-address{
+    position: relative;
+    width: 66%;
+    display:flex;
+    input[type=text]{
+        flex: 1;
+    }
+ }
+ .checkbox-address-placeholder{
+    position: absolute;
+    top: 11px;
+    bottom: 0;
+    font-family: montserrat;
+    font-size: 12px;
+    right: 15px;
+    margin: auto;
+    color: rgb(139, 139, 139);
+    font-weight: 500;
+    
+ }
+  .input-placeholder input:valid + .placeholder {
+    display: none;
+  }
+  
+  .placeholder {
+    position: absolute;
+    pointer-events: none;
+    top: 16px;
+    bottom: 0;
+    font-family: montserrat;
+    font-size: 12px;
+    left: 11px;
+    margin: auto;
+    color: #ccc;
+  }
+  
+  .placeholder span {
+    font-family: montserrat;
+    font-weight: 700;
+    color: #1598cb;
+    
+  }

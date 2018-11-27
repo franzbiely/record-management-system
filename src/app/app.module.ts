@@ -69,6 +69,8 @@ import { PopUpRotateComponent } from './components/pop-up-rotate/pop-up-rotate.c
 import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
 import { HouseholdListComponent } from './components/household-list/household-list.component';
 import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
+import { HouseholdMemberComponent } from './components/household-member/household-member.component';
+import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
 
 
 @NgModule({
@@ -139,7 +141,9 @@ import { HouseholdListScreenComponent } from './screens/household-list-screen/ho
     PopUpRotateComponent,
     PopUpRotateScreenComponent,
     HouseholdListComponent,
-    HouseholdListScreenComponent
+    HouseholdListScreenComponent,
+    HouseholdMemberComponent,
+    HouseholdMemberScreenComponent
   ],
   imports: [
     BrowserModule,

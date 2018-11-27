@@ -25,6 +25,7 @@ import { SimulationScreenComponent } from './screens/simulation-screen/simulatio
 import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
 import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
 import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
+import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
 const routes: Routes = [
   
   {
@@ -136,9 +137,12 @@ const routes: Routes = [
   {
     path: 'household-list',
     component: HouseholdListScreenComponent 
+  },
+  {
+    path: 'household-member',
+    component: HouseholdMemberScreenComponent 
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

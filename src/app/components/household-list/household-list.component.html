@@ -35,7 +35,7 @@
 
       <div class="row-content">
 
-        <div class="table-container" *ngIf="list">
+        <div class="table-container" >
           <table>
             <tr>
               <th>Select</th>
@@ -89,7 +89,7 @@
           </table>
         </div>
       
-      <div class="brand-container">
+      <div class="brand-container" *ngIf="list">
         <div class="row-1">
           <div class="brand-logo-container"><img class="logo-brand"></div>
           <div class="information-container">
