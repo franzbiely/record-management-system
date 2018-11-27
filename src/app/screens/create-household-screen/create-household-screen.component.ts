@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-household-screen.component.scss']
 })
 export class CreateHouseholdScreenComponent implements OnInit {
-
+	
   constructor() { }
 
   ngOnInit() {

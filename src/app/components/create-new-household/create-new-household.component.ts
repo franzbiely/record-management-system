@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-new-household.component.scss']
 })
 export class CreateNewHouseholdComponent implements OnInit {
+	openHouseHoldModal: boolean = false;
+	householdModal($event) {
+		this.openHouseHoldModal = $event;
+	}
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  openModal(status){
-    console.log(status);
   }
 }

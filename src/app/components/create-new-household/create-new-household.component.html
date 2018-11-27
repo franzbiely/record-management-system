@@ -1,3 +1,5 @@
+<app-household-member *ngIf="openHouseHoldModal" (closeMeEvent)="householdModal(false)"></app-household-member>
+
 <div class="modal-box-container">
   <div class="modal-box-content">
     <div class="modal-box">
@@ -34,10 +36,10 @@
     <div class="box-header">
        <h3>Member Information</h3>
       <div class="edit-information">
-          <div class="inline-item">
-              <div><i class="edit-icon"></i></div>
+          <a class="inline-item" (click)="householdModal(true)">
+              <span><i class="edit-icon"></i></span>
               <div><span class="edit-text">edit</span></div>
-            </div>
+          </a>
       </div>
     </div>
     <div class="box-content">

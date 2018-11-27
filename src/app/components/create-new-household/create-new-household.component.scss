@@ -306,6 +306,7 @@ $mainfont : 'Montserrat', sans-serif;
         color: #ffffff;    
     }
     .inline-item {
+        cursor: pointer;
         display: flex;
         align-items: center;
     }
@@ -442,3 +443,10 @@ $mainfont : 'Montserrat', sans-serif;
     }
 }
 
+app-household-member {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
