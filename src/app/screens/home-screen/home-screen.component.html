@@ -70,9 +70,43 @@
 		<div class="container-analytics" *ngIf="!analyticShow">
 
 			<ng-container *ngIf="!isNew">
-				<app-dash-box [title]="'Adjust Parameters'" 
+				<app-dash-box class="adjust-parameters" [title]="'Adjust Parameters'" 
                           [headerRightType]="'select'">
-                          <h2>Hello World</h2>
+                          
+			<div class="adjust-container">
+					<div class="row">
+						<div>
+							<span class="dropdown-title">Goal:</span>
+						</div>
+						<div>
+							<div class="dropdown"><span class="select-goal">Select Goal</span><i class="icon-dropdown"></i></div>
+						</div>
+					</div>
+					<div class="row row-flex">
+						<div class="left-section">
+							<div><span class="dropdown-title">State:</span></div>
+							<div><div class="dropdown"><span class="select-goal">Select State</span><i class="icon-dropdown"></i></div></div>
+						</div>
+						<div class="right-section">
+						<div><span class="dropdown-title">Status:</span></div>
+						<div><div class="dropdown"><span class="select-goal">Select Status</span><i class="icon-dropdown"></i></div></div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div>
+							<span class="dropdown-title">Date Range: </span>
+						</div>
+						<div>
+							<div class="dropdown"><span class="select-goal">Select Date Range</span><i class="icon-dropdown"></i></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="btn-container">
+							<span class="remove-tile">Remove Tile</span><button class="btn-apply">Apply</button>
+						</div>
+					</div>
+				</div>
                 </app-dash-box>
 				<app-dash-box [title]="'Opportunity AUM'" 
                           [subTitle]="'Forecast Overtime'" 

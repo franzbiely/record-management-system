@@ -72,6 +72,8 @@ import { HouseholdListComponent } from './components/household-list/household-li
 import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
 import { HouseholdMemberComponent } from './components/household-member/household-member.component';
 import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
+import { CalendarModalComponent } from './components/calendar-modal/calendar-modal.component';
+import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 
 @NgModule({
   declarations: [
@@ -144,7 +146,9 @@ import { HouseholdMemberScreenComponent } from './screens/household-member-scree
     HouseholdListComponent,
     HouseholdListScreenComponent,
     HouseholdMemberComponent,
-    HouseholdMemberScreenComponent
+    HouseholdMemberScreenComponent,
+    CalendarModalComponent,
+    CalendarModalScreenComponent
   ],
   imports: [
     BrowserModule,
