@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-proposal',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProposalComponent implements OnInit {
 
+	toHousehold() {
+		this.router.navigateByUrl('create-household');
+	}
 
-  constructor() { }
+  constructor(private router: Router) { }
 
 
   ngOnInit() {

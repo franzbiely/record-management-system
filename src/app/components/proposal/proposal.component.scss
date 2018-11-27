@@ -9,6 +9,9 @@
     background-color: #ffffff;
     display: flex;
     z-index:60;
+    .to-household {
+        cursor:pointer;
+    }
     .header-mask {
         padding:60px 0px 0px 60px;
         z-index: 1;
