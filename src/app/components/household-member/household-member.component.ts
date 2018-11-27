@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-household-member',
@@ -16,7 +17,10 @@ export class HouseholdMemberComponent implements OnInit {
   addMember() {
     this.memberCount++;
   }
-  constructor() { }
+  save() {
+    this.router.navigateByUrl('/create-household');
+  }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

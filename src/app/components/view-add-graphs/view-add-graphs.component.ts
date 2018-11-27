@@ -9,7 +9,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ViewAddGraphsComponent implements OnInit {
 
- @Output() closeMeEvent = new EventEmitter<boolean>();
+  @Output() closeMeEvent = new EventEmitter<boolean>();
 
   closeMe() {
     this.closeMeEvent.emit(true)

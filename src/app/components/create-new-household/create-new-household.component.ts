@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-new-household',
@@ -19,11 +20,9 @@ export class CreateNewHouseholdComponent implements OnInit {
     this.closeNewProposalFormEvent.emit(true)
   }
   nextReceiver() {
-    alert('next')
-    this.openProposalForm = false;
-    this.closeNewProposalFormEvent.emit(true)
+    this.router.navigateByUrl('/proposal');
   }
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
