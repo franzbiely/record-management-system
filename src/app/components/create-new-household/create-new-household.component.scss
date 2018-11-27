@@ -172,43 +172,6 @@ $mainfont : 'Montserrat', sans-serif;
         .padding-right-50 {
             padding-right: 50px;
         }
-        .dropbtn {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding:10px;
-            background-color: transparent;
-            color: white;
-            text-align: left;
-            font-weight: 100;
-            width: 156px;
-            height: auto;
-            border-radius: 6px;
-            border: solid 0.5px #ffffff;
-            cursor: pointer;
-            .icon-container {
-                display: flex;
-                align-items: center;
-            }
-            .left-section {
-                display: flex;
-                align-items: center;
-            }
-            .check-icon {
-            width: 8px;
-            height: 12px;
-            padding-right: 6px;
-            object-fit: contain;
-            content: url('../../../assets/component/header/state-active-white@3x.png');
-            }
-            .dropdown-icon {
-          
-                width: 10px;
-                height: 7px;
-                content: url('../../../assets/component/household/arrow-white@3x.png');
-            }
-         
-        }
         div{
             details{
                 width: 103px;

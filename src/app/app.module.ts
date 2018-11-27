@@ -73,6 +73,7 @@ import { HouseholdListScreenComponent } from './screens/household-list-screen/ho
 import { HouseholdMemberComponent } from './components/household-member/household-member.component';
 import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
 import { CreateHouseholdScreenComponent } from './screens/create-household-screen/create-household-screen.component';
+import { ActiveArchiveComponent } from './components/active-archive/active-archive.component';
 
 @NgModule({
   declarations: [
@@ -146,7 +147,8 @@ import { CreateHouseholdScreenComponent } from './screens/create-household-scree
     HouseholdListScreenComponent,
     HouseholdMemberComponent,
     HouseholdMemberScreenComponent,
-    CreateHouseholdScreenComponent
+    CreateHouseholdScreenComponent,
+    ActiveArchiveComponent
   ],
   imports: [
     BrowserModule,
