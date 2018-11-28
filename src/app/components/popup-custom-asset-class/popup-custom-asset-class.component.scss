@@ -38,12 +38,15 @@
         }
     }
     .assets{
-        div{
+        margin:0;
+        padding:0;
+        list-style:none;
+        li{
             border-top:1px #ddd solid;
-            padding:5px 10px;
-            span{
+            a{
+                padding:5px 10px;
                 font-family:montserrat;
-                font-size:8px;
+                font-size:10px;
                 font-weight: 400;
                 color: rgba(64, 64, 64, 1);
             }
