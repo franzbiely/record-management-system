@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-account',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
-
-  constructor() { }
+	importAccountsModal: boolean = false;
+	showImportAccountModal() {
+  	this.modalStatus.toggleImportAccount(true);
+  }
+  constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
+  	this.modalStatus.importAccount.subscribe(value => this.importAccountsModal = value);
   }
+
+
 
 }

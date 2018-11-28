@@ -1,5 +1,5 @@
 <section class="import-accounts">
-  <app-account-saved></app-account-saved>
+  <!-- <app-account-saved></app-account-saved> -->
     <div class="overlay"></div>
     
     <div class="box-container">
@@ -120,7 +120,7 @@
               </table>
               <div class="row-3">
                 <div class="btn-container">
-                  <button class="btn-cancel"><span>Cancel</span></button>
+                  <button class="btn-cancel" (click)="closeMe()"><span>Cancel</span></button>
                   <button class="btn-load"><span>Import</span></button>
                 </div>
               </div>
