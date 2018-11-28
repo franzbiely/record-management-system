@@ -77,6 +77,7 @@ import { ActiveArchiveComponent } from './components/active-archive/active-archi
 import { CalendarModalComponent } from './components/calendar-modal/calendar-modal.component';
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-proposal-screen.component';
+import { DropdownUpdateAccountComponent } from './components/dropdown-update-account/dropdown-update-account.component';
 
 @NgModule({
   declarations: [
@@ -154,7 +155,8 @@ import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-pr
     ActiveArchiveComponent,
     CalendarModalComponent,
     CalendarModalScreenComponent,
-    NewProposalScreenComponent
+    NewProposalScreenComponent,
+    DropdownUpdateAccountComponent
   ],
   imports: [
     BrowserModule,
