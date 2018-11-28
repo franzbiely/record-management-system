@@ -80,6 +80,13 @@ import { AllocationDetailsComponent } from './components/allocation-details/allo
 import { AllocationDetailsScreenComponent } from './screens/allocation-details-screen/allocation-details-screen.component';
 import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-proposal-screen.component';
 import { DropdownUpdateAccountComponent } from './components/dropdown-update-account/dropdown-update-account.component';
+import { AssetClassComponent } from './components/asset-class/asset-class.component';
+import { AssetClassScreenComponent } from './screens/asset-class-screen/asset-class-screen.component';
+import { AccountDetailsComponent } from './components/account-details/account-details.component';
+import { AccountDetailsScreenComponent } from './screens/account-details-screen/account-details-screen.component';
+import { ImportAccountsComponent } from './components/import-accounts/import-accounts.component';
+import { ImportAccountsScreenComponent } from './screens/import-accounts-screen/import-accounts-screen.component';
+import { AccountSavedComponent } from './components/account-saved/account-saved.component';
 
 @NgModule({
   declarations: [
@@ -159,8 +166,15 @@ import { DropdownUpdateAccountComponent } from './components/dropdown-update-acc
     CalendarModalScreenComponent,
     AllocationDetailsComponent,
     AllocationDetailsScreenComponent,
-    NewProposalScreenComponent,
-    DropdownUpdateAccountComponent
+    DropdownUpdateAccountComponent,
+    AssetClassComponent,
+    AssetClassScreenComponent,
+    AccountDetailsComponent,
+    AccountDetailsScreenComponent,
+    ImportAccountsComponent,
+    ImportAccountsScreenComponent,
+    AccountSavedComponent,
+    NewProposalScreenComponent
   ],
   imports: [
     BrowserModule,

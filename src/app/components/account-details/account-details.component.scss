@@ -1,0 +1,113 @@
+.screen-container{
+    .modal-box-container{
+        display: flex;
+        justify-content: center;
+        .modal-box{
+            margin-top: 60px;
+            width: 1200px;
+            background-color: white;
+            box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+            border-radius: 0px 0px 6px 6px;
+            .box-head{
+                background-color: #1598cb;
+                border-radius: 6px 6px 0px 0px;
+                padding: 15px 20px;
+                display: flex;
+                align-items: center;
+                color: white;
+                font-family: montserrat;
+                font-size: 20px;
+                font-weight: 600;
+
+            }
+            .box-body{
+                position: relative;
+                display: flex;
+                .left-section{
+                    flex:1;
+                    padding: 30px;
+                    border-right: 1px #e7e6e6 solid;
+                    position: relative;
+                    .overlay{
+                        position: absolute;
+                        background-color: rgba(255,255,255,0.8);
+                        top: 0;
+                        bottom:0;
+                        right: 0;
+                        left: 0;
+                        z-index: 60;
+                    }
+                    .left-section-content{
+                        display:flex;
+                        flex-direction: column;
+                        .text-box-container{
+                            display: flex;
+                            margin-top:20px;
+                            input[type=text]{
+                                flex:1;
+                                border: 1px #e7e6e6 solid;
+                                border-radius: 6px;
+                                padding: 15px;
+                            }
+                        }
+                        .dropdown-container{
+                            display: flex;
+                            margin-top:20px;
+                            div{
+                                flex:1;
+                                border: 1px #e7e6e6 solid;
+                                border-radius: 6px;
+                                padding: 15px;
+                            }
+                        }
+
+                    }
+                }
+                .right-section{
+                    position: relative;
+                    flex:3;
+                    padding: 30px 30px 100px 30px;
+                    .option-container{
+                        display: flex;
+                        div{
+                            margin-left: 20px;
+                            .radio:first-child{
+                                padding-right:10px;
+                            }
+                        }
+                    }
+                    .btn-container{
+                        position: absolute;
+                        display: flex;
+                        bottom: 20px;
+                        right: 20px;
+                        .btn-save{
+                            .icon-save{
+                                padding-right:15px;
+                                width: 20px;
+                                content: url(/src/assets/icons/save-blue.png);
+                            }
+                            background-color: #1598cb;
+                            color:white;
+                            text-transform: uppercase;
+                            width: auto;
+                            padding:0px 40px;
+                        }
+                        button:first-child{
+                            margin-right: 15px;
+                            width: auto;
+                            padding:0px 40px;
+                        }
+                    }
+                }
+                .title-text{
+                    font-family: montserrat;
+                    font-size: 18px;
+                    color: rgba(60,60,60,1);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<section class="account-details">
+  <div class="screen-container">
+    <div class="modal-box-container">
+      <div class="modal-box">
+        <div class="box-head">
+          <span>Account Details</span>
+        </div>
+        <div class="box-body">
+          <div class="left-section">
+            <div class="overlay"></div>
+            <div class="left-section-content">
+              <span class="title-text">Account Information:</span>
+              <div class="text-box-container"><input type="text" class="text-box"></div>
+              <div class="dropdown-container"><div class="dropdown"><span>Manually<span class="asterisk">*</span></span><i class="icon-dropdown"></i></div></div>
+              <div class="text-box-container"><input type="text" class="text-box" placeholder="Investment Group"></div>
+              <div class="dropdown-container"><div class="dropdown"><span>Manually</span><i class="icon-dropdown"></i></div></div>
+              <div class="text-box-container"><input type="text" class="text-box"></div>
+              <div class="dropdown-container"><div class="dropdown"><span>IRA (Roth)<span class="asterisk">*</span></span><i class="icon-dropdown"></i></div></div>
+              <div class="dropdown-container"><div class="dropdown"><span>Chris Candelaria<span class="asterisk">*</span></span><i class="icon-dropdown"></i></div></div>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="option-container">
+              <span class="title-text">Please select:</span>
+              <div><mat-radio-button class="radio"><span>Quantity</span></mat-radio-button><mat-radio-button class="radio"><span>($) Value</span></mat-radio-button></div>
+            </div>
+            <app-quick-add></app-quick-add>
+            <app-add-security></app-add-security>
+            <div class="btn-container">
+              <button class="btn-cancel">Cancel</button>
+              <button class="btn-save"><i class="icon-save"></i> <span>Save</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
