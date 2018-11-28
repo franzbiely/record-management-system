@@ -27,7 +27,6 @@ $linkInActive : #c5c5c5;
         height: auto;
         display: block;
         box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
-        padding: 10px;
         bottom: 0;  
     }
     
@@ -61,6 +60,9 @@ $linkInActive : #c5c5c5;
                 justify-content: space-evenly;
                 border-left: 3px solid transparent;
                 padding: 10px 0 15px;
+                @media only screen and (max-width: 767px){
+                   padding: 0px;
+                }
                 &.link-active {
                     border-left-color:#1598cb;
                     @media only screen and (max-width: 767px){

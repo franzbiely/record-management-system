@@ -72,6 +72,7 @@ app-household-member {
                     cursor: pointer;
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                     .text-add{
                         font-family: 'montserrat', sans-serif;
                         font-size: 12px;
@@ -80,7 +81,6 @@ app-household-member {
                         font-weight:600;
                     }
                     .icon-add{
-                        cursor: pointer;
                         padding-right:10px;
                         width: 20px;
                         content: url("/src/assets/component/household-list/add-white.png");
@@ -137,9 +137,11 @@ app-household-member {
                 }
             }
             .row-content{
-                padding: 20px 30px;
+                padding: 20px 0px;
                 .brand-container{
-                    border-top: 1px #ddd solid;
+                    .brand-box{
+                        padding:20px 30px;
+                    }
                     .row-1{
                         display:flex;
                         justify-content: space-between;
@@ -195,6 +197,7 @@ app-household-member {
                     .row-3{
                         margin-top: 30px;
                         .btn-container{
+                            padding-right:30px;
                             display: flex;
                             justify-content: flex-end;
                             button:first-child{
@@ -224,7 +227,6 @@ app-household-member {
                 .table-container{
                     display:flex;
                     flex-direction: column;
-                    width: 100%;
                     table{
                         flex:1;
                         border-collapse: collapse;
@@ -264,15 +266,17 @@ app-household-member {
                         tr th:last-child, tr td:last-child{
                             text-align:left;
                         }
-                        tr:not(:last-child){
+                        tr{
                             border-bottom: 1px #ddd solid;
                         }
                     }
+                }
                     .row-3{
                         margin-top: 30px;
                         .btn-container{
                             display: flex;
                             justify-content: flex-end;
+                            padding-right:30px;
                             button:first-child{
                                 margin-right: 20px;
                             }
@@ -300,4 +304,3 @@ app-household-member {
             }
         }
     }
-}
