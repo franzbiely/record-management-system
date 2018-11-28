@@ -30,6 +30,9 @@ import { HouseholdMemberScreenComponent } from './screens/household-member-scree
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 import { AllocationDetailsScreenComponent } from './screens/allocation-details-screen/allocation-details-screen.component';
 import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-proposal-screen.component';
+import { AssetClassScreenComponent } from './screens/asset-class-screen/asset-class-screen.component';
+import { AccountDetailsScreenComponent } from './screens/account-details-screen/account-details-screen.component';
+import { ImportAccountsScreenComponent } from './screens/import-accounts-screen/import-accounts-screen.component';
 const routes: Routes = [
   
   {
@@ -160,7 +163,21 @@ const routes: Routes = [
   {
     path: 'allocation-details',
     component: AllocationDetailsScreenComponent 
+  },
+  {
+    path: 'asset-class',
+    component: AssetClassScreenComponent 
   }
+  ,
+  {
+    path: 'account-details',
+    component: AccountDetailsScreenComponent 
+  },
+  {
+    path: 'import-accounts',
+    component: ImportAccountsScreenComponent 
+  }
+  
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

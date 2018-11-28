@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+.household-list-component {
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    transition:all 0.3s linear;
+}
+.overlay{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index:60;
+}
+.box-container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+    z-index: 70;
+    .box-content{
+        width: auto;
+        box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+        border-radius: 6px;
+        background-color: white;
+        .box-head{
+            background-color: #1598cb;
+            border-radius: 6px 6px 0px 0px;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left-section{
+                .box-title{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .text-title{
+                    font-family: 'montserrat', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                .text-subtitle{
+                    font-family: 'montserrat', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: white;
+                }
+            }
+
+        }
+            .right-section{
+                .add-container{
+                    display: flex;
+                    align-items: center;
+                    .text-add{
+                        font-family: 'montserrat', sans-serif;
+                        font-size: 12px;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight:600;
+                    }
+                    .icon-add{
+                        cursor: pointer;
+                        padding-right:10px;
+                        width: 20px;
+                        content: url("/src/assets/component/household-list/add-white.png");
+                    }
+                }
+            }
+        }
+        .box-body{
+            display: flex;
+            flex-direction: column;
+            
+            .icon-redtail{
+                padding-left: 5px;
+                content: url(/src/assets/brand-logos/redtail.PNG)
+            }
+            .icon-wealth{
+                padding-left: 5px;
+                content: url(/src/assets/brand-logos/wealth.PNG)
+            }
+            .icon-orion{
+                padding-left: 5px;
+                content: url(/src/assets/brand-logos/orion.PNG)
+            }
+            .icon-myclient{
+                padding-left: 5px;
+                content: url(/src/assets/brand-logos/clientcenter.PNG)
+            }
+            .row-search{
+                flex: 1;
+                padding: 20px 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left-section{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .option{
+                        padding-left: 20px;
+                        display: flex;
+                        align-items: center;
+                        .text-radio-button{
+                            font-family: 'montserrat', sans-serif;
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                    .text-search-container{
+                        .text-search{
+                            font-family: 'montserrat', sans-serif;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            color: rgba(65, 64, 66, 1)
+                        }
+                    }
+                }
+                .right-section{
+                    .search-container{
+                        input[type=text]{
+                            width:300px;
+                            height: 100%;
+                            border-radius: 6px;
+                            padding: 10px 40px;
+                            border: 1px #ddd solid;
+                            font-size:12px;
+                            font-family: 'montserrat', sans-serif;
+                            background: url("/src/assets/component/household-list/search-gray.png") no-repeat 10px 8px;
+
+                        }
+                    }
+                }
+            }
+            .row-content{
+                .table-container{
+                    display:flex;
+                    flex-direction: column;
+                    width: 100%;
+                    table{
+                        flex:1;
+                        border-collapse: collapse;
+                        th{
+                            font-family:'montserrat', sans-serif;
+                            font-size: 10px;
+                            text-transform: uppercase;
+                            padding: 20px 30px;
+                        }
+                        th .icon-dropdown{
+                            padding-left: 6px;
+                            cursor: pointer;
+                            width: 10px;
+                            content: url("/src/assets/component/household-list/arrow-gray.png");
+                        }
+                        td {
+                            padding: 10px 30px;
+                            font-size: 10px;
+                            font-family:'montserrat', sans-serif;
+                            color: rgba(65, 64, 66, 1)
+                        }
+                        tr:first-child{
+                            background-color:#f7f7f7;
+                        }
+                        tr td:first-child, tr th:first-child{
+                            text-align: center;
+                        }
+                        tr:first-child th:nth-child(2), tr td:nth-child(2){
+                            text-align:left;
+                        }
+                        tr:first-child th:nth-child(3), tr td:nth-child(3){
+                            text-align:center;
+                        }
+                        tr th:nth-child(4), tr td:nth-child(4){
+                            text-align:left;
+                        }
+                        tr th:last-child, tr td:last-child{
+                            text-align:left;
+                        }
+                        tr{
+                            border-bottom: 1px #ddd solid;
+                        }
+                    }
+                    .row-3{
+                        .btn-container{
+                            padding: 30px;
+                            display: flex;
+                            justify-content: flex-end;
+                            button:first-child{
+                                margin-right: 20px;
+                            }
+                            .btn-load{
+                                width: 160px;
+                                height: 45px;
+                                border-radius: 6px;
+                                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+                                background-color: #ffffff;
+                                font-family: Montserrat;
+                                font-size: 12px;
+                                font-weight: 700;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: 0.9px;
+                                text-align: center;
+                                color: #1598cb;
+                                border: 1px #1598cb solid;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
