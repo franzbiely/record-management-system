@@ -174,7 +174,9 @@ import { AccountSavedComponent } from './components/account-saved/account-saved.
     AccountDetailsScreenComponent,
     ImportAccountsComponent,
     ImportAccountsScreenComponent,
-    AccountSavedComponent
+    AccountSavedComponent,
+    AccountSavedComponent,
+    NewProposalScreenComponent
   ],
   imports: [
     BrowserModule,

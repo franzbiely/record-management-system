@@ -2,20 +2,22 @@
     <div class="container-box">
       <div class="container-tab"> 
         <div class="content">
-          <div class="assessment-front" *ngIf="front" >
+
+          <div class="assessment-front" *ngIf="step==1" >
             <div>
               <h2>Risk Assessment Questionnaire</h2>
             </div>
             <div class="btn-container">
               <button>Take Questionnaire</button>
               <button>Send Questionnaire</button>
-              <button>Select Target Risk</button>
+              <button (click)="moveTo(2)">Select Target Risk</button>
             </div>
             <div>
-              <a href="#">Copy Questionnaire Link</a>
+              <a (click)="moveTo(3)">Copy Questionnaire Link</a>
             </div>
           </div>
-          <div class="selected-assessed" *ngIf="survey">
+
+          <div class="selected-assessed" *ngIf="step==2">
             <div class="overlay"></div>
             <div class="assessed-left">
               <div>
@@ -49,7 +51,7 @@
               </div>
             </div>
           </div> 
-          <div class="assessment-complete" *ngIf="copied">
+          <div class="assessment-confirmation" *ngIf="step==3">
             <div class="box-message">
               <div>
                 <p>Status:</p>
@@ -60,11 +62,12 @@
                 <p>Date Copied: <b><span>9/20/2018</span></b></p>
               </div>
               <div>
-                <button>Re-Take Questionnaire</button>
+                <button (click)="moveTo(1)">Re-Take Questionnaire</button>
               </div>
             </div>
-          </div> 
-          <div class="assessment-confirmation" *ngIf="confirm">
+          </div>
+
+          <div class="assessment-confirmation" *ngIf="step==4">
               <div class="box-message">
                 <div>
                   <p>Status:</p>
@@ -82,7 +85,7 @@
               </div>
           </div>
 
-          <div class="assessment-result" > <!--*ngIf="result"-->
+          <div class="assessment-result" *ngIf="step==5"> <!--*ngIf="result"-->
             <div class="container-left">
               <div><h3>Your Assessed Target Risk Type: Capital Appreciation</h3></div>
               <div class="left-section">
