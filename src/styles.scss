@@ -224,6 +224,9 @@ main {
     > .content {
         flex:1;
         padding: 30px;
+        @media only screen and (max-width: 767px){
+            padding:0px;
+        }
     }
 }
 app-sidebar {

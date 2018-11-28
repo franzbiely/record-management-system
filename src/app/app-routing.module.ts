@@ -32,6 +32,8 @@ import { AllocationDetailsScreenComponent } from './screens/allocation-details-s
 import { AssetClassScreenComponent } from './screens/asset-class-screen/asset-class-screen.component';
 import { AccountDetailsScreenComponent } from './screens/account-details-screen/account-details-screen.component';
 import { ImportAccountsScreenComponent } from './screens/import-accounts-screen/import-accounts-screen.component';
+import { AccountSelectModalScreenComponent } from './screens/account-select-modal-screen/account-select-modal-screen.component';
+import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
 const routes: Routes = [
   
   {
@@ -171,7 +173,16 @@ const routes: Routes = [
   {
     path: 'import-accounts',
     component: ImportAccountsScreenComponent 
+  },
+  {
+    path: 'account-select',
+    component: AccountSelectModalScreenComponent 
+  },
+  {
+    path: 'add-account',
+    component: AddAccountScreenComponent 
   }
+  
   
 ];
 @NgModule({

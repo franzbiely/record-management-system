@@ -83,6 +83,11 @@ import { AccountDetailsScreenComponent } from './screens/account-details-screen/
 import { ImportAccountsComponent } from './components/import-accounts/import-accounts.component';
 import { ImportAccountsScreenComponent } from './screens/import-accounts-screen/import-accounts-screen.component';
 import { AccountSavedComponent } from './components/account-saved/account-saved.component';
+import { AccountSelectModalComponent } from './components/account-select-modal/account-select-modal.component';
+import { AccountSelectModalScreenComponent } from './screens/account-select-modal-screen/account-select-modal-screen.component';
+import { AddAccountModalComponent } from './components/add-account-modal/add-account-modal.component';
+import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
+import { PopupCustomAssetClassComponent } from './components/popup-custom-asset-class/popup-custom-asset-class.component';
 
 @NgModule({
   declarations: [
@@ -166,7 +171,12 @@ import { AccountSavedComponent } from './components/account-saved/account-saved.
     AccountDetailsScreenComponent,
     ImportAccountsComponent,
     ImportAccountsScreenComponent,
-    AccountSavedComponent
+    AccountSavedComponent,
+    AccountSelectModalComponent,
+    AccountSelectModalScreenComponent,
+    AddAccountModalComponent,
+    AddAccountScreenComponent,
+    PopupCustomAssetClassComponent
   ],
   imports: [
     BrowserModule,

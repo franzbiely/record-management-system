@@ -1,0 +1,223 @@
+.screen-container{
+    .modal-box-container{
+        display: flex;
+        justify-content: center;
+        .modal-box{
+            margin-top: 60px;
+            width: 1200px;
+            background-color: white;
+            box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+            border-radius: 0px 0px 6px 6px;
+            .box-head{
+                border-radius: 6px 6px 0px 0px;
+                display:flex;
+                flex-direction: column;
+                padding: 15px 20px;
+                background-color: #1598cb;
+               span:first-child{ 
+                border-radius: 6px 6px 0px 0px;
+                color: white;
+                font-family: montserrat;
+                font-size: 20px;
+                font-weight: 600;
+                }
+                span:last-child{ 
+                    background-color: #1598cb;
+                    border-radius: 6px 6px 0px 0px;
+                    color: white;
+                    font-family: montserrat;
+                    font-size: 12px;
+                    font-weight: 400;
+                    }
+
+            }
+            .box-body{
+                position: relative;
+                display: flex;
+                .left-section{
+                    flex:1;
+                    padding: 30px;
+                    border-right: 1px #e7e6e6 solid;
+                    position: relative;
+                    .overlay{
+                        position: absolute;
+                        background-color: rgba(255,255,255,0.8);
+                        top: 0;
+                        bottom:0;
+                        right: 0;
+                        left: 0;
+                        z-index: 60;
+                    }
+                    .left-section-content{
+                        display:flex;
+                        flex-direction: column;
+                        .text-box-container{
+                            display: flex;
+                            margin-top:20px;
+                            input[type=text]{
+                                flex:1;
+                                border: 1px #e7e6e6 solid;
+                                border-radius: 6px;
+                                padding: 15px;
+                            }
+                        }
+                        .dropdown-container{
+                            display: flex;
+                            margin-top:20px;
+                            div{
+                                flex:1;
+                                border: 1px #e7e6e6 solid;
+                                border-radius: 6px;
+                                padding: 15px;
+                            }
+                        }
+
+                    }
+                }
+                .right-section{
+                    position: relative;
+                    flex:3;
+                    display:flex;
+                    flex-direction: column;
+                    padding: 30px 30px 100px 30px;
+                    .option-container{
+                        display: flex;
+                        div{
+                            margin-left: 20px;
+                            .radio:first-child{
+                                padding-right:10px;
+                            }
+                        }
+                    }
+                    .btn-container{
+                        position: absolute;
+                        display: flex;
+                        bottom: 20px;
+                        right: 20px;
+                        .btn-save{
+                            margin-right: 15px;
+                            border:1px solid #1598cb;
+                            color:#1598cb;
+                            text-transform: uppercase;
+                            width: auto;
+                            padding:0px 40px;
+                        }
+                        button:first-child{
+                            margin-right: 15px;
+                            width: auto;
+                            padding:0px 40px;
+                            box-shadow: none;
+                            background-color: #e6e6e6;
+                            color: #8b8b8b;
+                        }
+                        button:last-child{
+                            width: auto;
+                            padding:0px 40px;
+                            box-shadow: none;
+                            background-color: #1598cb;
+                            color: white;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .investment-box{
+                        margin-top: 30px;
+                        box-shadow: 0 4px 10px 0 rgba(65, 64, 66, 0.18);
+                        border-radius: 6px;
+                        height: auto;
+                        .row-1{
+                            display:flex;
+                            justify-content: space-between;
+                            font-family: montserrat;
+                            font-size: 10px;
+                            font-weight: 700;
+                            padding: 15px;
+                            color: rgba(60,60,60,1);
+                            text-transform: uppercase;
+                            background-color: #f9f9f9;
+                        }
+                        .row-2{
+                            display:flex;
+                            justify-content: space-between;
+                            font-family: montserrat;
+                            font-size: 10px;
+                            font-weight: 500;
+                            padding: 15px;
+                            color: rgba(60,60,60,1);
+                            background-image: linear-gradient(to bottom, #e6e6e6, #f9f9f9 );
+                            span:first-child{
+                                flex:3;
+                            }
+                            span:nth-child(2){
+                                flex: 1;
+                            }
+                            .total{
+                                text-transform: uppercase;
+                                font-weight: 800;
+                            }
+                        }
+                        .row-3{
+                            padding: 60px 15px 15px 15px;
+                            .container{
+                                border-radius: 6px;
+                                border: 1.5px #e6e6e6 dashed;
+                                padding: 20px 20px 10px 20px;
+                                div:first-child{
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    .icon-asset{
+                                        padding-right: 15px;
+                                        content: url("/src/assets/component/add-account/asset.PNG")
+                                    }
+                                    .icon-csv{
+                                        padding-right: 15px;
+                                        content: url("/src/assets/component/add-account/csv.PNG")
+                                    }
+                                    .icon-account{
+                                        padding-right: 15px;
+                                        content: url("/src/assets/component/add-account/account.PNG")
+                                    }
+                                    button{
+                                        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+                                    }
+                                    button:first-child{
+                                        margin-right: 15px;
+                                    }
+                                    button:last-child{
+                                        margin-left: 15px;
+                                    }
+                                }
+                                a {
+                                    text-decoration: underline;
+                                    color: rgba(60, 60, 60, 1);
+                                }
+                                .download-template{
+                                    display: flex;
+                                    justify-content: center;
+                                    text-align: center;
+                                    margin-top: 20px;
+                                    font-family: montserrat;
+                                    font-size:10px;
+                                    .icon-download{
+                                        padding-right: 10px;
+                                        content: url("/src/assets/component/add-account/dl.PNG")
+                                    }
+                                    
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+                .title-text{
+                    font-family: montserrat;
+                    font-size: 18px;
+                    color: rgba(60,60,60,1);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
