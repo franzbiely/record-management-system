@@ -26,7 +26,7 @@
         <td>Simple IRA</td>
         <td>Chris Candelaria</td>
         <td class="cell-2-rows"><span class="normal-cell-text">$425,000.00</span><span class="small-cell-text">As of 10/1/2018</span></td>
-        <td><i class="material-icons">more_vert</i></td>
+        <td><app-dropdown-actions></app-dropdown-actions></td>
       </tr>
       <tr>
           <td><mat-checkbox></mat-checkbox></td>
@@ -38,7 +38,7 @@
           <td>Simple IRA</td>
           <td>Chris Candelaria</td>
           <td class="cell-2-rows"><span class="normal-cell-text">$425,000.00</span><span class="small-cell-text">As of 10/1/2018</span></td>
-          <td><i class="material-icons">more_vert</i></td>        
+          <td><app-dropdown-actions></app-dropdown-actions></td>        
         </tr>
 
       <tr class="last" >
@@ -53,7 +53,9 @@
                     <div><span class="total-text">Total:</span><span class="total-value">$800,000.00</span></div>
                 </div>
               <button class="btn-account  btn-account-text btn-add"><i class="material-icons">add_circle</i> <span class="align-text-icon">ADD ACCOUNT OR CASH</span></button>
-              <button class="btn-account btn-account-text btn-update"> <i class="material-icons">autorenew</i> <span class="align-text-icon">UPDATE ACCOUNT</span> <i class="material-icons">expand_more</i> </button>
+              
+              <app-dropdown-update-account></app-dropdown-update-account>
+              
               </div>
             </div>
           </td>

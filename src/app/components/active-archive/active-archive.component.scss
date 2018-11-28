@@ -15,18 +15,29 @@
   font-family: MuseoSans;
   cursor: pointer;
   box-sizing: border-box;
+
   &[open] {
     background: #fff;
     color: #414042;
+        position: relative;
     summary {
       border-bottom: 0.5px solid #e7e6e6;
+      color:#414042;
+      
     }
+    .item {
+      .material-icons {
+        color: #414042;
+      }  
+    }
+    
     .check-icon {
     	content: url('../../../assets/state-active-gray.svg');
     }
     .dropdown-icon {
     	content: url('../../../assets/arrow-gray.svg');
     }
+
   }
   .icon-container {
     display: flex;
@@ -46,10 +57,12 @@
   summary {
     display: flex;
     box-sizing: border-box;
-    padding: 11px 10px 10px;
     outline: none !important;
     position: relative;
     display: block;
+    .material-icons {
+      color:#fff;
+    }
   }
   .archive-icon {
     width: 8px;
@@ -57,6 +70,7 @@
     object-fit: contain;
     content: url('../../../assets/state-archived-gray.svg');
   }
+
   .dropdown-icon {
     top: 14px;
     position: absolute;
@@ -75,5 +89,8 @@
   	display: flex;
   	position: relative;
     display: block;
+    .material-icons {
+      font-size:inherit;
+    }
   }
 }

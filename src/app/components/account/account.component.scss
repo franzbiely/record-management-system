@@ -63,7 +63,7 @@ table {
         display: flex;
         flex-direction: row;
 
-        .btn-update{
+        app-dropdown-update-account{
             margin-left: 20px;
         }
         .total-container{
@@ -98,7 +98,7 @@ table {
         }
         @media only screen and (max-width: 767px){
             flex-direction: column;
-            .btn-update {
+            app-dropdown-update-account {
                 margin-left: 0px;
                 margin-top: 10px;
             }

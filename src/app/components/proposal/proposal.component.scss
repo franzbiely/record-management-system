@@ -9,6 +9,9 @@
     background-color: #ffffff;
     display: flex;
     z-index:60;
+    .to-household {
+        cursor:pointer;
+    }
     .header-mask {
         padding:60px 0px 0px 60px;
         z-index: 1;
@@ -138,6 +141,9 @@
     .status-container{
         margin-top:30px;
         display: flex;
+        app-active-archive {
+            margin-right:50px;
+        }
     }
     .dropbtn {
     
@@ -335,7 +341,7 @@
             display:flex;
             }
         }
-        }      
+    }      
 }
 
 
@@ -434,5 +440,3 @@ input[type='checkbox'] {
 ::ng-deep mat-tab-label{
     z-index: 70;
 }
-
-

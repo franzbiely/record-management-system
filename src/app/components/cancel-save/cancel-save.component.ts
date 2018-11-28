@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class CancelSaveComponent implements OnInit {
   @Input() containerStyle: string;
   @Input() primaryLabel: string;
+  @Input() noCancel: false;
   cancelFunc() {
   	this.cancelEvent.emit(true);
   }

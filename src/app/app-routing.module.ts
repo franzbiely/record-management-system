@@ -29,6 +29,7 @@ import { HouseholdListScreenComponent } from './screens/household-list-screen/ho
 import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 import { AllocationDetailsScreenComponent } from './screens/allocation-details-screen/allocation-details-screen.component';
+import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-proposal-screen.component';
 const routes: Routes = [
   
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: HomeScreenComponent
+  },
+  {
+    path: 'proposal',
+    component: NewProposalScreenComponent
   },
   {
     

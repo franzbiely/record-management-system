@@ -229,3 +229,12 @@ main {
 app-sidebar {
     background: #fff;
 }
+
+
+.mat-tab-body-wrapper {
+    position:initial !important;
+    overflow: initial !important;
+}
+.mat-tab-body.mat-tab-body-active {
+    overflow: initial !important;
+}

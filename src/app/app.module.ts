@@ -78,6 +78,8 @@ import { CalendarModalComponent } from './components/calendar-modal/calendar-mod
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 import { AllocationDetailsComponent } from './components/allocation-details/allocation-details.component';
 import { AllocationDetailsScreenComponent } from './screens/allocation-details-screen/allocation-details-screen.component';
+import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-proposal-screen.component';
+import { DropdownUpdateAccountComponent } from './components/dropdown-update-account/dropdown-update-account.component';
 
 @NgModule({
   declarations: [
@@ -156,7 +158,9 @@ import { AllocationDetailsScreenComponent } from './screens/allocation-details-s
     CalendarModalComponent,
     CalendarModalScreenComponent,
     AllocationDetailsComponent,
-    AllocationDetailsScreenComponent
+    AllocationDetailsScreenComponent,
+    NewProposalScreenComponent,
+    DropdownUpdateAccountComponent
   ],
   imports: [
     BrowserModule,
