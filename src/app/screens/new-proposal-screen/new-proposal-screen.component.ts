@@ -9,10 +9,12 @@ import { ModalStatusService } from "../../services/modal-status.service"
 export class NewProposalScreenComponent implements OnInit {
 
 	importAccountsModal: boolean = false;
+	accountDetailsModal: boolean = false;
   constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
   	this.modalStatus.importAccount.subscribe(value => this.importAccountsModal = value);
+  	this.modalStatus.accountDetails.subscribe(value => this.accountDetailsModal = value);
   }
 
 }
