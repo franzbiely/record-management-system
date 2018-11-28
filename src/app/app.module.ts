@@ -76,6 +76,13 @@ import { CalendarModalComponent } from './components/calendar-modal/calendar-mod
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
 import { AllocationDetailsComponent } from './components/allocation-details/allocation-details.component';
 import { AllocationDetailsScreenComponent } from './screens/allocation-details-screen/allocation-details-screen.component';
+import { AssetClassComponent } from './components/asset-class/asset-class.component';
+import { AssetClassScreenComponent } from './screens/asset-class-screen/asset-class-screen.component';
+import { AccountDetailsComponent } from './components/account-details/account-details.component';
+import { AccountDetailsScreenComponent } from './screens/account-details-screen/account-details-screen.component';
+import { ImportAccountsComponent } from './components/import-accounts/import-accounts.component';
+import { ImportAccountsScreenComponent } from './screens/import-accounts-screen/import-accounts-screen.component';
+import { AccountSavedComponent } from './components/account-saved/account-saved.component';
 
 @NgModule({
   declarations: [
@@ -152,7 +159,14 @@ import { AllocationDetailsScreenComponent } from './screens/allocation-details-s
     CalendarModalComponent,
     CalendarModalScreenComponent,
     AllocationDetailsComponent,
-    AllocationDetailsScreenComponent
+    AllocationDetailsScreenComponent,
+    AssetClassComponent,
+    AssetClassScreenComponent,
+    AccountDetailsComponent,
+    AccountDetailsScreenComponent,
+    ImportAccountsComponent,
+    ImportAccountsScreenComponent,
+    AccountSavedComponent
   ],
   imports: [
     BrowserModule,
