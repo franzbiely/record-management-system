@@ -1,0 +1,133 @@
+.screen-container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .calendar-modal-container{
+        box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+        background-color: white;
+        border-radius: 6px;
+        position: relative;
+        .btn-close{
+            cursor: pointer;
+            position: absolute;
+            right:5px;
+            top:5px;
+            width: 20px;
+            content: url("/src/assets/component/popups/exit-white.png")
+        }
+        .calendar-modal-box{
+            display:flex;
+            .col:not(:first-child){
+                .calendar-container{
+                    padding: 20px 20px;
+                    table{
+                        border-collapse: 0;
+                        text-align: center;
+                        th{
+                            color: #1598cb;
+                            font-family: montserrat;
+                            font-size: 15px;
+                            font-weight: 700;
+                            padding: 10px 10px;
+                            div{  
+                                display:flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            .next-left{
+                                width: 5px;
+                                content: url("/src/assets/component/calendar/next-left.png")
+                            }
+                            .next-right{
+                                width: 5px;
+                                content: url("/src/assets/component/calendar/next-right.png")
+                            }
+                        }
+                        tr.day-name td{
+                            font-family: montserrat;
+                            font-size: 10px;
+                            text-transform: uppercase;
+                            color: #b8b8b8;
+                            padding: 15px 10px;
+                            font-weight: 500;
+                        }
+                        tr.day td{
+                            font-family: montserrat;
+                            font-size: 10px;
+                            text-transform: uppercase;
+                            padding: 12px 10px;
+                            font-weight: 700;
+                        }
+                        td.next-month{
+                            color: #8b8b8b;
+                        }
+                        
+                    }
+                }
+            }
+            .col:not(:first-child){
+                border-left: #ddd 1px solid;
+            }
+            .row:not(:last-child){
+                border-bottom: #ddd 1px solid;
+            }
+            .row{
+                padding:10px 20px;
+                .radio{
+                        span{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .btn-container{
+                .btn-apply{
+                    color: #8b8b8b;
+                    background-color: #e6e6e6;
+                    border: none;
+                }
+            }
+            .radio-container{
+                font-family: montserrat;
+                font-size:12px;
+                font-weight: 300;
+                .range-container{
+                    margin-top: 20px;
+                    width:auto;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    input[type=text]{
+                        flex:1;
+                        padding:15px 20px;
+                        border-radius: 6px;
+                        border: #ddd 1px solid;
+                        margin-top: 5px;
+
+                    }
+                    .left-box{
+                        display: flex;
+                        flex-direction: column;
+                        padding-right:20px;
+                        width: 100px;
+                        span{
+                            font-family: montserrat;
+                            font-weight: 700;
+                            font-size: 12px;
+                        }
+                    }
+                    .right-box{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100px;
+                        span{
+                            font-family: montserrat;
+                            font-weight: 700;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

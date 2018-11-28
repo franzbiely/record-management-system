@@ -76,6 +76,8 @@ import { CreateHouseholdScreenComponent } from './screens/create-household-scree
 import { ActiveArchiveComponent } from './components/active-archive/active-archive.component';
 import { CalendarModalComponent } from './components/calendar-modal/calendar-modal.component';
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
+import { AllocationDetailsComponent } from './components/allocation-details/allocation-details.component';
+import { AllocationDetailsScreenComponent } from './screens/allocation-details-screen/allocation-details-screen.component';
 
 @NgModule({
   declarations: [
@@ -152,7 +154,9 @@ import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/ca
     CreateHouseholdScreenComponent,
     ActiveArchiveComponent,
     CalendarModalComponent,
-    CalendarModalScreenComponent
+    CalendarModalScreenComponent,
+    AllocationDetailsComponent,
+    AllocationDetailsScreenComponent
   ],
   imports: [
     BrowserModule,
