@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RiskAssessmentComponent implements OnInit {
 	step:number = 1;
+	moveTo($step) {
+		this.step = $step;
+	}
   constructor() { }
 
   ngOnInit() {
