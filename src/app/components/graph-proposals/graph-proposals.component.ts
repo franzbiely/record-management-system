@@ -101,7 +101,7 @@ export class GraphProposalsComponent implements OnInit {
                     enabled: false,
                     mode: 'index',
                     position: 'nearest',
-                    custom: this.customTooltips
+                    // custom: this.customTooltips - commented because of ERROR in src/app/components/graph-proposals/graph-proposals.component.ts(104,34): error TS2339: Property 'customTooltips' does not exist on type 'GraphProposalsComponent'.
                 }
             },
             draw: function(){
