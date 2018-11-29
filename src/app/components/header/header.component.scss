@@ -57,7 +57,10 @@
                 border: none;
                 background: transparent;
                 outline: none;
-
+                .icon-search{
+                    margin-left: 20px;
+                    color: #ddd;
+                }
                 img{
                     object-fit: contain;
                     width: 25px;
@@ -67,7 +70,7 @@
 
             .search-input{
                 right: 0;
-                width: 349px;
+                width: 250px;
                 height: 40px;
                 border-radius: 6px;
                 border: solid 1px #e7e6e6;
@@ -84,8 +87,8 @@
     
             .notification-bell{
                 position: relative;
-                width: 45px;
-                height: 45px;
+                width: 20px;
+                height: 20px;
                 object-fit: contain;
                 
             }
@@ -244,7 +247,7 @@
 
             .search-input{
                 right: 0;
-                width: 349px;
+                width: 250px;
                 height: 40px;
                 border-radius: 6px;
                 border: solid 1px #e7e6e6;

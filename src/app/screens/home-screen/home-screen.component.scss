@@ -40,16 +40,24 @@ $secondaryFont: MuseoSans;
 %grey-text{
     font-family: $primaryFont;
     font-weight: 0;
+    font-weight: 400;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: 0.4px;
+    color: #77787b;
+}
+%grey-text-uppercase{
+    font-family: $primaryFont;
+    font-weight: 400;
+    line-height: 1.5;
     color: #77787b;
     text-transform: uppercase;
 }
 .info-item{
     .icon-side{
         font-size: 8pt;
+        padding-left:3px;
     }
     @include info-item(10px, 20px, 10px, 20px);    
     .item-one, .item-two{
@@ -75,15 +83,30 @@ $secondaryFont: MuseoSans;
     }
     .item-top{
         flex: auto;
+        font-family: $primaryFont;
+        font-size: 12px;
+        font-weight: 700;
+        color: #414042;
         .grey-text{
-        @extend %grey-text;
+        @extend %grey-text-uppercase;
         font-size: 7pt;
         }
     }
     .item-bottom{
         padding: 0;
         text-align: right;
-        .grey-text{@extend %grey-text;font-size: 7pt;}
+        font-family: $primaryFont;
+        font-size: 11px;
+        color: #414042;
+        font-weight: 600;
+        .grey-text{
+            @extend %grey-text;font-size: 7pt;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end}
+    }
+    .flex{
+        display: flex;
     }
     .document-icon{
         display: flex;
@@ -92,6 +115,7 @@ $secondaryFont: MuseoSans;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        padding-right: 15px;
 
         img{width: 20px;}
     }
@@ -129,6 +153,11 @@ $secondaryFont: MuseoSans;
       height: auto;
       overflow: none;
   }
+}
+.vertical-align{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .adjust-container{
     background: #f5f5f5;
@@ -204,6 +233,11 @@ $secondaryFont: MuseoSans;
         }
     }
 }
+
+.space-between{
+    display:flex;
+    justify-content: space-between;
+  }
 .divider {
     width:100%;
     border:solid 0.5px #e7e6e6;
