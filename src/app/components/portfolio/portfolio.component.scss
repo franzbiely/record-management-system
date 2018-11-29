@@ -118,6 +118,7 @@ $secondaryfont : 'montserrat', sans-serif;
     display: flex;
     align-items: center;
     padding: 30px 40px;
+    background: #fdfdfd;
     @media only screen and (max-width:767px){
         padding: 0px;
     }
