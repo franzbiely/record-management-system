@@ -9,10 +9,12 @@ export class ModalStatusService {
 
 	private importAccountSource = new BehaviorSubject<boolean>(false);
 	private accountDetailsSource = new BehaviorSubject<boolean>(false);
+  private riskSendFormSource = new BehaviorSubject<boolean>(false);
 
 
 	public importAccount = this.importAccountSource.asObservable();
 	public accountDetails = this.accountDetailsSource.asObservable();
+  public riskSendForm = this.riskSendFormSource.asObservable();
 
   constructor() { }
 
@@ -22,5 +24,9 @@ export class ModalStatusService {
 
   toggleAccountDetails(value: boolean) {
   	this.accountDetailsSource.next(value);
+  }
+
+  toggleRiskSendForm(value: boolean) {
+    this.riskSendFormSource.next(value);
   }
 }
