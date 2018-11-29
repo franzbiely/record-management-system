@@ -11,7 +11,7 @@ export class AddSecurityComponent implements OnInit {
 
 	toggleModify($event) {
 		console.log('toggleModify', $event.checked);
-		this.isEdit : $event.checked;
+		this.isEdit = $event.checked;
 		this.isEditEvent.emit($event.checked)
 		
 	}
