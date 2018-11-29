@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+
+.box-container{
+    margin-top:60px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+    z-index: 70;
+    .box-content{
+        width: 1000px;
+        box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+        border-radius: 6px;
+        background-color: white;
+        .box-head{
+            background-color: #1598cb;
+            border-radius: 6px 6px 0px 0px;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left-section{
+                .box-title{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .text-title{
+                    font-family: 'montserrat', sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                .text-subtitle{
+                    font-family: 'montserrat', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: white;
+                }
+            }
+
+        }
+            .right-section{
+                .add-container{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .box-body-1{
+            .row-1{
+                .progress-container{
+                    position: relative;
+                    .progress-content{
+                    position: relative;
+                    display:flex;
+                    flex-direction: row;
+                    padding: 20px 60px;
+                    border-bottom: 1px #ddd solid;
+                    justify-content: space-between;
+                    flex: 1;
+                        .progress{
+                            flex:1;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            span{
+                                font-family: montserrat;
+                                font-size: 10px;
+                                font-weight: 600;
+                            }
+                            .radio{
+                                position: relative;
+                                z-index:5;
+                                margin-top: 15px;
+                            }
+                        }   
+                    }    
+                }
+            }               
+        }
+        .box-body-2{
+            height: 400px;
+            overflow: scroll;
+            position: relative;
+            .row-2{
+                padding: 40px 30px 40px 0px;
+                position: relative;
+                .overlay{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 1;
+                    background-color: rgba(255,255,255, 0.8);
+                    cursor: pointer;
+                }
+                .question-box-container:not(:first-child){
+                    margin-top:20px;
+                }
+                div.question-box-container:nth-child(3){
+                    z-index: 2;
+                }
+                .question-box-container{
+                    position: relative;
+                    .question-box{
+                        position: relative;
+                        display: flex;
+                        background-color: white;
+                        padding: 30px;
+                        box-shadow: rgba(65, 64, 66, 0.1) 0px 2px 7px;
+                        border-radius: 0px 6px 6px 0px;
+                        border-right: 5px #1598cb solid;
+                        .question{
+                            .title-question{
+                                font-family: montserrat;
+                                color: #1598cb;
+                                font-weight: 800;
+                                font-size: 24px;
+                            }
+                            div .text-question{
+                                font-family: montserrat;
+                                color: rgba(60, 60, 60, 1);
+                                font-size: 14px;
+                            }
+                            .question-container{
+                                margin-top:10px;
+                            }
+                            .choices-container{  
+                                display: flex;
+                                flex-direction: column;
+                                img{
+                                    margin-top: 15px;
+                                }
+                                button{
+                                    background-color: #1598cb;
+                                    width: 150px;
+                                    margin-top: 20px;
+                                    color: white;
+                                }
+                                .radio-choice{
+                                    margin-top: 10px;
+                                    font-family: montserrat;
+                                    color: rgba(30, 30, 30, 1);
+                                    font-size: 10px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

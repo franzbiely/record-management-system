@@ -96,6 +96,8 @@ import { DropdownFilterComponent } from './components/dropdown-filter/dropdown-f
 import { ProfileNotificationComponent } from './components/profile-notification/profile-notification.component';
 import { RiskAssessmentQuestionnaireComponent } from './components/risk-assessment-questionnaire/risk-assessment-questionnaire.component';
 import { MenuSearchbarComponent } from './components/menu-searchbar/menu-searchbar.component';
+import { QuestionnaireModalComponent } from './components/questionnaire-modal/questionnaire-modal.component';
+import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
 
 @NgModule({
   declarations: [
@@ -194,7 +196,9 @@ import { MenuSearchbarComponent } from './components/menu-searchbar/menu-searchb
     DropdownFilterComponent,
     ProfileNotificationComponent,
     RiskAssessmentQuestionnaireComponent,
-    MenuSearchbarComponent
+    MenuSearchbarComponent,
+    QuestionnaireModalComponent,
+    QuestionnaireScreenComponent
   ],
   imports: [
     BrowserModule,
