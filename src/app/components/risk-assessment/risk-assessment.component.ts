@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RiskAssessmentComponent implements OnInit {
 	step:number = 1;
+  enableRight:boolean = false;
+  enableBtnConfirm: boolean = false;
+
+  toggleBtnConfirmEnable($event) {
+    this.enableBtnConfirm = $event.checked;
+  }
 	moveTo($step) {
 		this.step = $step;
 	}
