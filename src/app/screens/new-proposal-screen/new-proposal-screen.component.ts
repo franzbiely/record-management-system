@@ -11,6 +11,7 @@ export class NewProposalScreenComponent implements OnInit {
 	importAccountsModal: boolean = false;
 	accountDetailsModal: boolean = false;
   viewPortfolioModal : boolean = false;
+  editPortfolioModal : boolean = false;
 
   constructor(private modalStatus: ModalStatusService) { }
 
@@ -18,6 +19,7 @@ export class NewProposalScreenComponent implements OnInit {
   	this.modalStatus.importAccount.subscribe(value => this.importAccountsModal = value);
   	this.modalStatus.accountDetails.subscribe(value => this.accountDetailsModal = value);
     this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
+    this.modalStatus.editPortfolio.subscribe(value => this.editPortfolioModal = value);
   }
 
 }

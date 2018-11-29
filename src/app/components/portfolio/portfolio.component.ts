@@ -8,12 +8,16 @@ import { ModalStatusService } from "../../services/modal-status.service"
 })
 export class PortfolioComponent implements OnInit {
 	viewPortfolioModal : boolean = false;
+  editPortfolioModal : boolean = false;
   constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
   	this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
   }
   viewEventReciever() {
-  	this.modalStatus.SET_AccountDetails(true);
+  	this.modalStatus.SET_viewPortfolio(true);
+  }
+  modifyEventReciever() {
+    this.modalStatus.SET_editPortfolio(true);
   }
 }

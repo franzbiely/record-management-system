@@ -14,6 +14,11 @@ export class DropdownActionsComponent implements OnInit {
 		this.viewEvent.emit(true);
 	}
 	@Output() viewEvent = new EventEmitter<boolean>();
+
+  modifyFunc() {
+    this.modifyEvent.emit(true);
+  }
+  @Output() modifyEvent = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {

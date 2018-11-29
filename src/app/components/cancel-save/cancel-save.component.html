@@ -1,5 +1,6 @@
 <div class="container-btn cancel-save-container" [ngClass]="containerStyle">
     <div class="btn-group">
+      <ng-content></ng-content>
       <div *ngIf="closeOnly">
         <button (click)="cancelFunc()">Close</button>
       </div>

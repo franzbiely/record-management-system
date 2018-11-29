@@ -21,8 +21,14 @@ export class ModalStatusService {
 
   private viewPortfolioSource = new BehaviorSubject<boolean>(false);
   public viewPortfolio = this.viewPortfolioSource.asObservable();
-  SET_AccountDetails(value: boolean) {
+  SET_viewPortfolio(value: boolean) {
     this.viewPortfolioSource.next(value);
+  }
+
+  private editPortfolioSource = new BehaviorSubject<boolean>(false);
+  public editPortfolio = this.editPortfolioSource.asObservable();
+  SET_editPortfolio(value: boolean) {
+    this.editPortfolioSource.next(value);
   }
   constructor() { }
 }

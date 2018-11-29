@@ -3,6 +3,10 @@ app-popup-custom-asset-class {
     z-index: 2;
 }
 .add-security {
+	.modify {
+		display:flex;
+		float: right;
+	}
     .search-input {
         width:100%;
     }

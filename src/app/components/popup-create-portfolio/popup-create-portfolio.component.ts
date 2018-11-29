@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-popup-create-portfolio',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popup-create-portfolio.component.scss']
 })
 export class PopupCreatePortfolioComponent implements OnInit {
-
-  constructor() { }
+	@Input() isEdit: boolean = false;
+	viewPortfolioModal : boolean = false;
+	editPortfolioModal : boolean = false;
+	
+	closeView() {
+	  	this.modalStatus.SET_viewPortfolio(false);
+	  }
+	  closeEdit() {
+	  	this.modalStatus.SET_editPortfolio(false);
+	  }
+	  editEventReciever($this) {
+	  	this.isEdit = true;
+	  }
+  constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
+  	this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
+  	this.modalStatus.editPortfolio.subscribe(value => this.editPortfolioModal = value);
   }
 
 }
