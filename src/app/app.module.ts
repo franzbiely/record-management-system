@@ -88,7 +88,8 @@ import { AccountSelectModalScreenComponent } from './screens/account-select-moda
 import { AddAccountModalComponent } from './components/add-account-modal/add-account-modal.component';
 import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
 import { PopupCustomAssetClassComponent } from './components/popup-custom-asset-class/popup-custom-asset-class.component';
-
+import { QuestionnaireModalComponent } from './components/questionnaire-modal/questionnaire-modal.component';
+import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -176,7 +177,9 @@ import { PopupCustomAssetClassComponent } from './components/popup-custom-asset-
     AccountSelectModalScreenComponent,
     AddAccountModalComponent,
     AddAccountScreenComponent,
-    PopupCustomAssetClassComponent
+    PopupCustomAssetClassComponent,
+    QuestionnaireModalComponent,
+    QuestionnaireScreenComponent
   ],
   imports: [
     BrowserModule,
