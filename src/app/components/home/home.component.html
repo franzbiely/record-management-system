@@ -12,10 +12,10 @@
         
         <div class="container-info">
           <div class="info-item" *ngFor="let household of households">
-            <div class="item-one">{{ household.name }}</div>
+            <div class="item-one item-top">{{ household.name }}</div>
             <div class="item-two">
-              <div class="item-two-amount">{{ household.value }}</div>
-              <div class="item-two-date">{{ household.date }}</div>
+              <div class="item-bottom">{{ household.value }}</div>
+              <div class="item-bottom">{{ household.date }}</div>
             </div>
           </div>
         </div>

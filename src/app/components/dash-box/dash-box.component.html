@@ -9,7 +9,7 @@
 
 	<div class="box-head">
 	  <div>
-	  	<h2>{{title}} <sub *ngIf="subTitle">{{subTitle}}</sub></h2>
+	  	<span class="title">{{title}} <span class="sub" *ngIf="subTitle">{{subTitle}}</span></span>
 	  </div>
 
 	  <div class="btn-right-space">
@@ -20,6 +20,9 @@
 		
 		<div class="box-checkbox" *ngIf="headerRightType=='select'">
 			<mat-checkbox></mat-checkbox>
+		</div>
+		<div class="box-checkbox" *ngIf="headerRightType=='action'">
+				<i class="material-icons">more_vert</i>
 		</div>
 	  </div> 
 	</div>
