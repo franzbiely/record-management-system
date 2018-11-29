@@ -38,6 +38,7 @@ import { AddHouseholdComponent } from './components/add-household/add-household.
 import { AddHouseholdScreenComponent } from './screens/add-household-screen/add-household-screen.component';
 import { HomeAddHouseholdComponent } from './components/home-add-household/home-add-household.component';
 import { HomeAddHouseholdScreenComponent } from './screens/home-add-household-screen/home-add-household-screen.component';
+import { FilterDropdownComponent } from './components/filter-dropdown/filter-dropdown.component';
 import { FirmInformationComponent } from './components/firm-information/firm-information.component';
 import { FirmInformationScreenComponent } from './screens/firm-information-screen/firm-information-screen.component';
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
@@ -136,6 +137,7 @@ import { GraphProposalsComponent } from './components/graph-proposals/graph-prop
     AddHouseholdScreenComponent,
     HomeAddHouseholdComponent,
     HomeAddHouseholdScreenComponent,
+    FilterDropdownComponent,
     FirmInformationComponent,
     FirmInformationScreenComponent,
     DocumentPreviewComponent,
