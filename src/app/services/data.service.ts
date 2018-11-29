@@ -11,5 +11,11 @@ export class DataService {
 	  	this.proposal_show_btnNextSource.next(value);
 	}
 
+	private proposal_risk_stepSource = new BehaviorSubject<number>(1);
+	public proposal_risk_step = this.proposal_risk_stepSource.asObservable();
+	SET_proposal_risk_step(value: number) {
+	  	this.proposal_risk_stepSource.next(value);
+	}
+
   constructor() { }
 }

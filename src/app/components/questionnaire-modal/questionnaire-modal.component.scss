@@ -1,14 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
-
+.overlay{
+    position: absolute;
+    background-color: rgba(255,255,255,0.8);
+    top: 0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    z-index: 60;
+}
 .box-container{
-    margin-top:60px;
     height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 60px;
     z-index: 70;
     .box-content{
         width: 1000px;
@@ -87,6 +93,7 @@
             height: 400px;
             overflow: scroll;
             position: relative;
+            scroll-behavior: smooth;
             .row-2{
                 padding: 40px 30px 40px 0px;
                 position: relative;
@@ -108,6 +115,11 @@
                 }
                 .question-box-container{
                     position: relative;
+                    &.active {
+                        .overlay {
+                            display:none;
+                        }
+                    }
                     .question-box{
                         position: relative;
                         display: flex;

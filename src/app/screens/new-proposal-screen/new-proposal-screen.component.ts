@@ -11,12 +11,15 @@ export class NewProposalScreenComponent implements OnInit {
 	importAccountsModal: boolean = false;
 	accountDetailsModal: boolean = false;
   riskSendFormModal: boolean = false;
+  questionnaireModal: boolean = false;
+
   constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
   	this.modalStatus.importAccount.subscribe(value => this.importAccountsModal = value);
   	this.modalStatus.accountDetails.subscribe(value => this.accountDetailsModal = value);
     this.modalStatus.riskSendForm.subscribe(value => this.riskSendFormModal = value);
+    this.modalStatus.questionnaire.subscribe(value => this.questionnaireModal = value);
   }
 
 }

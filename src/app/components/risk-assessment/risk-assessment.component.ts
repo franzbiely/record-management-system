@@ -13,6 +13,7 @@ export class RiskAssessmentComponent implements OnInit {
   enableRight:boolean = false;
   enableBtnConfirm: boolean = false;
   riskSendFormModal: boolean = false;
+  questionsModal: boolean = false
 
   toggleBtnConfirmEnable($event) {
     this.enableBtnConfirm = $event.checked;
@@ -25,13 +26,20 @@ export class RiskAssessmentComponent implements OnInit {
     this.modalStatus.toggleRiskSendForm(true);
   }
 	moveTo($step) {
-		this.step = $step;
+    this.data.SET_proposal_risk_step($step);
 	}
+  openQuestionnaire() {
+    this.modalStatus.toggleQuestionnaire(true);
+  }
   constructor(private data: DataService, private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
     this.data.proposal_show_btnNext.subscribe(value => this.btnNext = value);
+    this.data.proposal_risk_step.subscribe(value => this.step = value);
     this.modalStatus.riskSendForm.subscribe(value => this.riskSendFormModal = value);
+    this.modalStatus.questionnaire.subscribe(value => this.questionsModal = value)
   }
+
+
 
 }
