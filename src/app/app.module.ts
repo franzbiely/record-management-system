@@ -92,6 +92,7 @@ import { AccountSelectModalScreenComponent } from './screens/account-select-moda
 import { AddAccountModalComponent } from './components/add-account-modal/add-account-modal.component';
 import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
 import { PopupCustomAssetClassComponent } from './components/popup-custom-asset-class/popup-custom-asset-class.component';
+import { ProfileNotificationComponent } from './components/profile-notification/profile-notification.component';
 
 @NgModule({
   declarations: [
@@ -186,7 +187,8 @@ import { PopupCustomAssetClassComponent } from './components/popup-custom-asset-
     AccountSelectModalScreenComponent,
     AddAccountModalComponent,
     AddAccountScreenComponent,
-    PopupCustomAssetClassComponent
+    PopupCustomAssetClassComponent,
+    ProfileNotificationComponent
   ],
   imports: [
     BrowserModule,

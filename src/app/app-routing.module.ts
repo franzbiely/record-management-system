@@ -19,22 +19,11 @@ import { FirmInformationScreenComponent } from './screens/firm-information-scree
 import { DocumentPreviewComponent } from './components/document-preview/document-preview.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { DocumentationBookmarkScreensComponent } from './screens/documentation-bookmark-screens/documentation-bookmark-screens.component';
-import { CreateHouseholdScreenComponent } from './screens/create-household-screen/create-household-screen.component';
+import { CreateNewHouseholdComponent } from './components/create-new-household/create-new-household.component';
 import { NotificationComponentComponent } from './components/notification-component/notification-component.component';
+import { ProfileNotificationComponent } from './components/profile-notification/profile-notification.component';
 import { TestScreenComponent } from './screens/test-screen/test-screen.component';
 import { SimulationScreenComponent } from './screens/simulation-screen/simulation-screen.component';
-import { SimulationCurrentScreenComponent } from './screens/simulation-current-screen/simulation-current-screen.component';
-import { PopUpRotateScreenComponent } from './screens/pop-up-rotate-screen/pop-up-rotate-screen.component';
-import { HouseholdListScreenComponent } from './screens/household-list-screen/household-list-screen.component';
-import { HouseholdMemberScreenComponent } from './screens/household-member-screen/household-member-screen.component';
-import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
-import { AllocationDetailsScreenComponent } from './screens/allocation-details-screen/allocation-details-screen.component';
-import { NewProposalScreenComponent } from './screens/new-proposal-screen/new-proposal-screen.component';
-import { AssetClassScreenComponent } from './screens/asset-class-screen/asset-class-screen.component';
-import { AccountDetailsScreenComponent } from './screens/account-details-screen/account-details-screen.component';
-import { ImportAccountsScreenComponent } from './screens/import-accounts-screen/import-accounts-screen.component';
-import { AccountSelectModalScreenComponent } from './screens/account-select-modal-screen/account-select-modal-screen.component';
-import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
 const routes: Routes = [
   
   {
@@ -44,10 +33,6 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: HomeScreenComponent
-  },
-  {
-    path: 'proposal',
-    component: NewProposalScreenComponent
   },
   {
     
@@ -132,64 +117,19 @@ const routes: Routes = [
     component: DocumentationBookmarkScreensComponent
   },{
     path: 'create-household',
-    component: CreateHouseholdScreenComponent
-  },
-  {
+    component: CreateNewHouseholdComponent
+  },{
     path: 'notification-component',
     component: NotificationComponentComponent
   },{
     path: 'simulation',
     component: SimulationScreenComponent
-  },
-  {
-    path: 'simulation-current',
-    component: SimulationCurrentScreenComponent
-  },
-  {
-    path: 'pop-up-rotate',
-    component: PopUpRotateScreenComponent 
+  },{
+    path: 'profile-notification',
+    component: ProfileNotificationComponent
   }
-  ,
-  {
-    path: 'household-list',
-    component: HouseholdListScreenComponent 
-  },
-  {
-    path: 'household-member',
-    component: HouseholdMemberScreenComponent 
-  },
-  {
-    path: 'calendar-modal',
-    component: CalendarModalScreenComponent 
-  },
-  {
-    path: 'allocation-details',
-    component: AllocationDetailsScreenComponent 
-  },
-  {
-    path: 'asset-class',
-    component: AssetClassScreenComponent 
-  }
-  ,
-  {
-    path: 'account-details',
-    component: AccountDetailsScreenComponent 
-  },
-  {
-    path: 'import-accounts',
-    component: ImportAccountsScreenComponent 
-  },
-  {
-    path: 'account-select',
-    component: AccountSelectModalScreenComponent 
-  },
-  {
-    path: 'add-account',
-    component: AddAccountScreenComponent 
-  }
-  
-  
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

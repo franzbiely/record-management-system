@@ -58,26 +58,29 @@ section{
   			.oval {
   				width: 30px;
   				height: 30px;
-  				margin-left: 13px;
-  				margin-top: 5px;
+  				position: relative;
+			    left: 13px;
+			    top: 4px;
   				border-radius: 50%;
   				background-color: #e7e6e6;
   				align-items: center;
   				justify-content: center;
 			}
 			.oval small {
-  				  width: 13px;
-				  height: 12px;
-				  margin-left: 10px;
-				  font-family: Montserrat;
-				  font-size: 12px;
-				  font-weight: bold;
-				  font-style: normal;
-				  font-stretch: normal;
-				  line-height: 1;
-				  letter-spacing: normal;
-				  text-align: center;
-				  color: #414042;
+				width: 13px;
+			    height: 12px;
+			    position: relative;
+		      	left: 9px;
+		      	top: 6px;
+			  	font-family: Montserrat;
+			  	font-size: 12px;
+			  	font-weight: bold;
+			  	font-style: normal;
+			  	font-stretch: normal;
+			  	line-height: 1;
+			  	letter-spacing: normal;
+			  	text-align: center;
+			 	color: #414042;
 			}
 			.Activity {
 			  margin-left: 27px;
@@ -124,7 +127,7 @@ section{
   				margin-left: 28px;
     			flex-direction: column;
     			padding: 5px;
-    			height: 693px;
+    			height: 670px;
     			width: 393px;
   				overflow: scroll;
 			}
@@ -145,7 +148,7 @@ section{
 				margin-top: -12px;
 				margin-left: 27px;
 				width: 2px;
-  				height: 693px;
+  				height: 698px;
   				background-color: #e7e6e6;
 			}
 
