@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-portfolio',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-
-  constructor() { }
+	viewPortfolioModal : boolean = false;
+  constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
+  	this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
   }
-
+  viewEventReciever() {
+  	this.modalStatus.SET_AccountDetails(true);
+  }
 }

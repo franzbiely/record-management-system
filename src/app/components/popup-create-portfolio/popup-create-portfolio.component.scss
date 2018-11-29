@@ -1,6 +1,5 @@
 .popup-create-portfolio {
     width:1280px;
-    height: 862px;
     font-family: MuseoSans;
     font-size: 14px;
     font-weight: 300;
@@ -9,6 +8,9 @@
     line-height: normal;
     letter-spacing: normal;
     color: #c5c5c5;
+    background:#fff;
+    padding:0;
+    z-index:2;
     input[type="text"] {
         padding:15px 15px 13px 15px;
     }

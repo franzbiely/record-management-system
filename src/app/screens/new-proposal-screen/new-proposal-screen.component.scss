@@ -15,3 +15,13 @@ app-account-details {
     justify-content: center;
     height: 100%;
 }
+
+app-popup-create-portfolio {
+    position: absolute;
+        align-items: center;
+    z-index: 99;
+    width: 100%;
+        display: flex;
+    justify-content: center;
+    height: 100%;
+}
