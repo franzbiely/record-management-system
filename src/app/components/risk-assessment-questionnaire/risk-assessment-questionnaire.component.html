@@ -1,21 +1,71 @@
 <div class="container-overlay fade">
   <div class="container-modal">
     <div class="modal-header">
+      <div class="header-close">
+        <a><i class="material-icons">close</i></a>
+      </div>
       <h3>Risk Assessment Questionnaire</h3>
     </div>
     <div class="modal-body">
       <div class="input-field">
-        <input type="text" class="input-text">
+        <details class="input-text" (mousedown)="selectRecepient=!selectRecepient">
+          <summary>Chris Candelaria (ccandelaria@loringward.com)  <i class="material-icons">{{ selectRecepient ? "keyboard_arrow_up" : "keyboard_arrow_down"}}</i> </summary>
+          <div class="container-recepient">
+            <div class="recepient-item">
+              <mat-radio-group>
+                <mat-radio-button value="1">
+                  Chris Candelaria
+                  <span class="recepient-email">(ccandelaria@loringward.com)</span>
+                </mat-radio-button>                
+                <mat-radio-button value="2">
+                  Kristy Candelaria
+                  <span class="recepient-email">(kristycandelaria@loringward.com)</span>
+                </mat-radio-button>              
+              </mat-radio-group>
+            </div>
+            <div class="recepient-input">
+              <input type="text" placeholder="Enter Address Manually">
+              <button>Enter</button>
+            </div>
+          </div>
+        </details>
       </div>
       <div class="input-field">
-        <input type="text" class="input-text">
+        <input type="text" class="input-text" placeholder="Subject">
       </div>
       <div class="input-field">
-        <input type="text" class="input-text">
+        <details class="input-text details" (mousedown)="selectMessageTemplate=!selectMessageTemplate">
+          <summary>Use Template Message 
+            <i class="material-icons">{{ selectMessageTemplate ? "keyboard_arrow_up" : "keyboard_arrow_down"}}</i></summary>
+          <div class="container-recepient">
+            <div class="recepient-item">
+              <mat-radio-group>
+                <mat-radio-button value="1">
+                  <div>
+                    <span class="recepient-email">Loring Ward Risk Assessment Questionnaire Template Message</span>
+                    <a href="">SET AS DEFAULT</a>
+                  </div>
+                </mat-radio-button>                
+                <mat-radio-button value="2">
+                  <div>
+                    <span class="recepient-email">Your Risk Assessment Questionnaire Template Message</span>  
+                    <a href="">SET AS DEFAULT</a>
+                  </div>
+                </mat-radio-button>              
+              </mat-radio-group>
+            </div>
+            <div class="recepient-input">
+              <textarea>Hello Chris Candelaria, Jennica Fernene with Example Wealth Advisors has invited you to complete a brief investor questionnaire.
+              </textarea>
+              <button>Enter</button>
+            </div>
+          </div>
+        </details>
+        <textarea class="input-textarea">Message</textarea>
       </div>
-      <div class="input-field">
-        <textarea>Message</textarea>
-      </div>
+    </div>
+    <div class="modal-footer">
+      <button>SEND QUESTIONNAIRE</button>
     </div>
   </div>
 </div>
