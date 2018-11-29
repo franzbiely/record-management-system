@@ -46,6 +46,10 @@ const routes: Routes = [
     component: FirmInformationScreenComponent
   },
   {
+    path: 'test',
+    component: TestScreenComponent
+  },
+  {
     path: 'dashboard',
     component: HomeScreenComponent
   },

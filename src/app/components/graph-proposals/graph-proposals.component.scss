@@ -1,0 +1,118 @@
+.rms-analytics-box {
+    border-radius: 6px;
+    box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+    background-color: #ffffff;
+
+    .rab-header {
+        position: relative;
+        padding: 10px 20px;
+        background-color: #1598cb;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+
+        h2 {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Montserrat', serif;
+            line-height: 1;
+            letter-spacing: 0.2px;
+
+            span {
+                display: block;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1;
+                letter-spacing: -0.2px;
+            }
+        }
+        a {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            width: 4px;
+            height: 20px;
+            transform: translateY(-50%)
+        }
+        a {
+            span {
+                display: block;
+                position: relative;
+                width: 4px;
+                height: 4px;
+                margin-bottom: 4px;
+                background-color: #ffffff;
+                border-radius: 100%;
+            }
+            & > span:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .rab-content {
+        padding: 40px 20px 50px 40px;
+    }
+    .rab-info {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        -ms-flex-align: center;
+        align-items: center;
+
+        & > div {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+        .rab-info-total {
+            span.info-total-count {
+                display: block;
+                color: #414042;
+                font-size: 36px;
+                font-weight: 200;
+                font-family: 'Montserrat', serif;
+                line-height: normall;
+                letter-spacing: -1px;
+            }
+            span.info-total-text {
+                color: #77787b;
+                font-size: 10px;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+        .rab-info-date {
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+
+            span.info-date-text {
+                display: block;
+                padding: 10px 15px;
+                font-size: 10px;
+                color: #343534;
+                font-weight: 300;
+                line-height: normal;
+                letter-spacing: normal;
+                border-radius: 21px;
+                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.1);
+                background-color: #ffffff;
+            }
+        }
+    }
+}

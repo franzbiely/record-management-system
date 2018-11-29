@@ -98,6 +98,7 @@ import { RiskAssessmentQuestionnaireComponent } from './components/risk-assessme
 import { MenuSearchbarComponent } from './components/menu-searchbar/menu-searchbar.component';
 import { QuestionnaireModalComponent } from './components/questionnaire-modal/questionnaire-modal.component';
 import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
+import { GraphProposalsComponent } from './components/graph-proposals/graph-proposals.component';
 
 @NgModule({
   declarations: [
@@ -198,7 +199,8 @@ import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/que
     RiskAssessmentQuestionnaireComponent,
     MenuSearchbarComponent,
     QuestionnaireModalComponent,
-    QuestionnaireScreenComponent
+    QuestionnaireScreenComponent,
+    GraphProposalsComponent
   ],
   imports: [
     BrowserModule,
