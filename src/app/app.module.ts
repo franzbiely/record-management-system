@@ -76,6 +76,8 @@ import { CreateHouseholdScreenComponent } from './screens/create-household-scree
 import { ActiveArchiveComponent } from './components/active-archive/active-archive.component';
 import { CalendarModalComponent } from './components/calendar-modal/calendar-modal.component';
 import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/calendar-modal-screen.component';
+import { RiskAssessmentQuestionnaireComponent } from './components/risk-assessment-questionnaire/risk-assessment-questionnaire.component';
+import { MenuSearchbarComponent } from './components/menu-searchbar/menu-searchbar.component';
 
 @NgModule({
   declarations: [
@@ -152,7 +154,9 @@ import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/ca
     CreateHouseholdScreenComponent,
     ActiveArchiveComponent,
     CalendarModalComponent,
-    CalendarModalScreenComponent
+    CalendarModalScreenComponent,
+    RiskAssessmentQuestionnaireComponent,
+    MenuSearchbarComponent
   ],
   imports: [
     BrowserModule,
@@ -163,7 +167,7 @@ import { CalendarModalScreenComponent } from './screens/calendar-modal-screen/ca
     MatCheckboxModule,
     MatTableModule,
     MatIconModule,
-    MatSliderModule
+    MatSliderModule,
   ],
  
   providers: [],

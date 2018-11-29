@@ -1,0 +1,173 @@
+.container-searchbar{
+  width: 389px;
+  max-height: 731px;
+  border-radius: 3px 3px 25px 25px;
+  box-shadow: 0 40px 50px 0 rgba(65, 64, 66, 0.2);
+  background-color: transparent;
+
+    position: absolute;
+    z-index: 99;
+    top: 70px;
+
+    .triangle-up {
+		width: 0;
+	    position: relative;
+	    left: 25px;
+	    height: 0;
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	    border-bottom: 15px solid #1598cb;
+	}
+
+    .searchbar-header{
+    	position: relative;
+    	padding: 15px 30px;
+  		background-color: #1598cb;
+  		color: #ffffff;
+  		border-radius: 25px 25px 0 0;
+
+  		.header-content{
+  		  font-family: MuseoSans;
+		  font-size: 14px;
+		  font-weight: 300;
+		  font-style: normal;
+		  font-stretch: normal;
+		  line-height: 1;
+		  letter-spacing: normal;
+		  color: #ffffff;
+
+			span{
+	  	     position: relative;
+			 top: -6px;
+			}
+
+			.circle-close{
+				display: inline-block;
+			    border-radius: 100%;
+			    padding: 2.5px;
+			    background-color: #ffffff;
+			    color: #1598cb;
+			    font-size: 1px;
+			    position: absolute;
+			    right: 10px;
+			    top: 20px;
+    			box-shadow: 1px 1px 2px #00000038;
+
+				.icon{
+					font-size: 10px;
+				}
+			}
+		}
+    }
+
+    .searchbar-content{
+    	background-color: #ffffff;
+    	padding-top: 2px;
+    	border-radius: 0 0 25px 25px;
+    	overflow: hidden;
+
+    	.content-block{
+    		display: flex;
+    		flex-direction: column;
+    		background-color: #ffffff;
+    		box-shadow: 0 2px 8px 0 rgba(52, 53, 52, 0.1);
+    		margin-bottom: 10px;
+
+    		.block-title{	
+    			padding: 10px 50px;
+			    border-top: 2px solid #dedede3d;
+			    border-bottom: 2px solid #dedede3d;
+
+	    			span{
+	    		      font-family: Montserrat;
+					  font-size: 12px;
+					  font-weight: 600;
+					  font-style: normal;
+					  font-stretch: normal;
+					  line-height: normal;
+					  letter-spacing: 1px;
+					  color: #c5c5c5;
+					  text-transform: uppercase;
+	    			}
+    		}
+
+    		.block-content{
+    			padding: 10px 50px;
+    			padding-bottom: 5px;
+    			
+    			.content-items{
+    				border-bottom: 1px solid #dedede3d;
+    				padding: 10px 0 10px 0;
+
+    				div{
+    					display: inline-block;
+    					
+    					.document-icon{
+    						position: relative;
+    						top: -2px;
+    						display: flex;
+						    justify-content: center;
+						    align-items: center;
+						    width: 30px;
+						    height: 30px;
+						    overflow: hidden;
+    					}
+    				}
+    				
+
+    				span{
+    					font-family: MuseoSans;
+						font-size: 14px;
+						font-weight: 100;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1;
+						letter-spacing: normal;
+						color: #414042;	
+					  	display: block;
+
+					  	&.subitem{
+							font-family: Montserrat;
+							font-size: 10px;
+							font-weight: 300;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 1;
+							letter-spacing: 0.4px;
+							color: #77787b;
+							text-transform: uppercase
+    					}
+    				}
+    			
+    				
+    			}
+
+    			.content-items:last-child{
+    				border: none;
+    			}
+
+    		}
+
+			.content-show-more{
+				padding: 10px 50px;
+			    border-top: 2px solid #dedede3d;
+			    border-bottom: 2px solid #dedede3d;
+
+			    span{
+			      font-family: MuseoSans;
+				  font-size: 12px;
+				  font-weight: bold;
+				  font-style: normal;
+				  font-stretch: normal;
+				  line-height: 1;
+				  letter-spacing: -0.2px;
+				  color: #1598cb;	
+			    }
+			}
+    	}
+
+    	.content-block:last-child{
+    		margin: 0;
+    	}
+    }
+}
