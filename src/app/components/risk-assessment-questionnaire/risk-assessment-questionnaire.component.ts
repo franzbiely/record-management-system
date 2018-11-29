@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RiskAssessmentQuestionnaireComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+  }
+
+  selectRecepient: boolean = false;
+  selectMessageTemplate: boolean = false;
+  sendQuestionnaire: boolean = false;
 
   ngOnInit() {
   }

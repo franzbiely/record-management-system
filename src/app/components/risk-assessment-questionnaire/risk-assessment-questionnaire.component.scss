@@ -9,7 +9,7 @@
     .container-modal{
         position: relative;
         width: 900px;
-        height: 497px;
+        height: 460px;
         border-radius: 6px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         background-color: #ffffff;
@@ -30,10 +30,195 @@
                 text-align: center;
                 color: #1598cb;
             }
+
+            .header-close{
+                height: 20px;
+                width: 20px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 1px 1px 5px #e4dfdf;
+                border-radius: 100%;
+                float: right;
+                position: relative;
+                top: -50px;
+                right: -40px;
+
+                .material-icons{
+                    font-size: 10pt;
+                    color: #e2e2e2;
+                }
+            }
         }
 
         .modal-body{
+            .input-field{
+                display: flex;
+                font-family: MuseoSans;
+                flex-direction: column;
 
+                .input-text{
+                    position: relative;
+                    width: 100%;
+                    border-radius: 6px;
+                    background-color: #ffffff;
+                    font-size: 14px;
+                    color: #c5c5c5;
+                    font-family: MuseoSans;
+                    font-size: 14px;
+                    height: 45px;
+                    line-height:45px;
+                    font-weight: 300;
+                    border: 1px solid #e7e6e6;
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    text-indent: 20px;
+                    
+                    &.details{
+                        margin: 0;
+                        border-radius: 6px 6px 0 0;
+                        border-bottom: 0;
+                    }
+
+                    summary{
+                        outline: none;
+
+                        .material-icons{
+                            position: relative;
+                            top: 12.5px;
+                            float: right;
+                        }
+                    }
+
+                    .container-recepient{
+                        position: absolute;
+                        width: 100%;
+                        background-color: #ffffff;
+                        z-index: 90;
+                        box-shadow: 0 15px 40px #dcd9d9;
+                        margin-top: 10px;
+                        padding-bottom: 10px;
+                        border-radius: 0 0 6px 6px;
+
+                        .recepient-item{
+                           
+                                mat-radio-button{
+                                    display: block;
+                                    font-weight: 600px;
+                                    font-family: MuseoSans;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: #000;
+                                    text-indent: 10px;
+
+                                    .mat-radio-label-content{
+                                        padding-left: 0;
+                                    }
+
+                                    .mat-radio-label-content{
+                                        text-indent: 0;
+                                    }
+
+                                    .recepient-email{
+                                        font-weight: 100;
+                                        font-size: 10pt;
+                                        text-indent: 20px;
+                                    }
+
+                                    a{
+                                        position: absolute;
+                                        right: 10px;
+                                        font-size: 10pt;
+                                        text-decoration: none;
+                                        color: #269fcf;
+                                        font-weight: 200;
+                                        letter-spacing: 1.5px;
+                                     }
+                            }
+                        }
+
+                        .recepient-input{
+                            text-indent: 0;
+                            border-top: 1px solid #dedede;
+                            padding: 10px;
+
+                            input{
+                                width: 100%;
+                                border-radius: 6px;
+                                background-color: #ffffff;
+                                font-size: 14px;
+                                color: #c5c5c5;
+                                font-family: MuseoSans;
+                                font-size: 14px;
+                                height: 45px;
+                                line-height:45px;
+                                font-weight: 300;
+                                border: 1px solid #e7e6e6;
+                                box-sizing: border-box;
+                                margin-bottom: 10px;
+                                padding: 15px;
+                            }
+
+                            textarea{
+                                width: 100%;
+                                border-radius: 6px;
+                                background-color: #ffffff;
+                                font-size: 14px;
+                                color: #c5c5c5;
+                                font-family: MuseoSans;
+                                font-size: 14px;
+                                font-weight: 300;
+                                border: 1px solid #e7e6e6;
+                                box-sizing: border-box;
+                                margin-bottom: 10px;
+                                padding: 15px;
+                                text-indent: 0;
+                            }
+
+
+                            button{
+                                width: 120px;
+                                text-transform: uppercase;
+                                font-family: Montserrat;
+                                background-color: #269fcf;
+                                border: 1px solid #269fcf;
+                                color: #ffffff;
+                                float: right;
+                                letter-spacing: 1.5px;
+                            }
+                        }
+                    }
+                }
+
+                .input-textarea{
+                    width: 100%;
+                    border-radius: 0 0 6px 6px;
+                    background-color: #ffffff;
+                    font-size: 14px;
+                    color: #c5c5c5;
+                    font-family: MuseoSans;
+                    font-size: 14px;
+                    height: 140px;
+                    line-height:45px;
+                    font-weight: 300;
+                    border: 1px solid #e7e6e6;
+                    box-sizing: border-box;
+                    padding: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .modal-footer{
+            button{
+                float: right;
+                border: 1px solid #1f9ccd;
+                color: #1f9ccd;
+                border-radius: 6px;
+                margin-top: 12px;
+            }
         }
     }
 }
+
