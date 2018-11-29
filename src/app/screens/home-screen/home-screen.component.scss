@@ -249,7 +249,7 @@ $secondaryFont: MuseoSans;
 .recent-container {
 	flex:1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     @media only screen and (max-width: 767px){
         justify-content: space-evenly;
         flex-direction: column;
@@ -283,6 +283,6 @@ $secondaryFont: MuseoSans;
 .container-analytics {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
 }
