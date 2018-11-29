@@ -9,6 +9,10 @@ export class RiskAssessmentQuestionnaireComponent implements OnInit {
 
   constructor() { }
 
+  selectRecepient: boolean = false;
+  selectMessageTemplate: boolean = false;
+  sendQuestionnaire: boolean = false;
+
   ngOnInit() {
   }
 
