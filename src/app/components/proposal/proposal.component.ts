@@ -19,6 +19,7 @@ export class ProposalComponent implements OnInit {
 		this.router.navigateByUrl('create-household');
 	}
 	nextReceiver() {
+      this.data.SET_proposal_show_btnNext(false);
 	    this.currentPage++;
 	  }
   constructor(private router: Router, 
