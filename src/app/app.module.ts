@@ -93,6 +93,7 @@ import { AddAccountModalComponent } from './components/add-account-modal/add-acc
 import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
 import { PopupCustomAssetClassComponent } from './components/popup-custom-asset-class/popup-custom-asset-class.component';
 import { DropdownFilterComponent } from './components/dropdown-filter/dropdown-filter.component';
+import { ProfileNotificationComponent } from './components/profile-notification/profile-notification.component';
 
 @NgModule({
   declarations: [
@@ -188,7 +189,8 @@ import { DropdownFilterComponent } from './components/dropdown-filter/dropdown-f
     AddAccountModalComponent,
     AddAccountScreenComponent,
     PopupCustomAssetClassComponent,
-    DropdownFilterComponent
+    DropdownFilterComponent,
+    ProfileNotificationComponent
   ],
   imports: [
     BrowserModule,

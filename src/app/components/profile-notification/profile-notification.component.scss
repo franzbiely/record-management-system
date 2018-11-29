@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$padding: 30px;
+$backgroundColor: #ffffff;
+$backgroundColorHeader: #1598cb;
+$containerWidth: calc(100vw - 200px);
+$textColor: #ffffff;
+section{
+    float: center;
+}
+.header-notification {
+    right: 10px;
+}
+.container {
+    padding: 10px;
+    margin: 10px;
+}
+.Sign-Out {
+    padding: 20px;
+    position: relative;
+    width: 70%;
+    border-radius: 6px;
+    top: 30px;
+    left: 33px;
+    border: 1px solid  #1598cb;
+    box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+    cursor: pointer;
+}
+ul {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    li {
+        position:relative;
+        div {
+            cursor: pointer;
+        }
+    }
+}
+.Sign-Out small {
+    cursor: pointer;
+    position: absolute;
+    font-size: 12px;
+    top: 13px;
+    left: 99px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1598cb;
+}
+.notification-component {
+    position: relative;
+    padding: 10px;
+  /*@media only screen and (max-width: 420px) {
+    padding:10px;
+    display: flex;
+  }*/
+    .notification{
+        font-size: 35px;
+        color: #c7c7c7;
+        cursor: pointer;
+    }
+    .noti-badge{
+        position: absolute;
+        top: 11px;
+        right: 0;
+        width: 18px;
+        height: 18px;
+        color: white;
+        background-color: #ff6d4c;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 7pt;
+        line-height: 15pt;
+    }
+    .notification-container {
+        margin-bottom: 130px;
+        position: absolute;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        flex:1;
+        right: -15px;
+        top: 70px;
+        background-color: $backgroundColor;
+        margin: auto;
+        width: 350px;
+        height: 613.8px;
+        border-radius: 6px;
+        box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+        background-color: #ffffff;
+
+        .Rectangle-3 {
+            display: flex;
+            align-items: center;
+            width: 350px;
+            height: 100px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: 1px solid #e7e6e6;
+            .name {
+              height: 20px;
+              width: 205px;
+              position: relative;
+              left: 70px;
+              font-family: Montserrat;
+              font-size: 18px;
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1;
+              letter-spacing: -0.2px;
+              color: #414042;
+            }
+            .email {
+              top: 20px;
+              position: relative;
+              right: 80px;
+              width: 205px;
+              height: 15px;
+              font-family: MuseoSans;
+              font-size: 14px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.07;
+              letter-spacing: normal;
+              color: #77787b;
+            }
+        }
+        .Rectangle-3-1 {
+            display: flex;
+            align-items: center;
+            width: 350px;
+            height: 100px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: 1px solid #e7e6e6;
+            .LoringWardFinancial {
+              height: 20px;
+              font-size: 16px;
+              left: 30px;
+              top: -7px;
+              width: 350px;
+              position: relative;
+              font-family: Montserrat;
+              font-weight: bolder;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1;
+              letter-spacing: normal;
+              color: #414042;
+            }
+            .Superuser {
+              top: 23px;
+              position: relative;
+              right: 175px;
+              width: 205px;
+              height: 15px;
+              font-family: Montserrat;
+              font-size: 12px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #77787b;
+            }
+        }
+        .Rectangle-Not {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            width: 350px;
+            height: 50px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: 1px solid #e7e6e6;
+            overflow: hidden;
+            .list {
+                position: relative;
+                left: 50px;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                color: #414042;
+            }
+            .icon{
+                left: 20px;
+                position: absolute;
+                border-radius: 50%;
+            }
+        }
+    }
+    .avatar-icon {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        cursor: pointer;
+        position: relative;
+        left: 30px;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/avatar-image@3x.png');
+    }
+    .star{
+        top: 162px;
+        width: 25px;
+        height: 23px;   
+        cursor: pointer;
+        left: 20px;
+        position: absolute;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/user-blue@3x.png');
+    }
+    .info{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/member-list-gray@2x.png');
+    }
+    .port{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/portfolio-administration@2x.png');
+    }
+    .advisor{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/advisor-search-gray@3x.png');
+    }
+    .terms{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/terms-gray@3x.png');
+    }
+    .settings{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/settings-gray.png');
+    }
+    .support{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        content: url('../../../assets/component/profile/support-gray@3x.png');
+    }
+    .triangle {
+        margin-left: 320px;
+        position: absolute;
+        top: -19px;
+        right: 15px;
+        width:0;
+        border-bottom:solid 24px  #ffffff;
+        border-right:solid 27px transparent;
+        border-left:solid 27px transparent;
+    }
+ }
