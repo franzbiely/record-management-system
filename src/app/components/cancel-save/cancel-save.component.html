@@ -1,11 +1,17 @@
 <div class="container-btn cancel-save-container" [ngClass]="containerStyle">
     <div class="btn-group">
-      <div *ngIf="!noCancel">
-        <button class="btn-cancel" (click)="cancelFunc()">Cancel</button>
+      <ng-content></ng-content>
+      <div *ngIf="closeOnly">
+        <button (click)="cancelFunc()">Close</button>
       </div>
-      <div>
-        <button class="btn-save" (click)="saveFunc()" *ngIf="!primaryLabel"><i class="material-icons">save</i> Save</button>
-        <button class="btn-save" (click)="saveFunc()" *ngIf="primaryLabel">{{primaryLabel}}</button>
-      </div>
+      <ng-container *ngIf="!closeOnly">
+        <div *ngIf="!noCancel">
+          <button (click)="cancelFunc()">Cancel</button>
+        </div>
+        <div>
+          <button class="primary" (click)="saveFunc()" *ngIf="!primaryLabel"><i class="material-icons">save</i> Save</button>
+          <button class="primary" (click)="saveFunc()" *ngIf="primaryLabel">{{primaryLabel}}</button>
+        </div>
+      </ng-container>
     </div>
   </div>

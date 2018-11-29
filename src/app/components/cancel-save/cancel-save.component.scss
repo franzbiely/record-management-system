@@ -1,61 +1,51 @@
 .cancel-save-container {
-    z-index:200;
+  z-index: 200;
 }
-.container-btn{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 10px;
-    &.block {
-        position: relative;
-        .btn-group {
-            padding:0;
-            > div {
-                margin:10px;
-            }
-        }
+
+.container-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  &.block {
+    position: relative;
+    background: transparent;
+    z-index: initial;
+    .btn-group {
+      padding: 0;
+      >div {
+        margin: 10px;
+      }
     }
-        
-    .btn-group{
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 50px;
+  }
 
-        .btn-cancel{
-            width: 160px;
-            height: 45px;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.9px;
-            text-align: center;
-            color: #808284;
-            text-transform: uppercase;
-        }
-
-        .btn-save{
-            width: 160px;
-            height: 45px;
-            border-radius: 6px;
-            box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-            border: solid 1px #1598cb;
-            background-color: #1598cb;
-
-            font-family: Montserrat;
-            font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.9px;
-            text-align: center;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
+  .btn-group {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 50px;
+    button {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      text-align: center;
+      text-transform: uppercase;
+      height: 45px;
+      width: 160px;
+      border-radius: 6px;
+      box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+      color: #808284;
     }
+    .primary {
+      border: solid 1px #1598cb;
+      background-color: #1598cb;
+      color: #ffffff;
+    }
+  }
 }

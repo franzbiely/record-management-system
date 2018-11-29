@@ -9,6 +9,8 @@ export class CancelSaveComponent implements OnInit {
   @Input() containerStyle: string;
   @Input() primaryLabel: string;
   @Input() noCancel: false;
+  @Input() closeOnly: false;
+  
   cancelFunc() {
   	this.cancelEvent.emit(true);
   }

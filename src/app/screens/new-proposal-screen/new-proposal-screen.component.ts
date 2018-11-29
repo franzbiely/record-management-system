@@ -12,6 +12,8 @@ export class NewProposalScreenComponent implements OnInit {
 	accountDetailsModal: boolean = false;
   riskSendFormModal: boolean = false;
   questionnaireModal: boolean = false;
+  viewPortfolioModal : boolean = false;
+  editPortfolioModal : boolean = false;
 
   constructor(private modalStatus: ModalStatusService) { }
 
@@ -20,6 +22,8 @@ export class NewProposalScreenComponent implements OnInit {
   	this.modalStatus.accountDetails.subscribe(value => this.accountDetailsModal = value);
     this.modalStatus.riskSendForm.subscribe(value => this.riskSendFormModal = value);
     this.modalStatus.questionnaire.subscribe(value => this.questionnaireModal = value);
+    this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
+    this.modalStatus.editPortfolio.subscribe(value => this.editPortfolioModal = value);
   }
 
 }

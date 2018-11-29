@@ -1,5 +1,9 @@
 <section class="add-security">
-  <div class="search">
+  <div class="modify">
+    <mat-checkbox (change)="toggleModify($event);"></mat-checkbox>
+    <span>Modify</span>
+  </div>
+  <div *ngIf="isEdit" class="search">
     <h3>Add Security:</h3>
     <app-search></app-search>
   </div>

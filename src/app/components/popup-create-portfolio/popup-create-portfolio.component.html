@@ -1,3 +1,4 @@
+<span class="screen-overlay"></span>
 <section class="popup popup-create-portfolio">
   <section class="top">
     <div class="container">
@@ -19,13 +20,19 @@
       <app-target-asset-allocation></app-target-asset-allocation>
     </section>
     <section class="content">
-      <app-quick-add></app-quick-add>
-      <app-add-security></app-add-security>
+      <app-quick-add *ngIf="isEdit"></app-quick-add>
+      <app-add-security [isEdit]="isEdit" (isEditEvent)="editEventReciever()"></app-add-security>
       <div class="error-messages">
         <app-error-line></app-error-line>
         <app-error-line></app-error-line>
       </div>
-      <app-cancel-save></app-cancel-save>
+      <app-cancel-save *ngIf="!isEdit" [closeOnly]="true" [containerStyle]="'block'" (cancelEvent)="closeView()"></app-cancel-save>
+      <app-cancel-save *ngIf="isEdit" [containerStyle]="'block'" (cancelEvent)="closeEdit()">
+        <div class="add-to-profile">
+          <mat-checkbox></mat-checkbox>
+          <span>Add to my profile group</span>
+        </div>
+      </app-cancel-save>
     </section>
   </section>
 </section>
