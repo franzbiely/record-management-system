@@ -94,6 +94,8 @@ import { AddAccountScreenComponent } from './screens/add-account-screen/add-acco
 import { PopupCustomAssetClassComponent } from './components/popup-custom-asset-class/popup-custom-asset-class.component';
 import { DropdownFilterComponent } from './components/dropdown-filter/dropdown-filter.component';
 import { ProfileNotificationComponent } from './components/profile-notification/profile-notification.component';
+import { RiskAssessmentQuestionnaireComponent } from './components/risk-assessment-questionnaire/risk-assessment-questionnaire.component';
+import { MenuSearchbarComponent } from './components/menu-searchbar/menu-searchbar.component';
 
 @NgModule({
   declarations: [
@@ -190,7 +192,9 @@ import { ProfileNotificationComponent } from './components/profile-notification/
     AddAccountScreenComponent,
     PopupCustomAssetClassComponent,
     DropdownFilterComponent,
-    ProfileNotificationComponent
+    ProfileNotificationComponent,
+    RiskAssessmentQuestionnaireComponent,
+    MenuSearchbarComponent
   ],
   imports: [
     BrowserModule,
@@ -201,7 +205,7 @@ import { ProfileNotificationComponent } from './components/profile-notification/
     MatCheckboxModule,
     MatTableModule,
     MatIconModule,
-    MatSliderModule
+    MatSliderModule,
   ],
  
   providers: [],
