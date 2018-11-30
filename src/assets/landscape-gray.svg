@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>landscape-blue</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-blue" fill="#C5C5C5">
+            <path d="M12.917,2.754 L12.917,5.5 C12.917,6.65 13.85,7.583 15,7.583 L17.746,7.583 C18.116,7.583 18.3,7.133 18.037,6.871 L13.63,2.462 C13.5111208,2.3430035 13.3323882,2.30707975 13.1767637,2.3709033 C13.0211392,2.43472684 12.9190964,2.58580001 12.918,2.754 L12.917,2.754 Z M14.775,1.108 C14.3848547,0.718655459 13.8561828,0.499993874 13.305,0.5 L2.082,0.5 C0.933,0.5 0,1.433 0,2.583 L0,13.417 C0,14.567 0.933,15.5 2.083,15.5 L17.917,15.5 C19.067,15.5 20,14.567 20,13.417 L20,7.196 C20,6.642 19.78,6.113 19.392,5.725 L14.775,1.108 Z M8.905,10.135 L11.875,10.135 L11.875,11.625 L7.125,11.625 L7.125,4.625 L8.905,4.625 L8.905,10.135 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

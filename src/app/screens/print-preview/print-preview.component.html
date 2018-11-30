@@ -1,0 +1,99 @@
+<div class="rms-print-preview">
+    <div class="rpp-header">
+        <div class="rpp-headbar">
+            <div class="rpp-header-info">
+                <h2>Chris & Kristy Retirement Proposal</h2>
+                <span>Chris_&_Kristy_Retirement_Proposal</span>
+            </div><!-- .rpp-header-info -->
+            <div class="rpp-header-pages">
+                <div class="rpp-pages-nav">
+                    <div><input type="text" value="1" (change)="scrollToPage($event)"></div>
+                    <div><span>/</span></div>
+                    <div><span>6</span></div>
+                </div><!-- .rpp-pages -->
+            </div><!-- .rpp-header-pages -->
+            <div class="rpp-header-zoom">
+                <span class="rpp-zoom-in" (click)="zoomIn();"></span>
+                <span class="rpp-zoom-out" (click)="zoomOut();"></span>
+            </div><!-- .rpp-header-zoom -->
+            <div class="rpp-header-orientation">
+                <span class="rpp-orientation-p active" (click)="changeOrientation( 'p' );">Portrait</span>
+                <span class="rpp-orientation-l" (click)="changeOrientation( 'l' );">Landscape</span>
+            </div><!-- .rpp-header-orientation -->
+        </div><!-- .rpp-headbar -->
+    </div><!-- .rpp-header -->
+
+    <div class="rpp-content">
+        
+        <div class="rpp-content-page rpp-content-page-1">
+            <img src="../assets/prints/print-1.svg" alt="content-page" />
+        </div><!-- .rpp-content-page -->
+
+        <div class="rpp-content-page rpp-content-page-2">
+            <img src="../assets/prints/print-2.svg" alt="content-page" />
+        </div><!-- .rpp-content-page -->
+
+        <div class="rpp-content-page rpp-content-page-3">
+            <img src="../assets/prints/print-3.svg" alt="content-page" />
+        </div><!-- .rpp-content-page -->
+
+        <div class="rpp-content-page rpp-content-page-4">
+            <img src="../assets/prints/print-4.svg" alt="content-page" />
+        </div><!-- .rpp-content-page -->
+
+        <div class="rpp-content-page rpp-content-page-5">
+            <img src="../assets/prints/print-5.svg" alt="content-page" />
+        </div><!-- .rpp-content-page -->
+
+        <div class="rpp-content-page rpp-content-page-6">
+            <img src="../assets/prints/print-6.svg" alt="content-page" />
+        </div><!-- .rpp-content-page -->
+
+    </div><!-- .rpp-content -->
+
+    <div class="rpp-bookmarks">
+        <div class="bookmarks-header"><span>Bookmarks</span></div><!-- .bookmarks-header -->
+        <div class="bookmarks-content">
+            <ul>
+                <li>
+                    <a (click)="toggleBookmark($event)">Proposal</a> <span class="drag"></span>
+                    <ul>
+                        <li><a>Cover Page</a></li>
+                        <li><a>IMPORTANT DISCLOSURE INFORMATION</a></li>
+                        <li><a>Another Page</a></li>
+                        <li><a>Another Page</a></li>
+                        <li><a>Another Page</a></li>
+                        <li><a>Another Page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a (click)="toggleBookmark($event)">GAP Analysis</a> <span class="drag"></span>
+                    <ul>
+                        <li><a>Sample Page</a></li>
+                        <li><a>Sample Page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a (click)="toggleBookmark($event)">Investment Policy Statement</a> <span class="drag"></span>
+                    <ul>
+                        <li><a>Sample Page</a></li>
+                        <li><a>Sample Page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a (click)="toggleBookmark($event)">Portfolio Allocation Statement</a> <span class="drag"></span>
+                    <ul>
+                        <li><a>Sample Page</a></li>
+                        <li><a>Sample Page</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- .bookmarks-content -->
+    </div><!-- .rpp-bookmarks -->
+
+    <div class="rpp-actions">
+        <button class="is-back">Back to documentation</button>
+        <button class="is-save">Save to documents</button>
+        <button class="is-send">Save & send documents</button>
+    </div><!-- .rpp-actions -->
+</div><!-- .rms-print-preview -->

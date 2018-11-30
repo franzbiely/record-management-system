@@ -1,0 +1,392 @@
+.rms-print-preview {
+    background-color: #CCCCCC;
+    box-sizing: border-box;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .rpp-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 9999;
+        padding: 18px 20px;
+        box-shadow: 0 0 12px 0 rgba(65, 64, 66, 0.2);
+        background-color: #ffffff;
+
+        .rpp-headbar {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            -ms-flex-align: center;
+            align-items: center;
+
+            & > div {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: auto;
+                max-width: 100%;
+            }
+            .rpp-header-info,
+            .rpp-header-pages {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+        }
+        .rpp-header-info {
+            color: #77787b;
+            font-family: 'museo-sans', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.29;
+            letter-spacing: normal;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                color: #414042;
+                font-family: 'Montserrat', serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1;
+                letter-spacing: normal;
+            }
+        }
+        .rpp-header-pages {
+            color: #414042;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'museo-sans', sans-serif;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+
+            .rpp-pages-nav {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -4px;
+                margin-left: -4px;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+
+                & > div {
+                    position: relative;
+                    width: 100%;
+                    padding-right: 4px;
+                    padding-left: 4px;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
+            input {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                text-align: center;
+                border: 1px solid #e7e6e6;
+                border-radius: 6px;
+            }
+        }
+        .rpp-header-zoom {
+            span {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
+
+                &.rpp-zoom-in {
+                    background-image: url(../../../assets/zoom-in.svg);
+                }
+                &.rpp-zoom-out {
+                    background-image: url(../../../assets/zoom-out.svg);
+                }
+            }
+        }
+        .rpp-header-orientation {
+            span {
+                display: inline-block;
+                position: relative;
+                padding: 15px 50px 15px 45px;
+                color: #808284;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: center;
+                background-color: #ffffff;
+                border: 1px solid #c5c5c5;
+                border-radius: 6px;
+                cursor: pointer;
+
+                &:before, &:after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    transform: translateY(-50%)
+                }
+                &:before {
+                    left: 15px;
+                    background-image: url(../../../assets/selection-radio-button-not-selected.svg);
+                }
+                &:after {
+                    right: 15px;
+                    background-image: url(../../../assets/landscape-gray.svg);
+                }
+            }
+            .rpp-orientation-p {
+                &:after {
+                    background-image: url(../../../assets/portrait-gray.svg);
+                }
+
+                &.active:before {
+                    background-image: url(../../../assets/selection-radio-button-selected.svg);
+                }
+                &.active:after {
+                    background-image: url(../../../assets/portrait-blue.svg);
+                }
+            }
+            .rpp-orientation-l {
+                margin-left: 30px;
+
+                &.active:before {
+                    background-image: url(../../../assets/selection-radio-button-selected.svg);
+                }
+                &.active:after {
+                    background-image: url(../../../assets/landscape-blue.svg);
+                }
+            }
+        }
+    }
+
+    .rpp-content {
+        width: 70%;
+        max-width: 1040px;
+        padding: 30px 60px;
+        margin-left: auto;
+        transform-origin: 0 0;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .rpp-content-page {
+            margin-bottom: 20px;
+            box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+            background-color: #ffffff;
+        }
+    }
+
+    .rpp-bookmarks {
+        position: fixed;
+        top: 140px;
+        z-index: 500;
+        width: 30%;
+        max-width: 310px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+        background-color: #ffffff;
+
+        .bookmarks-header {
+            padding: 20px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.11;
+            letter-spacing: 0.2px;
+            background-color: #1598cb;
+            border-top-right-radius: 6px;
+        }
+        .bookmarks-content {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                & > li {
+                    display: block;
+                    position: relative;
+                    border-bottom: 1px solid #F4F3F3;
+                    
+                    &:last-child {
+                        border-bottom: 0;
+
+                        a {
+                            border-bottom-right-radius: 6px;
+                        }
+                    }
+
+                    span.drag {
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        width: 16px;
+                        height: 16px;
+                        background-size: 15px;
+                        background-repeat: no-repeat;
+                        background-image: url(../../../assets/prints/move-gray.svg);
+                        transform: translateY(-50%);
+                        cursor: move;
+                    }
+
+                    ul {
+                        display: none;
+
+                        a {
+                            font-size: 12px;
+                            font-weight: normal;
+                            background-image: none;
+
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.active ul {
+                        display: block;
+                    }
+                }
+                & > li > a {
+                    display: block;
+                    position: relative;
+                    padding: 16px 30px 16px 45px;
+                    color: #414042;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 1;
+                    text-decoration: none;
+                    letter-spacing: normal;
+                    background-color: #ffffff;
+
+                    &:before {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 20px;
+                        width: 15px;
+                        height: 15px;
+                        background-size: 15px;
+                        background-repeat: no-repeat;
+                        background-image: url(../../../assets/prints/mark-close.svg);
+                        transform: translateY(-50%);
+                    }
+                }
+
+                & > li.active > a {
+                    color: #ffffff;
+                    background-image: linear-gradient(to left, #4DB6C5 , #1598CB);
+
+                    &:before {
+                        background-image: url(../../../assets/prints/mark-open.svg);
+                    }
+                }
+            }
+        }
+    }
+
+    .rpp-actions {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 40px 60px;
+        text-align: right;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 67%, rgba(255, 255, 255, 0.86) 75%, rgba(255, 255, 255, 0.92) 84%, rgba(255, 255, 255, 0.96) 93%, #ffffff);
+
+        button {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            max-width: 250px;
+            margin: 0 8px;
+            color: #808284;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px solid #ffffff;
+
+            &.is-back {
+                color: #1598cb;
+                border-color: #1598cb;
+            }
+            &.is-save {
+                padding-left: 62px;
+                text-align: left;
+                box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+
+                &:before {
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 30px;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url(../../../assets/prints/save-gray.svg);
+                    transform: translateY(-50%);
+                }
+            }
+            &.is-send {
+                padding-left: 45px;
+                color: #ffffff;
+                text-align: left;
+                background-color: #1598cb;
+                border-color: #1598cb;
+                box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+
+                &:before {
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 16px;
+                    content: '';
+                    width: 18px;
+                    height: 16px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url(../../../assets/prints/send-white.svg);
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
