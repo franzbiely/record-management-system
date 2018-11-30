@@ -36,12 +36,13 @@
 	    	</app-dash-box>
 			<app-dash-box [isNew]="isNew"
 	    				  [title]="'Recent Documents'"
-	    				  [addLabel]="'Add Documents'">
+	    				  [addLabel]="'Add Documents'"
+	    				  [headerRightType]="'add'">
 				<div class="info-item space-between" *ngFor="let household of households">
-							<div class="flex">
-								<div class="document-icon">
-									<img src="../../../assets/icons/docu.png">
-								</div>
+		            <div class="flex">
+		              <div class="document-icon">
+		                <img src="../../../assets/icons/docu.png">
+		              </div>
 		            <div class="container-flex item-column">
 		              <div class="item-top">Christ & Kristy Proposal IPS GAP</div>
 		              <div class="item-top"><span class="grey-text">Candelaria Household</span></div>
@@ -49,7 +50,7 @@
 							</div>
 		            <div class="container-flex item-column">
 		              <div class="item-bottom">7/31/2018</div>
-		              <div class="item-bottom  vertical-align"><span class="icon-text grey-text">Sent</span><i class="material-icons icon-side">send</i></div>
+		              <div class="item-bottom vertical-align"><span class="icon-text grey-text">Sent</span><i class="material-icons icon-side">send</i></div>
 		            </div>
 		        </div>
 	    	</app-dash-box>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
-$mainfont: 'Montserrat',
-sans-serif;
+$mainfont: 'Montserrat', sans-serif;
+$secondaryfont: MuseoSans;
 .overlay {
   position: fixed;
   display: none;
@@ -34,7 +34,7 @@ sans-serif;
     display: block;
   }
   @media only screen and (max-width:767px) {
-    display: flex;
+    display: none;
   }
   .modal-box-content {
     flex: 1;
@@ -223,7 +223,7 @@ sans-serif;
   padding: 30px;
   @media only screen and (max-width: 767px) {
     flex-direction: column-reverse;
-    padding: 20px 10px;
+    padding: 20px 0px;
     margin-bottom: 100px;
     justify-content: center;
     align-items: center;
@@ -277,13 +277,14 @@ sans-serif;
 
       .box-item {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         padding: 10px;
         border-bottom: .5px solid #dededede;
 
         .box-name {
           span {
-            font-family: MuseoSans;
+            font-family: $mainfont;
             font-size: 14px;
             font-weight: bold;
             font-style: normal;

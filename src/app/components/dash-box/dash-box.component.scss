@@ -26,6 +26,7 @@ $primaryfont: "montserrat", sans-serif;
   line-height: 1;
   letter-spacing: 0.2px;
   font-family: $primaryfont;
+  padding: 10px;
 }
 
 %container-info {
@@ -122,8 +123,20 @@ $line, $spacing) {
   .icon-big-add {
     content: url('../../../../src/assets/component/home/add-blue@3x.png');
   }
-
-  .box-head{
+  .box-head-title{
+    font-family: $primaryfont;
+    font-size: 20px;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+  }
+  .sub {
+    font-family: $primaryfont;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top:-1px; 
+  }
+  .box-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,21 +178,7 @@ $line, $spacing) {
     }
   }
   @extend %container-attr;
-  h2 {
-    @extend %header-title;
-  }
-  .title{
-    font-family: $primaryfont;
-    font-size: 20px;
-    font-weight: 700;
-    display:flex;
-    flex-direction: column;
-  }
-  .sub {
-    font-family: $primaryfont;
-    font-size: 13px;
-    font-weight: 500; 
-  }
+  
   .container-info {
     @extend %container-info;
 

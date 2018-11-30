@@ -60,7 +60,7 @@ app-household-member {
                 }
                 .text-subtitle{
                     font-family: 'montserrat', sans-serif;
-                    font-size: 18px;
+                    font-size: 15px;
                     font-weight: 400;
                     color: white;
                 }
@@ -102,11 +102,27 @@ app-household-member {
                     flex-direction: row;
                     align-items: center;
                     .option{
+                        display: flex;
+                        align-items: center;
                         padding-left: 20px;
                         .text-radio-button{
                             font-family: 'montserrat', sans-serif;
                             font-size: 10px;
                             font-weight: 500;
+                        }
+                        i {
+                            width: 15px;
+                            padding-left: 5px;
+                        }
+                        .icon-myclient{
+                            
+                            content: url("/src/assets/brand-logos/clientcenter.PNG");
+                        }
+                        .icon-orion{
+                            content: url("/src/assets/brand-logos/orion.PNG");
+                        }
+                        .icon-redtail{
+                            content: url("/src/assets/brand-logos/redtail.PNG");
                         }
                     }
                     .text-search-container{

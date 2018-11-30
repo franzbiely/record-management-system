@@ -54,11 +54,22 @@ $secondaryFont: MuseoSans;
     color: #77787b;
     text-transform: uppercase;
 }
+
+.space-between{
+    display:flex;
+    justify-content: space-between;
+}   
+
+.vertical-align{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .info-item{
-    .icon-side{
-        font-size: 8pt;
-        padding-left:3px;
-    }
+        .icon-side{
+            font-size: 8pt;
+            padding-left:3px;
+        }
     @include info-item(10px, 20px, 10px, 20px);    
     .item-one, .item-two{
         flex: 1;
