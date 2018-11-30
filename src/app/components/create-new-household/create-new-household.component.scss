@@ -48,7 +48,7 @@ $secondaryfont: MuseoSans;
       box-shadow: 0 15px 30px 0 rgba(65, 64, 66, 0.2);
       .box-head {
         background-color: #1598cb;
-        padding: 19px 10px;
+        padding: 17px 30px;
         border-radius: 6px 6px 0px 0px;
         span {
           font-family: $mainfont;
@@ -62,7 +62,6 @@ $secondaryfont: MuseoSans;
         }
       }
       .box-body {
-        height: 229px;
         background-color: white;
         padding: 30px;
         border: 0px 0px 6px 6px;
@@ -72,7 +71,7 @@ $secondaryfont: MuseoSans;
         span {
           font-family: $mainfont;
           font-size: 10px;
-          font-weight: 700;
+          font-weight: 600;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
@@ -83,6 +82,7 @@ $secondaryfont: MuseoSans;
         .text-box-container {
           width: 100%;
           display: flex;
+          margin-bottom:40px;
           input[type=text] {
             border-radius: 6px;
             background-color: #ffffff;
@@ -91,7 +91,7 @@ $secondaryfont: MuseoSans;
           .text-box {
             margin-top: 6px;
             flex: 1;
-            padding: 15px;
+            padding: 12px;
           }
            ::placeholder {
             font-family: $mainfont;
@@ -504,4 +504,9 @@ app-household-member {
 
 ::ng-deep .active-archive-component .item {
   display: flex !important;
+}
+
+::ng-deep .cancel-save-container {
+      padding-top: 0 !important;
+    padding-bottom: 0  !important;
 }
