@@ -27,7 +27,7 @@
         <app-error-line></app-error-line>
       </div>
       <app-cancel-save *ngIf="!isEdit" [closeOnly]="true" [containerStyle]="'block'" (cancelEvent)="closeView()"></app-cancel-save>
-      <app-cancel-save *ngIf="isEdit" [containerStyle]="'block'" (cancelEvent)="closeEdit()">
+      <app-cancel-save *ngIf="isEdit" [containerStyle]="'block'" (cancelEvent)="closeEdit()" (click)="saveEvent()">
         <div class="add-to-profile">
           <mat-checkbox></mat-checkbox>
           <span>Add to my profile group</span>
