@@ -3,57 +3,59 @@
 	<app-sidebar [currentPage]="'home'"></app-sidebar>
 	<div class="content">
 		<div class="recent-container">
-			<app-dash-box [isNew]="isNew"
-						  [title]="'Recent Household'"
-	    				  [addLabel]="'Add Household'"
-	    				  [headerRightType]="'add'"
-	    				  (addHousehold)="household($event)">
-				<div class="info-item vertical-align" *ngFor="let data of households">
-				    <div class="item-top">{{ data.name }}</div>
-				    <div class="item-top">
-				      <div class="item-bottom">{{ data.value }}</div>
-				      <div class="item-bottom">{{ data.date }}</div>
-				    </div>
-				</div>
-	    	</app-dash-box>
-
-			<app-dash-box [isNew]="isNew"
-	    				  [title]="'Recent Proposals'"
-	    				  [addLabel]="'Add Proposals'"
-	    				  [headerRightType]="'add'">
-				<div class="info-item" *ngFor="let household of households">
-		            <div class="item-top" >
-		              <div>Chris & Kristy Retirement Proposal</div>
-		              <div><span class="grey-text">Candelaria Household</span></div>
-		            </div>
-		            <div class="item-bottom">
-		              <div>$900,000.00</div>
-		              <div class="grey-text">
-		                <span class="icon-text">Implemented</span> <i class="material-icons icon-side">lock</i>
-		              </div>
-		            </div>
-		        </div>
-	    	</app-dash-box>
-			<app-dash-box [isNew]="isNew"
-	    				  [title]="'Recent Documents'"
-	    				  [addLabel]="'Add Documents'"
-	    				  [headerRightType]="'add'">
-				<div class="info-item space-between" *ngFor="let household of households">
-		            <div class="flex">
-		              <div class="document-icon">
-		                <img src="../../../assets/icons/docu.png">
-		              </div>
-		            <div class="container-flex item-column">
-		              <div class="item-top">Christ & Kristy Proposal IPS GAP</div>
-		              <div class="item-top"><span class="grey-text">Candelaria Household</span></div>
-								</div>
+			<div class="recent-content">
+				<app-dash-box [isNew]="isNew"
+								[title]="'Recent Household'"
+									[addLabel]="'Add Household'"
+									[headerRightType]="'add'"
+									(addHousehold)="household($event)">
+					<div class="info-item vertical-align" *ngFor="let data of households">
+							<div class="item-top">{{ data.name }}</div>
+							<div class="item-top">
+								<div class="item-bottom">{{ data.value }}</div>
+								<div class="item-bottom">{{ data.date }}</div>
 							</div>
-		            <div class="container-flex item-column">
-		              <div class="item-bottom">7/31/2018</div>
-		              <div class="item-bottom vertical-align"><span class="icon-text grey-text">Sent</span><i class="material-icons icon-side">send</i></div>
-		            </div>
-		        </div>
-	    	</app-dash-box>
+					</div>
+					</app-dash-box>
+
+				<app-dash-box [isNew]="isNew"
+									[title]="'Recent Proposals'"
+									[addLabel]="'Add Proposals'"
+									[headerRightType]="'add'">
+					<div class="info-item" *ngFor="let household of households">
+									<div class="item-top" >
+										<div>Chris & Kristy Retirement Proposal</div>
+										<div><span class="grey-text">Candelaria Household</span></div>
+									</div>
+									<div class="item-bottom">
+										<div>$900,000.00</div>
+										<div class="grey-text">
+											<span class="icon-text">Implemented</span> <i class="material-icons icon-side">lock</i>
+										</div>
+									</div>
+							</div>
+					</app-dash-box>
+				<app-dash-box [isNew]="isNew"
+									[title]="'Recent Documents'"
+									[addLabel]="'Add Documents'"
+									[headerRightType]="'add'">
+					<div class="info-item space-between" *ngFor="let household of households">
+									<div class="flex">
+										<div class="document-icon">
+											<img src="../../../assets/icons/docu.png">
+										</div>
+									<div class="container-flex item-column">
+										<div class="item-top">Christ & Kristy Proposal IPS GAP</div>
+										<div class="item-top"><span class="grey-text">Candelaria Household</span></div>
+									</div>
+								</div>
+									<div class="container-flex item-column">
+										<div class="item-bottom">7/31/2018</div>
+										<div class="item-bottom vertical-align"><span class="icon-text grey-text">Sent</span><i class="material-icons icon-side">send</i></div>
+									</div>
+							</div>
+					</app-dash-box>
+				</div>
     	</div>
 		<!-- <app-home [households]="households"></app-home> -->
 
@@ -68,71 +70,72 @@
 		</div>
 
 		<div class="container-analytics" *ngIf="!analyticShow">
-
-			<ng-container *ngIf="!isNew">
-				<app-dash-box class="adjust-parameters" [title]="'Adjust Parameters'" 
-                          [headerRightType]="'action'">
-                          
-			<div class="adjust-container">
-					<div class="row">
-						<div>
-							<span class="dropdown-title">Goal:</span>
+			<div class="analytics-content">
+				<ng-container *ngIf="!isNew">
+					<app-dash-box class="adjust-parameters" [title]="'Adjust Parameters'" 
+														[headerRightType]="'action'">
+														
+				<div class="adjust-container">
+						<div class="row">
+							<div>
+								<span class="dropdown-title">Goal:</span>
+							</div>
+							<div>
+								<div class="dropdown"><span class="select-goal">Select Goal</span><i class="icon-dropdown"></i></div>
+							</div>
 						</div>
-						<div>
-							<div class="dropdown"><span class="select-goal">Select Goal</span><i class="icon-dropdown"></i></div>
+						<div class="row row-flex">
+							<div class="left-section">
+								<div><span class="dropdown-title">State:</span></div>
+								<div><div class="dropdown"><span class="select-goal">Select State</span><i class="icon-dropdown"></i></div></div>
+							</div>
+							<div class="right-section">
+							<div><span class="dropdown-title">Status:</span></div>
+							<div><div class="dropdown"><span class="select-goal">Select Status</span><i class="icon-dropdown"></i></div></div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div>
+								<span class="dropdown-title">Date Range: </span>
+							</div>
+							<div>
+								<div class="dropdown"><span class="select-goal">Select Date Range</span><i class="icon-dropdown"></i></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="btn-container">
+								<span class="remove-tile">Remove Tile</span><button class="btn-apply">Apply</button>
+							</div>
 						</div>
 					</div>
-					<div class="row row-flex">
-						<div class="left-section">
-							<div><span class="dropdown-title">State:</span></div>
-							<div><div class="dropdown"><span class="select-goal">Select State</span><i class="icon-dropdown"></i></div></div>
-						</div>
-						<div class="right-section">
-						<div><span class="dropdown-title">Status:</span></div>
-						<div><div class="dropdown"><span class="select-goal">Select Status</span><i class="icon-dropdown"></i></div></div>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div>
-							<span class="dropdown-title">Date Range: </span>
-						</div>
-						<div>
-							<div class="dropdown"><span class="select-goal">Select Date Range</span><i class="icon-dropdown"></i></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="btn-container">
-							<span class="remove-tile">Remove Tile</span><button class="btn-apply">Apply</button>
-						</div>
-					</div>
-				</div>
-                </app-dash-box>
-				<app-dash-box [title]="'Opportunity AUM'" 
-                          [subTitle]="'Forecast Overtime'" 
-                          [headerRightType]="'action'">
-	              <img src="../../../assets/graph-1.png">
-	            </app-dash-box>
+									</app-dash-box>
+					<app-dash-box [title]="'Opportunity AUM'" 
+														[subTitle]="'Forecast Overtime'" 
+														[headerRightType]="'action'">
+									<img src="../../../assets/graph-1.png">
+								</app-dash-box>
 
-	            <app-dash-box [title]="'# of Proposals'" 
-	                          [subTitle]="'In Progress'" 
-	                          [headerRightType]="'action'">
-	              <img src="../../../assets/graph-2.png">
-	            </app-dash-box>
+								<app-dash-box [title]="'# of Proposals'" 
+															[subTitle]="'In Progress'" 
+															[headerRightType]="'action'">
+									<img src="../../../assets/graph-2.png">
+								</app-dash-box>
 
-	            <app-dash-box [title]="'Implmented Proposals'" 
-	                          [subTitle]="'Overtime'" 
-	                          [headerRightType]="'action'">
-	              <img src="../../../assets/graph-3.png">
-	            </app-dash-box>
-			</ng-container>
+								<app-dash-box [title]="'Implmented Proposals'" 
+															[subTitle]="'Overtime'" 
+															[headerRightType]="'action'">
+									<img src="../../../assets/graph-3.png">
+								</app-dash-box>
+				</ng-container>
 
-			<app-dash-box [isNew]="true"
-    				  [title]="''"
-    				  [addLabel]="'Add'"
-    				  [addAction]="showViewAndAddAnalytics"
-    				  [headerRightType]="'add'"></app-dash-box>
+				<app-dash-box [isNew]="true"
+								[title]="''"
+								[addLabel]="'Add'"
+								[addAction]="showViewAndAddAnalytics"
+								[headerRightType]="'add'"></app-dash-box>
 		</div>
+	</div>
 		<app-view-add-graphs *ngIf="openModal" (closeMeEvent)="closeModal($event)" ></app-view-add-graphs>
 		<app-household-list *ngIf="openHousehold" (closeMeEvent)="household(false)"></app-household-list>
 

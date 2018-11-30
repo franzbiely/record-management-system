@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$primaryfont: "montserrat", sans-serif;
+$secondaryfont: "MuseoSans", calibri;
 .container-searchbar{
   width: 389px;
   max-height: 731px;
@@ -27,9 +30,10 @@
   		border-radius: 25px 25px 0 0;
 
   		.header-content{
-  		  font-family: MuseoSans;
+		  margin-left: 5px;
+  		  font-family: $secondaryfont;
 		  font-size: 14px;
-		  font-weight: 300;
+		  font-weight: 400;
 		  font-style: normal;
 		  font-stretch: normal;
 		  line-height: 1;
@@ -49,7 +53,7 @@
 			    color: #1598cb;
 			    font-size: 1px;
 			    position: absolute;
-			    right: 10px;
+			    right: 20px;
 			    top: 20px;
     			box-shadow: 1px 1px 2px #00000038;
 
@@ -59,7 +63,9 @@
 			}
 		}
     }
-
+	.vertical-align{
+		align-items: center;
+	}
     .searchbar-content{
     	background-color: #ffffff;
     	padding-top: 2px;
@@ -72,14 +78,17 @@
     		background-color: #ffffff;
     		box-shadow: 0 2px 8px 0 rgba(52, 53, 52, 0.1);
     		margin-bottom: 10px;
-
+			.column{
+				flex-direction: column;
+				align-items: flex-start;
+			}
     		.block-title{	
     			padding: 10px 50px;
 			    border-top: 2px solid #dedede3d;
 			    border-bottom: 2px solid #dedede3d;
 
 	    			span{
-	    		      font-family: Montserrat;
+	    		      font-family: $primaryfont;
 					  font-size: 12px;
 					  font-weight: 600;
 					  font-style: normal;
@@ -94,8 +103,9 @@
     		.block-content{
     			padding: 10px 50px;
     			padding-bottom: 5px;
-    			
+				
     			.content-items{
+					display: flex;
     				border-bottom: 1px solid #dedede3d;
     				padding: 10px 0 10px 0;
 
@@ -104,7 +114,6 @@
     					
     					.document-icon{
     						position: relative;
-    						top: -2px;
     						display: flex;
 						    justify-content: center;
 						    align-items: center;
@@ -116,9 +125,9 @@
     				
 
     				span{
-    					font-family: MuseoSans;
+    					font-family: $secondaryfont;
 						font-size: 14px;
-						font-weight: 100;
+						font-weight:700;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: 1;
@@ -127,9 +136,10 @@
 					  	display: block;
 
 					  	&.subitem{
-							font-family: Montserrat;
+							margin-top: 1px;
+							font-family: $primaryfont;
 							font-size: 10px;
-							font-weight: 300;
+							font-weight: 500;
 							font-style: normal;
 							font-stretch: normal;
 							line-height: 1;
@@ -149,12 +159,13 @@
     		}
 
 			.content-show-more{
+				cursor: pointer;
 				padding: 10px 50px;
 			    border-top: 2px solid #dedede3d;
 			    border-bottom: 2px solid #dedede3d;
 
 			    span{
-			      font-family: MuseoSans;
+			      font-family: $secondaryfont;
 				  font-size: 12px;
 				  font-weight: bold;
 				  font-style: normal;
