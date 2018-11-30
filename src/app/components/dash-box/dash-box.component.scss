@@ -2,11 +2,11 @@ $primaryColor: #ffffff;
 $itemDivider: 1px solid #dedede;
 $itemFontSize: 9pt;
 $btnFontSize: 10pt;
+$primaryfont: "montserrat", sans-serif;
 
 %container-attr {
   width: 400px;
   height: 300px;
-  background-color: #1598cb;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
@@ -27,11 +27,6 @@ $btnFontSize: 10pt;
   line-height: 1;
   letter-spacing: 0.2px;
   padding: 10px;
-  sub {
-    display: block;
-    font-size: 13.1px;
-    margin-top: 10px;
-  }
 }
 
 %container-info {
@@ -121,14 +116,26 @@ $line, $spacing) {
   .icon-big-add {
     content: url('../../../../src/assets/component/home/add-blue@3x.png');
   }
-
+  .box-head-title{
+    font-family: $primaryfont;
+    font-size: 20px;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+  }
+  .sub {
+    font-family: $primaryfont;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top:-1px; 
+  }
   .box-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .btn-right-space {
-      padding: 15px;
-    }
+    background-color: #1598cb;
+    padding: 5px 20px;
+    height:40px;
     span.btn {
       cursor: pointer;
       align-items: center;
@@ -141,7 +148,12 @@ $line, $spacing) {
       font-size: $btnFontSize;
       margin-right: 10px;
       .icon-title {
-        margin-left: 10px;
+        margin-left: 6px;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        margin-top:1px; 
+        font-family: $primaryfont;
       }
       .icon-add {
         position: relative;
@@ -157,9 +169,7 @@ $line, $spacing) {
     }
   }
   @extend %container-attr;
-  h2 {
-    @extend %header-title;
-  }
+  
   .container-info {
     @extend %container-info;
 
