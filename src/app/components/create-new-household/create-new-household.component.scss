@@ -258,6 +258,8 @@ $secondaryfont: MuseoSans;
       width: 395px;
       height: 206px;
       border-radius: 6px;
+      box-shadow: 0 5px 20px 0 #aaa;
+      overflow: hidden;
       @media only screen and (max-width: 767px) {
         width: 100%;
         margin-top: 20px;
@@ -379,6 +381,8 @@ $secondaryfont: MuseoSans;
       border-radius: 6px;
       background-color: rgba(255, 255, 255, 0.9);
       margin-left: 20px;
+      box-shadow: 0 5px 20px 0 #aaa;
+      overflow: hidden;
       @media only screen and (max-width: 767px) {
         width: 100%;
         margin-left: 0px;
