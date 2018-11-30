@@ -3,7 +3,7 @@
     height: 80px;
     box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
     z-index: 20;
-    background-color: #ffffff;
+    background-color: white;
     display: flex;
     position:relative;
     &.disabled {
@@ -257,7 +257,6 @@
                 object-fit: contain;
                 
             }
-    
             .noti-badge{
                 position: absolute;
                 top: 11px;

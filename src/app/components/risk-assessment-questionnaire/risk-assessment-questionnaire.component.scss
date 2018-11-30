@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$primaryfont: "montserrat", sans-serif;
+$secondaryfont: "MuseoSans", calibri;
 .container-overlay{
     position: absolute;
     top: 0;
@@ -20,7 +23,7 @@
             text-align: center;
 
             h3{
-                font-family: Montserrat;
+                font-family: $primaryfont;
                 font-size: 30px;
                 font-weight: 600;
                 font-style: normal;
@@ -55,7 +58,7 @@
         .modal-body{
             .input-field{
                 display: flex;
-                font-family: MuseoSans;
+                font-family: $secondaryfont;
                 flex-direction: column;
 
                 .input-text{
@@ -65,7 +68,7 @@
                     background-color: #ffffff;
                     font-size: 14px;
                     color: #c5c5c5;
-                    font-family: MuseoSans;
+                    font-family: $secondaryfont;
                     font-size: 14px;
                     height: 45px;
                     line-height:45px;
@@ -106,7 +109,7 @@
                                 mat-radio-button{
                                     display: block;
                                     font-weight: 600px;
-                                    font-family: MuseoSans;
+                                    font-family: $secondaryfont;
                                     font-size: 14px;
                                     font-weight: 600;
                                     color: #000;
@@ -149,7 +152,7 @@
                                 background-color: #ffffff;
                                 font-size: 14px;
                                 color: #c5c5c5;
-                                font-family: MuseoSans;
+                                font-family: $secondaryfont;
                                 font-size: 14px;
                                 height: 45px;
                                 line-height:45px;
@@ -166,7 +169,7 @@
                                 background-color: #ffffff;
                                 font-size: 14px;
                                 color: #c5c5c5;
-                                font-family: MuseoSans;
+                                font-family: $secondaryfont;
                                 font-size: 14px;
                                 font-weight: 300;
                                 border: 1px solid #e7e6e6;
@@ -180,7 +183,7 @@
                             button{
                                 width: 120px;
                                 text-transform: uppercase;
-                                font-family: Montserrat;
+                                font-family: $primaryfont;
                                 background-color: #269fcf;
                                 border: 1px solid #269fcf;
                                 color: #ffffff;
@@ -197,7 +200,7 @@
                     background-color: #ffffff;
                     font-size: 14px;
                     color: #c5c5c5;
-                    font-family: MuseoSans;
+                    font-family: $secondaryfont;
                     font-size: 14px;
                     height: 140px;
                     line-height:45px;

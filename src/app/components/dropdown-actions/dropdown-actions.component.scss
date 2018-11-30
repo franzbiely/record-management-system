@@ -12,10 +12,10 @@
     overflow: hidden;
     margin-bottom:30px;
     details {
-        background: #fff;
-        right: 55px;
+        right: 28px;
         position: absolute;
         summary {
+            margin-top: -10px;
             cursor: pointer;
             position:relative;
             height: 47px;
@@ -46,6 +46,7 @@
             margin:0;
             list-style: none;
             li {
+                background: #fff;
                 position:relative;
                 a {
                     cursor: pointer;

@@ -249,18 +249,22 @@ $secondaryFont: MuseoSans;
     display:flex;
     justify-content: space-between;
   }
-.divider {
-    width:100%;
-    border:solid 0.5px #e7e6e6;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+.divider-container{
+    display:flex;
+    .divider {
+        flex:1;
+        border:solid 0.5px #e7e6e6;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .recent-container {
 	flex:1;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     @media only screen and (max-width: 767px){
         justify-content: space-evenly;
         flex-direction: column;
@@ -295,5 +299,6 @@ $secondaryFont: MuseoSans;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-start;
     @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}
 }
