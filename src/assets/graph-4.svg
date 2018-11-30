@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="363px" height="208px" viewBox="0 0 363 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Proposal-Analytics" transform="translate(-901.000000, -123.000000)">
+            <g id="Total-Proposals-By-Risk" transform="translate(880.000000, 49.000000)">
+                <g id="Group-6" transform="translate(15.000000, 71.000000)">
+                    <g id="Group-7" transform="translate(191.000000, 6.000000)">
+                        <text id="$2.70M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="152" y="7">$2.70M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 147 1 147 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 25.000000)">
+                        <text id="$2.60M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="145" y="7">$2.60M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 140 1 140 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 44.000000)">
+                        <text id="$2.50M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="140" y="7">$2.50M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 135 1 135 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 63.000000)">
+                        <text id="$2.25M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="122" y="7">$2.25M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 117 1 117 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 82.000000)">
+                        <text id="$2.20M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="117" y="7">$2.20M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 112 1 112 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 101.000000)">
+                        <text id="$1.70M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="106" y="7">$1.70M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 101 1 101 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 120.000000)">
+                        <text id="$1.25M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="75" y="7">$1.25M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 70 1 70 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 139.000000)">
+                        <text id="$1.22M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="72" y="7">$1.22M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 67 1 67 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 158.000000)">
+                        <text id="$1.20M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="69" y="7">$1.20M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 64 1 64 6 0 6"></polygon>
+                    </g>
+                    <g id="Group-7" transform="translate(191.000000, 177.000000)">
+                        <text id="$1.00M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#465E7B">
+                            <tspan x="60" y="7">$1.00M</tspan>
+                        </text>
+                        <polygon id="Graph-segment" fill="#4B73A1" points="0 1 55 1 55 6 0 6"></polygon>
+                    </g>
+                    <g id="Graph-percentage" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="19">
+                        <text id="Loring-Ward-Moderate">
+                            <tspan x="68.2807617" y="9">Loring Ward Moderate - DFA</tspan>
+                            <tspan x="68.7729492" y="28">Loring Ward Balanced - DFA</tspan>
+                            <tspan x="29.2661133" y="47">Loring Ward Moderate Growth - Select</tspan>
+                            <tspan x="36.7719727" y="66">Loring Ward Moderate Growth - DFA</tspan>
+                            <tspan x="18.7412109" y="85">Loring Ward Capital Appreciation - Select</tspan>
+                            <tspan x="81.2885742" y="104">Loring Ward Equity - DFA</tspan>
+                            <tspan x="60.7749023" y="123">Loring Ward Moderate - Select</tspan>
+                            <tspan x="61.2670898" y="142">Loring Ward Balanced - Select</tspan>
+                            <tspan x="5.90917969" y="161">Loring Ward Moderate - Tax-Managed - DFA</tspan>
+                            <tspan x="66.28125" y="180">Loring Ward Defensive - DFA</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-5" transform="translate(191.000000, 195.000000)" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="9">
+                        <text id="$0">
+                            <tspan x="0.166666667" y="9">$0</tspan>
+                        </text>
+                        <text id="$1M">
+                            <tspan x="46.1111111" y="9">$1</tspan>
+                            <tspan x="47.367947" y="18">M</tspan>
+                        </text>
+                        <text id="$2M">
+                            <tspan x="98.0555556" y="9">$2M</tspan>
+                        </text>
+                        <text id="$3M">
+                            <tspan x="151" y="9">$3M</tspan>
+                        </text>
+                    </g>
+                    <polyline id="Path-4" stroke="#E7E6E6" stroke-width="0.5" points="191 3 191 188 360 188"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

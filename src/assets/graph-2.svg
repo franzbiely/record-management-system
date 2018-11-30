@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="364px" height="195px" viewBox="0 0 364 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.5,0 L63.5,0 C72.336556,-1.623249e-15 79.5,7.163444 79.5,16 L79.5,16 C79.5,24.836556 72.336556,32 63.5,32 L0.5,32 L0.5,0 Z" id="path-1"></path>
+        <filter x="-12.0%" y="-26.6%" width="124.1%" height="159.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.18 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-140.000000, -632.000000)">
+            <g id="Group-23" transform="translate(140.000000, 632.000000)">
+                <text id="$27,600,000" font-family="Helvetica" font-size="36" font-weight="normal" line-spacing="36" letter-spacing="-1" fill="#414042">
+                    <tspan x="0" y="35">$27,600,00</tspan>
+                    <tspan x="170.175781" y="35">0</tspan>
+                </text>
+                <g id="Group-15" transform="translate(0.000000, 60.000000)">
+                    <text id="Implemented:-100%" font-family="Helvetica" font-size="10" font-weight="normal" letter-spacing="1" fill="#67C072">
+                        <tspan x="0" y="134">IMPLEMENTED: 100%</tspan>
+                    </text>
+                    <text id="IN-Progress:-90%" font-family="Helvetica" font-size="10" font-weight="normal" letter-spacing="1" fill="#1598CB">
+                        <tspan x="254" y="134">IN PROGRESS: 90%</tspan>
+                    </text>
+                    <path d="M147,58 L354,58 C357.313708,58 360,60.6862915 360,64 L360,115 C360,118.313708 357.313708,121 354,121 L147,121 L147,58 Z" id="Rectangle" fill="#1598CB"></path>
+                    <text id="$7M" font-family="Montserrat-Regular, Montserrat" font-size="10" font-weight="normal" line-spacing="20" fill="#67C072">
+                        <tspan x="1" y="46">$7M</tspan>
+                    </text>
+                    <text id="$20M" font-family="Montserrat-Regular, Montserrat" font-size="10" font-weight="normal" line-spacing="20" fill="#1598CB">
+                        <tspan x="147" y="46">$20M</tspan>
+                    </text>
+                    <path d="M6,58 L145,58 L145,121 L6,121 C2.6862915,121 4.05812251e-16,118.313708 0,115 L0,64 C-4.05812251e-16,60.6862915 2.6862915,58 6,58 Z" id="Rectangle" fill="#67C072"></path>
+                    <g id="Group-2" transform="translate(127.000000, 0.000000)">
+                        <g id="Group-5">
+                            <g id="Rectangle-2">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <text id="Goal:-$6,200,000" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="10" fill="#414042">
+                                <tspan x="16" y="15">Goal:</tspan>
+                                <tspan x="16" y="25">$6,200,000</tspan>
+                            </text>
+                        </g>
+                        <path d="M1,0.5 L1,120.5" id="Line-3" stroke="#414042" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

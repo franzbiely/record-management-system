@@ -38,9 +38,7 @@ $primaryfont: "montserrat", sans-serif;
   color:#222;
   background-color: $primaryColor;
   margin:auto;
-  img {
-    width: 100%;
-  }
+  
 }
 
 %grey-text-uppercase {
@@ -213,8 +211,6 @@ $line, $spacing) {
       border-bottom: $itemDivider;
       border-top: $itemDivider;
     }
-    img {
-      width: 100%;
-    }
+    
   }
 }

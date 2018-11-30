@@ -4,7 +4,7 @@
       <div *ngIf="closeOnly">
         <button (click)="cancelFunc()">Close</button>
       </div>
-      <ng-container *ngIf="!closeOnly">
+      <ng-container *ngIf="!closeOnly && !documentSend">
         <div *ngIf="!noCancel">
           <button (click)="cancelFunc()">Cancel</button>
         </div>
@@ -12,6 +12,13 @@
           <button class="primary" (click)="saveFunc()" *ngIf="!primaryLabel"><i class="material-icons">save</i> Save</button>
           <button class="primary" (click)="saveFunc()" *ngIf="primaryLabel">{{primaryLabel}}</button>
         </div>
+      </ng-container>
+      <ng-container *ngIf="documentSend">
+        
+        <div class="rpp-actions">
+          <button class="is-save">Save to documents</button>
+          <button class="is-send" (click)="saveFunc()">Save & send documents</button>
+        </div><!-- .rpp-actions -->
       </ng-container>
     </div>
   </div>

@@ -47,5 +47,77 @@
       background-color: #1598cb;
       color: #ffffff;
     }
+    .rpp-actions {
+      position: fixed;
+      bottom: 0;
+      z-index: 1000;
+      width: 100%;
+      padding: 40px 60px;
+      text-align: right;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 67%, rgba(255, 255, 255, 0.86) 75%, rgba(255, 255, 255, 0.92) 84%, rgba(255, 255, 255, 0.96) 93%, #ffffff);
+
+      button {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 8px;
+        color: #808284;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid #ffffff;
+
+        &.is-back {
+          color: #1598cb;
+          border-color: #1598cb;
+        }
+        &.is-save {
+          padding-left: 62px;
+          text-align: left;
+          box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+
+          &:before {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/prints/save-gray.svg);
+            transform: translateY(-50%);
+          }
+        }
+        &.is-send {
+          padding-left: 45px;
+          color: #ffffff;
+          text-align: left;
+          background-color: #1598cb;
+          border-color: #1598cb;
+          box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+
+          &:before {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            content: '';
+            width: 18px;
+            height: 16px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/prints/send-white.svg);
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
   }
 }

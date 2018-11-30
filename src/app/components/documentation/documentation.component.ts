@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-documentation',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class DocumentationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  nextReceiver() {
+  	this.router.navigateByUrl('/print-preview');
   }
 
 }
