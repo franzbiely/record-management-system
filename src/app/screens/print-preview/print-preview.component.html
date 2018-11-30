@@ -58,12 +58,12 @@
                 <li>
                     <a (click)="toggleBookmark($event)">Proposal</a> <span class="drag"></span>
                     <ul>
-                        <li><a>Cover Page</a></li>
-                        <li><a>IMPORTANT DISCLOSURE INFORMATION</a></li>
-                        <li><a>Another Page</a></li>
-                        <li><a>Another Page</a></li>
-                        <li><a>Another Page</a></li>
-                        <li><a>Another Page</a></li>
+                        <li><a (click)="scrollToPageAlt($event)" data-page="1">Cover Page</a></li>
+                        <li><a (click)="scrollToPageAlt($event)" data-page="2">IMPORTANT DISCLOSURE INFORMATION</a></li>
+                        <li><a (click)="scrollToPageAlt($event)" data-page="3">Another Page 3</a></li>
+                        <li><a (click)="scrollToPageAlt($event)" data-page="4">Another Page 4</a></li>
+                        <li><a (click)="scrollToPageAlt($event)" data-page="5">Another Page 5</a></li>
+                        <li><a (click)="scrollToPageAlt($event)" data-page="6">Another Page 6</a></li>
                     </ul>
                 </li>
                 <li>
