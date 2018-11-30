@@ -1,6 +1,9 @@
 import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import { DataService } from "../../services/data.service"
 
+declare var jquery:any;
+declare var $ : any
+
 @Component({
   selector: 'app-dropdown-update-account',
   templateUrl: './dropdown-update-account.component.html',
