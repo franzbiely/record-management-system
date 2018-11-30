@@ -1,3 +1,4 @@
+<span class="screen-overlay"></span>
 <section class="asset-class">
 <div class="screen-container">
     <div class="modal-container">
@@ -19,7 +20,7 @@
               </div>
               <div class="box-body">
                 <div class="row">
-                <span> View Morningstar Allocation Details</span>
+                <span (click)="viewDetailEvent()"> View Morningstar Allocation Details</span>
                 <span> Morningstar Category</span>
                 <span>Large Value</span>
                 </div>
@@ -147,7 +148,7 @@
         </div>
       </div>
         <div class="btn-container">
-          <button class="btn-close">Close</button>
+          <button class="btn-close" (click)="cancelEvent()">Close</button>
           <button class="btn-save">Save</button>
         </div>
       </div>

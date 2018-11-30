@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-popup-custom-asset-class',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopupCustomAssetClassComponent implements OnInit {
 
-  constructor() { }
+  viewPortfolioModal : boolean = false;
+  assetClassModal : boolean = false;
+
+  setModalStatus($value) {
+    this.modalStatus.SET_viewPortfolio(false);
+    this.modalStatus.SET_assetClass($value);
+  }
+  constructor(private modalStatus: ModalStatusService) { }  
 
   ngOnInit() {
+    this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
+    this.modalStatus.assetClass.subscribe(value => this.assetClassModal = value);
   }
 
 }

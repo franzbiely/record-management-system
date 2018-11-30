@@ -43,6 +43,17 @@ export class ModalStatusService {
     this.editPortfolioSource.next(value);
   }
 
+  private assetClassSource = new BehaviorSubject<boolean>(false);
+  public assetClass = this.assetClassSource.asObservable();
+  SET_assetClass(value: boolean) {
+    this.assetClassSource.next(value);
+  }
+
+  private allocationDetailsSource = new BehaviorSubject<boolean>(false);
+  public allocationDetails = this.allocationDetailsSource.asObservable();
+  SET_allocationDetails(value: boolean) {
+    this.allocationDetailsSource.next(value);
+  }
   constructor() { }
   
 }

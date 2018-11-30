@@ -1,8 +1,8 @@
 app-import-accounts {
-	    position: fixed;
+	position: fixed;
     z-index: 99;
     width: 100%;
-        display: flex;
+    display: flex;
     justify-content: center;
     height: 100%;
 }
@@ -11,7 +11,7 @@ app-account-details {
 	position: fixed;
     z-index: 100;
     width: 100%;
-        display: flex;
+    display: flex;
     justify-content: center;
     height: 100%;
 }
@@ -20,12 +20,13 @@ app-questionnaire-modal{
     position: fixed;
     z-index: 100;
 }
-app-popup-create-portfolio {
+app-popup-create-portfolio, app-asset-class,
+app-allocation-details {
     position: absolute;
-        align-items: center;
+    align-items: center;
     z-index: 99;
     width: 100%;
-        display: flex;
+    display: flex;
     justify-content: center;
     height: 100%;
 }
