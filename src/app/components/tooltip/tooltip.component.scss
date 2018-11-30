@@ -1,0 +1,65 @@
+.tooltip {
+    position:relative;
+    .icon-question{
+        margin-top: -5px;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #bbb;
+        border-radius: 100%;
+        border: 1px solid #eee;
+        box-shadow: 0 0 1px 0px rgba(65, 64, 66, 0.3);
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 600;
+        box-sizing: border-box;
+        background: #fff;
+        
+        // content: url("../../../assets/component/simulation/info-white@3x.png");
+    }
+    .tooltip-content {
+        position:absolute;
+        padding:20px;
+        font-size: 12px;
+        width: 160px;
+        border-radius: 2.3px;
+        box-shadow: 0 0 40px 0 rgba(65, 64, 66, 0.3);
+        background-color: #ffffff;
+        color: #414042;
+        text-align: center;
+        line-height: 1.17;
+        bottom: 42px;
+        left: -90px;
+        margin-top:-10px;
+        opacity: 0;
+        transition: all 0.2s linear;
+        display: none;
+        &:after {
+            content: '▼';
+            color:#fff;
+            transform: scaleX(2.5);
+            box-sizing: border-box;
+            display: inline-block;
+            bottom: -13px;
+            position: absolute;
+            left: 50%;
+            text-align: center;
+            margin-left: -7px;
+        }
+    }
+    &:hover {
+        .icon-question{
+            color:#fff;
+            border:1px solid #fff;
+            background-color:#0097CE;
+        }
+        .tooltip-content {
+            margin-top:0;
+            opacity: 1;
+            display: initial;
+        }
+    }
+}

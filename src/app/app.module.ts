@@ -100,6 +100,7 @@ import { MenuSearchbarComponent } from './components/menu-searchbar/menu-searchb
 import { QuestionnaireModalComponent } from './components/questionnaire-modal/questionnaire-modal.component';
 import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
 import { GraphProposalsComponent } from './components/graph-proposals/graph-proposals.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -202,7 +203,8 @@ import { GraphProposalsComponent } from './components/graph-proposals/graph-prop
     MenuSearchbarComponent,
     QuestionnaireModalComponent,
     QuestionnaireScreenComponent,
-    GraphProposalsComponent
+    GraphProposalsComponent,
+    TooltipComponent
   ],
   imports: [
     BrowserModule,
