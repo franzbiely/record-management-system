@@ -40,6 +40,8 @@ import { AccountSelectModalScreenComponent } from './screens/account-select-moda
 import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
 import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
 
+import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
+
 const routes: Routes = [
   
   {
@@ -214,6 +216,10 @@ const routes: Routes = [
   {
     path: 'questionnaire-modal',
     component: QuestionnaireScreenComponent 
+  },
+  {
+    path: 'print-preview',
+    component: PrintPreviewComponent
   }
   
   

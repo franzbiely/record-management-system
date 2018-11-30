@@ -101,6 +101,7 @@ import { QuestionnaireModalComponent } from './components/questionnaire-modal/qu
 import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
 import { GraphProposalsComponent } from './components/graph-proposals/graph-proposals.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
 
 @NgModule({
   declarations: [
@@ -204,7 +205,8 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
     QuestionnaireModalComponent,
     QuestionnaireScreenComponent,
     GraphProposalsComponent,
-    TooltipComponent
+    TooltipComponent,
+    PrintPreviewComponent
   ],
   imports: [
     BrowserModule,
