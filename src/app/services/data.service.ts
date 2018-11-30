@@ -17,5 +17,12 @@ export class DataService {
 	  	this.proposal_risk_stepSource.next(value);
 	}
 
+	private simulationGoalSource = new BehaviorSubject<string>('Retirement');
+	public simulationGoal = this.simulationGoalSource.asObservable();
+	SET_simulationGoal(value: string) {
+	  	this.simulationGoalSource.next(value);
+	}
+
+
   constructor() { }
 }

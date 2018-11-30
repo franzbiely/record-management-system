@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../../services/data.service"
 
 @Component({
   selector: 'app-simulation',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimulationComponent implements OnInit {
 
-  constructor() { }
+	isSidebarOpen : boolean = true;
+  goalType : string = 'Retirement';
+  isCurrentActive : boolean = true;
+
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.simulationGoal.subscribe(value => this.goalType = value);
   }
 
+  closeSidebar() {
+  	this.isSidebarOpen = false;
+  }
+  openSidebar() {
+  	this.isSidebarOpen = true;
+    this.isCurrentActive = false;
+  }
+
+  hideCurrent() {
+    this.isCurrentActive = false;
+    this.isSidebarOpen = false;
+  }
 }
