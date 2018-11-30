@@ -19,14 +19,15 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-
+    top: 50px;
+    position: relative;
     .box-container{
         width: 1200px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
         .box{
             .box-head{
-                padding: 30px 50px 30px 60px;
+                padding: 30px 60px 20px 60px;
                 display: flex;
                 flex-direction: column;
                 border-bottom: #ddd 1px solid;
@@ -36,10 +37,11 @@
                     align-items: center;
                     justify-content: space-between;
                     .text-required{
-                        font-family: montserrat;
+                        font-family: Montserrat;
                         font-size: 12px;
                         font-weight: 500;
-                        color: rgba(65, 64, 66,1)
+                        color: #808284;
+                        margin-left:10px;
                     }
                     .asterisk{
                         font-weight: 700;
@@ -64,7 +66,16 @@
                     border-top: #ddd 1px solid;
                 }
                 .box-content{
-                    padding: 30px 50px 30px 60px;
+                    padding: 20px 50px 30px 60px;
+                    .text-title-container {
+                        display:flex;
+                        .material-icons {
+                            font-size: 17px;
+                            color: #999;
+                            margin-left: 10px;
+                        }
+                    }
+                    
                     .row-1, .row-2, .row-3, .row-4{
                         display: flex;
                         flex-direction: row;
@@ -107,10 +118,11 @@
                                 cursor: pointer;
                                 padding:0px;
                                 span{
-                                    font-family: montserrat;
+                                    font-family: Montserrat;
                                     font-size: 12px;
-                                    color: #ddd;
-                                    font-weight: 400; 
+                                    color: #808284;
+                                    font-weight: 300; 
+                                    margin-left: 5px;
                                 }
                                 .icon-dropdown{
                                     width: 10px;
@@ -194,7 +206,7 @@
                         }
                         div{
                             cursor: pointer;
-                            font-family:montserrat;
+                            font-family:Montserrat;
                             font-size: 14px;
                             font-weight: 800;
                             text-transform: uppercase;
@@ -210,8 +222,7 @@
                         display: flex;
                         flex-direction: row;
                         button{
-                            width: auto;
-                            padding: 10px 30px;
+                            width: 152px;
                         }
                         button:first-child{
                             display: flex;
@@ -219,7 +230,7 @@
                             margin-right: 15px;
                             text-transform: uppercase;
                             font-weight:800;
-                            font-family: montserrat;
+                            font-family: Montserrat;
                             letter-spacing: 1px;
                             box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
                         }
@@ -234,7 +245,7 @@
                             margin-right: 15px;
                             text-transform: uppercase;
                             font-weight:800;
-                            font-family: montserrat;
+                            font-family: Montserrat;
                             letter-spacing: 1px;
                             color: #1598cb;
                             border: 1px #1598cb solid;
@@ -246,10 +257,11 @@
         }
     }
     .text-title{
-        color: rgb(43, 43, 43);
-        font-size: 20px;
+        letter-spacing: 2px;
+        color: #77787b;
+        font-size: 16px;
+        font-weight: 600;
         text-transform: uppercase;
-        font-weight: 700;
         letter-spacing: 1px;
     }
     ::placeholder{
@@ -276,7 +288,7 @@
     position: absolute;
     top: 11px;
     bottom: 0;
-    font-family: montserrat;
+    font-family: Montserrat;
     font-size: 12px;
     right: 15px;
     margin: auto;
@@ -293,7 +305,7 @@
     pointer-events: none;
     top: 16px;
     bottom: 0;
-    font-family: montserrat;
+    font-family: Montserrat;
     font-size: 12px;
     left: 11px;
     margin: auto;
@@ -301,7 +313,7 @@
   }
   
   .placeholder span {
-    font-family: montserrat;
+    font-family: Montserrat;
     font-weight: 700;
     color: #1598cb;
     

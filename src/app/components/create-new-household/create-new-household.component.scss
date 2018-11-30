@@ -115,12 +115,34 @@ $secondaryfont: MuseoSans;
   min-width: 375px;
   box-shadow: 0 4px 10px 0 rgba(65, 64, 66, 0.18);
   background-image: linear-gradient(to left, #4db6c5, #1598cb);
+  position:relative;
+  &:before {
+    content: ' ';
+    background: url("../../../assets/pattern-top.svg") top left;
+    background-repeat:no-repeat;
+    position: absolute;
+    width: 600px;
+    opacity: 0.4;
+    user-select: none;
+    height: 100%;
+  }
+  &:after {
+    content: ' ';
+    background: url("../../../assets/pattern-bottom.svg") bottom right;
+    background-repeat:no-repeat;
+    position: absolute;
+    width: 480px;
+    height: 100%;
+    bottom:0;
+    right:0;
+    user-select: none;
+  }
   @media only screen and (max-width: 767px) {
     height:140px;
   }
 
   .header-content {
-    padding: 60px;  
+    padding: 50px;  
     @media only screen and (max-width: 767px) {
       padding: 20px 15px;
 
@@ -136,10 +158,9 @@ $secondaryfont: MuseoSans;
       display: inline-block;
       width: auto;
       .line {
-        margin-top: 10px;
+        margin-top: 9px;
         width: auto;
-        height: 1px;
-        border-bottom: solid 3px #74c2cf;
+        border-bottom: solid 2px #74c2cf;
         @media only screen and (max-width: 767px) {
           margin-top: 0px;
           width: 210px;
@@ -161,6 +182,9 @@ $secondaryfont: MuseoSans;
       h3 {
         margin: 0;
         font-size: 36px;
+        font-weight: 200;
+        line-height: 1;
+        letter-spacing: -1px;
       }
     }
   }
@@ -176,14 +200,13 @@ $secondaryfont: MuseoSans;
     color: #ffffff;
   }
   .text-small-light {
-
+    margin-top: 7px;
     font-family: $mainfont;
     font-size: 10px;
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
-    letter-spacing: 2px;
     color: #ffffff;
   }
   .header-info {
@@ -254,7 +277,7 @@ $secondaryfont: MuseoSans;
           font-weight: 600;
           font-style: normal;
           font-stretch: normal;
-          letter-spacing: 0.9px;
+          letter-spacing: 0.2px;
           color: #ffffff;
           margin: 0;
         }
@@ -468,4 +491,13 @@ app-household-member {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+::ng-deep .active-archive-component {
+  width:103px !important;
+  border: solid 0.5px rgba(255,255,255,0.5) !important;
+}
+
+::ng-deep .active-archive-component .item {
+  display: flex !important;
 }
