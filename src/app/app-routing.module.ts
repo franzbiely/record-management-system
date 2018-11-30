@@ -41,6 +41,7 @@ import { AddAccountScreenComponent } from './screens/add-account-screen/add-acco
 import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
 
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
+import { FrontpageComponent } from './screens/frontpage/frontpage.component';
 
 const routes: Routes = [
   
@@ -220,6 +221,10 @@ const routes: Routes = [
   {
     path: 'print-preview',
     component: PrintPreviewComponent
+  },
+  {
+      path: 'frontpage',
+      component: FrontpageComponent
   }
   
   

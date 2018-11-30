@@ -1,0 +1,42 @@
+<app-header></app-header>
+<main role="main">
+    <app-sidebar [currentPage]="'home'"></app-sidebar>
+    
+    <div class="rms-dashboard">
+
+        <div class="info-board">
+            <div class="board-panes">
+                <div class="board-pane">
+                    sas
+                </div><!-- .info-pane -->
+                <div class="board-pane">2</div><!-- .info-pane -->
+                <div class="board-pane">3</div><!-- .info-pane -->
+            </div><!-- .board-panes -->
+        </div><!-- .info-board -->
+
+        <div class="spacer" style="height: 40px; "></div><!-- .spacer -->
+
+        <div class="report-board">
+            <h2 class="board-title">Proposal Analytics</h2>
+            <div class="board-toggle is-{{ reportBoard.s }}"><span (click)="reportBoardToggle()">{{ reportBoard.t }}</span></div>
+
+            <div class="spacer" style="height: 35px; "></div><!-- .spacer -->
+
+            <div id="report-panes" class="board-panes" *ngIf="reportBoard.s === 'show'">
+                <div class="board-pane">
+                    <div class="rms-analytics-box type-add">
+                        <div class="rab-header">
+                            <h2>&nbsp;</h2>
+                            <a href="#" class="rab-header-action"><span></span><span></span><span></span></a>
+                        </div><!-- .rab-header -->
+                        <div class="rab-content-add">
+                            <span (click)="addAnalyticsBox()">Add</span>
+                        </div><!-- .rab-content -->
+                    </div><!-- .rms-analytics-box -->
+                </div><!-- .info-pane -->
+            </div><!-- .board-panes -->
+        </div><!-- .report-board -->
+
+    </div><!-- .rms-dashboard -->
+</main>
+

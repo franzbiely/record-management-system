@@ -1,24 +1,23 @@
 <header>
-  <div class="header-container" [ngClass]="{'disabled' : isDisabled}">
-    <div class="logo-holder">
-      <div class="logo-container">
-        <a>
-          <img src="{{logo_path}}" srcset="{{logo_path_2}}, {{logo_path_3}}">
-        </a>  
-      </div>
-    </div>
+    <div class="header-container" [ngClass]="{'disabled' : isDisabled}">
+        <div class="logo-holder">
+            <div class="logo-container">
+                <a>
+                    <img src="{{logo_path}}" srcset="{{logo_path_2}}, {{logo_path_3}}">
+                </a>
+            </div>
+        </div>
 
-    <div class="header-components">
-      <div class="header-search-bar">
-        <app-search></app-search>
-      </div>
+        <div class="header-search-bar">
+            <app-search></app-search>
+        </div><!-- .header-search-bar -->
 
-      <app-notification-component></app-notification-component>
-      
+        <div class="header-notif">
+            <app-notification-component></app-notification-component>
+        </div><!-- .header-notif -->
 
-      <div class="header-profile">
-        <app-profile-notification></app-profile-notification>
-      </div>
-    </div>
-  </div>
+        <div class="header-profile">
+            <app-profile-notification></app-profile-notification>
+        </div>
+    </div><!-- .header-container -->
 </header>
