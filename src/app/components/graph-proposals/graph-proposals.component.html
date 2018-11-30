@@ -1,23 +1,116 @@
-<div class="rms-analytics-box">
+<div class="rms-analytics-box type-{{ reportType }}">
     <div class="rab-header">
-        <h2># of Proposals <span>In Progress</span></h2>
+        <h2>{{ reportTitle }} <span>{{ reportSubTitle }}</span></h2>
         <a href="#" class="rab-header-action"><span></span><span></span><span></span></a>
     </div><!-- .rab-header -->
     <div class="rab-content">
-        <div class="rab-info">
-            <div class="rab-info-total">
-                <span class="info-total-count">12</span>
-                <span class="info-total-text">TOTAL Overtime</span>
-            </div><!-- .rab-info-total -->
-            <div class="rab-info-date">
-                <span class="info-date-text"># of Proposals <strong>2013 - 2018</strong></span>
-            </div><!-- .rab-info-date -->
-        </div><!-- .rab-info -->
+        <div *ngIf="reportType; then reportBlock">this is ignored</div>
 
-        <div class="spacer" style="height: 40px;"></div><!-- .spacer -->
+        <ng-template #aumReport>
+            <div class="rab-inner">
+                <div class="rab-info">
+                    <div class="rab-info-total">
+                        <span class="info-total-count">$27,600,000</span>
+                    </div><!-- .rab-info-total -->
+                </div><!-- .rab-info -->
 
-        <div class="rab-chart">
-            <canvas #proposalsChart></canvas>
-        </div><!-- .rab-chart -->
+                <div class="spacer" style="height: 20px; "></div><!-- .spacer -->
+
+                <div class="rab-chart">
+                    <img src="../assets/aum-analytics-graph.svg" alt="aum-graph">
+                </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #ipoReport>
+            <div class="rab-inner">
+                <div class="rab-left-block">
+                    <div class="rab-info">
+                        <div class="rab-info-total">
+                            <span class="info-total-count">80</span>
+                            <span class="info-total-text">TOTAL implemented <br/>proposals overtime</span>
+
+                            <div class="spacer" style="height: 28px;"></div>
+                        </div><!-- .rab-info-total -->
+                        <div class="rab-info-date">
+                            <span class="info-date-text"># of Proposals</span>
+                        </div><!-- .rab-info-date -->
+                    </div><!-- .rab-info -->
+                </div><!-- .rab-left-block -->
+                <div class="rab-right-block">
+                    <div class="rab-chart">
+                        <canvas #theChart></canvas>
+                    </div><!-- .rab-chart -->
+                </div><!-- .rab-right-block -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #defReport>
+            <div class="rab-inner">
+                <div class="rab-info">
+                    <div class="rab-info-total">
+                        <span class="info-total-count">12</span>
+                        <span class="info-total-text">TOTAL Overtime</span>
+                    </div><!-- .rab-info-total -->
+                    <div class="rab-info-date">
+                        <span class="info-date-text"># of Proposals <strong>2013 - 2018</strong></span>
+                    </div><!-- .rab-info-date -->
+                </div><!-- .rab-info -->
+            
+                    <div class="spacer" style="height: 40px;"></div><!-- .spacer -->
+            
+                    <div class="rab-chart">
+                        <canvas #theChart></canvas>
+                    </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #tvpmReport>
+            <div class="rab-inner">
+                <div class="rab-chart">
+                    <canvas #theChart></canvas>
+                </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #tvprReport>
+            <div class="rab-inner">
+                <div class="rab-chart">
+                    <canvas #theChart></canvas>
+                </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #tvppReport>
+            <div class="rab-inner">
+                <div class="rab-chart">
+                    <canvas #theChart></canvas>
+                </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #pdoReport>
+            <div class="rab-inner">
+                <div class="rab-chart">
+                    <canvas #theChart></canvas>
+                </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #tvpsReport>
+            <div class="rab-inner">
+                <div class="rab-chart">
+                    <canvas #theChart></canvas>
+                </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
+
+        <ng-template #cpsReport>
+            <div class="rab-inner">
+                <div class="rab-chart">
+                    <canvas #theChart></canvas>
+                </div><!-- .rab-chart -->
+            </div><!-- .rab-inner -->
+        </ng-template>
     </div><!-- .rab-content -->
 </div><!-- .rms-analytics-box -->
