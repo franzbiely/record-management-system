@@ -38,81 +38,84 @@
     </div>
   </div>
 </div>
-<div class="body-container" >
-  <div class="box-information">
-    <div class="box-header">
-       <h3>Member Information</h3>
-      <div class="edit-information">
-          <a class="inline-item" (click)="householdModal(true)">
-              <span><i class="edit-icon"></i></span>
-              <div><span class="edit-text">edit</span></div>
-          </a>
-      </div>
-    </div>
-    <div class="box-content">
-      <div class="box-item">
-        <div class="box-name">
-          <span>Chris Candelaria</span>
-        </div>
-        <div class="box-contact">
-          <span>CCandelaria@loirngward.com</span>
-          <span>(402) 123-4567</span>
-        </div>
-      </div>
-      <div class="box-item">
-        <div class="box-name">
-          <span>Chris Candelaria</span>
-        </div>
-        <div class="box-contact">
-          <span>CCandelaria@loirngward.com</span>
-          <span>(402) 123-4567</span>
-        </div>
-      </div>
-      <div class="box-item">
-        <div class="box-name">
-          <span>Chris Candelaria</span>
-        </div>
-        <div class="box-contact">
-          <span>CCandelaria@loirngward.com</span>
-          <span>(402) 123-4567</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="box-proposal">
-    <div class="overlay"></div>
-    <div class="box-header">
-        <h3>Proposals</h3>
-        <div class="edit-information">
-          <div class="inline-item">
-              <div><i class="add-icon"></i></div>
-              <div><span class="edit-text">add proposal</span></div>
+<div class="body-container">
+    <div class="body-content">
+      <div class="box-information">
+        <div class="box-header">
+          <h3>Member Information</h3>
+          <div class="edit-information">
+              <a class="inline-item" (click)="householdModal(true)">
+                  <span><i class="edit-icon"></i></span>
+                  <div><span class="edit-text">edit</span></div>
+              </a>
+          </div>
+        </div>
+        <div class="box-content">
+          <div class="box-item">
+            <div class="box-name">
+              <span>Chris Candelaria</span>
+            </div>
+            <div class="box-contact">
+              <span>CCandelaria@loirngward.com</span>
+              <span>(402) 123-4567</span>
+            </div>
+          </div>
+          <div class="box-item">
+            <div class="box-name">
+              <span>Chris Candelaria</span>
+            </div>
+            <div class="box-contact">
+              <span>CCandelaria@loirngward.com</span>
+              <span>(402) 123-4567</span>
+            </div>
+          </div>
+          <div class="box-item">
+            <div class="box-name">
+              <span>Chris Candelaria</span>
+            </div>
+            <div class="box-contact">
+              <span>CCandelaria@loirngward.com</span>
+              <span>(402) 123-4567</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-proposal">
+        <div class="overlay"></div>
+        <div class="box-header">
+            <h3>Proposals</h3>
+            <div class="edit-information">
+              <div class="inline-item">
+                  <div><i class="add-icon"></i></div>
+                  <div><span class="edit-text">add proposal</span></div>
+                </div>
             </div>
         </div>
+        <div class="box-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Value</th>
+                <th>State/Status</th>
+                <th>Created</th>
+                <th>Last Updated</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="fade container-add"> 
+          <a>
+            <div class="flex-block" (click)="openProposalForm=true">
+            <div><i class="icon-circle-add"></i></div>
+            <div><span>Add Proposals</span></div>
+          </div>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="box-content">
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>ID</th>
-            <th>Value</th>
-            <th>State/Status</th>
-            <th>Created</th>
-            <th>Last Updated</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-    <div class="fade container-add"> 
-      <a>
-        <div class="flex-block" (click)="openProposalForm=true">
-        <div><i class="icon-circle-add"></i></div>
-        <div><span>Add Proposals</span></div>
-       </div>
-      </a>
-    </div>
-  </div>
 </div>

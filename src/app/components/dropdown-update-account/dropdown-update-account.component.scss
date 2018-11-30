@@ -32,5 +32,8 @@
     font-weight: 300;
     border-top: 1px solid #eee;
   }
+  .item:first-child {
+    border-top: none;
+  } 
   &[open] {}
 }

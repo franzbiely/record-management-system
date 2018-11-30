@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$primaryfont: "montserrat", sans-serif;
+$secondaryfont: "MuseoSans", calibri;
 .dropdown-filter {
   margin-left: 20px;
   position: relative;
   background: url(/src/assets/component/portfolio/filter-gray.png) no-repeat scroll 0px 0px;
   background-color: white;
   border-radius: 6px;
-  z-index: 9;
+  z-index: 3;
   .btn-filter {
     width: 240px;
     height: 50px;
-
+    padding: 0px 15px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     span {
-      font-family: Montserrat;
+      font-family: $primaryfont;
       font-size: 12px;
       font-weight: 700;
       font-style: normal;
@@ -31,7 +34,7 @@
     }
   }
   .item-container {
-    font-family: MuseoSans;
+    font-family: $secondaryfont;
     position: absolute;
     width: 100%;
     background: #fff;
@@ -52,11 +55,16 @@
       }
     }
     button {
-      box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
       text-transform: uppercase;
       width: 200px;
+      border:none;
       margin: 20px auto;
       height: 45px;
+      background-color: #e6e6e6;
+      color: #8b8b8b;
+      font-family: $primaryfont;
+      font-size: 10px;
+      letter-spacing: 1px;
     }
   }
   &[open] {

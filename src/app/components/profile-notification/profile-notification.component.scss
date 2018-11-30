@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$primaryfont: "montserrat", sans-serif;
+$secondaryfont: "MuseoSans", calibri;
 $padding: 30px;
 $backgroundColor: #ffffff;
 $backgroundColorHeader: #1598cb;
@@ -12,17 +14,25 @@ section{
     display: flex;
     align-items: center;
 }
-.container {}
-.Sign-Out {
-    padding: 20px;
-    position: relative;
-    width: 70%;
-    border-radius: 6px;
-    top: 30px;
-    left: 33px;
-    border: 1px solid  #1598cb;
-    box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-    cursor: pointer;
+*:focus, *:active{
+    outline:none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.btn-container{
+    display:flex;
+    padding: 20px 40px;
+    .Sign-Out {
+        flex:1;
+        position: relative;
+        border-radius: 6px;
+        border: 1px solid  #1598cb;
+        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+        cursor: pointer;
+        color:#1598cb;
+        font-family: $primaryfont;
+        font-weight: 700;
+    }
 }
 ul {
     padding: 0;
@@ -94,8 +104,7 @@ ul {
         background-color: $backgroundColor;
         margin: auto;
         width: 350px;
-        height: 613.8px;
-        border-radius: 6px;
+        border-radius: 20px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         background-color: #ffffff;
         .avatar-icon {
@@ -109,80 +118,84 @@ ul {
         }
         .Rectangle-3 {
             display: flex;
-            align-items: center;
             width: 350px;
-            height: 100px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             border-bottom: 1px solid #e7e6e6;
-            .name {
-              height: 20px;
-              width: 205px;
-              position: relative;
-              left: 70px;
-              font-family: Montserrat;
-              font-size: 18px;
-              font-weight: 600;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1;
-              letter-spacing: -0.2px;
-              color: #414042;
-            }
-            .email {
-              top: 20px;
-              position: relative;
-              right: 80px;
-              width: 205px;
-              height: 15px;
-              font-family: MuseoSans;
-              font-size: 14px;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.07;
-              letter-spacing: normal;
-              color: #77787b;
-            }
+            .profile-content{
+                flex:1;
+                padding:15px 20px;
+                align-items: center;
+                display: flex;
+                .profile-info{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    margin-left: 15px;
+                    .name {
+                        position: relative;
+                        font-family: $primaryfont;
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1;
+                        letter-spacing: -0.2px;
+                        color: #414042;
+                    }
+                    .email {
+                        position: relative;
+                        font-family: $secondaryfont;
+                        font-size: 14px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.07;
+                        letter-spacing: normal;
+                        color: #77787b;
+                    }
+                }  
+            } 
+            
         }
         .Rectangle-3-1 {
             display: flex;
             align-items: center;
             width: 350px;
-            height: 100px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             border-bottom: 1px solid #e7e6e6;
-            .LoringWardFinancial {
-              height: 20px;
-              font-size: 16px;
-              left: 30px;
-              top: -7px;
-              width: 350px;
-              position: relative;
-              font-family: Montserrat;
-              font-weight: bolder;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1;
-              letter-spacing: normal;
-              color: #414042;
+            .company-content{
+                flex:1;
+                padding: 15px 20px;
+                .icon-container{
+                    display:flex;
+                    align-items: center;
+                    margin-top: 10px;
+                  .Superuser {
+                    position: relative;
+                    font-family: $primaryfont;
+                    font-size: 11px;
+                    font-weight: 600;
+                    margin-left: 5px;
+                    letter-spacing: 1px;
+                    color: #77787b;
+                    text-transform: uppercase;
+                }
+                }
+                .LoringWardFinancial {
+                    font-size: 20px;
+                    position: relative;
+                    font-family: $primaryfont;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    color: #414042;
+                  }
             }
-            .Superuser {
-              top: 23px;
-              position: relative;
-              right: 175px;
-              width: 205px;
-              height: 15px;
-              font-family: Montserrat;
-              font-size: 12px;
-              font-weight: normal;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: normal;
-              letter-spacing: 1px;
-              color: #77787b;
-            }
+            
         }
         .Rectangle-Not {
             background-color: #ffffff;
@@ -190,8 +203,8 @@ ul {
             align-items: center;
             width: 350px;
             height: 50px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
             border-bottom: 1px solid #e7e6e6;
             overflow: hidden;
             .list {
@@ -223,12 +236,8 @@ ul {
         content: url('../../../assets/component/profile/avatar-image@3x.png');
     }
     .star{
-        top: 162px;
-        width: 25px;
-        height: 23px;   
+        width: 25px;  
         cursor: pointer;
-        left: 20px;
-        position: absolute;
         border-radius: 50%;
         content: url('../../../assets/component/profile/user-blue@3x.png');
     }

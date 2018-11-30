@@ -650,12 +650,20 @@ $secondaryfont : 'montserrat', sans-serif;
     .dropdown:hover .dropdown-content{
         display:inline-block;
     }
-
+    .action-container{
+        margin-right: 30px;
+    }
+    :host ::ng-deep .dropdown-actions{
+        details{
+            margin-right: 50px;
+    }
+    }
     .dropdown-content{
         position: absolute;
         display:none;
         background-color: white;
         top:48px;
+        z-index:10;
         min-width: 220px;
         border-radius: 6px;
         box-shadow: 0 4px 5px 0 rgba(64, 64, 65, 0.2);
@@ -801,11 +809,6 @@ $secondaryfont : 'montserrat', sans-serif;
         @media only screen and (max-width: 767px){
             display:none;
         }
-    .dropdown-content{
-        position: absolute;
-        background-color: red;
-        color: white;
-    }
 }
     .text-white-small {
         font-family: montserrat;

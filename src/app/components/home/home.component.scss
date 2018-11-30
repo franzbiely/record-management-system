@@ -179,9 +179,7 @@ $btnFontSize: 10pt;
 
 
 .home-container{
-    padding: 30px;
     display: flex;
-    justify-content: space-around;
         
             .container{
                 @media screen and (max-width: 767px){flex-direction: column;padding: 5px;}

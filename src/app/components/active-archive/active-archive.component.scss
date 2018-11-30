@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+$primaryfont: "montserrat", sans-serif;
+$secondaryfont: "MuseoSans", calibri;
 .active-archive-component {
   display: flex;
   align-items: center;
@@ -12,7 +15,7 @@
   border: solid 0.5px #ffffff;
   font-size: 11px;
   font-weight: 300;
-  font-family: MuseoSans;
+  font-family: $secondaryfont;
   cursor: pointer;
   box-sizing: border-box;
 
@@ -55,6 +58,7 @@
     content: url('../../../assets/component/header/state-active-white@3x.png');
   }
   summary {
+    font-family: $primaryfont;
     display: flex;
     box-sizing: border-box;
     outline: none !important;
