@@ -62,12 +62,32 @@ export class PrintPreviewComponent implements OnInit {
     scrollToPage(event) {
         const element = <HTMLElement>event.target;
         const evalue  = $( element ).val();
-        const etarget = 'rpp-content-page-' + evalue;
+        const etarget = '.rpp-content-page-' + evalue;
 
         if ( isNaN( evalue ) ) {
             alert( 'Input a number' );
         } else {
+            if ( $( etarget ).length ) {
+                $( 'html, body' ).animate({
+                    scrollTop: $( etarget ).offset().top - 100
+                }, 500 );
+            }
+        }
+    }
 
+    scrollToPageAlt( event ) {
+        const element = <HTMLElement>event.target;
+        const evalue  = $( element ).data( 'page' );
+        const etarget = '.rpp-content-page-' + evalue;
+
+        if ( isNaN( evalue ) ) {
+            alert( 'Input a number' );
+        } else {
+            if ( $( etarget ).length ) {
+                $( 'html, body' ).animate({
+                    scrollTop: $( etarget ).offset().top - 100
+                }, 500 );
+            }
         }
     }
 }
