@@ -103,6 +103,7 @@ import { GraphProposalsComponent } from './components/graph-proposals/graph-prop
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
 import { FrontpageComponent } from './screens/frontpage/frontpage.component';
+import { DomforDirective } from './directives/domfor.directive';
 
 @NgModule({
   declarations: [
@@ -208,7 +209,8 @@ import { FrontpageComponent } from './screens/frontpage/frontpage.component';
     GraphProposalsComponent,
     TooltipComponent,
     PrintPreviewComponent,
-    FrontpageComponent
+    FrontpageComponent,
+    DomforDirective
   ],
   imports: [
     BrowserModule,

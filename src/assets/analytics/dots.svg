@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4px" height="20px" viewBox="0 0 4 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Dots</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Proposal-Analytics" transform="translate(-1256.000000, -67.000000)" fill="#FFFFFF">
+            <g id="Icon/3Dots_White" transform="translate(1256.000000, 67.000000)">
+                <g id="Icon/Dots">
+                    <path d="M1.999952,6.87450097e-13 C3.104592,6.87450097e-13 4,0.895421331 4,2 C4,3.10457867 3.104592,4 1.999952,4 C0.895408,4 -3.09841042e-12,3.10457867 -3.09841042e-12,2 C-3.09841042e-12,0.895421331 0.895408,6.87450097e-13 1.999952,6.87450097e-13 Z" id="Shape-sp-167-0"></path>
+                    <path d="M1.999952,8 C3.104592,8 4,8.89558681 4,10.0003696 C4,11.1044132 3.104592,12 1.999952,12 C0.895408,12 -3.09885451e-12,11.1044132 -3.09885451e-12,10.0003696 C-3.09885451e-12,8.89558681 0.895408,8 1.999952,8 Z" id="Shape-sp-167-0"></path>
+                    <path d="M1.999952,16 C3.104592,16 4,16.8948476 4,17.9996304 C4,19.1044132 3.104592,20 1.999952,20 C0.895408,20 -3.09885451e-12,19.1044132 -3.09885451e-12,17.9996304 C-3.09885451e-12,16.8948476 0.895408,16 1.999952,16 Z" id="Shape-sp-167-0"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

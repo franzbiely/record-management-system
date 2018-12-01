@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="305px" viewBox="0 0 414 305" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title># of Proposals</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,0 L394,0 C397.313708,-6.08718376e-16 400,2.6862915 400,6 L400,285 C400,288.313708 397.313708,291 394,291 L6,291 C2.6862915,291 4.05812251e-16,288.313708 0,285 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="path-1"></path>
+        <filter x="-3.2%" y="-2.7%" width="106.5%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="0" width="179" height="32" rx="16"></rect>
+        <filter x="-5.3%" y="-26.6%" width="110.6%" height="159.4%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-6" points="15 20.5 19 15.5 25 17.5 29 13"></polyline>
+        <filter x="-72.2%" y="-81.6%" width="244.5%" height="369.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.203921569   0 0 0 0 0.207843137   0 0 0 0 0.203921569  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-8" points="0 57.7546798 13.8166311 55.3206897 27.6332623 61 41.4498934 39.9054187 55.2665245 40.7167488 69.0831557 32.6034483 82.8997868 57.7546798 96.7164179 59.3773399 110.533049 48.0187192 124.34968 60.18867 138.166311 51.2640394 151.982942 53.6980296 165.799574 38.2827586 179.616205 54.5093596 193.432836 56.9433498 207.249467 54.5093596 221.066098 52.0753695 235.65032 52.8866995 248.69936 43.1507389 262.515991 48.0187192 276.332623 50.4527094 290.149254 52.8866995 303.965885 35.8487685 317.782516 42.3394089 330.831557 42.3394089 345.415778 56.1320197 360 58.5660099"></polyline>
+        <filter x="-3.0%" y="-24.9%" width="106.0%" height="184.3%" filterUnits="objectBoundingBox" id="filter-9">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.203921569   0 0 0 0 0.207843137   0 0 0 0 0.203921569  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PopUps---View-&amp;-Add-Graphs" transform="translate(-553.000000, -554.000000)">
+            <g id="#-of-Proposals" transform="translate(560.000000, 556.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Title-+-Subhead-+-Menu-+-Line" mask="url(#mask-2)">
+                    <polygon id="Rectangle-3" fill="#1598CB" points="0 0 400 0 400 56 0 56"></polygon>
+                    <g transform="translate(20.000000, 10.000000)" fill="#FFFFFF" id="Group">
+                        <g>
+                            <text id="#-of-Proposals" font-family="Montserrat-SemiBold, Montserrat" font-size="20" font-weight="500" line-spacing="20" letter-spacing="0.2">
+                                <tspan x="0" y="19"># of Proposals</tspan>
+                            </text>
+                            <text id="In-Progress" font-family="Helvetica" font-size="14" font-weight="normal" line-spacing="14" letter-spacing="-0.200000003">
+                                <tspan x="0" y="36">In Progres</tspan>
+                                <tspan x="62.5859375" y="36">s</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-10" mask="url(#mask-2)">
+                    <g transform="translate(20.000000, 97.000000)">
+                        <g id="Legend/Year" transform="translate(172.000000, 15.000000)">
+                            <g id="Legend">
+                                <g id="Rectangle-2">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                </g>
+                                <g id="legends" transform="translate(39.000000, 11.000000)" fill="#343534" font-family="Helvetica" font-size="10" font-weight="normal">
+                                    <g id="1">
+                                        <text id="#-of-Proposals-2013">
+                                            <tspan x="0" y="10"># of Proposals 2013 - 2018</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="Path-2" stroke-linecap="round" stroke-dasharray="1,5">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                    <use stroke="#F79961" stroke-width="3" xlink:href="#path-6"></use>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Graph" transform="translate(0.000000, 76.000000)" stroke-dasharray="1.037463981114077,4.149855924456308" stroke-linecap="round">
+                            <g id="Graph-segment">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                <use stroke="#F79961" stroke-width="3" xlink:href="#path-8"></use>
+                            </g>
+                        </g>
+                        <g id="Group-12" transform="translate(5.000000, 0.000000)" font-family="Helvetica" font-weight="normal">
+                            <text id="12" font-size="36" letter-spacing="-1" fill="#414042">
+                                <tspan x="0" y="35">1</tspan>
+                                <tspan x="19.0214844" y="35">2</tspan>
+                            </text>
+                            <text id="TOTAL-Overtime" font-size="10" letter-spacing="1" fill="#77787B">
+                                <tspan x="0" y="59">TOTAL OVERTIME</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

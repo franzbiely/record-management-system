@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { DomService } from '../../dom.service';
+import { Component, OnInit } from '@angular/core';
 
-import { GraphProposalsComponent } from '../../components/graph-proposals/graph-proposals.component';
+declare var jquery: any;
+declare var $: any;
 
 @Component({
     selector: 'app-frontpage',
@@ -14,7 +14,10 @@ export class FrontpageComponent implements OnInit {
         t: 'Hide'
     };
 
-    constructor( private domService: DomService ) {}
+    panes: any = [];
+    charts: any = [ 'aum', 'default', 'ipo', 'tvpm', 'tvpr', 'tvpp', 'pdo', 'tvps', 'cps' ];
+
+    constructor() {}
 
     ngOnInit() {
     }
@@ -30,6 +33,31 @@ export class FrontpageComponent implements OnInit {
     }
 
     addAnalyticsBox() {
-        this.domService.appendComponentTo( '#report-panes', GraphProposalsComponent, true, {});
+        $(document).find( '.rms-analytics-selector,.rms-analytics-actions' ).toggleClass( 'active' );
+    }
+
+    selectAnalyticsBox(event) {
+        const element = $( event.target );
+
+        element.parent().toggleClass( 'active' );
+    }
+
+    saveAnalyticsBox() {
+        const boxes = $(document).find( '.analytics-box.active' );
+        var panes = [];
+
+        if ( !boxes.length ) {
+            return;
+        }
+
+        boxes.each(function(i, element ) {
+            const rtype = $( element ).attr( 'id' );
+
+            panes.push( rtype );
+        });
+
+        this.panes = panes;
+
+        $(document).find( '.rms-analytics-selector,.rms-analytics-actions' ).removeClass( 'active' );
     }
 }

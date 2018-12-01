@@ -23,20 +23,36 @@
             <div class="spacer" style="height: 35px; "></div><!-- .spacer -->
 
             <div id="report-panes" class="board-panes" *ngIf="reportBoard.s === 'show'">
+                <div class="board-pane" *ngFor="let pane of panes">
+                    <app-graph-proposals [reportType]="pane"></app-graph-proposals>
+                </div><!-- .board-pane -->
                 <div class="board-pane">
-                    <div class="rms-analytics-box type-add">
-                        <div class="rab-header">
-                            <h2>&nbsp;</h2>
-                            <a href="#" class="rab-header-action"><span></span><span></span><span></span></a>
-                        </div><!-- .rab-header -->
-                        <div class="rab-content-add">
-                            <span (click)="addAnalyticsBox()">Add</span>
-                        </div><!-- .rab-content -->
-                    </div><!-- .rms-analytics-box -->
-                </div><!-- .info-pane -->
+                    <a (click)="addAnalyticsBox()"><img src="../../../assets/analytics/chart-0.svg" alt="chart-0" style="max-width: 100%; "></a>
+                </div><!-- .board-pane -->
             </div><!-- .board-panes -->
         </div><!-- .report-board -->
 
     </div><!-- .rms-dashboard -->
 </main>
-
+<div class="rms-analytics-selector">
+    <div class="selector-main">
+        <div class="selector-header">
+            <span>View & Add Analytics</span>
+            <a (click)="addAnalyticsBox()"></a>
+        </div><!-- .selector-header -->
+        <div class="selector-content">
+            <div class="selector-items">
+                <div class="selector-item" *ngFor="let chart of charts; let i = index">
+                    <div class="analytics-box" data-id="{{ chart }}">
+                        <a (click)="selectAnalyticsBox($event)"></a>
+                        <span><img src="../../../assets/analytics/chart-{{ i + 1 }}.svg" alt="chart-{{ i }}"></span>
+                    </div><!-- .analytics-box -->
+                </div><!-- .selector-item -->
+            </div><!-- .selector-items -->
+        </div><!-- .selector-content -->
+    </div><!-- .selector-main -->
+</div><!-- .rms-analytics-selector -->
+<div class="rms-analytics-actions">
+    <button class="is-cancel" (click)="addAnalyticsBox()">Cancel</button>
+    <button class="is-save" (click)="saveAnalyticsBox()">Save</button>
+</div><!-- .rms-analytics-actions -->

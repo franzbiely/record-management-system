@@ -1,7 +1,10 @@
 import { DisclaimerComponent } from './../disclaimer/disclaimer.component';
-import { Component, OnInit, AfterViewInit, ViewChild, Input, TemplateRef, ElementRef } from "@angular/core";
+import { Component, OnInit, ViewChild, Input, TemplateRef, ElementRef } from "@angular/core";
 import { Chart } from "chart.js";
 import 'chartjs-plugin-datalabels';
+
+declare var jquery: any;
+declare var $: any;
 
 @Component({
     selector: "app-graph-proposals",
@@ -154,7 +157,9 @@ export class GraphProposalsComponent implements OnInit {
                             weight: 'bold'
                         }
                     }
-                }
+                },
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
     }
@@ -203,7 +208,9 @@ export class GraphProposalsComponent implements OnInit {
                             weight: 'bold'
                         }
                     }
-                }
+                },
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
     }
@@ -258,7 +265,9 @@ export class GraphProposalsComponent implements OnInit {
                             return '$' + value + 'M';
                         }
                     }
-                }
+                },
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
     }
@@ -312,7 +321,9 @@ export class GraphProposalsComponent implements OnInit {
                     datalabels: {
                         display: false
                     }
-                }
+                },
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
     }
@@ -367,7 +378,9 @@ export class GraphProposalsComponent implements OnInit {
                             return '$' + value + 'M';
                         }
                     }
-                }
+                },
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
     }
@@ -417,7 +430,9 @@ export class GraphProposalsComponent implements OnInit {
                             weight: 'bold'
                         }
                     }
-                }
+                },
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
     }
@@ -444,8 +459,6 @@ export class GraphProposalsComponent implements OnInit {
                 legend: {
                     display: false
                 },
-                responsive: true,
-                maintainAspectRatio: false,
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -460,7 +473,9 @@ export class GraphProposalsComponent implements OnInit {
                     datalabels: {
                         display: false
                     }
-                }
+                },
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
     }
@@ -504,7 +519,10 @@ export class GraphProposalsComponent implements OnInit {
             },
             options: {
                 plugins: {
-                    strokeShadow: {}
+                    strokeShadow: {},
+                    datalabels: {
+                        display: false
+                    }
                 },
                 elements: {
                     point: {
@@ -548,8 +566,19 @@ export class GraphProposalsComponent implements OnInit {
                         }
 					}]
                 },
+                responsive: true,
                 maintainAspectRatio: false
             }
         });
+    }
+
+    toggleSettings(event) {
+        const element = $( event.target );
+        
+        element.parents( '.rms-analytics-box' ).eq(0).toggleClass( 'is-settings' );
+    }
+
+    public removeBox(event) {
+        console.log( 'sas' );
     }
 }

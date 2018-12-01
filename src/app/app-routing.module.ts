@@ -47,7 +47,8 @@ const routes: Routes = [
   
   {
     path: '',
-    component: FirmInformationScreenComponent
+    component: FrontpageComponent
+    // component: FirmInformationScreenComponent
   },
   {
     path: 'test',
