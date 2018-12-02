@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $primaryfont: "montserrat", sans-serif;
-$secondaryfont: "MuseoSans", calibri;
+$secondaryfont: "museo-sans", calibri;
 $padding: 30px;
 $backgroundColor: #ffffff;
 $backgroundColorHeader: #1598cb;
@@ -11,6 +11,11 @@ section{
 }
 i:focus{
 	outline:none;
+}
+.notification-parent-container {
+	position: absolute;
+    bottom: -20px;
+    right: -30px;
 }
 .notification-component {
 	position: relative;
@@ -45,42 +50,37 @@ i:focus{
 	.notification-container {
 		position: absolute;
 		flex:1;
-		right: -15px;
-		top: 70px;
+		right: 0;
 		background-color: $backgroundColor;
-		margin: auto;
+		margin: 0 auto 30px;
 		width: 428px;
+		overflow: hidden;
 		border-radius: 20px;
 		box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
-
+		
 		.Rectangle-3 {
     		display: flex;
     		align-items: center; ;
     		flex-direction: row;
   			width: 428px;
   			height: 60px;
-  			border-top-left-radius: 10px !important;
-  			border-top-right-radius: 10px !important;
+  			border-top-left-radius: 20px !important;
+  			border-top-right-radius: 20px !important;
   			background-color: #1598cb;
-  			border-top-right-radius: 5px;
-  			border-top-left-radius: 5px;
+  			position: relative;
   			.oval {
   				width: 30px;
   				height: 30px;
   				position: relative;
-			    left: 13px;
+			    left: 16px;
 			    top: 4px;
   				border-radius: 50%;
   				background-color: #e7e6e6;
   				align-items: center;
   				justify-content: center;
+  				display: flex;
 			}
 			.oval small {
-				width: 13px;
-			    height: 12px;
-			    position: relative;
-		      	left: 9px;
-		      	top: 6px;
 			  	font-family: Montserrat;
 			  	font-size: 12px;
 			  	font-weight: bold;
@@ -119,40 +119,31 @@ i:focus{
 			  color: #ffffff;
 			}
 			i {
-				 margin-top: 5px;
-
+				bottom: 17px;
 			}
 		}
 		.Rectangle-container{
     		display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			height: auto;
+			position: relative;
+			max-height: 750px;
   			.line_right {
-				overflow-y: scroll;  
-  				position: absolute;
-  				order:2;
+				overflow-x: scroll;
   				flex:1;
   				line-height: 1;
-  				margin-left: 28px;
     			flex-direction: column;
-    			padding: 5px;
-				width: 393px;
-				height: 650px;
+    			overflow-x: hidden;
 			}
 			.line_right small {
-				flex:1;
 				margin-left: 15px;
 
 				
 			}
 			.line-2 {
-				order:1;
-				flex: 1;
+				width: 30px;
 				margin-top: -12px;
-				margin-left: 27px;
-				width: 2px;
-  				height: 698px;
-  				background-color: #e7e6e6;
+				border-right: 2px solid #e7e6e6;
 			}
 
 		}
@@ -162,10 +153,10 @@ i:focus{
 		border-bottom: none;
 	}
 	.line_small_container {
-		width: 393px;
 		display: flex;
   		height: auto;
 		border-bottom: 1px solid rgba(65, 64, 66, 0.1);
+		border-right: 1px solid rgba(65, 64, 66, 0.1);
 		  .line_small_content{
 			flex: 1;
 			display: flex;
@@ -173,13 +164,18 @@ i:focus{
 			flex-direction: row-reverse;
 			justify-content: space-between;
 			padding: 10px;
+			position: relative;
+			&:hover {
+				background-color: #f2fafc;
+				cursor:pointer;
+			}
 			.text-container{
 				display:flex;
 				flex-direction: column;
 				small:first-child{
 					font-family: $secondaryfont;
-					font-size: 16px;
-					font-weight: 700;
+					font-size: 14px;
+					font-weight: bold;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 1;
@@ -189,7 +185,7 @@ i:focus{
 				small:nth-child(2){	
 					font-family: $primaryfont;
 					font-size: 10px;
-					font-weight: 800;
+					font-weight: 600;
 					font-style: normal;
 					font-stretch: normal;
 					margin-top:1px;
@@ -200,7 +196,7 @@ i:focus{
 					margin-top: 10px;
 					font-family: $primaryfont;
 					font-size: 10px;
-					font-weight: 400;
+					font-weight: 300;
 					font-style: normal;
 					font-stretch: normal;
 					line-height: 1;
@@ -217,13 +213,14 @@ i:focus{
         border-radius: 50%;
         box-shadow: 0 2px 2px 0 rgba(65, 64, 66, 0.1);
         content: url('../../../assets/component/notification/exit-white@3x.png');
+        right: 30px;
+        bottom: 24px;
+    	position: absolute;
 	}
 	.triangle {
-		margin-left: 320px;
 	    position: absolute;
 	    top: -19px;
-	    right: 15px;
-	    width:0;
+	    right: 25px;
 	    border-bottom:solid 24px  #1598cb;
 	    border-right:solid 27px transparent;
 	    border-left:solid 27px transparent;
