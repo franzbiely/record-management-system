@@ -1,3 +1,5 @@
+<app-household-list *ngIf="openHousehold" (closeMeEvent)="household(false)"></app-household-list>
+
 <app-header></app-header>
 <main role="main">
     <app-sidebar [currentPage]="'home'"></app-sidebar>
@@ -7,10 +9,62 @@
         <div class="info-board">
             <div class="board-panes">
                 <div class="board-pane">
-                    sas
+                    <app-dash-box [isNew]="isNew"
+                                [title]="'Recent Household'"
+                                    [addLabel]="'Add Household'"
+                                    [headerRightType]="'add'"
+                                    (addHousehold)="household($event)">
+                        <div class="info-item vertical-align" *ngFor="let data of households">
+                            <div class="item-top">{{ data.name }}</div>
+                            <div class="item-top">
+                                <div class="item-bottom">{{ data.value }}</div>
+                                <div class="item-bottom">{{ data.date }}</div>
+                            </div>
+                        </div>
+                    </app-dash-box>
                 </div><!-- .info-pane -->
-                <div class="board-pane">2</div><!-- .info-pane -->
-                <div class="board-pane">3</div><!-- .info-pane -->
+                <div class="board-pane">
+                    
+                    <app-dash-box [isNew]="isNew"
+                                    [title]="'Recent Proposals'"
+                                    [addLabel]="'Add Proposals'"
+                                    [headerRightType]="'add'">
+                    <div class="info-item" *ngFor="let household of households">
+                                    <div class="item-top" >
+                                        <div>Chris & Kristy Retirement Proposal</div>
+                                        <div><span class="grey-text">Candelaria Household</span></div>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div>$900,000.00</div>
+                                        <div class="grey-text">
+                                            <span class="icon-text">Implemented</span> <i class="material-icons icon-side">lock</i>
+                                        </div>
+                                    </div>
+                            </div>
+                    </app-dash-box>
+                </div><!-- .info-pane -->
+                <div class="board-pane">
+                    <app-dash-box [isNew]="isNew"
+                                    [title]="'Recent Documents'"
+                                    [addLabel]="'Add Documents'"
+                                    [headerRightType]="'add'">
+                    <div class="info-item space-between" *ngFor="let household of households">
+                                    <div class="flex">
+                                        <div class="document-icon">
+                                            <img src="../../../assets/icons/docu.png">
+                                        </div>
+                                    <div class="container-flex item-column">
+                                        <div class="item-top">Christ & Kristy Proposal IPS GAP</div>
+                                        <div class="item-top"><span class="grey-text">Candelaria Household</span></div>
+                                    </div>
+                                </div>
+                                    <div class="container-flex item-column">
+                                        <div class="item-bottom">7/31/2018</div>
+                                        <div class="item-bottom vertical-align"><span class="icon-text grey-text">Sent</span><i class="material-icons icon-side">send</i></div>
+                                    </div>
+                            </div>
+                    </app-dash-box>
+                </div><!-- .info-pane -->
             </div><!-- .board-panes -->
         </div><!-- .info-board -->
 
@@ -56,3 +110,4 @@
     <button class="is-cancel" (click)="addAnalyticsBox()">Cancel</button>
     <button class="is-save" (click)="saveAnalyticsBox()">Save</button>
 </div><!-- .rms-analytics-actions -->
+

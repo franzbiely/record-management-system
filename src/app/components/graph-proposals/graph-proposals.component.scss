@@ -132,20 +132,19 @@
         .rab-inner {
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+            // -ms-flex-wrap: wrap;
+            // flex-wrap: wrap;
             margin-right: -15px;
             margin-left: -15px;
 
             & > div {
                 position: relative;
-                width: 100%;
+                // width: 100%;
                 padding-right: 15px;
                 padding-left: 15px;
             }
             .rab-left-block {
-                -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+                flex: 1;
                 width: auto;
                 max-width: 180px;
             }
@@ -155,6 +154,10 @@
                 -ms-flex-positive: 1;
                 flex-grow: 1;
                 max-width: 100%;
+                canvas {
+                    width: 200px;
+                    height:150px;
+                }
             }
         }
         .rab-info {

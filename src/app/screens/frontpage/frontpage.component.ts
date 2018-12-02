@@ -9,6 +9,8 @@ declare var $: any;
     styleUrls: ['./frontpage.component.scss']
 })
 export class FrontpageComponent implements OnInit {
+    isNew : boolean = false;
+  
     reportBoard: any = {
         s: 'show',
         t: 'Hide'
@@ -16,6 +18,8 @@ export class FrontpageComponent implements OnInit {
 
     panes: any = [];
     charts: any = [ 'aum', 'default', 'ipo', 'tvpm', 'tvpr', 'tvpp', 'pdo', 'tvps', 'cps' ];
+    openHousehold : boolean = false;
+    households = Household; 
 
     constructor() {}
 
@@ -60,4 +64,37 @@ export class FrontpageComponent implements OnInit {
 
         $(document).find( '.rms-analytics-selector,.rms-analytics-actions' ).removeClass( 'active' );
     }
+
+    household($event) {
+        this.openHousehold = $event;
+    }
 }
+
+export interface Households{
+  name: string;
+  value: number;
+  date: string;
+}
+
+export interface Proposals{
+  name: string;
+  subname: string;
+  value: number;
+  action: string;
+}
+
+export interface Documents{
+  imgsrc: string;
+  name: string;
+  subname: string;
+  date: string;
+  action: string;
+}
+
+const Household:Households[] = [
+  {name: "Candelaria Household", value: 917000, date: "7/31/2018"},
+  {name: "Fernen Household", value: 300000, date: "7/31/2018"},
+  {name: "Mackrill Household", value: 2000000, date: "7/31/2018"},
+  {name: "Atkinson Family", value: 500000, date: "7/31/2018"},
+  {name: "Matthews Foundation", value: 50000, date: "7/31/2018"},
+];

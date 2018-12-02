@@ -22,7 +22,7 @@ app-household-member {
     position: fixed;
     width:100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     z-index:60;
 }
 .box-container{
@@ -33,11 +33,13 @@ app-household-member {
     align-items: center;
     padding: 0px 60px;
     z-index: 70;
+    top: 100px;
     .box-content{
         width: 1000px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.7);
         border-radius: 6px;
         background-color: white;
+        margin: auto;
         .box-head{
             background-color: #1598cb;
             border-radius: 6px 6px 0px 0px;

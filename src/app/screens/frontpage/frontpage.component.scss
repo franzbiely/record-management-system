@@ -1,3 +1,55 @@
+@mixin info-item($top: null, $right: null, $bottom: null, $left: null){
+    width: auto;
+    height: auto;
+
+    @if top != null and $right == null or $bottom == null or $left == null {
+        padding-top: $top;
+        padding-right: $top;
+        padding-bottom: $top;
+        padding-left: $top;
+    }@else{
+        padding-top: $top;
+        padding-right: $right;
+        padding-bottom: $bottom;
+        padding-left: $left;
+    }
+
+    display: flex;
+    color: #000000;
+}
+@mixin textStyle($color, 
+       $font, $style, 
+       $stretch, $size, 
+       $weight, $align, 
+       $line, $spacing){
+    color: $color;
+    font-family: $font;
+    font-style: $style;
+    font-stretch: $stretch;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    line-height: $line;
+    letter-spacing: $spacing;  
+}
+%grey-text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #77787b;
+}
+%grey-text-uppercase{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #77787b;
+    text-transform: uppercase;
+}
+
 .rms-dashboard {
     width: 100%;
     padding: 40px;
@@ -243,4 +295,92 @@
             }
         }
     }
+}
+.info-item{
+        .icon-side{
+            font-size: 8pt;
+            padding-left:3px;
+        }
+    @include info-item(10px, 20px, 10px, 20px);    
+    .item-one, .item-two{
+        flex: 1;
+        flex-direction: column;
+            .item-two-amount, .item-two-date{
+                text-align: right;
+                font-size: 14px;
+            }
+            .item-two-amount{
+                font-size: 9pt;
+            }
+            .item-two-date{
+                font-size: 8pt;
+            }
+    }
+    .item-one{
+        font-size: 10pt;
+    }
+    &:nth-child(odd){
+        border-bottom: 1px solid #dedede;
+        border-top: 1px solid #dedede;
+    }
+    .item-top{
+        flex: auto;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: #414042;
+        .grey-text{
+        @extend %grey-text-uppercase;
+        font-size: 7pt;
+        }
+    }
+    .item-bottom{
+        padding: 0;
+        text-align: right;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+        color: #414042;
+        font-weight: 600;
+        .grey-text{
+            @extend %grey-text;font-size: 7pt;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end}
+    }
+    .flex{
+        display: flex;
+    }
+    .document-icon{
+        display: flex;
+        width: 30px;
+        height: 27px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding-right: 15px;
+
+        img{width: 20px;}
+    }
+    .sub-text{
+        @include textStyle(#77787b, "Montserrat", 
+                    normal ,normal, 
+                    10px, 300, none, 
+                    1, 0.4px);
+    }
+
+    .status-text{
+        @include textStyle(#414042, "museo-sans", 
+                    normal, normal, 
+                    11px, 300, right, 
+                    1, normal);
+    }
+}
+.space-between{
+    display:flex;
+    justify-content: space-between;
+}   
+.vertical-align{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
