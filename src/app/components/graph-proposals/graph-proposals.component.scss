@@ -1,4 +1,6 @@
 .rms-analytics-box {
+    position: relative;
+    min-height: 291px;
     border-radius: 6px;
     box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
     background-color: #ffffff;
@@ -41,26 +43,18 @@
             right: 20px;
             width: 4px;
             height: 20px;
-            transform: translateY(-50%)
-        }
-        a {
-            span {
-                display: block;
-                position: relative;
-                width: 4px;
-                height: 4px;
-                margin-bottom: 4px;
-                background-color: #ffffff;
-                border-radius: 100%;
-            }
-            & > span:last-child {
-                margin-bottom: 0;
-            }
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/analytics/dots.svg);
         }
     }
 
     .rab-content {
-        padding: 40px 20px 50px 40px;
+        padding: 40px 20px;
+    }
+    .rab-chart {
+        height: auto;
     }
     .rab-info {
         display: -ms-flexbox;
@@ -124,9 +118,11 @@
     }
     &.type-aum {
         img {
-            width: 100%;
+            display: block;
             max-width: 100%;
             height: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     &.type-ipo {
@@ -185,6 +181,139 @@
                     transform: translateY(-50%);
                 }
             }
+        }
+    }
+
+    .rab-settings {
+        display: none;
+
+        .rab-header {
+            a {
+                width: 30px;
+                height: 30px;
+                margin-top: 4px;
+                background-image: url(../../../assets/analytics/close.svg);
+            }
+        }
+        .rab-content {
+            padding: 20px;
+        }
+        .rab-setting-row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: -15px -10px;
+
+            & > div {
+                position: relative;
+                width: 100%;
+                padding: 15px 10px;
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+        }
+        .rab-setting-field {
+            label {
+                display: block;
+                padding-bottom: 5px;
+                color: #414042;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: 'museo-sans', sans-serif;
+                line-height: 1.17;
+                letter-spacing: normal;
+            }
+            input[type="text"], .rab-field-select {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                color: #414042;
+                font-size: 14px;
+                font-weight: 300;
+                font-family: 'museo-sans', sans-serif;
+                line-height: normal;
+                letter-spacing: normal;
+                background-color: #ffffff;
+                border: 1px solid #e7e6e6;
+                border-radius: 6px;
+            }
+            .rab-field-select {
+                padding: 0;
+
+                select {
+                    display: block;
+                    width: 100%;
+                    padding: 15px;
+                    color: #c5c5c5;
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-family: 'museo-sans', sans-serif;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    border: 0;
+                    outline: none;
+                    background-color: transparent;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
+            }
+        }
+        .rab-setting-actions {
+            position: relative;
+            margin-top: 30px;
+            text-align: right;
+
+            a {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                padding: 2px 0 2px 22px;
+                color: #77787b;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 0.92;
+                letter-spacing: 0.9px;
+                text-transform: uppercase;
+                background-size: 14px;
+                background-repeat: no-repeat;
+                background-position: center left;
+                background-image: url(../../../assets/analytics/trash.svg);
+                transform: translateY(-50%);
+            }
+
+            button {
+                display: inline-block;
+                color: #ffffff;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+                line-height: normal;
+                letter-spacing: 1px;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: #1598cb;
+                border: 1px solid #1598cb;
+                border-radius: 6px;
+                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+            }
+        }
+    }
+
+    &.is-settings {
+        background-color: #f7f7f7;
+
+        .rab-output {
+            display: none;
+        }
+        .rab-settings {
+            display: block;
         }
     }
 }

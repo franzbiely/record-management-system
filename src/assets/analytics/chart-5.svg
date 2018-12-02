@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="305px" viewBox="0 0 414 305" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Total Proposals By Risk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,0 L394,0 C397.313708,-6.08718376e-16 400,2.6862915 400,6 L400,285 C400,288.313708 397.313708,291 394,291 L6,291 C2.6862915,291 4.05812251e-16,288.313708 0,285 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="path-1"></path>
+        <filter x="-3.2%" y="-2.7%" width="106.5%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Proposal-Analytics" transform="translate(-433.000000, -47.000000)">
+            <g id="Total-Proposals-By-Risk" transform="translate(440.000000, 49.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-6" mask="url(#mask-2)">
+                    <g transform="translate(20.000000, 74.000000)">
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 10.000000)">
+                            <text id="6" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="105" y="7">6</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#FDBC80" points="0 0 100 0 100 9 0 9"></polygon>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 36.000000)">
+                            <text id="9" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="171" y="7">9</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#FDBC80" points="0 0 166 0 166 9 0 9"></polygon>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 62.000000)">
+                            <text id="10" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="181" y="8">10</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#FDBC80" points="0 0 176 0 176 9 0 9"></polygon>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 88.000000)">
+                            <text id="11" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="192" y="8">11</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#FDBC80" points="0 0 187 0 187 9 0 9"></polygon>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 114.000000)">
+                            <text id="9" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="171" y="7">9</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#FDBC80" points="0 0 166 0 166 9 0 9"></polygon>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 140.000000)">
+                            <text id="6" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="105" y="8">6</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#FDBC80" points="0 0 100 0 100 9 0 9"></polygon>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 166.000000)">
+                            <text id="5" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="93" y="8">5</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#FDBC80" points="0 0 88 0 88 9 0 9"></polygon>
+                        </g>
+                        <g id="Graph-percentage" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(0.000000, 2.000000)" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="26">
+                            <text id="Equity-Capital-Appre" fill="#77787B">
+                                <tspan x="57.9863281" y="9">Equity</tspan>
+                                <tspan x="2.94482422" y="35">Capital Appreciation</tspan>
+                                <tspan x="13.4697266" y="61">Moderate Growth</tspan>
+                                <tspan x="44.9785156" y="87">Moderate</tspan>
+                                <tspan x="45.4707031" y="113">Balanced</tspan>
+                                <tspan x="30.4765625" y="139">Conservative</tspan>
+                                <tspan x="42.9790039" y="165">Defensive</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-5" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(88.000000, 190.000000)" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="9">
+                            <text id="0" fill="#77787B">
+                                <tspan x="0" y="9">0</tspan>
+                            </text>
+                            <text id="5" fill="#77787B">
+                                <tspan x="85.6666667" y="9">5</tspan>
+                            </text>
+                            <text id="10" fill="#77787B">
+                                <tspan x="171.333333" y="9">1</tspan>
+                                <tspan x="171.333333" y="18">0</tspan>
+                            </text>
+                            <text id="15" fill="#77787B">
+                                <tspan x="261" y="9">15</tspan>
+                            </text>
+                        </g>
+                        <polyline id="Path-4" stroke="#E7E6E6" stroke-width="0.5" points="88 0 88 185 360 185"></polyline>
+                    </g>
+                </g>
+                <g id="Title-+-Subhead-+-Menu-+-Line" mask="url(#mask-2)">
+                    <polygon id="Rectangle-3" fill="#1598CB" points="0 0 400 0 400 56 0 56"></polygon>
+                    <g transform="translate(20.000000, 10.000000)" fill="#FFFFFF" id="Group">
+                        <g>
+                            <text id="Total-Proposals" font-family="Montserrat-SemiBold, Montserrat" font-size="20" font-weight="500" line-spacing="20" letter-spacing="0.2">
+                                <tspan x="0" y="19">Total Proposals</tspan>
+                            </text>
+                            <text id="By-Risk" font-family="Helvetica" font-size="14" font-weight="normal" line-spacing="14" letter-spacing="-0.200000003">
+                                <tspan x="0" y="36">By Risk</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

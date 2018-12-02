@@ -102,6 +102,8 @@ import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/que
 import { GraphProposalsComponent } from './components/graph-proposals/graph-proposals.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
+import { FrontpageComponent } from './screens/frontpage/frontpage.component';
+import { DomforDirective } from './directives/domfor.directive';
 
 @NgModule({
   declarations: [
@@ -206,7 +208,9 @@ import { PrintPreviewComponent } from './screens/print-preview/print-preview.com
     QuestionnaireScreenComponent,
     GraphProposalsComponent,
     TooltipComponent,
-    PrintPreviewComponent
+    PrintPreviewComponent,
+    FrontpageComponent,
+    DomforDirective
   ],
   imports: [
     BrowserModule,
@@ -219,7 +223,9 @@ import { PrintPreviewComponent } from './screens/print-preview/print-preview.com
     MatIconModule,
     MatSliderModule,
   ],
- 
+  entryComponents: [
+    GraphProposalsComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

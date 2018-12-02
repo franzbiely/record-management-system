@@ -1,5 +1,8 @@
 import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
-import { DataService } from "../../services/data.service"
+import { DataService } from "../../services/data.service";
+
+declare var jquery:any;
+declare var $ :any;
 
 declare var jquery:any;
 declare var $ : any

@@ -41,12 +41,14 @@ import { AddAccountScreenComponent } from './screens/add-account-screen/add-acco
 import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
 
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
+import { FrontpageComponent } from './screens/frontpage/frontpage.component';
 
 const routes: Routes = [
   
   {
     path: '',
-    component: FirmInformationScreenComponent
+    component: FrontpageComponent
+    // component: FirmInformationScreenComponent
   },
   {
     path: 'test',
@@ -220,6 +222,10 @@ const routes: Routes = [
   {
     path: 'print-preview',
     component: PrintPreviewComponent
+  },
+  {
+      path: 'frontpage',
+      component: FrontpageComponent
   }
   
   

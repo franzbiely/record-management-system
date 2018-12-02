@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="305px" viewBox="0 0 414 305" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Add Analytics</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,0 L394,0 C397.313708,-6.08718376e-16 400,2.6862915 400,6 L400,285 C400,288.313708 397.313708,291 394,291 L6,291 C2.6862915,291 4.05812251e-16,288.313708 0,285 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="path-1"></path>
+        <filter x="-3.2%" y="-2.7%" width="106.5%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M40.125,32.25 L32.25,32.25 L32.25,40.125 C32.25,41.3625 31.2375,42.375 30,42.375 C28.7625,42.375 27.75,41.3625 27.75,40.125 L27.75,32.25 L19.875,32.25 C18.6375,32.25 17.625,31.2375 17.625,30 C17.625,28.7625 18.6375,27.75 19.875,27.75 L27.75,27.75 L27.75,19.875 C27.75,18.6375 28.7625,17.625 30,17.625 C31.2375,17.625 32.25,18.6375 32.25,19.875 L32.25,27.75 L40.125,27.75 C41.3625,27.75 42.375,28.7625 42.375,30 C42.375,31.2375 41.3625,32.25 40.125,32.25 Z M30,3 C15.09375,3 3,15.09375 3,30 C3,44.90625 15.09375,57 30,57 C44.90625,57 57,44.90625 57,30 C57,15.09375 44.90625,3 30,3 Z" id="path-4"></path>
+        <filter x="-19.4%" y="-13.9%" width="138.9%" height="138.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PopUps---View-&amp;-Add-Graphs" transform="translate(-113.000000, -885.000000)">
+            <g id="Add-Analytics" transform="translate(120.000000, 887.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Title-+-Subhead-+-Menu-+-Line" mask="url(#mask-2)">
+                    <polygon id="Rectangle-3" fill="#1598CB" points="0 0 400 0 400 56 0 56"></polygon>
+                    <g transform="translate(20.000000, 10.000000)">
+                        <g id="Icon/3Dots_White" transform="translate(356.000000, 8.000000)" fill="#FFFFFF">
+                            <g id="Icon/Dots">
+                                <path d="M1.999952,6.87450097e-13 C3.104592,6.87450097e-13 4,0.895421331 4,2 C4,3.10457867 3.104592,4 1.999952,4 C0.895408,4 -3.09841042e-12,3.10457867 -3.09841042e-12,2 C-3.09841042e-12,0.895421331 0.895408,6.87450097e-13 1.999952,6.87450097e-13 Z" id="Shape-sp-167-0"></path>
+                                <path d="M1.999952,8 C3.104592,8 4,8.89558681 4,10.0003696 C4,11.1044132 3.104592,12 1.999952,12 C0.895408,12 -3.09885451e-12,11.1044132 -3.09885451e-12,10.0003696 C-3.09885451e-12,8.89558681 0.895408,8 1.999952,8 Z" id="Shape-sp-167-0"></path>
+                                <path d="M1.999952,16 C3.104592,16 4,16.8948476 4,17.9996304 C4,19.1044132 3.104592,20 1.999952,20 C0.895408,20 -3.09885451e-12,19.1044132 -3.09885451e-12,17.9996304 C-3.09885451e-12,16.8948476 0.895408,16 1.999952,16 Z" id="Shape-sp-167-0"></path>
+                            </g>
+                        </g>
+                        <g id="Group"></g>
+                    </g>
+                </g>
+                <path d="M-35,-29 L480,-29 C483.313708,-29 486,-26.3137085 486,-23 L486,330 C486,333.313708 483.313708,336 480,336 L-35,336 C-38.3137085,336 -41,333.313708 -41,330 L-41,-23 C-41,-26.3137085 -38.3137085,-29 -35,-29 Z" id="Mask" fill-opacity="0.9" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                <g id="Group-10" mask="url(#mask-2)">
+                    <g transform="translate(170.000000, 106.000000)">
+                        <text id="Add" font-family="Montserrat-SemiBold, Montserrat" font-size="20" font-weight="500" line-spacing="20">
+                            <tspan x="8" y="94" fill="#1598CB">Add</tspan>
+                        </text>
+                        <g id="Icon/Add_Blue">
+                            <g id="Icon/Add">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use fill="#1598CB" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
