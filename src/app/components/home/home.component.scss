@@ -1,4 +1,4 @@
-$primaryFont: Montserrat;
+$primaryFont: 'Montserrat', sans-serif;
 $secondaryFont: museo-sans;
 $primaryColor: #ffffff;
 $itemDivider: 1px solid #dedede;
@@ -389,7 +389,7 @@ $btnFontSize: 10pt;
             border-bottom: 1px solid #dedede;
             padding: 20px;
             h2{
-                font-family: Montserrat;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 24px;
                 font-weight: 600;
                 font-style: normal;
@@ -500,7 +500,7 @@ $btnFontSize: 10pt;
         background-color: #ffffff;
         margin: 0px 30px 0 20px;
 
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 12px;
         font-weight: 600;
         font-style: normal;
@@ -520,7 +520,7 @@ $btnFontSize: 10pt;
         border: solid 1px #1598cb;
         background-color: #1598cb;
 
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 12px;
         font-weight: 600;
         font-style: normal;

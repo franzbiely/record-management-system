@@ -9,7 +9,7 @@ body{
     outline:none;
 }
 html, body { height: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-body { margin: 0; font-family: Montserrat; }
+body { margin: 0; font-family: 'Montserrat', sans-serif; }
 a {
     cursor: pointer;
 }
@@ -17,7 +17,7 @@ a {
     flex: 1;
 }
 .mat-tab-labels{
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 600;
     font-style: normal;
@@ -30,7 +30,7 @@ a {
 
 .mat-tab-label{
     // box-shadow: inset 0 0 20px 2px rgba(65, 64, 66, 0.18);
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 600;
     font-style: normal;
@@ -163,7 +163,7 @@ details{
     box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
     background-color: #ffffff;
 
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 600;
     font-style: normal;

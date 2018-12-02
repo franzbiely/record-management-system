@@ -5,6 +5,13 @@
     top: 0;
     left: 0;
     z-index: 9999999;
+    box-sizing: border-box;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
     
 
     .disclaimer-box{
@@ -22,15 +29,22 @@
         background-color: #ffffff;
 
         .box-title{
-            padding: 10px 25px;
+            padding: 18px 30px;
             border-bottom: 2px solid #dedede45;
-            h3{
-                font-family: Montserrat;
+            h3 {
+                margin: 0;
+                padding: 0;
+                color: #404041;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 1;
+                letter-spacing: 0.2px;
             }
         }
 
         .box-content{
-            padding: 50px 50px 0 50px;
+            padding: 30px 30px 0 30px;
             .container-message{
                 padding: 15px 15px 0 15px;
                 border-radius: 6px;
@@ -58,22 +72,27 @@
             display: flex;
             justify-content: space-between;
             padding: 20px 40px;
+            padding: 24px 30px 24px 45px;
 
             .footer-option{
-                span{
-                    position: relative;
-                    top: 3px;
+                position: relative;
+                padding-left: 26px;
+                color: #404041;
+                font-size: 14px;
+                font-weight: 300;
+                font-family: 'museo-sans', sans-serif;
+                line-height: 1;
+                letter-spacing: normal;
+
+                > span {
+                    position: absolute;
+                    top: -2px;
+                    left: 0;
                 }
-                p{
-                    text-indent: 20px;
-                    font-family: Montserrat;
+                .note {
                     font-size: 10px;
                     font-weight: 600;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: normal;
-                    letter-spacing: 2px;
-                    color: #404041;
+                    font-family: 'Montserrat', sans-serif;
                 }
             }
         }

@@ -32,7 +32,7 @@
         border-radius: 6px;
         border: solid 1px #e7e6e6;
         background-color: #ffffff;
-        text-indent: 40px;
+        text-indent: 43px;
         font-size: 14px;
         font-weight: 300;
         font-style: normal;
@@ -40,5 +40,9 @@
         line-height: normal;
         letter-spacing: normal;
         color: #c5c5c5;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center left 15px;
+        background-image: url(../../../assets/search-gray.svg);
     }
 }

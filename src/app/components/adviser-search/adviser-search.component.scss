@@ -239,7 +239,7 @@ $mainfont : 'montserrat';
          }
        td {
            padding: 16px 20px;
-           font-family: montserrat;
+           font-family: 'Montserrat', sans-serif;
            font-size: 11px;
            font-weight: 500;
            font-style: normal;
@@ -356,7 +356,7 @@ $mainfont : 'montserrat';
             padding-left:40px;
             color: black;
             margin-right:15px;
-            font-family: montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 500;
             font-style: normal;
@@ -366,7 +366,7 @@ $mainfont : 'montserrat';
 
         }
         ::placeholder {
-            font-family: montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 400;
             font-style: normal;
@@ -404,7 +404,7 @@ $mainfont : 'montserrat';
             padding-right: 30px;
         }
         .text-small {
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 12px;
             font-weight: 300;
             font-style: normal;
@@ -418,7 +418,7 @@ $mainfont : 'montserrat';
         }
         .text-title {
             opacity: 0.6;
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 12px;
             font-weight: normal;
             font-style: normal;
@@ -428,7 +428,7 @@ $mainfont : 'montserrat';
             color: #ffffff;
         }
         .btn-text {
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 12px;
             font-weight: 700;
             font-style: normal;
