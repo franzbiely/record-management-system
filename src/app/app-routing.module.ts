@@ -47,8 +47,7 @@ const routes: Routes = [
   
   {
     path: '',
-    component: FrontpageComponent
-    // component: FirmInformationScreenComponent
+    component: FirmInformationScreenComponent
   },
   {
     path: 'test',
@@ -56,7 +55,7 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: HomeScreenComponent
+    component: FrontpageComponent
   },
   {
     path: 'proposal',
