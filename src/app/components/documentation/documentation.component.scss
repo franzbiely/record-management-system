@@ -28,6 +28,7 @@
 .documentation-container {
     display:flex;
     flex-direction: column;
+    
     @media only screen and (max-width:767px){
         padding-bottom: 20px;
     }
@@ -35,6 +36,7 @@
 .document-parent-container {
     display: flex;
     flex-direction: row;
+    padding-bottom: 154px;
     .right-section-container {
         display:none;
     }
@@ -42,6 +44,9 @@
         flex-direction: column;    
         .right-section-container {
             display:initial;
+            position:relative;
+            z-index:2;
+            flex: 1;
         }   
     }
 }
@@ -50,6 +55,10 @@
     flex: 1;
     width: 100%;
     justify-content: space-between;
+    flex-direction: column;
+    .document-container-child {
+        display: flex;
+    }
     @media only screen and (max-width:767px){
         display: flex;
         flex-direction: column-reverse;
@@ -58,9 +67,13 @@
 }
 .row-4 {
     flex: 1;
+    .title-text {
+        padding: 15px 0;
+    }
 }
-#form-row-1 {
-   padding: 20px 60px;
+.form-row-1 {
+   padding: 15px 60px;
+   margin-top: 0;
    @media only screen and (max-width:767px){
        padding: 30px 10px 10px 10px;
    }
@@ -548,13 +561,14 @@
     }
 
     .title-text {
-        font-style: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 2px;
         text-transform:uppercase;
         color: #1598cb;
+        margin: 0;
     }
 
     .search-input{
@@ -701,7 +715,7 @@
      .stick-left {
         left: 0;
      }
-     .btn-group div {
+     .btn-group .btn-text {
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
         box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
@@ -710,17 +724,32 @@
         cursor: pointer; 
         color: #414042;
         text-align: left;
+        position: relative;
         .view-extended {
             width:0;
         }
+        .item-right-side {
+            float:right;
+            margin-right: 20px;
+        }
+        
         &.expanded {
             width: 100%;
             box-shadow: -7px 1px 4px 0 rgba(65, 64, 66, 0.15);
             background-color:#fafbfc;
+            font-weight: 600;
+            .item-right-side { 
+                margin-right:60px;
+            }
             .view-extended {
                 background: #fafbfc url('../../../assets/view-gray.svg') no-repeat center center;
-                display: inline;
+                display: inline-block;
                 box-shadow: none;
+                width: 30px;
+                height: 30px;
+                top: 10px;
+                position: relative;
+                margin-left: 25px;
             }
         }
         @media only screen and (max-width:767px){
@@ -801,22 +830,21 @@
     }
     .btn-group {
         flex: 1;
-        padding-right: 30px;
         font-size: 18px;
         letter-spacing: 0.2px;
         color: #414042;
-        font-weight: 600;
         @media only screen and (max-width:767px){
             margin-top: 10px;
             padding-right: 10px;
         }
     }
-    .btn-group div{
+    .btn-group .btn-text{
         position:relative;
         padding: 0px 10px 0px 60px; 
         line-height: 65px;
         height:65px;
         margin-bottom: 5px;
+        margin-right: 30px;
         flex: 1;
         @media only screen and (max-width:767px){
             padding: 30px 10px; 
@@ -856,12 +884,46 @@
         }
     }
     .option-right-section {
-        background-color: #f8f8f8;
-        box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
+        background-color: #fafbfc;
         border-radius: 6px 0px 0px 6px;
+        &.gap {
+            .div-group {
+                box-shadow: 4px 2px 3px 0 rgba(65, 64, 66, 0.15);
+            }
+        }
+        &.inv {
+            .div-group {
+                box-shadow: 4px 2px 3px 0 rgba(65, 64, 66, 0.15);
+            }
+        }
+        &.port {
+            .div-group {
+                box-shadow: 4px 2px 3px 0 rgba(65, 64, 66, 0.15);
+                min-height: 190px;
+            }
+        }
+        &.pas {
+            .div-group {
+                box-shadow: 4px 2px 3px 0 rgba(65, 64, 66, 0.15);
+                min-height: 260px;
+            }
+        }
+        &.aoc {
+            .div-group {
+                box-shadow: 4px 2px 3px 0 rgba(65, 64, 66, 0.15);
+                min-height: 330px;
+            }
+        }
+        &.raq {
+            .div-group {
+                box-shadow: 4px 2px 3px 0 rgba(65, 64, 66, 0.15);
+                min-height: 400px;
+            }
+        }
+
     .option-container {
         height: auto;
-        padding: 10px 0px 10px 30px;
+        padding: 10px 0px 10px 20px;
       
         .btn-group-top {
             display:flex; 
@@ -888,8 +950,11 @@
             border: 1px solid #bdbdbd;
             border-radius: 6px;
             padding:15px;
+            height:45px;
+            box-sizing: border-box;
             display: flex;
             align-items: center;
+            width: 77px;
         }
         .dropdown-icon{
             margin-top: 2px;
@@ -904,11 +969,12 @@
         .required {
             display: flex;
             align-items: center;
-            color: #808284;
+            color: #77787b;
             text-transform: uppercase;
             font-family: 'Montserrat', sans-serif;
             font-size:12px;
-            font-weight: 700;
+            font-weight: 600;
+            letter-spacing: 1px;
             .required-box{
                 border: 1px solid #bdbdbd;
                 display: flex;
@@ -916,21 +982,22 @@
                 border-radius: 6px;
                 margin-left: 15px;
                 .asterisk {
-                    height:10px;
-                    width: 10px;
+                    height:20px;
+                    width: 20px;
+                    box-sizing: border-box;
                     padding:5px;
                     content: url('../../../assets/component/documentation/asterisk.png');
                 }
             }
         }
         .right-section {
-            padding-right: 20px;
+            padding-right: 10px;
             @media only screen and (max-width:767px){
                 padding-right: 0px;
             }
         }
         .btn-default-container {
-            padding-right: 20px;
+            padding-right: 10px;
             .btn-default {
                 text-transform: uppercase;
                 margin: 0px;
@@ -938,11 +1005,11 @@
                 border-radius: 6px;
                 border: none;
                 background-color: #ffffff;
-                padding: 16px 26.5px;
+                padding: 16px 30px;
                 font-family: 'Montserrat', sans-serif;
-                letter-spacing: 0.9px;
-                color: #808284;
-                font-weight: 700;
+                letter-spacing: 1px;
+                color: #77787b;
+                font-weight: 600;
                 text-transform: uppercase;
                 font-size: 12px;
                 box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
@@ -956,11 +1023,11 @@
             margin:0px;
             width:auto;
             background-color: #1598cb;
-            padding: 16px 26.5px;
+            padding: 16px 30px;
             font-family: 'Montserrat', sans-serif;
-            letter-spacing: 0.9px;
+            letter-spacing: 1px;
             color: white;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: uppercase;
             font-size: 12px;
             box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
@@ -972,14 +1039,17 @@
         }
     }
     .div-group {
-        padding:10px 10px 20px 30px;  
+        padding-left: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0px 2px 3px 0 rgba(65, 64, 66, 0.15);
+        border-radius: 5px;
     .div-option-container{
         .div-option{
             border-radius: 6px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 30px 10px 20px;
+            padding: 10px 20px 10px 15px;
             border-radius: 6px 0px 0px 6px;
             box-shadow: 0 1px 4px 0 rgba(65, 64, 66, 0.15);
             background-color: #ffffff;
@@ -997,9 +1067,10 @@
                 display: flex;
                 .div-option-text{
                     font-size: 14px;
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 500;
+                    font-family: museo-sans, sans-serif;
+                    font-weight: 300;
                     padding-left: 10px;
+                    color: #414042;
                 }
                 
             }
@@ -1056,4 +1127,8 @@
             color: #ffffff;
         }
     }
+}
+
+::ng-deep .mat-checkbox {
+    margin-right:0;
 }
