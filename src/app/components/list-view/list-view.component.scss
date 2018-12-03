@@ -6,7 +6,7 @@ $containerWidth: calc(100vw - 200px);
 $textColor: #ffffff;
 
 %header-text-style {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
   font-style: normal;
@@ -17,7 +17,7 @@ $textColor: #ffffff;
 }
 
 %icon-text-style {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 600;
   font-style: normal;
@@ -187,7 +187,7 @@ $textColor: #ffffff;
             border: solid 1px #e7e6e6;
             padding-left: 40px;
             color: black;
-            font-family: montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 500;
             font-style: normal;
@@ -196,7 +196,7 @@ $textColor: #ffffff;
             letter-spacing: normal;
           }
            ::placeholder {
-            font-family: montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 400;
             font-style: normal;
@@ -222,7 +222,7 @@ $textColor: #ffffff;
             box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
             background-color: #ffffff;
             border: none;
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 12px;
             font-weight: 700;
             font-style: normal;
@@ -252,7 +252,7 @@ $textColor: #ffffff;
         thead {
           background-color: #fafbfc;
           th {
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 10px;
             font-weight: 700;
             font-style: normal;
@@ -291,7 +291,7 @@ $textColor: #ffffff;
             }
           }
           .col-name {
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: bold;
             font-style: normal;
@@ -303,7 +303,7 @@ $textColor: #ffffff;
           }
 
           .col-other {
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-size: 11px;
             font-weight: 500;
             font-style: normal;
@@ -343,7 +343,7 @@ $textColor: #ffffff;
 
 .name-td {
   font-size: 13px;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-style: normal;
   line-height: 1;
@@ -352,7 +352,7 @@ $textColor: #ffffff;
 
 .dropdown-item {
   color: #414042;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: 500;
   font-style: normal;

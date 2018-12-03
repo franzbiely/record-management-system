@@ -237,6 +237,9 @@ export class GraphProposalsComponent implements OnInit {
                     yAxes: [{
                         gridLines: {
                             color: 'rgba(0, 0, 0, 0)'
+                        },
+                        ticks: {
+                            fontSize: 9
                         }
                     }],
                     xAxes: [{
@@ -442,15 +445,45 @@ export class GraphProposalsComponent implements OnInit {
     }
 
     ipoRender() {
+        function randnum() {
+            return Math.floor(Math.random() * (15 - 1 + 1) ) + 1;
+        }
         this.chart = new Chart(this.chartRef.nativeElement, {
             type: 'bar',
             data: {
                 labels: ['2013', '2014', '2015', '2016', '2017', '2018'],
-                datasets: [{
-                    backgroundColor: '#475F7A',
-                    borderColor: '#475F7A',
-                    data: [1, 2, 3, 4, 2, 3]
-                }]
+                datasets: [
+                    {
+                        backgroundColor: '#475F7A',
+                        borderColor: '#475F7A',
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                    },
+                    {
+                        backgroundColor: '#475F7A',
+                        borderColor: '#475F7A',
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                    },
+                    {
+                        backgroundColor: '#475F7A',
+                        borderColor: '#475F7A',
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                    },
+                    {
+                        backgroundColor: '#475F7A',
+                        borderColor: '#475F7A',
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                    },
+                    {
+                        backgroundColor: '#475F7A',
+                        borderColor: '#475F7A',
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                    },
+                    {
+                        backgroundColor: '#475F7A',
+                        borderColor: '#475F7A',
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                    }
+                ]
             },
             options: {
                 title: {
@@ -466,6 +499,10 @@ export class GraphProposalsComponent implements OnInit {
                             stepSize: 5,
                             beginAtZero: true
                         }
+                    }],
+                    xAxes: [{
+                        minRotation: 0,
+                        maxRotation: 0
                     }]
                 },
                 showDatapoints: true,
@@ -475,7 +512,7 @@ export class GraphProposalsComponent implements OnInit {
                     }
                 },
                 responsive: true,
-                maintainAspectRatio: false
+                maintainAspectRatio: true
             }
         });
     }

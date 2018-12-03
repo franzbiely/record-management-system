@@ -1,32 +1,34 @@
 <div class="dash-box" [ngClass]="{'new' : isNew}">
-	<div *ngIf="isNew" class="add-container flex">
-      <div class="flex-1" style="margin-top: 50px;">
-      	<a (click)="addAction()"><i class="icon-big-add"></i></a>
-      </div>
-      <div class="flex-1"><h2 style="color:#1598cb;">{{addLabel}} </h2></div>
+    <div *ngIf="isNew" class="add-container flex">
+        <div class="flex-1" style="margin-top: 50px;">
+            <a (click)="addAction()"><i class="icon-big-add"></i></a>
+        </div>
+        <div class="flex-1">
+            <h2 style="color:#1598cb;">{{addLabel}} </h2>
+        </div>
     </div>
 
 
-	<div class="box-head">
-	  <div>
-	  	<span class="box-head-title">{{title}} <span class="sub" *ngIf="subTitle">{{subTitle}}</span></span>
-	  </div>
+    <div class="box-head">
+        <div>
+            <span class="box-head-title">{{title}} <span class="sub" *ngIf="subTitle">{{subTitle}}</span></span>
+        </div>
 
-	  <div class="btn-right-space">
-	  	<span class="btn" *ngIf="headerRightType=='add'" (click)="showModalHousehold()">
-	  		<i class="material-icons">add_circle</i>
-	  		<span class="icon-title">Add</span>
-	  	</span>
-		
-		<div class="box-checkbox" *ngIf="headerRightType=='select'">
-			<mat-checkbox></mat-checkbox>
-		</div>
-		<div class="box-checkbox" *ngIf="headerRightType=='action'">
-				<i class="material-icons">more_vert</i>
-		</div>
-	  </div> 
-	</div>
-	<div class="container-info">
-		<ng-content *ngIf="!isNew"></ng-content>
-	</div>
+        <div class="btn-right-space">
+            <span class="btn" *ngIf="headerRightType=='add'" (click)="showModalHousehold()">
+                <i class="material-icons">add_circle</i>
+                <span class="icon-title">Add</span>
+            </span>
+
+            <div class="box-checkbox" *ngIf="headerRightType=='select'">
+                <mat-checkbox></mat-checkbox>
+            </div>
+            <div class="box-checkbox" *ngIf="headerRightType=='action'">
+                <i class="material-icons">more_vert</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-info">
+        <ng-content *ngIf="!isNew"></ng-content>
+    </div>
 </div>

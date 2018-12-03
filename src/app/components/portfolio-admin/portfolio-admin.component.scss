@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 @import url('~@angular/material/prebuilt-themes/indigo-pink.css');
-$mainfont : montserrat;
+$mainfont : 'Montserrat', sans-serif;
 
 
 
@@ -341,7 +341,7 @@ td:first-child{
         border: solid 1px #e7e6e6;
         padding-left:40px;
         color: black;
-        font-family: montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 500;
         font-style: normal;
@@ -351,7 +351,7 @@ td:first-child{
 
     }
     ::placeholder {
-        font-family: montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 400;
         font-style: normal;
@@ -391,7 +391,7 @@ td:first-child{
         box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
         background-color: #ffffff;
         border: none;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 12px;
         font-weight: 700;
         font-style: normal;

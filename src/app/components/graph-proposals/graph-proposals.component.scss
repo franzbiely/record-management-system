@@ -20,6 +20,8 @@
         border-top-right-radius: 6px;
 
         h2 {
+            margin: 0;
+            padding: 1px 0;
             color: #ffffff;
             font-size: 20px;
             font-weight: 600;
@@ -51,7 +53,7 @@
     }
 
     .rab-content {
-        padding: 40px 20px;
+        padding: 20px;
     }
     .rab-chart {
         height: auto;
@@ -117,6 +119,9 @@
         }
     }
     &.type-aum {
+        .rab-content {
+            padding: 40px 20px;
+        }
         img {
             display: block;
             max-width: 100%;
@@ -132,21 +137,22 @@
         .rab-inner {
             display: -ms-flexbox;
             display: flex;
-            // -ms-flex-wrap: wrap;
-            // flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
             margin-right: -15px;
             margin-left: -15px;
+            -ms-flex-align: center;
+            align-items: center;
 
             & > div {
                 position: relative;
-                // width: 100%;
+                width: 100%;
                 padding-right: 15px;
                 padding-left: 15px;
             }
             .rab-left-block {
                 flex: 1;
                 width: auto;
-                max-width: 180px;
             }
             .rab-right-block {
                 -ms-flex-preferred-size: 0;
@@ -154,9 +160,9 @@
                 -ms-flex-positive: 1;
                 flex-grow: 1;
                 max-width: 100%;
-                canvas {
-                    width: 200px;
-                    height:150px;
+                
+                .rab-chart {
+                    width: 140px;
                 }
             }
         }
@@ -191,6 +197,9 @@
         display: none;
 
         .rab-header {
+            h2 {
+                padding: 8px 0;
+            }
             a {
                 width: 30px;
                 height: 30px;
@@ -269,7 +278,7 @@
         .rab-setting-actions {
             position: relative;
             margin-top: 30px;
-            text-align: right;
+            padding-left: 130px;
 
             a {
                 display: block;
@@ -292,7 +301,10 @@
             }
 
             button {
-                display: inline-block;
+                display: block;
+                width: 100%;
+                max-width: 200px;
+                margin-left: auto;
                 color: #ffffff;
                 font-size: 12px;
                 font-weight: 600;

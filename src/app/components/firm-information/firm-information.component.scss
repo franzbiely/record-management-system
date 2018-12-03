@@ -1,7 +1,7 @@
 $padding: 20px;
 $padding-left: 35px;
 $container-padding: 40px;
-$mainfont: Montserrat;
+$mainfont: 'Montserrat', sans-serif;
 $secondaryfont: museo-sans;
 
 .information-container {
@@ -70,7 +70,7 @@ $secondaryfont: museo-sans;
 
     .btn-browse {
       width: 100%;
-      border-radius: 58px;
+      border-radius: 64px;
       background-color: transparent;
       box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
       border: dashed 1px #c5c5c5;
@@ -209,7 +209,7 @@ $secondaryfont: museo-sans;
 
   .title {
 
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
 
@@ -218,7 +218,7 @@ $secondaryfont: museo-sans;
     text-transform: uppercase;
   }
   .subtitle {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -258,6 +258,7 @@ select {
   border-radius: 6px;
   height: 100%;
   border: 1px solid #e7e6e6;
+  border-radius: 0;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-right: 1px;
@@ -389,7 +390,7 @@ select {
 
 .required-text,
 .asterisk {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 500;
   font-style: normal;

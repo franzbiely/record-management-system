@@ -1,32 +1,32 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-dash-box',
-  templateUrl: './dash-box.component.html',
-  styleUrls: ['./dash-box.component.scss']
+    selector: 'app-dash-box',
+    templateUrl: './dash-box.component.html',
+    styleUrls: ['./dash-box.component.scss']
 
 })
 export class DashBoxComponent implements OnInit {
-	@Input() isNew: boolean;
-	@Input() title: string;
-  @Input() subTitle: string;
-	@Input() addLabel : string;
-	@Input() data: any;
-  @Input() addAction: Function;
-  @Input() headerRightType: string;
+    @Input() isNew: boolean;
+    @Input() title: string;
+    @Input() subTitle: string;
+    @Input() addLabel: string;
+    @Input() data: any;
+    @Input() addAction: Function;
+    @Input() headerRightType: string;
 
-  modalHousehold: boolean = false;
-  
-  constructor() { }
-  
-  ngOnInit() {
-  }
+    modalHousehold: boolean = false;
 
-  @Output() addHousehold = new EventEmitter();
-  counter = 0;
+    constructor() { }
 
-  showModalHousehold(){
-    this.addHousehold.emit(!this.modalHousehold);
-  }
+    ngOnInit() {
+    }
+
+    @Output() addHousehold = new EventEmitter();
+    counter = 0;
+
+    showModalHousehold() {
+        this.addHousehold.emit(!this.modalHousehold);
+    }
 
 }

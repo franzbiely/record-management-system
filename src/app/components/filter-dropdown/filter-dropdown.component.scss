@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
-$mainfont: montserrat;
+$mainfont: 'Montserrat', sans-serif;
 .dropdown-actions {
     margin-left: 5px;
     margin-top: 5px;
@@ -50,7 +50,7 @@ $mainfont: montserrat;
                     background-color: #ffffff;
                     border: none;
                     border-radius: 6px;
-                    font-family: Montserrat;
+                    font-family: 'Montserrat', sans-serif;
                     font-size: 12px;
                     font-weight: 700;
                     font-style: normal;
@@ -74,7 +74,7 @@ $mainfont: montserrat;
             padding: 0;
             margin:0;
             list-style: none;
-            font-family: montserrat;
+            font-family: 'Montserrat', sans-serif;
             li {
                 position:relative;
                 a {
@@ -125,7 +125,7 @@ $mainfont: montserrat;
                         font-size: 10px;
                         border: solid 1px #e7e6e6;
                         color: black;
-                        font-family: montserrat;
+                        font-family: 'Montserrat', sans-serif;
                         font-size: 12px;
                         font-weight: bold;
                         font-style: normal;
@@ -135,7 +135,7 @@ $mainfont: montserrat;
 
                     }
                     ::placeholder {
-                        font-family: montserrat;
+                        font-family: 'Montserrat', sans-serif;
                         font-size: 12px;
                         font-weight: 400;
                         font-style: normal;

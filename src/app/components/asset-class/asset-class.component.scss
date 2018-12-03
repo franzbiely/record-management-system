@@ -26,14 +26,14 @@
                 text-align: center;
                 align-items: center;
                 .text-category{
-                    font-family: montserrat;
+                    font-family: 'Montserrat', sans-serif;
                     font-size: 10px;
                     font-weight: 700;
                     text-transform: uppercase;
                 }
                 .text-category-subtitle, .text-category-info{
                     margin-top:3px;
-                    font-family: montserrat;
+                    font-family: 'Montserrat', sans-serif;
                     font-size: 10px;
                     font-weight: 400;
                 }
@@ -44,20 +44,20 @@
                 }
                 .col-1{
                     .text-title{
-                        font-family: montserrat;
+                        font-family: 'Montserrat', sans-serif;
                         font-weight: 700;
                         color: #1598cb;
                         font-size: 20px;
                     }
                     .text-subtitle{
-                        font-family: montserrat;
+                        font-family: 'Montserrat', sans-serif;
                         font-weight: 600;
                         color: rgba(66,66,66,1);
                         font-size: 12px;
                     }
                     .text-subtitle-2{
                         margin-top: 3px;
-                        font-family: montserrat;
+                        font-family: 'Montserrat', sans-serif;
                         font-weight: 500;
                         color: rgba(66,66,66,1);
                         font-size: 9px;
@@ -82,7 +82,7 @@
                             color: white;
                             font-size: 18px;
                             font-weight: 700;
-                            font-family: montserrat;
+                            font-family: 'Montserrat', sans-serif;
                             background-color: #1598cb;
                             border-radius: 6px 6px 0px 0px;
                             padding: 15px 10px;
@@ -99,18 +99,18 @@
                                     font-size: 12px;
                                     font-weight: 600;
                                     cursor: pointer;
-                                    font-family: montserrat;
+                                    font-family: 'Montserrat', sans-serif;
                                 }
                                 span:nth-child(2){
                                     margin-top:10px;
                                     font-size:10px;
-                                    font-family: montserrat;
+                                    font-family: 'Montserrat', sans-serif;
                                     font-weight: 400;
                                     text-transform: uppercase; 
                                 }
                                 span:last-child{
                                     font-size:10px;
-                                    font-family: montserrat;
+                                    font-family: 'Montserrat', sans-serif;
                                     font-weight: 600;
                                     text-transform: uppercase; 
                                 }
@@ -123,7 +123,7 @@
                                 .box-title{
                                     margin-top:10px;
                                     font-size:10px;
-                                    font-family: montserrat;
+                                    font-family: 'Montserrat', sans-serif;
                                     font-weight: 600;
                                 }
                                 .left-box{
@@ -137,7 +137,7 @@
                                             background-color: #1598cb;
                                         }   
                                         tr td:last-child, tr:last-child td{
-                                            font-family: montserrat;
+                                            font-family: 'Montserrat', sans-serif;
                                             font-size: 8px;
                                             font-weight: 400;
                                             padding: 5px;
@@ -162,7 +162,7 @@
                                         border-spacing: 0;
                                         text-align: center;
                                         tr td:last-child, tr:last-child td{
-                                            font-family: montserrat;
+                                            font-family: 'Montserrat', sans-serif;
                                             font-size: 8px;
                                             font-weight: 400;
                                             padding: 5px;
@@ -192,7 +192,7 @@
                         display: flex;
                         flex-direction: column;
                         span:first-child{
-                            font-family: montserrat;
+                            font-family: 'Montserrat', sans-serif;
                             font-size: 18px;
                             color: rgba(65, 64, 66, 1);
                             text-transform: uppercase;
@@ -200,7 +200,7 @@
                             font-weight: 700;
                         }
                         span:last-child{
-                            font-family: montserrat;
+                            font-family: 'Montserrat', sans-serif;
                             font-size: 12px;
                             color: rgba(65, 64, 66, 1);
                             font-weight: 500;
@@ -213,7 +213,7 @@
                         .asset-class-footer{
                             padding: 10px;
                             background-color: #e7e6e6;
-                            font-family: montserrat;
+                            font-family: 'Montserrat', sans-serif;
                             font-size: 10px;
                             font-weight: 700;
                             display:flex;
@@ -237,7 +237,7 @@
                                 margin-top:5px;
                             }
                             .asset-title{
-                                font-family: montserrat;
+                                font-family: 'Montserrat', sans-serif;
                                 font-size: 10px;
                                 font-weight: 500;
                             }

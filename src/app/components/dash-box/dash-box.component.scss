@@ -4,213 +4,220 @@ $itemFontSize: 9pt;
 $btnFontSize: 10pt;
 $primaryfont: "montserrat", sans-serif;
 %container-attr {
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
-  color: $primaryColor;
-  margin: 10px 10px;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 0 rgba(64, 64, 65, 0.2);
+    color: $primaryColor;
 
-  @media screen and(max-width: 767px) {
-    margin: 10px auto;
-    width: 370px;
-
-  }
+    @media screen and(max-width: 767px) {
+        margin: 10px auto;
+        width: 370px;
+    }
 }
 
 %header-title {
-  display: inline-block;
-  font-size: 18.8px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: 0.2px;
-  font-family: $primaryfont;
-  padding: 10px;
+    display: inline-block;
+    font-size: 18.8px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    font-family: $primaryfont;
+    padding: 10px;
 }
 
 %container-info {
-  height: 250px;
-  overflow: scroll;
-  width: 100%;
-  color:#222;
-  background-color: $primaryColor;
-  margin:auto;
-  
+    height: 250px;
+    overflow: scroll;
+    overflow-y: overlay;
+    width: 100%;
+    color: #222;
+    background-color: $primaryColor;
+    margin: auto;
 }
 
 %grey-text-uppercase {
-  font-weight: 0;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: 0.4px;
-  color: #77787b;
-  text-transform: $btnFontSize;
+    font-weight: 0;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #77787b;
+    text-transform: $btnFontSize;
 }
 %grey-text {
-  font-weight: 0;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: 0.4px;
-  color: #77787b;
+    font-weight: 0;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #77787b;
 }
 @mixin info-item($top: null, $right: null, $bottom: null, $left: null) {
-  width: auto;
-  height: auto;
+    width: auto;
+    height: auto;
 
-  @if top !=null and $right==null or $bottom==null or $left==null {
-    padding-top: $top;
-    padding-right: $top;
-    padding-bottom: $top;
-    padding-left: $top;
-  }
-  @else {
-    padding-top: $top;
-    padding-right: $right;
-    padding-bottom: $bottom;
-    padding-left: $left;
-  }
+    @if top !=null and $right==null or $bottom==null or $left==null {
+        padding-top: $top;
+        padding-right: $top;
+        padding-bottom: $top;
+        padding-left: $top;
+    } @else {
+        padding-top: $top;
+        padding-right: $right;
+        padding-bottom: $bottom;
+        padding-left: $left;
+    }
 
-  display: flex;
-  color: #000000;
+    display: flex;
+    color: #000000;
 }
 
-@mixin textStyle($color, $style,
-$stretch, $size,
-$weight, $align,
-$line, $spacing) {
-  color: $color;
-  font-style: $style;
-  font-stretch: $stretch;
-  font-size: $size;
-  font-weight: $weight;
-  text-align: $align;
-  line-height: $line;
-  letter-spacing: $spacing;
+@mixin textStyle(
+    $color,
+    $style,
+    $stretch,
+    $size,
+    $weight,
+    $align,
+    $line,
+    $spacing
+) {
+    color: $color;
+    font-style: $style;
+    font-stretch: $stretch;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    line-height: $line;
+    letter-spacing: $spacing;
 }
 
 .dash-box {
-  position: relative;
-  .add-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    position: absolute;
-    z-index: 50;
-    color: blue;
-    background: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    a {
-      cursor: pointer;
-      display: inline-block;
-    }
-  }
-  .add-box-container {
-
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .icon-big-add {
-    content: url('../../../../src/assets/component/home/add-blue@3x.png');
-  }
-  .box-head-title{
-    font-family: $primaryfont;
-    font-size: 20px;
-    font-weight: 700;
-    display:flex;
-    flex-direction: column;
-  }
-  .sub {
-    font-family: $primaryfont;
-    font-size: 13px;
-    font-weight: 500;
-    margin-top:-1px; 
-  }
-  .box-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-    height:40px;
-    background-color: #1598cb;
+    position: relative;
+    box-sizing: border-box;
     
-    span.btn {
-      cursor: pointer;
-      align-items: center;
-      display: flex;
-      background: transparent;
-      border: none;
-      outline: none;
-      color: $primaryColor;
-      text-transform: uppercase;
-      font-size: $btnFontSize;
-      font-weight: 500;
-      font-family: $primaryfont;
-      .icon-title {
-        margin-left: 6px;
-        text-transform: uppercase;
-        font-size: 11px;
-        font-weight: 600;
-        margin-top:1px; 
-        font-family: $primaryfont;
-      }
-      .icon-add {
-        position: relative;
-        top: 5px;
-        right: 4px; // content: url('../../../../assets/component/section/btn-add/add-white.png');
-      }
-      span {
-        font-size: 8pt;
-        margin: 0;
-        font-weight: 100;
-        letter-spacing: 1px;
-      }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
     }
-  }
-  @extend %container-attr;
-  
-  .container-info {
-    @extend %container-info;
 
-    .info-item {
-      @include info-item(10px,
-      20px,
-      10px,
-      20px);
-      .item-one,
-      .item-two {
-        flex: 1;
+    .add-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         flex-direction: column;
-        .item-two-amount,
-        .item-two-date {
-          text-align: right;
-          font-size: $itemFontSize;
+        position: absolute;
+        z-index: 50;
+        color: blue;
+        background: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        a {
+            cursor: pointer;
+            display: inline-block;
         }
-        .item-two-amount {
-          font-size: 9pt;
-        }
-        .item-two-date {
-          font-size: 8pt;
-        }
-      }
-      .item-one {
-        font-size: 10pt;
-      }
     }
-    .info-item:nth-child(odd) {
-      border-bottom: $itemDivider;
-      border-top: $itemDivider;
+    .add-box-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
-  }
+    .icon-big-add {
+        content: url("../../../../src/assets/component/home/add-blue@3x.png");
+    }
+    .box-head-title {
+        font-family: $primaryfont;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+    }
+    .sub {
+        font-family: $primaryfont;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: -1px;
+    }
+    .box-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 20px;
+        background-color: #1598cb;
+
+        span.btn {
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: $primaryColor;
+            text-transform: uppercase;
+            font-size: $btnFontSize;
+            font-weight: 500;
+            font-family: $primaryfont;
+            .icon-title {
+                margin-left: 6px;
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: 600;
+                margin-top: 1px;
+                font-family: $primaryfont;
+            }
+            .icon-add {
+                position: relative;
+                top: 5px;
+                right: 4px; // content: url('../../../../assets/component/section/btn-add/add-white.png');
+            }
+            span {
+                font-size: 8pt;
+                margin: 0;
+                font-weight: 100;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    @extend %container-attr;
+
+    .container-info {
+        @extend %container-info;
+
+        .info-item {
+            @include info-item(10px, 20px, 10px, 20px);
+            .item-one,
+            .item-two {
+                flex: 1;
+                flex-direction: column;
+                .item-two-amount,
+                .item-two-date {
+                    text-align: right;
+                    font-size: $itemFontSize;
+                }
+                .item-two-amount {
+                    font-size: 9pt;
+                }
+                .item-two-date {
+                    font-size: 8pt;
+                }
+            }
+            .item-one {
+                font-size: 10pt;
+            }
+        }
+        .info-item {
+            border-bottom: $itemDivider;
+        }
+        > .info-item:last-child {
+            border-bottom: 0;
+        }
+    }
 }
