@@ -14,6 +14,39 @@ app-dropdown-update-account {
   }
 }
 
+::ng-deep .simulation-container .dropdown-update-account{
+  
+  border: none !important;
+  .item {
+    display: flex;
+    padding: 10px !important;
+    font-weight: 300 !important;
+    border-top: 1px solid #eee !important;
+    
+  }
+  .item:first-child {
+    border-top: none;
+  } 
+  summary{
+    text-transform: capitalize !important;
+    height: 32px !important;
+    .item{
+      font-weight: 200 !important;
+      font-family: $primaryfont ;
+      font-size: 18px !important;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.2px;
+      color: #414042;
+      display: flex;
+      justify-content: space-between !important;
+      align-items: center;
+      width: 100%;
+    } 
+  }
+}
+
 .tab-title-mobile {
   display: none;
   @media only screen and (max-width: 767px) {
@@ -174,6 +207,7 @@ app-dropdown-update-account {
       left: 115px;
       width: 300px;
       position: absolute;
+      z-index:25;
       .toggler {
         color: #fff;
         background: #1598cb;
@@ -200,6 +234,7 @@ app-dropdown-update-account {
     .sidebar {
       position: relative;
       width: 256px;
+      z-index: 90;
       border-bottom-right-radius: 6px;
       background-color: white;
       box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
@@ -302,7 +337,7 @@ app-dropdown-update-account {
           border-radius: 6px;
           width: 216px;
           margin-top: 10px;
-          input[type="text"] {
+          input[type=text] {
             padding: 7px 15px;
             align-items: center;
             display: flex;
@@ -324,7 +359,7 @@ app-dropdown-update-account {
         .text-value {
           font-family: $primaryfont;
           font-size: 18px;
-          font-weight: 300;
+          font-weight: 200;
           letter-spacing: -0.2px;
           color: #414042;
         }

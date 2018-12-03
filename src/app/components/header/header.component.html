@@ -1,22 +1,25 @@
 <header>
     <div class="masthead">
         <div class="header-container" [ngClass]="{'disabled' : isDisabled}">
-            <div class="logo-holder">
-                <div class="logo-container">
-                    <a><img src="{{ logo_path }}" alt="logo"></a>
+            <div class="left-section">
+                <div class="logo-holder">
+                    <div class="logo-container">
+                        <a><img src="{{ logo_path }}" alt="logo"></a>
+                    </div>
                 </div>
             </div>
-    
-            <div class="header-search-bar">
-                <app-search></app-search>
-            </div><!-- .header-search-bar -->
-    
-            <div class="header-notif">
-                <app-notification-component></app-notification-component>
-            </div><!-- .header-notif -->
-    
-            <div class="header-profile">
-                <app-profile-notification></app-profile-notification>
+            <div class="right-section">
+                <div class="header-search-bar">
+                    <app-search></app-search>
+                </div><!-- .header-search-bar -->
+        
+                <div class="header-notif">
+                    <app-notification-component></app-notification-component>
+                </div><!-- .header-notif -->
+        
+                <div class="header-profile">
+                    <app-profile-notification></app-profile-notification>
+                </div>
             </div>
         </div><!-- .header-container -->
     </div><!-- .masthead -->

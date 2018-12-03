@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
-
+$primaryfont: "montserrat", sans-serif;
+$secondaryfont: "museo-sans", georgia;
 .tab-title-mobile {
     display:none;
     @media only screen and (max-width: 767px){
@@ -30,6 +31,7 @@ table {
     border-radius: 10px;
     width: 100%; 
     min-width: 375px;
+    border-spacing: none;
     border-collapse: collapse; 
     background-color: #ffffff;
     @media only screen and (max-width: 767px){
@@ -38,7 +40,7 @@ table {
             display:none;
         }
     }
-
+    
     @media only screen and (max-width: 767px){
     tr:last-child td:first-child {
             vertical-align: top;
@@ -52,8 +54,12 @@ table {
     }
  }
 }
-
-
+.table-head td:not(:first-child) {
+    padding:0px 20px;
+}
+tr.table-head th:first-child, tr.table-head th:last-child {
+    padding:0px 20px;
+}
 .last-row-container{
     @media only screen and (max-width: 767px){
         justify-content: flex-end;
@@ -73,7 +79,7 @@ table {
             display: flex;
             padding: 20px 0px;
             .total-value{
-                font-family: 'Montserrat', sans-serif;
+                font-family: $primaryfont;
                 font-size: 14px;
                 font-weight: 700;
                 font-style: normal;
@@ -85,7 +91,7 @@ table {
                 padding-left: 30px;
             }
             .total-text{
-                font-family: 'Montserrat', sans-serif;
+                font-family: $primaryfont;
                 font-size: 11px;
                 font-weight: 800;
                 font-style: normal;
@@ -106,42 +112,41 @@ table {
         }
 
     } 
-}  
+}   .table-head{
+        height: 47px;
+        background-color: #fafbfc;
+    }
     th {        
         text-transform: uppercase;
-        font-size:10px;
-        background: #fafbfc; 
-        color: #414042; 
-        font-weight: bold; 
-        padding: 1em; 
+        font-family: $primaryfont;
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.8px;
+        color: #414042;
+        box-sizing: border-box;
         text-align: center; 
         @media only screen and (max-width: 767px) {
             padding: 2em 1em;
         }
       }
       td {
-        font-size: 11px;
-        text-align: center;
-        padding: .5em 1.5em;
         @media only screen and (max-width: 767px) {
             padding: 2em 1em;
         }
       }
-      td.cell-2-rows{
-          display: flex;
-          text-align: right;
-          flex-direction: column;
-      }
-      td:nth-child(2), th:nth-child(2){
-          text-align: left;
+      tr:last-child{
+          padding:20px 0px;
       }
       @media only screen and (max-width: 767px) {
           padding: 0px;
       }
       .small-cell-text{
-        font-family: 'Montserrat', sans-serif;
+        font-family: $secondaryfont;
         font-size: 8px;
-        font-weight: 500;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -149,16 +154,16 @@ table {
         text-align: right;
         color: #77787b;
       }
-      tr {
-          border-bottom: 1px solid rgba(64, 64, 65, 0.2);
+      .row-2{
+          text-align: right;
       }
-
-      tr.last {
-        padding: 10px 0px;
-        border-bottom: none;
-        background-color: #f7f7f7;
-        
-    }
+      tr:not(:last-child) {
+          border-bottom: #e7e6e6 0.5px solid;
+          height: 47px;
+      }
+      tr.last td{
+          height: 85px;
+      }
     .btn-account {  
         margin: 0px;
         width: 233px;
@@ -167,21 +172,56 @@ table {
         box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
         border: solid 1px #ffffff;
         background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-         .btn-account-text {   
-            font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1;
-            letter-spacing: 0.9px;
-            color: #77787b; }
+        .btn-account-text {
+        font-family: $primaryfont;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.9px;
+        color: #77787b; 
+        }
   }
-
+  .icon-add{
+      padding-right: 8px;
+      width: 20px;
+      height: 20px;
+      content: url("/src/assets/component/accounts/add-gray.png");
+  }
+  .icon-redtail{
+      width:20px;
+      height:20px;
+      content: url("/src/assets/component/accounts/redtail.png")
+  }
+  .icon-wealth{
+    width:20px;
+    height:20px;
+    content: url("/src/assets/component/accounts/wealth-access.png")
+}
+  ::ng-deep mat-checkbox{
+    height: 20px;
+    width: 20px;
+  }
+  .td-text-normal{
+    font-family: $secondaryfont;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #414042;
+  }
     //Text Style//
 
     .text-small-light {  
-        font-family:'Montserrat', sans-serif;
+        font-family:$primaryfont;
         font-size: 10px;
         font-weight: 200;
         font-style: normal;
@@ -192,7 +232,7 @@ table {
 
         .text-small-dark {  
         
-            font-family:'Montserrat', sans-serif;
+            font-family:$primaryfont;
             font-size: 10px;
             font-weight: 200;
             font-style: normal;
@@ -203,7 +243,7 @@ table {
 
     .text-big-light {
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $primaryfont;
         font-size: 36px;
         font-weight: 200;
         font-style: normal;
@@ -216,7 +256,7 @@ table {
     
     .text-normal {
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family:$primaryfont;
         font-size: 16px;
         font-weight: 600;
         font-style: normal;
@@ -227,7 +267,7 @@ table {
     }
     .text-normal-bold {
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $primaryfont;
         font-size: 24px;
         font-weight: 600;
         font-style: normal;
@@ -260,7 +300,10 @@ input[type='checkbox'] {
     }
 
     .select-all-container{
-        padding: 10px;
+        display:flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
         @media only screen and (max-width: 767px){
             padding:0px;
         }
@@ -335,16 +378,12 @@ input[type='checkbox'] {
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
-
-.align-text-icon{
-    position: relative;
+tr.last td:first-child{
+    span{
+        margin-top:10px;
+        margin-right:2px;
+    }
 }
-
-i{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .mat-checkbox-frame{
     border: 1px solid grey;
     border-width: 10px;

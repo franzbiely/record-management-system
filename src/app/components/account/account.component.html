@@ -1,7 +1,7 @@
 <div class="tab-title-mobile"><div><span class="title-text-mobile"> Account </span></div></div>
-<table>
+<table cellspacing="0" borderspacing="0">
     <thead>
-      <tr class="last">
+      <tr class="table-head">
         <th>Select</th>
         <th>Account Name</th>
         <th>Added</th>
@@ -16,35 +16,35 @@
     </thead>
 
     <tbody>
-      <tr>
+      <tr class="td-text-normal">
         <td><mat-checkbox (click)="showBtnNext()"></mat-checkbox></td>
         <td>Schwab Account</td>
-        <td>dog pic</td>
+        <td><i class="icon-redtail"></i></td>
         <td>ENV Account</td>
         <td>Schwab</td>
         <td>3456</td>
         <td>Simple IRA</td>
         <td>Chris Candelaria</td>
-        <td class="cell-2-rows"><span class="normal-cell-text">$425,000.00</span><span class="small-cell-text">As of 10/1/2018</span></td>
+        <td><span class="row-2"><span class="normal-cell-text">$425,000.00</span><br/><span class="small-cell-text">As of 10/1/2018</span></span></td>
         <td><app-dropdown-actions></app-dropdown-actions></td>
       </tr>
-      <tr>
+      <tr class="td-text-normal">
           <td><mat-checkbox (click)="showBtnNext()"></mat-checkbox></td>
           <td>Schwab Account</td>
-          <td>dog pic</td>
+          <td><i class="icon-wealth"></i></td>
           <td>ENV Account</td>
           <td>Schwab</td>
           <td>3456</td>
           <td>Simple IRA</td>
           <td>Chris Candelaria</td>
-          <td class="cell-2-rows"><span class="normal-cell-text">$425,000.00</span><span class="small-cell-text">As of 10/1/2018</span></td>
+          <td><span class="row-2"><span class="normal-cell-text">$425,000.00</span><br/><span class="small-cell-text">As of 10/1/2018</span></span></td>
           <td><app-dropdown-actions></app-dropdown-actions></td>        
         </tr>
 
       <tr class="last" >
         <td>
         <div class="select-all-container"><mat-checkbox [ngClass]="testing1" (click)="showBtnNext()"></mat-checkbox>
-        <p>Select All</p></div>
+        <span class="td-text-normal">Select All</span></div>
         </td>
         <td colspan="9"> 
             <div class="last-row-container">
@@ -53,7 +53,7 @@
                     <div><span class="total-text">Total:</span><span class="total-value">$800,000.00</span></div>
                 </div>
               <button class="btn-account  btn-account-text btn-add" 
-                (click)="showImportAccountModal()"><i class="material-icons">add_circle</i> <span class="align-text-icon">ADD ACCOUNT OR CASH</span></button>
+                (click)="showImportAccountModal()"><i class="icon-add"></i><span class="align-text-icon">ADD ACCOUNT OR CASH</span></button>
               
               <app-dropdown-update-account [type]="'proposal'"></app-dropdown-update-account>
               
