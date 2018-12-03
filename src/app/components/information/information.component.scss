@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
-$mainfont : 'montserrat';
+$mainfont : 'Montserrat', sans-serif;
 
     .align-right {
         text-align: right;
@@ -19,10 +19,9 @@ $mainfont : 'montserrat';
        
     }
     .content-container {
-        padding:30px 40px;  
         display: flex;  
         justify-content: center;
-       
+       padding: 0;
     }
     .box-container{
        
@@ -283,7 +282,7 @@ $mainfont : 'montserrat';
     .name-subtitle {
         font-family: $mainfont;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.07;
@@ -294,7 +293,7 @@ $mainfont : 'montserrat';
     .name {
       font-family: $mainfont;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 600;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -424,9 +423,9 @@ $mainfont : 'montserrat';
         margin-top: 8px;
     }
     .textarea span{
-        font-family: $mainfont;
+        font-family: "museo-sans", sans-serif;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
@@ -463,3 +462,5 @@ $mainfont : 'montserrat';
             align-items: center;
         }
     }
+
+    
