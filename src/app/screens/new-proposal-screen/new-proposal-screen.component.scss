@@ -18,11 +18,8 @@ app-account-details {
 
 app-questionnaire-modal{
     position: fixed;
-    z-index: 100;
+    z-index: 99;
     width: 100%;
-        display: flex;
-    justify-content: center;
-    height: 100%;
 }
 app-popup-create-portfolio, app-asset-class,
 app-allocation-details {

@@ -13,11 +13,17 @@
     height: 100%;
     position: relative;
     display: flex;
+    padding: 120px 40px 0px 120px;
     justify-content: center;
     align-items: center;
     z-index: 70;
+    
+    @media only screen and (max-width: 767px){
+        position: ab;
+        padding: 110px 10px;
+    }
     .box-content{
-        width: 1000px;
+        width: 100%;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
         background-color: white;
@@ -52,6 +58,9 @@
                 .add-container{
                     display: flex;
                     align-items: center;
+                    @media only screen and (max-width: 767px){
+                        display:none;
+                    }
                 }
             }
         }
@@ -59,6 +68,7 @@
             .row-1{
                 .progress-container{
                     position: relative;
+                    width: 100%;
                     .progress-content{
                     position: relative;
                     display:flex;
@@ -67,6 +77,9 @@
                     border-bottom: 1px #ddd solid;
                     justify-content: space-between;
                     flex: 1;
+                    @media only screen and (max-width: 767px){
+                        padding: 10px;
+                    }
                         .progress{
                             flex:1;
                             display: flex;
@@ -79,10 +92,24 @@
                                 font-size: 10px;
                                 font-weight: 600;
                             }
+                            span:first-child{
+                                @media only screen and (max-width:767px){
+                                    display:none;
+                                }
+                            }
                             .radio{
                                 position: relative;
                                 z-index:5;
                                 margin-top: 15px;
+                                @media only screen and (max-width: 767px) {
+                                    margin-left: 5px;
+                                }
+                            }
+                            span.radio-mobile {
+                                display:none;
+                                @media only screen and (max-width: 767px){
+                                    display: inline-block;
+                                }
                             }
                         }   
                     }    
