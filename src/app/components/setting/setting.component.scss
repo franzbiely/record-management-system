@@ -55,8 +55,9 @@ $mainfont : 'Montserrat', sans-serif;
 
 }
 .box-body {
-    height:auto;
-    padding: 20px 0px; 
+    height: 359px;
+    padding: 20px 0px;
+    box-sizing: border-box;
 }
 .header-title {
     font-family: $mainfont;
@@ -148,9 +149,8 @@ $mainfont : 'Montserrat', sans-serif;
 .content-box{
     text-align: center;
     padding: 20px;
-
     img{
-        width: 300px;
+        width:100%;
     }
 }
 .edit-icon {
