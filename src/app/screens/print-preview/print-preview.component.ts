@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ModalStatusService } from "../../services/modal-status.service"
 
 declare var jquery:any;
 declare var $ :any;
@@ -9,9 +10,13 @@ declare var $ :any;
     styleUrls: ["./print-preview.component.scss"]
 })
 export class PrintPreviewComponent implements OnInit {
-    constructor() { }
+    constructor(private modalStatus: ModalStatusService) { }
+    sendDocuments = false;
+    sendDocumentModal : boolean = false;
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.modalStatus.sendDocument.subscribe(value => this.sendDocumentModal = value);
+    }
 
     ngAfterViewInit() {
         this.setContent();
@@ -89,5 +94,9 @@ export class PrintPreviewComponent implements OnInit {
                 }, 500 );
             }
         }
+    }
+
+    save_send() {
+        this.modalStatus.SET_sendDocument(true);
     }
 }

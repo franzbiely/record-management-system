@@ -54,6 +54,12 @@ export class ModalStatusService {
   SET_allocationDetails(value: boolean) {
     this.allocationDetailsSource.next(value);
   }
+
+  private sendDocumentSource = new BehaviorSubject<boolean>(false);
+  public sendDocument = this.sendDocumentSource.asObservable();
+  SET_sendDocument(value: boolean) {
+    this.sendDocumentSource.next(value);
+  }
   constructor() { }
   
 }

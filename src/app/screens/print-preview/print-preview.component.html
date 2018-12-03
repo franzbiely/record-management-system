@@ -1,3 +1,5 @@
+<app-risk-assessment-questionnaire *ngIf="sendDocumentModal"></app-risk-assessment-questionnaire>
+
 <div class="rms-print-preview">
     <div class="rpp-header">
         <div class="rpp-headbar">
@@ -94,6 +96,6 @@
     <div class="rpp-actions">
         <button class="is-back">Back to documentation</button>
         <button class="is-save">Save to documents</button>
-        <button class="is-send">Save & send documents</button>
+        <button (click)="save_send()" class="is-send">Save & send documents</button>
     </div><!-- .rpp-actions -->
 </div><!-- .rms-print-preview -->
