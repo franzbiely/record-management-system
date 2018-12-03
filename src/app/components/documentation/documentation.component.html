@@ -180,15 +180,17 @@
 
   </div>
 </div>
-<div class="row-3">
+<div class="row-3 document-parent-container" [ngClass]="{'expanded' : documentIsOpen}">
   <div class="document-container">
   <div class="btn-group flex-1" >
-  <div class="btn-text">
+  <div class="btn-text" (click)="openDocument($event)" [ngClass]="">
    <span>Proposal</span>
    <span style="float: right;">
        <mat-checkbox></mat-checkbox>
        <i class="btn-icon-action"></i>
+       <span class="view-extended"></span>
      </span>
+     
   </div>
   <div class="btn-text">
    <span>GAP Analysis</span>
@@ -601,7 +603,7 @@
 <!----------------PORTFOLIO-ALLOCATION-STATEMENT-END---------------->
 
 </div>
-</div>
+
 <div class="row-4">
   <div id="form-row-1">
   <div  class="flex-1">
@@ -639,7 +641,7 @@
       <div><span class="link-text">Copy Documentation Link</span></div>
     </div>
 </div>
-
+</div>
   </div>
 
   <app-cancel-save (saveEvent)="nextReceiver()" [documentSend]="true"></app-cancel-save>

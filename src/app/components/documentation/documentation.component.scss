@@ -24,6 +24,7 @@
         }
     }
 }
+
 .documentation-container {
     display:flex;
     flex-direction: column;
@@ -31,14 +32,32 @@
         padding-bottom: 20px;
     }
 }
+.document-parent-container {
+    display: flex;
+    flex-direction: row;
+    .right-section-container {
+        display:none;
+    }
+    &.expanded {
+        flex-direction: column;    
+        .right-section-container {
+            display:initial;
+        }   
+    }
+}
 .document-container{
     display: flex;
+    flex: 1;
     width: 100%;
     justify-content: space-between;
     @media only screen and (max-width:767px){
         display: flex;
         flex-direction: column-reverse;
     }
+    
+}
+.row-4 {
+    flex: 1;
 }
 #form-row-1 {
    padding: 20px 60px;
@@ -691,6 +710,19 @@
         cursor: pointer; 
         color: #414042;
         text-align: left;
+        .view-extended {
+            width:0;
+        }
+        &.expanded {
+            width: 100%;
+            box-shadow: -7px 1px 4px 0 rgba(65, 64, 66, 0.15);
+            background-color:#fafbfc;
+            .view-extended {
+                background: #fafbfc url('../../../assets/view-gray.svg') no-repeat center center;
+                display: inline;
+                box-shadow: none;
+            }
+        }
         @media only screen and (max-width:767px){
             padding: 30px 10px;
         }
@@ -768,21 +800,23 @@
         content: url('../../../assets/component/documentation/move-page-light-gray.png');
     }
     .btn-group {
-        display: flex;
         flex: 1;
-        flex-direction: column;
         padding-right: 30px;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        color: #414042;
+        font-weight: 600;
         @media only screen and (max-width:767px){
             margin-top: 10px;
             padding-right: 10px;
         }
     }
     .btn-group div{
-        display: flex;
-        justify-content: space-between;
+        position:relative;
         padding: 0px 10px 0px 60px; 
-        align-items: center;
-        margin-bottom: 10px;
+        line-height: 65px;
+        height:65px;
+        margin-bottom: 5px;
         flex: 1;
         @media only screen and (max-width:767px){
             padding: 30px 10px; 

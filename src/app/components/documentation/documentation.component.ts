@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,16 +8,20 @@ import { Router } from '@angular/router';
 })
 
 export class DocumentationComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  documentIsOpen = false;
+  constructor(private router: Router, private renderer: Renderer) { }
 
   ngOnInit() {
   }
 
   nextReceiver() {
-  	this.router.navigateByUrl('/print-preview');
+    this.router.navigateByUrl('/print-preview');
   }
 
+  openDocument(event: any) {
+    this.renderer.setElementClass(event.target, 'expanded', true);
+    this.documentIsOpen = true;
+  }
 }
 
 
