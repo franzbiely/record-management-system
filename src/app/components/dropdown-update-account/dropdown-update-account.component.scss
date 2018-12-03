@@ -23,6 +23,16 @@
       justify-content: space-around;
       align-items: center;
       width: 100%;
+      .title-update{
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.9px;
+        color: #77787b;
+      }
     }
   }
   .item {

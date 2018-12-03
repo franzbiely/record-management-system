@@ -117,8 +117,8 @@ $secondaryfont : 'museo-sans', calibri;
 .row-1 {
     display: flex;
     align-items: center;
-    padding: 30px 40px;
-    background: #fdfdfd;
+    padding: 30px 60px;
+    background:  #fafbfc;
     @media only screen and (max-width:767px){
         padding: 0px;
     }
@@ -522,9 +522,12 @@ $secondaryfont : 'museo-sans', calibri;
     }   
  
         .portfolio-box{
-            padding: 20px 40px;
+            margin-top: 20px;
+            padding:0px 60px;
+            height: 788px;
             @media only screen and (max-width: 767px){
                 padding: 10px;
+                height:auto;
             }
         }
         .portfolio-box-container {
@@ -555,7 +558,8 @@ $secondaryfont : 'museo-sans', calibri;
         table { 
             border-radius: 10px;
             font-family: 'Montserrat', sans-serif;
-            width: 100%; 
+            table-layout: auto; 
+            width: 100%;
             border-collapse: collapse; 
            
             background-color: #ffffff;
@@ -572,26 +576,35 @@ $secondaryfont : 'museo-sans', calibri;
             text-transform: uppercase;
             font-size:10px;
             background: #fafbfc; 
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: 0.8px;
             color: #414042; 
-            font-weight: bold; 
-            padding: 1em;
+            height: 47px;
         }
           td {
+            font-family: $secondaryfont;
             font-size: 11px;
-            
-            padding: 10px;
-            font-weight: 500;
-            
-
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: #414042;
+            height: 47px;
           }
 
         p{margin: 0;}
 
-        tr {border-bottom: 1px solid rgba(64, 64, 65, 0.2);}
+        tr {border-bottom: 1px solid #e7e6e6}
 
         tr:last-child {
             border-bottom: none;
         }
+        
         
         .btn-account {  
             width: 233px;
@@ -766,8 +779,17 @@ $secondaryfont : 'museo-sans', calibri;
         letter-spacing: -1px;
         color: #ffffff;
     }
-
-    
+    td.bold{
+        font-weight:bold; 
+    }
+    td:nth-child(3){
+        padding-right: 160px;
+    }
+    th:nth-child(3){
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 160px;
+    }
     .text-normal {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
@@ -829,7 +851,6 @@ $secondaryfont : 'museo-sans', calibri;
     }
     .align-right {
         text-align: right;
-        float: right; 
     }
     .align-center {
         text-align: center;

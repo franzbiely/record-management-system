@@ -22,13 +22,10 @@
 .box-container{
     height: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 60px;
+    padding: 120px 40px 0px 120px;
     z-index: 70;
     .box-content{
-        width: auto;
+        width: 100%;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
         background-color: white;
@@ -110,12 +107,19 @@
                     flex-direction: row;
                     align-items: center;
                     .option{
+                        display: flex;
                         padding-left: 20px;
                         align-items: center;
                         .text-radio-button{
-                            font-family: 'montserrat', sans-serif;
-                            font-size: 10px;
-                            font-weight: 500;
+                            margin-left: 10px;
+                            font-family: "museo-sans";
+                            font-size: 12px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1;
+                            letter-spacing: normal;
+                            color: #414042;
                         }
                     }
                     .text-search-container{
@@ -156,10 +160,17 @@
                         flex:1;
                         border-collapse: collapse;
                         th{
-                            font-family:'montserrat', sans-serif;
+                            font-family: "Montserrat", sans-serif;
                             font-size: 10px;
+                            font-weight: 600;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1;
+                            letter-spacing: 0.8px;
+                            color: #414042;
+                            height: 47px;
                             text-transform: uppercase;
-                            padding: 20px 30px;
+
                         }
                         th .icon-dropdown{
                             padding-left: 6px;
@@ -168,10 +179,15 @@
                             content: url("/src/assets/component/household-list/arrow-gray.png");
                         }
                         td {
-                            padding: 10px 30px;
-                            font-size: 10px;
-                            font-family:'montserrat', sans-serif;
-                            color: rgba(65, 64, 66, 1)
+                            height: 47px;
+                            font-family: "museo-sans";
+                            font-size: 11px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1;
+                            letter-spacing: normal;
+                            color: #414042;
                         }
                         tr:first-child{
                             background-color:#f7f7f7;
@@ -194,7 +210,14 @@
                         tr{
                             border-bottom: 1px #ddd solid;
                         }
+                        th:nth-child(3), td:nth-child(3){
+                            padding-right: 60px;
+                        }
+                        th:nth-child(5), th:nth-child(6), th:nth-child(7), td:nth-child(5), td:nth-child(6), th:nth-child(7){
+                            text-align: left;
+                        }
                     }
+
                     .row-3{
                         .btn-container{
                             padding: 30px;
