@@ -1,8 +1,7 @@
 <app-risk-assessment-questionnaire *ngIf="sendDocumentModal" 
     (saveEvent)="to_sendDocs_status($event)"
     [title]="'Send Documents'" [sendLabel]="'Send Documents'"></app-risk-assessment-questionnaire>
-<!-- <app-popup-send-documents *ngIf="sendDocStatusModal" ></app-popup-send-documents> -->
-<app-popup-send-documents></app-popup-send-documents>
+<app-popup-send-documents *ngIf="sendDocStatusModal" ></app-popup-send-documents>
 
 <div class="rms-print-preview">
     <div class="rpp-header">
