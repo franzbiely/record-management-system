@@ -60,6 +60,13 @@ export class ModalStatusService {
   SET_sendDocument(value: boolean) {
     this.sendDocumentSource.next(value);
   }
+
+  private sendDocumentStatusSource = new BehaviorSubject<boolean>(false);
+  public sendDocumentStatus = this.sendDocumentStatusSource.asObservable();
+  SET_sendDocumentStatus(value: boolean) {
+    this.sendDocumentStatusSource.next(value);
+  }
+
   constructor() { }
   
 }

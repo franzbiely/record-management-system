@@ -1,15 +1,6 @@
+<span class="screen-overlay"></span>
 <section class="popup popup-send-documents">
-	<div class="container step-1" *ngIf="step === 1">
-		<h3 class="title">Send Documents</h3>
-		<app-dropdown></app-dropdown>
-		<input type="text" placeholder="Subject" />
-		<app-dropdown></app-dropdown>
-		<textarea placeholder="Message"></textarea>
-		<footer>
-			<button (click)="next()">Send Documents</button>
-		</footer>
-	</div>
-	<div class="container step-2" *ngIf="step === 2">
+	<div class="container">
 		<h6>STATUS:</h6>
 		<h5>Documentation Has Been Sent To:</h5>
 		<p>
@@ -20,9 +11,9 @@
 
 		<h4>Where would you like to go next?</h4>
 		<footer>
-			<button><i class="material-icons icon-action">home</i> Home</button>
-			<button><i class="material-icons icon-action">list</i> List View</button>
-			<button><i class="material-icons icon-action">group</i> Household</button>
+			<button (click)="toDash()"><i class="material-icons icon-action">home</i> Home</button>
+			<button (click)="toList()"><i class="material-icons icon-action">list</i> List View</button>
+			<button (click)="toHhold()"><i class="material-icons icon-action">group</i> Household</button>
 		</footer>
 	</div>
 </section>

@@ -13,9 +13,11 @@ export class PrintPreviewComponent implements OnInit {
     constructor(private modalStatus: ModalStatusService) { }
     sendDocuments = false;
     sendDocumentModal : boolean = false;
+    sendDocStatusModal : boolean = false;
 
     ngOnInit() {
         this.modalStatus.sendDocument.subscribe(value => this.sendDocumentModal = value);
+        this.modalStatus.sendDocumentStatus.subscribe(value => this.sendDocStatusModal = value);
     }
 
     ngAfterViewInit() {
@@ -98,5 +100,10 @@ export class PrintPreviewComponent implements OnInit {
 
     save_send() {
         this.modalStatus.SET_sendDocument(true);
+    }
+
+    to_sendDocs_status() {
+        this.modalStatus.SET_sendDocumentStatus(true);
+        this.modalStatus.SET_sendDocument(false);
     }
 }

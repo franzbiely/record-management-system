@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-popup-send-documents',
@@ -7,12 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopupSendDocumentsComponent implements OnInit {
 	public step:number = 1;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   next() {
   	this.step++;
+  }
+  toDash() {
+    this.router.navigateByUrl('/dashboard');
+  }
+  toList() {
+    this.router.navigateByUrl('/list-view');
+  }
+  toHhold() {
+    this.router.navigateByUrl('/create-household');
   }
 }

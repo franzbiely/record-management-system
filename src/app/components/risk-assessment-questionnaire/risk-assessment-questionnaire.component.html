@@ -4,7 +4,7 @@
       <div class="header-close">
         <a><i class="material-icons">close</i></a>
       </div>
-      <h3>Risk Assessment Questionnaire</h3>
+      <h3>{{title}}</h3>
     </div>
     <div class="modal-body">
       <div class="input-field">
@@ -65,7 +65,7 @@
       </div>
     </div>
     <div class="modal-footer">
-      <button>SEND QUESTIONNAIRE</button>
+      <button (click)="saveFunc()">{{sendLabel}}</button>
     </div>
   </div>
 </div>

@@ -390,3 +390,17 @@
         }
     }
 }
+
+app-risk-assessment-questionnaire, app-popup-send-documents {
+    position: absolute;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+::ng-deep .popup-send-documents {
+    z-index: 2;
+    position: relative;
+}

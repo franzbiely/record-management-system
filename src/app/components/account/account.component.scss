@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $primaryfont: "montserrat", sans-serif;
-$secondaryfont: "museo-sans", georgia;
+$secondaryfont: "museo-sans", sans-serif;
 .tab-title-mobile {
     display:none;
     @media only screen and (max-width: 767px){
