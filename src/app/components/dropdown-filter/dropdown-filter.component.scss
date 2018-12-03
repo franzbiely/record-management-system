@@ -4,7 +4,7 @@ $secondaryfont: "museo-sans", calibri;
 .dropdown-filter {
   margin-left: 20px;
   position: relative;
-  background: url(/src/assets/component/portfolio/filter-gray.png) no-repeat scroll 0px 0px;
+  background: url(/src/assets/component/portfolio/filter-gray.png) no-repeat scroll 20px 15px;
   background-color: white;
   border-radius: 6px;
   z-index: 3;
@@ -16,6 +16,7 @@ $secondaryfont: "museo-sans", calibri;
     justify-content: center;
     align-items: center;
     span {
+      margin-left: 15px;
       font-family: $primaryfont;
       font-size: 12px;
       font-weight: 700;

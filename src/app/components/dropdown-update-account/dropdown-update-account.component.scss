@@ -1,7 +1,6 @@
 .dropdown-update-account {
   border-radius: 6px;
-  box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-  border: solid 1px #ffffff;
+  border: solid 1px #c5c5c5;
   background-color: #ffffff;
   font-size: 12px;
   font-style: normal;
@@ -36,4 +35,15 @@
     border-top: none;
   } 
   &[open] {}
+  .icon-expand{
+    width: 10px;
+    height: 7px;
+    content: url("/src/assets/component/accounts/arrow-gray.png");
+  }
+  .icon-renew{
+    width: 20px;
+    height: 20px;
+    content: url("/src/assets/component/accounts/update-gray.png");
+  }
+
 } 
