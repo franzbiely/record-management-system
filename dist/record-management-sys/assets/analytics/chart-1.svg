@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="305px" viewBox="0 0 414 305" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Opportunity AUM</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,0 L394,0 C397.313708,-6.08718376e-16 400,2.6862915 400,6 L400,285 C400,288.313708 397.313708,291 394,291 L6,291 C2.6862915,291 4.05812251e-16,288.313708 0,285 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="path-1"></path>
+        <filter x="-3.2%" y="-2.7%" width="106.5%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M0.5,0 L63.5,0 C72.336556,-1.623249e-15 79.5,7.163444 79.5,16 L79.5,16 C79.5,24.836556 72.336556,32 63.5,32 L0.5,32 L0.5,0 Z" id="path-4"></path>
+        <filter x="-12.0%" y="-26.6%" width="124.1%" height="159.4%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.18 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PopUps---View-&amp;-Add-Graphs" transform="translate(-113.000000, -554.000000)">
+            <g id="Opportunity-AUM" transform="translate(120.000000, 556.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Title-+-Subhead-+-Menu-+-Line" mask="url(#mask-2)">
+                    <polygon id="Rectangle-3" fill="#1598CB" points="0 0 400 0 400 56 0 56"></polygon>
+                    <g transform="translate(20.000000, 10.000000)" fill="#FFFFFF" id="Group">
+                        <g>
+                            <text id="Opportunity-AUM" font-family="Montserrat-SemiBold, Montserrat" font-size="20" font-weight="500" line-spacing="20" letter-spacing="0.2">
+                                <tspan x="0" y="19">Opportunity AUM</tspan>
+                            </text>
+                            <text id="Forecast-Overtime" font-family="Helvetica" font-size="14" font-weight="normal" line-spacing="14" letter-spacing="-0.200000003">
+                                <tspan x="0" y="36">Forecast Overtim</tspan>
+                                <tspan x="104.151562" y="36">e</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-23" mask="url(#mask-2)">
+                    <g transform="translate(20.000000, 76.000000)">
+                        <text id="$27,600,000" font-family="Helvetica" font-size="36" font-weight="normal" line-spacing="36" letter-spacing="-1">
+                            <tspan x="0" y="35" fill="#414042">$27,600,00</tspan>
+                            <tspan x="170.175781" y="35" fill="#414042">0</tspan>
+                        </text>
+                        <g id="Group-15" stroke-width="1" fill-rule="evenodd" transform="translate(0.000000, 60.000000)">
+                            <text id="Implemented:-100%" font-family="Helvetica" font-size="10" font-weight="normal" letter-spacing="1" fill="#67C072">
+                                <tspan x="0" y="134">IMPLEMENTED: 100%</tspan>
+                            </text>
+                            <text id="IN-Progress:-90%" font-family="Helvetica" font-size="10" font-weight="normal" letter-spacing="1" fill="#1598CB">
+                                <tspan x="254" y="134">IN PROGRESS: 90%</tspan>
+                            </text>
+                            <path d="M147,58 L354,58 C357.313708,58 360,60.6862915 360,64 L360,115 C360,118.313708 357.313708,121 354,121 L147,121 L147,58 Z" id="Rectangle" fill="#1598CB"></path>
+                            <text id="$7M" font-family="Montserrat-Regular, Montserrat" font-size="10" font-weight="normal" line-spacing="20" fill="#67C072">
+                                <tspan x="1" y="46">$7M</tspan>
+                            </text>
+                            <text id="$20M" font-family="Montserrat-Regular, Montserrat" font-size="10" font-weight="normal" line-spacing="20" fill="#1598CB">
+                                <tspan x="147" y="46">$20M</tspan>
+                            </text>
+                            <path d="M6,58 L145,58 L145,121 L6,121 C2.6862915,121 4.05812251e-16,118.313708 0,115 L0,64 C-4.05812251e-16,60.6862915 2.6862915,58 6,58 Z" id="Rectangle" fill="#67C072"></path>
+                            <g id="Group-2" transform="translate(127.000000, 0.000000)">
+                                <g id="Group-5">
+                                    <g id="Rectangle-2">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                    </g>
+                                    <text id="Goal:-$6,200,000" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="10" fill="#414042">
+                                        <tspan x="16" y="15">Goal:</tspan>
+                                        <tspan x="16" y="25">$6,200,000</tspan>
+                                    </text>
+                                </g>
+                                <path d="M1,0.5 L1,120.5" id="Line-3" stroke="#414042" stroke-linecap="round"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

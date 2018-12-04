@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="484px" height="186px" viewBox="0 0 484 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Pattern/Top_Left_Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="220" height="483"></rect>
+        <polyline id="path-3" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5-Header-Color-Options" transform="translate(-20.000000, -34.000000)">
+            <g id="Pattern/Top_Left_Desktop" transform="translate(262.000000, 144.000000) scale(1, -1) rotate(90.000000) translate(-262.000000, -144.000000) translate(152.000000, -97.500000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Stroke-1-+-Clip-5-+-Stroke-4-+-Clip-8-+-Stroke-7-+-Clip-11-+-Stroke-10-+-Clip-14-+-Stroke-13-+-Clip-17-+-Stroke-16-+-Clip-20-+-Stroke-19-+-Clip-23-+-Stroke-22-+-Clip-26-+-Stroke-25-+-Clip-29-+-Stroke-28-+-Clip-32-+-Stroke-31-+-Clip-35-+-Stroke-34-+-Clip-38-+-Stroke-37-+-Clip-41-+-Stroke-40-+-Clip-44-+-Stroke-43-+-Clip-47-+-Stroke-46-+-Clip-50-+-Stroke-49-+-Clip-53-+-Stroke-52-+-Clip-56-+-Stroke-55-+-Clip-59-+-Stroke-58-+-Clip-62-+-Stroke-61-+-Clip-65-+-Stroke-64-+-Clip-68-+-Stroke-67-+-Clip-71-+-Stroke-70-+-Clip-74-+-Stroke-73-+-Clip-77-+-Stroke-76-+-Clip-80-+-Stroke-79-+-Clip-83-+-Stroke-82-+-Clip-86-+-Stroke-85-+-Clip-89-+-Stroke-88-+-Clip-92-+-Stroke-91-+-Clip-95-+-Stroke-94-+-Clip-98-+-Stroke-97-+-Clip-101-+-Stroke-100-+-Clip-104-+-Stroke-103-+-Clip-107-+-Stroke-106-+-Clip-110-+-Stroke-109-+-Clip-113-+-Stroke-112-+-Clip-116-+-Stroke-115-+-Clip-119-+-Stroke-118-+-Clip-122-+-Stroke-121-+-Clip-125-+-Stroke-124-+-Clip-128-+-Stroke-127-+-Clip-131-+-Stroke-130-+-Clip-134-+-Stroke-133-+-Clip-137-+-Stroke-136-+-Clip-140-+-Stroke-139-+-Clip-143-+-Stroke-142-+-Clip-146-+-Stroke-145-+-Clip-149-+-Stroke-148-+-Clip-152-+-Stroke-151-+-Clip-155-+-Stroke-154-+-Clip-158-+-Stroke-157-+-Clip-161-+-Stroke-160-+-Clip-164-+-Stroke-163-+-Clip-167-+-Stroke-166-+-Clip-170-+-Stroke-169-+-Clip-173-+-Stroke-172-+-Clip-176-+-Stroke-175-+-Clip-179-+-Stroke-178-+-Clip-182-+-Stroke-181-+-Clip-185-+-Stroke-184-+-Clip-188-+-Stroke-187-+-Clip-191-+-Stroke-190-+-Clip-194-+-Stroke-193-+-Clip-197-+-Stroke-196-+-Clip-200-+-Stroke-199-+-Clip-203-+-Stroke-202-+-Clip-206-+-Stroke-205-+-Clip-209-+-Stroke-208-+-Clip-212-+-Stroke-211-+-Clip-215-+-Stroke-214-+-Clip-218-+-Stroke-217-+-Clip-221-+-Stroke-220-+-Clip-224-+-Stroke-223-Mask" mask="url(#mask-2)">
+                    <g transform="translate(-165.000000, 0.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Mask" stroke="none" fill="none"></g>
+                        <polyline id="Clip-5" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-8" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-11" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-14" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-17" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-20" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-23" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-26" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-29" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-32" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-35" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-38" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-525.099171,597.682593 L201.765838,-128.97989" id="Stroke-37" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-41" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-508.932505,597.682593 L217.932505,-128.97989" id="Stroke-40" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-44" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-492.765838,597.682593 L234.099171,-128.97989" id="Stroke-43" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-47" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-476.599171,597.682593 L250.265838,-128.97989" id="Stroke-46" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-50" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-460.432505,597.682593 L266.432505,-128.97989" id="Stroke-49" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-53" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-444.265838,597.682593 L282.599171,-128.97989" id="Stroke-52" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-56" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-428.099171,597.682593 L298.765838,-128.97989" id="Stroke-55" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-59" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-411.932505,597.682593 L314.932505,-128.97989" id="Stroke-58" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-62" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-395.765838,597.682593 L331.099171,-128.97989" id="Stroke-61" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-65" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-379.599171,597.682593 L347.265838,-128.97989" id="Stroke-64" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-68" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-363.432505,597.682593 L363.432505,-128.97989" id="Stroke-67" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-71" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-347.265838,597.682593 L379.599171,-128.97989" id="Stroke-70" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-74" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-331.099171,597.682593 L395.765838,-128.97989" id="Stroke-73" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-77" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-314.932505,597.682593 L411.932505,-128.97989" id="Stroke-76" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-80" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-298.765838,597.682593 L428.099171,-128.97989" id="Stroke-79" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-83" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-282.599171,597.682593 L444.265838,-128.97989" id="Stroke-82" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-86" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-266.432505,597.682593 L460.432505,-128.97989" id="Stroke-85" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-89" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-250.265838,597.682593 L476.599171,-128.97989" id="Stroke-88" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-92" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-234.099171,597.682593 L492.765838,-128.97989" id="Stroke-91" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-95" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-217.932505,597.682593 L508.932505,-128.97989" id="Stroke-94" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-98" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-201.765838,597.682593 L525.099171,-128.97989" id="Stroke-97" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-101" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-185.599171,597.682593 L541.265838,-128.97989" id="Stroke-100" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-104" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-169.432505,597.682593 L557.432505,-128.97989" id="Stroke-103" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-107" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-153.265838,597.682593 L573.599171,-128.97989" id="Stroke-106" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-110" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-137.099171,597.682593 L589.765838,-128.97989" id="Stroke-109" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-113" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-120.932505,597.682593 L605.932505,-128.97989" id="Stroke-112" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-116" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-104.765838,597.682593 L622.099171,-128.97989" id="Stroke-115" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-119" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-88.5991713,597.682593 L638.265838,-128.97989" id="Stroke-118" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-122" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-72.4325046,597.682593 L654.432505,-128.97989" id="Stroke-121" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-125" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-56.265838,597.682593 L670.599171,-128.97989" id="Stroke-124" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-128" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-40.0991713,597.682593 L686.765838,-128.97989" id="Stroke-127" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-131" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-23.9325046,597.682593 L702.932505,-128.97989" id="Stroke-130" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-134" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M-7.76583796,597.682593 L719.099171,-128.97989" id="Stroke-133" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-137" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M8.4008287,597.682593 L735.265838,-128.97989" id="Stroke-136" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-140" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M24.5674954,597.682593 L751.432505,-128.97989" id="Stroke-139" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-143" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M40.734162,597.682593 L767.599171,-128.97989" id="Stroke-142" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-146" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M56.9008287,597.682593 L783.765838,-128.97989" id="Stroke-145" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-149" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M73.0674954,597.682593 L799.932505,-128.97989" id="Stroke-148" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-152" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M89.234162,597.682593 L816.099171,-128.97989" id="Stroke-151" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-155" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M105.400829,597.682593 L832.265838,-128.97989" id="Stroke-154" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-158" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M121.567495,597.682593 L848.432505,-128.97989" id="Stroke-157" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-161" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M137.734162,597.682593 L864.599171,-128.97989" id="Stroke-160" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-164" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M153.900829,597.682593 L880.765838,-128.97989" id="Stroke-163" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-167" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M170.067495,597.682593 L896.932505,-128.97989" id="Stroke-166" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-170" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M186.234162,597.682593 L913.099171,-128.97989" id="Stroke-169" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-173" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M202.400829,597.682593 L929.265838,-128.97989" id="Stroke-172" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-176" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M218.567495,597.682593 L945.432505,-128.97989" id="Stroke-175" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-179" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M234.734162,597.682593 L961.599171,-128.97989" id="Stroke-178" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-182" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M250.900829,597.682593 L977.765838,-128.97989" id="Stroke-181" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-185" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M267.067495,597.682593 L993.932505,-128.97989" id="Stroke-184" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-188" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M283.234162,597.682593 L1010.09917,-128.97989" id="Stroke-187" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-191" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M299.400829,597.682593 L1026.26584,-128.97989" id="Stroke-190" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-194" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M315.567495,597.682593 L1042.4325,-128.97989" id="Stroke-193" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-197" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M331.734162,597.682593 L1058.59917,-128.97989" id="Stroke-196" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-200" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M347.900829,597.682593 L1074.76584,-128.97989" id="Stroke-199" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-203" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M364.067495,597.682593 L1090.9325,-128.97989" id="Stroke-202" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-206" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <path d="M380.234162,597.682593 L1107.09917,-128.97989" id="Stroke-205" stroke="#E7E6E6" stroke-width="1" fill="none" mask="url(#mask-4)"></path>
+                        <polyline id="Clip-209" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-212" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-215" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-218" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-221" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                        <polyline id="Clip-224" stroke="none" fill="none" mask="url(#mask-4)" points="364.72 0 485 0 485 598 0 598 0 468.750291 364.786463 468.702703"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

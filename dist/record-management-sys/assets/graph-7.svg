@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="217px" viewBox="0 0 356 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Proposal-Analytics" transform="translate(-24.000000, -447.000000)">
+            <g id="Proposals-By-Days-Old" transform="translate(0.000000, 380.000000)">
+                <g id="Group-3" transform="translate(20.000000, 61.000000)">
+                    <g id="Graph-lines" transform="translate(15.000000, 42.000000)" fill="#F0F0F0">
+                        <rect id="Line-segment" x="0" y="0" width="345" height="1"></rect>
+                        <rect id="Line-segment" x="0" y="53" width="345" height="1"></rect>
+                        <rect id="Line-segment" x="0" y="106" width="345" height="1"></rect>
+                        <rect id="Line-segment" x="0" y="159" width="345" height="1"></rect>
+                    </g>
+                    <g id="Group-4" transform="translate(17.100000, 131.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(6.000000, 207.000000)" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal">
+                        <g id="Group-8">
+                            <text id="0">
+                                <tspan x="7.99731445" y="9">0</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(28.200000, 111.000000)">
+                        <g id="Group-8">
+                            <text id="2" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="7.99731445" y="105">2</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 90 9 90"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(39.300000, 92.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 109 9 109"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(50.400000, 131.000000)">
+                        <g id="Group-8">
+                            <text id="4" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="7.99731445" y="85">4</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(61.500000, 155.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 46 9 46"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(72.600000, 42.000000)">
+                        <g id="Group-8">
+                            <text id="6" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="7.99731445" y="174">6</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 159 9 159"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(83.700000, 131.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(94.800000, 111.000000)">
+                        <g id="Group-8">
+                            <text id="8" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="7.99731445" y="105">8</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 90 9 90"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(105.900000, 92.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 109 9 109"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(117.000000, 131.000000)">
+                        <g id="Group-8">
+                            <text id="10" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="85">10</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(128.100000, 155.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 46 9 46"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(139.200000, 42.000000)">
+                        <g id="Group-8">
+                            <text id="12" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="174">12</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 159 9 159"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(150.300000, 131.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(161.400000, 59.000000)">
+                        <g id="Group-8">
+                            <text id="14" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="157">14</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 142 9 142"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(172.500000, 92.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 109 9 109"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(183.600000, 131.000000)">
+                        <g id="Group-8">
+                            <text id="16" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="85">16</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(194.700000, 128.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 73 9 73"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(205.800000, 13.000000)">
+                        <g id="Group-8">
+                            <text id="18" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="203">18</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 188 9 188"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(216.900000, 131.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(228.000000, 111.000000)">
+                        <g id="Group-8">
+                            <text id="20" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="105">20</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 90 9 90"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(239.100000, 72.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 129 9 129"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(250.200000, 131.000000)">
+                        <g id="Group-8">
+                            <text id="22" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="85">22</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(261.300000, 155.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 46 9 46"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(272.400000, 42.000000)">
+                        <g id="Group-8">
+                            <text id="24" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="174">24</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 159 9 159"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(283.500000, 72.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 129 9 129"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(294.600000, 131.000000)">
+                        <g id="Group-8">
+                            <text id="26" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="85">26</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 70 9 70"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(305.700000, 155.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 46 9 46"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(316.800000, 81.000000)">
+                        <g id="Group-8">
+                            <text id="28" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="135">28</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 120 9 120"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(327.900000, 155.000000)" fill="#465E7B">
+                        <g id="Group-8">
+                            <polygon id="Graph-segment" points="9 0 12 0 12 46 9 46"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(339.000000, 128.000000)">
+                        <g id="Group-8">
+                            <text id="30" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                <tspan x="5.49462891" y="88">30</tspan>
+                            </text>
+                            <polygon id="Graph-segment" fill="#465E7B" points="9 0 12 0 12 73 9 73"></polygon>
+                        </g>
+                    </g>
+                    <g id="Graph-percentage" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="19">
+                        <text id="10-8-6-4-2-0">
+                            <tspan x="4.99462891" y="9.52421652">1</tspan>
+                            <tspan x="4.99462891" y="28.5242165">0</tspan>
+                            <tspan x="10" y="47.5242165"></tspan>
+                            <tspan x="4.99462891" y="66.5242165">8</tspan>
+                            <tspan x="10" y="85.5242165"></tspan>
+                            <tspan x="4.99462891" y="104.524217">6</tspan>
+                            <tspan x="10" y="123.524217"></tspan>
+                            <tspan x="4.99462891" y="142.524217">4</tspan>
+                            <tspan x="10" y="161.524217"></tspan>
+                            <tspan x="4.99462891" y="180.524217">2</tspan>
+                            <tspan x="10" y="199.524217"></tspan>
+                            <tspan x="4.99462891" y="218.524217">0</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

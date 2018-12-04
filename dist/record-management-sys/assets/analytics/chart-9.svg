@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="305px" viewBox="0 0 414 305" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Count of Proposals By Status</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,0 L394,0 C397.313708,-6.08718376e-16 400,2.6862915 400,6 L400,285 C400,288.313708 397.313708,291 394,291 L6,291 C2.6862915,291 4.05812251e-16,288.313708 0,285 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="path-1"></path>
+        <filter x="-3.2%" y="-2.7%" width="106.5%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Proposal-Analytics" transform="translate(-873.000000, -378.000000)">
+            <g id="Count-of-Proposals-By-Status" transform="translate(880.000000, 380.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-6" mask="url(#mask-2)">
+                    <g transform="translate(20.000000, 74.000000)">
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(98.000000, 6.000000)">
+                            <polygon id="Graph-segment" fill="#FECC92" points="0 0 145 0 145 25 0 25"></polygon>
+                            <text id="8" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="150" y="16">8</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(98.000000, 154.000000)">
+                            <polygon id="Graph-segment" fill="#FECC92" points="0 0 145 0 145 25 0 25"></polygon>
+                            <text id="8" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="150" y="16">8</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(98.000000, 117.000000)">
+                            <polygon id="Graph-segment" fill="#FECC92" points="0 0 103 0 103 25 0 25"></polygon>
+                            <text id="6" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="108" y="16">6</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(98.000000, 80.000000)">
+                            <polygon id="Graph-segment" fill="#FECC92" points="0 0 170 0 170 25 0 25"></polygon>
+                            <text id="10" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="175" y="16">10</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(98.000000, 43.000000)">
+                            <polygon id="Graph-segment" fill="#FECC92" points="0 0 158 0 158 25 0 25"></polygon>
+                            <text id="9" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#F79961">
+                                <tspan x="163" y="16">9</tspan>
+                            </text>
+                        </g>
+                        <g id="Graph-percentage" stroke="none" stroke-width="1" fill-rule="evenodd" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="37">
+                            <text id="Waiting-on-Paperwork" fill="#77787B">
+                                <tspan x="5.28955078" y="9">Waiting on Paperwork</tspan>
+                                <tspan x="4.45019531" y="46">Implemented/Invested</tspan>
+                                <tspan x="14.4521484" y="83">Paperwork Pending</tspan>
+                                <tspan x="15.7836914" y="120">Waiting on Funding</tspan>
+                                <tspan x="19.9716797" y="157">Active/In Progress</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-5" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(98.000000, 190.000000)" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="9">
+                            <text id="0" fill="#77787B">
+                                <tspan x="0" y="9">0</tspan>
+                            </text>
+                            <text id="10" fill="#77787B">
+                                <tspan x="165.333333" y="9">1</tspan>
+                                <tspan x="165.333333" y="18">0</tspan>
+                            </text>
+                            <text id="5" fill="#77787B">
+                                <tspan x="82.6666667" y="9">5</tspan>
+                            </text>
+                            <text id="15" fill="#77787B">
+                                <tspan x="252" y="9">1</tspan>
+                                <tspan x="252" y="18">5</tspan>
+                            </text>
+                        </g>
+                        <polyline id="Path-4" stroke="#E7E6E6" stroke-width="0.5" points="98 0 98 185 360 185"></polyline>
+                    </g>
+                </g>
+                <g id="Title-+-Subhead-+-Menu-+-Line" mask="url(#mask-2)">
+                    <polygon id="Rectangle-3" fill="#1598CB" points="0 0 400 0 400 56 0 56"></polygon>
+                    <g transform="translate(20.000000, 10.000000)" fill="#FFFFFF" id="Group">
+                        <g>
+                            <text id="Count-of-Proposals" font-family="Montserrat-SemiBold, Montserrat" font-size="20" font-weight="500" line-spacing="20" letter-spacing="0.2">
+                                <tspan x="0" y="19">Count of Proposals</tspan>
+                            </text>
+                            <text id="By-Status" font-family="Helvetica" font-size="14" font-weight="normal" line-spacing="14" letter-spacing="-0.200000003">
+                                <tspan x="0" y="36">By Status</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

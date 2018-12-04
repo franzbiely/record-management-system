@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="268" height="74" viewBox="0 0 268 74">
+    <defs>
+        <rect id="b" width="254" height="60" rx="30"/>
+        <filter id="a" width="108.3%" height="135%" x="-4.1%" y="-14.2%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+            <feOffset dy="2" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g stroke-dasharray="4" stroke-linecap="round" opacity=".8" transform="translate(7 5)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use stroke="#C5C5C5" xlink:href="#b"/>
+        </g>
+        <text fill="#414042" font-family="Montserrat-SemiBold, Montserrat" font-size="18" font-weight="500" letter-spacing=".2" transform="translate(7 5)">
+            <tspan x="68.5" y="39">Upload Logo</tspan>
+        </text>
+    </g>
+</svg>

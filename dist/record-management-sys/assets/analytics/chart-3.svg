@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="305px" viewBox="0 0 414 305" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Implemented Proposals</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,-8.02025113e-13 L394,-8.02025113e-13 C397.313708,-8.02633831e-13 400,2.6862915 400,6 L400,285 C400,288.313708 397.313708,291 394,291 L6,291 C2.6862915,291 4.05812251e-16,288.313708 0,285 L0,6 C-4.05812251e-16,2.6862915 2.6862915,-8.01416395e-13 6,-8.02025113e-13 Z" id="path-1"></path>
+        <filter x="-3.2%" y="-2.7%" width="106.5%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="0" width="112" height="32" rx="16"></rect>
+        <filter x="-8.5%" y="-26.6%" width="117.0%" height="159.4%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PopUps---View-&amp;-Add-Graphs" transform="translate(-993.000000, -554.000000)">
+            <g id="Implemented-Proposals" transform="translate(1000.000000, 556.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Title-+-Subhead-+-Menu-+-Line" mask="url(#mask-2)">
+                    <polygon id="Rectangle-3" fill="#1598CB" points="0 0 400 0 400 56 0 56"></polygon>
+                    <g transform="translate(20.000000, 10.000000)" fill="#FFFFFF" id="Group">
+                        <g>
+                            <text id="Implemented-Proposal" font-family="Montserrat-SemiBold, Montserrat" font-size="20" font-weight="500" line-spacing="20" letter-spacing="0.2">
+                                <tspan x="0" y="19">Implemented Proposals</tspan>
+                            </text>
+                            <text id="Overtime" font-family="Helvetica" font-size="14" font-weight="normal" line-spacing="14" letter-spacing="-0.200000003">
+                                <tspan x="0" y="36">Overtim</tspan>
+                                <tspan x="47.6" y="36">e</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-17" mask="url(#mask-2)">
+                    <g transform="translate(20.000000, 100.000000)">
+                        <g id="Group-3" transform="translate(249.500000, 69.500000) rotate(-90.000000) translate(-249.500000, -69.500000) translate(180.000000, -41.000000)">
+                            <g id="Graph-regions" transform="translate(1.000000, 13.200000)" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal">
+                                <text id="2013">
+                                    <tspan x="5.98388672" y="9">201</tspan>
+                                    <tspan x="15.9946289" y="20">3</tspan>
+                                </text>
+                                <text id="2014">
+                                    <tspan x="0.978515625" y="42">2014</tspan>
+                                </text>
+                            </g>
+                            <g id="Graph-regions" transform="translate(1.000000, 210.500000)" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal">
+                                <text id="2018">
+                                    <tspan x="0.978515625" y="9">2018</tspan>
+                                </text>
+                            </g>
+                            <g id="Graph-lines" transform="translate(70.600000, 15.900000)" stroke="#E7E6E6" stroke-linecap="square" stroke-width="0.5">
+                                <path d="M0.9,0 L0.9,202.5" id="Line-segment"></path>
+                                <path d="M61.2,0 L61.2,202.5" id="Line-segment"></path>
+                                <path d="M31.5,0 L31.5,202.5" id="Line-segment"></path>
+                            </g>
+                            <g id="Graph-values" transform="translate(37.100000, 0.800000)" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal">
+                                <text id="0" transform="translate(6.000000, 6.000000) rotate(91.000000) translate(-6.000000, -6.000000) ">
+                                    <tspan x="3.49731445" y="10">0</tspan>
+                                </text>
+                                <text id="5" transform="translate(34.000000, 6.000000) rotate(91.000000) translate(-34.000000, -6.000000) ">
+                                    <tspan x="31.4973145" y="10">5</tspan>
+                                </text>
+                                <text id="10" transform="translate(65.000000, 6.000000) rotate(91.000000) translate(-65.000000, -6.000000) ">
+                                    <tspan x="62.4973145" y="10">1</tspan>
+                                    <tspan x="62.4973145" y="21">0</tspan>
+                                </text>
+                                <text id="15" transform="translate(95.000000, 6.000000) rotate(91.000000) translate(-95.000000, -6.000000) ">
+                                    <tspan x="92.4973145" y="10">1</tspan>
+                                    <tspan x="92.4973145" y="21">5</tspan>
+                                </text>
+                            </g>
+                            <g id="Graph-separators" transform="translate(0.800000, 17.000000)">
+                                <path d="M32.25,198.25 L32.25,198.65 L40.75,198.65 L40.75,198.25 L32.25,198.25 Z" id="Sep" stroke="#E7E6E6" stroke-width="0.5"></path>
+                                <path d="M32.25,35 L32.25,35.4 L40.75,35.4 L40.75,35 L32.25,35 Z" id="Sep" stroke="#E7E6E6" stroke-width="0.5"></path>
+                                <text id="2015" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                    <tspan x="5.98388672" y="79.2">201</tspan>
+                                    <tspan x="15.9946289" y="90.2">5</tspan>
+                                </text>
+                                <path d="M32.25,76 L32.25,76.4 L40.75,76.4 L40.75,76 L32.25,76 Z" id="Sep" stroke="#E7E6E6" stroke-width="0.5"></path>
+                                <text id="2016" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                    <tspan x="0.978515625" y="120.2">2016</tspan>
+                                </text>
+                                <path d="M32.25,117 L32.25,117.4 L40.75,117.4 L40.75,117 L32.25,117 Z" id="Sep" stroke="#E7E6E6" stroke-width="0.5"></path>
+                                <text id="2017" font-family="Helvetica" font-size="9" font-weight="normal" fill="#77787B">
+                                    <tspan x="5.98388672" y="161.2">201</tspan>
+                                    <tspan x="15.9946289" y="172.2">7</tspan>
+                                </text>
+                                <path d="M32.25,158 L32.25,158.4 L40.75,158.4 L40.75,158 L32.25,158 Z" id="Sep" stroke="#E7E6E6" stroke-width="0.5"></path>
+                                <path d="M32.25,0.7 L32.25,1.1 L40.75,1.1 L40.75,0.7 L32.25,0.7 Z" id="Sep" stroke="#E7E6E6" stroke-width="0.5"></path>
+                            </g>
+                            <g id="Graph" transform="translate(41.800000, 15.000000)" fill="#465E7B">
+                                <g id="Group-9">
+                                    <polygon id="Graph-segment" points="0 0.5 6 0.5 6 5.5 0 5.5"></polygon>
+                                    <polygon id="Graph-segment" points="0 7.32758621 1 7.32758621 1 12.3275862 0 12.3275862"></polygon>
+                                    <polygon id="Graph-segment" points="0 14.1551724 30 14.1551724 30 19.1551724 0 19.1551724"></polygon>
+                                    <polygon id="Graph-segment" points="0 20.9827586 36 20.9827586 36 25.9827586 0 25.9827586"></polygon>
+                                    <rect id="Graph-segment" x="0" y="27.8103448" width="6" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 34.637931 12 34.637931 12 39.637931 0 39.637931"></polygon>
+                                    <rect id="Graph-segment" x="0" y="41.4655172" width="6" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 48.2931034 1 48.2931034 1 53.2931034 0 53.2931034"></polygon>
+                                    <rect id="Graph-segment" x="0" y="55.1206897" width="42" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 61.9482759 12 61.9482759 12 66.9482759 0 66.9482759"></polygon>
+                                    <rect id="Graph-segment" x="0" y="68.7758621" width="6" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 75.6034483 1 75.6034483 1 80.6034483 0 80.6034483"></polygon>
+                                    <rect id="Graph-segment" x="0" y="82.4310345" width="18" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 89.2586207 6 89.2586207 6 94.2586207 0 94.2586207"></polygon>
+                                    <rect id="Graph-segment" x="0" y="96.0862069" width="12" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 102.913793 1 102.913793 1 107.913793 0 107.913793"></polygon>
+                                    <rect id="Graph-segment" x="0" y="109.741379" width="18" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 116.568966 24 116.568966 24 121.568966 0 121.568966"></polygon>
+                                    <rect id="Graph-segment" x="0" y="123.396552" width="6" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 130.224138 1 130.224138 1 135.224138 0 135.224138"></polygon>
+                                    <rect id="Graph-segment" x="0" y="137.051724" width="30" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 143.87931 6 143.87931 6 148.87931 0 148.87931"></polygon>
+                                    <rect id="Graph-segment" x="0" y="150.706897" width="36" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 157.534483 1 157.534483 1 162.534483 0 162.534483"></polygon>
+                                    <rect id="Graph-segment" x="0" y="164.362069" width="12" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 171.189655 6 171.189655 6 176.189655 0 176.189655"></polygon>
+                                    <rect id="Graph-segment" x="0" y="178.017241" width="18" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 184.844828 1 184.844828 1 189.844828 0 189.844828"></polygon>
+                                    <rect id="Graph-segment" x="0" y="191.672414" width="6" height="5"></rect>
+                                    <polygon id="Graph-segment" points="0 198.5 12 198.5 12 203.5 0 203.5"></polygon>
+                                </g>
+                            </g>
+                            <path d="M41.8,15.9 L41.8,218.4" id="Line-segment" stroke="#E7E6E6" stroke-width="0.5" stroke-linecap="square"></path>
+                        </g>
+                        <g id="Group-11" transform="translate(0.000000, 1.000000)">
+                            <g id="Legend/Year" transform="translate(0.000000, 103.000000)">
+                                <g id="Legend">
+                                    <g id="Rectangle-2">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                    </g>
+                                    <g id="legends" transform="translate(15.000000, 11.000000)">
+                                        <g id="1">
+                                            <text id="#-of-Proposals" font-family="Helvetica" font-size="10" font-weight="normal" fill="#343534">
+                                                <tspan x="15" y="10"># of Proposals</tspan>
+                                            </text>
+                                            <circle id="Oval-39-Copy-3" fill="#465E7B" cx="4.5" cy="5.5" r="4.5"></circle>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Group-13" font-family="Helvetica" font-weight="normal">
+                                <text id="TOTAL-implemented-pr" font-size="10" letter-spacing="1" fill="#77787B">
+                                    <tspan x="0" y="59">TOTAL IMPLEMENTED </tspan>
+                                    <tspan x="0" y="71">PROPOSALS </tspan>
+                                    <tspan x="0" y="83">OVERTIME</tspan>
+                                </text>
+                                <g id="Card-4" fill="#414042" font-size="36" letter-spacing="-1">
+                                    <g id="Group-4">
+                                        <text id="80">
+                                            <tspan x="0" y="35">8</tspan>
+                                            <tspan x="19.0214844" y="35">0</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

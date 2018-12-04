@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="355px" height="206px" viewBox="0 0 355 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Prop-Gen-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Proposal-Analytics" transform="translate(-465.000000, -454.000000)">
+            <g id="Total-Value-of-Proposals-Status" transform="translate(440.000000, 380.000000)">
+                <g id="Group-6" transform="translate(20.000000, 74.000000)">
+                    <g id="Group-4" transform="translate(98.000000, 6.000000)">
+                        <polygon id="Graph-segment" fill="#74C2CF" points="0 0 223 0 223 25 0 25"></polygon>
+                        <text id="$3.65M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#4DB6C5">
+                            <tspan x="228" y="16">$3.65M</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4" transform="translate(98.000000, 154.000000)">
+                        <polygon id="Graph-segment" fill="#74C2CF" points="0 0 108 0 108 25 0 25"></polygon>
+                        <text id="$1.75M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#4DB6C5">
+                            <tspan x="113" y="16">$1.75M</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4" transform="translate(98.000000, 117.000000)">
+                        <polygon id="Graph-segment" fill="#74C2CF" points="0 0 120 0 120 25 0 25"></polygon>
+                        <text id="$1.95M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#4DB6C5">
+                            <tspan x="125" y="16">$1.95M</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4" transform="translate(98.000000, 80.000000)">
+                        <polygon id="Graph-segment" fill="#74C2CF" points="0 0 142 0 142 25 0 25"></polygon>
+                        <text id="$2.20M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#4DB6C5">
+                            <tspan x="147" y="16">$2.20M</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4" transform="translate(98.000000, 43.000000)">
+                        <polygon id="Graph-segment" fill="#74C2CF" points="0 0 175 0 175 25 0 25"></polygon>
+                        <text id="$2.85M" font-family="Montserrat-SemiBold, Montserrat" font-size="7" font-weight="500" line-spacing="7" fill="#4DB6C5">
+                            <tspan x="180" y="16">$2.85M</tspan>
+                        </text>
+                    </g>
+                    <g id="Graph-percentage" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="37">
+                        <text id="Waiting-on-Paperwork">
+                            <tspan x="5.28955078" y="9">Waiting on Paperwork</tspan>
+                            <tspan x="4.45019531" y="46">Implemented/Invested</tspan>
+                            <tspan x="14.4521484" y="83">Paperwork Pending</tspan>
+                            <tspan x="15.7836914" y="120">Waiting on Funding</tspan>
+                            <tspan x="19.9716797" y="157">Active/In Progress</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-5" transform="translate(97.000000, 190.000000)" fill="#77787B" font-family="Helvetica" font-size="9" font-weight="normal" line-spacing="9">
+                        <text id="$0">
+                            <tspan x="0.5" y="9">$0</tspan>
+                        </text>
+                        <text id="$2M">
+                            <tspan x="118.25" y="9">$2M</tspan>
+                        </text>
+                        <text id="$1M">
+                            <tspan x="56.375" y="9">$1</tspan>
+                            <tspan x="57.6318359" y="18">M</tspan>
+                        </text>
+                        <text id="$3M">
+                            <tspan x="181.125" y="9">$3M</tspan>
+                        </text>
+                        <text id="$4M">
+                            <tspan x="244" y="9">$4M</tspan>
+                        </text>
+                    </g>
+                    <polyline id="Path-4" stroke="#E7E6E6" stroke-width="0.5" points="98 0 98 185 360 185"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

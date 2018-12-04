@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="131px" viewBox="0 0 342 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.46875,0 L59.53125,0 C67.8155212,-1.52179594e-15 74.53125,6.71572875 74.53125,15 L74.53125,15 C74.53125,23.2842712 67.8155212,30 59.53125,30 L0.46875,30 L0.46875,0 Z" id="path-1"></path>
+        <filter x="-12.8%" y="-28.3%" width="125.7%" height="163.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.18 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PopUps---View-&amp;-Add-Graphs" transform="translate(-178.000000, -380.000000)">
+            <g id="Group-15" transform="translate(178.750000, 384.500000)">
+                <text id="Implemented:-100%" font-family="Helvetica" font-size="9.375" font-weight="normal" letter-spacing="0.9375" fill="#67C072">
+                    <tspan x="0" y="125.25">IMPLEMENTED: 100%</tspan>
+                </text>
+                <text id="IN-Progress:-90%" font-family="Helvetica" font-size="9.375" font-weight="normal" letter-spacing="0.9375" fill="#1598CB">
+                    <tspan x="238.125" y="125.25">IN PROGRESS: 90%</tspan>
+                </text>
+                <path d="M137.8125,54.375 L331.875,54.375 C334.981602,54.375 337.5,56.8933983 337.5,60 L337.5,107.8125 C337.5,110.919102 334.981602,113.4375 331.875,113.4375 L137.8125,113.4375 L137.8125,54.375 Z" id="Rectangle" fill="#1598CB"></path>
+                <text id="$7M" font-family="Montserrat-Regular, Montserrat" font-size="9.375" font-weight="normal" line-spacing="18.75" fill="#67C072">
+                    <tspan x="0.9375" y="42.75">$7M</tspan>
+                </text>
+                <text id="$20M" font-family="Montserrat-Regular, Montserrat" font-size="9.375" font-weight="normal" line-spacing="18.75" fill="#1598CB">
+                    <tspan x="137.8125" y="42.75">$20M</tspan>
+                </text>
+                <path d="M5.625,54.375 L135.9375,54.375 L135.9375,113.4375 L5.625,113.4375 C2.51839828,113.4375 3.80448985e-16,110.919102 0,107.8125 L0,60 C-3.80448985e-16,56.8933983 2.51839828,54.375 5.625,54.375 Z" id="Rectangle" fill="#67C072"></path>
+                <g id="Group-2" transform="translate(119.062500, 0.000000)">
+                    <g id="Group-5">
+                        <g id="Rectangle-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="Goal:-$6,200,000" font-family="Helvetica" font-size="8.4375" font-weight="normal" line-spacing="9.375" fill="#404041">
+                            <tspan x="15" y="13.625">Goal:</tspan>
+                            <tspan x="15" y="23">$6,200,000</tspan>
+                        </text>
+                    </g>
+                    <path d="M0.9375,0.46875 L0.9375,112.96875" id="Line-3" stroke="#414042" stroke-width="0.9375" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

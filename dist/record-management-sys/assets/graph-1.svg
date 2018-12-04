@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="339px" height="180px" viewBox="0 0 339 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PopUps---View-&amp;-Add-Graphs" transform="translate(-178.000000, -652.000000)">
+            <g id="Group-3" transform="translate(177.750000, 644.062500)">
+                <g id="Graph-lines" transform="translate(22.562500, 13.125000)" fill="#F0F0F0">
+                    <rect id="Line-segment" x="0" y="0" width="315.9375" height="1"></rect>
+                    <rect id="Line-segment" x="0" y="49.6875" width="315.9375" height="1"></rect>
+                    <rect id="Line-segment" x="0" y="99.375" width="315.9375" height="1"></rect>
+                </g>
+                <g id="Group-4" transform="translate(31.937500, 85.312500)">
+                    <text id="Apr" font-family="Helvetica" font-size="8.4375" font-weight="normal" fill="#77787B">
+                        <tspan x="9.8412323" y="90.5">Apr</tspan>
+                    </text>
+                    <text id="$1.25M" font-family="Montserrat-SemiBold, Montserrat" font-size="6.5625" font-weight="500" line-spacing="6.5625" fill="#67C072">
+                        <tspan x="5.375" y="6">$1.25M</tspan>
+                    </text>
+                    <polygon id="Graph-segment" fill="#AED68F" points="0 11.25 32.8125 11.25 32.8125 76.875 0 76.875"></polygon>
+                </g>
+                <g id="Group-4" transform="translate(84.437500, 60.000000)">
+                    <text id="May" font-family="Helvetica" font-size="8.4375" font-weight="normal" fill="#77787B">
+                        <tspan x="8.43635559" y="115.8125">May</tspan>
+                    </text>
+                    <text id="$1.85M" font-family="Montserrat-SemiBold, Montserrat" font-size="6.5625" font-weight="500" line-spacing="6.5625" fill="#67C072">
+                        <tspan x="5.375" y="6">$1.85M</tspan>
+                    </text>
+                    <polygon id="Graph-segment" fill="#AED68F" points="0 11.25 32.8125 11.25 32.8125 102.1875 0 102.1875"></polygon>
+                </g>
+                <g id="Group-4" transform="translate(137.875000, 41.250000)">
+                    <text id="Jun" font-family="Helvetica" font-size="8.4375" font-weight="normal" fill="#77787B">
+                        <tspan x="10.0730896" y="134.5625">Jun</tspan>
+                    </text>
+                    <text id="$2.20M" font-family="Montserrat-SemiBold, Montserrat" font-size="6.5625" font-weight="500" line-spacing="6.5625" fill="#67C072">
+                        <tspan x="4.375" y="6">$2.20M</tspan>
+                    </text>
+                    <polygon id="Graph-segment" fill="#AED68F" points="0 11.25 32.8125 11.25 32.8125 120.9375 0 120.9375"></polygon>
+                </g>
+                <g id="Group-4" transform="translate(190.375000, 63.750000)">
+                    <text id="Jul" font-family="Helvetica" font-size="8.4375" font-weight="normal" fill="#77787B">
+                        <tspan x="11.0133362" y="112.0625">Jul</tspan>
+                    </text>
+                    <text id="$1.80M" font-family="Montserrat-SemiBold, Montserrat" font-size="6.5625" font-weight="500" line-spacing="6.5625" fill="#67C072">
+                        <tspan x="4.40625" y="6">$1.80M</tspan>
+                    </text>
+                    <polygon id="Graph-segment" fill="#AED68F" points="0 11.25 32.8125 11.25 32.8125 98.4375 0 98.4375"></polygon>
+                </g>
+                <g id="Group-4" transform="translate(243.812500, 70.312500)">
+                    <text id="Aug" font-family="Helvetica" font-size="8.4375" font-weight="normal" fill="#77787B">
+                        <tspan x="8.89984131" y="105.5">Aug</tspan>
+                    </text>
+                    <text id="$1.75M" font-family="Montserrat-SemiBold, Montserrat" font-size="6.5625" font-weight="500" line-spacing="6.5625" fill="#67C072">
+                        <tspan x="5.375" y="6">$1.75M</tspan>
+                    </text>
+                    <polygon id="Graph-segment" fill="#AED68F" points="0 11.25 32.8125 11.25 32.8125 91.875 0 91.875"></polygon>
+                </g>
+                <g id="Group-4" transform="translate(296.312500, 87.187500)">
+                    <text id="Sep" font-family="Helvetica" font-size="8.4375" font-weight="normal" fill="#77787B">
+                        <tspan x="11.714859" y="88.625">Se</tspan>
+                        <tspan x="14.5287323" y="98.625">p</tspan>
+                    </text>
+                    <text id="$1.30M" font-family="Montserrat-SemiBold, Montserrat" font-size="6.5625" font-weight="500" line-spacing="6.5625" fill="#67C072">
+                        <tspan x="4.90625" y="6">$1.30M</tspan>
+                    </text>
+                    <polygon id="Graph-segment" fill="#AED68F" points="0 11.25 32.8125 11.25 32.8125 75 0 75"></polygon>
+                </g>
+                <g id="Graph-percentage">
+                    <rect id="Line-segment" fill="#F0F0F0" x="22.5625" y="162.1875" width="315.9375" height="1"></rect>
+                    <text id="$3M-$2M-$1M-0" font-family="Helvetica" font-size="8.4375" font-weight="normal" line-spacing="24.866453" fill="#77787B">
+                        <tspan x="0.586425781" y="8">$3M</tspan>
+                        <tspan x="17" y="32.866453"></tspan>
+                        <tspan x="0.586425781" y="57.732906">$2M</tspan>
+                        <tspan x="17" y="82.599359"></tspan>
+                        <tspan x="0.586425781" y="107.465812">$1M</tspan>
+                        <tspan x="17" y="132.332265"></tspan>
+                        <tspan x="12.3074646" y="157.198718">0</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

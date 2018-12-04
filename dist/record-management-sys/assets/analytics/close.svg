@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Dots</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.8561553,12.9168155 L10,11.0606602 L8.1438447,12.9168155 C7.85216315,13.208497 7.37486607,13.208497 7.08318453,12.9168155 C6.79150298,12.6251339 6.79150298,12.1478368 7.08318453,11.8561553 L8.93933983,10 L7.08318453,8.1438447 C6.79150298,7.85216315 6.79150298,7.37486607 7.08318453,7.08318453 C7.37486607,6.79150298 7.85216315,6.79150298 8.1438447,7.08318453 L10,8.93933983 L11.8561553,7.08318453 C12.1478368,6.79150298 12.6251339,6.79150298 12.9168155,7.08318453 C13.208497,7.37486607 13.208497,7.85216315 12.9168155,8.1438447 L11.0606602,10 L12.9168155,11.8561553 C13.208497,12.1478368 13.208497,12.6251339 12.9168155,12.9168155 C12.6251339,13.208497 12.1478368,13.208497 11.8561553,12.9168155 Z M10,1 C5.03125,1 1,5.03125 1,10 C1,14.96875 5.03125,19 10,19 C14.96875,19 19,14.96875 19,10 C19,5.03125 14.96875,1 10,1 Z" id="path-1"></path>
+        <filter x="-38.9%" y="-27.8%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.250980392   0 0 0 0 0.258823529  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DD---Adjust-Parameters---Date-Range-Selected" transform="translate(-477.000000, -123.000000)">
+            <g id="Icon/Exit_White" transform="translate(480.000000, 124.000000)">
+                <g id="Icon/Add">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
