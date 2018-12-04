@@ -3,6 +3,9 @@
         display: flex;
         justify-content: center;
         align-items:center;
+        @media only screen and (max-width: 767px){
+            padding: 10px;
+        }
 
         .modal-box{
             margin-top: 60px;
@@ -11,6 +14,11 @@
             box-shadow: 0 4px 10px 0 rgba(65, 64, 66, 0.18);
             padding-bottom: 30px;
             border-radius: 6px;
+            min-width: 355px;
+            @media only screen and (max-width: 767px){
+                width: 100%;
+                margin-top: 110px;
+            }
             .box-content{
                 .row-1{
                     display: flex;
@@ -20,7 +28,10 @@
                     font-size: 24px;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
-                    color: rgba(64, 64, 64, 1)
+                    color: rgba(64, 64, 64, 1);
+                    @media only screen and (max-width: 767px){
+                        padding: 30px;
+                    }
                 }
                 .row-2{
                     .table-container{
@@ -28,6 +39,14 @@
                         table{
                             flex: 1;
                             border-collapse: collapse;
+                            @media only screen and (max-width: 767px){
+                                tr td:nth-child(3), tr td:nth-child(4), tr td:nth-child(5),
+                                tr td:nth-child(6), tr td:nth-child(7), tr td:nth-child(8),
+                                tr th:nth-child(3), tr th:nth-child(4), tr th:nth-child(5),
+                                tr th:nth-child(6), tr th:nth-child(7), tr th:nth-child(8){
+                                    display:none;
+                                }
+                             }
                             .icon-dropdown{
                                 margin-left: 5px;
                                 width: 15px;

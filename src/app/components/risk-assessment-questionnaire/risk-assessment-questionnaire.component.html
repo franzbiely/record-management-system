@@ -2,7 +2,7 @@
   <div class="container-modal">
     <div class="modal-header">
       <div class="header-close">
-        <a><i class="material-icons">close</i></a>
+        <a (click)="closeMe()"><i class="material-icons">close</i></a>
       </div>
       <h3>{{title}}</h3>
     </div>
@@ -43,13 +43,13 @@
                 <mat-radio-button value="1">
                   <div>
                     <span class="recepient-email">Loring Ward Risk Assessment Questionnaire Template Message</span>
-                    <a href="">SET AS DEFAULT</a>
+                    <a class="text-default" href="">SET AS DEFAULT</a>
                   </div>
                 </mat-radio-button>                
                 <mat-radio-button value="2">
                   <div>
                     <span class="recepient-email">Your Risk Assessment Questionnaire Template Message</span>  
-                    <a href="">SET AS DEFAULT</a>
+                    <a class="text-default" href="">SET AS DEFAULT</a>
                   </div>
                 </mat-radio-button>              
               </mat-radio-group>

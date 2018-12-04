@@ -33,13 +33,20 @@ app-household-member {
     align-items: center;
     padding: 0px 60px;
     z-index: 70;
-    top: 100px;
+    top: 110px;
+    @media only screen and (max-width: 767px){
+        padding: 0px 10px;
+    }
     .box-content{
         width: 1000px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.7);
         border-radius: 6px;
         background-color: white;
         margin: auto;
+        min-width: 355px;
+        @media only screen and (max-width: 767px){
+            width: 100%;
+        }
         .box-head{
             background-color: #1598cb;
             border-radius: 6px 6px 0px 0px;
@@ -47,6 +54,9 @@ app-household-member {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media only screen and (max-width: 767px){
+                padding: 10px;
+            }
             .left-section{
                 .box-title{
                 display: flex;
@@ -100,14 +110,30 @@ app-household-member {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                @media only screen and (max-width: 767px){
+                    padding: 10px;
+                    align-items: initial;
+                    flex-direction: column;
+                }
                 .left-section{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    @media only screen and (max-width: 767px){
+                        flex-direction: column;
+                        align-items: initial;
+                    }
+                    .option-container{
+                        display: flex;
+                    }
                     .option{
                         display: flex;
                         align-items: center;
                         padding-left: 20px;
+                        @media only screen and (max-width: 767px){
+                            padding-left: 0px;
+                            margin-top: 15px;
+                        }
                         .text-radio-button{
                             font-family: Montserrat, sans-serif;
                             font-size: 10px;
@@ -141,6 +167,9 @@ app-household-member {
                 }
                 .right-section{
                     .search-container{
+                        @media only screen and (max-width: 767px){
+                            display: flex;
+                        }
                         input[type=text]{
                             width:300px;
                             height: 100%;
@@ -150,7 +179,9 @@ app-household-member {
                             font-size:12px;
                             font-family: Montserrat, sans-serif;
                             background: url("/src/assets/component/household-list/search-gray.png") no-repeat 10px 8px;
-
+                            @media only screen and (max-width: 767px){
+                                margin-top: 15px;
+                            }
                         }
                     }
                 }
@@ -251,6 +282,12 @@ app-household-member {
                     table{
                         flex:1;
                         border-collapse: collapse;
+                        @media only screen and (max-width: 767px){
+                            tr td:nth-child(3), tr td:nth-child(4), tr td:nth-child(5), tr td:nth-child(6),
+                            tr th:nth-child(3),tr th:nth-child(4), tr th:nth-child(5), tr th:nth-child(6){
+                                display:none;
+                            }
+                         }
                         th{
                             font-family:Montserrat, sans-serif;
                             font-size: 10px;
