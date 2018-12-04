@@ -2,22 +2,27 @@
 $primaryfont: "montserrat", sans-serif;
 $secondaryfont: "museo-sans", calibri;
 .container-overlay{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 99;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 
     .container-modal{
-        position: relative;
-        width: 900px;
+        position: fixed;
+        width: 1000px;
         height: 460px;
         border-radius: 6px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         background-color: #ffffff;
-        margin: 100px auto;
         padding: 30px 60px;
+        margin-top: 50px;
 
         .modal-header{
             text-align: center;
@@ -91,6 +96,7 @@ $secondaryfont: "museo-sans", calibri;
                             position: relative;
                             top: 12.5px;
                             float: right;
+                            right:15px;
                         }
                     }
 
@@ -105,7 +111,10 @@ $secondaryfont: "museo-sans", calibri;
                         border-radius: 0 0 6px 6px;
 
                         .recepient-item{
-                           
+                                mat-radio-button:first-child{
+                                    border-top: #e7e6e6 1px solid;
+                                    border-bottom: #e7e6e6 1px solid;
+                                }
                                 mat-radio-button{
                                     display: block;
                                     font-weight: 600px;
@@ -125,17 +134,18 @@ $secondaryfont: "museo-sans", calibri;
 
                                     .recepient-email{
                                         font-weight: 100;
-                                        font-size: 10pt;
                                         text-indent: 20px;
                                     }
 
                                     a{
+                                        font-family: $primaryfont;
+                                        font-weight: bold;
                                         position: absolute;
                                         right: 10px;
-                                        font-size: 10pt;
+                                        font-size: 10px;
                                         text-decoration: none;
                                         color: #269fcf;
-                                        font-weight: 200;
+                                        font-weight: 700;
                                         letter-spacing: 1.5px;
                                      }
                             }

@@ -26,10 +26,14 @@
     
             <div class="left-section">
               <div class="text-search-container"><span class="text-search">Search In: </span></div>
-              <div class="option"><mat-checkbox  (click)="active_tab=1"></mat-checkbox><span class="text-radio-button">My Client Center</span><i class="icon-myclient"></i></div>
-              <div class="option"><mat-checkbox  (click)="active_tab=2"></mat-checkbox><span class="text-radio-button">Orion</span><i class="icon-orion"></i></div>
-              <div class="option"><mat-checkbox  (click)="active_tab=3"></mat-checkbox><span class="text-radio-button">Redtail</span><i class="icon-redtail"></i></div>
-              <div class="option"><mat-checkbox  (click)="active_tab=3"></mat-checkbox><span class="text-radio-button">Wealth Access</span><i class="icon-wealth"></i></div>
+              <div class="flex-inline">
+                <div class="option left"><mat-checkbox  (click)="active_tab=1"></mat-checkbox><span class="text-radio-button">My Client Center</span><i class="icon-myclient"></i></div>
+                <div class="option right"><mat-checkbox  (click)="active_tab=2"></mat-checkbox><span class="text-radio-button">Orion</span><i class="icon-orion"></i></div>
+              </div>
+              <div class="flex-inline">
+                <div class="option left"><mat-checkbox  (click)="active_tab=3"></mat-checkbox><span class="text-radio-button">Redtail</span><i class="icon-redtail"></i></div>
+                <div class="option right" ><mat-checkbox  (click)="active_tab=3"></mat-checkbox><span class="text-radio-button">Wealth Access</span><i class="icon-wealth"></i></div>
+              </div>
             </div>
     
             <div class="right-section">

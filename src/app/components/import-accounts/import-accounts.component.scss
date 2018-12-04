@@ -19,12 +19,24 @@
     background-color: rgba(255, 255, 255, 0.5);
     z-index:60;
 }
+
+.flex-inline{
+    display:flex;
+    flex-direction: row;
+    @media only screen and (max-width: 767px){
+        margin-top: 15px;    
+    }
+}
 .box-container{
     height: 100%;
     position: relative;
     padding: 120px 40px 0px 120px;
     z-index: 70;
+    @media only screen and (max-width: 767px){
+        padding: 110px 10px;
+    }
     .box-content{
+        min-width: 355px;
         width: 100%;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
@@ -36,6 +48,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media only screen and (max-width: 767px){
+                padding:10px;
+            }
             .left-section{
                 .box-title{
                 display: flex;
@@ -48,10 +63,14 @@
                     font-weight: 700;
                 }
                 .text-subtitle{
-                    font-family: 'montserrat', sans-serif;
-                    font-size: 18px;
-                    font-weight: 400;
-                    color: white;
+                    font-family: "museo-sans";
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.13;
+                    letter-spacing: -0.2px;
+                    color: #ffffff;
                 }
             }
 
@@ -69,7 +88,7 @@
                     }
                     .icon-add{
                         cursor: pointer;
-                        padding-right:10px;
+                        padding-right:6px;
                         width: 20px;
                         content: url("/src/assets/component/household-list/add-white.png");
                     }
@@ -102,16 +121,40 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                @media only screen and (max-width: 767px){
+                    padding:10px;
+                    flex-direction: column;
+                    align-items: initial;
+                }
                 .left-section{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    @media only screen and (max-width: 767px){
+                        display: flex;
+                        flex-direction: column;
+                        align-items: initial;
+                    }
+                    .left {
+                        margin-left: 20px;
+                        @media only screen and (max-width: 767px){
+                            margin-left: 0px;
+                            flex:1;
+                        }
+                    }  
+                    .right {
+                        margin-left: 20px;
+                        @media only screen and (max-width: 767px){
+                            margin-right: -40px;
+                        }
+                    }
                     .option{
                         display: flex;
-                        padding-left: 20px;
                         align-items: center;
+                            @media only screen and (max-width: 767px){
+                                flex:1;
+                            }
                         .text-radio-button{
-                            margin-left: 10px;
                             font-family: "museo-sans";
                             font-size: 12px;
                             font-weight: 300;
@@ -137,6 +180,9 @@
                 }
                 .right-section{
                     .search-container{
+                        @media only screen and (max-width: 767px){
+                            display:flex;
+                        }
                         input[type=text]{
                             width:300px;
                             height: 100%;
@@ -146,7 +192,11 @@
                             font-size:12px;
                             font-family: 'montserrat', sans-serif;
                             background: url("/src/assets/component/household-list/search-gray.png") no-repeat 10px 8px;
-
+                            @media only screen and (max-width: 767px){
+                                width: auto;
+                                flex: 1;
+                                margin-top: 15px;
+                            }
                         }
                     }
                 }
@@ -159,6 +209,14 @@
                     table{
                         flex:1;
                         border-collapse: collapse;
+                        @media only screen and (max-width: 767px){
+                           tr td:nth-child(3), tr td:nth-child(4), tr td:nth-child(5),
+                           tr td:nth-child(6), tr td:nth-child(7), tr td:nth-child(8),
+                           tr th:nth-child(3), tr th:nth-child(4), tr th:nth-child(5),
+                           tr th:nth-child(6), tr th:nth-child(7), tr th:nth-child(8){
+                               display:none;
+                           }
+                        }
                         th{
                             font-family: "Montserrat", sans-serif;
                             font-size: 10px;
@@ -206,6 +264,9 @@
                         }
                         tr th:last-child, tr td:last-child{
                             text-align:left;
+                            @media only screen and (max-width: 767px){
+                                text-align: right;
+                            }
                         }
                         tr{
                             border-bottom: 1px #ddd solid;
