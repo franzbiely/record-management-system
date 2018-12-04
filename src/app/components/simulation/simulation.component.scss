@@ -396,10 +396,15 @@ app-dropdown-update-account {
     display: flex;
     flex: 1;
     flex-direction: column;
-    &.closed { 
+    &.closed {
+      .row-1-content {
+        display: flex;
+      }
       .left-section-container {
-        flex: 0 !important;
-        width: 0px !important;
+        display: none !important;
+        // flex: 0 !important;
+        // width: 0px !important;
+        // overflow: hidden;
       }
       .row-2-3-container {
         display:flex;
@@ -412,18 +417,35 @@ app-dropdown-update-account {
       .graph-container {
         margin:40px;
       }
+      .current_portfolio_chart_container.recommended {
+        width:100%;
+      }
+      .right-section-container {
+        width: 90% !important;
+        float: none !important;
+        margin-left: 40px;
+        canvas {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      #allocation_charts { display:none; }
     }
     .row-1 {
       .row-1-content {
-        display: flex;
+        // display: flex;
         width: 100%;
         @media only screen and (max-width: 767px) {
           flex-direction: column-reverse;
         }
         .left-section-container {
-          flex: 1;
-          align-items: center;
+          // flex: 1;
+          // align-items: center;
+          width: 50%;
+          float:left;
+          display:initial;
           transition: all 0.2s linear;
+
           
           .left-head-container {
             .left-head {
@@ -496,19 +518,13 @@ app-dropdown-update-account {
               flex-direction: column;
             }
             .img-container {
-              padding: 20px 20px 0px 60px;
+              padding: 30px 30px 30px 60px;
               display: flex;
               align-items: center;
               justify-content: center;
+              flex-direction: column;
               @media only screen and (max-width: 767px) {
                 padding: 0px;
-              }
-              .graph-1 {
-                width: 100%;
-                content: url("../../../assets/component/simulation/current-portfolio.png");
-                @media only screen and (max-width: 767px) {
-                  width: 100%;
-                }
               }
             }
             .graph-container {
@@ -578,7 +594,9 @@ app-dropdown-update-account {
           }
         }
         .right-section-container {
-          flex: 1;
+          // flex: 1;
+          width: 50%;
+          float:right;
           align-items: center;
           .right-head-container {
             .right-head {
@@ -657,7 +675,7 @@ app-dropdown-update-account {
               flex-direction: column;
             }
             .img-container {
-              padding: 20px 60px 0px 20px;
+              padding: 30px 30px 30px 10px;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -750,7 +768,9 @@ app-dropdown-update-account {
         align-items: center;
         justify-content: space-evenly;
         .graph-container {
+          flex:1;
           .circle-graph-1 {
+
             transition: all 0.2s linear;
             width: 300px;
             content: url("../../../assets/component/simulation/current-allocation-pie-chart@2x.png");
@@ -761,6 +781,7 @@ app-dropdown-update-account {
           }
         }
         .table-container {
+          flex:1;
           table tr td {
             border-right: 1px solid #e7e6e6;
             border-bottom: 1px solid #e7e6e6;
@@ -1020,4 +1041,99 @@ app-dropdown-update-account {
 
 ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
   background-color: white;
+}
+
+.current_portfolio_chart_container {
+  border-radius: 4.9px;
+  box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
+  background-color: #ffffff;
+  padding:16px 24px;
+  width:100%;
+  &.recommended {
+    .large {
+      // display:none;
+      position:absolute;
+      width: 900px;
+      height: 350px;
+    }
+    h3, .big-text {
+      color:#67c072;
+    }
+    .progress { 
+      background-color: #67c072 !important;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
+  canvas {
+    margin-bottom:20px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #c5c5c5;
+  }
+  .progress-chart {
+    height:2px;
+    position: relative;
+    margin-bottom: 12px;
+    background-color: #e7e6e6;
+    .progress {
+      position:absolute;
+      width: 60%;
+      height:3px;
+      border-radius: 4.1px;
+      background-color: #c5c5c5;
+    }
+  }
+  .progress-summary {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 8px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    color: #414042;
+    text-transform: uppercase;
+    span {
+      display:flex;
+      align-items: center;
+    }
+    .big-text {
+      margin-left:15px;
+      font-size: 16px;
+      color: #c5c5c5;
+    }
+  }
+}
+.allocation_charts {
+  position:relative;
+  width: 100%;
+  &.recommended {
+    h3 {
+      color:#67c072 !important;
+    }
+  }
+  
+  .title {
+      position:absolute;
+      width:100%;
+      height:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 600;
+  }
+  h3 {
+      color:#c5c5c5;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-align: center;
+      color: #c5c5c5;
+      text-transform: uppercase;
+  }
 }
