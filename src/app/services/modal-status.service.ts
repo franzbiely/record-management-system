@@ -67,6 +67,12 @@ export class ModalStatusService {
     this.sendDocumentStatusSource.next(value);
   }
 
+  private adviserSearchPopupSource = new BehaviorSubject<boolean>(false);
+  public adviserSearchPopup = this.adviserSearchPopupSource.asObservable();
+  SET_adviserSearchPopup(value: boolean) {
+    this.adviserSearchPopupSource.next(value);
+  }
+
   constructor() { }
   
 }

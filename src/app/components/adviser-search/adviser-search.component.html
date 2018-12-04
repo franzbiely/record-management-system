@@ -27,8 +27,8 @@
                 </tr>
                 </thead>
               <tbody>
-                <tr class="checked">
-                  <td class="align-center"><mat-radio-button></mat-radio-button></td>
+                <tr class="">
+                  <td class="align-center"><mat-radio-button (click)="checkedRadio($event)"></mat-radio-button></td>
                   <td>Kim</td>
                   <td>Mackrill</td>
                   <td>BAM Financial Advisors</td>
@@ -36,7 +36,7 @@
                   <td>705_KM16</td>
                 </tr>
                 <tr>
-                    <td class="align-center"><mat-radio-button></mat-radio-button></td>
+                    <td class="align-center"><mat-radio-button (click)="checkedRadio($event)"></mat-radio-button></td>
                     <td>Kim</td>
                     <td>Mackrill</td>
                     <td>BAM Financial Advisors</td>
@@ -50,7 +50,7 @@
          </div>
      </div>
    </div>
-   <div class="box-container margin-left">
+   <div class="box-container margin-left" [ngClass]="{'disabled' : !enabled}">
       <div class="box col-1">
        <div class="box-head  "><span class="header-title space-left">Advisor Information</span></div>
          <div class="box-body">
@@ -88,10 +88,11 @@
                  </div>
                </div>
 
-               <div class="mask-holder"> <div class="mask">create on their behalf</div> </div>
+               <div class="mask-holder"> <a class="mask" (click)="btnCreate()">create on their behalf</a> </div>
          </div>
      </div>
    </div>
 </div>
 </div>
 
+<app-adviser-search-popup *ngIf="adviserSearchPopupModal"></app-adviser-search-popup>

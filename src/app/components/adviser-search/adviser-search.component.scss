@@ -29,7 +29,19 @@ $mainfont : 'montserrat';
         border-radius: 6px;
         box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
         background-color: #ffffff;
+        position:relative;
+        &.disabled {
+            &:after {
+                content : ' ';
+                background:#fff;
+                position:absolute;
+                width:100%;
+                height:100%;
+                opacity: 0.8;
+                top: 0;
+            }
         }
+    }
         input[type=text].text-try {
             border-radius: 6px;
             border: none;
@@ -63,6 +75,7 @@ $mainfont : 'montserrat';
     }
     .table-container{
         height: auto;
+        
     }
     .box-body {
         height:auto;
@@ -453,4 +466,3 @@ $mainfont : 'montserrat';
 
 
     }
-   
