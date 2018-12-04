@@ -1,5 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalStatusService } from "../../services/modal-status.service"
 import * as $ from 'jquery';
 
 @Component({
@@ -9,9 +10,11 @@ import * as $ from 'jquery';
 })
 export class FirmInformationComponent implements OnInit {
 
-    step: number = 1;
+    @Input() step: number = 1;
+    @Input() singleModal: boolean = false;
+
     @Output() endEvent = new EventEmitter<boolean>();
-    constructor(private router: Router) {
+    constructor(private router: Router, private modalStatus: ModalStatusService) {
         $(document).ready(function () {
             var nr = 0;
             $(document).on('dragover dragenter', '#browse-holder', function (e) {
@@ -45,10 +48,15 @@ export class FirmInformationComponent implements OnInit {
     }
 
     ngOnInit() {
-
     }
     toPrev() {
-        this.step--;
+        if(this.singleModal) {
+            this.closeMe();
+        }
+        else {
+            this.step--;    
+        }
+        
     }
     toNext() {
         // do some transactions here...
@@ -56,6 +64,10 @@ export class FirmInformationComponent implements OnInit {
         if (this.step === 3) {
             this.endEvent.emit(true);
         }
+    }
+
+    closeMe() {
+        this.modalStatus.SET_firmInformation(false);
     }
 
 }

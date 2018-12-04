@@ -451,6 +451,7 @@ $mainfont : 'Montserrat', sans-serif;
     .btn-edit-container {
         display: flex;
         align-items: center;
+        cursor: pointer;
         .edit-icon {
             padding-right: 6px;
             width: 20px;

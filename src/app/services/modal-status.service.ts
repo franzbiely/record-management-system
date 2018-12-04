@@ -73,6 +73,12 @@ export class ModalStatusService {
     this.adviserSearchPopupSource.next(value);
   }
 
+  private firmInformationSource = new BehaviorSubject<boolean>(false);
+  public firmInformation = this.firmInformationSource.asObservable();
+  SET_firmInformation(value: boolean) {
+    this.firmInformationSource.next(value);
+  }
+
   constructor() { }
   
 }
