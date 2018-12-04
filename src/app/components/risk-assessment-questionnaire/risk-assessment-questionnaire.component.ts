@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-risk-assessment-questionnaire',
@@ -12,11 +13,16 @@ export class RiskAssessmentQuestionnaireComponent implements OnInit {
   selectRecepient: boolean = false;
   selectMessageTemplate: boolean = false;
   sendQuestionnaire: boolean = false;
+  sendDocumentModal: boolean = false;
   saveFunc() {
     this.saveEvent.emit(true);
   }
-  constructor() {
+  constructor(private modalStatus: ModalStatusService) {
   }
   ngOnInit() {
+    this.modalStatus.sendDocument.subscribe(value => this.sendDocumentModal = value);
+  }
+  closeMe() {
+    this.modalStatus.SET_sendDocument(false);
   }
 }
