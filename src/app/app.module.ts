@@ -104,6 +104,8 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
 import { FrontpageComponent } from './screens/frontpage/frontpage.component';
 import { DomforDirective } from './directives/domfor.directive';
+import { DropdownFilterPortfolioComponent } from './components/dropdown-filter-portfolio/dropdown-filter-portfolio.component';
+import { DropdownCheckboxComponent } from './components/dropdown-checkbox/dropdown-checkbox.component';
 
 @NgModule({
   declarations: [
@@ -210,7 +212,9 @@ import { DomforDirective } from './directives/domfor.directive';
     TooltipComponent,
     PrintPreviewComponent,
     FrontpageComponent,
-    DomforDirective
+    DomforDirective,
+    DropdownFilterPortfolioComponent,
+    DropdownCheckboxComponent
   ],
   imports: [
     BrowserModule,

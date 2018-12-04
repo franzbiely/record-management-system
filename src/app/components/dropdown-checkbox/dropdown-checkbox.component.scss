@@ -1,0 +1,46 @@
+.dropdown-checkbox{
+    position: relative;
+    summary{
+        width: 100%;
+        border: 1px solid #bdbdbd;
+        border-radius: 6px;
+        padding:15px;
+        height:45px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        width: 77px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon-dropdown {
+            width: 15px;
+            content: url("/src/assets/component/portfolio/dropdown.png");
+        }
+
+    }
+    .item-container{
+        position: absolute;
+        top: 48px;
+        right:0;
+        width: 100%;
+        background-color: white;
+        box-sizing: border-box;
+        z-index: 2;
+        border-radius:6px;
+        box-shadow: 0 15px 100px 0 rgba(65, 64, 66, 0.3);
+        .item{
+            cursor: pointer;
+            padding:15px;
+            font-size: 14px;
+            font-family: "museo-sans", sans-serif;
+            font-weight: 300;
+            padding-left: 10px;
+            color: #414042;
+        }
+        .item:last-child{
+            border-top: 0.5px solid #e7e6e6;
+        }
+    }
+}

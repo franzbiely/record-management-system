@@ -44,6 +44,8 @@ input[type=text].text-try {
     letter-spacing: 1px;
     color: #77787b;
     text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
 }
 .padding-left{
     padding-left:20px;
