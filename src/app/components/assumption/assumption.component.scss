@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $mainfont : 'montserrat';
-
+::ng-deep body{
+    background-color: #d7d7d7 !important;
+}
 .assumption-container {
-    height:100%;
-    width:100%;
+    
+}
+.assumption-content{
     display: flex;
+    width:100%;
     justify-content: flex-end;
 }
 .right-side-container{
-    padding:33px 110px;
+    padding:33px 110px 900px 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .page-container {
     padding: 60px 40px 50px 40px; 
     width: 612px;
     height: 900px;
     display:flex;
-    border-radius: 6px;
-    box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+    border-radius: 7.7px;
+    box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
     background-color: #ffffff;
     flex-direction: column;
 }
@@ -221,36 +228,51 @@ span.page-text {
    width: 100%;
   }
 .button-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: 200px;
+    position: fixed;
+    padding: 40px 110px;
+    bottom: 0;
+    right: 0;
+    left:0;
+    background-image: linear-gradient(to bottom, transparent, #ffffff);
+        .btn-content{
+        justify-content: flex-end;
+        display: flex;  
+    }
 }
-
 button.update {
     border-radius: 6px;
     border: solid 1px #1598cb;
     background-color: #ffffff;
-    padding: 16px 26.5px;
     font-family: $mainfont;
     color: #1598cb;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.9px;
-    
+    width: 240px;
+    height: 45px;
 }
 button.save {
     border-radius: 6px;
-    border: solid 1px #808284;
+    border: solid 1px #ffffff;
     background-color: #ffffff;
-    padding: 16px 26.5px;
     font-family: $mainfont;
     letter-spacing: 0.9px;
     color: #808284;
+    box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
+    display: flex;
+    height: 45px;
+    width: 242px;
+    align-items: center;
+    .icon-save{
+        width: 20px;
+        height: 20px;
+        padding-right: 10px;
+        content: url("/src/assets/component/assumption/save-gray.png");
+    }
 }
 .btn-update {
     padding-right: 30px;
