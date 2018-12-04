@@ -1,15 +1,16 @@
 <details class="dropdown-checkbox">
-    <summary>
-      <mat-checkbox></mat-checkbox><i class="icon-dropdown"></i>
-    </summary>
+  <summary>
+    <mat-checkbox [(indeterminate)]="isIndeterminate"
+    [(checked)]="isChecked"></mat-checkbox><i class="icon-dropdown"></i>
+  </summary>
   <div class="item-container">
-    <div class="item">
+    <div class="item" (click)="changeType('all')">
       <span>All</span>
     </div>
-    <div class="item">
+    <div class="item" (click)="changeType('none')">
       <span>None</span>
     </div>
-    <div class="item">
+    <div class="item" (click)="changeType('default')">
       <span>Default</span>
     </div>
   </div>

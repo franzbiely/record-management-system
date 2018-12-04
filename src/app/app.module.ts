@@ -15,7 +15,7 @@ import { ProposalComponent } from './components/proposal/proposal.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule, MatRadioModule, MatCheckboxModule, MatTableModule, MatSliderModule } from '@angular/material';
+import { MatTabsModule, MatRadioModule, MatCheckboxModule, MatTableModule, MatSliderModule, MAT_CHECKBOX_CLICK_ACTION } from '@angular/material';
 import { MatIconModule } from '@angular/material/icon';
 import { DocumentationScreenComponent } from './screens/documentation-screen/documentation-screen.component';
 import { SupportScreenComponent } from './screens/support-screen/support-screen.component';
