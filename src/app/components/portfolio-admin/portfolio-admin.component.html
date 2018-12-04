@@ -1,3 +1,5 @@
+<app-popup-create-portfolio *ngIf="viewPortfolioModal" [isEdit]="editPortfolioModal"></app-popup-create-portfolio>
+
 <div class="portfolio-container" >
   <div class="container">
   <div class="content-container">
@@ -10,7 +12,7 @@
                 <span class="subtitle">Search, View, and Modify Portfolio</span>
             </div>
             <div class="btn-add-container">
-                <i class="add-icon"></i><span class="text-create">Create New Portfolio</span><span class="text-create-mobile">New</span>
+                <a (click)="showViewPortfolioModal()" style="display: flex; align-items: center;"><i class="add-icon"></i><span class="text-create">Create New Portfolio</span></a><span class="text-create-mobile">New</span>
             </div>
           </div>
 
