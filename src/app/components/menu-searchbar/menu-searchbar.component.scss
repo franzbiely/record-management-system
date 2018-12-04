@@ -11,7 +11,11 @@ $secondaryfont: "museo-sans", calibri;
     position: absolute;
     z-index: 99;
     top: 70px;
-
+	@media only screen and (max-width: 767px){ 
+		width: 100%;
+		position: relative;
+		top: 0px;
+	}
     .triangle-up {
 		width: 0;
 	    position: relative;

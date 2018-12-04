@@ -1,10 +1,14 @@
 .rms-header-profile {
     position: relative;
     margin-left: 20px;
-
+    @media screen and(max-width: 767px) {
+        position: initial;
+    }
     details {
         position: relative;
-
+        @media screen and(max-width: 767px) {
+            position: initial;
+        }
         summary {
             display: block;
             padding-right: 15px;
@@ -44,7 +48,6 @@
             background-color: #ffffff;
             border-radius: 9px;
             box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
-
             & > div {
                 padding: 15px 30px;
                 border-bottom: 1px solid #e7e6e6;
@@ -52,6 +55,9 @@
                 &:last-child {
                     border-bottom: 0;
                 }
+            }
+            app-search {
+                display:none;
             }
             .profile-info {
                 position: relative;
@@ -197,6 +203,12 @@
                 border-bottom: solid 20px #ffffff;
                 border-right: solid 22px transparent;
                 border-left: solid 22px transparent;
+            }
+            @media screen and(max-width: 767px) {
+                width: 100%;
+                app-search {
+                    display: initial;
+                }
             }
         }
     }

@@ -5,13 +5,16 @@
     box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
     background-color: #ffffff;
     box-sizing: border-box;
-
+    
     *,
     *::before,
     *::after {
         box-sizing: border-box;
     }
-
+    @media screen and(max-width: 767px) {
+        margin: 10px auto;
+        max-width: 370px;
+    }
     .rab-header {
         position: relative;
         padding: 10px 20px;
