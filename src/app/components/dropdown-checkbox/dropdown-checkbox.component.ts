@@ -1,4 +1,4 @@
-import { Component, OnInit, forwardRef } from '@angular/core';
+import { Component, OnInit, forwardRef, Output, EventEmitter, } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, FormsModule } from '@angular/forms';
 import { MAT_CHECKBOX_CLICK_ACTION } from '@angular/material';
 import { NgModule } from '@angular/core';
@@ -22,15 +22,18 @@ export class DropdownCheckboxComponent implements OnInit {
   isChecked = false;
   isIndeterminate = false;
   constructor() { }
+  @Output() changeEvent = new EventEmitter<string>();
 
   ngOnInit() {
   }
   changeType(type) {
     console.log(type);
+    this.changeEvent.emit(type);
     switch (type) {
       case 'all' : {
         this.isChecked = true;
         this.isIndeterminate = false;
+        
         break;
       }
       case 'none' : {

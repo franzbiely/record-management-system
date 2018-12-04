@@ -110,7 +110,7 @@
                                     <div class="btn-group-top">
                                         <div class="left-section">
                                         
-                                            <app-dropdown-checkbox></app-dropdown-checkbox>
+                                            <app-dropdown-checkbox (changeEvent)="updateCheckboxes($event)"></app-dropdown-checkbox>
                                             
                                             <div class="required">
                                                 <div class="required-box"><i class="asterisk"></i></div><span>Required</span>
@@ -134,7 +134,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Cover Page </span></div>
                                                 </div>
@@ -145,7 +145,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Portfolio Allocation Statement </span></div>
                                                 </div>
@@ -156,7 +156,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> IMPORTANT DISCLOSURE INFORMATION </span></div>
                                                 </div>
@@ -167,7 +167,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Results Comparison </span></div>
                                                 </div>
@@ -178,7 +178,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Portfolio Detail </span></div>
                                                 </div>
@@ -189,7 +189,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Investment Assets by Asset Class </span></div>
                                                 </div>
@@ -200,7 +200,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Distribution and Reallocation by Asset
                                                             Class </span></div>
@@ -212,7 +212,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Target Band </span></div>
                                                 </div>
@@ -223,7 +223,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Risk Assessment </span></div>
                                                 </div>
@@ -234,7 +234,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Implementation Action Plan </span></div>
                                                 </div>
@@ -245,7 +245,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Monte Carlo Results - Portfolio
                                                             Accumulation </span></div>
@@ -257,7 +257,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Monte Carlo Results - Income
                                                             Distribution </span></div>
@@ -269,7 +269,7 @@
                                             <div class="div-option flex-1">
                                                 <div class="left-items">
                                                     <div>
-                                                        <mat-checkbox></mat-checkbox>
+                                                        <mat-checkbox [(indeterminate)]="isIndeterminate" [(checked)]="isChecked"></mat-checkbox>
                                                     </div>
                                                     <div><span class="div-option-text"> Blank Page </span></div>
                                                 </div>

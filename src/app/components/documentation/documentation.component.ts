@@ -13,6 +13,8 @@ declare var $ :any;
 export class DocumentationComponent implements OnInit {
   documentIsOpen = false;
   document_type = 'prop';
+  isChecked = false;
+  isIndeterminate = false;
   constructor(private router: Router, private renderer: Renderer) { }
 
   ngOnInit() {
@@ -42,6 +44,21 @@ export class DocumentationComponent implements OnInit {
     } else {
       $('.orient-container').removeClass('active');
       this.renderer.setElementClass(event.target, 'active', true);
+    }
+  }
+
+  updateCheckboxes($event) {
+    switch($event) {
+      case 'all' : 
+        this.isChecked = true;
+        this.isIndeterminate = false;
+        break;
+      case 'none' : 
+        this.isChecked = false;
+        this.isIndeterminate = false;
+        break;
+      default : 
+        this.isIndeterminate = true;
     }
   }
 }
