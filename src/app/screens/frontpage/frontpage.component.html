@@ -28,7 +28,8 @@
                     <app-dash-box [isNew]="isNew"
                                     [title]="'Recent Proposals'"
                                     [addLabel]="'Add Proposals'"
-                                    [headerRightType]="'add'">
+                                    [headerRightType]="'add'"
+                                    (addHousehold)="household($event)">
                     <div class="info-item" *ngFor="let household of households">
                                     <div class="item-top" >
                                         <div>Chris & Kristy Retirement Proposal</div>
@@ -46,8 +47,7 @@
                 <div class="board-pane">
                     <app-dash-box [isNew]="isNew"
                                     [title]="'Recent Documents'"
-                                    [addLabel]="'Add Documents'"
-                                    [headerRightType]="'add'">
+                                    [addLabel]="'Add Documents'">
                     <div class="info-item space-between" *ngFor="let household of households">
                                     <div class="flex">
                                         <div class="document-icon">
