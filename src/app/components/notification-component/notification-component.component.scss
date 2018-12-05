@@ -56,7 +56,12 @@ i:focus{
 		width: 428px;
 		overflow: hidden;
 		border-radius: 20px;
+		min-width: 370px;
 		box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
+		@media only screen and (max-width: 767px){
+			right: -50px;
+			width: 370px;
+		}
 		
 		.Rectangle-3 {
     		display: flex;
@@ -117,6 +122,9 @@ i:focus{
 			  letter-spacing: normal;
 			  text-align: right;
 			  color: #ffffff;
+			  @media only screen and (max-width: 767px){
+				  margin-left: 130px;
+			  }
 			}
 			i {
 				bottom: 17px;
@@ -215,7 +223,23 @@ i:focus{
         content: url('../../../assets/component/notification/exit-white@3x.png');
         right: 30px;
         bottom: 24px;
-    	position: absolute;
+		position: absolute;
+		@media only screen and (max-width: 767px){
+			right: 12px;
+		}
+	}
+	.remove-icon-head {
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 2px 2px 0 rgba(65, 64, 66, 0.1);
+        content: url('../../../assets/component/notification/exit-white@3x.png');
+        right: 30px;
+		position: absolute;
+		@media only screen and (max-width: 767px){
+			right: 70px;
+		}
 	}
 	.triangle {
 	    position: absolute;

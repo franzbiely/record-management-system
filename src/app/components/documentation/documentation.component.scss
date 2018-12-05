@@ -679,12 +679,23 @@
         padding: 12px 15px;
         margin: 0px 0px; 
         display: inline-block;
-        border: 1px solid #ccc;
+        border: 1px solid #e7e6e6;
         border-radius: 4px;
         box-sizing: border-box;
-        @media only screen and (max-width:767px){
-            width: 100%;
-        }
+        height: 45px;
+
+        font-family: "museo-sans";
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #414042;
+
+            @media only screen and (max-width:767px){
+                width: 100%;
+            }
         }
     input[type=text].text-doc-full, select {
         width: 100%;
@@ -792,6 +803,11 @@
     .orient-container {
         padding: 10px 15px;
         border: solid 1px #c5c5c5;
+
+        &.active{
+            border-color: #1598cb;
+        }
+        
         div{
             @media only screen and (max-width: 767px){
             display: flex;
@@ -954,16 +970,6 @@
         }
         .left-section, .right-section {
             display: flex;
-        }
-        .dropdown-checkbox {
-            border: 1px solid #bdbdbd;
-            border-radius: 6px;
-            padding:15px;
-            height:45px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            width: 77px;
         }
         .dropdown-icon{
             margin-top: 2px;

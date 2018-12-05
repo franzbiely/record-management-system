@@ -14,14 +14,14 @@
             top: 5px;
             right:5px;
             width: 15px;
-            content: url("/src/assets/exit-white.svg");
+            content: url("../../../assets/exit-white.svg");
         }
         .box-content{
             display:flex;
             align-items: center;
             .icon-saved{
                 margin-right: 20px;
-                content: url("/src/assets/icons/save-blue.png")
+                content: url("../../../assets/icons/save-blue.png")
             }
             span{
                 font-family: 'Montserrat', sans-serif;

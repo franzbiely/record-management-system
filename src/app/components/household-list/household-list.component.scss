@@ -95,7 +95,7 @@ app-household-member {
                     .icon-add{
                         padding-right:10px;
                         width: 20px;
-                        content: url("/src/assets/component/household-list/add-white.png");
+                        content: url("../../../assets/component/household-list/add-white.png");
                     }
                 }
             }
@@ -125,6 +125,11 @@ app-household-member {
                     }
                     .option-container{
                         display: flex;
+                        @media only screen and (max-width: 767px){
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            .option{}
+                        }
                     }
                     .option{
                         display: flex;
@@ -145,13 +150,13 @@ app-household-member {
                         }
                         .icon-myclient{
                             
-                            content: url("/src/assets/brand-logos/clientcenter.PNG");
+                            content: url("../../../assets/brand-logos/clientcenter.PNG");
                         }
                         .icon-orion{
-                            content: url("/src/assets/brand-logos/orion.PNG");
+                            content: url("../../../assets/brand-logos/orion.PNG");
                         }
                         .icon-redtail{
-                            content: url("/src/assets/brand-logos/redtail.PNG");
+                            content: url("../../../assets/brand-logos/redtail.PNG");
                         }
                     }
                     .text-search-container{
@@ -178,7 +183,7 @@ app-household-member {
                             border: 1px #ddd solid;
                             font-size:12px;
                             font-family: Montserrat, sans-serif;
-                            background: url("/src/assets/component/household-list/search-gray.png") no-repeat 10px 8px;
+                            background: url("../../../assets/component/household-list/search-gray.png") no-repeat 10px 8px;
                             @media only screen and (max-width: 767px){
                                 margin-top: 15px;
                             }
@@ -196,9 +201,29 @@ app-household-member {
                         display:flex;
                         justify-content: space-between;
                         align-items: center;
+                        @media only screen and (max-width: 767px){
+                            flex-direction: column;
+                            align-items: initial;
+                            justify-content: initial;
+                        }
                         .brand-logo-container{
+                            @media only screen and (max-width: 767px){
+                                display: flex;
+                                justify-content: center;
+                            }
                             .logo-brand{
                                 padding-right: 60px;
+                                width: 160px;
+                                @media only screen and (max-width: 767px){
+                                    padding-right: 0px;
+                                    width: auto;
+                                }
+                            }
+                        }
+                        .information-container{
+                            @media only screen and (max-width: 767px){
+                                text-align: center;
+                                margin-top: 15px;
                             }
                         }
                         .information-container span{
@@ -252,6 +277,10 @@ app-household-member {
                             padding-right:30px;
                             display: flex;
                             justify-content: flex-end;
+                            @media only screen and (max-width: 767px){
+                                justify-content: center;
+                                padding-right: 0px;
+                            }
                             button:first-child{
                                 margin-right: 20px;
                             }
@@ -298,7 +327,7 @@ app-household-member {
                             padding-left: 6px;
                             cursor: pointer;
                             width: 10px;
-                            content: url("/src/assets/component/household-list/arrow-gray.png");
+                            content: url("../../../assets/component/household-list/arrow-gray.png");
                         }
                         td {
                             padding: 10px 30px;
@@ -335,6 +364,10 @@ app-household-member {
                             display: flex;
                             justify-content: flex-end;
                             padding-right:30px;
+                            @media only screen and (max-width: 767px){
+                                justify-content: center;
+                                padding-right: 0px;
+                            }
                             button:first-child{
                                 margin-right: 20px;
                             }

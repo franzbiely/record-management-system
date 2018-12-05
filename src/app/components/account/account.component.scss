@@ -191,17 +191,17 @@ tr.table-head th:first-child, tr.table-head th:last-child {
       padding-right: 8px;
       width: 20px;
       height: 20px;
-      content: url("/src/assets/component/accounts/add-gray.png");
+      content: url("../../../assets/component/accounts/add-gray.png");
   }
   .icon-redtail{
       width:20px;
       height:20px;
-      content: url("/src/assets/component/accounts/redtail.png")
+      content: url("../../../assets/component/accounts/redtail.png")
   }
   .icon-wealth{
     width:20px;
     height:20px;
-    content: url("/src/assets/component/accounts/wealth-access.png")
+    content: url("../../../assets/component/accounts/wealth-access.png")
 }
   ::ng-deep mat-checkbox{
     height: 20px;

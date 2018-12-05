@@ -3,34 +3,51 @@
     position: fixed;
     width:100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(255, 255, 255, 0.5);
     z-index:60;
 }
 .household-member-container {
     display: flex;
     align-items: center;
     justify-content: center;
-        height: 100%;
-    width: 100%;
 }
 .household-container{
     z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
-    top: 50px;
+    top: 110px;
     position: relative;
+    @media only screen and (max-width: 767px){
+        flex:1;
+        padding:10px;
+        top: 110px;
+    }
     .box-container{
         width: 1200px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
+        min-width: 350px;
+        margin-bottom: 50px;
+        background: white;
+        @media only screen and (max-width: 767px){
+            width: auto;
+            flex:1;
+        }
         .box{
             .box-head{
+                border-radius: 6px;
                 padding: 30px 60px 20px 60px;
                 display: flex;
                 flex-direction: column;
-                border-bottom: #ddd 1px solid;
+                border-bottom: #e7e6e6 1px solid;
+                @media only screen and (max-width: 767px){
+                    padding: 10px;
+                }
                 .text-title-container{
                     color: rgba(65, 64, 66,1);
                     display: flex;
@@ -41,7 +58,7 @@
                         font-size: 12px;
                         font-weight: 500;
                         color: #808284;
-                        margin-left:10px;
+                        margin-left:5px;
                     }
                     .asterisk{
                         font-weight: 700;
@@ -54,19 +71,22 @@
                     input[type=text]{
                         flex:1;
                         border-radius: 6px;
-                        border: 1px #ddd solid;
+                        border: 1px #e7e6e6 solid;
                         padding: 15px 10px;
                         font-size: 12px;
                     }
                 }
             }
             .box-body{
-                overflow-y: scroll;
                 .box-content:not(:first-child){
-                    border-top: #ddd 1px solid;
+                    border-top: #e7e6e6 1px solid;
                 }
                 .box-content{
+                    overflow-y: scroll;
                     padding: 20px 50px 30px 60px;
+                    @media only screen and (max-width: 767px){
+                        padding: 10px;
+                    }
                     .text-title-container {
                         display:flex;
                         .material-icons {
@@ -81,9 +101,14 @@
                         flex-direction: row;
                         align-items: center;
                         margin-top: 20px;
+                        @media only screen and (max-width: 767px){
+                            flex-direction: column;
+                            align-items: initial;
+                            margin-top: 0px;
+                        }
                         input[type=text]{
                             border-radius: 6px;
-                            border: 1px #ddd solid;
+                            border: 1px #e7e6e6 solid;
                             font-size: 12px;
                             padding: 15px 10px;
                         }
@@ -94,6 +119,10 @@
                         .text-box-container{
                             width:32%;
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                width:auto;
+                                margin-top: 10px;
+                            }
                             input[type=text]{
                             flex:1; 
                             }
@@ -106,6 +135,10 @@
                         .text-box-container:not(:last-child){
                             display: flex;
                             width: 32%;
+                            @media only screen and (max-width: 767px){
+                                width: auto;
+                                margin-top:10px;
+                            }
                                 input[type=text]:first-child{
                                     flex:1;
                                     border-radius: 6px 0px 0px 6px;
@@ -114,7 +147,7 @@
                                 .btn-dropdown{
                                 width: 30%;
                                 border-radius: 0px 6px 6px 0px;
-                                border: #ddd 1px solid;
+                                border: #e7e6e6 1px solid;
                                 cursor: pointer;
                                 padding:0px;
                                 span{
@@ -127,7 +160,7 @@
                                 .icon-dropdown{
                                     width: 10px;
                                     padding-left: 10px;
-                                    content: url("/src/assets/component/household-member/arrow-gray.png")
+                                    content: url("../../../assets/component/household-member/arrow-gray.png")
                                 }
                                 }
                             }
@@ -135,6 +168,10 @@
                         .text-box-container:last-child{
                             width:32%;
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                width: auto;
+                                margin-top: 10px;
+                            }
                             input[type=text]{
                                 flex:1;
                             }
@@ -145,6 +182,10 @@
                         .text-box-container:first-child{
                             width:66%;
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                width: auto;
+                                margin-top: 10px;
+                            }
                             input[type=text]{
                                 flex:1;
                             }
@@ -152,6 +193,10 @@
                         .text-box-container:last-child{
                             width:32%;
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                width: auto;
+                                margin-top: 10px;
+                            }
                             input[type=text]{
                                 flex:1;
                             }
@@ -163,13 +208,21 @@
                         flex-direction: row;
                         align-items: center;
                         margin-top: 20px;
+                        @media only screen and (max-width: 767px){
+                            flex-direction: column;
+                            align-items: initial;
+                            margin-top:10px;
+                        }
                         .checkbox-address{
                             width:66%;
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                width: auto;
+                            }
                             input[type=text]{
                                 flex:1;
                                 border-radius: 6px;
-                                border: 1px #ddd solid;
+                                border: 1px #e7e6e6 solid;
                                 font-size: 12px;
                                 padding: 15px 140px 15px 10px;
                             }
@@ -177,15 +230,46 @@
                         .text-box-container:last-child{
                             width:32%;
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                width: auto;
+                                margin-top: 10px;
+                            }
                             input[type=text]{
                                 flex:1;
                                 border-radius: 6px;
-                                border: 1px #ddd solid;
+                                border: 1px #e7e6e6 solid;
                                 font-size: 12px;
                                 padding: 15px 10px;
                             }
                         }
                     }
+                    .row-4{
+                        .div-group{
+                            display: flex;
+                            width: 66%;
+                            justify-content: space-between;
+                            @media only screen and (max-width: 767px){
+                                display: flex;
+                                flex:1;
+                                justify-content: space-between;
+                                width: auto;
+                                
+                                .text-box-container:first-child{
+                                    padding-right: 11px;
+                                }
+                            }
+                            .text-box-container{
+                                width:48.5%;
+                                display: flex;
+                                @media only screen and (max-width: 767px) {
+                                    width: 45%;
+                                    flex: 1;
+                                }
+                            }
+                            
+                        }
+                    }
+                    
                 }
             
                 .bottom-container{
@@ -193,11 +277,17 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    @media only screen and (max-width: 767px){
+                        align-items: initial;
+                    }
                     .left-section{
                         display: flex;
                         align-items: flex-start;
+                        @media only screen and (max-width: 767px){
+                            flex-direction: column;
+                        }
                         .icon-add{
-                            content: url("/src/assets/component/household-member/add-blue.png");
+                            content: url("../../../assets/component/household-member/add-blue.png");
                             width:20px;
                             padding-right: 10px;
                         }
@@ -216,11 +306,18 @@
                         }
                         div:last-child{
                             margin-left: 15px;
+                            @media only screen and (max-width: 767px){
+                            margin-left: 0px;
+                            margin-top: 12px;
+                            }
                         }
                     }
                     .right-section{
                         display: flex;
                         flex-direction: row;
+                        @media only screen and (max-width: 767px){
+                            display: none;
+                        }
                         button{
                             width: 152px;
                         }
@@ -237,7 +334,7 @@
                         .icon-save{
                             width: 20px;
                             padding-right: 10px;
-                            content: url("/src/assets/component/household-member/save-blue.png");
+                            content: url("../../../assets/component/household-member/save-blue.png");
                         }
                         button:last-child{
                             display: flex;
@@ -265,13 +362,17 @@
         letter-spacing: 1px;
     }
     ::placeholder{
-        color: #ddd;
+        color: #e7e6e6;
     }
 }
 .input-placeholder {
     position: relative;
     width: 32%;
     display:flex;
+    @media only screen and (max-width: 767px){
+        width:auto;
+        margin-top: 10px;
+    }
     input[type=text]{
         flex: 1;
     }
@@ -311,7 +412,9 @@
     margin: auto;
     color: #ccc;
   }
-  
+  .icon{
+      cursor:pointer;
+  }
   .placeholder span {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

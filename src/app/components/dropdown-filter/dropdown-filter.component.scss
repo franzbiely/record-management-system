@@ -4,7 +4,7 @@ $secondaryfont: "museo-sans", calibri;
 .dropdown-filter {
   margin-left: 20px;
   position: relative;
-  background: url(/src/assets/component/portfolio/filter-gray.png) no-repeat scroll 20px 15px;
+  background: url(../../../assets/component/portfolio/filter-gray.png) no-repeat scroll 20px 15px;
   background-color: white;
   border-radius: 6px;
   z-index: 3;
@@ -31,7 +31,7 @@ $secondaryfont: "museo-sans", calibri;
     }
     .icon-dropdown {
       width: 15px;
-      content: url("/src/assets/component/portfolio/dropdown.png");
+      content: url("../../../assets/component/portfolio/dropdown.png");
     }
   }
   .item-container {
