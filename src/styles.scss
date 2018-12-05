@@ -51,7 +51,8 @@ a {
     border-top-right-radius: 6px;
 }
 .mat-tab-label-active{
-    box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
+    box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2) !important;
+    
     background-color: white;
     color: #1598cb;
     border-right: none !important;

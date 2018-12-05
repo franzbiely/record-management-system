@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $primaryfont: "montserrat", sans-serif;
 $secondaryfont: "museo-sans", calibri;
-
+.overlay{
+    background-color: rgba(255,255,255, 0.5);
+    z-index:1;
+    position: fixed;
+    top:0;
+    bottom: 0; 
+    right: 0; 
+    left: 0;  
+}
 .container-overlay{
     display: flex;
     justify-content: center;
     z-index:100;
-    position: absolute;
+    position: fixed;
     top:0;
     bottom: 0; 
     right: 0; 
@@ -23,6 +31,7 @@ $secondaryfont: "museo-sans", calibri;
         border-radius: 6px;
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         padding: 30px 60px;
+        z-index:100;
         background-color: white;
         @media only screen and (max-width:767px){
             width: auto;

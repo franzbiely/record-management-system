@@ -1,5 +1,5 @@
 app-import-accounts {
-	position: fixed;
+	position: absolute;
     z-index: 99;
     width: 100%;
     display: flex;
@@ -8,7 +8,7 @@ app-import-accounts {
 }
 
 app-account-details {
-	position: fixed;
+	position: absolute;
     z-index: 100;
     width: 100%;
     display: flex;
