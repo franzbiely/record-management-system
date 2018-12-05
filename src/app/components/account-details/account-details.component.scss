@@ -66,7 +66,7 @@ app-add-security{
                     border-right: 1px #e7e6e6 solid;
                     position: relative;
                     @media only screen and (max-width: 767px){
-                        padding: 20px 10px 10px 10px;
+                        padding: 20px 10px;
                     }
                     .overlay{
                         position: absolute;
@@ -91,6 +91,8 @@ app-add-security{
                                 border: 1px #e7e6e6 solid;
                                 border-radius: 6px;
                                 height: 45px;
+                                padding: 0px 15px;
+
                             }
                         }
                         .text-box-container, .dropdown-container{
@@ -111,6 +113,16 @@ app-add-security{
                                 border: 1px #e7e6e6 solid;
                                 border-radius: 6px;
                                 padding: 15px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .asterisk{
+                                    margin-left:5px;
+                                    color: #1598cb;
+                                }
+                            }
+                            .icon-dropdown{
+                                content: url("../../../assets/component/account-details/arrow-gray.png")
                             }
                         }
 
@@ -121,7 +133,7 @@ app-add-security{
                     flex:3;
                     padding: 30px 30px 100px 30px;
                     @media only screen and (max-width: 767px){
-                        padding: 10px 10px 20px 10px;
+                        padding: 20px 10px;
                         border-bottom: #e7e6e6 0.5px solid;
                         
                     }
@@ -211,6 +223,14 @@ app-add-security{
                             display:flex;   
                             margin-top: 10px;
                             input[type=text]{
+                                font-family: "museo-sans";
+                                font-size: 14px;
+                                font-weight: 300;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #c5c5c5;
                                 flex: 1;
                                 border-radius: 6px;
                                 background-color: #ffffff;    
@@ -238,10 +258,14 @@ app-add-security{
                     }
                 }
                 .title-text{
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: "Montserrat", sans-serif;
                     font-size: 18px;
-                    color: rgba(60,60,60,1);
-                    font-weight: 700;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 0.94;
+                    letter-spacing: 1.4px;
+                    color: #404041;
                     text-transform: uppercase;
                 }
                 
