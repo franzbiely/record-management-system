@@ -309,3 +309,8 @@ i:focus, button:focus, div:focus{
 #modal-overlay.active {
     display: block;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

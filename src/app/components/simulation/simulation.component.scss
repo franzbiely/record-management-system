@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $primaryfont: 'montserrat',
 sans-serif;
 
@@ -171,8 +170,9 @@ app-dropdown-update-account {
   padding-bottom: 100px;
   display: flex;
   background-color: white;
-
-
+  flex-basis: auto;
+  flex-grow: 0;
+  
   .overlay {
     position: fixed;
     display: none;
@@ -184,15 +184,23 @@ app-dropdown-update-account {
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 20;
-    @media only screen and (max-width: 767px) {
-      display: flex;
+      
     }
+  @media only screen and (max-width: 767px) {
+    &.sidebar-is-open {
+      .overlay {
+        display: inherit;
+      }  
+    }
+    
   }
-
   .sidebar-container {
     position: relative;
     margin-left: -250px;
     transition: all 0.3s ease-in-out;
+    @media only screen and (max-width: 767px) {
+      position:absolute;
+    }
     .toggle-open {
       display: flex;
     }
@@ -409,6 +417,9 @@ app-dropdown-update-account {
       .row-2-3-container {
         display:flex;
         margin-top:40px;
+        .table-container {
+          padding:0px 20px !important;
+        }
       }
       .row-2-content {
         flex-direction: column-reverse !important;
@@ -418,7 +429,10 @@ app-dropdown-update-account {
         margin:40px;
       }
       .current_portfolio_chart_container.recommended {
-        width:100%;
+        width: 90%;
+        position: relative;
+        box-shadow: none;
+        margin: auto;
       }
       .right-section-container {
         width: 90% !important;
@@ -518,7 +532,7 @@ app-dropdown-update-account {
               flex-direction: column;
             }
             .img-container {
-              padding: 30px 30px 30px 60px;
+              padding: 30px 30px 30px 10px;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -542,7 +556,6 @@ app-dropdown-update-account {
               }
             }
             .table-container {
-              display: none;
               @media only screen and (max-width: 767px) {
                 width: 100%;
                 display: flex;
@@ -676,7 +689,7 @@ app-dropdown-update-account {
             }
             .img-container {
               padding: 30px 30px 30px 10px;
-              display: flex;
+              // display: flex;
               align-items: center;
               justify-content: center;
               @media only screen and (max-width: 767px) {
@@ -702,7 +715,6 @@ app-dropdown-update-account {
               }
             }
             .table-container {
-              display: none;
               @media only screen and (max-width: 767px) {
                 width: 100%;
                 display: flex;
@@ -767,8 +779,13 @@ app-dropdown-update-account {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        flex-basis: auto; /* default value */
+        flex-grow: 0;
+        max-width: 900px;
+        margin: auto;
         .graph-container {
           flex:1;
+
           .circle-graph-1 {
 
             transition: all 0.2s linear;
@@ -835,6 +852,7 @@ app-dropdown-update-account {
         .table-container {
           display: flex;
           padding: 0px 80px;
+
           table tr td {
             border-right: 1px solid #e7e6e6;
             border-bottom: 1px solid #e7e6e6;
@@ -1049,6 +1067,8 @@ app-dropdown-update-account {
   background-color: #ffffff;
   padding:16px 24px;
   width:100%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
   &.recommended {
     .large {
       // display:none;
@@ -1086,6 +1106,7 @@ app-dropdown-update-account {
       height:3px;
       border-radius: 4.1px;
       background-color: #c5c5c5;
+      left: 0;
     }
   }
   .progress-summary {
@@ -1111,6 +1132,7 @@ app-dropdown-update-account {
 .allocation_charts {
   position:relative;
   width: 100%;
+  height: 250px;
   &.recommended {
     h3 {
       color:#67c072 !important;
@@ -1126,6 +1148,7 @@ app-dropdown-update-account {
       align-items: center;
       font-size: 10px;
       font-weight: 600;
+
   }
   h3 {
       color:#c5c5c5;
@@ -1135,5 +1158,43 @@ app-dropdown-update-account {
       text-align: center;
       color: #c5c5c5;
       text-transform: uppercase;
+  }
+}
+.mobile-only {
+  display:none;
+}
+
+@media only screen and (max-width: 1240px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inherit;
+  }
+  .row-1 {
+    .row-1-content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      .right-section-container, .left-section-container {
+        width: 100% !important;
+        .img-container {
+          text-align: center;
+        }
+        .right-head {
+          height: auto !important;
+          padding-top: 10px !important;
+          padding-bottom: 10px !important;
+        }
+        .allocation_charts{
+          max-width: 400px;
+          margin: auto;
+        }
+        .table-container {
+          width: 90%;
+          margin: 20px auto;
+        }
+      }
+    }
   }
 }
