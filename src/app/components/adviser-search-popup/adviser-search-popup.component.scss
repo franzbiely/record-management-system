@@ -49,6 +49,7 @@ $mainfont : 'Montserrat', sans-serif;
         line-height: normal;
         letter-spacing: 2.4px;
         color: #ffffff;
+        text-transform: uppercase;
     }
     .btn-text {
         font-family: 'Montserrat', sans-serif;
@@ -71,6 +72,10 @@ $mainfont : 'Montserrat', sans-serif;
         border: solid 1px #ffffff;
         background-color: #ffffff;
         padding: 15px 18px;
+
+        a{
+            text-decoration: none;
+        }
     }
 
 

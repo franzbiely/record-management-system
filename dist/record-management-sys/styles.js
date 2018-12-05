@@ -621,9 +621,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\record-management-system\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-__webpack_require__(/*! D:\record-management-system\node_modules\normalize.css\normalize.css */"./node_modules/normalize.css/normalize.css");
-module.exports = __webpack_require__(/*! D:\record-management-system\src\styles.scss */"./src/styles.scss");
+__webpack_require__(/*! C:\Users\gcarp\Desktop\artificer-project\record-management-system\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+__webpack_require__(/*! C:\Users\gcarp\Desktop\artificer-project\record-management-system\node_modules\normalize.css\normalize.css */"./node_modules/normalize.css/normalize.css");
+module.exports = __webpack_require__(/*! C:\Users\gcarp\Desktop\artificer-project\record-management-system\src\styles.scss */"./src/styles.scss");
 
 
 /***/ })
