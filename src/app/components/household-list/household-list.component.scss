@@ -33,9 +33,10 @@ app-household-member {
     align-items: center;
     padding: 0px 60px;
     z-index: 70;
-    top: 110px;
+    top: 50px;
     @media only screen and (max-width: 767px){
         padding: 0px 10px;
+        top: 110px;
     }
     .box-content{
         width: 1000px;
@@ -128,7 +129,6 @@ app-household-member {
                         @media only screen and (max-width: 767px){
                             flex-direction: column;
                             flex-wrap: wrap;
-                            .option{}
                         }
                     }
                     .option{
@@ -239,6 +239,10 @@ app-household-member {
                         margin-top:5px;
                         display:flex;
                         align-items: center;
+                        @media only screen and (max-width: 767px){
+                            flex-direction: column;
+                            align-items: initial;
+                        }
                         .email-container{
                            flex: 1;
                            display: flex;
@@ -251,12 +255,19 @@ app-household-member {
                                 border: 1px #ddd solid;
                                 font-size:12px;
                                 font-family: Montserrat, sans-serif;
+                                @media only screen and (max-width: 767px){
+                                   width: auto;
+                                   flex:1;
+                                }
                             }
                         }
                         .password-container{
                             flex: 1;
                             display: flex;
                             justify-content: flex-end;
+                            @media only screen and (max-width: 767px){
+                                margin-top: 10px;
+                             }
                             input[type=password]{
                                 width: 85%;
                                 height: 100%;
@@ -265,6 +276,10 @@ app-household-member {
                                 border: 1px #ddd solid;
                                 font-size:12px;
                                 font-family: Montserrat, sans-serif;
+                                @media only screen and (max-width: 767px){
+                                    width: auto;
+                                    flex:1;
+                                 }
                             }
                         }
                         ::placeholder{

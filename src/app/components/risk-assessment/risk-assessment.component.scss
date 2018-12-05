@@ -112,6 +112,7 @@
                             }
                         }
                         button{
+                            text-transform: uppercase;
                             width: 217px;
                             height: 45px;
                             border: none;
@@ -518,13 +519,17 @@
                                 }
                                 .item{
                                     padding: 10px;
-
+                                    .current-color{
+                                        background-color: #c5c5c5;
+                                    }
+                                    .assessed-color{
+                                        background-color: #67c072;
+                                    }
                                     .item-box{
                                         width: 130px;
                                         height: 128px;
                                         border-radius: 6px;
                                         box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
-                                        background-color: #67c072;
                                         overflow: hidden;
 
                                         .box-header{
@@ -541,6 +546,7 @@
                                             text-align: center;
                                             color: #ffffff;
                                             text-align: center;
+                                            
                                         }
                                         .box-content{
                                             height: 100%;
@@ -562,7 +568,12 @@
                                                 border-bottom: .5px solid #e7e6e6;
                                                 padding-top: 5px;
                                             }
-
+                                            .state-color{
+                                                color: #c5c5c5;
+                                            }
+                                            .score-color{
+                                                color: #67c072;
+                                            }
                                             .score-state{
                                                 width: 100px;
                                                 margin: 0 auto;

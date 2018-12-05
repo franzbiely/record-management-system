@@ -6,7 +6,12 @@ $secondaryfont: museo-sans;
 
 .information-container {
   padding: $padding 0px 0px $padding-left;
-
+  @media only screen and (max-width: 767px){
+    padding:0px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
   .information-box {
     position: absolute;
     width: calc(100% - 200px);
@@ -16,16 +21,80 @@ $secondaryfont: museo-sans;
     border-radius: 6px;
     box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
     margin-bottom:200px;
+    @media only screen and (max-width: 767px){
+      width: 95%;
+    }
   }
   .row-padding {
     padding: $container-padding;
-    .forms-container:not(:first-child) {
-      margin-top: 20px;
+      @media only screen and (max-width: 767px){
+        padding: 20px 10px;
+      }
+      .forms-container:not(:first-child) {
+        margin-top: 20px;
+        @media only screen and (max-width: 767px){
+          margin-top: 0px;
+        }
+      }
+      &.btn-browse-container {
+        padding: 30px;
+      }
+    .text-container{
+      display: flex;
+      flex-direction: column;
+        div:last-child{
+          margin-top: 10px;
+        }
+        div{
+          display:flex;
+          flex:1;
+            input[type=text]{
+              flex:1;
+            }
+        }
     }
-    &.btn-browse-container {
-      padding: 30px;
+    .disclaimer-container{
+      width: 100%; 
+      display: table;
+      .disclaimer-content{
+        display: table-row;
+        @media only screen and (max-width: 767px){
+          display: flex;
+          flex-direction: column;
+        }
+      }
+  }
+  .forms-container{
+    display: flex;
+    @media only screen and (max-width: 767px){
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .home-1{
+      @media only screen and (max-width: 767px){
+        margin-top: 10px;
+      }  
+    }
+    .text-input-1{
+      @media only screen and (max-width: 767px) {
+        display: flex;
+        flex:1;
+        margin-top: 10px;
+      }
+    }
+    .input-placeholder{
+      @media only screen and (max-width: 767px) {
+        display: flex;
+        flex:1;
+      }
+    }
+    input[type=text]{
+      @media only screen and (max-width: 767px) {
+        flex:1;
+      }
     }
   }
+}
   .flex {
     display: flex;
   }
@@ -77,8 +146,10 @@ $secondaryfont: museo-sans;
     }
   }
   .colors-selector-container {
-
     display: flex;
+    @media only screen and (max-width: 767px){
+      flex-direction: column;
+    }
   }
 
   .flex-container {
@@ -99,7 +170,6 @@ $secondaryfont: museo-sans;
     height: auto;
     padding: 10px;
   }
-  .space-left {}
   .color-option-container {
     display: flex;
     flex: 1;
@@ -181,6 +251,10 @@ $secondaryfont: museo-sans;
     float: right;
     margin-top: 20px;
     display: flex;
+    @media only screen and (max-width: 767px){
+      float: initial;
+      justify-content: center;
+    }
     div button i {
       padding-right: 10px;
     }
@@ -289,6 +363,9 @@ select {
 }
 .btn-upload {
   border:1px solid #1598cb;
+  @media only screen and (max-width: 767px){
+    margin-top:10px;
+  }
 }
 .btn-cancel {
   width: 160px;
@@ -382,6 +459,9 @@ select {
   border-radius: 0px 6px 6px 0px;
   border: solid 1px #e7e6e6;
   padding: 0px 20px;
+  @media only screen and (max-width: 767px){
+    width: 100%;
+  }
 }
 
 .btn-dpn {
