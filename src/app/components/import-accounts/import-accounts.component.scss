@@ -30,12 +30,12 @@
     }
 }
 .box-container{
-    height: 100%;
     position: relative;
     padding: 50px 40px 0px 120px;
     z-index: 70;
     @media only screen and (max-width: 767px){
         padding: 110px 10px;
+        display: flex;
     }
     .box-content{
         min-width: 355px;
@@ -43,6 +43,10 @@
         box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
         background-color: white;
+        @media only screen and (max-width: 767px){
+            width: auto;
+            flex: 1;
+        }
         .box-head{
             background-color: #1598cb;
             border-radius: 6px 6px 0px 0px;
@@ -147,7 +151,6 @@
                     .right {
                         margin-left: 20px;
                         @media only screen and (max-width: 767px){
-                            margin-right: -40px;
                         }
                     }
                     .option{
@@ -217,6 +220,11 @@
                            tr th:nth-child(3), tr th:nth-child(4), tr th:nth-child(5),
                            tr th:nth-child(6), tr th:nth-child(7), tr th:nth-child(8){
                                display:none;
+                           }
+                        }
+                        th:last-child, td:last-child{
+                           @media only screen and (max-width: 767px) {
+                               padding-right: 10px;
                            }
                         }
                         th{
