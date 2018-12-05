@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-list-view',
@@ -16,14 +16,20 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   ],
 })
 export class ListViewComponent implements OnInit {
-  hasData:boolean = false;
+  hasData:boolean = true;
   @Input() addLabel:string;
-  constructor() { }
+  openHousehold: boolean = false;
+  constructor(private modalStatus: ModalStatusService) { }
 
 
   columns = ["name", "id", "$ value", "#", "state/status", "created", "last updated", "actions"];
 
   ngOnInit() {
+    this.modalStatus.household.subscribe(value => this.openHousehold = value);
+  }
+
+  openHouseHoldModal() {
+    this.modalStatus.SET_household(true);
   }
 
 }

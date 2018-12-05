@@ -79,6 +79,12 @@ export class ModalStatusService {
     this.firmInformationSource.next(value);
   }
 
+  private householdSource = new BehaviorSubject<boolean>(false);
+  public household = this.householdSource.asObservable();
+  SET_household(value: boolean) {
+    this.householdSource.next(value);
+  }
+
   constructor() { }
   
 }

@@ -1,3 +1,5 @@
+<app-household-list *ngIf="openHousehold"></app-household-list>
+
 <div class="container">
   <div class="list-view-container" [ngClass]="{'empty' : !hasData}">
     <div *ngIf="!hasData" class="add-container flex">
@@ -13,7 +15,7 @@
         <div class="add">
           <div class="add-container">
           <div class="icon-container"><i class="material-icons">add_circle</i></div>
-          <div><span class="text-icon">Add</span></div>
+          <div><a class="text-icon" (click)="openHouseHoldModal()">Add</a></div>
           </div>
         </div>
       </div>
@@ -23,7 +25,7 @@
             <div class="input-text"><input type="text" class="search-box" placeholder="Search This Page"></div>
         </div>
         <div class="filter" >
-            <div class="filter-text"><button class="btn-filter">Filter <i class="dropdown-icon"></i></button> </div>
+          <app-dropdown-filter></app-dropdown-filter>
         </div>
       </div>
     
@@ -50,7 +52,9 @@
                   <td class="state" [ngClass]="['col-other']"><span class="item">{{ list.state }}</span></td>
                   <td class="created" [ngClass]="['col-other']"><span class="item">{{ list.created }}</span><br/><span class="item strong">By:&nbsp;{{ list.createdBy }}</span></td>
                   <td class="updated" [ngClass]="['col-other']"><span class="item">{{ list.updated }}</span><br/><span class="item strong">By:&nbsp;{{ list.updatedBy }}</span></td>
-                  <td class="action" [ngClass]="['col-action']"><i class="material-icons icon-action">more_vert</i></td>
+                  <td class="action" [ngClass]="['col-action']">
+                    <app-dropdown-actions></app-dropdown-actions>
+                  </td>
               </tr>
               <ng-container *ngIf="list.open && list.data != null">
                 <tr class="dropdown-tr" *ngFor="let info of list.data">
@@ -61,7 +65,7 @@
                   <td class="dropdown-td state align-right"><span class="dropdown-item">{{ info.state}}</span></td>
                   <td class="dropdown-td created align-right"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
                   <td class="dropdown-td updated align-right"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
-                  <td class="dropdown-td action align-center"><i class="material-icons icon-action action-button">more_vert</i></td>
+                  <td class="dropdown-td action align-center"><app-dropdown-actions></app-dropdown-actions></td>
                 </tr>
               </ng-container>
             </tbody>
