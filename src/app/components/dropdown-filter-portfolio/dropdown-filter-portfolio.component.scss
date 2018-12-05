@@ -5,7 +5,7 @@
             border-radius: 6px 6px 0px 0px;
         }
         .btn-filter {
-            background: url(/src/assets/component/portfolio/filter-gray.png) no-repeat 20px 13px;
+            background: url(../../../assets/component/portfolio/filter-gray.png) no-repeat 20px 13px;
             width: 240px;
             height: 45px;
             padding: 0px 15px 0px 0px;
@@ -33,7 +33,7 @@
             }
             .icon-dropdown {
               width: 15px;
-              content: url("/src/assets/component/portfolio/dropdown.png");
+              content: url("../../../assets/component/portfolio/dropdown.png");
             }
         }
     }

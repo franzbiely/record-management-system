@@ -53,7 +53,7 @@ $primaryfont : 'montserrat', sans-serif;
         right: 10px;
         width:20px;
         height:20px;
-        content: url("/src/assets/component/portfolio/exit-white.png");
+        content: url("../../../assets/component/portfolio/exit-white.png");
     }
     .modal-warn-box{
         padding: 0px 20px;
@@ -325,7 +325,7 @@ $primaryfont : 'montserrat', sans-serif;
                             justify-content: center;
                             .graph-2{
                                 width: 100%;
-                                content: url("/src/assets/component/simulation-current/graph 1.PNG");
+                                content: url("../../../assets/component/simulation-current/graph1.PNG");
                             }
                         }
                     }

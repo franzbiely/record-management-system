@@ -15,7 +15,7 @@
         <div class="box-content">
           <div class="text-title-container">
               <span class="text-title">Primary Member:</span>
-              <i class="material-icons">delete</i>
+              <i class="material-icons icon">delete</i>
           </div>
           <div class="container">
             <div class="row-1">
@@ -54,8 +54,10 @@
               <div class="text-box-container"><input type="text" class="text-box" placeholder="Zip Code"></div>
             </div>
             <div class="row-4">
-              <div class="text-box-container"><input type="text" class="text-box" placeholder="City"></div>
-              <div class="text-box-container"><input type="text" class="text-box" placeholder="Select State"></div>
+              <div class="div-group">
+                <div class="text-box-container"><input type="text" class="text-box" placeholder="City"></div>
+                <div class="text-box-container"><input type="text" class="text-box" placeholder="Select State"></div>
+              </div>
               <div class="text-box-container"><input type="text" class="text-box" placeholder="Date of Birth"></div>
             </div>
           </div>
@@ -74,6 +76,7 @@
         <div class="box-content" *ngIf="memberCount>1">
             <div class="text-title-container">
                 <span class="text-title">Secondary Member:</span>
+                <i class="material-icons icon">delete</i>
             </div>
             <div class="container">
               <div class="row-1">
@@ -117,8 +120,10 @@
                 <div class="text-box-container"><input type="text" class="text-box" placeholder="Zip Code"></div>
               </div>
               <div class="row-4">
-                <div class="text-box-container"><input type="text" class="text-box" placeholder="City"></div>
-                <div class="text-box-container"><input type="text" class="text-box" placeholder="Select State"></div>
+                <div class="div-group">
+                  <div class="text-box-container"><input type="text" class="text-box" placeholder="City"></div>
+                  <div class="text-box-container"><input type="text" class="text-box" placeholder="Select State"></div>
+                </div>
                 <div class="text-box-container"><input type="text" class="text-box" placeholder="Date of Birth"></div>
               </div>
             </div>
@@ -137,6 +142,7 @@
           <div class="box-content" *ngIf="memberCount>2">
               <div class="text-title-container">
                   <span class="text-title">Member:</span>
+                  <i class="material-icons icon">delete</i>
               </div>
               <div class="container">
                 <div class="row-1">
@@ -180,8 +186,10 @@
                   <div class="text-box-container"><input type="text" class="text-box" placeholder="Zip Code"></div>
                 </div>
                 <div class="row-4">
-                  <div class="text-box-container"><input type="text" class="text-box" placeholder="City"></div>
-                  <div class="text-box-container"><input type="text" class="text-box" placeholder="Select State"></div>
+                  <div class="div-group">
+                    <div class="text-box-container"><input type="text" class="text-box" placeholder="City"></div>
+                    <div class="text-box-container"><input type="text" class="text-box" placeholder="Select State"></div>
+                  </div>
                   <div class="text-box-container"><input type="text" class="text-box" placeholder="Date of Birth"></div>
                 </div>
               </div>

@@ -59,7 +59,7 @@ $secondaryfont : 'museo-sans', calibri;
         right: 10px;
         width:20px;
         height:20px;
-        content: url("/src/assets/component/portfolio/exit-white.png");
+        content: url("../../../assets/component/portfolio/exit-white.png");
     }
     .modal-warn-box{
         padding: 0px 20px;
@@ -77,7 +77,7 @@ $secondaryfont : 'museo-sans', calibri;
             padding: 33px 30px 40px 30px;
             .warning-icon{
                 width:40px;
-                content: url("/src/assets/component/portfolio/warning.png");
+                content: url("../../../assets/component/portfolio/warning.png");
             }
             span{
                 margin-top: 24px;
@@ -460,7 +460,7 @@ $secondaryfont : 'museo-sans', calibri;
                 align-items: center;
             }
             .search-input{
-                background: url(/src/assets/component/portfolio/search-gray.png) no-repeat scroll 15px 13px;
+                background: url(../../../assets/component/portfolio/search-gray.png) no-repeat scroll 15px 13px;
                 background-color: white;
             }
         }

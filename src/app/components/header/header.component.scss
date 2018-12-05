@@ -63,6 +63,11 @@ header {
         flex-grow: 1;
         max-width: 100%;
     }
+    .logo{
+        @media only screen and (max-width: 767px){
+            width: 230px;
+        }
+    }
 
     .header-search-bar {
         min-width: 300px;
