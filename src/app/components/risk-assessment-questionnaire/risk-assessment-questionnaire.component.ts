@@ -14,6 +14,7 @@ export class RiskAssessmentQuestionnaireComponent implements OnInit {
   selectMessageTemplate: boolean = false;
   sendQuestionnaire: boolean = false;
   sendDocumentModal: boolean = false;
+  riskSendFormModal: boolean = false;
   saveFunc() {
     this.saveEvent.emit(true);
   }
@@ -21,8 +22,10 @@ export class RiskAssessmentQuestionnaireComponent implements OnInit {
   }
   ngOnInit() {
     this.modalStatus.sendDocument.subscribe(value => this.sendDocumentModal = value);
+    this.modalStatus.riskSendForm.subscribe(value => this.riskSendFormModal = value);
   }
   closeMe() {
     this.modalStatus.SET_sendDocument(false);
+    this.modalStatus.toggleRiskSendForm(false);
   }
 }
