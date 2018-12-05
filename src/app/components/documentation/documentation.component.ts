@@ -39,12 +39,14 @@ export class DocumentationComponent implements OnInit {
   }
 
   orientToggler(event: any) {
-    if ($(event.target).hasClass('active')) {
-      $('.orient-container').removeClass('active');
-    } else {
-      $('.orient-container').removeClass('active');
-      this.renderer.setElementClass(event.target, 'active', true);
-    }
+    $('.orient-container').removeClass('active');
+    $(event.target).closest('.orient-container').addClass('active');
+    // if ($(event.target).closest('.orient-container').hasClass('active')) {
+    //   $('.orient-container').removeClass('active');
+    // } else {
+    //   $('.orient-container').removeClass('active');
+    //   this.renderer.setElementClass(event.target, 'active', true);
+    // }
   }
 
   updateCheckboxes($event) {

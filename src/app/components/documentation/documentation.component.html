@@ -459,10 +459,10 @@
                             <p class="title-text"> Orientation </p>
                         </div>
                         <div class="flex btn-group-orient">
-                            <div class="orient-container" (click)="orientToggler($event)">
+                            <div class="orient-container">
                                 <div class="btn-orient align-center">
                                     <div class="radio-holder">
-                                        <mat-radio-button class="text-orient">Portrait</mat-radio-button>
+                                        <mat-radio-button (click)="orientToggler($event)" class="text-orient">Portrait</mat-radio-button>
                                     </div>
                                     <div class="radio-text">
                                         <div><img class="portrait-icon"></div>
@@ -472,7 +472,7 @@
                             <div class="orient-container landscape-box" style="margin-left: 30px;">
                                 <div class="btn-orient align-center">
                                     <div class="radio-holder">
-                                        <mat-radio-button class="text-orient">Landscape</mat-radio-button>
+                                        <mat-radio-button (click)="orientToggler($event)" class="text-orient">Landscape</mat-radio-button>
                                     </div>
                                     <div class="radio-text">
                                         <i class="landscape-icon"></i>
