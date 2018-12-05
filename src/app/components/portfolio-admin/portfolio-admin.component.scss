@@ -286,6 +286,12 @@ th {
     background-color: #fafbfc;
     
   }
+i{
+    position: relative;
+    left: 7px;
+    content: url('../../../assets/component/household-member/arrow-gray.png');
+    z-index: 999999;
+}
 tr{
     border-bottom: 1px solid #dedede;
 }
@@ -334,6 +340,7 @@ td:first-child{
           
         }
     }
+
     input[type=text]{
         background: url('../../../assets/component/listview/search-gray.png') no-repeat  15px 10px;
         width: 253px;
