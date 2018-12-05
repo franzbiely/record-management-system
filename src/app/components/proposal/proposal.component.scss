@@ -54,7 +54,7 @@
         @media only screen and (max-width: 767px){ 
             padding: 20px;
             display: flex;
-            height: 256px;
+            height: 290px;
             flex-direction: column;
             .btn-container, .id-container{
                 display: none;
@@ -304,11 +304,10 @@
     padding: 0px 30px;
     margin-bottom: 100px;
     @media only screen and (max-width: 767px){
-        padding: 10px;
         margin-bottom: 200px;
+        padding: 0px;
     }
     nav ul {
-   
     padding: 0;
     margin: 0; 
     }
@@ -321,8 +320,6 @@
         min-width: 375px;
         position: relative;
         flex: 1;
-        width: 100%;
-        display: inline-block;
         background-color: white;
         height: auto;
         border-radius: 6px;

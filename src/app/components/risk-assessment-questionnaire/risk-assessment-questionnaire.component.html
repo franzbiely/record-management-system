@@ -10,7 +10,7 @@
     <div class="modal-body">
       <div class="input-field">
         <details class="input-text" (mousedown)="selectRecepient=!selectRecepient">
-          <summary>Chris Candelaria (ccandelaria@loringward.com)  <i class="material-icons">{{ selectRecepient ? "keyboard_arrow_up" : "keyboard_arrow_down"}}</i> </summary>
+          <summary> <div>Chris Candelaria (ccandelaria@loringward.com)</div><div><i class="material-icons">{{ selectRecepient ? "keyboard_arrow_up" : "keyboard_arrow_down"}}</i></div></summary>
           <div class="container-recepient">
             <div class="recepient-item">
               <mat-radio-group>
@@ -32,7 +32,7 @@
         </details>
       </div>
       <div class="input-field">
-        <input type="text" class="input-text" placeholder="Subject">
+        <input type="text" class="input-text text-padding" placeholder="Subject">
       </div>
       <div class="input-field">
         <details class="input-text details" (mousedown)="selectMessageTemplate=!selectMessageTemplate">

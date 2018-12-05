@@ -4,7 +4,7 @@
             <div>
                 <span class="title"> Firm Information </span>
             </div>
-            <div class="flex" style="margin-top: 10px;">
+            <div class="flex text-container" style="margin-top: 10px;">
                 <div class="flex-1">
                     <input type="text" placeholder="Firm Name" class="text-doc">
                 </div>
@@ -83,9 +83,9 @@
             <hr class="full-width divider">
         </div>
         <div class="row-padding flex-1">
-            <div style="width: 100%; display: table;">
-                <div style="display: table-row;">
-                    <div style="width: auto; display: table-cell; height: auto;">
+            <div class="disclaimer-container">
+                <div class="disclaimer-content">
+                    <div class="" style="width: auto; display: table-cell; height: auto;">
                         <div>
                             <span class="title"> DISCLAIMER: </span>
                         </div>
@@ -170,12 +170,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="forms-container flex vertical-space">
-                    <div class="text-double flex-1 flex">
+                <div class="forms-container flex">
+                    <div class="text-double home-1 flex-1 flex">
                         <div class="flex-2">
                             <input type="text" class="text-double flex-1" placeholder="Primary Phone #">
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1 btn-home">
                             <button class="flex-1 btn-45 btn-dpn"><span>Home</span>&nbsp;&nbsp;<i class="icon-dpn"></i></button>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                         <div class="flex-2">
                             <input type="text" class="text-double flex-1" placeholder="Secondary Phone #">
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1 btn-home">
                             <button class="flex-1 btn-45 btn-dpn"><span>Home</span>&nbsp;&nbsp;<i class="icon-dpn"></i></button>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                         <input type="text" class="text-doc-full" placeholder="Fax">
                     </div>
                 </div>
-                <div class="forms-container flex vertical-space">
+                <div class="forms-container flex">
                     <div class="text-input-1 flex-2">
                         <input type="text" class="text-doc-2" placeholder="Address">
                     </div>
@@ -199,7 +199,7 @@
                         <input type="text" class="text-doc-full" placeholder="Zip Code">
                     </div>
                 </div>
-                <div class="forms-container flex vertical-space">
+                <div class="forms-container flex">
                     <div class="text-input-1 flex-1">
                         <input type="text" class="text-doc" placeholder="City">
                     </div>
@@ -210,7 +210,7 @@
                     </div>
                 </div>
                 <div class="btn-can-save-container">
-                    <div class="vertical-space" style="display:inline-block; padding-right: 10px;">
+                    <div style="display:inline-block; padding-right: 10px;">
                         <button class="btn-cancel" (click)="toPrev()"><span class="btn-text">Cancel</span></button>
                     </div>
                     <div style="display:inline-block;">
