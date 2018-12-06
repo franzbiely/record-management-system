@@ -99,17 +99,25 @@ export class SimulationComponent implements OnInit {
             fill: false,
             data: [0, 1, 1.5, 2],
             borderColor: '#67c072',
-            borderWidth: 6
+            borderWidth: 0,
+            pointRadius: 0
         }, {
             label: 'Portfolio Balance - Distribution',
             fill: false,
             data: [0, 1, 1.5, 2, 2.5, 2.8, 3],
             borderColor: '#f47a64',
-            borderWidth: 2
+            borderWidth: 0,
+            pointRadius: 0
         }]
       },
       options: {
-        legend: { display: true, position: 'bottom' },
+        legend: { display: true, position: 'bottom', labels: {
+          fontSize: 8,
+          fontColor: '#414042',
+          fontFamily: 'Montserrat',
+          usePointStyle: true,
+          boxWidth: 8
+        } },
         plugins: {
             strokeShadow: {},
             datalabels: {
@@ -146,17 +154,19 @@ export class SimulationComponent implements OnInit {
             fill: false,
             data: [0, 1, 1.5],
             borderColor: '#9d9d9d',
-            borderWidth: 6
+            borderWidth: 6,
+            pointRadius: 0
         }, {
             label: 'Portfolio Balance - Distribution',
             fill: false,
             data: [0, 1, 1.5, 2, 2.5, 2.8, 3],
             borderColor: '#f47a64',
-            borderWidth: 2
+            borderWidth: 2,
+            pointRadius: 0
         }]
       },
       options: {
-        legend: { display: true, position: 'bottom' },
+        legend: { display: false, position: 'bottom' },
         plugins: {
             strokeShadow: {},
             datalabels: {

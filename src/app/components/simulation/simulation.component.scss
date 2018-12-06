@@ -1077,10 +1077,42 @@ app-dropdown-update-account {
       height: 350px;
     }
     h3, .big-text {
-      color:#67c072;
+      color:#67c072 !important;
+      strong{
+         font-weight: bold;
+      }
     }
     .progress { 
       background-color: #67c072 !important;
+    }
+  }
+  .cpcc-header {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      flex:1;
+    }
+    .cpcch-right {
+      flex:1;
+      color:#c5c5c5;
+      display:flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 8.1px;
+      span {
+        font-weight: 300;
+        opacity:0.75;
+        padding:5px 12px;
+      }
+      button {
+        font-size: 8.1px;
+        height:18px;
+        width: 95px;
+        font-weight: 600;
+        border-radius: 4.9px;
+        box-shadow: 0 3px 6px 0 rgba(65, 64, 66, 0.15);
+        background-color: #ffffff;
+      }
     }
   }
   @media only screen and (max-width: 767px) {
@@ -1126,6 +1158,9 @@ app-dropdown-update-account {
       margin-left:15px;
       font-size: 16px;
       color: #c5c5c5;
+      strong{
+         font-weight: bold;
+      }
     }
   }
 }
