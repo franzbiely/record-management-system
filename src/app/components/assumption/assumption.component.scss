@@ -8,12 +8,18 @@ $mainfont : 'montserrat';
     display: flex;
     width:100%;
     justify-content: flex-end;
+    @media only screen and (max-width: 767px){
+        justify-content: center;
+    }
 }
 .right-side-container{
     padding:33px 110px 900px 110px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media only screen and (max-width: 767px){
+        padding: 10px 10px 200px 10px;
+    }
 }
 .page-container {
     padding: 60px 40px 50px 40px; 
@@ -24,6 +30,11 @@ $mainfont : 'montserrat';
     box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
     background-color: #ffffff;
     flex-direction: column;
+    @media only screen and (max-width: 767px){
+        width: auto;
+        padding: 20px;
+        height: 1000px;
+    }
 }
 .name-container {
     text-align: right;
@@ -51,7 +62,10 @@ $mainfont : 'montserrat';
     display: flex;
     justify-content: flex-end;
     align-items: top;
-  
+    text-align: right;
+    @media only screen and (max-width: 767px){
+        font-size: 11px;
+    }
    
 }
 .description-section {
@@ -70,6 +84,10 @@ $mainfont : 'montserrat';
     padding-right: 60px;
     font-family: $mainfont;
     text-align: left;
+    @media only screen and (max-width: 767px){
+        padding-right: 0px;
+    
+    }
 }
 .title-item:not(:first-child) {
     margin-top: 25px;
@@ -139,7 +157,7 @@ $mainfont : 'montserrat';
 .page {
     width:100%;
     height: 100%;
-
+    position: relative;
 }
 .flex-1 {
     flex: 1;
@@ -172,6 +190,11 @@ td {
     font-family: $mainfont;
     padding: 5px;
     font-size:10px;
+    @media only screen and (max-width: 767px){
+        white-space: unset;
+        word-wrap: break-word;
+        font-size:8px;
+    }
 }
 
 .footer {
@@ -184,7 +207,10 @@ td {
 }
 .footer-container { 
     bottom: 0px;
-
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 .main {
@@ -231,10 +257,20 @@ span.page-text {
     bottom: 0;
     right: 0;
     left:0;
+    @media only screen and (max-width: 767px){
+        padding: 0px;
+    }
     background-image: linear-gradient(to bottom, transparent, #ffffff);
         .btn-content{
         justify-content: flex-end;
         display: flex;  
+        @media only screen and (max-width: 767px){
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 15px;
+        }
     }
 }
 button.update {
@@ -274,7 +310,16 @@ button.save {
 }
 .btn-update {
     padding-right: 30px;
+    @media only screen and (max-width: 767px){
+        padding-right: 0px;
+    }
 }
+.btn-save {
+    @media only screen and (max-width: 767px){
+        margin-top: 10px;
+    }
+}
+
 .desciption-bottom {
     width:100%;
     font-family: $mainfont;
@@ -285,4 +330,10 @@ button.save {
     padding: 5px 0px;
     font-family: "Montserrat", sans-serif;
     margin-left: -10px;
+    @media only screen and (max-width: 767px){
+        margin-left: 0px;
+    }
+}
+.margin-top{
+    margin-top: 20px;
 }

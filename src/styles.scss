@@ -234,13 +234,15 @@ main {
     flex-direction: row;
     @media only screen and (max-width: 767px){
         flex-direction: column-reverse;
+        justify-content: space-between;
+        min-height: 100%;
     }
     > .content {
         display: flex;
         width: 100%;
         flex-direction: column;
         @media only screen and (max-width: 767px){
-            padding:0px;
+            align-items: center;
         }
     }
 }
