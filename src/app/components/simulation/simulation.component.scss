@@ -1038,7 +1038,25 @@ app-dropdown-update-account {
 ::ng-deep .mat-accent .mat-slider-track-fill {
   background-image: linear-gradient(to left, #4db6c5, #1598cb);
 }
-
+::ng-deep .mat-slider-horizontal .mat-slider-ticks-container {
+  box-shadow: 0 4px 8px 0 rgba(52, 53, 52, 0.18);
+}
+::ng-deep .mat-slider-horizontal .mat-slider-track-fill {
+  height: 4px !important;
+}
+::ng-deep .mat-slider-horizontal .mat-slider-track-wrapper{
+  height: 20px !important;
+}
+::ng-deep .mat-slider-horizontal .mat-slider-track-background{
+  height: 3px !important;
+  background-color: white;
+}
+::ng-deep .mat-slider:hover .mat-slider-track-background {
+  background-color: white !important;
+}
+::ng-deep .cdk-focused .mat-slider-track-background{
+  background-color: white !important;
+}
 ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
   background-color: white;
 }

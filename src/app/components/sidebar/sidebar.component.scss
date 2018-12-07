@@ -78,6 +78,7 @@ $linkInActive : #c5c5c5;
     }
 
     .link-active {
+        font-family: "montserrat", sans-serif;
         font-size: 8px;
         line-height: 1.25;
         letter-spacing: 0.6px;
@@ -87,7 +88,7 @@ $linkInActive : #c5c5c5;
         text-align: center;
         color: $linkActive;
         text-decoration: none;
-        
+        text-transform: uppercase;
         .icon-active{
             width: $icon;
             height: $icon;
@@ -96,6 +97,7 @@ $linkInActive : #c5c5c5;
     }
 
     .link-inactive {
+        font-family: "montserrat", sans-serif;
         font-size: 8px;
         line-height: 1.25;
         letter-spacing: 0.6px;
@@ -106,7 +108,7 @@ $linkInActive : #c5c5c5;
         text-align: center;
         color: $linkInActive;
         text-decoration: none;
-
+        text-transform: uppercase;
         .icon-inactive{
             width: $icon;
             height: $icon;

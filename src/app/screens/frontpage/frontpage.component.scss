@@ -101,6 +101,7 @@
             line-height: 0.94;
             letter-spacing: 1.4px;
             text-align: center;
+            text-transform: uppercase;
         }
         .board-toggle {
             color: #c5c5c5;
@@ -350,7 +351,7 @@
         text-align: right;
         font-family: "Montserrat", sans-serif;
         font-size: 11px;
-        color: #414042;
+        color: #77787b;
         font-weight: 600;
         .grey-text{
             @extend %grey-text;font-size: 7pt;

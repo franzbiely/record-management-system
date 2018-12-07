@@ -13,7 +13,8 @@
         flex: 1;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+		align-items: center;
+		padding: 0px 15px;
         &::-webkit-details-marker { 
             display: none;
         }
@@ -21,7 +22,6 @@
             outline: none;
         }
 		.title {
-			padding-left:15px;
 			flex:1;
 			color: #c5c5c5;
 			* {

@@ -40,7 +40,7 @@ app-household-member {
     }
     .box-content{
         width: 1000px;
-        box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.7);
+        box-shadow: 0 15px 30px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
         background-color: white;
         margin: auto;
@@ -64,18 +64,24 @@ app-household-member {
                 flex-direction: column;
                 align-items: flex-start;
                 .text-title{
-                    font-family: Montserrat, sans-serif;
-                    color: white;
+                    font-family: "Montserrat",sans-serif;
                     font-size: 20px;
                     font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1;
+                    letter-spacing: 0.2px;
+                    color: #ffffff;
                 }
                 .text-subtitle{
-                    font-family: Montserrat, sans-serif;
+                    font-family: "museo-sans";
                     font-size: 16px;
                     font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
                     line-height: 1.13;
                     letter-spacing: -0.2px;
-                    color: #fff;
+                    color: #ffffff;
                 }
             }
 
@@ -87,11 +93,15 @@ app-household-member {
                     align-items: center;
                     cursor: pointer;
                     .text-add{
-                        font-family: Montserrat, sans-serif;
+                        font-family: "Montserrat", sans-serif;
                         font-size: 12px;
-                        color: white;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.9px;
+                        color: #ffffff;
                         text-transform: uppercase;
-                        font-weight:600;
                     }
                     .icon-add{
                         padding-right:10px;
@@ -333,10 +343,17 @@ app-household-member {
                             }
                          }
                         th{
-                            font-family:Montserrat, sans-serif;
+                            font-family: "Montserrat",sans-serif;
                             font-size: 10px;
+                            font-weight: 600;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1;
+                            letter-spacing: 0.8px;
+                            color: #414042;
+                            height: 47px;
+                            padding: 0px 30px;
                             text-transform: uppercase;
-                            padding: 20px 30px;
                         }
                         th .icon-dropdown{
                             padding-left: 6px;
@@ -345,13 +362,19 @@ app-household-member {
                             content: url("../../../assets/component/household-list/arrow-gray.png");
                         }
                         td {
-                            padding: 10px 30px;
-                            font-size: 10px;
-                            font-family:Montserrat, sans-serif;
-                            color: rgba(65, 64, 66, 1)
+                            font-family: "museo-sans";
+                            font-size: 11px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1;
+                            letter-spacing: normal;
+                            color: #414042;
+                            padding:0 30px;
+                            height: 47px;
                         }
                         tr:first-child{
-                            background-color:#f7f7f7;
+                            background-color:#fafbfc;
                         }
                         tr td:first-child, tr th:first-child{
                             text-align: center;
@@ -368,8 +391,8 @@ app-household-member {
                         tr th:last-child, tr td:last-child{
                             text-align:left;
                         }
-                        tr{
-                            border-bottom: 1px #ddd solid;
+                        tr:not(:first-child){
+                            border-bottom: 0.5px #e7e6e6 solid;
                         }
                     }
                 }

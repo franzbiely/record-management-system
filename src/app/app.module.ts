@@ -106,6 +106,7 @@ import { FrontpageComponent } from './screens/frontpage/frontpage.component';
 import { DomforDirective } from './directives/domfor.directive';
 import { DropdownFilterPortfolioComponent } from './components/dropdown-filter-portfolio/dropdown-filter-portfolio.component';
 import { DropdownCheckboxComponent } from './components/dropdown-checkbox/dropdown-checkbox.component';
+import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-portfolio-screens/popup-create-portfolio-screens.component';
 
 @NgModule({
   declarations: [
@@ -214,7 +215,8 @@ import { DropdownCheckboxComponent } from './components/dropdown-checkbox/dropdo
     FrontpageComponent,
     DomforDirective,
     DropdownFilterPortfolioComponent,
-    DropdownCheckboxComponent
+    DropdownCheckboxComponent,
+    PopupCreatePortfolioScreensComponent
   ],
   imports: [
     BrowserModule,

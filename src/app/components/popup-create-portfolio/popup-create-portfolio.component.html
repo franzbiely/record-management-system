@@ -1,38 +1,120 @@
-<span class="screen-overlay"></span>
-<section class="popup popup-create-portfolio">
-  <section class="top">
-    <div class="container">
-      <app-portfolio-risk-score></app-portfolio-risk-score>
-      <div>
-        <input type="text" class="txt-portfolio-name" placeholder="Enter Portfolio Name"/>
-      </div>
-      <div>
-        <app-dropdown></app-dropdown>
-      </div>
-      <div class="portfolio-group">
-        <span>Portfolio Group:</span>
-        <strong>Jennica Fernen Portfolios</strong>
-      </div>  
-    </div>
-  </section>
-  <section class="main">
-    <section class="sidebar">
-      <app-target-asset-allocation></app-target-asset-allocation>
-    </section>
-    <section class="content">
-      <app-quick-add *ngIf="isEdit"></app-quick-add>
-      <app-add-security [isEdit]="isEdit" (isEditEvent)="editEventReciever()"></app-add-security>
-      <div class="error-messages">
-        <app-error-line></app-error-line>
-        <app-error-line></app-error-line>
-      </div>
-      <app-cancel-save *ngIf="!isEdit" [closeOnly]="true" [containerStyle]="'block'" (cancelEvent)="closeView()"></app-cancel-save>
-      <app-cancel-save *ngIf="isEdit" [containerStyle]="'block'" (cancelEvent)="closeEdit()" (click)="saveEvent()">
-        <div class="add-to-profile">
-          <mat-checkbox></mat-checkbox>
-          <span>Add to my profile group</span>
+<section class="app-popup-create-portfolio">
+<div class="overlay"></div>
+<div class="popup-container">
+    <div class="popup-content">
+        <div class="popup-box">
+            <div class="row-1">
+                <div class="risk-box">
+                    <div class="box-head">
+                        <span>Portfolio Risk Score</span>
+                    </div>
+                    <div class="box-body">
+                        <span class="risk-score">72</span>
+                        <div class="footer"><span>Capital Appreciation</span></div>
+                    </div>
+                </div>
+                <div class="top-items-container">
+                    <div class="text-box-container">
+                        <input type="text" class="text-box" placeholder="Capital Appreciation - SA Portfolio">
+                    </div>
+                    <div class="dropdown-container"><app-dropdown></app-dropdown></div>
+                    <div class="text-portfolio-group">
+                        <span>Portfolio Group:</span><br/>
+                        <span>Jennica Fernen Portfolios</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="left-section">
+                    <span class="graph-title">Target Asset Allocation:</span> 
+                    <div class="graph-container"><img class="graph" src="../../../assets/component/allocation-detail/graph.PNG"></div>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th class="text-color-3">Bonds</th>
+                                <th class="text-color-3">25%</th>
+                            </tr>
+                            <tr>
+                                <td><div class="circle color-3"></div><span>Global Shorts Bonds</span></td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <th class="text-color-5">U.S. Stocks</th>
+                                <th class="text-color-5">0%</th>
+                            </tr>
+                            <tr>
+                                <td><div class="circle color-4"></div><span>U.S. Small Neutral Stocks</span></td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td><div class="circle color-5"></div><span>U.S. Large Value Stocks</span></td>
+                                <td>25%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <app-quick-add></app-quick-add>
+                    <div class="add-security-container">
+                        <span>Add Security:</span>
+                        <input type="text" class="text-box" placeholder="SAVLX, SAFLX, SASLX">
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>Security Name</th>
+                                <th>Security ID<i class="icon-help"></i></th>
+                                <th>Asset Class</th>
+                                <th>Allocation (%)</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                            <tr>
+                                <td>SA Global Fixed Income Select</td>
+                                <td>SAFLX</td>
+                                <td>Global Short Bonds <i class="icon-dropdown"></i></td>
+                                <td><input type="text" class="allocation-text" placeholder="25%"> </td>
+                                <td><i class="icon-remove"></i></td>
+                            </tr>
+                            <tr>
+                                <td>SA US Small Company Select</td>
+                                <td>SAFLX</td>
+                                <td>U.S. Small Neutral Stocks<i class="icon-dropdown"></i></td>
+                                <td><input type="text" class="allocation-text" placeholder="%"></td>
+                                <td><i class="icon-remove"></i></td>
+                            </tr>
+                            <tr>
+                                <td>SA US Value Select</td>
+                                <td>SAFLX</td>
+                                <td>U.S. Large Value Stocks<i class="icon-dropdown"></i></td>
+                                <td><input type="text" class="allocation-text" placeholder="%"></td>
+                                <td><i class="icon-remove"></i></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <th>Total Allocation:</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>25%</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bottom">
+                        <app-error-line></app-error-line>
+                        <div class="btn-container">
+                            <button class="btn-cancel">Cancel</button>
+                            <button class="btn-save"><i class="icon-save"></i>Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </app-cancel-save>
-    </section>
-  </section>
+    </div>
+</div>
 </section>
