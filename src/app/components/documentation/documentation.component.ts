@@ -25,17 +25,23 @@ export class DocumentationComponent implements OnInit {
   }
 
   openDocument(event: any, type) {
-    if ($(event.target).hasClass('expanded')) {
+    if ($(event.target).parent().hasClass('expanded')) {
       this.documentIsOpen = false;
       $('.btn-text').removeClass('expanded');
     } else {
       $('.btn-text').removeClass('expanded');
-      this.renderer.setElementClass(event.target, 'expanded', true);
+      // console.log($(event.target))
+      $(event.target).parent().addClass('expanded');
+      // this.renderer.setElementClass(event.target, 'expanded', true);
       this.documentIsOpen = true;
       this.document_type = type;
+
+    //   //mobile
+      $('.btn-text .right-section-container').remove();
+      $('.right-section-container').clone().appendTo($(event.target).parent());
     }
     
-    console.log($(event.target));
+    // console.log($(event.target));
   }
 
   orientToggler(event: any) {

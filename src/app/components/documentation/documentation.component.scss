@@ -37,18 +37,26 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 154px;
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;   
+    }
     .right-section-container {
         display:none;
     }
     &.expanded {
-        flex-direction: column;    
+        flex-direction: column;  
+        
         .right-section-container {
             display:initial;
             position:relative;
             z-index:2;
             flex: 1;
+            @media only screen and (max-width:767px){
+
+            }
         }   
     }
+    
 }
 .document-container{
     display: flex;
@@ -58,10 +66,13 @@
     flex-direction: column;
     .document-container-child {
         display: flex;
+        @media only screen and (max-width:767px){
+            flex-direction: column;
+        }
     }
     @media only screen and (max-width:767px){
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
 }
@@ -751,15 +762,32 @@
         .item-right-side {
             float:right;
             margin-right: 20px;
+            @media only screen and (max-width:767px){
+                
+            }
         }
-        
+        .right-section-container { display: none; }
         &.expanded {
             width: 100%;
             box-shadow: -7px 1px 4px 0 rgba(65, 64, 66, 0.15);
             background-color:#fafbfc;
             font-weight: 600;
+
+            @media only screen and (max-width:767px){
+                .right-section-container {
+                    display: inherit;
+                }
+                display: flex;
+                    height: auto;
+                flex-direction: column;
+
+            }  
             .item-right-side { 
                 margin-right:60px;
+                @media only screen and (max-width:767px){
+                    margin-right:5px;
+                }
+
             }
             .view-extended {
                 background: #fafbfc url('../../../assets/view-gray.svg') no-repeat center center;
@@ -770,12 +798,11 @@
                 top: 10px;
                 position: relative;
                 margin-left: 25px;
+                @media only screen and (max-width:767px){
+                    display:none;
+                }
             }
         }
-        @media only screen and (max-width:767px){
-            padding: 30px 10px;
-        }
-        
     }
     .btn-group-orient div {
         border-radius: 6px;
@@ -797,7 +824,7 @@
     .btn-group-orient{
         @media only screen and (max-width: 767px){
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
     }
     .orient-container {
@@ -865,14 +892,21 @@
     }
     .btn-group .btn-text{
         position:relative;
-        padding: 0px 10px 0px 60px; 
         line-height: 65px;
         height:65px;
         margin-bottom: 5px;
         margin-right: 30px;
         flex: 1;
+        .btc {
+            padding: 0px 10px 0px 60px; 
+        }
         @media only screen and (max-width:767px){
-            padding: 30px 10px; 
+            margin-right:0;
+            height: auto;
+            line-height: inherit;
+            .btc {
+                padding: 30px 10px;
+            }
         }
     }
     button.btn-text {
@@ -905,7 +939,7 @@
     }
     .right-section-container {
         @media only screen and (max-width:767px){
-           float:right;
+           display:none;
         }
     }
     .option-right-section {
@@ -1147,3 +1181,4 @@
 ::ng-deep .mat-checkbox {
     margin-right:0;
 }
+

@@ -16,8 +16,10 @@
       <ng-container *ngIf="documentSend">
         
         <div class="rpp-actions">
-          <button class="is-save">Save to documents</button>
-          <button class="is-send" (click)="saveFunc()">Save & send documents</button>
+          <button class="is-save desktop-only">Save to documents</button>
+          <button class="is-save mobile-only">Save</button>
+          <button class="is-send desktop-only" (click)="saveFunc()">Save & send documents</button>
+          <button class="is-send mobile-only" (click)="saveFunc()">Save</button>
         </div><!-- .rpp-actions -->
       </ng-container>
     </div>
