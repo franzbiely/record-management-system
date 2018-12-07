@@ -60,6 +60,7 @@ $linkInActive : #c5c5c5;
                 justify-content: space-evenly;
                 border-left: 3px solid transparent;
                 padding: 10px 0 15px;
+                align-items: center;
                 @media only screen and (max-width: 767px){
                    padding: 0px;
                 }
@@ -89,10 +90,15 @@ $linkInActive : #c5c5c5;
         color: $linkActive;
         text-decoration: none;
         text-transform: uppercase;
-        .icon-active{
-            width: $icon;
-            height: $icon;
-            object-fit: contain;
+        .icon-home{
+            width: 20px;
+            height: 20px;
+            content: url(../../../assets/component/sidebar/household-blue.png);
+        } 
+        .icon-listview{
+            width: 20px;
+            height: 20px;
+            content: url(../../../assets/component/sidebar/list-view-blue.png);
         }
     }
 
@@ -109,10 +115,15 @@ $linkInActive : #c5c5c5;
         color: $linkInActive;
         text-decoration: none;
         text-transform: uppercase;
-        .icon-inactive{
-            width: $icon;
-            height: $icon;
-            object-fit: contain;
+        .icon-home{
+            width: 20px;
+            height: 20px;
+            content: url(../../../assets/component/sidebar/home-gray.png);
         } 
+        .icon-listview{
+            width: 20px;
+            height: 20px;
+            content: url(../../../assets/component/sidebar/list-view-gray.png);
+        }
     }
 }
