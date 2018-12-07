@@ -88,111 +88,112 @@ export class SimulationComponent implements OnInit {
       options: piea_chart_options
     }, responsive_options);
 
-
+    const line_chart_options = {
+      legend: {
+        position: 'bottom',
+        labels: {
+          boxWidth: 0,
+          fontColor: '#414042',
+          fontSize: 8,
+          fontFamily: "'Montserrat', sans-serif",
+          usePointStyle: true,
+          filter: function(item, chart) { return !item.text.includes('none'); }
+        }
+      },
+      elements: { point:{ radius: 0 } },
+      plugins: { datalabels: { display: false } },
+      maintainAspectRatio: true,
+      scales: {
+        yAxes: [{
+          ticks: {
+            max: 10,
+            beginAtZero: true,
+            stepSize: 2,
+            callback: function(value, index, values) { return value + 'M'; }
+          }
+        }],
+        xAxes: [{
+          gridLines: { drawOnChartArea: false },
+          ticks: { display: true }
+        }]
+      }
+    }
     
     this.recommended_portfolio_chart = new Chart(this.recommended_portfolio_chart_ref.nativeElement, {
       type: 'line',
       data: {
-        labels: ['2020', '2025', '2030', '2035', '2040', '2045', '2050'],
+        labels: ['2020', '2025', '2030', '2035', '2040', '2045', '2050', '2055'],
         datasets: [{
             label: 'Portfolio Balance - Accomolation',
             fill: false,
             data: [0, 1, 1.5, 2],
+            backgroundColor: '#67c072',
             borderColor: '#67c072',
             borderWidth: 0,
-            pointRadius: 0
+            borderCapStyle: 'round'
         }, {
             label: 'Portfolio Balance - Distribution',
             fill: false,
-            data: [0, 1, 1.5, 2, 2.5, 2.8, 3],
+            data: [0, 1, 1.5, 2, 2.5, 2.8, 3, 4],
+            backgroundColor: '#f47a64',
             borderColor: '#f47a64',
             borderWidth: 0,
-            pointRadius: 0
+            borderCapStyle: 'round'
+        }, {
+          backgroundColor: 'rgba(229, 244, 250, 0.8)',
+          borderColor: 'rgba(229, 244, 250, 0)',
+          data: [0, 1.5, 2, 3, 3.5, 3.8, 4, 5],
+          label: 'none',
+          fill: '-1'
+        },
+        {
+          backgroundColor: 'rgba(229, 244, 250, 0.8)',
+          borderColor: 'rgba(229, 244, 250, 0)',
+          data: [0, 0.5, 1, 1.5, 2, 2.5, 2.8, 3  ],
+          label: 'none',
+          fill: '-1'
         }]
       },
-      options: {
-        legend: { display: true, position: 'bottom', labels: {
-          fontSize: 8,
-          fontColor: '#414042',
-          fontFamily: 'Montserrat',
-          usePointStyle: true,
-          boxWidth: 8
-        } },
-        plugins: {
-            strokeShadow: {},
-            datalabels: {
-                display: false
-            }
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    max: 10,
-                    beginAtZero: true,
-                    stepSize: 2,
-                    callback: function(value, index, values) {
-                        return value + 'M';
-                    }
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    drawOnChartArea: false,
-                },
-                ticks: { display: true }
-            }]
-        }
-      }
-    }, { responsive : true, maintainAspectRatio: false });
-
+      options: line_chart_options, { responsive : true, maintainAspectRatio: false });
+    
     this.current_portfolio_chart = new Chart(this.current_portfolio_chart_ref.nativeElement, {
       type: 'line',
       data: {
-        labels: ['2020', '2025', '2030', '2035', '2040', '2045', '2050'],
+        labels: ['2020', '2025', '2030', '2035', '2040', '2045', '2050', '2055'],,
         datasets: [{
-            label: 'Portfolio Balance - Accomolation',
-            fill: false,
-            data: [0, 1, 1.5],
-            borderColor: '#9d9d9d',
-            borderWidth: 6,
-            pointRadius: 0
-        }, {
-            label: 'Portfolio Balance - Distribution',
-            fill: false,
-            data: [0, 1, 1.5, 2, 2.5, 2.8, 3],
-            borderColor: '#f47a64',
-            borderWidth: 2,
-            pointRadius: 0
+          backgroundColor: '#c5c5c5',
+          borderColor: '#c5c5c5',
+          borderWidth: 0,
+          borderCapStyle: 'round',
+          data: [1, 2, 3],
+          label: ' Portfolio Balance - Accumulation',
+          fill: false,
+        },
+        {
+          backgroundColor: '#f47a64',
+          borderColor: '#f47a64',
+          borderWidth: 0,
+          borderCapStyle: 'round',
+          data: [1, 2, 3, 4, 5, 5.5, 6, 7],
+          label: ' Portfolio Balance - Distribution',
+          fill: false,
+        },
+        {
+          backgroundColor: 'rgba(229, 244, 250, 0.8)',
+          borderColor: 'rgba(229, 244, 250, 0)',
+          data: [1, 2.2, 3.5, 5, 6, 6.5, 7, 8],
+          label: 'none',
+          fill: '-1'
+        },
+        {
+          backgroundColor: 'rgba(229, 244, 250, 0.8)',
+          borderColor: 'rgba(229, 244, 250, 0)',
+          data: [1, 1.9, 2.7, 3, 4, 4.5, 5, 6],
+          label: 'none',
+          fill: '-1'
         }]
       },
-      options: {
-        legend: { display: false, position: 'bottom' },
-        plugins: {
-            strokeShadow: {},
-            datalabels: {
-                display: false
-            }
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    max: 10,
-                    beginAtZero: true,
-                    stepSize: 2,
-                    callback: function(value, index, values) {
-                        return value + 'M';
-                    }
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    drawOnChartArea: false,
-                },
-                ticks: { display: true }
-            }]
-        }
-      }
-    }, { responsive : true, maintainAspectRatio: false });
+      options: line_chart_options, { responsive : true, maintainAspectRatio: false });
 }
 
 closeSidebar() {
