@@ -35,7 +35,7 @@
           <thead>
             <tr>
               <th *ngFor="let column of columns" [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-                <a><span>{{ column }}</span><i class="material-icons th_expand_more">expand_more</i></a>
+                <a><span>{{ column }}</span><i class="icon-dropdown"></i></a>
               </th>
             </tr>
           </thead>   
@@ -49,7 +49,7 @@
                   <td class="id" [ngClass]="['col-other']"><span class="item">{{ list.id }}</span></td>
                   <td class="value" [ngClass]="['col-other']"><span class="item">{{ list.value | currency:'USD':true:'2.2' }}</span> </td>
                   <td class="num" [ngClass]="['col-other']"><span class="item">{{ list.num }}</span></td>
-                  <td class="state" [ngClass]="['col-other']"><span class="item">{{ list.state }}</span></td>
+                  <td class="state" [ngClass]="['col-other']"><span class="item vertical-align"><i class="icon-check"></i><span>{{ list.state }}</span></span></td>
                   <td class="created" [ngClass]="['col-other']"><span class="item">{{ list.created }}</span><br/><span class="item strong">By:&nbsp;{{ list.createdBy }}</span></td>
                   <td class="updated" [ngClass]="['col-other']"><span class="item">{{ list.updated }}</span><br/><span class="item strong">By:&nbsp;{{ list.updatedBy }}</span></td>
                   <td class="action" [ngClass]="['col-action']">
@@ -59,13 +59,13 @@
               <ng-container *ngIf="list.open && list.data != null">
                 <tr class="dropdown-tr" *ngFor="let info of list.data">
                   <td class="dropdown-td name"><div class="twocolordiv">{{ info.name }}</div></td>
-                  <td class="dropdown-td id align-right"><span class="dropdown-item">{{ info.id }}</span></td>
-                  <td class="dropdown-td value align-right"><span class="dropdown-item">{{ info.value | currency:'USD':true:'2.2' }}</span></td>
-                  <td class="dropdown-td num align-right"></td>
-                  <td class="dropdown-td state align-right"><span class="dropdown-item">{{ info.state}}</span></td>
-                  <td class="dropdown-td created align-right"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
-                  <td class="dropdown-td updated align-right"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
-                  <td class="dropdown-td action align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="dropdown-td id "><span class="dropdown-item">{{ info.id }}</span></td>
+                  <td class="dropdown-td value"><span class="dropdown-item">{{ info.value | currency:'USD':true:'2.2' }}</span></td>
+                  <td class="dropdown-td num "></td>
+                  <td class="dropdown-td state"><span class="dropdown-item">{{ info.state}}</span></td>
+                  <td class="dropdown-td created"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
+                  <td class="dropdown-td updated"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
+                  <td class="dropdown-td action"><app-dropdown-actions></app-dropdown-actions></td>
                 </tr>
               </ng-container>
             </tbody>
