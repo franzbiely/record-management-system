@@ -41,17 +41,26 @@ $secondaryfont: museo-sans;
       }
     .text-container{
       display: flex;
-      flex-direction: column;
-        div:last-child{
-          margin-top: 10px;
-        }
-        div{
-          display:flex;
+      div{
+        display: flex;
+        input[type=text]{
           flex:1;
-            input[type=text]{
-              flex:1;
-            }
+          border-radius: 6px;
+          border: 1px solid #e7e6e6;
+          padding: 15px;
+          font-family: "museo-sans";
+          font-size: 14px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #414042; 
         }
+      }
+      div:first-child{
+        padding-right: 20px;
+      }
     }
     .disclaimer-container{
       width: 100%; 
@@ -136,7 +145,6 @@ $secondaryfont: museo-sans;
 
 
   .btn-browse-container {
-
     .btn-browse {
       width: 100%;
       border-radius: 64px;

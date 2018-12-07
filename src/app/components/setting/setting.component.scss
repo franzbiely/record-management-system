@@ -7,7 +7,9 @@ $mainfont : 'Montserrat', sans-serif;
 
 .settings-container {
     padding: 20px;
-   
+    @media only screen and (max-width: 767px){
+        padding: 10px;
+    }
 
 }
 .flex {
@@ -36,12 +38,24 @@ $mainfont : 'Montserrat', sans-serif;
     
 }
 .padding {
-    padding:15px;
-    width: 400px;
+    width: 32%;
+    @media only screen and (max-width: 767px) {
+        width: auto;
+    }
+}
+.padding:nth-child(2), .padding:last-child{
+    @media only screen and (max-width: 767px){
+        margin-top: 20px;
+    }
 }
 .container {
-    width:100%;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    @media only screen and (max-width: 767px){
+        flex-direction: column;
+        padding:0px;
+    }
 }
 .box-head {
     height: auto;
@@ -149,6 +163,7 @@ $mainfont : 'Montserrat', sans-serif;
 .content-box{
     text-align: center;
     padding: 20px;
+    overflow-y: scroll;
     img{
         width:100%;
     }

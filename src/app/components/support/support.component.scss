@@ -7,7 +7,9 @@ $mainfont : 'Montserrat', sans-serif;
 
 .support-container {
     padding: 40px;
-   
+   @media only screen and (max-width: 767px){
+       padding: 10px;
+   }
 
 }
 .flex {
@@ -34,10 +36,17 @@ $mainfont : 'Montserrat', sans-serif;
     box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
     background-color: #ffffff;
     width: auto;
+    @media only screen and (max-width: 767px){
+        flex: 1;
+    }
 }
 .container {
     width:100%;
     justify-content: flex-start;
+    @media only screen and (max-width: 767px){
+        flex: 1;
+        display: flex;
+    }
 }
 .box-head {
     height: auto;
@@ -125,6 +134,11 @@ $mainfont : 'Montserrat', sans-serif;
     letter-spacing: normal;
     color: #414042;
     overflow-y: scroll;
+}
+.profile-info{
+    @media only screen and (max-width: 767px){
+        word-break: break-word;
+    }
 }
 .profile-box {
     display: flex;

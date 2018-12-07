@@ -39,7 +39,7 @@ import { ImportAccountsScreenComponent } from './screens/import-accounts-screen/
 import { AccountSelectModalScreenComponent } from './screens/account-select-modal-screen/account-select-modal-screen.component';
 import { AddAccountScreenComponent } from './screens/add-account-screen/add-account-screen.component';
 import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/questionnaire-screen.component';
-
+import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-portfolio-screens/popup-create-portfolio-screens.component';
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
 import { FrontpageComponent } from './screens/frontpage/frontpage.component';
 
@@ -225,6 +225,10 @@ const routes: Routes = [
   {
       path: 'frontpage',
       component: FrontpageComponent
+  },
+  {
+      path: 'popup-create-portfolio',
+      component: PopupCreatePortfolioScreensComponent
   }
   
   

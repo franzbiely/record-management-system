@@ -97,7 +97,7 @@ $secondaryFont: museo-sans;
         font-family: $primaryFont;
         font-size: 12px;
         font-weight: 700;
-        color: #414042;
+        color: #77787b;
         .grey-text{
         @extend %grey-text-uppercase;
         font-size: 7pt;
@@ -108,7 +108,7 @@ $secondaryFont: museo-sans;
         text-align: right;
         font-family: $primaryFont;
         font-size: 11px;
-        color: #414042;
+        color: #77787b;
         font-weight: 600;
         .grey-text{
             @extend %grey-text;font-size: 7pt;
@@ -281,7 +281,9 @@ $secondaryFont: museo-sans;
     text-transform:uppercase;
     @include textStyle(#414042, normal, normal, 18px, 600, center, 0.94, 1.4px);
 
-        p{margin: 5px}
+        p{  
+            margin: 5px
+        }
         .hide-show{
             @include textStyle(#c5c5c5, normal, normal, 10px, 600, none, 1, 0.9px);
             margin: 0 auto;

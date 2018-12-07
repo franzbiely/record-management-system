@@ -14,7 +14,9 @@
     details {
         right: 60px;
         position: absolute;
+        border-radius: 0 0 6px 6px;
         summary {
+            border-radius: 6px 6px 0 0;
             margin-top: -10px;
             cursor: pointer;
             position:relative;
@@ -45,6 +47,11 @@
             padding: 0;
             margin:0;
             list-style: none;
+            li:last-child{
+                a{
+                    border-bottom:none;
+                }
+            }
             li {
                 background: #fff;
                 position:relative;

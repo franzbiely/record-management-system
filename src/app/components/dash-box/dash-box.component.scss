@@ -73,7 +73,7 @@ $primaryfont: "montserrat", sans-serif;
     }
 
     display: flex;
-    color: #000000;
+    color: red !important;
 }
 
 @mixin textStyle(

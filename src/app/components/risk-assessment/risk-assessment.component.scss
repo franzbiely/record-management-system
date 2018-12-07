@@ -90,6 +90,17 @@
                         .copy-link{
                             text-decoration: underline;
                             margin-top:30px;
+                            display: flex;
+                            justify-content: center;
+                            a {
+                                display: flex;
+                                align-items: center;
+                            }
+                            .icon-link{
+                                width: 20px;
+                                padding-right:9px;
+                                content: url(../../../assets/component/risk-assessment/link.png);
+                            }
                         }
                         h2{
                             font-family: 'Montserrat', sans-serif;
@@ -240,10 +251,10 @@
                                 padding: 20px 0px 0px 0px;
                             }
                                 article{
-                                    text-align: left;
-                                    font-family: museo-sans-300;
+                                    font-family: "museo-sans";
                                     font-size: 12px;
                                     font-weight: normal;
+                                    text-align: left;
                                     font-style: italic;
                                     font-stretch: normal;
                                     line-height: 1.5;
