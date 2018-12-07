@@ -1,0 +1,203 @@
+.dropdown-filter-listview{
+    position: relative;
+    summary{
+        a.btn-filter:active, a.btn-filter:active{
+            border-radius: 6px 6px 0px 0px;
+        }
+        .btn-filter {
+            background: url(../../../assets/component/portfolio/filter-gray.png) no-repeat 20px 13px;
+            width: 200px;
+            height: 45px;
+            padding: 0px 15px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+            background-color: white;
+            position: relative;
+            z-index: 22;
+            span {
+              margin-left: 15px;
+              font-family: "Montserrat", sans-serif;
+              font-size: 12px;
+              font-weight: 700;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #77787b;
+              width: 100%;
+              text-align: left;
+              padding-left: 40px;
+            }
+            .icon-dropdown {
+              width: 15px;
+              content: url("../../../assets/component/portfolio/dropdown.png");
+            }
+        }
+    }
+    .flex{
+        display: flex;
+    }
+    .item-container {
+        font-family: "museo-sans",calibri;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        border-radius: 0px 0px 6px 6px;
+        box-shadow: 0 15px 100px 0 rgba(65, 64, 66, 0.3);
+        top: 40px;
+        right: 0px;
+        box-sizing: border-box;
+        z-index: 21;
+        .text-box{
+            padding: 15px 20px;
+            border-bottom: 0.5px solid #e7e6e6;
+            input[type=text]{
+                padding: 15px;
+                flex:1;
+                border-radius: 6px;
+                background-color: #ffffff;
+                border: 1px solid #e7e6e6;
+                font-family: "museo-sans";
+                font-size: 14px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+            }
+            ::placeholder {
+                font-family: "museo-sans";
+                font-size: 14px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #c5c5c5;
+            }
+        }
+        .group{
+            background-color:#f7f7f7 !important;
+        }
+        .group:first-child{
+            padding-top: 13px;
+        }
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-sizing: border-box;
+          background-color: white;
+          padding: 6px 20px;
+          font-family: "museo-sans";
+          font-size: 11px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          color: #414042;
+          border-bottom: 0.5px solid #e7e6e6;
+          &:hover {
+            background-color: #f7f7f7;
+        }
+        .range{
+            font-family: "Montserrat", sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: 0.6px;
+            color: #77787b;
+        }
+        
+        .group-title-container{
+            display: flex;
+            align-items: center;
+            .group-title{
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                span:first-child{
+                    font-family: "Montserrat";
+                    font-size: 10px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.1;
+                    letter-spacing: 0.8px;
+                    color: #414042;
+                }
+                span:last-child{
+                    font-weight: 600;
+                } 
+            }
+            
+        }
+        .vertical-center{
+            display: flex;
+            align-items: center;
+            .icon-check{
+                margin-right: 6px;
+                content: url("../../../assets/component/dropdown-listview/state-active-gray.svg");
+            }
+            .icon-archive{
+                margin-right: 6px;
+                content: url("../../../assets/component/dropdown-listview/state-archived-gray.svg");
+            }
+            .icon-progress{
+                margin-right: 6px;
+                content: url("../../../assets/component/dropdown-listview/status-in-progress-gray.svg");
+            }
+            .icon-questionnaire{
+                margin-right: 6px;
+                content: url("../../../assets/component/dropdown-listview/status-sent-questionnaire-gray.svg");
+            }
+            .icon-proposal{
+                margin-right: 6px;
+                content: url("../../../assets/component/dropdown-listview/status-sent-gray.svg");
+            }
+            .icon-implement{
+                margin-right: 6px;
+                content: url("../../../assets/component/dropdown-listview/status-implemented-gray.svg");
+            }
+        }
+        .item-content{
+            display: flex;
+        }
+
+    }   
+        .btn-container{
+            display: flex;
+            padding:20px;
+            justify-content: center;
+            button {
+                text-transform: uppercase;
+                width: 160px;
+                height: 45px;
+                border-radius: 6px;
+                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+                background-color: #1598cb;
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: #fff;
+                outline: none;
+            }
+        }
+    }
+}
+::ng-deep .dropdown-filter-listview{
+    .mat-checkbox{
+        margin-right: 15px !important;
+    }
+}

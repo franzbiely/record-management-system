@@ -107,6 +107,9 @@ import { DomforDirective } from './directives/domfor.directive';
 import { DropdownFilterPortfolioComponent } from './components/dropdown-filter-portfolio/dropdown-filter-portfolio.component';
 import { DropdownCheckboxComponent } from './components/dropdown-checkbox/dropdown-checkbox.component';
 import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-portfolio-screens/popup-create-portfolio-screens.component';
+import { DropdownFilterListviewComponent } from './components/dropdown-filter-listview/dropdown-filter-listview.component';
+import { PopupDocumentSentComponent } from './components/popup-document-sent/popup-document-sent.component';
+import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-screen/popup-document-sent-screen.component';
 
 @NgModule({
   declarations: [
@@ -216,7 +219,10 @@ import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-por
     DomforDirective,
     DropdownFilterPortfolioComponent,
     DropdownCheckboxComponent,
-    PopupCreatePortfolioScreensComponent
+    PopupCreatePortfolioScreensComponent,
+    DropdownFilterListviewComponent,
+    PopupDocumentSentComponent,
+    PopupDocumentSentScreenComponent
   ],
   imports: [
     BrowserModule,

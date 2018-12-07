@@ -89,11 +89,13 @@ $mainfont : 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 0;
+    line-height: normal;
     letter-spacing: 2px;
     color: #77787b;
     text-transform: uppercase;
-    margin-left:15px;
+}
+.small-title:last-child{
+    margin-top: -10px;
 }
 .title-box{
     display: flex;
@@ -102,12 +104,12 @@ $mainfont : 'Montserrat', sans-serif;
     padding: 0px 20px;
 }
 .normat-text {
-    font-family: $mainfont;
+    font-family: "museo-sans";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
-    line-height: 0;
+    line-height: 1;
     letter-spacing: normal;
     color: #404041;
 }
@@ -119,6 +121,7 @@ $mainfont : 'Montserrat', sans-serif;
 }
 .text-box-head {
     padding: 15px;
+    font-family: "museo-sans";
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     border: solid 1px #e7e6e6;
@@ -135,6 +138,7 @@ $mainfont : 'Montserrat', sans-serif;
 .text-box-body {
     height: 170px;
     padding: 15px;
+    font-family: "museo-sans";
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     border: solid 1px #e7e6e6;
@@ -175,6 +179,7 @@ $mainfont : 'Montserrat', sans-serif;
 }
 .edit-button {
     align-items: center;
+    cursor: pointer;
 }
 .edit-text {
     padding-left: 6px;

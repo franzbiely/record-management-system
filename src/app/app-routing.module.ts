@@ -42,7 +42,7 @@ import { QuestionnaireScreenComponent } from './screens/questionnaire-screen/que
 import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-portfolio-screens/popup-create-portfolio-screens.component';
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
 import { FrontpageComponent } from './screens/frontpage/frontpage.component';
-
+import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-screen/popup-document-sent-screen.component';
 const routes: Routes = [
   
   {
@@ -229,6 +229,10 @@ const routes: Routes = [
   {
       path: 'popup-create-portfolio',
       component: PopupCreatePortfolioScreensComponent
+  },
+  {
+      path: 'sent-document',
+      component: PopupDocumentSentScreenComponent
   }
   
   
