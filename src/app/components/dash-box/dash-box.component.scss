@@ -30,9 +30,6 @@ $primaryfont: "montserrat", sans-serif;
 }
 
 %container-info {
-    height: 250px;
-    overflow: scroll;
-    overflow-y: overlay;
     width: 100%;
     color: #222;
     background-color: $primaryColor;
@@ -58,20 +55,15 @@ $primaryfont: "montserrat", sans-serif;
 }
 @mixin info-item($top: null, $right: null, $bottom: null, $left: null) {
     width: auto;
-    height: auto;
+    height: 47px;
 
     @if top !=null and $right==null or $bottom==null or $left==null {
-        padding-top: $top;
         padding-right: $top;
-        padding-bottom: $top;
         padding-left: $top;
     } @else {
-        padding-top: $top;
         padding-right: $right;
-        padding-bottom: $bottom;
         padding-left: $left;
     }
-
     display: flex;
     color: red !important;
 }
@@ -212,9 +204,6 @@ $primaryfont: "montserrat", sans-serif;
             .item-one {
                 font-size: 10pt;
             }
-        }
-        .info-item {
-            border-bottom: $itemDivider;
         }
         > .info-item:last-child {
             border-bottom: 0;

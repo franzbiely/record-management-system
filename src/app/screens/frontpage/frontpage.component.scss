@@ -1,21 +1,11 @@
-@mixin info-item($top: null, $right: null, $bottom: null, $left: null){
+@mixin info-item($left: null, $right: null){
     width: auto;
-    height: auto;
-
-    @if top != null and $right == null or $bottom == null or $left == null {
-        padding-top: $top;
-        padding-right: $top;
-        padding-bottom: $top;
-        padding-left: $top;
-    }@else{
-        padding-top: $top;
-        padding-right: $right;
-        padding-bottom: $bottom;
-        padding-left: $left;
-    }
-
+    height:47px;
+    padding-right: $right;
+    padding-left: $left;
     display: flex;
     color: #000000;
+
 }
 @mixin textStyle($color, 
        $font, $style, 
@@ -317,7 +307,7 @@
         font-size: 8pt;
         padding-left:3px;
     }
-    @include info-item(10px, 20px, 10px, 20px);    
+    @include info-item(20px, 20px);    
     .item-one, .item-two{
         flex: 1;
         flex-direction: column;
@@ -336,6 +326,9 @@
         font-size: 10pt;
     }
     .item-top{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
         flex: auto;
         font-family: "museo-sans", sans-serif;
         font-size: 14px;
@@ -353,14 +346,26 @@
         font-size: 11px;
         color: #77787b;
         font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .grey-text{
             @extend %grey-text;font-size: 7pt;
             display: flex;
             align-items: center;
             justify-content: flex-end}
+        &.drow {
+            flex-direction: column;
+        }
     }
     .flex{
         display: flex;
+        align-items: center;
+    }
+    .item-column {
+           justify-content: center;
+    display: flex;
+    flex-direction: column;
     }
     .document-icon{
         display: flex;

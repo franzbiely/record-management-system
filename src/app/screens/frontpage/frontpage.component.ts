@@ -9,7 +9,7 @@ declare var $: any;
     styleUrls: ['./frontpage.component.scss']
 })
 export class FrontpageComponent implements OnInit {
-    isNew : boolean = true;
+    isNew : boolean = false;
   
     reportBoard: any = {
         s: 'show',
