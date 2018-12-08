@@ -1,130 +1,140 @@
 <div class="information-container">
-    <div class="information-box flex" *ngIf="step == 1" style="flex-direction: column;">
-        <div class="row-padding flex-1">
-            <div>
-                <span class="title"> Firm Information </span>
-            </div>
-            <div class="flex text-container" style="margin-top: 10px;">
-                <div class="flex-1">
-                    <input type="text" placeholder="Firm Name" class="firm-box">
-                </div>
-                <div class="flex-1">
-                    <input type="text" placeholder="Website URL" class="website-box">
-                </div>
-            </div>
-        </div>
-        <div>
-            <hr class="full-width divider">
-        </div>
-        <div class="row-padding btn-browse-container">
-            <div class="btn-browse">
-                <div id="browse-holder">
-                    <div id="droppable">
-                    </div>
-                    <div id="droppable-text">
-                        <div><span class="btn-title"> Drag & Drop or Browse For Image </span></div>
-                        <div><span class="btn-subtitle">You may use *.png; *.jpeg; *.tiff files. Recommended Size
-                                500x500 less than 5 Mb </span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <hr class="full-width divider">
-        </div>
-        <div class="row-padding flex-1">
-            <div>
-                <div>
-                    <span class="title"> Brand Color </span>
-                </div>
-                <div>
-                    <span class="subtitle"> Select from one of the colors below to use are your brand color. </span>
-                </div>
-                <div class="colors-selector-container ">
-                    <div class="color-option-container">
-                        <div class="color-box-container">
-                            <div class="color-box color-1"></div>
-                            <div class="color-name flex"><span class="color-title">#1598CB</span></div>
-                            <mat-radio-button></mat-radio-button>
-                        </div>
-                    </div>
-                    <div class="color-option-container flex">
-                        <div class="color-box-container">
-                            <div class="color-box color-2"></div>
-                            <div class="color-name"><span class="color-title">#67C072</span></div>
-                            <mat-radio-button></mat-radio-button>
-                        </div>
-                    </div>
-                    <div class="color-option-container flex">
-                        <div class="color-box-container">
-                            <div class="color-box color-3"></div>
-                            <div class="color-name"><span class="color-title">#F79961</span></div>
-                            <mat-radio-button></mat-radio-button>
-                        </div>
-                    </div>
-                    <div class="color-option-container flex">
-                        <div class="color-box-container">
-                            <div class="color-box color-4"></div>
-                            <div class="color-name"><span class="color-title">#465E7B</span></div>
-                            <mat-radio-button></mat-radio-button>
-                        </div>
-                    </div>
-                    <div class="color-option-container flex">
-                        <div class="color-box-container">
-                            <div class="color-box color-5"></div>
-                            <div class="color-name"><span class="color-title">#F7F7F7</span></div>
-                            <mat-radio-button></mat-radio-button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <hr class="full-width divider">
-        </div>
-        <div class="row-padding flex-1">
-            <div class="disclaimer-container">
-                <div class="disclaimer-content">
-                    <div class="" style="width: auto; display: table-cell; height: auto;">
-                        <div>
-                            <span class="title"> DISCLAIMER: </span>
-                        </div>
-                        <div>
-                            <span class="subtitle"> Add Your Firms Disclaimers by copy and pasting or upload a PDF.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="upload-container" style="display: table-cell; vertical-align: middle;">
-                        <div style="float: right; text-align: center;">
-                            <button class="btn-info btn-text-color btn-upload">
-                                <i class="icon-upload"></i> UPLOAD PDF
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <textarea placeholder="text here">  </textarea>
-            </div>
-            <div class="btn-can-save-container">
-                <div style="display:inline-block; padding-right: 10px;">
-                    <button class="btn-info" (click)="closeMe()">Cancel</button>
-                </div>
-                <div style="display:inline-block;">
-                    <button class="btn-info btn-text-color primary" (click)="toNext()">
-                        <i class="material-icons">save</i> Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="information-container" *ngIf="step == 2">
+    <form [formGroup]="frmStep1" (ngSubmit)="toNext()" *ngIf="step == 1">
         <div class="information-box flex" style="flex-direction: column;">
+            <div class="row-padding flex-1">
+                <div>
+                    <span class="title"> Firm Information </span>
+                </div>
+                <div class="flex text-container" style="margin-top: 10px;">
+                    <div class="flex-1">
+                        <input type="text" placeholder="Firm Name" class="firm-box" formControlName="firstName" required>
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" placeholder="Website URL" class="website-box" formControlName="url" required>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="full-width divider">
+            </div>
             <div class="row-padding btn-browse-container">
                 <div class="btn-browse">
                     <div id="browse-holder">
-                        <div id="droppable" class="circle">
+                        <div id="droppable">
+                        </div>
+                        <div id="droppable-text">
+                            <div><span class="btn-title"> Drag & Drop or Browse For Image </span></div>
+                            <div><span class="btn-subtitle">You may use *.png; *.jpeg; *.tiff files. Recommended Size
+                                    500x500 less than 5 Mb </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="full-width divider">
+            </div>
+            <div class="row-padding flex-1">
+                <div>
+                    <div>
+                        <span class="title"> Brand Color </span>
+                    </div>
+                    <div>
+                        <span class="subtitle"> Select from one of the colors below to use are your brand color. </span>
+                    </div>
+                    <div class="colors-selector-container ">
+                        <div class="color-option-container">
+                            <div class="color-box-container">
+                                <div class="color-box color-1"></div>
+                                <div class="color-name flex"><span class="color-title">#1598CB</span></div>
+                                <mat-radio-button></mat-radio-button>
+                            </div>
+                        </div>
+                        <div class="color-option-container flex">
+                            <div class="color-box-container">
+                                <div class="color-box color-2"></div>
+                                <div class="color-name"><span class="color-title">#67C072</span></div>
+                                <mat-radio-button></mat-radio-button>
+                            </div>
+                        </div>
+                        <div class="color-option-container flex">
+                            <div class="color-box-container">
+                                <div class="color-box color-3"></div>
+                                <div class="color-name"><span class="color-title">#F79961</span></div>
+                                <mat-radio-button></mat-radio-button>
+                            </div>
+                        </div>
+                        <div class="color-option-container flex">
+                            <div class="color-box-container">
+                                <div class="color-box color-4"></div>
+                                <div class="color-name"><span class="color-title">#465E7B</span></div>
+                                <mat-radio-button></mat-radio-button>
+                            </div>
+                        </div>
+                        <div class="color-option-container flex">
+                            <div class="color-box-container">
+                                <div class="color-box color-5"></div>
+                                <div class="color-name"><span class="color-title">#F7F7F7</span></div>
+                                <mat-radio-button></mat-radio-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="full-width divider">
+            </div>
+            <div class="row-padding flex-1">
+                <div class="disclaimer-container">
+                    <div class="disclaimer-content">
+                        <div class="" style="width: auto; display: table-cell; height: auto;">
+                            <div>
+                                <span class="title"> DISCLAIMER: </span>
+                            </div>
+                            <div>
+                                <span class="subtitle"> Add Your Firms Disclaimers by copy and pasting or upload a PDF.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="upload-container" style="display: table-cell; vertical-align: middle;">
+                            <div style="float: right; text-align: center;">
+                                <button class="btn-info btn-text-color btn-upload">
+                                    <i class="icon-upload"></i> UPLOAD PDF
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <textarea placeholder="text here">  </textarea>
+                </div>
+                <div class="btn-can-save-container">
+                    <div style="display:inline-block; padding-right: 10px;">
+                        <button class="btn-info secondary" (click)="closeMe()">Cancel</button>
+                    </div>
+                    <div style="display:inline-block;">
+                        <button type="submit" [disabled]="frmStep1.invalid" class="btn-info btn-text-color primary">
+                            <i class="material-icons">save</i> Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
+
+
+
+
+
+    <form [formGroup]="frmStep2" (ngSubmit)="toNext()" *ngIf="step == 2">
+    
+    <div class="information-container">
+        <div class="information-box flex" style="flex-direction: column;">
+            <div class="row-padding btn-browse-container">
+                <div class="btn-browse">
+                    <input type="text" formControlName="avatar" id="frmS2Avatar" [(ngModel)]="frmS2Avatar" required />
+                    <div id="browse-holder" (click)="frmS2Avatar.click()">
+                        <div id="droppable" class="circle">
+                            
                         </div>
                         <div id="droppable-text">
                             <div><span class="btn-title"> Drag & Drop or Browse For Image </span></div>
@@ -211,10 +221,10 @@
                 </div>
                 <div class="btn-can-save-container">
                     <div style="display:inline-block; padding-right: 10px;">
-                        <button class="btn-cancel" (click)="toPrev()"><span class="btn-text">Cancel</span></button>
+                        <button class="btn-cancel secondary" (click)="toPrev()"><span class="btn-text">Cancel</span></button>
                     </div>
                     <div style="display:inline-block;">
-                        <button class="btn-info btn-text-color primary" (click)="toNext()">
+                        <button class="btn-info btn-text-color primary" [disabled]="frmStep2.invalid" type="submit">
                             <i class="material-icons">save</i> <span class="btn-text">Save</span>
                         </button>
                     </div>
@@ -222,4 +232,5 @@
             </div>
         </div>
     </div>
+    </form>
 </div>

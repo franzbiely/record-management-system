@@ -367,7 +367,6 @@ select {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
-  color:#1598cb;
 }
 .btn-upload {
   border:1px solid #1598cb;
@@ -537,4 +536,8 @@ select {
 #browse-holder {
   display: flex;
   justify-content: center;
+}
+
+#frmS2Avatar{
+  display:none;
 }
