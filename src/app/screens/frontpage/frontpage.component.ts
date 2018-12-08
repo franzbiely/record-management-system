@@ -9,7 +9,7 @@ declare var $: any;
     styleUrls: ['./frontpage.component.scss']
 })
 export class FrontpageComponent implements OnInit {
-    isNew : boolean = false;
+    isNew : boolean = true;
   
     reportBoard: any = {
         s: 'show',
@@ -67,6 +67,7 @@ export class FrontpageComponent implements OnInit {
 
     household($event) {
         this.openHousehold = $event;
+        this.isNew = false;
     }
 }
 
