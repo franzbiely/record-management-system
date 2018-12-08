@@ -2,7 +2,7 @@ $padding: 20px;
 $padding-left: 35px;
 $container-padding: 40px;
 $mainfont: 'Montserrat', sans-serif;
-$secondaryfont: museo-sans;
+$secondaryfont: "museo-sans";
 
 .information-container {
   padding: $padding 0px 0px $padding-left;
@@ -208,15 +208,20 @@ $secondaryfont: museo-sans;
     width: 45%;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
     text-align: center;
 
     .color-title {
-      padding: 20px 0px;
-      display: inline-block;
       width: 100%;
+      font-family: "Montserrat", sans-serif;
       font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
       color: #414042;
       flex: 1;
     }
@@ -272,17 +277,23 @@ $secondaryfont: museo-sans;
     border: solid 0.5px #e7e6e6;
   } //text
   .btn-title {
-    font-family: $mainfont;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    color: #414042;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.89;
     letter-spacing: 0.2px;
-    font-weight: 700;
+    text-align: center;
+    color: #414042;
   }
   .btn-subtitle {
-    font-family: $secondaryfont;
+    font-family: "museo-sans";
     font-size: 16px;
     font-weight: 300;
-    line-height: 2;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
     letter-spacing: normal;
     text-align: center;
     color: #414042;
@@ -291,22 +302,25 @@ $secondaryfont: museo-sans;
 
   .title {
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
-
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
     letter-spacing: 2px;
     color: #77787b;
     text-transform: uppercase;
   }
   .subtitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "museo-sans";
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1;
-    color: #77787b;
+    line-height: 1.13;
+    letter-spacing: normal;
+    color: #414042;
   }
 }
 
@@ -314,6 +328,7 @@ input[type=text].text-doc,
 select {
   width: 95%;
   padding: 15px 15px;
+  height: 45px;
   margin: 0px 0px;
   display: inline-block;
   border: 1px solid #e7e6e6;
@@ -325,6 +340,8 @@ select {
 input[type=text].text-doc-2,
 select {
   width: 97.5%;
+  height: 45px;
+  font-family: $secondaryfont;
   padding: 15px 15px;
   margin: 0px 0px;
   display: inline-block;
@@ -337,10 +354,8 @@ input[type=text].text-double,
 select {
   width: 100%;
   padding: 15px 15px;
-  border-radius: 6px;
-  height: 100%;
+  height: 45px;
   border: 1px solid #e7e6e6;
-  border-radius: 0;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-right: 1px;
@@ -350,6 +365,7 @@ select {
 input[type=text].text-doc-full,
 select {
   width: 100%;
+  height: 45px;
   padding: 15px 15px;
   margin: 0px 0px;
   display: inline-block;
@@ -363,11 +379,15 @@ select {
   height: 45px;
   border-radius: 6px;
   box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-  font-family: $mainfont;
-  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  font-weight: 700;
-  color:#1598cb;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  color: #1598cb;
+  text-transform: uppercase;
 }
 .btn-upload {
   border:1px solid #1598cb;
@@ -415,13 +435,14 @@ select {
 .btn-dpn,
 .text-doc-full,
 .text-doc-2 {
-  font-family: $mainfont;
+  font-family: "museo-sans";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
+  color: #414042;
 }
 
 // 
@@ -438,11 +459,16 @@ select {
   pointer-events: none;
   top: 15px;
   bottom: 0;
-  font-family: $mainfont;
-  font-size: 14px;
   left: 15px;
   margin: auto;
-  color: #ccc;
+  font-family: $secondaryfont;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #c5c5c5;
 }
 
 .placeholder span {
@@ -458,7 +484,6 @@ select {
 }
 
 .btn-45 {
-  height: 100%;
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -492,6 +517,7 @@ select {
 .asterisk {
   color: #1598cb;
   font-weight: 700;
+  padding-right: 2px;
 }
 
 #droppable-text {

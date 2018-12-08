@@ -53,12 +53,10 @@ $secondaryfont: "museo-sans", calibri;
   .check-icon {
     width: 8px;
     height: 12px;
-    padding-right: 6px;
     object-fit: contain;
     content: url('../../../assets/component/header/state-active-white@3x.png');
   }
   summary {
-    font-family: $primaryfont;
     display: flex;
     box-sizing: border-box;
     outline: none !important;

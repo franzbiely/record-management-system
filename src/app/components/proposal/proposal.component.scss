@@ -69,6 +69,14 @@
             }
            
         }
+        .id-container{
+            display: flex;
+            flex-direction: column;
+            padding-right: 50px;
+            span:first-child{
+                margin-bottom: 7px;
+            }
+        }
     }
     .title-container {
         display: inline-block;
@@ -123,20 +131,21 @@
 
     .text-small-light {  
         margin: 0;
-        font-family:'Montserrat', sans-serif;
-        font-size: 10px;
-        font-weight: 200;
+        font-family: "museo-sans";
+        font-size: 11px;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
-        letter-spacing: 2px;
-        color: #ffffff;}
+        letter-spacing: normal;
+        color: #ffffff;
+    }
 
     .text-big-light {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
         font-size: 36px;
-        font-weight: bold;
+        font-weight: 200;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -149,7 +158,6 @@
     }
     
     .text-normal {
-        margin-bottom: 5px;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
@@ -175,15 +183,32 @@
     .status-container{
         margin-top:30px;
         display: flex;
+        align-items: center;
         app-active-archive {
             margin-right:50px;
         }
         @media only screen and (max-width: 767px){
             margin-top: 20px;
         }
+        .state-container{
+            div:first-child{
+                margin-bottom: 5px;
+            }
+            .icon-home{
+                margin-top: -3px;
+                width: 16px;
+                height: 16px;
+                margin-right: 6px;
+                content: url("../../../assets/component/proposal/household-white.svg");
+            }
+            .icon-check{
+                margin-right: 10px;
+                margin-left: 5px;
+                content: url("../../../assets/component/proposal/state-active-white.png");
+            }
+        }
     }
     .dropbtn {
-    
         padding:10px;
         background-color: transparent;
         color: white;
@@ -194,11 +219,7 @@
         border-radius: 6px;
         border: solid 0.5px #ffffff;
         cursor: pointer;
-
-      
-
     }
-
     .icon{
         position: absolute;
         width: 16px;
@@ -345,14 +366,14 @@
     //Text Style//
 
     .text-small-light {  
-        
-        font-family:'Montserrat', sans-serif;
-        font-size: 10px;
-        font-weight: 200;
+        margin-top: 7px;
+        font-family: "museo-sans";
+        font-size: 11px;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
-        letter-spacing: 2px;
+        letter-spacing: normal;
         color: #ffffff;
         
             i{
