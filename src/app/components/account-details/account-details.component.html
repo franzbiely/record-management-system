@@ -23,7 +23,7 @@
           <div class="right-section">
             <div class="option-container">
               <span class="title-text">Please select:</span>
-              <div><mat-radio-button class="radio"><span>Quantity</span></mat-radio-button><mat-radio-button class="radio"><span>($) Value</span></mat-radio-button></div>
+              <div><mat-radio-button class="radio"><span class="radio-text">Quantity</span></mat-radio-button><mat-radio-button class="radio"><span class="radio-text">($) Value</span></mat-radio-button></div>
             </div>
             <app-quick-add></app-quick-add>
             <div class="search-container">
@@ -34,37 +34,60 @@
               <table>
                 <tr>
                   <th>Security Name</th>
+                  <th><span>Security ID</span><i class="icon-help"></i></th>
+                  <th>Asset Class</th>
+                  <th>Quantity</th>
+                  <th>Allocation (%)</th>
                   <th>($) Value</th>
-                  <th>&nbsp;</th>
-                </tr>
-                <tr>
-                  <td>SA US Core Market Select</td>
-                  <td>$25,000.00</td>
-                  <td><i class="icon-delete"></i></td>
-                </tr>
-                <tr>
-                  <td>1290 Multi-Alternative Strategies R</td>
-                  <td>$50,000.00</td>
-                  <td><i class="icon-delete"></i></td>
+                  <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
                 </tr>
                 <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr class="total">
                   <td>Total Value:</td>
-                  <td>$75,000.00</td>
-                  <td></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>(%)</td>
+                  <td>($)</td>
+                  <td>&nbsp;</td>
                 </tr>
               </table>
             </div>
-            <app-add-security></app-add-security>
           </div>
           <div class="btn-container">
             <button (click)="closeMe()" class="btn-cancel">Cancel</button>

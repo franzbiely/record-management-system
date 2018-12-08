@@ -209,6 +209,7 @@ input[type=text].text-try {
     align-items: center;
 }
 .text-create-mobile{
+    text-transform: uppercase;
     font-family: $mainfont;
     font-size: 12px;
     font-weight: 600;
@@ -267,6 +268,7 @@ input[type=text].text-try {
     line-height: normal;
     letter-spacing: 0.9px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 table {
  width: 100%;
@@ -340,16 +342,16 @@ td:first-child{
     }
 
     input[type=text]{
-        background: url('../../../assets/component/listview/search-gray.png') no-repeat  15px 10px;
+        background: url('../../../assets/component/listview/search-gray.png') no-repeat 15px 13px;
+        background-size: 19px;
         width: 253px;
-        height: 37px;
-        border-radius:6px;
-        border: solid 1px #e7e6e6;
+        height: 45px;
+        border-radius: 6px;
         background-color: #ffffff;
         margin-top: 4px;
         font-size: 14px;
-        border: solid 1px #e7e6e6;
-        padding-left:40px;
+        border:none;
+        padding-left: 40px;
         color: black;
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
@@ -358,6 +360,9 @@ td:first-child{
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-right: 20px
 
     }
     ::placeholder {
@@ -388,7 +393,6 @@ td:first-child{
     content: url('../../../assets/component/home/add-white.png');
 }
 .filter{
-    padding-left: 20px;
     display: flex;
     justify-content: space-between;
     
