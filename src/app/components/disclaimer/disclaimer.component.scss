@@ -62,8 +62,14 @@
                     border-radius: 6px;
                     background-color: #ffffff;
                     overflow: scroll;
-                    color: #414042;
+                    font-family: "museo-sans";
                     font-size: 14px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #414042;
                     article {
                         @media only screen and (max-width: 767px){
                             text-align: justify;
@@ -106,13 +112,23 @@
 
                 > span {
                     position: absolute;
-                    top: -2px;
                     left: 0;
                 }
+                .text-show{
+                    margin-top: 4px;
+                }
+                .note-container{
+                    margin-top: 7px;
+                }
                 .note {
+                    font-family: "Montserrat",sans-serif;
                     font-size: 10px;
                     font-weight: 600;
-                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 2px;
+                    color: #404041;
                 }
             }
         }
