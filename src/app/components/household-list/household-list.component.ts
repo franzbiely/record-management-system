@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ModalStatusService } from "../../services/modal-status.service"
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-household-list',
@@ -7,6 +9,7 @@ import { ModalStatusService } from "../../services/modal-status.service"
   styleUrls: ['./household-list.component.scss']
 })
 export class HouseholdListComponent implements OnInit {
+  selected_index= 0;
 	active_tab = 1; // 2, 3
 	showForm = true;
   openHousehold: boolean = false;

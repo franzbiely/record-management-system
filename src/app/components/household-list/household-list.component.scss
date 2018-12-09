@@ -202,8 +202,9 @@ app-household-member {
                 }
             }
             .row-content{
-                padding: 20px 0px 30px;
+                padding: 0px 0px 30px;
                 .brand-container{
+                    padding-top:20px;
                     .brand-box{
                         padding:15px 30px;
                     }
@@ -394,6 +395,9 @@ app-household-member {
                         tr:not(:first-child){
                             border-bottom: 0.5px #e7e6e6 solid;
                         }
+                        tr.selected {
+                            background:#f2fafc;
+                        }
                     }
                 }
                     .row-3{
@@ -412,20 +416,6 @@ app-household-member {
                             .btn-load{
                                 width: 160px;
                                 height: 45px;
-                                border-radius: 6px;
-                                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-                                background-color: #ffffff;
-                                font-family: 'Montserrat', sans-serif;
-                                font-size: 12px;
-                                font-weight: 700;
-                                font-style: normal;
-                                font-stretch: normal;
-                                line-height: normal;
-                                letter-spacing: 0.9px;
-                                text-align: center;
-                                color: #1598cb;
-                                border: 1px #1598cb solid;
-                                text-transform: uppercase;
                             }
                         }
                     }

@@ -26,11 +26,13 @@
 
         <div class="left-section">
           <div class="text-search-container"><span class="text-search">Search In: </span></div>
+          <mat-radio-group [(ngModel)]="active_tab">
           <div class="option-container">
-            <div class="option"><mat-radio-button class="text-radio-button" (click)="active_tab=1">My Client Center</mat-radio-button><i class="icon-myclient"></i></div>
-            <div class="option"><mat-radio-button class="text-radio-button" (click)="active_tab=2">Orion</mat-radio-button><i class="icon-orion"></i></div>
-            <div class="option"><mat-radio-button class="text-radio-button" (click)="active_tab=3">Redtail</mat-radio-button><i class="icon-redtail"></i></div>
+            <div class="option"><mat-radio-button class="text-radio-button" [value]="1">My Client Center</mat-radio-button><i class="icon-myclient"></i></div>
+            <div class="option"><mat-radio-button class="text-radio-button" [value]="2">Orion</mat-radio-button><i class="icon-orion"></i></div>
+            <div class="option"><mat-radio-button class="text-radio-button" [value]="3">Redtail</mat-radio-button><i class="icon-redtail"></i></div>
           </div>
+          </mat-radio-group>
         </div>
 
         <div class="right-section">
@@ -51,43 +53,43 @@
               <th><span>First Name</span><i class="icon-dropdown"></i></th>
               <th><span>Last Name</span><i class="icon-dropdown"></i></th>
             </tr>
-            <tr>
-              <td><mat-radio-button></mat-radio-button></td>
+            <tr [ngClass]="{'selected': selected_index==1}">
+              <td><mat-radio-button (click)="selected_index=1"></mat-radio-button></td>
               <td>Rhoades Household</td>
               <td>9305</td>
               <td>wendy</td>
               <td>Rhoades</td>
             </tr>
-            <tr>
-              <td><mat-radio-button></mat-radio-button></td>
+            <tr [ngClass]="{'selected': selected_index==2}">
+              <td><mat-radio-button (click)="selected_index=2"></mat-radio-button></td>
               <td>Rhoades Household</td>
               <td>9305</td>
               <td>wendy</td>
               <td>Rhoades</td>
             </tr>
-            <tr>
-              <td><mat-radio-button></mat-radio-button></td>
+            <tr [ngClass]="{'selected': selected_index==3}">
+              <td><mat-radio-button (click)="selected_index=3"></mat-radio-button></td>
               <td>Rhoades Household</td>
               <td>9305</td>
               <td>wendy</td>
               <td>Rhoades</td>
             </tr>
-            <tr>
-              <td><mat-radio-button></mat-radio-button></td>
+            <tr [ngClass]="{'selected': selected_index==4}">
+              <td><mat-radio-button (click)="selected_index=4"></mat-radio-button></td>
               <td>Rhoades Household</td>
               <td>9305</td>
               <td>wendy</td>
               <td>Rhoades</td>
             </tr>
-            <tr>
-              <td><mat-radio-button></mat-radio-button></td>
+            <tr [ngClass]="{'selected': selected_index==5}">
+              <td><mat-radio-button (click)="selected_index=5"></mat-radio-button></td>
               <td>Rhoades Household</td>
               <td>9305</td>
               <td>wendy</td>
               <td>Rhoades</td>
             </tr>
-            <tr>
-              <td><mat-radio-button></mat-radio-button></td>
+            <tr [ngClass]="{'selected': selected_index==6}">
+              <td><mat-radio-button (click)="selected_index=6"></mat-radio-button></td>
               <td>Rhoades Household</td>
               <td>9305</td>
               <td>wendy</td>
@@ -97,7 +99,7 @@
           <div class="row-3">
             <div class="btn-container">
               <button class="btn-cancel" (click)="closeMe()"><span>Cancel</span></button>
-              <button class="btn-load"><span>Import</span></button>
+              <button class="btn-load primary" [disabled]="selected_index<1"><span>Import</span></button>
             </div>
           </div>
         </div>
