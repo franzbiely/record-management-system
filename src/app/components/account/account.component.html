@@ -1,5 +1,5 @@
 <div class="tab-title-mobile"><div><span class="title-text-mobile"> Account </span></div></div>
-<form [formGroup]="frmAccounts" (ngSubmit)="submit()">
+<form>
 <table cellspacing="0" borderspacing="0">
     <thead>
       <tr class="table-head">
@@ -18,7 +18,7 @@
 
     <tbody>
       <tr class="td-text-normal">
-        <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
+        <td><mat-checkbox (change)="selectAccount($event)" [(checked)]="isSelectAll"></mat-checkbox></td>
         <td>Schwab Account</td>
         <td><i class="icon-redtail"></i></td>
         <td>ENV Account</td>
@@ -30,7 +30,7 @@
         <td><app-dropdown-actions></app-dropdown-actions></td>
       </tr>
       <tr class="td-text-normal">
-          <td><mat-checkbox (change)="selectAccount($event)" ></mat-checkbox></td>
+          <td><mat-checkbox (change)="selectAccount($event)" [(checked)]="isSelectAll"></mat-checkbox></td>
           <td>Schwab Account</td>
           <td><i class="icon-wealth"></i></td>
           <td>ENV Account</td>
@@ -44,7 +44,7 @@
 
       <tr class="last" >
         <td>
-        <div class="select-all-container"><mat-checkbox [ngClass]="testing1" (click)="showBtnNext()"></mat-checkbox>
+        <div class="select-all-container"><mat-checkbox [ngClass]="testing1" (change)="toggleSelectAll($event)"></mat-checkbox>
         <span class="td-text-normal">Select All</span></div>
         </td>
         <td colspan="9"> 

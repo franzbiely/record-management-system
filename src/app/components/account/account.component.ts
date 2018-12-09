@@ -9,6 +9,7 @@ import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
+  isSelectAll : boolean = false;
   selected_counter: number = 0;
   selectedAccounts:any;
   btnNext : boolean = false;
@@ -29,12 +30,21 @@ export class AccountComponent implements OnInit {
       this.selected_counter++;
     } else {
       this.selected_counter--;
-      console.log()
     }
     if(this.selected_counter > 0) {
       this.data.SET_proposal_show_btnNext(true);
     }
     else {
+      this.data.SET_proposal_show_btnNext(false);
+    }
+  }
+  toggleSelectAll(event) {
+    if(event.checked) {
+      this.isSelectAll = true;  
+      this.data.SET_proposal_show_btnNext(true);
+    }
+    else {
+      this.isSelectAll = false; 
       this.data.SET_proposal_show_btnNext(false);
     }
   }
