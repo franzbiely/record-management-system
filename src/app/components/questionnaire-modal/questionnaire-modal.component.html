@@ -40,13 +40,15 @@
                 <div class="question">
                   <span class="title-question">Question 1:</span>
                   <div class="question-container"><span class="text-question">What is your primary objective for this portfolio?</span></div>
-                  <div class="choices-container">
-                    <mat-radio-button class="radio-choice">Preserve my savings</mat-radio-button>
-                    <mat-radio-button class="radio-choice">Fund education expenses</mat-radio-button>
-                    <mat-radio-button class="radio-choice">Save for a major purchase</mat-radio-button>
-                    <mat-radio-button class="radio-choice">Provide for my retirement</mat-radio-button>
-                    <mat-radio-button class="radio-choice">Maximize long-term growth</mat-radio-button>
-                  </div>
+                  <mat-radio-group>
+                    <div class="choices-container" (click)="moveStep(2)">
+                      <mat-radio-button class="radio-choice" value="1">Preserve my savings</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="2">Fund education expenses</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="3">Save for a major purchase</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="4">Provide for my retirement</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="5">Maximize long-term growth</mat-radio-button>
+                    </div>
+                  </mat-radio-group>
                 </div>
               </div>
             </div>
@@ -56,13 +58,15 @@
               <div class="question">
                 <span class="title-question">Question 2:</span>
                 <div class="question-container"><span class="text-question">When will you begin withdrawing money from this portfolio?</span></div>
-                <div class="choices-container">
-                  <mat-radio-button class="radio-choice">Within the next 3 years</mat-radio-button>
-                  <mat-radio-button class="radio-choice">Within the next 3-5 years</mat-radio-button>
-                  <mat-radio-button class="radio-choice">Within the next 6-10 years</mat-radio-button>
-                  <mat-radio-button class="radio-choice">After the next 11 years</mat-radio-button>
-                  <mat-radio-button class="radio-choice">I don't plan to withdraw money from this portfolio</mat-radio-button>
-                </div>
+                <mat-radio-group>
+                  <div class="choices-container" (click)="moveStep(3)">
+                    <mat-radio-button class="radio-choice" value="1">Within the next 3 years</mat-radio-button>
+                    <mat-radio-button class="radio-choice" value="2">Within the next 3-5 years</mat-radio-button>
+                    <mat-radio-button class="radio-choice" value="3">Within the next 6-10 years</mat-radio-button>
+                    <mat-radio-button class="radio-choice" value="4">After the next 11 years</mat-radio-button>
+                    <mat-radio-button class="radio-choice" value="5">I don't plan to withdraw money from this portfolio</mat-radio-button>
+                  </div>
+                </mat-radio-group>
               </div>
             </div>
           </div>
@@ -72,13 +76,15 @@
                 <div class="question">
                   <span class="title-question">Question 3:</span>
                   <div class="question-container"><span class="text-question">Once you begin withdrawing money from this portfolio, how long do you <br/>anticipate continuing these withdrawals until you've withdrawn all your money?</span></div>
-                  <div class="choices-container">
-                    <mat-radio-button class="radio-choice">One-time withdrawal of entire account value</mat-radio-button>
-                    <mat-radio-button class="radio-choice">1-2 years</mat-radio-button>
-                    <mat-radio-button class="radio-choice">3-5 years</mat-radio-button>
-                    <mat-radio-button class="radio-choice">6-10 years</mat-radio-button>
-                    <mat-radio-button class="radio-choice">11 years or more</mat-radio-button>
-                  </div>
+                  <mat-radio-group>
+                    <div class="choices-container" (click)="moveStep(4)">
+                      <mat-radio-button class="radio-choice" value="1">One-time withdrawal of entire account value</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="2">1-2 years</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="3">3-5 years</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="4">6-10 years</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="5">11 years or more</mat-radio-button>
+                    </div>
+                  </mat-radio-group>
                 </div>
               </div>
             </div>
@@ -88,13 +94,15 @@
                 <div class="question">
                   <span class="title-question">Question 4:</span>
                   <div class="question-container"><span class="text-question">Once you begin withdrawing money from this portfolio, how much do you anticipate <br/>withdrawing each year?</span></div>
-                  <div class="choices-container">
-                    <mat-radio-button class="radio-choice">One-time withdrawal of entire account value</mat-radio-button>
-                    <mat-radio-button class="radio-choice">1-2 years</mat-radio-button>
-                    <mat-radio-button class="radio-choice">3-5 years</mat-radio-button>
-                    <mat-radio-button class="radio-choice">6-10 years</mat-radio-button>
-                    <mat-radio-button class="radio-choice">11 years or more</mat-radio-button>
-                  </div>
+                  <mat-radio-group>
+                    <div class="choices-container" (click)="moveStep(5)">
+                      <mat-radio-button class="radio-choice" value="1">One-time withdrawal of entire account value</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="2">1-2 years</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="3">3-5 years</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="4">6-10 years</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="5">11 years or more</mat-radio-button>
+                    </div>
+                  </mat-radio-group>
                 </div>
               </div>
             </div>
@@ -104,14 +112,16 @@
                 <div class="question">
                   <span class="title-question">Question 5:</span>
                   <div class="question-container"><span class="text-question">Markets move up and down on a regular, but unpredictable, basis. If you invested your <strong>$800,000</strong> and<br/> the markets went down, at what point would you begin to feel uncomfortable?</span></div>
-                  <div class="choices-container">
-                    <mat-radio-button class="radio-choice">Any decline would make me feel uncomfortable</mat-radio-button>
-                    <mat-radio-button class="radio-choice">My portfolio declines to <strong>$800,000</strong> X (1-0.05) (a 5% decline)</mat-radio-button>
-                    <mat-radio-button class="radio-choice">My portfolio declines to <strong>$800,000</strong> X (1-0.10) (a 10% decline)</mat-radio-button>
-                    <mat-radio-button class="radio-choice">My portfolio declines to <strong>$800,000</strong> X (1-0.20) (a 20% decline)</mat-radio-button>
-                    <mat-radio-button class="radio-choice">My portfolio declines to <strong>$800,000</strong> X (1-0.30) (a 30% decline)</mat-radio-button>
-                    <mat-radio-button class="radio-choice">My portfolio declines to <strong>$800,000</strong> X (1-0.40) (a 40% decline)</mat-radio-button>
-                  </div>
+                  <mat-radio-group>
+                    <div class="choices-container" (click)="moveStep(6)">
+                      <mat-radio-button class="radio-choice" value="1">Any decline would make me feel uncomfortable</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="2">My portfolio declines to <strong>$800,000</strong> X (1-0.05) (a 5% decline)</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="3">My portfolio declines to <strong>$800,000</strong> X (1-0.10) (a 10% decline)</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="4">My portfolio declines to <strong>$800,000</strong> X (1-0.20) (a 20% decline)</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="5">My portfolio declines to <strong>$800,000</strong> X (1-0.30) (a 30% decline)</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="6">My portfolio declines to <strong>$800,000</strong> X (1-0.40) (a 40% decline)</mat-radio-button>
+                    </div>
+                  </mat-radio-group>
                 </div>
               </div>
             </div>
@@ -121,12 +131,14 @@
                 <div class="question">
                   <span class="title-question">Question 6:</span>
                   <div class="question-container"><span class="text-question">For this portfolio, which of these statements best describes your attitude about declines over<br/> the next three months?</span></div>
-                  <div class="choices-container">
-                    <mat-radio-button class="radio-choice">I'd have a hard time accepting my declines</mat-radio-button>
-                    <mat-radio-button class="radio-choice">I can tolerate small short-term declines</mat-radio-button>
-                    <mat-radio-button class="radio-choice">I can tolerate moderate short-term declines</mat-radio-button>
-                    <mat-radio-button class="radio-choice">I wouldn't worry about declines in that timeframe</mat-radio-button>
-                  </div>
+                  <mat-radio-group>
+                    <div class="choices-container" (click)="moveStep(7)">
+                      <mat-radio-button class="radio-choice" value="1">I'd have a hard time accepting my declines</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="2">I can tolerate small short-term declines</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="3">I can tolerate moderate short-term declines</mat-radio-button>
+                      <mat-radio-button class="radio-choice" value="4">I wouldn't worry about declines in that timeframe</mat-radio-button>
+                    </div>
+                  </mat-radio-group>
                 </div>
               </div>
             </div>
@@ -136,7 +148,7 @@
                   <div class="question">
                     <span class="title-question">Question 7:</span>
                     <div class="question-container"><span class="text-question">Return and risk are related. If you want more return you must be willing to take more risk.<br/> Pick a point in the graph where you feel comfortable with potential return and risk.</span></div>
-                    <div class="choices-container">
+                    <div class="choices-container" (click)="moveStep(8)">
                       <img src="../../../assets/component/questionnaire/graph.PNG" width="500">
                       <button>Continue</button>
                     </div>
@@ -149,12 +161,14 @@
                   <div class="question">
                     <span class="title-question">Question 8:</span>
                     <div class="question-container"><span class="text-question">Assuming normal, long-term stock market conditions, how would<br/> you expect this portfolio to perform over time?</span></div>
-                    <div class="choices-container">
-                      <mat-radio-button class="radio-choice">To have a high degree of stability but make small gains</mat-radio-button>
-                      <mat-radio-button class="radio-choice">To trail the stock market but make moderate gains</mat-radio-button>
-                      <mat-radio-button class="radio-choice">To generally keep pace with the stock market</mat-radio-button>
-                      <button (click)="riskMoveStepTo(5)">Submit</button>
-                    </div>
+                    <mat-radio-group>
+                      <div class="choices-container">
+                        <mat-radio-button class="radio-choice" value="1">To have a high degree of stability but make small gains</mat-radio-button>
+                        <mat-radio-button class="radio-choice" value="2">To trail the stock market but make moderate gains</mat-radio-button>
+                        <mat-radio-button class="radio-choice" value="3">To generally keep pace with the stock market</mat-radio-button>
+                        <button (click)="riskMoveStepTo(5)">Submit</button>
+                      </div>
+                    </mat-radio-group>
                   </div>
                 </div>
               </div>

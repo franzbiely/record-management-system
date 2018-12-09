@@ -11,7 +11,7 @@ export class QuestionnaireModalComponent implements OnInit {
   btnNext : boolean = false;
 	questionnaireModal: boolean = false;
   step: number = 1;
-  riskStep:number = 1;
+  riskStep:number = 1; 
 
   constructor(private data: DataService, private modalStatus: ModalStatusService) { }
   closeMe() {
@@ -32,6 +32,9 @@ export class QuestionnaireModalComponent implements OnInit {
     this.data.SET_proposal_risk_step($step);
     this.data.SET_proposal_show_btnNext(true);
     this.closeMe();
+  }
+  foo() {
+    alert('a')
   }
 
 }
