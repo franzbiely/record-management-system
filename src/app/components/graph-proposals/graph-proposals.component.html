@@ -165,9 +165,16 @@
             <div class="rab-setting-row">
                 <div class="rab-setting-field">
                     <label for="goal">Date Range:</label>
-                    <input type="text" placeholder="Select Date Range">
+                    <input type="text" placeholder="Select Date Range" (click)="showCalendar=!showCalendar">
                 </div><!-- .rab-setting-field -->
+                
             </div><!-- .rab-setting-row -->
+
+            <div class="rab-setting-row rab-setting-calendar" *ngIf="showCalendar">
+                <div class="rab-setting-field">
+                    <app-calendar-modal></app-calendar-modal>
+                </div>
+            </div>
 
             <div class="rab-setting-actions">
                 <a (click)="removeBox($event)">Remove Tile</a>

@@ -12,6 +12,8 @@ declare var $: any;
     styleUrls: ["./graph-proposals.component.scss"]
 })
 export class GraphProposalsComponent implements OnInit {
+
+    showCalendar: boolean = false;
     @Input() reportType = 'default';
     @Input() reportTitle = '';
     @Input() reportSubTitle = '';
