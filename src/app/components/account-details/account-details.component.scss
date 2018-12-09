@@ -9,9 +9,14 @@
 }
 app-quick-add{
     display: initial;
+    cursor: pointer;
     @media only screen and (max-width: 767px){
         display:none;
     }
+}
+::ng-deep app-quick-add.active .quick-add{
+    border-style: solid; 
+    border-color:#1598cb;
 }
 app-add-security{
     display: initial;
@@ -151,7 +156,7 @@ app-add-security{
                                 background-color: #fafbfc;
                             }
                             th, td {
-                                padding:0px 20px;
+                                padding:0px 5px;
                             }
                             td:nth-child(5), td:nth-child(6),
                             th:nth-child(5), th:nth-child(6){
@@ -162,6 +167,9 @@ app-add-security{
                                 @media only screen and (max-width: 767px){
                                     display: none;
                                 }
+                            }
+                            td:nth-child(7) {
+                                max-width:30px;
                             }
                             th{
                                 font-family: "Montserrat", sans-serif;
@@ -204,6 +212,16 @@ app-add-security{
                                 letter-spacing: 1px;
                                 color: #414042;
                                 text-transform: uppercase;
+                            }
+                            .close-circle {
+                                width: 20px;
+                                height: 20px;
+                                object-fit: contain;
+                                background: url(../../../assets/exit-white.svg) no-repeat;
+                                cursor:pointer;
+                                display: inline-block;
+                                text-indent: 90px;
+                                overflow: hidden;
                             }
                         }
                     }

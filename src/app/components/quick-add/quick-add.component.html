@@ -4,17 +4,33 @@
     <p>Easily add securities below by copying (Ctrl + C) two columns of data from a spreadsheet and pasting (Ctrl + V) into this area.</p>
   </div>
   <table class="computation">
-    <tr>
-      <th>Security ID 1</th>
-      <td>10%</td>
-    </tr>
-    <tr>
-      <th>Security ID 2</th>
-      <td>60%</td>
-    </tr>
-    <tr>
-      <th>Security ID 3</th>
-      <td>30%</td>
-    </tr>
+    <ng-container *ngIf="accountDetailsType=='quantity'">
+      <tr>
+        <th>Security ID 1</th>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <th>Security ID 2</th>
+        <td>60%</td>
+      </tr>
+      <tr>
+        <th>Security ID 3</th>
+        <td>30%</td>
+      </tr>
+    </ng-container>
+    <ng-container *ngIf="accountDetailsType=='value'">
+      <tr>
+        <th>Security ID 1</th>
+        <td>$100,000.00</td>
+      </tr>
+      <tr>
+        <th>Security ID 2</th>
+        <td>$200,000.00</td>
+      </tr>
+      <tr>
+        <th>Security ID 3</th>
+        <td>$300,000.00</td>
+      </tr>
+    </ng-container>
   </table>
 </section>

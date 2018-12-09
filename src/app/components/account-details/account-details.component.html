@@ -23,9 +23,16 @@
           <div class="right-section">
             <div class="option-container">
               <span class="title-text">Please select:</span>
-              <div><mat-radio-button class="radio"><span class="radio-text">Quantity</span></mat-radio-button><mat-radio-button class="radio"><span class="radio-text">($) Value</span></mat-radio-button></div>
+              <div>
+                <mat-radio-button class="radio" (click)="setQuickAddType('quantity')">
+                  <span class="radio-text">Quantity</span>
+                </mat-radio-button>
+                <mat-radio-button class="radio" (click)="setQuickAddType('value')">
+                  <span class="radio-text">($) Value</span>
+                </mat-radio-button>
+              </div>
             </div>
-            <app-quick-add></app-quick-add>
+            <app-quick-add (click)="quickAdd=true" [ngClass]="{'active' : quickAdd}"></app-quick-add>
             <div class="search-container">
               <span class="search-title">Add security or cash</span>
               <div class="search-box-container"><input type="text" class="search-box" placeholder="Enter Security ID or Name Mutual Funds..."> </div>
@@ -41,15 +48,42 @@
                   <th>($) Value</th>
                   <td>&nbsp;</td>
                 </tr>
+                <ng-container *ngIf="quickAdd">
                 <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
+                  <td>International Business Machines Cor</td>
+                  <td>IBM</td>
+                  <td>
+                    <details>
+                      <summary>
+                        Cash & Cash Alternatives
+                        <a class="material-icons">expand_more</a>
+                      </summary>
+                      <app-popup-custom-asset-class></app-popup-custom-asset-class>
+                    </details>
+                  </td>
+                  <td>155.75</td>
+                  <td>11%</td>
+                  <td>$20,000.00</td>
+                  <td><span class="close-circle">X</span></td>
                 </tr>
+                <tr>
+                  <td>International Business Machines Cor</td>
+                  <td>IBM</td>
+                  <td>
+                    <details>
+                      <summary>
+                        Cash & Cash Alternatives
+                        <a class="material-icons">expand_more</a>
+                      </summary>
+                      <app-popup-custom-asset-class></app-popup-custom-asset-class>
+                    </details>
+                  </td>
+                  <td>155.75</td>
+                  <td>11%</td>
+                  <td>$20,000.00</td>
+                  <td><span class="close-circle">X</span></td>
+                </tr>
+                </ng-container>
                 <tr>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>

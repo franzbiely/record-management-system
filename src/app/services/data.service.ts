@@ -23,6 +23,12 @@ export class DataService {
 	  	this.simulationGoalSource.next(value);
 	}
 
+	private accountDetailsTypeSource = new BehaviorSubject<string>('quantity');
+	public accountDetailsType = this.accountDetailsTypeSource.asObservable();
+	SET_accountDetailsType(value: string) {
+	  	this.accountDetailsTypeSource.next(value);
+	}
+
 
   constructor() { }
 }

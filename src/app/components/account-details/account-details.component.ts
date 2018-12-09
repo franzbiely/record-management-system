@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalStatusService } from "../../services/modal-status.service"
+import { DataService } from "../../services/data.service"
 
 @Component({
   selector: 'app-account-details',
@@ -7,10 +8,12 @@ import { ModalStatusService } from "../../services/modal-status.service"
   styleUrls: ['./account-details.component.scss']
 })
 export class AccountDetailsComponent implements OnInit {
+  type: string = '';
+  quickAdd: boolean = false;
   importAccountsModal: boolean = false;
 	accountDetailsModal: boolean = false;
 
-  constructor(private modalStatus: ModalStatusService) { }
+  constructor(private modalStatus: ModalStatusService, private data: DataService) { }
 
   ngOnInit() {
     this.modalStatus.importAccount.subscribe(value => this.importAccountsModal = value);
@@ -23,7 +26,9 @@ export class AccountDetailsComponent implements OnInit {
   saveMe() {
     this.modalStatus.toggleImportAccount(false);
     this.modalStatus.toggleAccountDetails(false);
-
   }
 
+  setQuickAddType(type) {
+    this.data.SET_accountDetailsType(type);
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'record-management-sys';
+  constructor() {
+  	$(function() {
+	    $(document).on('click', 'details', function () {
+	    	$('details').not(this).removeAttr("open");  
+		});
+	});
+  }
+  
 }

@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalStatusService } from "../../services/modal-status.service"
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import * as $ from 'jquery';
+declare var $ :any;
 
 @Component({
     selector: 'app-firm-information',
