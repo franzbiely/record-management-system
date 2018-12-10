@@ -117,7 +117,7 @@ $secondaryfont : 'museo-sans', calibri;
 .row-1 {
     display: flex;
     align-items: center;
-    padding: 30px 60px;
+    padding: 30px 90px;
     background:  #fafbfc;
     @media only screen and (max-width:767px){
         padding: 0px;
@@ -570,6 +570,21 @@ $secondaryfont : 'museo-sans', calibri;
                     display: none;
                 }
             }
+            th:first-child
+            {
+                text-align: left;
+                padding-left: 30px;
+            }
+            td:first-child{
+                padding-left: 40px;
+            }
+            th:last-child{
+                text-align: right;
+                padding-right: 30px;
+            }
+            td:last-child{
+                padding-right: 30px;
+            }
           }
         
           th {        
@@ -669,7 +684,7 @@ $secondaryfont : 'museo-sans', calibri;
     }
     :host ::ng-deep .dropdown-actions{
         details{
-            margin-right: 20px;
+            margin-right: 40px;
     }
     }
     .dropdown-content{
@@ -708,6 +723,7 @@ $secondaryfont : 'museo-sans', calibri;
     }
     .btn-cap-app {
         margin: 0px;
+        min-width: 220px;
         padding: 10px 20px;
         border: solid 0.5px #bdbdbd; 
         background: white;
@@ -716,12 +732,18 @@ $secondaryfont : 'museo-sans', calibri;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        position: relative;
         @media only screen and (max-width:767px){
             margin-top: 8px;
         }
         div {
             display: flex;
             align-items: center;
+        }
+        .icon-dropdown{
+            content: url(../../../assets/component/portfolio/arrow-gray.png);
+            position: absolute;
+            right: 15px;
         }
         
     }
