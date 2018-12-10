@@ -159,7 +159,7 @@ export class SimulationComponent implements OnInit {
     this.current_portfolio_chart = new Chart(this.current_portfolio_chart_ref.nativeElement, {
       type: 'line',
       data: {
-        labels: ['2020', '2025', '2030', '2035', '2040', '2045', '2050', '2055'],,
+        labels: ['2020', '2025', '2030', '2035', '2040', '2045', '2050', '2055'],
         datasets: [{
           backgroundColor: '#c5c5c5',
           borderColor: '#c5c5c5',
