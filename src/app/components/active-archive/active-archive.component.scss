@@ -22,7 +22,8 @@ $secondaryfont: "museo-sans", calibri;
   &[open] {
     background: #fff;
     color: #414042;
-        position: relative;
+    position: relative;
+    box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
     summary {
       border-bottom: 0.5px solid #e7e6e6;
       color:#414042;

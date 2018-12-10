@@ -17,7 +17,6 @@
         right: 60px;
         position: absolute;
         border-radius: 0 0 6px 6px;
-        background-color: white;
         summary {
             border-radius: 6px 6px 0 0;
             margin-top: -10px;
@@ -44,12 +43,18 @@
             .icon-action {
                 right: 13px;
             }
+            .icon-dropdown{
+                content: url(../../../assets/component/proposal/3-dots-gray.svg);
+                width: 20px;
+                height: 20px;
+            }
 
         }
         ul {
             padding: 0;
             margin:0;
             list-style: none;
+            background-color: white;
             li:last-child{
                 a{
                     border-bottom:none;
