@@ -83,7 +83,14 @@
                     <app-graph-proposals [reportType]="pane"></app-graph-proposals>
                 </div><!-- .board-pane -->
                 <div class="board-pane">
-                    <a (click)="addAnalyticsBox()"><img src="../../../assets/analytics/chart-0.svg" alt="chart-0" style="max-width: 100%; "></a>
+                    <app-dash-box [isNew]="isNew"
+                                  [title]="'&nbsp;'"
+                                  [headerRightType]="'action'">
+                        <div class="overlay"></div>
+                        <div class="add-container"> <a (click)="addAnalyticsBox()"><i class="icon-add"></i><span>Add</span></a></div>
+                        <div class="info-item">
+                        </div>
+                    </app-dash-box>
                 </div><!-- .board-pane -->
             </div><!-- .board-panes -->
         </div><!-- .report-board -->
@@ -112,4 +119,3 @@
     <button class="is-cancel" (click)="addAnalyticsBox()">Cancel</button>
     <button class="is-save" (click)="saveAnalyticsBox()">Save</button>
 </div><!-- .rms-analytics-actions -->
-
