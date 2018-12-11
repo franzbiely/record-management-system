@@ -11,6 +11,16 @@ declare var $ :any;
 })
 export class AdviserSearchComponent implements OnInit {
   enabled: boolean = false;
+  data: object = {
+    name : 'First & Last Name',
+    email : '',
+    phone : '',
+    address: '',
+    firm_name: '',
+    login_code: '',
+    avatar: '../../../assets/default-avatar.jpg'
+  }
+
   adviserSearchPopupModal: boolean = false;
   constructor(private renderer: Renderer, private modalStatus: ModalStatusService) { }
 
@@ -21,6 +31,16 @@ export class AdviserSearchComponent implements OnInit {
     $('.table-container tr').removeClass('checked');
     $(event.target).closest('tr').addClass('checked');
     this.enabled = true;
+
+    this.data = {
+      name : 'Kim Mackrill',
+      email : 'kimmackrill@bamfinancial.com',
+      phone : '(402) 506-5644',
+      address: '12012 Roberts Road, Suite C La Vista, NE USA 68128',
+      firm_name: 'BAM Financial Advisors',
+      login_code: '705_KM16',
+      avatar: '../../../assets/sample-image.jpg'
+    }
   }
   btnCreate() {
     this.modalStatus.SET_adviserSearchPopup(true);

@@ -56,32 +56,31 @@
                 <div class="profile-box" >
                   <div class="profile-pic-container">
                     <div class="profile-pic">
-                      <img src="../../../assets/sample-image.jpg">
+                      <img [src]="data.avatar">
                     </div>
                   </div>
                   <div class="profile-info">
-                   <span class="name">Kim Mackrill</span>
+                   <span class="name">{{data.name}}</span>
                    <br/><br/>
                    <span class="title-text">Email</span>
                    <br/>
-                   <span class="title-info">kimmackrill@bamfinancial.com</span>
+                   <span class="title-info">{{data.email}}</span>
                    <br/><br/>
                    <span class="title-text"> Phone:</span>
                    <br/>
-                   <span class="title-info">(402) 506-5644</span>
+                   <span class="title-info">{{data.phone}}</span>
                    <br/><br/>
                    <span class="title-text">Address::</span>
                    <br/>
-                   <span class="title-info">12012 Roberts Road, Suite C
-                      La Vista, NE USA 68128</span>
+                   <span class="title-info">{{data.address}}</span>
                    <br/><br/>
                    <span class="title-text"> Firm Name:</span>
                    <br/>
-                   <span class="title-info">BAM Financial Advisors</span>
+                   <span class="title-info">{{data.firm_name}}</span>
                    <br/><br/>
                    <span class="title-text">Login Code:</span>
                    <br/>
-                   <span class="title-info">705_KM16</span>
+                   <span class="title-info">{{data.login_code}}</span>
                   </div>
                  </div>
                </div>
