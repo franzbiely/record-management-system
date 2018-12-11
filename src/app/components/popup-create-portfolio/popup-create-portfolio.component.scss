@@ -264,6 +264,12 @@
                 .right-section{
                     flex:3;
                     padding:0px 30px;
+                    .modify {
+                        text-align:right;
+                        font-size: 12px;
+                        color: #414042;
+                        font-weight: 300;
+                    }
                     @media only screen and (max-width: 767px){
                         padding:0px;
                         margin-top: 20px;

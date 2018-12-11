@@ -54,8 +54,11 @@
                     </div>
                 </div>
                 <div class="right-section">
-                    <app-quick-add></app-quick-add>
-                    <div class="add-security-container">
+                    <app-quick-add *ngIf="portfolioPopType==='edit'"></app-quick-add>
+                    <div class="modify">
+                        <mat-checkbox (change)="toggleModify($event)" [checked]="portfolioPopType==='edit'">Modify</mat-checkbox>
+                    </div>
+                    <div class="add-security-container" *ngIf="portfolioPopType==='edit'">
                         <span>Add Security:</span>
                         <input type="text" class="text-box" placeholder="SAVLX, SAFLX, SASLX">
                     </div>
@@ -108,8 +111,8 @@
                     <div class="bottom">
                         <app-error-line></app-error-line>
                         <div class="btn-container">
-                            <button class="btn-cancel">Cancel</button>
-                            <button class="btn-save"><i class="icon-save"></i>Save</button>
+                            <button class="btn-cancel" (click)="closeMe()">Cancel</button>
+                            <button class="btn-save" (click)="closeMe()"><i class="icon-save"></i>Save</button>
                         </div>
                     </div>
                 </div>

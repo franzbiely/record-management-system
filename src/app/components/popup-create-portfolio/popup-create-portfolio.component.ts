@@ -10,27 +10,30 @@ import { DataService } from "../../services/data.service"
 export class PopupCreatePortfolioComponent implements OnInit {
 	btnNext: boolean = false;
 	viewPortfolioModal: boolean = false;
-	editPortfolioModal: boolean = false;
-	@Input() isEdit: boolean = false;
+	portfolioPopType : string|'view'|'edit' = 'view';
 	
 	constructor(private modalStatus: ModalStatusService, private data: DataService) { }
 
 	ngOnInit() {
 		this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
-		this.modalStatus.editPortfolio.subscribe(value => this.editPortfolioModal = value);
+		this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
 	}
-	closeView() {
+	closeMe() {
 		this.modalStatus.SET_viewPortfolio(false);
 	}
-	closeEdit() {
-		this.modalStatus.SET_editPortfolio(false);
-	}
 	editEventReciever($this) {
-		this.isEdit = true;
+		this.data.SET_portfolioPopupType('edit');
 	}
 	saveEvent() {
 		this.modalStatus.SET_viewPortfolio(false);
 		this.data.SET_proposal_show_btnNext(true);
 	}
-
+	toggleModify() {
+		if (this.portfolioPopType==='view') {
+			this.data.SET_portfolioPopupType( 'edit' );	
+		}
+		else {
+			this.data.SET_portfolioPopupType( 'view' );		
+		}
+	}
 }

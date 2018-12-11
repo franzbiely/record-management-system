@@ -29,10 +29,10 @@ export class DataService {
 	  	this.accountDetailsTypeSource.next(value);
 	}
 
-	private settingsLandingDefaultSource = new BehaviorSubject<string>('quantity');
-	public settingsLandingDefault = this.settingsLandingDefaultSource.asObservable();
-	SET_settingsLandingDefault(value: string) {
-	  	this.settingsLandingDefaultSource.next(value);
+	private portfolioPopupTypeSource = new BehaviorSubject<string>('view');
+	public portfolioPopupType = this.portfolioPopupTypeSource.asObservable();
+	SET_portfolioPopupType(value: string) {
+	  	this.portfolioPopupTypeSource.next(value);
 	}
 
 

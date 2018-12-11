@@ -13,7 +13,7 @@ export class NewProposalScreenComponent implements OnInit {
   riskSendFormModal: boolean = false;
   questionnaireModal: boolean = false;
   viewPortfolioModal : boolean = false;
-  editPortfolioModal : boolean = false;
+  portfolioPopupType : 'view'|'edit' = 'view';
   assetClassModal : boolean = false;
   allocationDetailsModal : boolean = false;
 
@@ -25,7 +25,6 @@ export class NewProposalScreenComponent implements OnInit {
     this.modalStatus.riskSendForm.subscribe(value => this.riskSendFormModal = value);
     this.modalStatus.questionnaire.subscribe(value => this.questionnaireModal = value);
     this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
-    this.modalStatus.editPortfolio.subscribe(value => this.editPortfolioModal = value);
     this.modalStatus.assetClass.subscribe(value => this.assetClassModal = value);
     this.modalStatus.allocationDetails.subscribe(value => this.allocationDetailsModal = value);
   }
