@@ -12,7 +12,7 @@
                 <span class="subtitle">Search, View, and Modify Portfolio</span>
             </div>
             <div class="btn-add-container">
-                <a (click)="showViewPortfolioModal()" style="display: flex; align-items: center;"><i class="add-icon"></i><span class="text-create">Create New Portfolio</span></a><span class="text-create-mobile">New</span>
+                <a (click)="viewEventReciever()" style="display: flex; align-items: center;"><i class="add-icon"></i><span class="text-create">Create New Portfolio</span></a><span class="text-create-mobile">New</span>
             </div>
           </div>
 
@@ -42,77 +42,77 @@
                 <td class="align-right">29</td>
                 <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                 <td class="align-left">Example Advisors Portfolios</td>
-                <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
               <tr>
                   <td class="align-left">Example Advisors - Balanced Select</td>
                   <td class="align-right">29</td>
                   <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
                   <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="align-center"><app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></td>
               </tr>
             </tbody>
           </table>

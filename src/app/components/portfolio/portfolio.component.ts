@@ -9,7 +9,7 @@ import { DataService } from "../../services/data.service"
 })
 export class PortfolioComponent implements OnInit {
 	viewPortfolioModal : boolean = false;
-  portfolioPopType : 'view'|'edit' = 'view';
+  portfolioPopType : string|'view'|'edit' = 'view';
   dropdown_active : boolean = false;
   constructor(private modalStatus: ModalStatusService, private data: DataService) { }
 
