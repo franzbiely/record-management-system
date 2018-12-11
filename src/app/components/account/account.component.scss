@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,600,800,900');
 $primaryfont: "montserrat", sans-serif;
 $secondaryfont: "museo-sans", sans-serif;
 .tab-title-mobile {
@@ -102,7 +102,7 @@ tr.table-head th:first-child, tr.table-head th:last-child {
             .total-value{
                 font-family: $primaryfont;
                 font-size: 14px;
-                font-weight: 700;
+                font-weight: 600;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: 1;
@@ -231,6 +231,7 @@ tr.table-head th:first-child, tr.table-head th:last-child {
   ::ng-deep .account-screen .mat-checkbox-inner-container .mat-checkbox-frame{
     border: 0.5px solid #e7e6e6 !important;
     border-radius: 5px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(52, 53, 52, 0.10) !important;
   } 
   .td-text-normal{
     font-family: $secondaryfont;

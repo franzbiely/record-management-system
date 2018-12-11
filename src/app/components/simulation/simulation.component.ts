@@ -154,7 +154,7 @@ export class SimulationComponent implements OnInit {
           fill: '-1'
         }]
       },
-      options: line_chart_options, { responsive : true, maintainAspectRatio: false });
+      options: line_chart_options, responsive : true, maintainAspectRatio: false });
     
     this.current_portfolio_chart = new Chart(this.current_portfolio_chart_ref.nativeElement, {
       type: 'line',
@@ -193,7 +193,7 @@ export class SimulationComponent implements OnInit {
           fill: '-1'
         }]
       },
-      options: line_chart_options, { responsive : true, maintainAspectRatio: false });
+      options: line_chart_options, responsive : true, maintainAspectRatio: false });
 }
 
 closeSidebar() {

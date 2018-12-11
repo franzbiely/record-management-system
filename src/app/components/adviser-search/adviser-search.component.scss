@@ -55,7 +55,7 @@ $mainfont : 'montserrat';
             background-color: #1598cb;
             border-top-left-radius: 6px;
             border-top-right-radius: 6px;
-            padding: 0px 10px;
+            padding: 0px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -131,7 +131,7 @@ $mainfont : 'montserrat';
     .normal-text {
         font-family: $mainfont;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: 0;
@@ -223,7 +223,7 @@ $mainfont : 'montserrat';
         color: #ffffff;
     }
     .subtitle {
-        font-family: $mainfont;
+        font-family: "museo-sans";
         font-size: 14px;
         font-weight: 300;
         font-style: normal;
@@ -291,9 +291,9 @@ $mainfont : 'montserrat';
        
        th {
             word-wrap: break-word;
-            font-family: $mainfont;
+            font-family: "Montserrat", sans-serif;
             font-size: 10px;
-            font-weight: 700;
+            font-weight: 600;
             font-style: normal;
             font-stretch: normal;
             line-height: 1;
@@ -306,9 +306,9 @@ $mainfont : 'montserrat';
        td {
             word-wrap: break-word;
             height: 45px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "museo-sans";
             font-size: 11px;
-            font-weight: 500;
+            font-weight: 300;
             font-style: normal;
             font-stretch: normal;
             line-height: 1;
@@ -316,6 +316,9 @@ $mainfont : 'montserrat';
             color: #414042;
             text-align: left;
         
+       }
+       tr:not(:last-child) td{
+       border-bottom: 0.5px solid #e7e6e6;
        }
        tr.checked {
         background-color: #f2fafc;
@@ -351,14 +354,14 @@ $mainfont : 'montserrat';
     }
     
     .name {
-      font-family: $mainfont;
-      font-size: 20px;
-      font-weight: 800;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1;
-      letter-spacing: -0.2px;
-      color: #414042;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: -0.2px;
+        color: #414042;
     }
     .content-box{
         display: flex;
@@ -366,9 +369,9 @@ $mainfont : 'montserrat';
        
     }
     .title-text {
-        font-family: $mainfont;
+        font-family: "Montserrat",sans-serif;
         font-size: 10px;
-        font-weight: 600;
+        font-weight: normal;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
@@ -377,9 +380,9 @@ $mainfont : 'montserrat';
         text-transform: uppercase;
     }
     .title-info {
-        font-family: $mainfont;
+        font-family: "Montserrat", sans-serif;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -431,9 +434,9 @@ $mainfont : 'montserrat';
                 padding-left:40px;
                 color: black;
                 margin-right:15px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: "museo-sans";
                 font-size: 14px;
-                font-weight: 500;
+                font-weight: 300;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
@@ -447,9 +450,9 @@ $mainfont : 'montserrat';
 
             }
             ::placeholder {
-                font-family: 'Montserrat', sans-serif;
+                font-family: "museo-sans";
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 300;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
@@ -496,7 +499,7 @@ $mainfont : 'montserrat';
             color: #ffffff;
         }
         .strong {
-            font-weight: 700;
+            font-weight: 600;
         }
         .text-title {
             opacity: 0.6;
@@ -513,7 +516,7 @@ $mainfont : 'montserrat';
         .btn-text {
             font-family: 'Montserrat', sans-serif;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 600;
             font-style: normal;
             font-stretch: normal;
             line-height: normal;

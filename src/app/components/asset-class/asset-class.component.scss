@@ -28,14 +28,14 @@
                 .text-category{
                     font-family: 'Montserrat', sans-serif;
                     font-size: 10px;
-                    font-weight: 700;
+                    font-weight: 600;
                     text-transform: uppercase;
                 }
                 .text-category-subtitle, .text-category-info{
                     margin-top:3px;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 10px;
-                    font-weight: 400;
+                    font-weight: 300;
                 }
                 .col-1{
                     display: flex;
@@ -45,7 +45,7 @@
                 .col-1{
                     .text-title{
                         font-family: 'Montserrat', sans-serif;
-                        font-weight: 700;
+                        font-weight: 600;
                         color: #1598cb;
                         font-size: 20px;
                     }
@@ -81,7 +81,7 @@
                             align-items: center;
                             color: white;
                             font-size: 18px;
-                            font-weight: 700;
+                            font-weight: 600;
                             font-family: 'Montserrat', sans-serif;
                             background-color: #1598cb;
                             border-radius: 6px 6px 0px 0px;
@@ -105,7 +105,7 @@
                                     margin-top:10px;
                                     font-size:10px;
                                     font-family: 'Montserrat', sans-serif;
-                                    font-weight: 400;
+                                    font-weight: 300;
                                     text-transform: uppercase; 
                                 }
                                 span:last-child{
@@ -139,7 +139,7 @@
                                         tr td:last-child, tr:last-child td{
                                             font-family: 'Montserrat', sans-serif;
                                             font-size: 8px;
-                                            font-weight: 400;
+                                            font-weight: 300;
                                             padding: 5px;
                                         }
                                         tr:first-child td:not(:last-child){
@@ -164,7 +164,7 @@
                                         tr td:last-child, tr:last-child td{
                                             font-family: 'Montserrat', sans-serif;
                                             font-size: 8px;
-                                            font-weight: 400;
+                                            font-weight: 300;
                                             padding: 5px;
                                         }
                                         tr:first-child td:not(:last-child){
@@ -197,7 +197,7 @@
                             color: rgba(65, 64, 66, 1);
                             text-transform: uppercase;
                             letter-spacing: 1px;
-                            font-weight: 700;
+                            font-weight: 600;
                         }
                         span:last-child{
                             font-family: 'Montserrat', sans-serif;
@@ -215,7 +215,7 @@
                             background-color: #e7e6e6;
                             font-family: 'Montserrat', sans-serif;
                             font-size: 10px;
-                            font-weight: 700;
+                            font-weight: 600;
                             display:flex;
                             justify-content: space-between;
                         }

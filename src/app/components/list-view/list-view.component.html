@@ -53,7 +53,7 @@
                   <td class="created" [ngClass]="['col-other']"><span class="item">{{ list.created }}</span><br/><span class="item strong">By:&nbsp;{{ list.createdBy }}</span></td>
                   <td class="updated" [ngClass]="['col-other']"><span class="item">{{ list.updated }}</span><br/><span class="item strong">By:&nbsp;{{ list.updatedBy }}</span></td>
                   <td class="action" [ngClass]="['col-action']">
-                    <app-dropdown-actions></app-dropdown-actions>
+                    <app-dropdown-actions-listview></app-dropdown-actions-listview>
                   </td>
               </tr>
               <ng-container *ngIf="list.open && list.data != null">
@@ -65,7 +65,7 @@
                   <td class="dropdown-td state"><span class="dropdown-item">{{ info.state}}</span></td>
                   <td class="dropdown-td created"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
                   <td class="dropdown-td updated"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
-                  <td class="dropdown-td action"><app-dropdown-actions></app-dropdown-actions></td>
+                  <td class="dropdown-td action"><app-dropdown-actions-listview></app-dropdown-actions-listview></td>
                 </tr>
               </ng-container>
             </tbody>

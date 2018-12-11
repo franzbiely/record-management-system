@@ -134,7 +134,7 @@ app-dropdown-update-account {
           text-align: center;
           font-family: 'Montserrat', sans-serif;
           font-size: 30px;
-          font-weight: 700;
+          font-weight: 600;
           font-style: normal;
           font-stretch: normal;
           line-height: 1.07;
@@ -151,7 +151,7 @@ app-dropdown-update-account {
           padding: 15px 60px;
           font-family: 'Montserrat', sans-serif;
           font-size: 12px;
-          font-weight: 700;
+          font-weight: 600;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
@@ -272,7 +272,7 @@ app-dropdown-update-account {
             .label-text {
               font-family: $primaryfont;
               font-size: 8px;
-              font-weight: 400;
+              font-weight: 300;
               font-style: normal;
               font-stretch: normal;
               line-height: normal;
@@ -306,7 +306,7 @@ app-dropdown-update-account {
               margin-left: -5px;
               font-family: $primaryfont;
               font-size: 10px;
-              font-weight: 400;
+              font-weight: 300;
               font-style: normal;
               font-stretch: normal;
               line-height: 1;
@@ -324,7 +324,7 @@ app-dropdown-update-account {
             align-items: flex-end;
             font-family: $primaryfont;
             font-size: 10px;
-            font-weight: 700;
+            font-weight: 600;
             font-style: normal;
             font-stretch: normal;
             line-height: 1.2;
@@ -374,7 +374,7 @@ app-dropdown-update-account {
         .age-year {
           font-family: $primaryfont;
           font-size: 10px;
-          font-weight: 400;
+          font-weight: 300;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
@@ -514,7 +514,7 @@ app-dropdown-update-account {
                 .btn-hide-text {
                   font-family: $primaryfont;
                   font-size: 12px;
-                  font-weight: 700;
+                  font-weight: 600;
                   font-style: normal;
                   font-stretch: normal;
                   line-height: normal;
@@ -584,7 +584,7 @@ app-dropdown-update-account {
                   border-radius: 6px 6px 0px 0px;
                   font-family: $primaryfont;
                   padding: 20px 40px;
-                  font-weight: 700;
+                  font-weight: 600;
                   background-color: #fafbfc;
                 }
                 tr td:not(:first-child) {
@@ -599,7 +599,7 @@ app-dropdown-update-account {
                 }
                 td:first-child,
                 td:last-child {
-                  font-weight: 400;
+                  font-weight: 300;
                   font-size: 10px;
                 }
               }
@@ -667,7 +667,7 @@ app-dropdown-update-account {
                 .btn-action-text {
                   font-family: $primaryfont;
                   font-size: 12px;
-                  font-weight: 700;
+                  font-weight: 600;
                   font-style: normal;
                   font-stretch: normal;
                   line-height: normal;
@@ -743,7 +743,7 @@ app-dropdown-update-account {
                   border-radius: 6px 6px 0px 0px;
                   font-family: $primaryfont;
                   padding: 20px 40px;
-                  font-weight: 700;
+                  font-weight: 600;
                   background-color: #fafbfc;
                 }
                 tr td:not(:first-child) {
@@ -758,7 +758,7 @@ app-dropdown-update-account {
                 }
                 td:first-child,
                 td:last-child {
-                  font-weight: 400;
+                  font-weight: 300;
                   font-size: 10px;
                 }
               }
@@ -820,7 +820,7 @@ app-dropdown-update-account {
               border-radius: 6px 6px 0px 0px;
               font-family: $primaryfont;
               padding: 20px 40px;
-              font-weight: 700;
+              font-weight: 600;
               background-color: #fafbfc;
             }
             tr td {
@@ -830,11 +830,11 @@ app-dropdown-update-account {
             }
             td:first-child,
             td:last-child {
-              font-weight: 400;
+              font-weight: 300;
               font-size: 10px;
             }
             td:nth-child(2) {
-              font-weight: 700;
+              font-weight: 600;
               text-transform: uppercase;
               font-size: 10px;
               letter-spacing: 1px;
@@ -875,12 +875,12 @@ app-dropdown-update-account {
               border-radius: 6px 6px 0px 0px;
               font-family: $primaryfont;
               padding: 20px 40px;
-              font-weight: 700;
+              font-weight: 600;
               background-color: #f7f7f7;
             }
             tr.sub-header {
               background-color: #e4e4e4;
-              font-weight: 700;
+              font-weight: 600;
               text-transform: uppercase;
               font-size: 10px;
               letter-spacing: 1px;
@@ -931,7 +931,7 @@ app-dropdown-update-account {
 .text-small {
   font-family: $primaryfont;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -966,7 +966,7 @@ app-dropdown-update-account {
 .text-light {
   font-family: $primaryfont;
   font-size: 10px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -978,7 +978,7 @@ app-dropdown-update-account {
 .text-bold {
   font-family: $primaryfont;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;

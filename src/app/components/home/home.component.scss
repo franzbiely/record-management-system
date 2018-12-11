@@ -136,7 +136,7 @@ $btnFontSize: 10pt;
 %grey-text{
     font-family: $primaryFont;
     font-weight: 0;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.5;
@@ -145,7 +145,7 @@ $btnFontSize: 10pt;
 }
 %grey-text-uppercase{
     font-family: $primaryFont;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
     color: #77787b;
     text-transform: uppercase;
@@ -154,7 +154,7 @@ $btnFontSize: 10pt;
     flex: auto;
     font-family: $primaryFont;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     color: #414042;
     .grey-text{
     @extend %grey-text-uppercase;

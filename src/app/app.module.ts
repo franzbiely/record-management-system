@@ -111,7 +111,14 @@ import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-por
 import { DropdownFilterListviewComponent } from './components/dropdown-filter-listview/dropdown-filter-listview.component';
 import { PopupDocumentSentComponent } from './components/popup-document-sent/popup-document-sent.component';
 import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-screen/popup-document-sent-screen.component';
-
+import { PopupLandingPageComponent } from './components/popup-landing-page/popup-landing-page.component';
+import { PopupLandingPageScreenComponent } from './screens/popup-landing-page-screen/popup-landing-page-screen.component';
+import { PopupEmailLanguageComponent } from './components/popup-email-language/popup-email-language.component';
+import { PopupEmailLanguageScreenComponent } from './screens/popup-email-language-screen/popup-email-language-screen.component';
+import { PopupDocumentLanguageComponent } from './components/popup-document-language/popup-document-language.component';
+import { PopupDocumentLanguageScreenComponent } from './screens/popup-document-language-screen/popup-document-language-screen.component';
+import { DropdownActionsListviewComponent } from './components/dropdown-actions-listview/dropdown-actions-listview.component';
+import { DropdownActionsPortfolioComponent } from './components/dropdown-actions-portfolio/dropdown-actions-portfolio.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -223,7 +230,15 @@ import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-
     PopupCreatePortfolioScreensComponent,
     DropdownFilterListviewComponent,
     PopupDocumentSentComponent,
-    PopupDocumentSentScreenComponent
+    PopupDocumentSentScreenComponent,
+    PopupLandingPageComponent,
+    PopupLandingPageScreenComponent,
+    PopupEmailLanguageComponent,
+    PopupEmailLanguageScreenComponent,
+    PopupDocumentLanguageComponent,
+    PopupDocumentLanguageScreenComponent,
+    DropdownActionsListviewComponent,
+    DropdownActionsPortfolioComponent
   ],
   imports: [
     BrowserModule,

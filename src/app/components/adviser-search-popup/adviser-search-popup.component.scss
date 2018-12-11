@@ -18,16 +18,19 @@ $mainfont : 'Montserrat', sans-serif;
     .text-normal {
         font-family: $mainfont;
         font-size: 16px;
-        letter-spacing: -0.2;
-        font-weight: 500;
-        color: white;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: -0.2px;
+        color: #ffffff;
         padding-bottom: 11px;
     }
     .text-container{
         padding-right: 30px;
     }
     .text-small {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 12px;
         font-weight: 300;
         font-style: normal;
@@ -37,7 +40,7 @@ $mainfont : 'Montserrat', sans-serif;
         color: #ffffff;
     }
     .strong {
-        font-weight: 700;
+        font-weight: 600;
     }
     .text-title {
         opacity: 0.6;
@@ -52,9 +55,9 @@ $mainfont : 'Montserrat', sans-serif;
         text-transform: uppercase;
     }
     .btn-text {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 600;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
