@@ -676,7 +676,7 @@ $secondaryfont : 'museo-sans', calibri;
     .dropdown{
         position: relative;
     }
-    .dropdown:hover .dropdown-content{
+    .dropdown.active .dropdown-content{
         display:inline-block;
     }
     .action-container{
@@ -702,8 +702,14 @@ $secondaryfont : 'museo-sans', calibri;
             flex-direction: column;
             align-items: flex-start; 
             padding: 10px 20px;
+            &.disabled {
+                cursor: not-allowed;
+                *{
+                    color: #e7e6e6;
+                }
+            }
         }
-        .dropdown-item:hover{
+        .dropdown-item:not(.disabled):hover{
             background-color: #e7e6e6;
         }
         .dropdown-item:not(:last-child){
