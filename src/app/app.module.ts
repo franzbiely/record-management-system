@@ -111,6 +111,7 @@ import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-por
 import { DropdownFilterListviewComponent } from './components/dropdown-filter-listview/dropdown-filter-listview.component';
 import { PopupDocumentSentComponent } from './components/popup-document-sent/popup-document-sent.component';
 import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-screen/popup-document-sent-screen.component';
+import { SettingsLandingDefaultComponent } from './components/settings-landing-default/settings-landing-default.component';
 
 @NgModule({
   declarations: [
@@ -223,7 +224,8 @@ import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-
     PopupCreatePortfolioScreensComponent,
     DropdownFilterListviewComponent,
     PopupDocumentSentComponent,
-    PopupDocumentSentScreenComponent
+    PopupDocumentSentScreenComponent,
+    SettingsLandingDefaultComponent
   ],
   imports: [
     BrowserModule,

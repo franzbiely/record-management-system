@@ -1,0 +1,35 @@
+<section class="settings-landing-default">
+	<div class="overlay"></div>
+	<div class="box-container">
+	  <div class="box-content frow">
+
+	    <div class="box-head">
+	      <div class="left-section">
+	        <div class="box-title"><span class="text-title">Set Landing Page Default</span></div>
+	      </div>
+	    </div>
+
+	    <div class="box-body">
+			
+			<div class="fcol fsbet">
+				<div class="fitem frow">
+					<div class="fcol fsbet">
+						<span>Home View</span>
+						<mat-radio-button class="radio">Default</mat-radio-button>
+					</div>
+					<img src="./../../assets/home-preview.jpg" />
+				</div>
+				<div class="fitem frow">
+					<div class="fcol fsbet">
+						<span>List View</span>
+						<mat-radio-button class="radio">Default</mat-radio-button>
+					</div>
+					<img src="./../../assets/list-view-preview.jpg" />
+				</div>
+			</div>
+	      
+			<app-cancel-save [containerStyle]="'block'" (cancelEvent)="closeMe()" (saveEvent)="save($event)"></app-cancel-save>
+		</div>
+	</div>
+	</div>
+</section>

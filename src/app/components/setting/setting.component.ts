@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-setting',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setting.component.scss']
 })
 export class SettingComponent implements OnInit {
-
-  constructor() { }
+  settingsLandingDefaultModal: boolean = false;
+  constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
+  	this.modalStatus.settingsLandingDefault.subscribe(value => this.settingsLandingDefaultModal = value);
+  }
+
+  openSettingsLandingDefaultModal() {
+  	this.modalStatus.SET_settingsLandingDefault(true);
   }
 
 }

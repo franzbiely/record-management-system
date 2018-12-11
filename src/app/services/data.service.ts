@@ -29,6 +29,12 @@ export class DataService {
 	  	this.accountDetailsTypeSource.next(value);
 	}
 
+	private settingsLandingDefaultSource = new BehaviorSubject<string>('quantity');
+	public settingsLandingDefault = this.settingsLandingDefaultSource.asObservable();
+	SET_settingsLandingDefault(value: string) {
+	  	this.settingsLandingDefaultSource.next(value);
+	}
+
 
   constructor() { }
 }

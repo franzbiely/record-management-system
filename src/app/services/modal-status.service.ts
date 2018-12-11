@@ -85,6 +85,12 @@ export class ModalStatusService {
     this.householdSource.next(value);
   }
 
+  private settingsLandingDefaultSource = new BehaviorSubject<boolean>(false);
+  public settingsLandingDefault = this.settingsLandingDefaultSource.asObservable();
+  SET_settingsLandingDefault(value: boolean) {
+    this.settingsLandingDefaultSource.next(value);
+  }
+
   constructor() { }
   
 }

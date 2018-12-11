@@ -1,3 +1,5 @@
+<app-settings-landing-default *ngIf="settingsLandingDefaultModal"></app-settings-landing-default>
+
 <div class="settings-container ">
     <div class="container flex">
     <div class="padding">
@@ -9,7 +11,7 @@
           </div>
           <div class="edit-button flex">
             <i class="edit-icon"></i>
-            <span class="edit-text">edit</span>
+            <span class="edit-text" (click)="openSettingsLandingDefaultModal()">edit</span>
           </div>
         </div>
         <div class="box-body"> 
@@ -108,7 +110,7 @@
                       <p class="small-title"> Loring Ward Default </p> <p class="small-title">Email Language: </p>
                   </div>
                   <div class="flex">
-                    <mat-radio-group formControlName="document">
+                    <mat-radio-group>
                       <div class="flex">
                         <div>
                           <mat-radio-button></mat-radio-button>
