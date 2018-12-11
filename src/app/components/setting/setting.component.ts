@@ -7,15 +7,27 @@ import { ModalStatusService } from "../../services/modal-status.service"
   styleUrls: ['./setting.component.scss']
 })
 export class SettingComponent implements OnInit {
-  settingsLandingDefaultModal: boolean = false;
+  popupLandingDefaultModal: boolean = false;
+  emailLangModal : boolean = false;
+  docuLangModal : boolean = false;
+
   constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
-  	this.modalStatus.settingsLandingDefault.subscribe(value => this.settingsLandingDefaultModal = value);
+  	this.modalStatus.popupLandingDefault.subscribe(value => this.popupLandingDefaultModal = value);
+    this.modalStatus.emailLang.subscribe(value => this.emailLangModal = value);
+    this.modalStatus.docuLang.subscribe(value => this.docuLangModal = value);
   }
 
   openSettingsLandingDefaultModal() {
-  	this.modalStatus.SET_settingsLandingDefault(true);
+  	this.modalStatus.SET_popupLandingDefault(true);
+  }
+
+  open_emailLang() {
+    this.modalStatus.SET_emailLang(true);
+  }
+  open_docuLang() {
+    this.modalStatus.SET_docuLang(true);
   }
 
 }

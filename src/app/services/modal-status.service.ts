@@ -85,10 +85,24 @@ export class ModalStatusService {
     this.householdSource.next(value);
   }
 
-  private settingsLandingDefaultSource = new BehaviorSubject<boolean>(false);
-  public settingsLandingDefault = this.settingsLandingDefaultSource.asObservable();
-  SET_settingsLandingDefault(value: boolean) {
-    this.settingsLandingDefaultSource.next(value);
+// --------------------------
+
+  private popupLandingDefaultSource = new BehaviorSubject<boolean>(false);
+  public popupLandingDefault = this.popupLandingDefaultSource.asObservable();
+  SET_popupLandingDefault(value: boolean) {
+    this.popupLandingDefaultSource.next(value);
+  }
+
+  private emailLangSource = new BehaviorSubject<boolean>(false);
+  public emailLang = this.emailLangSource.asObservable();
+  SET_emailLang(value: boolean) {
+    this.emailLangSource.next(value);
+  }
+
+  private docuLangSource = new BehaviorSubject<boolean>(false);
+  public docuLang = this.docuLangSource.asObservable();
+  SET_docuLang(value: boolean) {
+    this.docuLangSource.next(value);
   }
 
   constructor() { }

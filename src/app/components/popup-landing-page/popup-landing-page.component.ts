@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-popup-landing-page',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopupLandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
+  }
+
+  closeMe() {
+  	this.modalStatus.SET_popupLandingDefault(false);
   }
 
 }

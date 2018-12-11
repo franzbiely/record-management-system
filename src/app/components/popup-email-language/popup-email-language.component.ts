@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service"
 
 @Component({
   selector: 'app-popup-email-language',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopupEmailLanguageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalStatus: ModalStatusService) { }
 
   ngOnInit() {
   }
 
+  closeMe() {
+  	this.modalStatus.SET_emailLang(false);
+  }
 }

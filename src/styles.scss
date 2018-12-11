@@ -334,3 +334,15 @@ i:focus, button:focus, div:focus{
     clear: both;
     display: table;
 }
+
+.global-popup {
+    position: absolute;
+    align-items: center;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    left:0;
+    top:0;
+}

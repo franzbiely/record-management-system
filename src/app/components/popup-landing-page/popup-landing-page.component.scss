@@ -9,6 +9,8 @@
         z-index: 20;
     }
     .popup-container{
+        position: relative;
+        z-index: 21;
         display: flex;
         justify-content: center;
         padding: 110px 40px 110px 110px;

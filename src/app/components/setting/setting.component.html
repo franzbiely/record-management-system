@@ -1,4 +1,6 @@
-<app-settings-landing-default *ngIf="settingsLandingDefaultModal"></app-settings-landing-default>
+<app-popup-landing-page class="global-popup" *ngIf="popupLandingDefaultModal"></app-popup-landing-page>
+<app-popup-email-language class="global-popup" *ngIf="emailLangModal"></app-popup-email-language>
+<app-popup-document-language class="global-popup" *ngIf="docuLangModal"></app-popup-document-language>
 
 <div class="settings-container ">
     <div class="container flex">
@@ -46,7 +48,7 @@
         <div class="box-1-container">
             <div class="box-head">
               <div><span class="header-title">RAQ Email Language</span></div>
-              <div class="edit-button flex">
+              <div class="edit-button flex" (click)="open_emailLang()">
                   <i class="edit-icon"></i>
                   <span class="edit-text">edit</span>
                 </div>
@@ -88,8 +90,6 @@
                   </span>
                 </div>
               </div>
-  
-  
           </div>
         </div>
     </div>
@@ -99,7 +99,7 @@
         <div class="box-1-container">
             <div class="box-head">
               <div><span class="header-title">Document Email Language</span></div>
-              <div class="edit-button flex">
+              <div class="edit-button flex" (click)="open_docuLang()">
                   <i class="edit-icon"></i>
                   <span class="edit-text">edit</span>
                 </div>
