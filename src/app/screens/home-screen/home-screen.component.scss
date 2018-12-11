@@ -40,7 +40,7 @@ $secondaryFont: museo-sans;
 %grey-text{
     font-family: $primaryFont;
     font-weight: 0;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.5;
@@ -49,7 +49,7 @@ $secondaryFont: museo-sans;
 }
 %grey-text-uppercase{
     font-family: $primaryFont;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
     color: #77787b;
     text-transform: uppercase;
@@ -96,7 +96,7 @@ $secondaryFont: museo-sans;
         flex: auto;
         font-family: $primaryFont;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 600;
         color: #77787b;
         .grey-text{
         @extend %grey-text-uppercase;
@@ -195,7 +195,7 @@ $secondaryFont: museo-sans;
     div .dropdown-title{
         font-family: $primaryFont;
         font-size: 11px;
-        font-weight: 700;
+        font-weight: 600;
         color: rgba(80,80,80,1);
     }
     .dropdown{
@@ -223,7 +223,7 @@ $secondaryFont: museo-sans;
             justify-content: space-between;
             .btn-apply{
                 display:flex;
-                font-weight: 700;
+                font-weight: 600;
                 align-items: center;
                 border:none;
                 background-color: #e6e6e6;
@@ -237,7 +237,7 @@ $secondaryFont: museo-sans;
                 font-family: $primaryFont;
                 text-transform: uppercase;
                 color: #8b8b8b;
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 12px;
                 cursor: pointer;
             }

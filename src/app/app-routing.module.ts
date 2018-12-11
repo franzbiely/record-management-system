@@ -43,6 +43,9 @@ import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-por
 import { PrintPreviewComponent } from './screens/print-preview/print-preview.component';
 import { FrontpageComponent } from './screens/frontpage/frontpage.component';
 import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-screen/popup-document-sent-screen.component';
+import { PopupLandingPageScreenComponent } from './screens/popup-landing-page-screen/popup-landing-page-screen.component'
+import { PopupEmailLanguageScreenComponent } from './screens/popup-email-language-screen/popup-email-language-screen.component'
+import { PopupDocumentLanguageScreenComponent } from './screens/popup-document-language-screen/popup-document-language-screen.component'
 const routes: Routes = [
   
   {
@@ -233,9 +236,19 @@ const routes: Routes = [
   {
       path: 'sent-document',
       component: PopupDocumentSentScreenComponent
+  },
+  {
+      path: 'landing-page',
+      component: PopupLandingPageScreenComponent
+  },
+  {
+      path: 'email-language',
+      component: PopupEmailLanguageScreenComponent
+  },
+  {
+      path: 'document-language',
+      component: PopupDocumentLanguageScreenComponent
   }
-  
-  
   
 ];
 @NgModule({

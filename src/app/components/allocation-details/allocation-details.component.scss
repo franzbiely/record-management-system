@@ -27,14 +27,14 @@
                 .text-category{
                     font-family: 'Montserrat', sans-serif;
                     font-size: 10px;
-                    font-weight: 700;
+                    font-weight: 600;
                     text-transform: uppercase;
                 }
                 .text-category-subtitle, .text-category-info{
                     margin-top:3px;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 10px;
-                    font-weight: 400;
+                    font-weight: 300;
                 }
                 .col-1, .col-2,.col-3{
                     display: flex;
@@ -45,7 +45,7 @@
                     padding-right: 80px;
                     .text-title{
                         font-family: 'Montserrat', sans-serif;
-                        font-weight: 700;
+                        font-weight:600 ;
                         color: #1598cb;
                         font-size: 20px;
                     }
@@ -140,12 +140,12 @@
                                 text-align: center;
                                 width:10%;
                                 font-family: 'Montserrat', sans-serif;
-                                font-weight: 700;
+                                font-weight: 600;
                                 font-size: 12px;
                             }
                             tr td:first-child{
                                 font-family: 'Montserrat', sans-serif;
-                                font-weight: 700;
+                                font-weight: 600;
                                 font-size: 12px;
                                 text-transform: uppercase;
                                 letter-spacing: 1px;
@@ -160,7 +160,7 @@
                     .box-title{
                         font-family: 'Montserrat', sans-serif;
                         font-size: 12px;
-                        font-weight: 700;
+                        font-weight: 600;
                     }
                     .left-box{
                         margin-left:60px;
@@ -175,7 +175,7 @@
                             tr td:last-child, tr:last-child td{
                                 font-family: 'Montserrat', sans-serif;
                                 font-size: 10px;
-                                font-weight: 400;
+                                font-weight: 300;
                                 padding: 5px;
                             }
                             tr:first-child td:not(:last-child){
@@ -200,7 +200,7 @@
                             tr td:last-child, tr:last-child td{
                                 font-family: 'Montserrat', sans-serif;
                                 font-size: 10px;
-                                font-weight: 400;
+                                font-weight: 300;
                                 padding: 5px;
                             }
                             tr:first-child td:not(:last-child){

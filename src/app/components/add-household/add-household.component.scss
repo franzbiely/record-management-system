@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,600,800,900');
 @import url('~@angular/material/prebuilt-themes/indigo-pink.css');
 
 .header-container{
@@ -422,7 +422,7 @@ div.fadeMe {
     .p-text-big {
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 600;
         font-style: normal;
         font-stretch: normal;
         line-height:1;
@@ -451,14 +451,14 @@ div.fadeMe {
         letter-spacing: 1px;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .title-big-dark {
         font-size: 24px;
         font-family: 'Montserrat', sans-serif;
         text-transform: capitalize;
-        font-weight: 400;
+        font-weight: 300;
     }
     .text-small-light {  
         
@@ -560,7 +560,7 @@ div.fadeMe {
     .text-white-xsmall {
         color: white;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 14px;
         line-height: 14px;
         letter-spacing: -0.2px;
@@ -603,7 +603,7 @@ div.fadeMe {
         font-weight: 300;
     }
     .normal {
-        font-weight: 400;
+        font-weight: 300;
     }
     .semibold {
         font-weight: 600;

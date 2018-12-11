@@ -57,7 +57,7 @@ $mainfont : 'montserrat';
     font-family: $mainfont;
     padding: 20px 10px;
     font-size:12px;
-    font-weight: 700 ;
+    font-weight: 600 ;
     flex:3;
     display: flex;
     justify-content: flex-end;
@@ -135,7 +135,7 @@ $mainfont : 'montserrat';
 }
 .heading-name {
     text-align: right;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 1;
     color: #1598cb;
@@ -144,7 +144,7 @@ $mainfont : 'montserrat';
     display: block;
     line-height: 1.5;
     text-align: right;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 10px;
     color: #1598cb;
 }
@@ -279,7 +279,7 @@ button.update {
     background-color: #ffffff;
     font-family: $mainfont;
     color: #1598cb;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.9px;
@@ -294,7 +294,7 @@ button.save {
     letter-spacing: 0.9px;
     color: #808284;
     box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 12px;
     display: flex;
