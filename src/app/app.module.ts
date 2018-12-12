@@ -111,7 +111,6 @@ import { PopupCreatePortfolioScreensComponent } from './screens/popup-create-por
 import { DropdownFilterListviewComponent } from './components/dropdown-filter-listview/dropdown-filter-listview.component';
 import { PopupDocumentSentComponent } from './components/popup-document-sent/popup-document-sent.component';
 import { PopupDocumentSentScreenComponent } from './screens/popup-document-sent-screen/popup-document-sent-screen.component';
-import { SettingsLandingDefaultComponent } from './components/settings-landing-default/settings-landing-default.component';
 import { PopupLandingPageComponent } from './components/popup-landing-page/popup-landing-page.component';
 import { PopupLandingPageScreenComponent } from './screens/popup-landing-page-screen/popup-landing-page-screen.component';
 import { PopupEmailLanguageComponent } from './components/popup-email-language/popup-email-language.component';
@@ -232,7 +231,6 @@ import { DropdownActionsPortfolioComponent } from './components/dropdown-actions
     DropdownFilterListviewComponent,
     PopupDocumentSentComponent,
     PopupDocumentSentScreenComponent,
-    SettingsLandingDefaultComponent,
     PopupLandingPageComponent,
     PopupLandingPageScreenComponent,
     PopupEmailLanguageComponent,
