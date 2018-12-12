@@ -80,6 +80,7 @@
                         &.quest-1 { }
                         &.quest-2 {
                             .progress:nth-child(1) {
+
                                 span {
                                     color: #1598cb;
                                 }
@@ -337,3 +338,13 @@
     width: 28px !important;
     top: 3px !important;
 }  
+::ng-deep .quest-2 .progress:nth-child(1) .mat-radio-outer-circle,
+::ng-deep .quest-3 .progress:nth-child(-n + 2) .mat-radio-outer-circle,
+::ng-deep .quest-4 .progress:nth-child(-n + 3) .mat-radio-outer-circle,
+::ng-deep .quest-5 .progress:nth-child(-n + 4) .mat-radio-outer-circle,
+::ng-deep .quest-6 .progress:nth-child(-n + 5) .mat-radio-outer-circle,
+::ng-deep .quest-7 .progress:nth-child(-n + 6) .mat-radio-outer-circle,
+::ng-deep .quest-8 .progress:nth-child(-n + 7) .mat-radio-outer-circle {
+    background:url("../../../assets/circle-checked-blue.svg") center;
+    border: none !important;
+}
