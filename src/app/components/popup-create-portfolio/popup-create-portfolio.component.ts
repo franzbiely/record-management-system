@@ -2,6 +2,7 @@ import { Component, OnInit, Input, SimpleChanges, ElementRef, ViewChild } from '
 import { ModalStatusService } from "../../services/modal-status.service"
 import { DataService } from "../../services/data.service"
 import { Chart } from "chart.js";
+import * as $ from 'jquery';
 
 @Component({
 	selector: 'app-popup-create-portfolio',
@@ -10,6 +11,7 @@ import { Chart } from "chart.js";
 })
 export class PopupCreatePortfolioComponent implements OnInit {
 	@ViewChild('graph', { read: ElementRef }) private graph_ref: ElementRef;
+	chart: any;
 
 	btnNext: boolean = false;
 	viewPortfolioModal: boolean = false;
@@ -51,40 +53,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
 	}
 	ngAfterViewInit() {
-	    const chart_data = {
-	      labels: ['Global Short Bonds', 'U.S. Small Neutral Stocks', 'U.S. Large Value Stocks'],
-	      datasets: [{
-	          fill: true,
-	          data: [ 
-	          	this.allocation_data[0].data[0].value, this.allocation_data[1].data[0].value, this.allocation_data[1].data[1].value
-	          ],
-	          borderWidth: 0,
-	          backgroundColor : ['#67c078', '#465f7c', '#3d98cb']
-	      }]
-	    }
-	    const chart_options = {
-	      legend: { display: false },
-	      plugins: {
-	          strokeShadow: {},
-	          datalabels: { display: false }
-	      },
-	      responsive : true, maintainAspectRatio: false
-	    }
-	    // var graph = new Chart( this.graph_ref.nativeElement );
-  			// graph.Pie(chart_data, chart_options);  
-	    // this.graph = new Chart(this.graph_ref.nativeElement, {
-	    //   type: 'pie',
-	    //   data: chart_data,
-	    //   options: chart_options
-	    // });
-
-	}
-	ngOnChanges(changes: SimpleChanges) {
-		console.log('changing', changes);
-	}
-	onAllocationChange(obj, val) {
-		obj = val;
-		console.log(obj, val);
+	    this.updateChart();
 	}
 	closeMe() {
 		this.modalStatus.SET_viewPortfolio(false);
@@ -104,16 +73,44 @@ export class PopupCreatePortfolioComponent implements OnInit {
 			this.data.SET_portfolioPopupType( 'view' );		
 		}
 	}
+	updateChart() {
+		const chart_data = {
+	      labels: ['Global Short Bonds', 'U.S. Small Neutral Stocks', 'U.S. Large Value Stocks'],
+	      datasets: [{
+	          fill: true,
+	          data: [ 
+	          	this.allocation_data[0].data[0].value, this.allocation_data[1].data[0].value, this.allocation_data[1].data[1].value
+	          ],
+	          borderWidth: 0,
+	          backgroundColor : ['#67c078', '#465f7c', '#3d98cb']
+	      }]
+	    }
+	    const chart_options = {
+	      legend: { display: false },
+	      plugins: {
+	          strokeShadow: {},
+	          datalabels: { display: false }
+	      },
+	      responsive : true, maintainAspectRatio: false
+	    }
+	    this.chart = new Chart(this.graph_ref.nativeElement, {
+	      type: 'pie',
+	      data: chart_data,
+	      options: chart_options
+	    });
+	}
 	updateGroupVal() {
 		let d = 0;
 		Object.entries(this.allocation_data).forEach(([key, val]) => {
 			let c = 0;
 			Object.entries(val.data).forEach(([k,v]) =>{
-				// c += parseInt(v.value);
+				console.log(v.value)
+				c += parseInt(v.value);
 			})
 			this.allocation_data[key].value = c;
 			d += c;
 		})
 		this.totalAllocation = d;
+		this.updateChart();
 	}
 }
