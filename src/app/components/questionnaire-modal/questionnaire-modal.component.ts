@@ -31,6 +31,7 @@ export class QuestionnaireModalComponent implements OnInit {
     console.log('question'+$step);
     var topPos = document.getElementById('question'+$step).offsetTop;
     document.getElementById('body-container').scrollTop = topPos-10;
+    document.getElementById('chartjs-tooltip').style.opacity = '0';
   }
   riskMoveStepTo($step) {
     this.data.SET_proposal_risk_step($step);
@@ -104,6 +105,7 @@ export class QuestionnaireModalComponent implements OnInit {
       },
       responsive: true,
       maintainAspectRatio: false,
+      events: ['click', 'mousemove'],
       tooltips: {
             enabled: false,
             custom: function( tooltipModel ){
