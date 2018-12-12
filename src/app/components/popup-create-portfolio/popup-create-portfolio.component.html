@@ -27,28 +27,30 @@
             <div class="row-2">
                 <div class="left-section">
                     <span class="graph-title">Target Asset Allocation:</span> 
-                    <div class="graph-container"><img class="graph" src="../../../assets/component/allocation-detail/graph.PNG"></div>
+                    <div class="graph-container">
+                        <canvas class="graph" height="300" #graph></canvas>
+                    </div>
                     <div class="table-container">
                         <table>
                             <tr>
-                                <th class="text-color-3">Bonds</th>
-                                <th class="text-color-3">25%</th>
+                                <th class="text-color-3">{{allocation_data[0].label}}</th>
+                                <th class="text-color-3">{{allocation_data[0].value}}%</th>
                             </tr>
                             <tr>
-                                <td><div class="circle color-3"></div><span>Global Shorts Bonds</span></td>
-                                <td>25%</td>
+                                <td><div class="circle color-3"></div><span>{{allocation_data[0].data[0].asset_class}}</span></td>
+                                <td>{{allocation_data[0].data[0].value}}%</td>
                             </tr>
                             <tr>
-                                <th class="text-color-5">U.S. Stocks</th>
-                                <th class="text-color-5">0%</th>
+                                <th class="text-color-5">{{allocation_data[1].label}}</th>
+                                <th class="text-color-5">{{allocation_data[1].value}}%</th>
                             </tr>
                             <tr>
-                                <td><div class="circle color-4"></div><span>U.S. Small Neutral Stocks</span></td>
-                                <td>0%</td>
+                                <td><div class="circle color-4"></div><span>{{allocation_data[1].data[0].asset_class}}</span></td>
+                                <td>{{allocation_data[1].data[0].value}}%</td>
                             </tr>
                             <tr>
-                                <td><div class="circle color-5"></div><span>U.S. Large Value Stocks</span></td>
-                                <td>25%</td>
+                                <td><div class="circle color-5"></div><span>{{allocation_data[1].data[1].asset_class}}</span></td>
+                                <td>{{allocation_data[1].data[1].value}}%</td>
                             </tr>
                         </table>
                     </div>
@@ -72,24 +74,29 @@
                                 <th>&nbsp;</th>
                             </tr>
                             <tr>
-                                <td>SA Global Fixed Income Select</td>
-                                <td>SAFLX</td>
-                                <td>Global Short Bonds <i class="icon-dropdown"></i></td>
-                                <td><input type="text" class="allocation-text" placeholder="25%"> </td>
+                                <td>{{allocation_data[0].data[0].security_name}}</td>
+                                <td>{{allocation_data[0].data[0].security_id}}</td>
+                                <td>{{allocation_data[0].data[0].asset_class}} <i class="icon-dropdown"></i></td>
+                                <td><input type="text" class="allocation-text" [(ngModel)]="allocation_data[0].data[0].value" 
+                                    (keyup)="updateGroupVal()" /></td>
                                 <td><i class="icon-remove"></i></td>
                             </tr>
                             <tr>
                                 <td>SA US Small Company Select</td>
                                 <td>SAFLX</td>
                                 <td>U.S. Small Neutral Stocks<i class="icon-dropdown"></i></td>
-                                <td><input type="text" class="allocation-text" placeholder="%"></td>
+                                <td><input [(ngModel)]="allocation_data[1].data[0].value" 
+                                        (keyup)="updateGroupVal()"
+                                        type="text" class="allocation-text" placeholder="%"></td>
                                 <td><i class="icon-remove"></i></td>
                             </tr>
                             <tr>
                                 <td>SA US Value Select</td>
                                 <td>SAFLX</td>
                                 <td>U.S. Large Value Stocks<i class="icon-dropdown"></i></td>
-                                <td><input type="text" class="allocation-text" placeholder="%"></td>
+                                <td><input [(ngModel)]="allocation_data[1].data[1].value" 
+                                    (keyup)="updateGroupVal()"
+                                    type="text" class="allocation-text" placeholder="%"></td>
                                 <td><i class="icon-remove"></i></td>
                             </tr>
                             <tr>
@@ -103,7 +110,7 @@
                                 <th>Total Allocation:</th>
                                 <th>&nbsp;</th>
                                 <th>&nbsp;</th>
-                                <th>25%</th>
+                                <th>{{totalAllocation}}%</th>
                                 <th>&nbsp;</th>
                             </tr>
                         </table>
