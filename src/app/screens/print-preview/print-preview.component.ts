@@ -29,8 +29,6 @@ export class PrintPreviewComponent implements OnInit {
         const content = $( '.rpp-content' );
 
         content.css( 'margin-top', header.outerHeight() );
-
-        $( 'body' ).css( 'background-color', '#CCCCCC' );
     }
 
     zoomIn() {
