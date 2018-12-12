@@ -1,42 +1,43 @@
 .dropdown-filter-portfolio{
     position: relative;
-    summary{
-        a.btn-filter:active, a.btn-filter:active{
-            border-radius: 6px 6px 0px 0px;
-        }
-        .btn-filter {
-            background: url(../../../assets/component/portfolio/filter-gray.png) no-repeat 20px 13px;
-            width: 240px;
-            height: 45px;
-            padding: 0px 15px 0px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 6px;
-            box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
-            background-color: white;
-            position: relative;
-            z-index: 1;
-            span {
-              margin-left: 15px;
-              font-family: "Montserrat", sans-serif;
-              font-size: 12px;
-              font-weight: 600;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: normal;
-              letter-spacing: 1px;
-              color: #77787b;
-              width: 100%;
-              text-align: left;
-              padding-left: 40px;
+    z-index: 10;
+        summary{
+            a.btn-filter:active, a.btn-filter:active{
+                border-radius: 6px 6px 0px 0px;
             }
-            .icon-dropdown {
-              width: 15px;
-              content: url("../../../assets/component/portfolio/dropdown.png");
+            .btn-filter {
+                background: url(../../../assets/component/portfolio/filter-gray.png) no-repeat 20px 13px;
+                width: 240px;
+                height: 45px;
+                padding: 0px 15px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 6px;
+                box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+                background-color: white;
+                position: relative;
+                z-index: 1;
+                span {
+                margin-left: 15px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: #77787b;
+                width: 100%;
+                text-align: left;
+                padding-left: 40px;
+                }
+                .icon-dropdown {
+                width: 15px;
+                content: url("../../../assets/component/portfolio/dropdown.png");
+                }
             }
         }
-    }
     .flex{
         display: flex;
     }

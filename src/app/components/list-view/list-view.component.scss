@@ -73,6 +73,9 @@ $textColor: #ffffff;
         }
         input[type=text] {
           margin-right: -15px;
+          @media only screen and (max-width: 767px){
+            margin-right: 0px;
+          }
         }
         .search {
           width: 100%;
@@ -150,7 +153,9 @@ $textColor: #ffffff;
             padding-right: 15px;
             display: flex;
             align-items: center;
-
+            @media only screen and (max-width: 767px){
+              padding-right: 0px;
+            }
             .add-container {
               display: flex;
               align-items: center;
@@ -181,16 +186,21 @@ $textColor: #ffffff;
             border:none;
             padding-left: 40px;
             color: black;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "museo-sans";
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 300;
             font-style: normal;
             font-stretch: normal;
             line-height: normal;
             letter-spacing: normal;
             padding-bottom: 0px;
             padding-top: 0px;
-            margin-right: 20px
+            margin-right: 20px;
+            @media only screen and (max-width: 767px){
+              margin-right: 0px;
+              width: auto;
+
+            }
           }
            ::placeholder {
             font-family: 'Montserrat', sans-serif;
@@ -247,11 +257,13 @@ $textColor: #ffffff;
         width: 100%;
         border-collapse: collapse;
         .icon-dropdown{
-          content: url(../../../assets/component/circle-arrow-down-white.svg);
+          content: url(../../../assets/component/listview/arrow-gray@3x.png);
           width: 10px;
           height: 7px;
           padding-left: 6px;
-        
+        }
+        tr{
+          position: relative;
         }
         th:first-child{
           width: 33%;
@@ -266,6 +278,9 @@ $textColor: #ffffff;
         }
         th, td {
           padding: 0 20px;
+          @media only screen and (max-width: 767px){
+            padding: 0 10px;
+          }
         }
         th:first-child, th:nth-child(5),
         td:first-child, th:nth-child(5){
@@ -287,14 +302,18 @@ $textColor: #ffffff;
             letter-spacing: 0.8px;
             color: #414042;
             text-transform: uppercase;
+            @media only screen and (max-width: 767px){
+              width: 100%;
+            }
           }
         }
-
+        tbody:not(:last-child){
+          border-bottom: 1px #e7e6e6 solid;
+        }
         tbody {
           td {
             height: 47px;
-            border-bottom: 1px solid #dedede;
-
+            
             .td_arrow_right {
               font-size: 12pt;
               cursor: pointer;
@@ -304,7 +323,7 @@ $textColor: #ffffff;
             }
           }
           .col-name {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'museo-sans';
             font-size: 14px;
             font-weight: bold;
             font-style: normal;
@@ -313,12 +332,15 @@ $textColor: #ffffff;
             letter-spacing: normal;
             color: #414042;
             text-transform: capitalize;
+            @media only screen and (max-width: 767px){
+              font-size: 12px;
+            }
           }
 
           .col-other {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'museo-sans';
             font-size: 11px;
-            font-weight: 500;
+            font-weight: 300;
             font-style: normal;
             font-stretch: normal;
             line-height: 1;
@@ -354,8 +376,8 @@ $textColor: #ffffff;
 
 .name-td {
   font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-family: 'museo-sans';
+  font-weight: 300;
   font-style: normal;
   line-height: 1;
   color: #414042;
@@ -363,9 +385,9 @@ $textColor: #ffffff;
 
 .dropdown-item {
   color: #414042;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'museo-sans';
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
   line-height: 1;
 }
@@ -374,6 +396,12 @@ $textColor: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 9px;
+  font-family: "montserrat", sans-serif !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1 !important;
+  letter-spacing: 0.8px !important;
+
 }
 
 .dropdown-td {
@@ -414,7 +442,6 @@ $textColor: #ffffff;
 }
 
 td.dropdown-td {
-  border-bottom: none !important;
   font-family: "museo-sans";
   font-size: 14px;
   font-weight: 300;
@@ -426,9 +453,9 @@ td.dropdown-td {
 }
 
 td.dropdown-td:first-child {
-  border-left: 40px white solid;
+  border-left: 80px white solid;
   @media only screen and (max-width: 767px) {
-    border-left: 40px white solid;
+    border-left: 20px white solid;
   }
 }
 
@@ -445,7 +472,7 @@ td.dropdown-td:last-child {
   position: relative;
   top: 2px;
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 6px;
   width: 15px;
   height: 15px;
   content: url('../../../assets/component/circle-arrow-right.svg');
@@ -461,13 +488,16 @@ tr.selected-dropdown, tr.dropdown-tr{
   position: relative;
   top: 2px;
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 6px;
   width: 15px;
   height: 15px;
-  content: url('../../../assets/icons/chevron-down.png');
+  content: url('../../../assets/component/circle-arrow-down-white.svg');
 }
 ::ng-deep .list-view-container app-dropdown-filter-listview{
   width:207px;
+  @media only screen and (max-width: 767px){
+    display: none;
+  }
 }
 .vertical-align{
   display: flex;

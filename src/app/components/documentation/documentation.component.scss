@@ -770,23 +770,25 @@
         .item-right-side {
             float:right;
             margin-right: 20px;
-            @media only screen and (max-width:767px){
-                
+            @media only screen and (max-width: 767px){
+                display: flex;
+                align-items: center;
             }
         }
         .right-section-container { display: none; }
         &.expanded {
-            width: 100%;
+            width: 105%;
             box-shadow: -7px 1px 4px 0 rgba(65, 64, 66, 0.15);
             background-color:#fafbfc;
             font-weight: 600;
 
             @media only screen and (max-width:767px){
+                width: 100%;    
                 .right-section-container {
                     display: inherit;
                 }
                 display: flex;
-                    height: auto;
+                height: auto;
                 flex-direction: column;
 
             }  
@@ -795,7 +797,6 @@
                 @media only screen and (max-width:767px){
                     margin-right:5px;
                 }
-
             }
             .view-extended {
                 background: #fafbfc url('../../../assets/view-gray.svg') no-repeat center center;
@@ -853,14 +854,11 @@
     }
     .landscape-box {
         @media only screen and (max-width: 767px){
-            width: 164px;
+            width: auto;
         }
     }
     .active {
         border-color: #1598cb;
-        @media only screen and (max-width: 767px){
-            width: 142px;
-        }
     }
     .radio-holder {
         padding:0px;
@@ -888,6 +886,9 @@
         vertical-align: middle;
         padding-left: 30px;
         content: url('../../../assets/component/documentation/move-page-light-gray.png');
+        @media only screen and (max-width: 767px){
+            padding-left: 20px;
+        }
     }
     .btn-group {
         flex: 1;
@@ -907,7 +908,31 @@
         margin-right: 30px;
         flex: 1;
         .btc {
+            @media only screen and (max-width: 767px){
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
             padding: 0px 10px 0px 60px; 
+            div:first-child{
+                @media only screen and (max-width: 767px){
+                width: 240px;
+                word-wrap: break-word;
+                }
+            }
+            span{
+                font-family: "Montserrat", sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: 0.2px;
+                color: #414042;
+                @media only screen and (max-width: 767px){
+                    padding-right: 10px;
+                }
+            }
         }
         @media only screen and (max-width:767px){
             margin-right:0;
@@ -1064,7 +1089,7 @@
                 border-radius: 6px;
                 border: none;
                 background-color: #ffffff;
-                padding: 16px 30px;
+                padding: 0 15px;
                 font-family: 'Montserrat', sans-serif;
                 letter-spacing: 1px;
                 color: #77787b;
@@ -1122,11 +1147,24 @@
                     content: url('../../../assets/component/documentation/move-page-light-gray.png');
                 }
             }
+            .left-items{
+                div:last-child{
+                    white-space: nowrap;
+                    width: 250px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 14px;
+                    font-family: "museo-sans", sans-serif;
+                    font-weight: 300;
+                    padding-left: 10px;
+                    color: #414042;
+                }
+            }
             .left-items, .right-items{
                 display: flex;
                 .div-option-text{
                     font-size: 14px;
-                    font-family: museo-sans, sans-serif;
+                    font-family: "museo-sans", sans-serif;
                     font-weight: 300;
                     padding-left: 10px;
                     color: #414042;

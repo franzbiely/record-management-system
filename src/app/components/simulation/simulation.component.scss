@@ -414,6 +414,9 @@ app-dropdown-update-account {
         // width: 0px !important;
         // overflow: hidden;
       }
+      .row-2{
+        padding: 0px !important;
+      }
       .row-2-3-container {
         display:flex;
         margin-top:40px;
@@ -427,20 +430,29 @@ app-dropdown-update-account {
       }
       .graph-container {
         margin:40px;
+        @media only screen and (max-width: 767px){
+          display: none;
+        }
       }
       .current_portfolio_chart_container.recommended {
-        width: 90%;
+        width: 100%;
         position: relative;
         box-shadow: none;
         margin: auto;
       }
       .right-section-container {
-        width: 90% !important;
+        width: 100% !important;
         float: none !important;
-        margin-left: 40px;
+        @media only screen and (max-width: 767px){
+          width: 100% !important;
+          margin-left: 0px;
+        }
         canvas {
           margin-left: auto;
           margin-right: auto;
+          @media only screen and (max-width: 767px){
+              width: 100% !important;
+          }
         }
       }
       #allocation_charts { display:none; }
@@ -545,10 +557,7 @@ app-dropdown-update-account {
               padding: 30px 0px;
               display: none;
               @media only screen and (max-width: 767px) {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: none;
               }
               .circle-graph-1 {
                 width:250px;
@@ -704,10 +713,7 @@ app-dropdown-update-account {
               padding: 30px 0px;
               display: none;
               @media only screen and (max-width: 767px) {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: none;
               }
               .circle-graph-2 {
                 width:250px;
@@ -1138,6 +1144,10 @@ app-dropdown-update-account {
   }
   canvas {
     margin-bottom:20px;
+    @media only screen and (max-width: 767px){
+      width: 100% !important;
+      height: auto !important;
+    }
   }
   h3 {
     font-size: 16px;
@@ -1211,6 +1221,13 @@ app-dropdown-update-account {
       text-align: center;
       color: #c5c5c5;
       text-transform: uppercase;
+      @media only screen and (max-width: 767px){
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
   }
 }
 .mobile-only {

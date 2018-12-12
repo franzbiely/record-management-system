@@ -22,6 +22,9 @@
         min-width: 375px;
         height: 220px;
         box-sizing: border-box;
+        @media only screen and (max-width: 767px){
+            height: auto !important;
+        }
         &:before {
             content: ' ';
             background: url("../../../assets/pattern-top.svg") top left;
@@ -205,6 +208,11 @@
                 margin-right: 10px;
                 margin-left: 5px;
                 content: url("../../../assets/component/proposal/state-active-white.png");
+            }
+        }
+        .id-container{
+            @media only screen and (max-width: 767px){
+                display: none;
             }
         }
     }
