@@ -14,6 +14,9 @@
         padding: 110px 40px 110px 110px;
         position: relative;
         z-index: 21;
+        @media only screen and (max-width: 767px){
+            padding: 40px 10px;
+        }
         .popup-box{
             flex: 1;
             box-shadow: 0 15px 30px 0 rgba(65, 64, 66, 0.2);
@@ -39,10 +42,17 @@
             .box-body{
                 padding: 40px 60px;
                 display: flex;
+                @media only screen and (max-width: 767px){
+                    flex-direction: column;
+                    padding: 20px;
+                }
                 .mat-radio-button{
                     font-family: "museo-sans";
                     font-size: 12px;
                     font-weight: 300;
+                    @media only screen and (max-width: 767px){
+                        margin-top:10px;
+                    }
                 }
                 .recepient{
                     font-size: 12px;
@@ -67,6 +77,11 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    @media only screen and (max-width: 767px){
+                        justify-content: initial;
+                        align-items: initial;
+                        flex-direction: column;
+                    }
                     span{
                         font-family: "montserrat", sans-serif;
                         font-size: 14px;
@@ -81,6 +96,9 @@
                     margin-right: 40px;
                     display: flex;
                     flex-direction: column;
+                    @media only screen and (max-width: 767px){
+                        margin-right: 0px;
+                    }
                     .textbox-container{
                         margin-top: 20px;
                     }
@@ -89,6 +107,9 @@
                     flex: 1;
                     display: flex;
                     flex-direction: column;
+                    @media only screen and (max-width: 767px){
+                        margin-top:20px;
+                    }
                     .textbox-container{
                         margin-top: 20px;
                         color:#c5c5c5;
@@ -101,9 +122,15 @@
                 align-items: center;
                 padding:40px 60px;
                 text-transform: uppercase;
+                @media only screen and (max-width: 767px){
+                    padding: 20px;
+                }
                 button:first-child{
                     margin-right: 20px;
-
+                    @media only screen and (max-width: 767px){
+                    width: auto;
+                    flex:1;
+                    }
                 }
                 button:last-child{
                     width: 160px;
@@ -122,6 +149,10 @@
                     color: #fff;
                     border: none;
                     text-transform: uppercase;
+                    @media only screen and (max-width: 767px){
+                        width: auto;
+                        flex:1;
+                        }
                     .icon-save{
                         margin-right: 15px;
                         width: 20px;
