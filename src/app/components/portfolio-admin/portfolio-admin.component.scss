@@ -282,10 +282,13 @@ th {
     line-height: 1;
     letter-spacing: 0.8px;
     color: #414042;
-    padding: 19px 30px;
+    padding:0px 30px;
     text-transform: uppercase;
     background-color: #fafbfc;
-    
+    height: 47px;
+    @media only screen and (max-width: 767px){
+        padding: 10px;
+    }
   }
 i{  
     padding-left: 6px;
@@ -303,7 +306,11 @@ td {
     line-height: 1;
     letter-spacing: normal;
     color: #414042;
-    padding: 10px 30px;
+    padding: 0px 30px;
+    height: 47px;
+    @media only screen and (max-width: 767px){
+        padding: 10px;
+    }
 }
 td:first-child{
     font-weight: 600;
@@ -316,6 +323,10 @@ td:first-child{
 }
 .align-center {
     text-align: center;
+    @media only screen and (max-width: 767px){
+        display: flex;
+        align-items: center;
+    }
 }
 .align-left {
     text-align: left;
@@ -334,9 +345,6 @@ td:first-child{
         .search-box {
             flex:1;
             width: 100%;
-        }
-        input[type=text]{
-          
         }
     }
 
@@ -361,8 +369,10 @@ td:first-child{
         letter-spacing: normal;
         padding-bottom: 0px;
         padding-top: 0px;
-        margin-right: 20px
-
+        margin-right: 20px;
+        @media only screen and (max-width: 767px){
+            margin-right: 0px;
+        }
     }
     ::placeholder {
         font-family: 'Montserrat', sans-serif;
@@ -388,7 +398,7 @@ td:first-child{
 .add-icon {
     height: 20px;
     width: 20px;
-    padding-right: 10px;
+    padding-right: 6px;
     content: url('../../../assets/component/home/add-white.png');
 }
 .filter{
@@ -427,6 +437,9 @@ td:first-child{
 ::ng-deep .portfolio-container app-dropdown-actions,
 ::ng-deep .portfolio-container app-dropdown-actions-portfolio{
     details{
-        margin-right: 60px;
+        margin-right: 40px;
+        @media only screen and (max-width: 767px){
+            margin-right: 0px;
+        }
     }
 }

@@ -685,6 +685,9 @@ $secondaryfont : 'museo-sans', calibri;
     :host ::ng-deep .dropdown-actions{
         details{
             margin-right: 55px;
+            @media only screen and (max-width: 767px){
+                margin-right: 0px;
+            }
     }
     }
     .dropdown-content{

@@ -16,6 +16,9 @@
         right: 35px;
         position: absolute;
         border-radius: 0 0 6px 6px;
+        @media only screen and (max-width: 767px){
+            right: 10px;
+        }
         summary {
             padding: 0 15px;
             border-radius: 6px 6px 0 0;

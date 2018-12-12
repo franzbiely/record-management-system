@@ -75,7 +75,7 @@
               <div class="question-box">
                 <div class="question">
                   <span class="title-question">Question 3:</span>
-                  <div class="question-container"><span class="text-question">Once you begin withdrawing money from this portfolio, how long do you <br/>anticipate continuing these withdrawals until you've withdrawn all your money?</span></div>
+                  <div class="question-container"><span class="text-question">Once you begin withdrawing money from this portfolio, how long do you anticipate continuing these withdrawals until you've withdrawn all your money?</span></div>
                   <mat-radio-group>
                     <div class="choices-container" (click)="moveStep(4)">
                       <mat-radio-button class="radio-choice" value="1">One-time withdrawal of entire account value</mat-radio-button>
@@ -93,7 +93,7 @@
               <div class="question-box">
                 <div class="question">
                   <span class="title-question">Question 4:</span>
-                  <div class="question-container"><span class="text-question">Once you begin withdrawing money from this portfolio, how much do you anticipate <br/>withdrawing each year?</span></div>
+                  <div class="question-container"><span class="text-question">Once you begin withdrawing money from this portfolio, how much do you anticipate withdrawing each year?</span></div>
                   <mat-radio-group>
                     <div class="choices-container" (click)="moveStep(5)">
                       <mat-radio-button class="radio-choice" value="1">One-time withdrawal of entire account value</mat-radio-button>
@@ -111,7 +111,7 @@
               <div class="question-box">
                 <div class="question">
                   <span class="title-question">Question 5:</span>
-                  <div class="question-container"><span class="text-question">Markets move up and down on a regular, but unpredictable, basis. If you invested your <strong>$800,000</strong> and<br/> the markets went down, at what point would you begin to feel uncomfortable?</span></div>
+                  <div class="question-container"><span class="text-question">Markets move up and down on a regular, but unpredictable, basis. If you invested your <strong>$800,000</strong> and the markets went down, at what point would you begin to feel uncomfortable?</span></div>
                   <mat-radio-group>
                     <div class="choices-container" (click)="moveStep(6)">
                       <mat-radio-button class="radio-choice" value="1">Any decline would make me feel uncomfortable</mat-radio-button>
@@ -130,7 +130,7 @@
               <div class="question-box">
                 <div class="question">
                   <span class="title-question">Question 6:</span>
-                  <div class="question-container"><span class="text-question">For this portfolio, which of these statements best describes your attitude about declines over<br/> the next three months?</span></div>
+                  <div class="question-container"><span class="text-question">For this portfolio, which of these statements best describes your attitude about declines over the next three months?</span></div>
                   <mat-radio-group>
                     <div class="choices-container" (click)="moveStep(7)">
                       <mat-radio-button class="radio-choice" value="1">I'd have a hard time accepting my declines</mat-radio-button>
@@ -147,10 +147,10 @@
                 <div class="question-box">
                   <div class="question">
                     <span class="title-question">Question 7:</span>
-                    <div class="question-container"><span class="text-question">Return and risk are related. If you want more return you must be willing to take more risk.<br/> Pick a point in the graph where you feel comfortable with potential return and risk.</span></div>
+                    <div class="question-container"><span class="text-question">Return and risk are related. If you want more return you must be willing to take more risk. Pick a point in the graph where you feel comfortable with potential return and risk.</span></div>
                     <div class="choices-container" (click)="moveStep(8)">
                       <div class="question7-canvas-container">
-                        <canvas #q7chart></canvas>
+                        <canvas class="q7chart" #q7chart></canvas>
                         <div class="lbl-canvas">Risk</div>
                         <div class="lbl-canvas verticaltext_content">Return</div>
                       </div>
@@ -164,7 +164,7 @@
                 <div class="question-box">
                   <div class="question">
                     <span class="title-question">Question 8:</span>
-                    <div class="question-container"><span class="text-question">Assuming normal, long-term stock market conditions, how would<br/> you expect this portfolio to perform over time?</span></div>
+                    <div class="question-container"><span class="text-question">Assuming normal, long-term stock market conditions, how would you expect this portfolio to perform over time?</span></div>
                     <mat-radio-group>
                       <div class="choices-container">
                         <mat-radio-button class="radio-choice" value="1">To have a high degree of stability but make small gains</mat-radio-button>

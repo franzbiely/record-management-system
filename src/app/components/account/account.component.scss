@@ -61,6 +61,9 @@ table {
     th:last-child{
         padding-right: 30px !important;
         padding-left: 20px !important;
+        @media only screen and (max-width: 767px){
+            padding:0 10px !important;
+        }
     }
     @media only screen and (max-width: 767px){
     tr:last-child td:first-child {
@@ -416,4 +419,11 @@ tr.last td:first-child{
 
 .md-checkbox.md-checked .md-icon {
     background-color:yellow!important;   
+ }
+ ::ng-deep .account-screen app-dropdown-actions .dropdown-actions{
+    details{
+        @media only screen and (max-width: 767px){
+            right: 30px !important;
+        }
+    }
  }
