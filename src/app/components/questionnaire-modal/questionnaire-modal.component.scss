@@ -35,24 +35,23 @@
             justify-content: space-between;
             .left-section{
                 .box-title{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                .text-title{
-                    font-family: 'montserrat', sans-serif;
-                    color: white;
-                    font-size: 20px;
-                    font-weight: 600;
-                }
-                .text-subtitle{
-                    font-family: 'montserrat', sans-serif;
-                    font-size: 18px;
-                    font-weight: 300;
-                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .text-title{
+                        font-family: 'montserrat', sans-serif;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .text-subtitle{
+                        font-family: 'montserrat', sans-serif;
+                        font-size: 18px;
+                        font-weight: 300;
+                        color: white;
+                    }
                 }
             }
-
-        }
             .right-section{
                 .add-container{
                     display: flex;
@@ -79,7 +78,6 @@
                         &.quest-1 { }
                         &.quest-2 {
                             .progress:nth-child(1) {
-
                                 span {
                                     color: #1598cb;
                                 }
@@ -148,23 +146,23 @@
                                 }
                             }
                         }
-                    @media only screen and (max-width: 767px){
-                        padding: 10px;
-                    }
-                      .progress:after {
-                        content: '';
-                        border-bottom: 2px solid #e7e6e6; //#1598cb <- color when done
-                        width: 100%;
-                        height: 1px;
-                        position: absolute;
-                        top: 83%;
-                        left: 50%;
-                        transform: translate(0, -100%);
-                        z-index:1;
-                      }
-                      .progress:last-child:after {
-                        display: none;
-                      }
+                        @media only screen and (max-width: 767px){
+                            padding: 10px;
+                        }
+                        .progress:after {
+                            content: '';
+                            border-bottom: 2px solid #e7e6e6; //#1598cb <- color when done
+                            width: 100%;
+                            height: 1px;
+                            position: absolute;
+                            top: 83%;
+                            left: 50%;
+                            transform: translate(0, -100%);
+                            z-index:1;
+                        }
+                        .progress:last-child:after {
+                            display: none;
+                        }
                         .mat-radio-button{
                             position: relative;
                             z-index: 2;
@@ -211,7 +209,7 @@
                 }
             }               
         }
-        .box-body-2{
+        .box-body-2 {
             height: 400px;
             overflow: scroll;
             position: relative;
@@ -287,8 +285,8 @@
                             .lbl-canvas {
                                 text-align: center;
                                 font-size: 10px;
-                                  font-weight: 600;
-                                  color: #414042;
+                                font-weight: 600;
+                                color: #414042;
                             }
                             .verticaltext_content {
                                 position: relative;
@@ -389,7 +387,7 @@
 ::ng-deep .quest-8 .progress:nth-child(-n + 7) .mat-radio-outer-circle {
     background:url("../../../assets/circle-checked-blue.svg") center;
     border: none !important;
-
+}
 ::ng-deep .question .mat-radio-label{
     white-space: normal;
 }

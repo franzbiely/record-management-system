@@ -1,7 +1,7 @@
 .dropdown-filter-portfolio{
     position: relative;
-    z-index: 9;
-    summary{
+    z-index: 10;
+    summary {
         a.btn-filter:active, a.btn-filter:active{
             border-radius: 6px 6px 0px 0px;
         }
@@ -19,18 +19,18 @@
             position: relative;
             z-index: 1;
             span {
-              margin-left: 15px;
-              font-family: "Montserrat", sans-serif;
-              font-size: 12px;
-              font-weight: 600;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: normal;
-              letter-spacing: 1px;
-              color: #77787b;
-              width: 100%;
-              text-align: left;
-              padding-left: 40px;
+                margin-left: 15px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: #77787b;
+                width: 100%;
+                text-align: left;
+                padding-left: 40px;
             }
             .btn-filter {
                 background: url(../../../assets/component/portfolio/filter-gray.png) no-repeat 20px 13px;
@@ -60,111 +60,110 @@
                 padding-left: 40px;
                 }
                 .icon-dropdown {
-                width: 15px;
-                content: url("../../../assets/component/portfolio/dropdown.png");
+                    width: 15px;
+                    content: url("../../../assets/component/portfolio/dropdown.png");
                 }
             }
         }
-    .flex{
-        display: flex;
-    }
-    .item-container {
-        font-family: "museo-sans",calibri;
-        position: absolute;
-        width: 100%;
-        background: #fff;
-        border-radius: 0px 0px 6px 6px;
-        box-shadow: 0 15px 100px 0 rgba(65, 64, 66, 0.3);
-        top: 42px;
-        right: 0px;
-        box-sizing: border-box;
-        .text-box{
-            padding: 15px 20px;
-            border-bottom: 0.5px solid #e7e6e6;
-            input[type=text]{
-                padding: 15px;
-                flex:1;
-                border-radius: 6px;
-                background-color: #ffffff;
-                border: 1px solid #e7e6e6;
-                font-family: "museo-sans";
-                font-size: 14px;
-                font-weight: 300;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-            }
-            ::placeholder {
-                font-family: "museo-sans";
-                font-size: 14px;
-                font-weight: 300;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #c5c5c5;
-            }
-        }
-        .group{
-            background-color:#f7f7f7 !important;
-        }
-        .item {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          box-sizing: border-box;
-          background-color: white;
-          padding: 6px 20px;
-          font-family: "museo-sans";
-          font-size: 11px;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1;
-          letter-spacing: normal;
-          color: #414042;
-          border-bottom: 0.5px solid #e7e6e6;
-          color: #414042;
-          &:hover {
-            background-color: #f7f7f7;
-        }
-        .range{
-            font-family: "Montserrat", sans-serif;
-            font-size: 10px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1;
-            letter-spacing: 0.6px;
-            color: #77787b;
-        }
-        
-        .group-title-container{
+        .flex {
             display: flex;
-            align-items: center;
-            .group-title{
-                display: flex;
-                flex-direction: column;
-                text-transform: uppercase;
-                span:first-child{
-                    font-family: "Montserrat";
-                    font-size: 10px;
+        }
+        .item-container {
+            font-family: "museo-sans",calibri;
+            position: absolute;
+            width: 100%;
+            background: #fff;
+            border-radius: 0px 0px 6px 6px;
+            box-shadow: 0 15px 100px 0 rgba(65, 64, 66, 0.3);
+            top: 42px;
+            right: 0px;
+            box-sizing: border-box;
+            .text-box {
+                padding: 15px 20px;
+                border-bottom: 0.5px solid #e7e6e6;
+                input[type=text] {
+                    padding: 15px;
+                    flex:1;
+                    border-radius: 6px;
+                    background-color: #ffffff;
+                    border: 1px solid #e7e6e6;
+                    font-family: "museo-sans";
+                    font-size: 14px;
                     font-weight: 300;
                     font-style: normal;
                     font-stretch: normal;
-                    line-height: 1.1;
-                    letter-spacing: 0.8px;
-                    color: #414042;
+                    line-height: normal;
+                    letter-spacing: normal;
                 }
-                span:last-child{
-                    font-weight: 600;
-                } 
+                ::placeholder {
+                    font-family: "museo-sans";
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #c5c5c5;
+                }
             }
+            .group {
+                background-color:#f7f7f7 !important;
+            }
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                box-sizing: border-box;
+                background-color: white;
+                padding: 6px 20px;
+                font-family: "museo-sans";
+                font-size: 11px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                color: #414042;
+                border-bottom: 0.5px solid #e7e6e6;
+                color: #414042;
+                &:hover {
+                    background-color: #f7f7f7;
+                }
+                .range{
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 10px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1;
+                    letter-spacing: 0.6px;
+                    color: #77787b;
+                }
             
-        }
-
-    }   
+                .group-title-container{
+                    display: flex;
+                    align-items: center;
+                    .group-title{
+                        display: flex;
+                        flex-direction: column;
+                        text-transform: uppercase;
+                        span:first-child{
+                            font-family: "Montserrat";
+                            font-size: 10px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.1;
+                            letter-spacing: 0.8px;
+                            color: #414042;
+                        }
+                        span:last-child{
+                            font-weight: 600;
+                        } 
+                    }
+                }
+            }
+        }   
         .btn-container{
             display: flex;
             padding:20px;
@@ -187,8 +186,8 @@
         }
     }
 }
-::ng-deep .dropdown-filter-portfolio{
-    .mat-checkbox{
+::ng-deep .dropdown-filter-portfolio {
+    .mat-checkbox {
         margin-right: 15px !important;
     }
 }
