@@ -476,7 +476,7 @@
                             <div class="orient-container active" (click)="orientToggler($event)">
                                 <div class="btn-orient align-center">
                                     <div class="radio-holder">
-                                        <mat-radio-button (click)="orientToggler($event)" class="text-orient">Portrait</mat-radio-button>
+                                        <mat-radio-button [checked]="true" (click)="orientToggler($event)" class="text-orient">Portrait</mat-radio-button>
                                     </div>
                                     <div class="radio-text">
                                         <div><img class="portrait-icon"></div>
