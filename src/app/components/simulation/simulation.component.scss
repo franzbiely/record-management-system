@@ -194,9 +194,19 @@ app-dropdown-update-account {
     }
     
   }
+  &.sidebar-is-open{
+    .sidebar-container {
+      .toggle-container{
+        margin-left: auto;
+      }
+      .sidebar {
+        display: flex !important;
+      } 
+    }
+  }
   .sidebar-container {
     position: relative;
-    margin-left: -250px;
+    // margin-left: -250px;
     transition: all 0.3s ease-in-out;
     @media only screen and (max-width: 767px) {
       position:absolute;
@@ -213,6 +223,7 @@ app-dropdown-update-account {
       display: flex;
       transform: rotate(90deg);
       left: 115px;
+      margin-left: -250px;
       width: 300px;
       position: absolute;
       z-index:25;
@@ -240,6 +251,7 @@ app-dropdown-update-account {
       }
     }
     .sidebar {
+      display: none;
       position: relative;
       width: 256px;
       z-index: 90;
