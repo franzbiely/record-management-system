@@ -9,13 +9,13 @@
                         <span>Portfolio Risk Score</span>
                     </div>
                     <div class="box-body">
-                        <span class="risk-score">72</span>
-                        <div class="footer"><span>Capital Appreciation</span></div>
+                        <span class="risk-score">N/A</span>
+                        <div class="footer"><span>Target Risk Name</span></div>
                     </div>
                 </div>
                 <div class="top-items-container">
                     <div class="text-box-container">
-                        <input type="text" class="text-box" placeholder="Capital Appreciation - SA Portfolio">
+                        <input type="text" class="text-box" placeholder="Enter Portfolio Name">
                     </div>
                     <div class="dropdown-container"><app-dropdown></app-dropdown></div>
                     <div class="text-portfolio-group">
@@ -26,6 +26,7 @@
             </div>
             <div class="row-2">
                 <div class="left-section">
+                    <div class="section-overlay"></div>
                     <span class="graph-title">Target Asset Allocation:</span> 
                     <div class="graph-container"><img class="graph" src="../../../assets/component/allocation-detail/graph.PNG"></div>
                     <div class="table-container">
@@ -57,7 +58,7 @@
                     <app-quick-add></app-quick-add>
                     <div class="add-security-container">
                         <span>Add Security:</span>
-                        <input type="text" class="text-box" placeholder="SAVLX, SAFLX, SASLX">
+                        <input type="text" class="text-box" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
                     </div>
                     <div class="table-container">
                         <table>
@@ -69,25 +70,25 @@
                                 <th>&nbsp;</th>
                             </tr>
                             <tr>
-                                <td>SA Global Fixed Income Select</td>
-                                <td>SAFLX</td>
-                                <td>Global Short Bonds <i class="icon-dropdown"></i></td>
-                                <td><input type="text" class="allocation-text" placeholder="25%"> </td>
-                                <td><i class="icon-remove"></i></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>SA US Small Company Select</td>
-                                <td>SAFLX</td>
-                                <td>U.S. Small Neutral Stocks<i class="icon-dropdown"></i></td>
-                                <td><input type="text" class="allocation-text" placeholder="%"></td>
-                                <td><i class="icon-remove"></i></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>SA US Value Select</td>
-                                <td>SAFLX</td>
-                                <td>U.S. Large Value Stocks<i class="icon-dropdown"></i></td>
-                                <td><input type="text" class="allocation-text" placeholder="%"></td>
-                                <td><i class="icon-remove"></i></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
@@ -100,13 +101,12 @@
                                 <th>Total Allocation:</th>
                                 <th>&nbsp;</th>
                                 <th>&nbsp;</th>
-                                <th>25%</th>
+                                <th>(%)</th>
                                 <th>&nbsp;</th>
                             </tr>
                         </table>
                     </div>
                     <div class="bottom">
-                        <app-error-line></app-error-line>
                         <div class="btn-container">
                             <button class="btn-cancel">Cancel</button>
                             <button class="btn-save"><i class="icon-save"></i>Save</button>
