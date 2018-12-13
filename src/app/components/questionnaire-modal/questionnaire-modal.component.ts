@@ -30,7 +30,7 @@ export class QuestionnaireModalComponent implements OnInit {
     this.step = $step;
     console.log('question'+$step);
     var topPos = document.getElementById('question'+$step).offsetTop;
-    document.getElementById('body-container').scrollTop = topPos-10;
+    document.getElementById('body-container').scrollTop = topPos-90;
     document.getElementById('chartjs-tooltip').style.opacity = '0';
   }
   riskMoveStepTo($step) {
