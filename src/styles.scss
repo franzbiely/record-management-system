@@ -404,6 +404,7 @@ i:focus, button:focus, div:focus{
 #simulation-line-chart-tooltip {
     border-left: 1px dashed #aed68f;
     padding-left: 20px !important;
+    z-index: 99;
     * {
         box-sizing: border-box;
         line-height: 2;

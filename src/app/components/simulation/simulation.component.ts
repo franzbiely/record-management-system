@@ -154,7 +154,7 @@ export class SimulationComponent implements OnInit {
             tooltipEl.style.opacity = '1';
             tooltipEl.style.position = 'absolute';
             tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px';
-            tooltipEl.style.top = position.top + 88 + 'px';
+            tooltipEl.style.top = position.top + window.pageYOffset + 'px';
             tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
             tooltipEl.style.fontSize = tooltipModel.bodyFontSize + 'px';
             tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
