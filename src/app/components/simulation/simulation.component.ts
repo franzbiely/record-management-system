@@ -2,6 +2,8 @@ import { Component, OnInit, ElementRef, ViewChild, SimpleChanges } from '@angula
 import { DataService } from "../../services/data.service";
 import { Chart } from "chart.js";
 
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-simulation',
@@ -123,6 +125,43 @@ export class SimulationComponent implements OnInit {
           gridLines: { drawOnChartArea: false },
           ticks: { display: true }
         }]
+      },
+      tooltips: {
+        enabled: false,
+        custom: function( tooltipModel ){
+            var tooltipEl = document.getElementById('simulation-line-chart-tooltip');
+            var markup = '';
+            markup += '<div class="s-custom-tooltip">';
+                markup += '<span class="tri"></span><div class="year">Year: <strong>2030</strong></div>';
+                markup += '<div class="pb">Portfolio Balance - Accumulation: <strong>$2,300,000</strong></div>';
+                markup += '<div class="cu">Cone of Uncertainty: <strong>$1,200,000 - $3,000,000</strong></div>';
+            markup += '</div>';
+            if (!tooltipEl) {
+                tooltipEl = document.createElement('div');
+                tooltipEl.id = 'simulation-line-chart-tooltip';
+                tooltipEl.innerHTML = markup;
+                document.body.appendChild(tooltipEl);
+            }
+            if (tooltipModel.opacity === 0) {
+                tooltipEl.style.opacity = '0';
+                return;
+            }
+            tooltipEl.classList.remove('above', 'below', 'no-transform');
+            if (tooltipModel.yAlign) { tooltipEl.classList.add(tooltipModel.yAlign); } 
+            else { tooltipEl.classList.add('no-transform'); }
+            function getBody(bodyItem) { return bodyItem.lines; }
+            var position = this._chart.canvas.getBoundingClientRect();
+            tooltipEl.style.opacity = '1';
+            tooltipEl.style.position = 'absolute';
+            tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px';
+            tooltipEl.style.top = position.top + 88 + 'px';
+            tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
+            tooltipEl.style.fontSize = tooltipModel.bodyFontSize + 'px';
+            tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
+            tooltipEl.style.padding = tooltipModel.yPadding + 'px ' + tooltipModel.xPadding + 'px';
+            tooltipEl.style.pointerEvents = 'none';
+            tooltipEl.style.height = position.height - 47 + 'px';
+        }
       }
     }
     
@@ -137,7 +176,13 @@ export class SimulationComponent implements OnInit {
             backgroundColor: '#67c072',
             borderColor: '#67c072',
             borderWidth: 0,
-            borderCapStyle: 'round'
+            borderCapStyle: 'round',
+            spanGaps: true,
+            pointRadius: 1.5,
+            pointHoverRadius: 5,
+            pointHoverBorderWidth: 2,
+            pointHoverBorderColor: '#67c072',
+            pointHoverBackgroundColor: 'white'
         }, {
             label: 'Portfolio Balance - Distribution',
             fill: false,
@@ -145,7 +190,13 @@ export class SimulationComponent implements OnInit {
             backgroundColor: '#f47a64',
             borderColor: '#f47a64',
             borderWidth: 0,
-            borderCapStyle: 'round'
+            borderCapStyle: 'round',
+            spanGaps: true,
+            pointRadius: 1.5,
+            pointHoverRadius: 5,
+            pointHoverBorderWidth: 2,
+            pointHoverBorderColor: '#f47a64',
+            pointHoverBackgroundColor: 'white'
         }, {
           backgroundColor: 'rgba(229, 244, 250, 0.8)',
           borderColor: 'rgba(229, 244, 250, 0)',
@@ -175,6 +226,12 @@ export class SimulationComponent implements OnInit {
           data: [1, 2, 3],
           label: ' Portfolio Balance - Accumulation',
           fill: false,
+          spanGaps: true,
+          pointRadius: 1.5,
+          pointHoverRadius: 5,
+          pointHoverBorderWidth: 2,
+          pointHoverBorderColor: '#c5c5c5',
+          pointHoverBackgroundColor: 'white'
         },
         {
           backgroundColor: '#f47a64',
@@ -184,6 +241,12 @@ export class SimulationComponent implements OnInit {
           data: [1, 2, 3, 4, 5, 5.5, 6, 7],
           label: ' Portfolio Balance - Distribution',
           fill: false,
+          spanGaps: true,
+          pointRadius: 1.5,
+          pointHoverRadius: 5,
+          pointHoverBorderWidth: 2,
+          pointHoverBorderColor: '#f47a64',
+          pointHoverBackgroundColor: 'white'
         },
         {
           backgroundColor: 'rgba(229, 244, 250, 0.8)',

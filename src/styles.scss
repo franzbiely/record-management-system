@@ -381,21 +381,76 @@ i:focus, button:focus, div:focus{
         }
     }
 }
-#chartjs-tooltip * {
-    box-sizing: border-box;
-    line-height: 2;
+#chartjs-tooltip {
+    * {
+        box-sizing: border-box;
+        line-height: 2;
+    }
+    .tri {
+        position:absolute;
+        left:-10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12.5px 15px 12.5px 0;
+        border-color: transparent #ffffff transparent transparent;
+    }
+    .custom-tooltip {
+        padding: 20px;
+        color:red;
+        font-family: 'Montserrat', sans-serif;
+    }
 }
-.tri {
-    position:absolute;
-    left:-10px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12.5px 15px 12.5px 0;
-    border-color: transparent #ffffff transparent transparent;
-}
-.custom-tooltip {
-    padding: 20px;
-    color:red;
-    font-family: 'Montserrat', sans-serif;
+#simulation-line-chart-tooltip {
+    border-left: 1px dashed #aed68f;
+    padding-left: 20px !important;
+    * {
+        box-sizing: border-box;
+        line-height: 2;
+    }
+    .tri {
+        position:absolute;
+        left:-12px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12.5px 15px 12.5px 0;
+        border-color: transparent #ffffff transparent transparent;
+    }
+    .s-custom-tooltip {
+        position: relative;
+        color: #414042;
+        padding: 15px 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size:10px;
+        background: #fff;
+        box-shadow: 0 0 34px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .year {font-size:12px;}
+    .pb {
+        display: flex;
+        align-items: center;
+        &:before {
+            content:' ';
+            width: 10px;
+            height:10px;
+            position:relative;
+            background: #67c072;
+            float: left;
+            border-radius: 100%;
+            margin-right: 7px;
+        }
+    }
+    .cu {
+        display: flex;
+        align-items: center;
+        &:before {
+            margin-left: -4px;
+            content: url("./assets/cone-icon.jpg");
+            width: 20px;
+            height: 20px;
+            position:relative;
+        }
+    }
 }
