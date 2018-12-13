@@ -59,7 +59,7 @@
     <div class="rpp-bookmarks">
         <div class="bookmarks-header"><span>Bookmarks</span></div><!-- .bookmarks-header -->
         <div class="bookmarks-content">
-            <ul>
+            <ul [sortablejs]="bookmarks">
                 <li>
                     <a (click)="toggleBookmark($event)">Proposal</a> <span class="drag"></span>
                     <ul>

@@ -15,6 +15,12 @@ export class PrintPreviewComponent implements OnInit {
     sendDocumentModal : boolean = false;
     sendDocStatusModal : boolean = false;
 
+    bookmarks = [
+        'Proposal',
+        'GAP Analysis',
+        'Investment Policy Statement',
+        'Portfolio Allocation Statement'
+    ];
     ngOnInit() {
         this.modalStatus.sendDocument.subscribe(value => this.sendDocumentModal = value);
         this.modalStatus.sendDocumentStatus.subscribe(value => this.sendDocStatusModal = value);
