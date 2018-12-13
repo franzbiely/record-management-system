@@ -58,6 +58,9 @@ export class SimulationComponent implements OnInit {
       plugins: {
           strokeShadow: {},
           datalabels: { display: false }
+      },
+      tooltips: {
+        enabled: true
       }
     }
     const responsive_options = { responsive : true, maintainAspectRatio: false }
