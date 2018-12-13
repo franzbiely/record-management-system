@@ -13,8 +13,8 @@ $secondaryfont: "museo-sans";
     justify-content: center;
   }
   form{
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
   }
   .information-box {
     position: absolute;
@@ -402,7 +402,6 @@ select {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.9px;
-  color: #1598cb;
   text-transform: uppercase;
 }
 .btn-upload {
