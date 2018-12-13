@@ -11,11 +11,18 @@ export class PortfolioComponent implements OnInit {
 	viewPortfolioModal : boolean = false;
   portfolioPopType : string|'view'|'edit' = 'view';
   dropdown_active : boolean = false;
-  constructor(private modalStatus: ModalStatusService, private data: DataService) { }
+  btnNext : boolean = false;
+
+  constructor(private modalStatus: ModalStatusService, private data: DataService) {
+
+  }
 
   ngOnInit() {
   	this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
     this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
+    this.data.proposal_show_btnNext.subscribe(value => this.btnNext = value);
+    // this.data.SET_proposalSteps(2);
+    // this.data.SET_proposal_show_btnNext(false);
   }
   viewEventReciever() {
     this.data.SET_portfolioPopupType('view');
@@ -26,6 +33,9 @@ export class PortfolioComponent implements OnInit {
     this.data.SET_portfolioPopupType('edit');
     this.modalStatus.SET_viewPortfolio(true);
     window.scroll(0,0);
+  }
+  selectRow() {
+    this.data.SET_proposal_show_btnNext(true);
   }
   set_dropdown_active(val) {
     this.dropdown_active = val;

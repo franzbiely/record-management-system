@@ -6,7 +6,7 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 67%, rgba(255, 255, 255, 0.86) 75%, rgba(255, 255, 255, 0.92) 84%, rgba(255, 255, 255, 0.96) 93%, #ffffff);
   width: 100%;
   padding: 10px;
   &.block {

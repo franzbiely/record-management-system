@@ -35,6 +35,11 @@ export class DataService {
 	  	this.portfolioPopupTypeSource.next(value);
 	}
 
+	private proposalStepsSource = new BehaviorSubject<number>(0);
+	public proposalSteps = this.proposalStepsSource.asObservable();
+	SET_proposalSteps(value: number) {
+	  	this.proposalStepsSource.next(value);
+	}
 
   constructor() { }
 }

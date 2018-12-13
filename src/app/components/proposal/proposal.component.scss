@@ -368,7 +368,13 @@
             display:flex;
             }
         }
-    }      
+    }   
+    app-cancel-save {
+        display: none;
+        &.show {
+            display: inherit;
+        }
+    }   
 }
 
 

@@ -31,15 +31,16 @@ export class RiskAssessmentComponent implements OnInit {
   openQuestionnaire() {
     this.modalStatus.toggleQuestionnaire(true);
   }
-  constructor(private data: DataService, private modalStatus: ModalStatusService) { }
+  constructor(private data: DataService, private modalStatus: ModalStatusService) { 
+    
+  }
 
   ngOnInit() {
     this.data.proposal_show_btnNext.subscribe(value => this.btnNext = value);
     this.data.proposal_risk_step.subscribe(value => this.step = value);
     this.modalStatus.riskSendForm.subscribe(value => this.riskSendFormModal = value);
     this.modalStatus.questionnaire.subscribe(value => this.questionsModal = value)
+    // this.data.SET_proposalSteps(1);
   }
-
-
-
+  
 }

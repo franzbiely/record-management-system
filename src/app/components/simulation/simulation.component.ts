@@ -31,12 +31,16 @@ export class SimulationComponent implements OnInit {
   pieb_chart_mobile: any;
 
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService) { 
+
+  }
   onResize(event) {
     
   }
   ngOnInit() {
     this.data.simulationGoal.subscribe(value => this.goalType = value);
+    // this.data.SET_proposalSteps(3);
+    // this.data.SET_proposal_show_btnNext(true);
   }
 
   ngAfterViewInit() {

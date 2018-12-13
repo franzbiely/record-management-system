@@ -36,7 +36,7 @@
    
 <div class="container">
   <div class="box">  
-    <mat-tab-group [selectedIndex]="currentPage">
+    <mat-tab-group (selectedTabChange)="changeTab($event)" [selectedIndex]="currentPage">
         <mat-tab>
           <ng-template mat-tab-label>
             <span class="tab-web">1. Account</span> <span class="tab-mobile">1</span>
@@ -70,6 +70,6 @@
     </mat-tab-group>
     
   </div>
-  <app-cancel-save *ngIf="showNext" (saveEvent)="nextReceiver($event)" [noCancel]="true" [primaryLabel]="'Next'"></app-cancel-save>
+  <app-cancel-save [ngClass]="{'show' : showNext}" (saveEvent)="nextReceiver($event)" [noCancel]="true" [primaryLabel]="'Next'"></app-cancel-save>
 </div>
 
