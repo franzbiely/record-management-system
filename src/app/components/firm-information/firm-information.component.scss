@@ -8,7 +8,11 @@ $secondaryfont: "museo-sans";
   padding: $padding 0px 0px $padding-left;
   @media only screen and (max-width: 767px){
     padding:0px;
-    margin-top: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  form{
     display: flex;
     justify-content: center;
   }
@@ -23,6 +27,7 @@ $secondaryfont: "museo-sans";
     margin-bottom:200px;
     @media only screen and (max-width: 767px){
       width: 95%;
+      position: initial;
     }
   }
   .row-padding {
@@ -41,6 +46,9 @@ $secondaryfont: "museo-sans";
       }
     .text-container{
       display: flex;
+      @media only screen and (max-width: 767px){
+        flex-direction: column;
+      }
       div{
         display: flex;
         input[type=text]{
@@ -60,6 +68,14 @@ $secondaryfont: "museo-sans";
       }
       div:first-child{
         padding-right: 20px;
+        @media only screen and (max-width: 767px){
+          padding-right: 0px;
+        }
+      }
+      div:last-child{
+        @media only screen and (max-width: 767px){
+          margin-top: 10px;
+        }
       }
     }
     .disclaimer-container{

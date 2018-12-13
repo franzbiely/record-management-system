@@ -7,7 +7,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 67%, rgba(255, 255, 255, 0.86) 75%, rgba(255, 255, 255, 0.92) 84%, rgba(255, 255, 255, 0.96) 93%, #ffffff);
   padding: 10px;
   @media only screen and (max-width: 767px){
     bottom: 65px;
@@ -62,7 +62,7 @@
       z-index: 1000;
       padding: 20px 60px;
       text-align: right;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.4), white);
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 67%, rgba(255, 255, 255, 0.86) 75%, rgba(255, 255, 255, 0.92) 84%, rgba(255, 255, 255, 0.96) 93%, #ffffff);
       @media only screen and (max-width: 767px) {
         position: initial;
         display: flex;

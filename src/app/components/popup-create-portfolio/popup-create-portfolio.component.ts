@@ -104,7 +104,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		Object.entries(this.allocation_data).forEach(([key, val]) => {
 			let c = 0;
 			Object.entries(val.data).forEach(([k,v]) =>{
-				console.log(v.value)
+				console.log(v.value);
 				c += parseInt(v.value);
 			})
 			this.allocation_data[key].value = c;
