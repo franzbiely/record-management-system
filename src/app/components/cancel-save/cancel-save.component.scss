@@ -6,9 +6,12 @@
   position: fixed;
   left: 0;
   bottom: 0;
+  right: 0;
   background-color: #ffffff;
-  width: 100%;
   padding: 10px;
+  @media only screen and (max-width: 767px){
+    bottom: 65px;
+  }
   &.block {
     position: relative;
     background: transparent;
@@ -26,6 +29,10 @@
     display: flex;
     justify-content: flex-end;
     padding:10px 50px;
+    @media only screen and (max-width: 767px){
+      padding: 0px;
+      display: initial;
+    }
     button {
       font-family: 'Montserrat', sans-serif;
       font-size: 12px;
@@ -50,11 +57,12 @@
     .rpp-actions {
       position: fixed;
       bottom: 0;
+      left:0;
+      right: 0;
       z-index: 1000;
-      width: 100%;
-      padding: 60px 60px;
+      padding: 20px 60px;
       text-align: right;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 67%, rgba(255, 255, 255, 0.86) 75%, rgba(255, 255, 255, 0.92) 84%, rgba(255, 255, 255, 0.96) 93%, #ffffff);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.4), white);
       @media only screen and (max-width: 767px) {
         position: initial;
         display: flex;
@@ -87,11 +95,11 @@
           @media only screen and (max-width: 767px) {
             padding-left:0;
           }
-          &:before {
+          &.desktop-only:before{
             display: inline-block;
             position: absolute;
             top: 50%;
-            left: 30px;
+            left: 20px;
             content: '';
             width: 20px;
             height: 20px;
@@ -99,6 +107,12 @@
             background-repeat: no-repeat;
             background-image: url(../../../assets/prints/save-gray.svg);
             transform: translateY(-50%);
+          }
+          .icon-save{
+            content: url(../../../assets/prints/save-gray.svg);
+            width: 20px;
+            height: 20px;
+            padding-right: 6px;
           }
         }
         &.is-send {
@@ -111,18 +125,24 @@
           @media only screen and (max-width: 767px) {
             padding-left:0;
           }
-          &:before {
+          &.desktop-only:before{
             display: inline-block;
             position: absolute;
             top: 50%;
-            left: 16px;
+            left: 20px;
             content: '';
-            width: 18px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             background-size: contain;
             background-repeat: no-repeat;
-            background-image: url(../../../assets/prints/send-white.svg);
+            background-image: url(../../../assets/component/document-preview/send.png);
             transform: translateY(-50%);
+          }
+          .icon-send{
+            content: url(../../../assets/prints/send-white.svg);
+            width: 20px;
+            height: 20px;
+            padding-right: 6px;
           }
         }
 

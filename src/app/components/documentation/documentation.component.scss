@@ -44,8 +44,7 @@
         display:none;
     }
     &.expanded {
-        flex-direction: column;  
-        
+        flex-direction: column; 
         .right-section-container {
             display:initial;
             position:relative;
@@ -781,7 +780,6 @@
             box-shadow: -7px 1px 4px 0 rgba(65, 64, 66, 0.15);
             background-color:#fafbfc;
             font-weight: 600;
-
             @media only screen and (max-width:767px){
                 width: 100%;    
                 .right-section-container {
