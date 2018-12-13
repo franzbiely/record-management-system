@@ -9,13 +9,13 @@
                         <span>Portfolio Risk Score</span>
                     </div>
                     <div class="box-body">
-                        <span class="risk-score">72</span>
-                        <div class="footer"><span>Capital Appreciation</span></div>
+                        <span class="risk-score">N/A</span>
+                        <div class="footer"><span>Target Risk Name</span></div>
                     </div>
                 </div>
                 <div class="top-items-container">
                     <div class="text-box-container">
-                        <input type="text" class="text-box" placeholder="Capital Appreciation - SA Portfolio">
+                        <input type="text" class="text-box" placeholder="Enter Portfolio Name">
                     </div>
                     <div class="dropdown-container"><app-dropdown></app-dropdown></div>
                     <div class="text-portfolio-group">
@@ -26,6 +26,7 @@
             </div>
             <div class="row-2">
                 <div class="left-section">
+                    <div class="section-overlay"></div>
                     <span class="graph-title">Target Asset Allocation:</span> 
                     <div class="graph-container">
                         <canvas class="graph" height="200" id="graph" #graph></canvas>
@@ -62,7 +63,7 @@
                     </div>
                     <div class="add-security-container" *ngIf="portfolioPopType==='edit'">
                         <span>Add Security:</span>
-                        <input type="text" class="text-box" placeholder="SAVLX, SAFLX, SASLX">
+                        <input type="text" class="text-box" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
                     </div>
                     <div class="table-container">
                         <table>
@@ -116,7 +117,6 @@
                         </table>
                     </div>
                     <div class="bottom">
-                        <app-error-line></app-error-line>
                         <div class="btn-container">
                             <button class="btn-cancel" (click)="closeMe()">Cancel</button>
                             <button class="btn-save" (click)="closeMe()"><i class="icon-save"></i>Save</button>
