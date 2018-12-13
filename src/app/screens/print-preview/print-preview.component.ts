@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ModalStatusService } from "../../services/modal-status.service"
+import { DataService } from "../../services/data.service"
 
 declare var jquery:any;
 declare var $ :any;
@@ -10,7 +11,7 @@ declare var $ :any;
     styleUrls: ["./print-preview.component.scss"]
 })
 export class PrintPreviewComponent implements OnInit {
-    constructor(private modalStatus: ModalStatusService) { }
+    constructor(private modalStatus: ModalStatusService, private data: DataService) { }
     sendDocuments = false;
     sendDocumentModal : boolean = false;
     sendDocStatusModal : boolean = false;
@@ -107,6 +108,7 @@ export class PrintPreviewComponent implements OnInit {
     }
 
     to_sendDocs_status() {
+        this.data.SET_householdHaveData(true);
         this.modalStatus.SET_sendDocumentStatus(true);
         this.modalStatus.SET_sendDocument(false);
     }

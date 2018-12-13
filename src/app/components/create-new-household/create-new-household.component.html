@@ -83,7 +83,7 @@
       </div>
 
       <div class="box-proposal">
-        <div class="overlay"></div>
+        <div class="overlay" *ngIf="!hholdHaveData"></div>
         <div class="box-header">
             <h3>Proposals</h3>
             <div class="edit-information">
@@ -106,9 +106,20 @@
                 <th>Action</th>
               </tr>
             </thead>
+            <tbody *ngIf="hholdHaveData">
+              <tr>
+                <td><i class="icon-chevron-right"></i> Candelaria Household</td>
+                <td>3456</td>
+                <td>$800,000.00</td>
+                <td><i class="icon-proposal"></i> Sent Proposal</td>
+                <td><span>7/31/2018 | 3:30 PM</span><strong>By: Jennica Fernen</strong></td>
+                <td><span>7/31/2018 | 3:30 PM</span><strong>By: Jennica Fernen</strong></td>
+                <td><app-dropdown-actions-listview></app-dropdown-actions-listview></td>
+              </tr>
+            </tbody>
           </table>
         </div>
-        <div class="fade container-add"> 
+        <div class="fade container-add" *ngIf="!hholdHaveData"> 
           <a>
             <div class="flex-block" (click)="openProposalForm=true">
             <div><i class="icon-circle-add"></i></div>

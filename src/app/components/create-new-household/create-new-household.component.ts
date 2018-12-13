@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from "../../services/data.service"
 
 @Component({
   selector: 'app-create-new-household',
@@ -8,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class CreateNewHouseholdComponent implements OnInit {
   @Output() closeNewProposalFormEvent = new EventEmitter<boolean>();
-
 	openHouseHoldModal: boolean = false;
   openProposalForm: boolean = false;
+  hholdHaveData: boolean;
 
 	householdModal($event) {
 		this.openHouseHoldModal = $event;
@@ -22,8 +23,9 @@ export class CreateNewHouseholdComponent implements OnInit {
   nextReceiver() {
     this.router.navigateByUrl('/proposal');
   }
-  constructor(private router: Router) { }
+  constructor(private router: Router, private data: DataService) { }
 
   ngOnInit() {
+    this.data.householdHaveData.subscribe(value => this.hholdHaveData = value);
   }
 }

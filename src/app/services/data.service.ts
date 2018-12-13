@@ -41,5 +41,11 @@ export class DataService {
 	  	this.proposalStepsSource.next(value);
 	}
 
+	private householdHaveDataSource = new BehaviorSubject<boolean>(false);
+	public householdHaveData = this.householdHaveDataSource.asObservable();
+	SET_householdHaveData(value: boolean) {
+	  	this.householdHaveDataSource.next(value);
+	}
+
   constructor() { }
 }
