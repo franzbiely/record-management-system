@@ -15,6 +15,18 @@ export class DocumentationComponent implements OnInit {
   document_type = 'prop';
   isChecked = false;
   isIndeterminate = false;
+
+  documents = [
+    'Proposal',
+    'GAP Analysis',
+    'Investment Policy Statement',
+    'Portfolio Allocation Statement',
+    'Proposal Assumptions Summary',
+    'Account Opening Checklist',
+    'Risk Assessment Questionnaire',
+  ];
+
+
   constructor(private router: Router, private renderer: Renderer) { }
 
   ngOnInit() {
@@ -34,7 +46,36 @@ export class DocumentationComponent implements OnInit {
       $(event.target).parent().addClass('expanded');
       // this.renderer.setElementClass(event.target, 'expanded', true);
       this.documentIsOpen = true;
-      this.document_type = type;
+      switch(type) {
+        case 'Proposal' : {
+          this.document_type = 'prop';
+          break;
+        }
+        case 'GAP Analysis' : {
+          this.document_type = 'gap';
+          break;
+        }
+        case 'Investment Policy Statement' : {
+          this.document_type = 'inv';
+          break;
+        }
+        case 'Portfolio Allocation Statement' : {
+          this.document_type = 'port';
+          break;
+        }
+        case 'Proposal Assumptions Summary' : {
+          this.document_type = 'pas';
+          break;
+        }
+        case 'Account Opening Checklist' : {
+          this.document_type = 'aoc';
+          break;
+        }
+        case 'Risk Assessment Questionnaire' : {
+          this.document_type = 'raq';
+          break;
+        }
+      }
 
     //   //mobile
       $('.btn-text .right-section-container').remove();

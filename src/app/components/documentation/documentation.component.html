@@ -44,8 +44,21 @@
                         </div>
                     </div>
                     <div class="document-container-child">
-                        <div class="btn-group flex-1">
-                            <div class="btn-text">
+                        <div class="btn-group flex-1" [sortablejs]="documents">
+                            
+                            <div class="btn-text" *ngFor="let item of documents">
+                                <div class="btc" (click)="openDocument($event, item)">
+                                    <span>{{ item }}</span>
+                                    <div class="item-right-side">
+                                        <mat-checkbox></mat-checkbox>
+                                        <i class="btn-icon-action"></i>
+                                        <span class="view-extended"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <!-- <div class="btn-text">
                                 <div class="btc" (click)="openDocument($event, 'prop')">
                                     <span>Proposal</span>
                                     <div class="item-right-side">
@@ -115,7 +128,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!---------PROPOSAL-OPTIONS-START-------------------------
                             -->
                         <div class="right-section-container">
