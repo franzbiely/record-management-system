@@ -93,6 +93,18 @@ $secondaryfont: "museo-sans", calibri;
                         border-radius: 6px 6px 0 0;
                         border-bottom: 0;
                     }
+                    .icon-dropdown{
+                        width: 12px;
+                        content: url("../../../assets/arrow-down-gray.svg");
+                    }
+                    &[open]{
+                        .icon-dropdown{
+                            width: 12px;
+                            content: url("../../../assets/arrow-up-gray.svg");
+                        }
+                    }
+
+                    
 
                     summary{
                         outline: none;
