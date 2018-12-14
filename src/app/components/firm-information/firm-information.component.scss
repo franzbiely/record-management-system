@@ -13,8 +13,10 @@ $secondaryfont: "museo-sans";
     justify-content: center;
   }
   form{
-    // display: flex;
-    // justify-content: center;
+    @media only screen and (max-width: 767px){
+      display: flex;
+      justify-content: center;
+    }
   }
   .information-box {
     position: absolute;
@@ -406,6 +408,7 @@ select {
 }
 .btn-upload {
   border:1px solid #1598cb;
+  color: #1598cb !important;
   @media only screen and (max-width: 767px){
     margin-top:10px;
   }
@@ -468,7 +471,11 @@ select {
 .input-placeholder input:valid+.placeholder {
   display: none;
 }
-
+.icon-save{
+  width: 20px;
+  height: 20px;
+  content: url("../../../assets/icons/save-blue.svg");
+}
 .placeholder {
   position: absolute;
   pointer-events: none;

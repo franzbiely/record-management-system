@@ -62,12 +62,15 @@
                 }
                 .message-box{
                     font-size: 12px;
-                    padding: 0px 15px;
+                    padding: 10px 15px;
                     border: 0.5px solid #e7e6e6;
                     border-top: none;
                     height: 170px;
-                    overflow-y: auto;
                     border-radius: 0px 0px 6px 6px;
+                    .message-box-content{
+                        overflow-y: auto;
+                        height: 165px;
+                    }
                     a {
                         text-decoration: none;
                         color: black;
@@ -113,6 +116,9 @@
                     .textbox-container{
                         margin-top: 20px;
                         color:#c5c5c5;
+                    }
+                    .message-box{
+                        height: 184px !important;
                     }
                 }
             }

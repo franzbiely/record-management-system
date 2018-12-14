@@ -92,6 +92,7 @@ a {
 
   .mat-radio-container .mat-radio-outer-circle {
     border: solid 0.5px #c5c5c5;
+    background-color: white;
   }
 
   .mat-radio-button.mat-accent .mat-radio-ripple{
@@ -215,11 +216,12 @@ button {
     padding-bottom: 0;
     &:hover {
         border-color:#808284;
-        box-shadow: 0 0 20px 0 rgba(0,0,0,0.2) !important;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
     }
     &.primary {
         background:#1598cb;
         color:#fff;
+        border: none;
         * {
            color:#fff; 
         }

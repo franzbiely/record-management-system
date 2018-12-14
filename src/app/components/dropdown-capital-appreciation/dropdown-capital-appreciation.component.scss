@@ -1,0 +1,100 @@
+.btn-container{
+    display: flex;
+    width:100%;
+}
+.space-left{
+    padding-left: 1.5em;
+    @media only screen and (max-width: 767px){
+        padding-left: 0px;
+    }
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.dropdown{
+    position: relative;
+}
+.btn-cap-app {
+    margin: 0px;
+    min-width: 220px;
+    height: 47px;
+    padding: 0px 20px;
+    border: solid 0.5px #bdbdbd; 
+    background: white;
+    border-radius: 6px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    @media only screen and (max-width:767px){
+        margin-top: 8px;
+    }
+    div {
+        display: flex;
+        align-items: center;
+    }
+    .icon-dropdown{
+        content: url(../../../assets/component/portfolio/arrow-gray.png);
+        position: absolute;
+        right: 15px;
+    }
+    
+}
+.p-text-small-blue{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 10px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #1598cb;
+}
+.p-text-small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #414042;
+}
+.dropdown.active .dropdown-content{
+    display:inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display:none;
+    background-color: white;
+    top:48px;
+    z-index:10;
+    min-width: 220px;
+    border-radius: 6px;
+    box-shadow: 0 4px 5px 0 rgba(64, 64, 65, 0.2);
+    .dropdown-item{
+        cursor:pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 10px 20px;
+        &.disabled {
+            cursor: not-allowed;
+            *{
+                color: #e7e6e6;
+            }
+        }
+    }
+    .dropdown-item:not(.disabled):hover{
+        background-color: #e7e6e6;
+    }
+    .dropdown-item:not(:last-child){
+        border-bottom: 1px #ddd solid;
+    }
+    .dropdown-item:first-child{
+        border-radius: 6px 6px 0px 0px;
+    }
+    .dropdown-item:last-child{
+        border-radius: 0px 0px 6px 6px;
+    }
+}

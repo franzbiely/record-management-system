@@ -21,20 +21,7 @@
             <div class="target-text vertical-middle">
 
             <span class="p-text-small uppercase">Target Risk Option:</span></div>
-            <div class="btn-container space-left dropdown" (click)="dropdown_active=!dropdown_active" [ngClass]="{'active' : dropdown_active}">
-                <button class="btn-cap-app">
-                    <div><span class="p-text-small"> Capital Appreciation: </span></div> 
-                    <div><span class="uppercase p-text-small-blue"> Risk score range:<strong> 72-86 </strong> </span></div> 
-                    <i class="icon-dropdown"></i>
-                </button>
-                <div class="dropdown-content">
-                    <div class="dropdown-item disabled"><span class="p-text-small">Moderate Growth</span><span class="uppercase p-text-small-blue">Risk score range: <strong>87-100</strong></span></div>
-                    <div class="dropdown-item disabled"><span class="p-text-small">Moderate Growth</span><span class="uppercase p-text-small-blue">Risk score range: <strong>87-100</strong></span></div>
-                    <div class="dropdown-item"><span class="p-text-small">Moderate Growth</span><span class="uppercase p-text-small-blue">Risk score range: <strong>87-100</strong></span></div>
-                    <div class="dropdown-item"><span class="p-text-small">Moderate Growth</span><span class="uppercase p-text-small-blue">Risk score range: <strong>87-100</strong></span></div>
-                    <div class="dropdown-item"><span class="p-text-small">Moderate Growth</span><span class="uppercase p-text-small-blue">Risk score range: <strong>87-100</strong></span></div>
-                </div>
-            </div>
+            <app-dropdown-capital-appreciation></app-dropdown-capital-appreciation>
         </div>
     </div>
     </div>
@@ -66,9 +53,9 @@
                 <thead>
                     <tr class="last">
                     <th class="align-center">Select</th>
-                    <th class="align-left"><div class="vertical-middle">Portfolio Name <i class="material-icons">expand_more</i></div></th>
-                    <th class="align-right"><span class="vertical-middle">Target Risk Score <i class="material-icons">expand_more</i></span></th>
-                    <th class="align-left" ><div class="vertical-middle">Portfolio Group <i class="material-icons">expand_more</i></div></th>
+                    <th class="align-left"><div class="vertical-middle">Portfolio Name <i class="icon-menu"></i></div></th>
+                    <th class="align-right"><span class="vertical-middle">Target Risk Score <i class="icon-menu"></i></span></th>
+                    <th class="align-left" ><div class="vertical-middle">Portfolio Group <i class="icon-menu"></i></div></th>
                     <th class="align-center">Actions</th>
                 </thead>
                 <tbody>

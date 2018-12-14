@@ -6,8 +6,8 @@
 	      	<i class="dropdown-icon"></i>
 	    </div>
       	<div class="item" *ngIf="type=='proposal'">
-		  	<i class="material-icons">send</i>
-		  	<span class="title">Sent Proposal</span>
+		  	<i class="icon-progress"></i>
+		  	<span class="title">In Progress</span>
 		  	<i class="dropdown-icon"></i>
 		</div>
       </summary>
@@ -16,15 +16,11 @@
       	<span class="title">Archive</span>
       </div>
 	  <div class="item" *ngIf="type=='proposal'">
-	  	<i class="material-icons">hourglass_empty</i>
-	  	<span class="title">In Progress</span>
-	  </div>
-	  <div class="item" *ngIf="type=='proposal'">
-	  	<i class="material-icons">file_copy</i>
+	  	<i class="icon-questionnaire"></i>
 	  	<span class="title">Sent Questionnaire</span>
 	  </div>
 	  <div class="item" *ngIf="type=='proposal'">
-	  	<i class="material-icons">lock</i>
+	  	<i class="icon-implemented"></i>
 	  	<span class="title">Implemented</span>
 	  </div>
 </details>

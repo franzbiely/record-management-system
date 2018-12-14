@@ -269,6 +269,11 @@
                             
                         }
                     }
+                    .icon-delete{
+                        width: 15px;
+                        height: 15px;
+                        content: url("../../../assets/icons/delete-gray.svg");
+                    }
                     
                 }
             
@@ -287,9 +292,9 @@
                             flex-direction: column;
                         }
                         .icon-add{
-                            content: url("../../../assets/component/household-member/add-blue.png");
+                            content: url("../../../assets/icons/add.svg");
                             width:20px;
-                            padding-right: 10px;
+                            padding-right: 7px;
                         }
                         span{
                             margin-top: 1px;
@@ -414,6 +419,7 @@
   }
   .icon{
       cursor:pointer;
+      padding-left: 10px;
   }
   .placeholder span {
     font-family: 'Montserrat', sans-serif;

@@ -22,9 +22,10 @@ header {
     // flex-wrap: wrap;
     -ms-flex-align: center;
     align-items: center;
-    
     box-sizing: border-box;
-
+    @media only screen and (max-width: 767px){
+        padding-right: 5px;
+    }
     *,
     *::before,
     *::after {
@@ -52,6 +53,14 @@ header {
             content:' ';
             background: #fff;
             opacity: 0.8;
+            @media only screen and (max-width: 767px){
+                width: auto;
+                height:auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right:0;
+            }
         }
     }
     .logo-holder{
@@ -77,10 +86,16 @@ header {
         display: flex;
         padding-right:20px;
         align-items: center;
+        @media only screen and (max-width: 767px){
+            padding-right: 15px;
+        }
     }
     .left-section{
         flex: 1;
         padding-left: 20px;
+        @media only screen and (max-width: 767px){
+            padding: 0px;
+        }
     }
 }
 

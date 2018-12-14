@@ -41,6 +41,9 @@ $secondaryfont: "museo-sans", calibri;
     .dropdown-icon {
     	content: url('../../../assets/arrow-gray.svg');
     }
+    .icon-progress{
+      content: url("../../../assets/icons/status-in-progress-gray.svg");
+    }
 
   }
   .icon-container {
@@ -56,6 +59,18 @@ $secondaryfont: "museo-sans", calibri;
     height: 12px;
     object-fit: contain;
     content: url('../../../assets/component/header/state-active-white@3x.png');
+  }
+  .icon-sent{
+    content: url("../../../assets/icons/status-sent-gray.svg");
+  }
+  .icon-progress{
+    content: url("../../../assets/icons/status-in-progress-white.svg");
+  }
+  .icon-questionnaire{
+    content: url("../../../assets/icons/status-sent-questionnaire-gray.svg");
+  }
+  .icon-implemented{
+    content: url("../../../assets/icons/status-implemented-gray.svg");
   }
   summary {
     display: flex;
@@ -91,7 +106,8 @@ $secondaryfont: "museo-sans", calibri;
   	box-sizing: border-box;
   	display: flex;
   	position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     .material-icons {
       font-size:inherit;
     }

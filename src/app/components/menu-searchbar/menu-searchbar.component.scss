@@ -43,27 +43,26 @@ $secondaryfont: "museo-sans", calibri;
 		  line-height: 1;
 		  letter-spacing: normal;
 		  color: #ffffff;
-
-			span{
-	  	     position: relative;
-			 top: -6px;
+		  display: flex;
+		  align-items: center;
+			.strong{
+				font-weight: 900;
 			}
-
-			.circle-close{
-				display: inline-block;
-			    border-radius: 100%;
-			    padding: 2.5px;
-			    background-color: #ffffff;
-			    color: #1598cb;
-			    font-size: 1px;
-			    position: absolute;
-			    right: 20px;
-			    top: 20px;
-    			box-shadow: 1px 1px 2px #00000038;
-
-				.icon{
-					font-size: 10px;
-				}
+			> span{
+			   position: relative;
+			   padding-left: 12px;
+			}
+			.icon-search{
+				width:20px;
+				height:20px;
+				content: url("../../../assets/icons/search-white.svg");
+			}
+			.icon-exit{
+				position: absolute;
+				right: 10px;
+				width:20px;
+				height:20px;
+				content: url("../../../assets/icons/exit-white.svg");
 			}
 		}
     }

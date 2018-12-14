@@ -390,8 +390,25 @@ $textColor: #ffffff;
   font-weight: 300;
   font-style: normal;
   line-height: 1;
+  span {
+    text-transform: capitalize;
+  }
 }
-
+ .selected-dropdown{
+   td:nth-child(5){
+     span{
+       text-transform: capitalize;
+     }
+   }
+ }
+ .dropdown-tr{
+   td:nth-child(5){
+     .dropdown-item{
+       display: flex;
+       align-items: center;
+     }
+   }
+ } 
 .strong {
   font-weight: 600;
   text-transform: uppercase;
@@ -414,6 +431,11 @@ $textColor: #ffffff;
 
 .dropdown-tr {
   width: 100%;
+}
+.icon-implemented{
+  top:2px;
+  padding-right:5px;
+  content: url("../../../assets/icons/status-implemented-gray.svg");
 }
 .icon-check{
   top:2px;
@@ -501,4 +523,20 @@ tr.selected-dropdown, tr.dropdown-tr{
 }
 .vertical-align{
   display: flex;
+}
+.icon-add{
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+  content: url("../../../assets/icons/add-white.svg");
+}
+::ng-deep .list-view-container .active app-dropdown-actions-listview{
+  summary{
+    .icon-dropdown{
+      content: url(../../../assets/icons/expand-white.svg) !important;
+    }
+  }
+} 
+::ng-deep .list-view-container .active .icon-check{
+      content: url(../../../assets/component/listview/state-active-white.svg) !important;
 }

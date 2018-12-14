@@ -14,21 +14,23 @@ app-dropdown-update-account {
 }
 
 ::ng-deep .simulation-container .dropdown-update-account{
-  
+  background-color: transparent !important; 
   border: none !important;
+  details{
+    border: #74c2cf solid 1px;
+    border-radius: 6px;
+  }
   .item {
     display: flex;
     padding: 10px !important;
     font-weight: 300 !important;
-    border-top: 1px solid #eee !important;
-    
   }
-  .item:first-child {
-    border-top: none;
+  .item:last-child {
+    border: none;
   } 
   summary{
     text-transform: capitalize !important;
-    height: 32px !important;
+    height: auto !important;
     .item{
       font-weight: 200 !important;
       font-family: $primaryfont ;
@@ -278,7 +280,7 @@ app-dropdown-update-account {
           .slider-label {
             width: 100%;
             display: flex;
-            padding-right: 20px;
+            padding-right: 15px;
             justify-content: space-between;
             align-items: center;
             .label-text {
@@ -311,7 +313,6 @@ app-dropdown-update-account {
           margin-top: 10px;
           .radio-content {
             display: flex;
-            padding-right: 20px;
             width: 100%;
             justify-content: space-between;
             .radio-text {
@@ -353,8 +354,6 @@ app-dropdown-update-account {
           }
         }
         .dropdown-container {
-          border: #74c2cf solid 1px;
-          border-radius: 6px;
           width: 216px;
           margin-top: 10px;
           input[type=text] {
@@ -365,6 +364,8 @@ app-dropdown-update-account {
             border: none;
           }
           .dropdown-content {
+            border: #74c2cf solid 1px;
+            border-radius: 6px;
             display: flex;
             padding: 7px 15px;
             justify-content: space-between;
@@ -462,6 +463,8 @@ app-dropdown-update-account {
         canvas {
           margin-left: auto;
           margin-right: auto;
+          width: 100% !important;
+          height:auto !important;
           @media only screen and (max-width: 767px){
               width: 100% !important;
           }
@@ -1104,7 +1107,14 @@ app-dropdown-update-account {
 ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
   background-color: white;
 }
-
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+  height: 4px !important;
+  border-radius: 10px !important;
+}
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-background,
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  height: 100% !important;
+}
 .current_portfolio_chart_container {
   border-radius: 4.9px;
   box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
@@ -1287,4 +1297,15 @@ app-dropdown-update-account {
       }
     }
   }
+}
+.icon-menu{
+  width: 20px;
+  height: 20px;
+  content: url("../../../assets/icons/expand.svg");
+}
+.icon-show{
+  width: 11px;
+  height: 11px;
+  padding-left: 5px;
+  content: url("../../../assets/icons/view-gray.svg");
 }

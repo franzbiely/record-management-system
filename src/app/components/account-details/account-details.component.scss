@@ -319,6 +319,7 @@ app-add-security{
                         color:white;
                         text-transform: uppercase;
                         width: auto;
+                        border: none !important;
                         padding:0px 40px;
                     }
                     button:first-child{
@@ -336,4 +337,9 @@ app-add-security{
 .icon-delete{
     cursor: pointer;
     content: url("../../../assets/component/notification/exit-white.png")
+}
+.icon-expand{
+    content: url("../../../assets/icons/expand.svg");
+    width:20px;
+    height: 20px;
 }
