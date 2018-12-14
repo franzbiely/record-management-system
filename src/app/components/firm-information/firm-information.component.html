@@ -18,7 +18,7 @@
                 <hr class="full-width divider">
             </div>
             <div class="row-padding btn-browse-container">
-                <div class="btn-browse">
+                <div class="btn-browse dropzone" [dropzone]="config" (error)="onUploadError($event)" (success)="onUploadSuccess($event)">
                     <div id="browse-holder">
                         <div id="droppable">
                         </div>
@@ -130,9 +130,9 @@
     <div class="information-container">
         <div class="information-box flex" style="flex-direction: column;">
             <div class="row-padding btn-browse-container">
-                <div class="btn-browse">
+                <div class="btn-browse step-2 dropzone" [dropzone]="config" (error)="onUploadError($event)" (success)="onUploadSuccess2($event)">
                     <input type="text" formControlName="avatar" id="frmS2Avatar" [(ngModel)]="frmS2Avatar" required />
-                    <div id="browse-holder" (click)="frmS2Avatar.click()">
+                    <div id="browse-holder">
                         <div id="droppable" class="circle">
                             
                         </div>

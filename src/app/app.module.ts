@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SortablejsModule } from 'angular-sortablejs';
+import { DropzoneModule } from 'ngx-dropzone-wrapper';
+import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
+import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -120,6 +124,14 @@ import { PopupDocumentLanguageComponent } from './components/popup-document-lang
 import { PopupDocumentLanguageScreenComponent } from './screens/popup-document-language-screen/popup-document-language-screen.component';
 import { DropdownActionsListviewComponent } from './components/dropdown-actions-listview/dropdown-actions-listview.component';
 import { DropdownActionsPortfolioComponent } from './components/dropdown-actions-portfolio/dropdown-actions-portfolio.component'
+
+const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
+ // Change this to your upload POST address:
+  url: 'https://httpbin.org/post',
+  maxFilesize: 50,
+  acceptedFiles: 'image/*'
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -255,12 +267,16 @@ import { DropdownActionsPortfolioComponent } from './components/dropdown-actions
     ReactiveFormsModule,
     SortablejsModule.forRoot({
       animation: 200,
-    })
+    }),
+    DropzoneModule
   ],
   entryComponents: [
     GraphProposalsComponent
   ],
-  providers: [],
+  providers: [{
+    provide: DROPZONE_CONFIG,
+    useValue: DEFAULT_DROPZONE_CONFIG
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
