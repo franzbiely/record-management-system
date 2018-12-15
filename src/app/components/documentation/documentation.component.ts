@@ -15,6 +15,7 @@ export class DocumentationComponent implements OnInit {
   document_type = 'prop';
   isChecked = false;
   isIndeterminate = false;
+  expandedDocs: string;
 
   documents = [
     'Proposal',
@@ -37,14 +38,8 @@ export class DocumentationComponent implements OnInit {
   }
 
   openDocument(event: any, type) {
-    if ($(event.target).parent().hasClass('expanded')) {
-      this.documentIsOpen = false;
-      $('.btn-text').removeClass('expanded');
-    } else {
-      $('.btn-text').removeClass('expanded');
-      // console.log($(event.target))
-      $(event.target).parent().addClass('expanded');
-      // this.renderer.setElementClass(event.target, 'expanded', true);
+    if(event.checked) {
+      this.expandedDocs = type;
       this.documentIsOpen = true;
       switch(type) {
         case 'Proposal' : {
@@ -76,24 +71,23 @@ export class DocumentationComponent implements OnInit {
           break;
         }
       }
-
-    //   //mobile
+      //mobile
+      console.log($('#' + $(event)[0].source._uniqueId).closest('.btn-text'));
+      console.log($('#mat-checkbox-2').parent());
+      console.log($('#mat-checkbox-2').closest('.btn-text'));
+      // console.log($('#' + event[0].source._uniqueId));
       $('.btn-text .right-section-container').remove();
-      $('.right-section-container').clone().appendTo($(event.target).parent());
+      $('.right-section-container').clone().appendTo($('#' + $(event)[0].source._uniqueId).closest('.btn-text'));
     }
-    
-    // console.log($(event.target));
+    else {
+      this.documentIsOpen = false;
+      this.expandedDocs = '';
+    }
   }
 
   orientToggler(event: any) {
     $('.orient-container').removeClass('active');
     $(event.target).closest('.orient-container').addClass('active');
-    // if ($(event.target).closest('.orient-container').hasClass('active')) {
-    //   $('.orient-container').removeClass('active');
-    // } else {
-    //   $('.orient-container').removeClass('active');
-    //   this.renderer.setElementClass(event.target, 'active', true);
-    // }
   }
 
   updateCheckboxes($event) {

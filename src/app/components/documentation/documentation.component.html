@@ -39,96 +39,24 @@
                     <div class="row-2">
                         <div class="form-row-1 flex vertical-space">
                             <div class="flex-1">
-                                <p class="title-text "> Documents: </p>
+                                <p class="title-text"> Documents: </p>
                             </div>
                         </div>
                     </div>
                     <div class="document-container-child">
                         <div class="btn-group flex-1" [sortablejs]="documents">
                             
-                            <div class="btn-text" *ngFor="let item of documents">
-                                <div class="btc" (click)="openDocument($event, item)">
+                            <div class="btn-text" *ngFor="let item of documents" [ngClass]="{'expanded' : expandedDocs === item }">
+                                <div class="btc" >
                                     <span>{{ item }}</span>
                                     <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
+                                        <mat-checkbox (change)="openDocument($event, item)" value={{item}}></mat-checkbox>
                                         <i class="btn-icon-action"></i>
                                         <span class="view-extended"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                            <!-- <div class="btn-text">
-                                <div class="btc" (click)="openDocument($event, 'prop')">
-                                    <span>Proposal</span>
-                                    <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
-                                        <i class="btn-icon-action"></i>
-                                        <span class="view-extended"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-text">
-                                <div class="btc" (click)="openDocument($event, 'gap')">
-                                    <span>GAP Analysis</span>
-                                    <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
-                                        <i class="btn-icon-action"></i>
-                                        <span class="view-extended"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-text">
-                                <div class="btc" (click)="openDocument($event, 'inv')">
-                                    <span>Investment Policy Statement</span>
-                                    <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
-                                        <i class="btn-icon-action"></i>
-                                        <span class="view-extended"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-text">
-                                <div class="btc" (click)="openDocument($event, 'port')">
-                                    <span>Portfolio Allocation Statement</span>
-                                    <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
-                                        <i class="btn-icon-action"></i>
-                                        <span class="view-extended"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-text">
-                                <div class="btc" (click)="openDocument($event, 'pas')">
-                                    <span>Proposal Assumptions Summary</span>
-                                    <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
-                                        <i class="btn-icon-action"></i>
-                                        <span class="view-extended"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-text">
-                                <div class="btc" (click)="openDocument($event, 'aoc')">
-                                    <span>Account Opening Checklist</span>
-                                    <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
-                                        <i class="btn-icon-action"></i>
-                                        <span class="view-extended"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-text">
-                                <div class="btc" (click)="openDocument($event, 'raq')">
-                                    <span>Risk Assessment Questionnaire</span>
-                                    <div class="item-right-side">
-                                        <mat-checkbox></mat-checkbox>
-                                        <i class="btn-icon-action"></i>
-                                        <span class="view-extended"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <!---------PROPOSAL-OPTIONS-START-------------------------
                             -->
                         <div class="right-section-container">
