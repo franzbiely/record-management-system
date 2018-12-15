@@ -12,7 +12,6 @@ declare var $ :any;
 export class FirmInformationComponent implements OnInit {
     frmStep1 : FormGroup;
     frmStep2 : FormGroup;
-    frmS2Avatar: string = '';
     @Input() step: number = 1;
     @Input() singleModal: boolean = false;
 
@@ -24,7 +23,6 @@ export class FirmInformationComponent implements OnInit {
     }
     onUploadSuccess2(event) {
         console.log(event);
-        this.frmS2Avatar = event[0].dataURL;
     }
     ngOnInit() {
         this.frmStep1 = this.fb.group({
@@ -32,7 +30,9 @@ export class FirmInformationComponent implements OnInit {
             url : ['', [Validators.required]]
         })
         this.frmStep2 = this.fb.group({
-            avatar: ['', [Validators.required]]
+            firstName: ['', [Validators.required]],
+            lastName: ['', [Validators.required]],
+            email: ['', [Validators.required]]
         })
     }
 

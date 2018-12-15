@@ -131,7 +131,7 @@
         <div class="information-box flex" style="flex-direction: column;">
             <div class="row-padding btn-browse-container">
                 <div class="btn-browse step-2 dropzone" [dropzone]="config" (error)="onUploadError($event)" (success)="onUploadSuccess2($event)">
-                    <input type="text" formControlName="avatar" id="frmS2Avatar" [(ngModel)]="frmS2Avatar" required />
+                    <input type="text" id="frmS2Avatar"/>
                     <div id="browse-holder">
                         <div id="droppable" class="circle">
                             
@@ -157,7 +157,7 @@
                 <div class="forms-container flex vertical-space">
                     <div class="text-input-1 flex-1">
                         <div class="input-placeholder">
-                            <input type="text" class="text-doc" required>
+                            <input type="text" class="text-doc" formControlName="firstName" required>
                             <div class="placeholder">
                                 First Name <span> &nbsp;*</span>
                             </div>
@@ -165,7 +165,7 @@
                     </div>
                     <div class="text-input-1 flex-1">
                         <div class="input-placeholder">
-                            <input type="text" class="text-doc" required>
+                            <input type="text" class="text-doc" formControlName="lastName" required>
                             <div class="placeholder">
                                 Last Name <span> &nbsp;*</span>
                             </div>
@@ -173,7 +173,7 @@
                     </div>
                     <div class="text-input-1 flex-1">
                         <div class="input-placeholder">
-                            <input type="text" class="text-doc-full" required>
+                            <input type="text" class="text-doc-full" formControlName="email" required>
                             <div class="placeholder">
                                 Email Address <span> &nbsp; *</span>
                             </div>
