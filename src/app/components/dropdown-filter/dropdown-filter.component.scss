@@ -65,11 +65,13 @@ $secondaryfont: "museo-sans", calibri;
       border:none;
       margin: 20px auto;
       height: 45px;
-      background-color: #e6e6e6;
-      color: #8b8b8b;
       font-family: $primaryfont;
       font-size: 10px;
       letter-spacing: 1px;
+      &[disabled] {
+        background-color: #e6e6e6;
+        color: #8b8b8b;
+      }
       &:hover{
         box-shadow: none !important;
       }
