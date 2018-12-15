@@ -39,9 +39,17 @@ $secondaryfont: "museo-sans", calibri;
             height: auto;
             padding: 10px;
         }
-
+        .icon-exit{
+            position: absolute;
+            top:10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            content: url("../../../assets/icons/exit-white.svg");
+        }
         .modal-header{
             text-align: center;
+            position: relative;
 
             h3{
                 font-family: $primaryfont;
@@ -53,26 +61,6 @@ $secondaryfont: "museo-sans", calibri;
                 letter-spacing: -0.8px;
                 text-align: center;
                 color: #1598cb;
-            }
-
-            .header-close{
-                height: 20px;
-                width: 20px;
-                overflow: hidden;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 1px 1px 5px #e4dfdf;
-                border-radius: 100%;
-                float: right;
-                position: absolute;
-                top: 10px;
-                right: 10px;
-
-                .material-icons{
-                    font-size: 10pt;
-                    color: #e2e2e2;
-                }
             }
         }
 
@@ -105,6 +93,18 @@ $secondaryfont: "museo-sans", calibri;
                         border-radius: 6px 6px 0 0;
                         border-bottom: 0;
                     }
+                    .icon-dropdown{
+                        width: 12px;
+                        content: url("../../../assets/arrow-down-gray.svg");
+                    }
+                    &[open]{
+                        .icon-dropdown{
+                            width: 12px;
+                            content: url("../../../assets/arrow-up-gray.svg");
+                        }
+                    }
+
+                    
 
                     summary{
                         outline: none;
@@ -195,6 +195,7 @@ $secondaryfont: "museo-sans", calibri;
                             }
 
                             textarea{
+                                resize: none;
                                 width: 100%;
                                 border-radius: 6px;
                                 background-color: #ffffff;
@@ -227,6 +228,7 @@ $secondaryfont: "museo-sans", calibri;
 
                 .input-textarea{
                     width: 100%;
+                    resize: none;
                     border-radius: 0 0 6px 6px;
                     background-color: #ffffff;
                     font-size: 14px;

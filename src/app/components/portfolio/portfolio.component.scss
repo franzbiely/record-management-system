@@ -998,3 +998,9 @@ $secondaryfont : 'museo-sans', calibri;
         border-radius: 50%;
         background: white;
     }
+    .icon-menu {
+        padding-left: 7px;
+        width: 10px;
+        height: 7px;
+        content: url("../../../assets/arrow-down-gray.svg");
+    }

@@ -220,21 +220,22 @@ tr.table-head th:first-child, tr.table-head th:last-child {
   .icon-redtail{
       width:20px;
       height:20px;
-      content: url("../../../assets/component/accounts/redtail.png")
+      content: url("../../../assets/brand-logos/redtail.svg")
   }
   .icon-wealth{
     width:20px;
     height:20px;
-    content: url("../../../assets/component/accounts/wealth-access.png")
+    content: url("../../../assets/brand-logos/wealth-access.svg")
 }
   ::ng-deep mat-checkbox{
     height: 20px;
     width: 20px;
   }
   ::ng-deep .account-screen .mat-checkbox-inner-container .mat-checkbox-frame{
-    border: 0.5px solid #e7e6e6 !important;
-    border-radius: 5px !important;
-    box-shadow: inset 0 1px 2px 0 rgba(52, 53, 52, 0.10) !important;
+    border: 0.5px solid #c5c5c5 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(52, 53, 52, 0.2) !important;
+    background-color: #ffffff !important;
   } 
   .td-text-normal{
     font-family: $secondaryfont;

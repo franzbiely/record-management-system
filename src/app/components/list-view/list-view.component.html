@@ -14,8 +14,7 @@
       <div class="list-view-header-right">
         <div class="add">
           <div class="add-container">
-          <div class="icon-container"><i class="material-icons">add_circle</i></div>
-          <div><a class="text-icon" (click)="openHouseHoldModal()">Add</a></div>
+          <div><a class="text-icon" (click)="openHouseHoldModal()"><i class="icon-add"></i>Add</a></div>
           </div>
         </div>
       </div>
@@ -62,7 +61,7 @@
                   <td class="dropdown-td id "><span class="dropdown-item">{{ info.id }}</span></td>
                   <td class="dropdown-td value"><span class="dropdown-item">{{ info.value | currency:'USD':true:'2.2' }}</span></td>
                   <td class="dropdown-td num "></td>
-                  <td class="dropdown-td state"><span class="dropdown-item">{{ info.state}}</span></td>
+                  <td class="dropdown-td state"><span class="dropdown-item"><i class="icon-implemented"></i><span>{{ info.state}}</span></span></td>
                   <td class="dropdown-td created"><span class="dropdown-item">{{ info.created }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.createdBy }}</span></td>
                   <td class="dropdown-td updated"><span class="dropdown-item">{{ info.updated }}</span><br/><span class="dropdown-item strong">By:&nbsp;{{ info.updatedBy }}</span></td>
                   <td class="dropdown-td action"><app-dropdown-actions-listview></app-dropdown-actions-listview></td>

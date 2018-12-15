@@ -123,6 +123,8 @@ import { PopupEmailLanguageScreenComponent } from './screens/popup-email-languag
 import { PopupDocumentLanguageComponent } from './components/popup-document-language/popup-document-language.component';
 import { PopupDocumentLanguageScreenComponent } from './screens/popup-document-language-screen/popup-document-language-screen.component';
 import { DropdownActionsListviewComponent } from './components/dropdown-actions-listview/dropdown-actions-listview.component';
+import { DropdownActionsPortfolioComponent } from './components/dropdown-actions-portfolio/dropdown-actions-portfolio.component';
+import { DropdownCapitalAppreciationComponent } from './components/dropdown-capital-appreciation/dropdown-capital-appreciation.component'
 import { DropdownActionsPortfolioComponent } from './components/dropdown-actions-portfolio/dropdown-actions-portfolio.component'
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
@@ -251,7 +253,8 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     PopupDocumentLanguageComponent,
     PopupDocumentLanguageScreenComponent,
     DropdownActionsListviewComponent,
-    DropdownActionsPortfolioComponent
+    DropdownActionsPortfolioComponent,
+    DropdownCapitalAppreciationComponent
   ],
   imports: [
     BrowserModule,

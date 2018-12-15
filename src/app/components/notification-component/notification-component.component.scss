@@ -12,9 +12,15 @@ section{
 i:focus{
 	outline:none;
 }
+.icon-notification{
+	width: 34px;
+	height: 34px;
+	content: url("../../../assets/icons/bell-gray-notificiation.svg");
+}
+
 .notification-parent-container {
 	position: absolute;
-    bottom: -20px;
+	bottom: -10px;
     right: -30px;
 }
 .notification-component {
@@ -34,18 +40,22 @@ i:focus{
 		-webkit-appearance: none;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
+	.header-notification{
+		position: relative;
+	}
   	.noti-badge{
-        position: absolute;
-        top: 11px;
-        right: 0;
-        width: 18px;
-        height: 18px;
-        color: white;
-        background-color: #ff6d4c;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 7pt;
-        line-height: 15pt;
+		position: absolute;
+		top: 4px;
+		right: 2px;
+		font-family: "montserrat", sans-serif;
+		font-size: 9px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.8;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
     }
 	.notification-container {
 		position: absolute;
@@ -59,7 +69,7 @@ i:focus{
 		min-width: 370px;
 		box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
 		@media only screen and (max-width: 767px){
-			right: -52px;
+			right: -33px;
 			width: 370px;
 		}
 		
@@ -243,8 +253,8 @@ i:focus{
 	}
 	.triangle {
 	    position: absolute;
-	    top: -19px;
-	    right: 25px;
+		top: -20px;
+		right: 37px;
 	    border-bottom:solid 24px  #1598cb;
 	    border-right:solid 27px transparent;
 	    border-left:solid 27px transparent;

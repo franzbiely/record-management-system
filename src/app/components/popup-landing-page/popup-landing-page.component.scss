@@ -45,8 +45,14 @@
                 padding: 40px 60px;
                 display: flex;
                 @media only screen and (max-width: 767px){
-                    flex-direction: column;
                     padding: 20px;
+                }
+                
+                .radio-group{
+                    display:flex;
+                    @media only screen and (max-width: 767px){
+                        flex-direction: column;
+                    }
                 }
                 .mat-radio-button{
                     font-family: "museo-sans";
@@ -88,6 +94,7 @@
                             width: 100%;
                             border-radius: 6px;
                             box-shadow: 0 1px 30px 0 rgba(52, 53, 52, 0.18);
+                            border: none ;
                         }
                     }
                 }
@@ -103,7 +110,8 @@
                         .img{
                             width: 100%;
                             border-radius: 6px;
-                            border: 0.5px solid #e7e6e6;
+                            box-shadow: 0 1px 30px 0 rgba(52, 53, 52, 0.18);
+                            border: none ;
                             
                         }
                     }
@@ -157,4 +165,11 @@
             }
         }
     }
+}
+
+.checked{
+    img{
+        border: 1px solid #e7e6e6 !important;
+        box-shadow: none !important;
+    }   
 }

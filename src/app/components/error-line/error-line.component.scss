@@ -5,10 +5,9 @@
   	margin-bottom:13px;
   	display: flex;
     align-items: center;
-  	.i {
-  		background-color: #f47a64;
-			color:#fff;
-			font-size: 20px;
-  		margin-right:15px;
-  	}
+		.icon-warning{
+			width: 20px;
+			height: 20px;
+			content: url("../../../assets/icons/warning.svg");
+		}
 }

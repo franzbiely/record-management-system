@@ -620,3 +620,8 @@ $primaryfont : 'montserrat', sans-serif;
 ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
     background-color: white;
   }
+.icon-menu{
+    width: 20px;
+    height: 20px;
+    content: url("../../../assets/icons/expand.svg");
+}

@@ -1,6 +1,5 @@
 .rms-header-profile {
     position: relative;
-    margin-left: 20px;
     @media screen and(max-width: 767px) {
         position: initial;
     }
@@ -14,7 +13,9 @@
             padding-right: 15px;
             outline: none;
             cursor: pointer;
-    
+            @media only screen and (max-width: 767px){
+                padding: 0px;
+            }
             &:after {
                 display: block;
                 content: '';

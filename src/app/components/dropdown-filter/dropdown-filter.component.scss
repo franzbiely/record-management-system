@@ -70,6 +70,9 @@ $secondaryfont: "museo-sans", calibri;
       font-family: $primaryfont;
       font-size: 10px;
       letter-spacing: 1px;
+      &:hover{
+        box-shadow: none !important;
+      }
     }
   }
   &[open] {

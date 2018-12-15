@@ -17,7 +17,7 @@
                     <div class="text-box-container">
                         <input type="text" class="text-box" placeholder="Enter Portfolio Name">
                     </div>
-                    <div class="dropdown-container"><app-dropdown></app-dropdown></div>
+                    <div class="dropdown-container"><app-dropdown-capital-appreciation></app-dropdown-capital-appreciation></div>
                     <div class="text-portfolio-group">
                         <span>Portfolio Group:</span><br/>
                         <span>Jennica Fernen Portfolios</span>
@@ -57,11 +57,8 @@
                     </div>
                 </div>
                 <div class="right-section">
-                    <app-quick-add *ngIf="portfolioPopType==='edit'"></app-quick-add>
-                    <div class="modify">
-                        <mat-checkbox (change)="toggleModify($event)" [checked]="portfolioPopType==='edit'">Modify</mat-checkbox>
-                    </div>
-                    <div class="add-security-container" *ngIf="portfolioPopType==='edit'">
+                    <app-quick-add></app-quick-add>
+                    <div class="add-security-container">
                         <span>Add Security:</span>
                         <input type="text" class="text-box" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
                     </div>

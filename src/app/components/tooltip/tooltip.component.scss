@@ -1,7 +1,6 @@
 .tooltip {
     position:relative;
     .icon-question{
-        margin-top: -5px;
         width: 18px;
         height: 18px;
         cursor: pointer;
@@ -31,7 +30,7 @@
         text-align: center;
         color: #414042;
         position:absolute;
-        padding:20px;
+        padding: 15px 20px;
         width: 160px;
         border-radius: 2.3px;
         box-shadow: 0 0 40px 0 rgba(65, 64, 66, 0.3);
@@ -39,7 +38,7 @@
         color: #414042;
         text-align: center;
         line-height: 1.17;
-        bottom: 42px;
+        bottom: 30px;
         left: -90px;
         margin-top:-10px;
         opacity: 0;

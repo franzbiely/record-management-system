@@ -166,9 +166,8 @@ $primaryfont: "montserrat", sans-serif;
                 font-family: $primaryfont;
             }
             .icon-add {
-                position: relative;
-                top: 5px;
-                right: 4px; // content: url('../../../../assets/component/section/btn-add/add-white.png');
+                width: 20px;
+                content: url('../../../assets/icons/add-white.svg');
             }
             span {
                 font-size: 8pt;
@@ -209,4 +208,9 @@ $primaryfont: "montserrat", sans-serif;
             border-bottom: 0;
         }
     }
+}
+.icon-menu{
+    width: 20px;
+    height: 20px;
+    content: url("../../../assets/icons/expand.svg");
 }
