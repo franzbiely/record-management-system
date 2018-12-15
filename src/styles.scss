@@ -483,3 +483,9 @@ i:focus, button:focus, div:focus{
         }
     }
 }
+.mat-checkbox-checked .mat-checkbox-background {
+    background: url('./assets/selection-checkboxes-selected-blue.svg');
+    *{
+        display: none;
+    }
+}
