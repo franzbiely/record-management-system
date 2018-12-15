@@ -436,11 +436,6 @@ select {
   content: url('../../../assets/component/firm-information/upload-blue@3x.png');
 }
 
-.icon-save {
-  width: 20px;
-  content: url('../../../assets/component/firm-information/save-blue@3x.png');
-}
-
 .icon-dpn {
   width: 10px;
   height: 7px;
@@ -475,11 +470,19 @@ select {
 .input-placeholder input:valid+.placeholder {
   display: none;
 }
-.icon-save{
-  width: 20px;
-  height: 20px;
-  content: url("../../../assets/icons/save-blue.svg");
+.primary {
+  &[disabled] {
+    .icon-save{
+      content: url("../../../assets/icons/save-blue.svg");  
+    }
+  }
+  .icon-save{
+    width: 20px;
+    height: 20px;
+    content: url("../../../assets/icons/save-white.svg");
+  }  
 }
+
 .placeholder {
   position: absolute;
   pointer-events: none;
