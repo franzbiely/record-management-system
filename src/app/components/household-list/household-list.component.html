@@ -104,7 +104,8 @@
           </div>
         </div>
       
-        <div class="brand-container" *ngIf="active_tab==2">
+        <form [formGroup]="frmOrion" *ngIf="active_tab==2">
+        <div class="brand-container">
           <div class="row-1 brand-box">
             <div class="brand-logo-container"><img class="logo-brand" src="../../../assets/component/household-list/brand-logo.PNG"></div>
             <div class="information-container">
@@ -112,18 +113,20 @@
             </div>
           </div>
           <div class="row-2 brand-box">
-            <div class="email-container"><input class="email" type="text" placeholder="Email Address"></div>
-            <div class="password-container"><input class="password" type="password" placeholder="Enter your Password"></div>
+            <div class="email-container"><input class="email" type="text" placeholder="Email Address" formControlName="email" required></div>
+            <div class="password-container"><input class="password" type="password" placeholder="Enter your Password" formControlName="password" required></div>
           </div>
           <div class="row-3">
             <div class="btn-container">
               <button class="btn-cancel" (click)="closeMe()"><span>Cancel</span></button>
-              <button class="btn-load"><span>Load</span></button>
+              <button class="btn-load primary" [disabled]="frmOrion.invalid"><span>Load</span></button>
             </div>
           </div>
         </div>
+        </form>
         
-        <div class="brand-container" *ngIf="active_tab==3">
+        <form [formGroup]="frmRedtail" *ngIf="active_tab==3">
+        <div class="brand-container">
           <div class="row-1 brand-box">
             <div class="brand-logo-container"><img class="logo-brand" src="../../../assets/component/household-list/Capture.PNG"></div>
             <div class="information-container">
@@ -131,16 +134,17 @@
             </div>
           </div>
           <div class="row-2 brand-box">
-            <div class="email-container"><input class="email" type="text" placeholder="Email Address"></div>
-            <div class="password-container"><input class="password" type="password" placeholder="Enter your Password"></div>
+            <div class="email-container"><input class="email" type="text" placeholder="Email Address" formControlName="email" required></div>
+            <div class="password-container"><input class="password" type="password" placeholder="Enter your Password" formControlName="password" required></div>
           </div>
           <div class="row-3">
             <div class="btn-container">
               <button class="btn-cancel" (click)="closeMe()"><span>Cancel</span></button>
-              <button class="btn-load"><span>Load</span></button>
+              <button class="btn-load primary" [disabled]="frmRedtail.invalid"><span>Load</span></button>
             </div>
           </div>
         </div>
+        </form>
 
       </div>
 </div>

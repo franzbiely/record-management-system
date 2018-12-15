@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ModalStatusService } from "../../services/modal-status.service"
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 declare var jquery:any;
 declare var $ :any;
 
@@ -15,6 +16,8 @@ export class HouseholdListComponent implements OnInit {
   openHousehold: boolean = false;
 	@Output() closeMeEvent = new EventEmitter<boolean>();
   openMemberForm : boolean = false;
+  frmOrion : FormGroup;
+  frmRedtail : FormGroup;
 	closeMe() {
     this.closeMeEvent.emit(true);
     this.modalStatus.SET_household(false);
@@ -22,10 +25,18 @@ export class HouseholdListComponent implements OnInit {
   memberForm($event) {
     this.openMemberForm = $event;
   }
-  constructor(private modalStatus: ModalStatusService) { }
+  constructor(private modalStatus: ModalStatusService, private fb: FormBuilder) { }
 
   ngOnInit() {
     this.modalStatus.household.subscribe(value => this.openHousehold = value);
+    this.frmOrion = this.fb.group({
+        email: ['', [Validators.required]],
+        password : ['', [Validators.required]]
+    })
+    this.frmRedtail = this.fb.group({
+        email: ['', [Validators.required]],
+        password : ['', [Validators.required]]
+    })
   }
 
 }
