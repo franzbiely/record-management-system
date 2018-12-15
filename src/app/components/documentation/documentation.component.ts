@@ -72,10 +72,6 @@ export class DocumentationComponent implements OnInit {
         }
       }
       //mobile
-      console.log($('#' + $(event)[0].source._uniqueId).closest('.btn-text'));
-      console.log($('#mat-checkbox-2').parent());
-      console.log($('#mat-checkbox-2').closest('.btn-text'));
-      // console.log($('#' + event[0].source._uniqueId));
       $('.btn-text .right-section-container').remove();
       $('.right-section-container').clone().appendTo($('#' + $(event)[0].source._uniqueId).closest('.btn-text'));
     }
@@ -84,7 +80,10 @@ export class DocumentationComponent implements OnInit {
       this.expandedDocs = '';
     }
   }
-
+  btnSavendClose() {
+    this.documentIsOpen = false;
+    this.expandedDocs = '';
+  }
   orientToggler(event: any) {
     $('.orient-container').removeClass('active');
     $(event.target).closest('.orient-container').addClass('active');
