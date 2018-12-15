@@ -1,5 +1,8 @@
 .dropdown-filter-listview{
     position: relative;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
+    background-color: white;
     summary{
         a.btn-filter:active, a.btn-filter:active{
             border-radius: 6px 6px 0px 0px;
@@ -12,9 +15,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 6px;
-            box-shadow: 0 1px 6px 0 rgba(52, 53, 52, 0.18);
-            background-color: white;
             position: relative;
             z-index: 22;
             span {

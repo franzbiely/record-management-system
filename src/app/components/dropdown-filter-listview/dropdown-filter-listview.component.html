@@ -5,53 +5,53 @@
     <div class="item-container">
       <div class="item group">
         <div class="group-title-container">
-            <mat-checkbox></mat-checkbox>
+            <mat-checkbox (change)="selectAllToggler($event, 'household')" [checked]="filter_data.household[0]"></mat-checkbox>
             <div class="group-title"><span>Household Filter</span><span>Select All</span></div>
         </div>
       </div>
         <div class="item">
           <div class="item-content">
-            <mat-checkbox></mat-checkbox>
+            <mat-checkbox (change)="checkFilter($event, false)" [checked]="filter_data.household[1]"></mat-checkbox>
             <div class="vertical-center"><i class="icon-check"></i><span class="title">Defensive</span></div>
           </div>
         </div>
         <div class="item">
           <div class="item-content">
-            <mat-checkbox></mat-checkbox>
+            <mat-checkbox (change)="checkFilter($event, false)" [checked]="filter_data.household[2]"></mat-checkbox>
             <div class="vertical-center"><i class="icon-archive"></i><span class="title">Archived</span></div>
           </div>
         </div>
         
         <div class="item group">
             <div class="group-title-container">
-                <mat-checkbox></mat-checkbox>
+                <mat-checkbox (change)="selectAllToggler($event, 'proposal')" [checked]="filter_data.proposal[0]"></mat-checkbox>
                 <div class="group-title"><span>Proposal Filter</span><span>Select All</span></div>
             </div>
         </div>
         <div class="item">
           <div class="item-content">
-            <mat-checkbox></mat-checkbox>
+            <mat-checkbox (change)="checkFilter($event, false)" [checked]="filter_data.proposal[1]"></mat-checkbox>
             <div class="vertical-center"><i class="icon-progress"></i><span class="title">In Progress</span></div>
           </div>
         </div>
         <div class="item">
           <div class="item-content">
-            <mat-checkbox></mat-checkbox>
+            <mat-checkbox (change)="checkFilter($event, false)" [checked]="filter_data.proposal[2]"></mat-checkbox>
             <div class="vertical-center"><i class="icon-questionnaire"></i><span class="title">Send Questionnaire</span></div>
           </div>
         </div>
         <div class="item">
           <div class="item-content">
-            <mat-checkbox></mat-checkbox>
+            <mat-checkbox (change)="checkFilter($event, false)" [checked]="filter_data.proposal[3]"></mat-checkbox>
             <div class="vertical-center"><i class="icon-proposal"></i><span class="title">Sent Proposal</span></div>
           </div>
         </div>
         <div class="item">
           <div class="item-content">
-            <mat-checkbox></mat-checkbox>
+            <mat-checkbox (change)="checkFilter($event, false)" [checked]="filter_data.proposal[4]"></mat-checkbox>
             <div class="vertical-center"><i class="icon-implement"></i><span class="title">Implemented</span></div>
           </div>
         </div>
-        <div class="btn-container"><button>Apply</button></div>
+        <div class="btn-container"><button class="primary" [disabled]="checkCounter<1">Apply</button></div>
     </div>
   </details>
