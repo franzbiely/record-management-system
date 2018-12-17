@@ -9,11 +9,11 @@ import * as $ from 'jquery';
 export class AppComponent {
   title = 'record-management-sys';
   constructor() {
-  	$(function() {
-	    $(document).on('click', 'details', function () {
-	    	$('details').not(this).removeAttr("open");  
-		});
-	});
+    $(function () {
+      $(document).on('click', 'details', function () {
+        $('details').not(this).removeAttr('open');
+      });
+    });
   }
-  
+
 }

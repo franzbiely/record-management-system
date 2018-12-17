@@ -4,13 +4,13 @@ import {
     ComponentFactoryResolver,
     EmbeddedViewRef,
     ApplicationRef
-} from "@angular/core";
+} from '@angular/core';
 
 declare var jquery: any;
 declare var $: any;
 
 @Injectable({
-    providedIn: "root"
+    providedIn: 'root'
 })
 export class DomService {
     private childComponentRef: any;
@@ -19,7 +19,7 @@ export class DomService {
         private componentFactoryResolver: ComponentFactoryResolver,
         private appRef: ApplicationRef,
         private injector: Injector
-    ) {}
+    ) { }
 
     public appendComponentTo(
         parentId: string,
@@ -42,7 +42,7 @@ export class DomService {
         // Get DOM element from component
         const childDomElem = (childComponentRef.hostView as EmbeddedViewRef<
             any
-        >).rootNodes[0] as HTMLElement;
+            >).rootNodes[0] as HTMLElement;
 
         // Append DOM element to the body
         if (isAppend) {
@@ -65,8 +65,8 @@ export class DomService {
         let inputs = config.inputs;
         let outputs = config.outputs;
 
-        componentRef.instance["inputs"] = inputs;
-        componentRef.instance["outputs"] = outputs;
+        componentRef.instance['inputs'] = inputs;
+        componentRef.instance['outputs'] = outputs;
     }
 }
 interface childConfig {
