@@ -26,7 +26,7 @@
             </div>
             <div class="row-2">
                 <div class="left-section">
-                    <div class="section-overlay"></div>
+                    <div class="section-overlay" *ngIf="!haveAllocationData"></div>
                     <span class="graph-title">Target Asset Allocation:</span> 
                     <div class="graph-container">
                         <canvas class="graph" height="200" id="graph" #graph></canvas>
@@ -60,10 +60,27 @@
                     <app-quick-add></app-quick-add>
                     <div class="add-security-container">
                         <span>Add Security:</span>
-                        <input type="text" class="text-box" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
+                        <input type="text" class="text-box" (input)="onSearchChange($event.target.value)" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
+                        <div class="searchSuggestions" *ngIf="showSuggestion">
+                            <ul>
+                                <li><a (click)="clickSuggestion()">
+                                    <strong>SA US Value Select</strong>
+                                    <span>SAVLX</span>
+                                </a></li>
+                                <li><a (click)="clickSuggestion()">
+                                    <strong>SA Global Fixed Income Select</strong>
+                                    <span>SAFLX</span>
+                                </a></li>
+                                <li><a (click)="clickSuggestion()">
+                                    <strong>SA US Small Company Select</strong>
+                                    <span>SASLX</span>
+                                </a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="table-container">
                         <table>
+                            <thead>
                             <tr>
                                 <th>Security Name</th>
                                 <th>Security ID<i class="icon-help"></i></th>
@@ -71,46 +88,74 @@
                                 <th>Allocation (%)</th>
                                 <th>&nbsp;</th>
                             </tr>
-                            <tr>
-                                <td>{{allocation_data[0].data[0].security_name}}</td>
-                                <td>{{allocation_data[0].data[0].security_id}}</td>
-                                <td>{{allocation_data[0].data[0].asset_class}} <i class="icon-dropdown"></i></td>
-                                <td><input type="text" class="allocation-text" [(ngModel)]="allocation_data[0].data[0].value" 
-                                    (keyup)="updateGroupVal()" placeholder="%"/></td>
-                                <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
-                            </tr>
-                            <tr>
-                                <td>SA US Small Company Select</td>
-                                <td>SAFLX</td>
-                                <td>U.S. Small Neutral Stocks<i class="icon-dropdown"></i></td>
-                                <td><input [(ngModel)]="allocation_data[1].data[0].value" 
+                            </thead>
+                            <tbody>
+                            <ng-container *ngIf="haveAllocationData">
+                                <tr>
+                                    <td>{{allocation_data[0].data[0].security_name}}</td>
+                                    <td>{{allocation_data[0].data[0].security_id}}</td>
+                                    <td>{{allocation_data[0].data[0].asset_class}} <i class="icon-dropdown"></i></td>
+                                    <td><input type="text" class="allocation-text" [(ngModel)]="allocation_data[0].data[0].value" 
+                                        (keyup)="updateGroupVal()" placeholder="%"/></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>SA US Small Company Select</td>
+                                    <td>SAFLX</td>
+                                    <td>U.S. Small Neutral Stocks<i class="icon-dropdown"></i></td>
+                                    <td><input [(ngModel)]="allocation_data[1].data[0].value" 
+                                            (keyup)="updateGroupVal()"
+                                            type="text" class="allocation-text" placeholder="%"></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>SA US Value Select</td>
+                                    <td>SAFLX</td>
+                                    <td>U.S. Large Value Stocks<i class="icon-dropdown"></i></td>
+                                    <td><input [(ngModel)]="allocation_data[1].data[1].value" 
                                         (keyup)="updateGroupVal()"
                                         type="text" class="allocation-text" placeholder="%"></td>
-                                <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
-                            </tr>
-                            <tr>
-                                <td>SA US Value Select</td>
-                                <td>SAFLX</td>
-                                <td>U.S. Large Value Stocks<i class="icon-dropdown"></i></td>
-                                <td><input [(ngModel)]="allocation_data[1].data[1].value" 
-                                    (keyup)="updateGroupVal()"
-                                    type="text" class="allocation-text" placeholder="%"></td>
-                                <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <th>Total Allocation:</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>{{totalAllocation}}%</th>
-                                <th>&nbsp;</th>
-                            </tr>
+                                    <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
+                                </tr>
+                            </ng-container>
+                            <ng-container *ngIf="!haveAllocationData">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </ng-container>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <th>Total Allocation:</th>
+                                    <th>&nbsp;</th>
+                                    <th>&nbsp;</th>
+                                    <th>{{totalAllocation}}%</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <div class="bottom">

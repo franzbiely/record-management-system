@@ -17,6 +17,8 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	viewPortfolioModal: boolean = false;
 	portfolioPopType : string|'view'|'edit' = 'view';
 	totalAllocation: number = 0;
+	haveAllocationData: boolean = false;
+	showSuggestion: boolean = false;
 	
 	allocation_data = {
 		0 : {
@@ -54,6 +56,19 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	}
 	ngAfterViewInit() {
 	    this.updateChart();
+	}
+	clickSuggestion() {
+		this.showSuggestion = false;
+		this.haveAllocationData = true;
+		this.updateGroupVal();
+	}
+	onSearchChange(searchValue : string) {
+		if(searchValue!=''){
+			this.showSuggestion = true;
+		}
+		else {
+			this.showSuggestion = false;
+		}
 	}
 	closeMe() {
 		this.modalStatus.SET_viewPortfolio(false);

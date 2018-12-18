@@ -292,6 +292,7 @@
                         margin-top: 20px;
                     }
                     .add-security-container{
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         @media only screen and (max-width: 767px){
@@ -327,6 +328,41 @@
                             background-position: center left 15px;
                             background-image: url(../../../assets/search-gray.svg);
                             padding-left: 43px;
+                        }
+                        .searchSuggestions {
+                            font-size: 11px;
+                            border-radius: 10px;
+                            line-height: 1.5;
+                            box-shadow: 0 1px 20px 0 rgba(65, 64, 66, 0.1);
+                            position: absolute;
+                            width: 100%;
+                            background: #fff;
+                            top: 70px;
+                            ul {
+                                list-style: none;
+                                padding:0; margin: 0;
+                                li {
+                                    padding: 0;
+                                    border-bottom: 1px solid #e7e6e6;
+                                    a {
+                                        height: 45px;
+                                        padding: 0 43px;
+                                        display:flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        strong {
+                                            font-weight: 600; 
+                                            color: #414042;
+                                        }
+                                        span {
+                                            text-transform: uppercase;
+                                            color: #77787b;
+                                            font-weight: 300;
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     .table-container{
