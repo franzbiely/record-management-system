@@ -365,6 +365,7 @@
                             }
                         }
                     }
+
                     .table-container{
                         display: flex;
                         margin-top: 30px;
@@ -379,25 +380,31 @@
                             border-radius: 6px;
                             border-collapse: collapse;
                             flex: 1;
-                            tr:first-child, tr:last-child{
-                                background-color: #fafbfc;
+                            thead, tfoot {
+                                tr { 
+                                    background-color: #fafbfc;
+                                }
                             }
-                            tr:first-child th:first-child{
-                                border-top-left-radius: 6px;
+                            thead {
+                                th {
+                                    &:first-child { border-top-left-radius: 6px; }
+                                    &:last-child { border-top-right-radius: 6px; }
+                                    &:nth-child(4), 
+                                    &:nth-child(2) {
+                                        text-align:right;
+                                    }
+                                }
                             }
-                            tr:first-child th:last-child{
-                                border-top-right-radius: 6px;
-                            }
-                            tr:last-child th:first-child{
-                                border-bottom-left-radius: 6px;
-                            }
-                            tr:last-child th:last-child{
-                                border-bottom-right-radius: 6px;
+                            tfoot {
+                                th {
+                                    &:first-child { border-bottom-left-radius: 6px; }
+                                    &:last-child { border-bottom-right-radius: 6px; }
+                                }
                             }
                             th:first-child, th:nth-child(3), td:first-child, td:nth-child(3){
                                 text-align:left;
                             }
-                            th:nth-child(4), th:nth-child(2), td:nth-child(4), td:nth-child(2){
+                            td:nth-child(4), td:nth-child(2){
                                 text-align:right;
                             }
                             th:last-child, td:last-child{
@@ -422,6 +429,7 @@
                             th:nth-child(2){
                                 display: flex;
                                 align-items:center;
+                                justify-content: center;
                             }
                             td{
                                 font-family: "museo-sans";
@@ -432,6 +440,9 @@
                                 line-height: 1;
                                 letter-spacing: normal;
                                 color: #414042;
+                                &:nth-child(2){
+                                    text-align:center;
+                                }
                             }
                             // tr:not(:first-child) {
                             //     border-bottom: 0.5px #e7e6e6 solid;
@@ -455,6 +466,10 @@
                                 letter-spacing: normal;
                                 text-align: right;
                                 color: #c5c5c5;
+                            }
+                            .icon-dropdown {
+                                padding-left: 6px;
+                                content: url('../../../assets/component/household-member/arrow-gray.png');
                             }
                             .icon-remove{
                                 cursor:pointer;
