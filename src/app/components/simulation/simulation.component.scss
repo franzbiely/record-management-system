@@ -273,6 +273,7 @@ app-dropdown-update-account {
         flex-direction: column;
         background-color: #fafbfc;
         padding: 10px 5px 10px 20px;
+
         .slider-label-container {
           margin-top: -15px;
           display: flex;
@@ -399,6 +400,7 @@ app-dropdown-update-account {
         .first-box {
           padding: 17px 0px 0px 15px;
         }
+
       }
     }
     &.open {
@@ -1308,4 +1310,7 @@ app-dropdown-update-account {
   height: 11px;
   padding-left: 5px;
   content: url("../../../assets/icons/view-gray.svg");
+}
+::ng-deep .annual-saving .mat-slider-thumb-label-text {
+  font-size: 8px !important; 
 }
