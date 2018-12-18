@@ -200,7 +200,7 @@ textarea {
     box-sizing: border-box;
     border:#e7e6e6 1px solid;
 }
-button {
+button, .button {
     border-radius: 6px;
     background-color: #ffffff;
     font-size: 12px;
@@ -246,6 +246,12 @@ button {
             color: #1598cb !important;
         }
     }
+}
+a.button {
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: left;
+    text-decoration: none;
 }
 main {
     display:flex;

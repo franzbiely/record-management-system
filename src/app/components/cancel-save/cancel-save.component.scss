@@ -34,7 +34,7 @@
       padding: 0px;
       display: initial;
     }
-    button {
+    button, .button {
       font-family: 'Montserrat', sans-serif;
       font-size: 12px;
       font-weight: 600;
@@ -56,6 +56,8 @@
       color: #ffffff;
     }
     .rpp-actions {
+      display: flex;
+      justify-content: flex-end;
       position: fixed;
       bottom: 0;
       left:0;
@@ -69,7 +71,8 @@
         display: flex;
         padding: 0;
       }      
-      button {
+
+      button, .button {
         display: inline-block;
         position: relative;
         width: 100%;
