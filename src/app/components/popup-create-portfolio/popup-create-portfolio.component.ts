@@ -100,15 +100,14 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	    });
 	}
 	updateGroupVal() {
-		let d = 0;
+		let d:number = 0;
 		Object.entries(this.allocation_data).forEach(([key, val]) => {
-			let c = 0;
+			let c:number = 0;
 			Object.entries(val.data).forEach(([k,v]) =>{
-				console.log(v.value)
-				c += v.value;
+				c += (typeof v.value === 'string') ? parseInt(v.value) : v.value;
 			})
 			this.allocation_data[key].value = c;
-			d += c;
+			d = d+c;
 		})
 		this.totalAllocation = d;
 		this.updateChart();
