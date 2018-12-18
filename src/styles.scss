@@ -473,12 +473,24 @@ i:focus, button:focus, div:focus{
     justify-content: center;
     align-items: center;
     width: 300px;
+    z-index: 2;
+    position:relative;
     * {display: none;}
     .dz-image {
         display: block;
         * {
             display: block;
         }
+    }
+    .dz-remove {
+        display:block;
+        position:absolute;
+        background: url(./assets/exit-white.svg) no-repeat;
+        text-indent: -999px;
+        top: 10px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
     }
 }
 .mat-checkbox-checked .mat-checkbox-background {

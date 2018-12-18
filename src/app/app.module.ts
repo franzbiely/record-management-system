@@ -103,7 +103,20 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
  // Change this to your upload POST address:
   url: 'https://httpbin.org/post',
   maxFilesize: 50,
-  acceptedFiles: 'image/*'
+  acceptedFiles: 'image/*',
+  addRemoveLinks : true,
+  maxFiles : 1,
+  init : function() {
+    var prevFile;
+    this.on('addedfile', function() {
+        if (typeof prevFile !== "undefined") {
+            this.removeFile(prevFile);
+        }
+    });
+    this.on('success', function(file, responseText) {
+        prevFile = file;
+    });
+  }
 };
 
 @NgModule({
