@@ -1,20 +1,20 @@
-import { Component, OnInit } from "@angular/core";
-import { ModalStatusService } from "../../services/modal-status.service"
-import { DataService } from "../../services/data.service"
+import { Component, OnInit } from '@angular/core';
+import { ModalStatusService } from '../../services/modal-status.service';
+import { DataService } from '../../services/data.service';
 
-declare var jquery:any;
-declare var $ :any;
+declare var jquery: any;
+declare var $: any;
 
 @Component({
-    selector: "app-print-preview",
-    templateUrl: "./print-preview.component.html",
-    styleUrls: ["./print-preview.component.scss"]
+    selector: 'app-print-preview',
+    templateUrl: './print-preview.component.html',
+    styleUrls: ['./print-preview.component.scss']
 })
 export class PrintPreviewComponent implements OnInit {
     constructor(private modalStatus: ModalStatusService, private data: DataService) { }
     sendDocuments = false;
-    sendDocumentModal : boolean = false;
-    sendDocStatusModal : boolean = false;
+    sendDocumentModal = false;
+    sendDocStatusModal = false;
 
     bookmarks = [
         'Proposal',

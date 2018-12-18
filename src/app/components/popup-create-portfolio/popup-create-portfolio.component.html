@@ -77,7 +77,7 @@
                                 <td>{{allocation_data[0].data[0].asset_class}} <i class="icon-dropdown"></i></td>
                                 <td><input type="text" class="allocation-text" [(ngModel)]="allocation_data[0].data[0].value" 
                                     (keyup)="updateGroupVal()" placeholder="%"/></td>
-                                <td><i class="icon-remove"></i></td>
+                                <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
                             </tr>
                             <tr>
                                 <td>SA US Small Company Select</td>
@@ -86,7 +86,7 @@
                                 <td><input [(ngModel)]="allocation_data[1].data[0].value" 
                                         (keyup)="updateGroupVal()"
                                         type="text" class="allocation-text" placeholder="%"></td>
-                                <td><i class="icon-remove"></i></td>
+                                <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
                             </tr>
                             <tr>
                                 <td>SA US Value Select</td>
@@ -95,7 +95,7 @@
                                 <td><input [(ngModel)]="allocation_data[1].data[1].value" 
                                     (keyup)="updateGroupVal()"
                                     type="text" class="allocation-text" placeholder="%"></td>
-                                <td><i class="icon-remove"></i></td>
+                                <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>

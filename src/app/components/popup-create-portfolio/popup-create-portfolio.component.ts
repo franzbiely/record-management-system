@@ -112,4 +112,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		this.totalAllocation = d;
 		this.updateChart();
 	}
+	removeRow(event) {
+		$(event.target).closest('tr').fadeOut();
+	}
 }
