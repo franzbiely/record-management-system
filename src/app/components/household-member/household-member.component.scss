@@ -54,14 +54,19 @@
                     align-items: center;
                     justify-content: space-between;
                     .text-required{
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: "Montserrat";
                         font-size: 12px;
-                        font-weight: 500;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1;
+                        letter-spacing: normal;
+                        text-align: right;
                         color: #808284;
                         margin-left:5px;
                     }
                     .asterisk{
-                        font-weight: 600;
+                        font-weight: bold;
                         color: #1598cb;
                     }
                 }
@@ -302,14 +307,19 @@
                         div{
                             cursor: pointer;
                             font-family:'Montserrat', sans-serif;
-                            font-size: 14px;
-                            font-weight: 800;
-                            text-transform: uppercase;
+                            font-size: 12px;
+                            font-weight: 600;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
                             color: #1598cb;
                             display: flex;
+                            text-transform: uppercase;
                             align-items: center;
                         }
                         div:last-child{
+                            text-transform: uppercase;
                             margin-left: 15px;
                             @media only screen and (max-width: 767px){
                             margin-left: 0px;
@@ -331,9 +341,11 @@
                             align-items: center;
                             margin-right: 15px;
                             text-transform: uppercase;
-                            font-weight:800;
+                            font-weight:600;
                             font-family: 'Montserrat', sans-serif;
                             letter-spacing: 1px;
+                            border:none;
+                            font-size: 12px;
                             box-shadow: 0 2px 6px 0 rgba(65, 64, 66, 0.1);
                         }
                         .icon-save{
@@ -345,8 +357,9 @@
                             display: flex;
                             align-items: center;
                             margin-right: 15px;
+                            font-size: 12px;
                             text-transform: uppercase;
-                            font-weight:800;
+                            font-weight:600;
                             font-family: 'Montserrat', sans-serif;
                             letter-spacing: 1px;
                             color: #1598cb;
@@ -367,7 +380,14 @@
         letter-spacing: 1px;
     }
     ::placeholder{
-        color: #e7e6e6;
+        font-family: "museo-sans";
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #c5c5c5;
     }
 }
 .input-placeholder {
@@ -394,12 +414,16 @@
     position: absolute;
     top: 11px;
     bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "museo-sans";
     font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #414042;
     right: 15px;
     margin: auto;
-    color: rgb(139, 139, 139);
-    font-weight: 500;
     
  }
   .input-placeholder input:valid + .placeholder {
@@ -409,13 +433,18 @@
   .placeholder {
     position: absolute;
     pointer-events: none;
-    top: 16px;
+    top: 13px;
     bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
     left: 11px;
     margin: auto;
-    color: #ccc;
+    font-family: "museo-sans";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #c5c5c5;
   }
   .icon{
       cursor:pointer;

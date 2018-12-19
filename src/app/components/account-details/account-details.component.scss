@@ -42,8 +42,6 @@ app-add-security{
         .modal-box{
             min-width: 355px;
             margin-top: 50px;
-            width: 1200px;
-            background-color: white;
             box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
             border-radius: 0px 0px 6px 6px;
             margin-bottom: 50px;
@@ -61,6 +59,7 @@ app-add-security{
             }
             .box-body{
                 position: relative;
+                background-color: #fff;
                 display: flex;
                 @media only screen and (max-width: 767px){
                     flex-direction: column-reverse;
@@ -183,15 +182,26 @@ app-add-security{
                                 text-transform: uppercase;
                                 height: 47px;
                             }
+                            th:nth-child(2),th:nth-child(3), th:nth-child(4),
+                            td:nth-child(2),td:nth-child(3), td:nth-child(4),{
+                                padding: 0 30px !important;
+                            }
                             td {
                                 height: 47px;
                             }
                             tr th:first-child, tr td:first-child {
                                 text-align: left;
                             }
-                            tr th:nth-child(2), tr td:nth-child(2) {
-                                text-align: center;
+                            tr th:nth-child(2), tr td:nth-child(2),
+                            tr th:nth-child(5), tr td:nth-child(5) {
+                                text-align: right;
                             }
+                            
+                            tr th:nth-child(4), tr td:nth-child(4),
+                            tr th:nth-child(3), tr td:nth-child(3) {
+                                text-align: left;
+                            }
+
                             tr:not(:last-child) td{
                                 font-family: "museo-sans", roboto;
                                 font-size: 11px;
@@ -310,6 +320,15 @@ app-add-security{
                         display: none;
                     }
                     .btn-save{
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 12px;
+                        font-weight: 600 !important;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.9px;
+                        color: #1598cb;
+                        text-transform: uppercase;
                         .icon-save{
                             padding-right:15px;
                             width: 20px;
@@ -342,4 +361,10 @@ app-add-security{
     content: url("../../../assets/icons/expand.svg");
     width:20px;
     height: 20px;
+}
+.icon-dropdown{
+    width: 10px;
+    height: 7px;
+    padding-left: 5px;
+    content: url("../../../assets/arrow-down-gray.svg");
 }

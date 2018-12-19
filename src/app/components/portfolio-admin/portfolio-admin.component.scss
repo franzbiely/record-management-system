@@ -440,3 +440,8 @@ td:first-child{
         }
     }
 }
+::ng-deep .portfolio-container app-popup-create-portfolio{
+    .popup-container{
+        padding: 0px 40px 60px 60px !important;
+    }
+}
