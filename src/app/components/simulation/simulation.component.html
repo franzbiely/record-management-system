@@ -58,7 +58,25 @@
           </div>
           <div class="box" *ngIf="goalType!='Long-Term Growth' && goalType!='Major Purchase'">
             <div class="title-container"><span class="box-title">Annual Distribution:</span><app-tooltip>Amount of money <br /> invested towards <br /> the goal.</app-tooltip></div>
-            <div class="radio-container"><div class="radio-content"><mat-radio-button><span  class="radio-text">Fixed Amount ($)</span></mat-radio-button><mat-radio-button class="radio-2"><span  class="radio-text">Fixed Rate (%)</span></mat-radio-button></div></div> 
+            <div class="radio-container">
+              <div class="radio-content">
+                <mat-radio-button class="hasToolTip">
+                  <div class="radio-text">Fixed Amount ($)
+                    <div class="tooltip-content">
+                      Dollar amount of the annual distribution in today's dollar.
+                    </div>
+                  </div>
+                  
+                </mat-radio-button>
+                <mat-radio-button class="radio-2 hasToolTip">
+                  <div  class="radio-text">Fixed Rate (%)
+                  <div class="tooltip-content">
+                    Annual distribution as a percentage of the overall portfolio
+                  </div>
+                  </div>
+                </mat-radio-button>
+              </div>
+            </div> 
             <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">$32,000</span></div></div>
           </div>
           <div class="box">
