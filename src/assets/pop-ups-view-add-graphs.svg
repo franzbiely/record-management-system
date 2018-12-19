@@ -1,0 +1,1355 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="1440" viewBox="0 0 1440 1440">
+    <defs>
+        <rect id="a" width="1280" height="1074" rx="6"/>
+        <filter id="b" width="110.5%" height="112.6%" x="-5.3%" y="-4.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="15" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.2 0"/>
+        </filter>
+        <path id="e" d="M11.856 12.917L10 11.06l-1.856 1.856a.752.752 0 0 1-1.06 0 .752.752 0 0 1 0-1.06L8.938 10 7.083 8.144a.752.752 0 0 1 0-1.06.752.752 0 0 1 1.06 0L10 8.938l1.856-1.856a.752.752 0 0 1 1.06 0 .752.752 0 0 1 0 1.06L11.062 10l1.856 1.856a.752.752 0 0 1 0 1.06.752.752 0 0 1-1.06 0zM10 1c-4.969 0-9 4.031-9 9s4.031 9 9 9 9-4.031 9-9-4.031-9-9-9z"/>
+        <filter id="d" width="177.8%" height="177.8%" x="-38.9%" y="-27.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.2 0"/>
+        </filter>
+        <path id="f" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="g" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <linearGradient id="i" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#F57BB7"/>
+            <stop offset="100%" stop-color="#EFB486"/>
+        </linearGradient>
+        <rect id="j" width="20.089" height="20.089" rx="2.813"/>
+        <filter id="k" width="114.9%" height="114.9%" x="-7.5%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.2 0"/>
+        </filter>
+        <path id="l" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="m" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <rect id="o" width="20.089" height="20.089" rx="2.813"/>
+        <filter id="p" width="114.9%" height="114.9%" x="-7.5%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.2 0"/>
+        </filter>
+        <path id="q" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="r" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <rect id="t" width="20.089" height="20.089" rx="2.813"/>
+        <filter id="u" width="114.9%" height="114.9%" x="-7.5%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.2 0"/>
+        </filter>
+        <path id="v" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="w" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <rect id="y" width="20.089" height="20.089" rx="2.813"/>
+        <filter id="z" width="114.9%" height="114.9%" x="-7.5%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.2 0"/>
+        </filter>
+        <path id="A" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="B" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <rect id="D" width="20.089" height="20.089" rx="2.813"/>
+        <filter id="E" width="114.9%" height="114.9%" x="-7.5%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.2 0"/>
+        </filter>
+        <path id="F" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="G" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <rect id="I" width="20.089" height="20.089" rx="2.813"/>
+        <filter id="J" width="114.9%" height="114.9%" x="-7.5%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.2 0"/>
+        </filter>
+        <path id="K" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="L" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <path id="O" d="M15.489 6.63l-.992-1.078a.649.649 0 0 0-.495-.222.649.649 0 0 0-.496.222L8.723 10.76 6.58 8.422a.649.649 0 0 0-.496-.222.649.649 0 0 0-.496.222L4.597 9.5a.768.768 0 0 0-.204.539c0 .211.068.39.204.539l2.64 2.87.99 1.077a.648.648 0 0 0 .496.222c.195 0 .36-.074.496-.222l.992-1.078 5.278-5.739a.768.768 0 0 0 .204-.539.768.768 0 0 0-.204-.539z"/>
+        <filter id="N" width="161.9%" height="174.3%" x="-31%" y="-26.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.2 0"/>
+        </filter>
+        <path id="Q" d="M.469 0H59.53c8.285 0 15 6.716 15 15 0 8.284-6.715 15-15 15H.47V0z"/>
+        <filter id="P" width="125.7%" height="163.3%" x="-12.8%" y="-28.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.18 0"/>
+        </filter>
+        <path id="R" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="S" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <path id="V" d="M15.489 6.63l-.992-1.078a.649.649 0 0 0-.495-.222.649.649 0 0 0-.496.222L8.723 10.76 6.58 8.422a.649.649 0 0 0-.496-.222.649.649 0 0 0-.496.222L4.597 9.5a.768.768 0 0 0-.204.539c0 .211.068.39.204.539l2.64 2.87.99 1.077a.648.648 0 0 0 .496.222c.195 0 .36-.074.496-.222l.992-1.078 5.278-5.739a.768.768 0 0 0 .204-.539.768.768 0 0 0-.204-.539z"/>
+        <filter id="U" width="161.9%" height="174.3%" x="-31%" y="-26.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.2 0"/>
+        </filter>
+        <rect id="X" width="167.813" height="30" rx="15"/>
+        <filter id="W" width="111.3%" height="163.3%" x="-5.7%" y="-28.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <path id="Z" d="M14.063 19.219l3.75-4.688 5.625 1.875 3.75-4.218"/>
+        <filter id="Y" width="252.1%" height="383.9%" x="-76%" y="-85.1%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1.406" result="shadowSpreadOuter1"/>
+            <feOffset dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="1.406" result="shadowInner"/>
+            <feOffset dy="4" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.1 0"/>
+        </filter>
+        <path id="ab" d="M0 54.145l12.953-2.282 12.953 5.325L38.86 37.41l12.953.761 12.953-7.606L77.72 54.145l12.953 1.521 12.953-10.648 12.953 11.409 12.953-8.367 12.953 2.282 12.953-14.452 12.953 15.213 12.953 2.281 12.953-2.281 12.953-2.282 13.673.76 12.234-9.127 12.953 4.564 12.953 2.281 12.953 2.282 12.953-15.973 12.953 6.085h12.234l13.672 12.93 13.673 2.283"/>
+        <filter id="aa" width="106.3%" height="189%" x="-3.1%" y="-26.1%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1.406" result="shadowSpreadOuter1"/>
+            <feOffset dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="1.406" result="shadowInner"/>
+            <feOffset dy="6" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.203921569 0 0 0 0 0.207843137 0 0 0 0 0.203921569 0 0 0 0.1 0"/>
+        </filter>
+        <path id="ac" d="M5.625 0h363.75A5.625 5.625 0 0 1 375 5.625v261.563a5.625 5.625 0 0 1-5.625 5.625H5.625A5.625 5.625 0 0 1 0 267.188V5.625A5.625 5.625 0 0 1 5.625 0z"/>
+        <filter id="ad" width="106.9%" height="109.5%" x="-3.5%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <path id="ag" d="M15.489 6.63l-.992-1.078a.649.649 0 0 0-.495-.222.649.649 0 0 0-.496.222L8.723 10.76 6.58 8.422a.649.649 0 0 0-.496-.222.649.649 0 0 0-.496.222L4.597 9.5a.768.768 0 0 0-.204.539c0 .211.068.39.204.539l2.64 2.87.99 1.077a.648.648 0 0 0 .496.222c.195 0 .36-.074.496-.222l.992-1.078 5.278-5.739a.768.768 0 0 0 .204-.539.768.768 0 0 0-.204-.539z"/>
+        <filter id="af" width="161.9%" height="174.3%" x="-31%" y="-26.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.2 0"/>
+        </filter>
+        <rect id="ai" width="105" height="30" rx="15"/>
+        <filter id="ah" width="118.1%" height="163.3%" x="-9%" y="-28.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.1 0"/>
+        </filter>
+        <linearGradient id="aj" x1="51.722%" x2="51.722%" y1="6.312%" y2="102.868%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="67.377%" stop-color="#FFF" stop-opacity=".798"/>
+            <stop offset="75.359%" stop-color="#FFF" stop-opacity=".864"/>
+            <stop offset="84.158%" stop-color="#FFF" stop-opacity=".919"/>
+            <stop offset="92.645%" stop-color="#FFF" stop-opacity=".964"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <rect id="al" width="160" height="45" rx="6"/>
+        <filter id="ak" width="112.5%" height="144.4%" x="-6.2%" y="-20%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.18 0"/>
+        </filter>
+        <rect id="an" width="160" height="45" rx="6"/>
+        <filter id="am" width="112.5%" height="144.4%" x="-6.2%" y="-20%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.254901961 0 0 0 0 0.250980392 0 0 0 0 0.258823529 0 0 0 0.18 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M0 0h1440v1315H0z" opacity=".8"/>
+        <g transform="translate(120 120)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+            <use fill="#FFF" xlink:href="#a"/>
+            <g mask="url(#c)">
+                <g transform="translate(1250 10)">
+                    <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+                    <use fill="#FFF" xlink:href="#e"/>
+                </g>
+            </g>
+            <path fill="#FAFBFC" d="M0 97h1280v977H0z" mask="url(#c)"/>
+            <path stroke="#C5C5C5" stroke-linecap="square" stroke-width=".5" d="M0 97h1280" mask="url(#c)"/>
+            <rect width="6" height="172" x="1262" y="127" fill="#C5C5C5" mask="url(#c)" opacity=".5" rx="3"/>
+            <g mask="url(#c)">
+                <g transform="translate(40 450)">
+                    <mask id="h" fill="#fff">
+                        <use xlink:href="#f"/>
+                    </mask>
+                    <use fill="#000" filter="url(#g)" xlink:href="#f"/>
+                    <use fill="#FFF" xlink:href="#f"/>
+                    <g mask="url(#h)">
+                        <g fill="#F0F0F0">
+                            <path d="M40.313 87.188H356.25v1H40.313zM40.313 136.875H356.25v1H40.313zM40.313 186.563H356.25v1H40.313z"/>
+                        </g>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(49.688 159.375)">
+                            <tspan x="9.821" y="90.5">Apr</tspan>
+                        </text>
+                        <text fill="#67C072" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(49.688 159.375)">
+                            <tspan x="5.375" y="6">$1.25M</tspan>
+                        </text>
+                        <path fill="#AED68F" d="M49.688 170.625H82.5v65.625H49.687z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(102.188 134.063)">
+                            <tspan x="8.505" y="115.813">May</tspan>
+                        </text>
+                        <text fill="#67C072" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(102.188 134.063)">
+                            <tspan x="5.375" y="6">$1.85M</tspan>
+                        </text>
+                        <path fill="#AED68F" d="M102.188 145.313H135v90.937h-32.813z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(155.625 115.313)">
+                            <tspan x="9.682" y="134.563">Jun</tspan>
+                        </text>
+                        <text fill="#67C072" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(155.625 115.313)">
+                            <tspan x="4.375" y="6">$2.20M</tspan>
+                        </text>
+                        <path fill="#AED68F" d="M155.625 126.563h32.813V236.25h-32.813z"/>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(208.125 137.813)">
+                                <tspan x="10.673" y="112.063">Jul</tspan>
+                            </text>
+                            <text fill="#67C072" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(208.125 137.813)">
+                                <tspan x="4.406" y="6">$1.80M</tspan>
+                            </text>
+                            <path fill="#AED68F" d="M208.125 149.063h32.813v87.187h-32.813z"/>
+                        </g>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(261.563 144.375)">
+                                <tspan x="8.872" y="105.5">Aug</tspan>
+                            </text>
+                            <text fill="#67C072" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(261.563 144.375)">
+                                <tspan x="5.375" y="6">$1.75M</tspan>
+                            </text>
+                            <path fill="#AED68F" d="M261.563 155.625h32.812v80.625h-32.813z"/>
+                        </g>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(314.063 161.25)">
+                                <tspan x="9.787" y="88.625">Sep</tspan>
+                            </text>
+                            <text fill="#67C072" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(314.063 161.25)">
+                                <tspan x="4.906" y="6">$1.30M</tspan>
+                            </text>
+                            <path fill="#AED68F" d="M314.063 172.5h32.812v63.75h-32.813z"/>
+                        </g>
+                        <g>
+                            <path fill="#F0F0F0" d="M40.313 236.25h315.938v1H40.313z"/>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(17.75 74.063)">
+                                <tspan x=".353" y="8">$3M</tspan>  <tspan x=".328" y="57.733">$2M</tspan>  <tspan x="1.163" y="107.466">$1M</tspan>  <tspan x="11.727" y="157.199">0</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g mask="url(#h)">
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="11.25">
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="13.125" y="71">0</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="6.563" y="50.375">5k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="31.625">10k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="11">15k</tspan>
+                            </text>
+                        </g>
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="9.375">
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="0" y="9">9</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="17.813" y="9">11</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="38.438" y="9">13</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="59.063" y="9">15</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="79.688" y="9">17</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="101.25" y="9">19</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="121.875" y="9">21</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="142.5" y="9">23</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="163.125" y="9">25</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="183.75" y="9">27</tspan>
+                            </text>
+                        </g>
+                        <g fill="url(#i)" transform="translate(510 292.5)">
+                            <rect width="7.5" height="13.125" x="10.313" y="38.438" rx="3.75"/>
+                            <rect width="7.5" height="15" y="36.563" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="20.625" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="8.438" x="72.188" y="43.125" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="30.938" y="30" rx="3.75"/>
+                            <rect width="7.5" height="18.75" x="41.25" y="32.813" rx="3.75"/>
+                            <rect width="7.5" height="19.688" x="51.563" y="31.875" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="61.875" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="175.313" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="20.625" x="185.625" y="30.938" rx="3.75"/>
+                            <rect width="7.5" height="25.313" x="82.5" y="26.25" rx="3.75"/>
+                            <rect width="7.5" height="27.188" x="92.813" y="24.375" rx="3.75"/>
+                            <rect width="7.5" height="29.063" x="165" y="22.5" rx="3.75"/>
+                            <rect width="7.5" height="32.813" x="123.75" y="18.75" rx="3.75"/>
+                            <rect width="7.5" height="39.375" x="113.438" y="12.188" rx="3.75"/>
+                            <rect width="7.5" height="45.938" x="134.063" y="5.625" rx="3.75"/>
+                            <rect width="7.5" height="41.25" x="154.688" y="10.313" rx="3.75"/>
+                            <rect width="7.5" height="51.563" x="144.375" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="103.125" y="30" rx="3.75"/>
+                        </g>
+                    </g>
+                    <g mask="url(#h)">
+                        <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                        <g transform="translate(339.75 16.375)">
+                            <use fill="#FFF" xlink:href="#j"/>
+                            <use fill="#000" filter="url(#k)" xlink:href="#j"/>
+                            <rect width="19.589" height="19.589" x=".25" y=".25" stroke="#C5C5C5" stroke-linejoin="square" stroke-width=".5" rx="2.813"/>
+                        </g>
+                        <g fill="#FFF">
+                            <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="18">Total Value of Proposals</tspan>
+                            </text>
+                            <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="32.625">By Month</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(452.5 450)">
+                    <mask id="n" fill="#fff">
+                        <use xlink:href="#l"/>
+                    </mask>
+                    <use fill="#000" filter="url(#m)" xlink:href="#l"/>
+                    <use fill="#FFF" xlink:href="#l"/>
+                    <g mask="url(#n)">
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(101.25 78.75)">
+                            <tspan x="98.438" y="6">6</tspan>
+                        </text>
+                        <path fill="#FDBC80" d="M101.25 78.75H195v8.438h-93.75z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(101.25 103.125)">
+                            <tspan x="160.313" y="6">9</tspan>
+                        </text>
+                        <path fill="#FDBC80" d="M101.25 103.125h155.625v8.438H101.25z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(101.25 127.5)">
+                            <tspan x="169.688" y="6.938">10</tspan>
+                        </text>
+                        <path fill="#FDBC80" d="M101.25 127.5h165v8.438h-165z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(101.25 151.875)">
+                            <tspan x="180" y="6.938">11</tspan>
+                        </text>
+                        <path fill="#FDBC80" d="M101.25 151.875h175.313v8.438H101.25z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(101.25 176.25)">
+                            <tspan x="160.313" y="6">9</tspan>
+                        </text>
+                        <path fill="#FDBC80" d="M101.25 176.25h155.625v8.438H101.25z"/>
+                        <g>
+                            <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(101.25 200.625)">
+                                <tspan x="98.438" y="6.938">6</tspan>
+                            </text>
+                            <path fill="#FDBC80" d="M101.25 200.625H195v8.438h-93.75z"/>
+                        </g>
+                        <g>
+                            <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(101.25 225)">
+                                <tspan x="87.188" y="6.938">5</tspan>
+                            </text>
+                            <path fill="#FDBC80" d="M101.25 225h82.5v8.438h-82.5z"/>
+                        </g>
+                        <g font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text fill="#77787B" transform="translate(17.75 71.25)">
+                                <tspan x="54.257" y="8">Equity</tspan> <tspan x=".232" y="32.375">Capital Appreciation</tspan> <tspan x="9.597" y="56.75">Moderate Growth</tspan> <tspan x="41.052" y="81.125">Moderate</tspan> <tspan x="42.588" y="105.5">Balanced</tspan> <tspan x="28.202" y="129.875">Conservative</tspan> <tspan x="40.301" y="154.25">Defensive</tspan>
+                            </text>
+                        </g>
+                        <g fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text transform="translate(101.188 247.5)">
+                                <tspan x="0" y="8">0</tspan>
+                            </text>
+                            <text transform="translate(101.188 247.5)">
+                                <tspan x="80.313" y="8">5</tspan>
+                            </text>
+                            <text transform="translate(101.188 247.5)">
+                                <tspan x="160.625" y="8">10</tspan>
+                            </text>
+                            <text transform="translate(101.188 247.5)">
+                                <tspan x="244.688" y="8">15</tspan>
+                            </text>
+                        </g>
+                        <path stroke="#E7E6E6" stroke-width=".5" d="M101.188 69.375v173.438h255"/>
+                    </g>
+                    <g mask="url(#n)">
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="11.25">
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="13.125" y="71">0</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="6.563" y="50.375">5k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="31.625">10k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="11">15k</tspan>
+                            </text>
+                        </g>
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="9.375">
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="0" y="9">9</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="17.813" y="9">11</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="38.438" y="9">13</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="59.063" y="9">15</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="79.688" y="9">17</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="101.25" y="9">19</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="121.875" y="9">21</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="142.5" y="9">23</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="163.125" y="9">25</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="183.75" y="9">27</tspan>
+                            </text>
+                        </g>
+                        <g fill="url(#i)" transform="translate(510 292.5)">
+                            <rect width="7.5" height="13.125" x="10.313" y="38.438" rx="3.75"/>
+                            <rect width="7.5" height="15" y="36.563" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="20.625" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="8.438" x="72.188" y="43.125" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="30.938" y="30" rx="3.75"/>
+                            <rect width="7.5" height="18.75" x="41.25" y="32.813" rx="3.75"/>
+                            <rect width="7.5" height="19.688" x="51.563" y="31.875" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="61.875" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="175.313" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="20.625" x="185.625" y="30.938" rx="3.75"/>
+                            <rect width="7.5" height="25.313" x="82.5" y="26.25" rx="3.75"/>
+                            <rect width="7.5" height="27.188" x="92.813" y="24.375" rx="3.75"/>
+                            <rect width="7.5" height="29.063" x="165" y="22.5" rx="3.75"/>
+                            <rect width="7.5" height="32.813" x="123.75" y="18.75" rx="3.75"/>
+                            <rect width="7.5" height="39.375" x="113.438" y="12.188" rx="3.75"/>
+                            <rect width="7.5" height="45.938" x="134.063" y="5.625" rx="3.75"/>
+                            <rect width="7.5" height="41.25" x="154.688" y="10.313" rx="3.75"/>
+                            <rect width="7.5" height="51.563" x="144.375" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="103.125" y="30" rx="3.75"/>
+                        </g>
+                    </g>
+                    <g mask="url(#n)">
+                        <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                        <g transform="translate(339.75 16.375)">
+                            <use fill="#FFF" xlink:href="#o"/>
+                            <use fill="#000" filter="url(#p)" xlink:href="#o"/>
+                            <rect width="19.589" height="19.589" x=".25" y=".25" stroke="#C5C5C5" stroke-linejoin="square" stroke-width=".5" rx="2.813"/>
+                        </g>
+                        <g fill="#FFF">
+                            <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="18">Total Proposals</tspan>
+                            </text>
+                            <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="32.625">By Risk</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(452.5 760.313)">
+                    <mask id="s" fill="#fff">
+                        <use xlink:href="#q"/>
+                    </mask>
+                    <use fill="#000" filter="url(#r)" xlink:href="#q"/>
+                    <use fill="#FFF" xlink:href="#q"/>
+                    <g mask="url(#s)">
+                        <path fill="#74C2CF" d="M110.625 75h209.063v23.438H110.625z"/>
+                        <text fill="#4DB6C5" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 75)">
+                            <tspan x="213.75" y="14.438">$3.65M</tspan>
+                        </text>
+                        <path fill="#74C2CF" d="M110.625 213.75h101.25v23.438h-101.25z"/>
+                        <text fill="#4DB6C5" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 213.75)">
+                            <tspan x="105.938" y="14.438">$1.75M</tspan>
+                        </text>
+                        <path fill="#74C2CF" d="M110.625 179.063h112.5V202.5h-112.5z"/>
+                        <text fill="#4DB6C5" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 179.063)">
+                            <tspan x="117.188" y="14.438">$1.95M</tspan>
+                        </text>
+                        <path fill="#74C2CF" d="M110.625 144.375H243.75v23.438H110.625z"/>
+                        <text fill="#4DB6C5" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 144.375)">
+                            <tspan x="137.813" y="14.438">$2.20M</tspan>
+                        </text>
+                        <g>
+                            <path fill="#74C2CF" d="M110.625 109.688h164.063v23.437H110.625z"/>
+                            <text fill="#4DB6C5" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 109.688)">
+                                <tspan x="168.75" y="14.438">$2.85M</tspan>
+                            </text>
+                        </g>
+                        <g font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text fill="#77787B" transform="translate(17.75 69.375)">
+                                <tspan x="3.161" y="8">Waiting on Paperwork</tspan> <tspan x=".815" y="42.688">Implemented/Invested</tspan> <tspan x="12.856" y="77.375">Paperwork Pending</tspan> <tspan x="13.379" y="112.063">Waiting on Funding</tspan> <tspan x="18.492" y="146.75">Active/In Progress</tspan>
+                            </text>
+                        </g>
+                        <g fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text transform="translate(109.625 247.5)">
+                                <tspan x=".625" y="8">$0</tspan>
+                            </text>
+                            <text transform="translate(109.625 247.5)">
+                                <tspan x="110.797" y="8">$2M</tspan>
+                            </text>
+                            <text transform="translate(109.625 247.5)">
+                                <tspan x="52.82" y="8">$1M</tspan>
+                            </text>
+                            <text transform="translate(109.625 247.5)">
+                                <tspan x="169.742" y="8">$3M</tspan>
+                            </text>
+                            <text transform="translate(109.625 247.5)">
+                                <tspan x="229.156" y="8">$4M</tspan>
+                            </text>
+                        </g>
+                        <path stroke="#E7E6E6" stroke-width=".5" d="M110.563 69.375v173.438h245.625"/>
+                    </g>
+                    <g mask="url(#s)">
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="11.25">
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="13.125" y="71">0</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="6.563" y="50.375">5k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="31.625">10k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="11">15k</tspan>
+                            </text>
+                        </g>
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="9.375">
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="0" y="9">9</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="17.813" y="9">11</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="38.438" y="9">13</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="59.063" y="9">15</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="79.688" y="9">17</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="101.25" y="9">19</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="121.875" y="9">21</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="142.5" y="9">23</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="163.125" y="9">25</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="183.75" y="9">27</tspan>
+                            </text>
+                        </g>
+                        <g fill="url(#i)" transform="translate(510 292.5)">
+                            <rect width="7.5" height="13.125" x="10.313" y="38.438" rx="3.75"/>
+                            <rect width="7.5" height="15" y="36.563" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="20.625" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="8.438" x="72.188" y="43.125" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="30.938" y="30" rx="3.75"/>
+                            <rect width="7.5" height="18.75" x="41.25" y="32.813" rx="3.75"/>
+                            <rect width="7.5" height="19.688" x="51.563" y="31.875" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="61.875" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="175.313" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="20.625" x="185.625" y="30.938" rx="3.75"/>
+                            <rect width="7.5" height="25.313" x="82.5" y="26.25" rx="3.75"/>
+                            <rect width="7.5" height="27.188" x="92.813" y="24.375" rx="3.75"/>
+                            <rect width="7.5" height="29.063" x="165" y="22.5" rx="3.75"/>
+                            <rect width="7.5" height="32.813" x="123.75" y="18.75" rx="3.75"/>
+                            <rect width="7.5" height="39.375" x="113.438" y="12.188" rx="3.75"/>
+                            <rect width="7.5" height="45.938" x="134.063" y="5.625" rx="3.75"/>
+                            <rect width="7.5" height="41.25" x="154.688" y="10.313" rx="3.75"/>
+                            <rect width="7.5" height="51.563" x="144.375" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="103.125" y="30" rx="3.75"/>
+                        </g>
+                    </g>
+                    <g mask="url(#s)">
+                        <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                        <g transform="translate(339.75 16.375)">
+                            <use fill="#FFF" xlink:href="#t"/>
+                            <use fill="#000" filter="url(#u)" xlink:href="#t"/>
+                            <rect width="19.589" height="19.589" x=".25" y=".25" stroke="#C5C5C5" stroke-linejoin="square" stroke-width=".5" rx="2.813"/>
+                        </g>
+                        <g fill="#FFF">
+                            <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="18">Total Value</tspan>
+                            </text>
+                            <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="32.625">Of Proposal Status</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(865 760.313)">
+                    <mask id="x" fill="#fff">
+                        <use xlink:href="#v"/>
+                    </mask>
+                    <use fill="#000" filter="url(#w)" xlink:href="#v"/>
+                    <use fill="#FFF" xlink:href="#v"/>
+                    <g mask="url(#x)">
+                        <path fill="#FECC92" d="M110.625 75h135.938v23.438H110.625z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 75)">
+                            <tspan x="140.625" y="14.438">8</tspan>
+                        </text>
+                        <path fill="#FECC92" d="M110.625 213.75h135.938v23.438H110.625z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 213.75)">
+                            <tspan x="140.625" y="14.438">8</tspan>
+                        </text>
+                        <path fill="#FECC92" d="M110.625 179.063h96.563V202.5h-96.563z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 179.063)">
+                            <tspan x="101.25" y="14.438">6</tspan>
+                        </text>
+                        <path fill="#FECC92" d="M110.625 144.375H270v23.438H110.625z"/>
+                        <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 144.375)">
+                            <tspan x="164.063" y="14.438">10</tspan>
+                        </text>
+                        <g>
+                            <path fill="#FECC92" d="M110.625 109.688H258.75v23.437H110.625z"/>
+                            <text fill="#F79961" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(110.625 109.688)">
+                                <tspan x="152.813" y="14.438">9</tspan>
+                            </text>
+                        </g>
+                        <g font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text fill="#77787B" transform="translate(17.75 69.375)">
+                                <tspan x="3.161" y="8">Waiting on Paperwork</tspan> <tspan x=".815" y="42.688">Implemented/Invested</tspan> <tspan x="12.856" y="77.375">Paperwork Pending</tspan> <tspan x="13.379" y="112.063">Waiting on Funding</tspan> <tspan x="18.492" y="146.75">Active/In Progress</tspan>
+                            </text>
+                        </g>
+                        <g fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text transform="translate(109.563 247.5)">
+                                <tspan x=".813" y="8">0</tspan>
+                            </text>
+                            <text transform="translate(109.563 247.5)">
+                                <tspan x="155.938" y="8">10</tspan>
+                            </text>
+                            <text transform="translate(109.563 247.5)">
+                                <tspan x="78.438" y="8">5</tspan>
+                            </text>
+                            <text transform="translate(109.563 247.5)">
+                                <tspan x="237.375" y="8">15</tspan>
+                            </text>
+                        </g>
+                        <path stroke="#E7E6E6" stroke-width=".5" d="M110.563 69.375v173.438h245.625"/>
+                    </g>
+                    <g mask="url(#x)">
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="11.25">
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="13.125" y="71">0</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="6.563" y="50.375">5k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="31.625">10k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="11">15k</tspan>
+                            </text>
+                        </g>
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="9.375">
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="0" y="9">9</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="17.813" y="9">11</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="38.438" y="9">13</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="59.063" y="9">15</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="79.688" y="9">17</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="101.25" y="9">19</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="121.875" y="9">21</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="142.5" y="9">23</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="163.125" y="9">25</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="183.75" y="9">27</tspan>
+                            </text>
+                        </g>
+                        <g fill="url(#i)" transform="translate(510 292.5)">
+                            <rect width="7.5" height="13.125" x="10.313" y="38.438" rx="3.75"/>
+                            <rect width="7.5" height="15" y="36.563" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="20.625" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="8.438" x="72.188" y="43.125" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="30.938" y="30" rx="3.75"/>
+                            <rect width="7.5" height="18.75" x="41.25" y="32.813" rx="3.75"/>
+                            <rect width="7.5" height="19.688" x="51.563" y="31.875" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="61.875" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="175.313" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="20.625" x="185.625" y="30.938" rx="3.75"/>
+                            <rect width="7.5" height="25.313" x="82.5" y="26.25" rx="3.75"/>
+                            <rect width="7.5" height="27.188" x="92.813" y="24.375" rx="3.75"/>
+                            <rect width="7.5" height="29.063" x="165" y="22.5" rx="3.75"/>
+                            <rect width="7.5" height="32.813" x="123.75" y="18.75" rx="3.75"/>
+                            <rect width="7.5" height="39.375" x="113.438" y="12.188" rx="3.75"/>
+                            <rect width="7.5" height="45.938" x="134.063" y="5.625" rx="3.75"/>
+                            <rect width="7.5" height="41.25" x="154.688" y="10.313" rx="3.75"/>
+                            <rect width="7.5" height="51.563" x="144.375" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="103.125" y="30" rx="3.75"/>
+                        </g>
+                    </g>
+                    <g mask="url(#x)">
+                        <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                        <g transform="translate(339.75 16.375)">
+                            <use fill="#FFF" xlink:href="#y"/>
+                            <use fill="#000" filter="url(#z)" xlink:href="#y"/>
+                            <rect width="19.589" height="19.589" x=".25" y=".25" stroke="#C5C5C5" stroke-linejoin="square" stroke-width=".5" rx="2.813"/>
+                        </g>
+                        <g fill="#FFF">
+                            <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="18">Count of Proposals</tspan>
+                            </text>
+                            <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="32.625">By Status</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(865 450)">
+                    <mask id="C" fill="#fff">
+                        <use xlink:href="#A"/>
+                    </mask>
+                    <use fill="#000" filter="url(#B)" xlink:href="#A"/>
+                    <use fill="#FFF" xlink:href="#A"/>
+                    <g mask="url(#C)">
+                        <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 72.188)">
+                            <tspan x="142.5" y="6">$2.70M</tspan>
+                        </text>
+                        <path fill="#4B73A1" d="M193.125 73.125h137.813v4.688H193.125z"/>
+                        <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 90)">
+                            <tspan x="135.938" y="6">$2.60M</tspan>
+                        </text>
+                        <path fill="#4B73A1" d="M193.125 90.938h131.25v4.687h-131.25z"/>
+                        <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 107.813)">
+                            <tspan x="131.25" y="6">$2.50M</tspan>
+                        </text>
+                        <path fill="#4B73A1" d="M193.125 108.75h126.563v4.688H193.125z"/>
+                        <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 125.625)">
+                            <tspan x="114.375" y="6">$2.25M</tspan>
+                        </text>
+                        <path fill="#4B73A1" d="M193.125 126.563h109.688v4.687H193.125z"/>
+                        <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 143.438)">
+                            <tspan x="109.688" y="6">$2.20M</tspan>
+                        </text>
+                        <path fill="#4B73A1" d="M193.125 144.375h105v4.688h-105z"/>
+                        <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 161.25)">
+                            <tspan x="99.375" y="6">$1.70M</tspan>
+                        </text>
+                        <path fill="#4B73A1" d="M193.125 162.188h94.688v4.687h-94.688z"/>
+                        <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 179.063)">
+                            <tspan x="70.313" y="6">$1.25M</tspan>
+                        </text>
+                        <path fill="#4B73A1" d="M193.125 180h65.625v4.688h-65.625z"/>
+                        <g>
+                            <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 196.875)">
+                                <tspan x="67.5" y="6">$1.22M</tspan>
+                            </text>
+                            <path fill="#4B73A1" d="M193.125 197.813h62.813v4.687h-62.813z"/>
+                        </g>
+                        <g>
+                            <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 214.688)">
+                                <tspan x="64.688" y="6">$1.20M</tspan>
+                            </text>
+                            <path fill="#4B73A1" d="M193.125 215.625h60v4.688h-60z"/>
+                        </g>
+                        <g>
+                            <text fill="#465E7B" font-family="Montserrat-SemiBold, Montserrat" font-size="6.563" font-weight="500" transform="translate(193.125 232.5)">
+                                <tspan x="56.25" y="6">$1.00M</tspan>
+                            </text>
+                            <path fill="#4B73A1" d="M193.125 233.438h51.563v4.687h-51.563z"/>
+                        </g>
+                        <g font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text fill="#77787B" transform="translate(13.063 66.563)">
+                                <tspan x="61.781" y="8">Loring Ward Moderate - DFA</tspan> <tspan x="63.317" y="25.813">Loring Ward Balanced - DFA</tspan> <tspan x="22.445" y="43.625">Loring Ward Moderate Growth - Select</tspan> <tspan x="30.326" y="61.438">Loring Ward Moderate Growth - DFA</tspan> <tspan x="13.08" y="79.25">Loring Ward Capital Appreciation - Select</tspan> <tspan x="74.986" y="97.063">Loring Ward Equity - DFA</tspan> <tspan x="53.9" y="114.875">Loring Ward Moderate - Select</tspan> <tspan x="55.436" y="132.688">Loring Ward Balanced - Select</tspan> <tspan x=".938" y="150.5">Loring Ward Moderate - Tax-Managed - DFA</tspan> <tspan x="61.03" y="168.313">Loring Ward Defensive - DFA</tspan>
+                            </text>
+                        </g>
+                        <g fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text transform="translate(193.063 249.375)">
+                                <tspan x=".313" y="8">$0</tspan>
+                            </text>
+                            <text transform="translate(193.063 249.375)">
+                                <tspan x="43.229" y="8">$1M</tspan>
+                            </text>
+                            <text transform="translate(193.063 249.375)">
+                                <tspan x="91.927" y="8">$2M</tspan>
+                            </text>
+                            <text transform="translate(193.063 249.375)">
+                                <tspan x="141.563" y="8">$3M</tspan>
+                            </text>
+                        </g>
+                        <path stroke="#E7E6E6" stroke-width=".5" d="M193.063 69.375v173.438H351.5"/>
+                    </g>
+                    <g mask="url(#C)">
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="11.25">
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="13.125" y="71">0</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="6.563" y="50.375">5k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="31.625">10k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="11">15k</tspan>
+                            </text>
+                        </g>
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="9.375">
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="0" y="9">9</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="17.813" y="9">11</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="38.438" y="9">13</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="59.063" y="9">15</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="79.688" y="9">17</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="101.25" y="9">19</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="121.875" y="9">21</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="142.5" y="9">23</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="163.125" y="9">25</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="183.75" y="9">27</tspan>
+                            </text>
+                        </g>
+                        <g fill="url(#i)" transform="translate(510 292.5)">
+                            <rect width="7.5" height="13.125" x="10.313" y="38.438" rx="3.75"/>
+                            <rect width="7.5" height="15" y="36.563" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="20.625" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="8.438" x="72.188" y="43.125" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="30.938" y="30" rx="3.75"/>
+                            <rect width="7.5" height="18.75" x="41.25" y="32.813" rx="3.75"/>
+                            <rect width="7.5" height="19.688" x="51.563" y="31.875" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="61.875" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="175.313" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="20.625" x="185.625" y="30.938" rx="3.75"/>
+                            <rect width="7.5" height="25.313" x="82.5" y="26.25" rx="3.75"/>
+                            <rect width="7.5" height="27.188" x="92.813" y="24.375" rx="3.75"/>
+                            <rect width="7.5" height="29.063" x="165" y="22.5" rx="3.75"/>
+                            <rect width="7.5" height="32.813" x="123.75" y="18.75" rx="3.75"/>
+                            <rect width="7.5" height="39.375" x="113.438" y="12.188" rx="3.75"/>
+                            <rect width="7.5" height="45.938" x="134.063" y="5.625" rx="3.75"/>
+                            <rect width="7.5" height="41.25" x="154.688" y="10.313" rx="3.75"/>
+                            <rect width="7.5" height="51.563" x="144.375" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="103.125" y="30" rx="3.75"/>
+                        </g>
+                    </g>
+                    <g mask="url(#C)">
+                        <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                        <g transform="translate(339.75 16.375)">
+                            <use fill="#FFF" xlink:href="#D"/>
+                            <use fill="#000" filter="url(#E)" xlink:href="#D"/>
+                            <rect width="19.589" height="19.589" x=".25" y=".25" stroke="#C5C5C5" stroke-linejoin="square" stroke-width=".5" rx="2.813"/>
+                        </g>
+                        <g fill="#FFF">
+                            <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="18">Total Value of Proposals</tspan>
+                            </text>
+                            <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="32.625">By Portfolio</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(40 760.313)">
+                    <mask id="H" fill="#fff">
+                        <use xlink:href="#F"/>
+                    </mask>
+                    <use fill="#000" filter="url(#G)" xlink:href="#F"/>
+                    <use fill="#FFF" xlink:href="#F"/>
+                    <g mask="url(#H)">
+                        <g fill="#F0F0F0">
+                            <path d="M32.813 96.563H356.25v1H32.813zM32.813 146.25H356.25v1H32.813zM32.813 195.938H356.25v1H32.813zM32.813 245.625H356.25v1H32.813z"/>
+                        </g>
+                        <path fill="#465E7B" d="M43.219 180h2.812v65.625H43.22z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(24.375 251.25)">
+                            <tspan x="7.207" y="8">0</tspan>
+                        </text>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(45.188 161.25)">
+                            <tspan x="7.46" y="98">2</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M53.625 161.25h2.813v84.375h-2.813zM64.031 143.438h2.813v102.187H64.03z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(66 180)">
+                            <tspan x="7.325" y="79.25">4</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M74.438 180h2.812v65.625h-2.813zM84.844 202.5h2.812v43.125h-2.812z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(86.813 96.563)">
+                            <tspan x="7.334" y="162.688">6</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M95.25 96.563h2.813v149.062H95.25zM105.656 180h2.813v65.625h-2.813z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(107.625 161.25)">
+                            <tspan x="7.304" y="98">8</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M116.063 161.25h2.812v84.375h-2.813zM126.469 143.438h2.812v102.187h-2.812z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(128.438 180)">
+                            <tspan x="5.241" y="79.25">10</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M136.875 180h2.813v65.625h-2.813zM147.281 202.5h2.813v43.125h-2.813z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(149.25 96.563)">
+                            <tspan x="5.494" y="162.688">12</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M157.688 96.563h2.812v149.062h-2.813zM168.094 180h2.812v65.625h-2.812z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(170.063 112.5)">
+                            <tspan x="5.431" y="146.75">14</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M178.5 112.5h2.813v133.125H178.5zM188.906 143.438h2.813v102.187h-2.813z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(190.875 180)">
+                            <tspan x="5.368" y="79.25">16</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M199.313 180h2.812v65.625h-2.813zM209.719 177.188h2.812v68.437h-2.812z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(211.688 69.375)">
+                            <tspan x="5.338" y="189.875">18</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M220.125 69.375h2.813v176.25h-2.813zM230.531 180h2.813v65.625h-2.813z"/>
+                        <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(232.5 161.25)">
+                            <tspan x="4.823" y="98">20</tspan>
+                        </text>
+                        <path fill="#465E7B" d="M240.938 161.25h2.812v84.375h-2.813zM251.344 124.688h2.812v120.937h-2.812z"/>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(253.313 180)">
+                                <tspan x="5.077" y="79.25">22</tspan>
+                            </text>
+                            <path fill="#465E7B" d="M261.75 180h2.813v65.625h-2.813z"/>
+                        </g>
+                        <g>
+                            <path fill="#465E7B" d="M272.156 202.5h2.813v43.125h-2.813z"/>
+                        </g>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(274.125 96.563)">
+                                <tspan x="5.03" y="162.688">24</tspan>
+                            </text>
+                            <path fill="#465E7B" d="M282.563 96.563h2.812v149.062h-2.813z"/>
+                        </g>
+                        <g>
+                            <path fill="#465E7B" d="M292.969 124.688h2.812v120.937h-2.812z"/>
+                        </g>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(294.938 180)">
+                                <tspan x="4.95" y="79.25">26</tspan>
+                            </text>
+                            <path fill="#465E7B" d="M303.375 180h2.813v65.625h-2.813z"/>
+                        </g>
+                        <g>
+                            <path fill="#465E7B" d="M313.781 202.5h2.813v43.125h-2.813z"/>
+                        </g>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(315.75 133.125)">
+                                <tspan x="4.92" y="126.125">28</tspan>
+                            </text>
+                            <path fill="#465E7B" d="M324.188 133.125H327v112.5h-2.813z"/>
+                        </g>
+                        <g>
+                            <path fill="#465E7B" d="M334.594 202.5h2.812v43.125h-2.812z"/>
+                        </g>
+                        <g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="translate(336.563 177.188)">
+                                <tspan x="4.836" y="82.063">30</tspan>
+                            </text>
+                            <path fill="#465E7B" d="M345 177.188h2.813v68.437H345z"/>
+                        </g>
+                        <g font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                            <text fill="#77787B" transform="translate(17.75 57.188)">
+                                <tspan x=".795" y="8.491">10</tspan>  <tspan x="4.921" y="44.116">8</tspan>  <tspan x="4.98" y="79.741">6</tspan>  <tspan x="4.963" y="115.366">4</tspan>  <tspan x="5.233" y="150.991">2</tspan>  <tspan x="4.727" y="186.616">0</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g mask="url(#H)">
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="11.25">
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="13.125" y="71">0</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="6.563" y="50.375">5k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="31.625">10k</tspan>
+                            </text>
+                            <text transform="translate(479.063 280.313)">
+                                <tspan x="0" y="11">15k</tspan>
+                            </text>
+                        </g>
+                        <g fill="#AEAEAE" font-family="Lato-Regular, Lato" font-size="9.375">
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="0" y="9">9</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="17.813" y="9">11</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="38.438" y="9">13</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="59.063" y="9">15</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="79.688" y="9">17</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="101.25" y="9">19</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="121.875" y="9">21</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="142.5" y="9">23</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="163.125" y="9">25</tspan>
+                            </text>
+                            <text transform="translate(510.938 350.625)">
+                                <tspan x="183.75" y="9">27</tspan>
+                            </text>
+                        </g>
+                        <g fill="url(#i)" transform="translate(510 292.5)">
+                            <rect width="7.5" height="13.125" x="10.313" y="38.438" rx="3.75"/>
+                            <rect width="7.5" height="15" y="36.563" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="20.625" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="8.438" x="72.188" y="43.125" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="30.938" y="30" rx="3.75"/>
+                            <rect width="7.5" height="18.75" x="41.25" y="32.813" rx="3.75"/>
+                            <rect width="7.5" height="19.688" x="51.563" y="31.875" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="61.875" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="15.938" x="175.313" y="35.625" rx="3.75"/>
+                            <rect width="7.5" height="20.625" x="185.625" y="30.938" rx="3.75"/>
+                            <rect width="7.5" height="25.313" x="82.5" y="26.25" rx="3.75"/>
+                            <rect width="7.5" height="27.188" x="92.813" y="24.375" rx="3.75"/>
+                            <rect width="7.5" height="29.063" x="165" y="22.5" rx="3.75"/>
+                            <rect width="7.5" height="32.813" x="123.75" y="18.75" rx="3.75"/>
+                            <rect width="7.5" height="39.375" x="113.438" y="12.188" rx="3.75"/>
+                            <rect width="7.5" height="45.938" x="134.063" y="5.625" rx="3.75"/>
+                            <rect width="7.5" height="41.25" x="154.688" y="10.313" rx="3.75"/>
+                            <rect width="7.5" height="51.563" x="144.375" rx="3.75"/>
+                            <rect width="7.5" height="21.563" x="103.125" y="30" rx="3.75"/>
+                        </g>
+                    </g>
+                    <g mask="url(#H)">
+                        <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                        <g transform="translate(339.75 16.375)">
+                            <use fill="#FFF" xlink:href="#I"/>
+                            <use fill="#000" filter="url(#J)" xlink:href="#I"/>
+                            <rect width="19.589" height="19.589" x=".25" y=".25" stroke="#C5C5C5" stroke-linejoin="square" stroke-width=".5" rx="2.813"/>
+                        </g>
+                        <g fill="#FFF">
+                            <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="18">Proposals</tspan>
+                            </text>
+                            <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                <tspan x="0" y="32.625">By Days Old (Last 30 Days)</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <path fill="#1598CB" fill-opacity=".05" d="M447.625 127h383.75a5.625 5.625 0 0 1 5.625 5.625v281.56a5.625 5.625 0 0 1-5.625 5.625h-383.75a5.625 5.625 0 0 1-5.625-5.625v-281.56a5.625 5.625 0 0 1 5.625-5.625zM860.625 127h383.75a5.625 5.625 0 0 1 5.625 5.625v281.56a5.625 5.625 0 0 1-5.625 5.625h-383.75a5.625 5.625 0 0 1-5.625-5.625v-281.56a5.625 5.625 0 0 1 5.625-5.625zM35.625 127h383.75a5.625 5.625 0 0 1 5.625 5.625v281.56a5.625 5.625 0 0 1-5.625 5.625H35.625A5.625 5.625 0 0 1 30 414.185v-281.56A5.625 5.625 0 0 1 35.625 127z"/>
+                <g>
+                    <g transform="translate(40 137)">
+                        <mask id="M" fill="#fff">
+                            <use xlink:href="#K"/>
+                        </mask>
+                        <use fill="#000" filter="url(#L)" xlink:href="#K"/>
+                        <use fill="#FFF" xlink:href="#K"/>
+                        <g mask="url(#M)">
+                            <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                            <g transform="translate(339.75 16.375)">
+                                <rect width="20.089" height="20.089" fill="#FFF" rx="3.75"/>
+                                <use fill="#000" filter="url(#N)" xlink:href="#O"/>
+                                <use fill="#1598CB" xlink:href="#O"/>
+                            </g>
+                            <g fill="#FFF">
+                                <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                    <tspan x="0" y="18">Opportunity AUM</tspan>
+                                </text>
+                                <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                    <tspan x="0" y="32.625">Forecast Overtim</tspan> <tspan x="100.11" y="32.625">e</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g mask="url(#M)">
+                            <text font-family="Montserrat-UltraLight, Montserrat" font-size="33.75" font-weight="200" letter-spacing="-.938" transform="translate(18.75 71.25)">
+                                <tspan x="0" y="33" fill="#404041">$27,600,00</tspan> <tspan x="171.93" y="33" fill="#404041">0</tspan>
+                            </text>
+                            <text fill="#67C072" font-family="MuseoSans-500, Museo Sans" font-size="9.375" letter-spacing=".938" transform="translate(18.75 127.5)">
+                                <tspan x="0" y="125.25">IMPLEMENTED: </tspan> <tspan x="82.659" y="125.25" font-family="MuseoSans-300, Museo Sans" font-weight="300">100%</tspan>
+                            </text>
+                            <text fill="#1598CB" font-family="MuseoSans-500, Museo Sans" font-size="9.375" letter-spacing=".938" transform="translate(18.75 127.5)">
+                                <tspan x="238.125" y="125.25">IN PROGRESS: </tspan> <tspan x="315.778" y="125.25" font-family="MuseoSans-300, Museo Sans" font-weight="300">90%</tspan>
+                            </text>
+                            <path fill="#1598CB" d="M156.563 181.875h194.062a5.625 5.625 0 0 1 5.625 5.625v47.813a5.625 5.625 0 0 1-5.625 5.625H156.562v-59.063z"/>
+                            <text fill="#67C072" font-family="Montserrat-Regular, Montserrat" font-size="9.375" transform="translate(18.75 127.5)">
+                                <tspan x=".938" y="42.75">$7M</tspan>
+                            </text>
+                            <text fill="#1598CB" font-family="Montserrat-Regular, Montserrat" font-size="9.375" transform="translate(18.75 127.5)">
+                                <tspan x="137.813" y="42.75">$20M</tspan>
+                            </text>
+                            <path fill="#67C072" d="M24.375 181.875h130.313v59.063H24.375a5.625 5.625 0 0 1-5.625-5.625V187.5a5.625 5.625 0 0 1 5.625-5.625z"/>
+                            <g transform="translate(137.813 127.5)">
+                                <use fill="#000" filter="url(#P)" xlink:href="#Q"/>
+                                <use fill="#FFF" xlink:href="#Q"/>
+                            </g>
+                            <text fill="#404041" font-family="MuseoSans-700, Museo Sans" font-size="8.438" font-weight="500" transform="translate(137.813 127.5)">
+                                <tspan x="15" y="13.625">Goal:</tspan> <tspan x="15.059" y="23.16" font-family="MuseoSans-300, Museo Sans" font-weight="300">$6,200,000</tspan>
+                            </text>
+                            <path stroke="#414042" stroke-linecap="round" stroke-width=".938" d="M138.75 127.969v112.5"/>
+                        </g>
+                    </g>
+                    <g transform="translate(452.5 137)">
+                        <mask id="T" fill="#fff">
+                            <use xlink:href="#R"/>
+                        </mask>
+                        <use fill="#000" filter="url(#S)" xlink:href="#R"/>
+                        <use fill="#FFF" xlink:href="#R"/>
+                        <g mask="url(#T)">
+                            <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                            <g transform="translate(339.75 16.375)">
+                                <rect width="20.089" height="20.089" fill="#FFF" rx="3.75"/>
+                                <use fill="#000" filter="url(#U)" xlink:href="#V"/>
+                                <use fill="#1598CB" xlink:href="#V"/>
+                            </g>
+                            <g fill="#FFF">
+                                <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                    <tspan x="0" y="18"># of Proposals</tspan>
+                                </text>
+                                <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                    <tspan x="0" y="32.625">In Progres</tspan> <tspan x="58.933" y="32.625">s</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g mask="url(#T)">
+                            <g transform="translate(180 105)">
+                                <use fill="#000" filter="url(#W)" xlink:href="#X"/>
+                                <use fill="#FFF" xlink:href="#X"/>
+                            </g>
+                            <text fill="#343534" font-family="MuseoSans-300, Museo Sans" font-size="9.375" font-weight="300" transform="translate(216.563 115.313)">
+                                <tspan x="0" y="9"># of Proposals </tspan> <tspan x="64.809" y="9" font-family="MuseoSans-700, Museo Sans" font-weight="500">2013 - 2018</tspan>
+                            </text>
+                            <g stroke-dasharray="0.9375,4.6875" stroke-linecap="round" transform="translate(180 105)">
+                                <use fill="#000" filter="url(#Y)" xlink:href="#Z"/>
+                                <use stroke="#F79961" stroke-width="2.813" xlink:href="#Z"/>
+                            </g>
+                            <g stroke-dasharray="0.9726225212216377,3.890490084886551" stroke-linecap="round">
+                                <g transform="translate(18.75 162.188)">
+                                    <use fill="#000" filter="url(#aa)" xlink:href="#ab"/>
+                                    <use stroke="#F79961" stroke-width="2.813" xlink:href="#ab"/>
+                                </g>
+                            </g>
+                            <g>
+                                <text fill="#404041" font-family="Montserrat-UltraLight, Montserrat" font-size="33.75" font-weight="200" letter-spacing="-.938" transform="translate(23.438 90.938)">
+                                    <tspan x="0" y="33">1</tspan> <tspan x="11.01" y="33">2</tspan>
+                                </text>
+                                <text fill="#77787B" font-family="MuseoSans-500, Museo Sans" font-size="9.375" letter-spacing=".938" transform="translate(23.438 90.938)">
+                                    <tspan x="0" y="54.938">TOTAL OVERTIME</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(865 137)">
+                        <mask id="ae" fill="#fff">
+                            <use xlink:href="#ac"/>
+                        </mask>
+                        <use fill="#000" filter="url(#ad)" xlink:href="#ac"/>
+                        <use fill="#FFF" xlink:href="#ac"/>
+                        <g mask="url(#ae)">
+                            <path fill="#1598CB" d="M0 0h375v52.5H0z"/>
+                            <g transform="translate(339.75 16.375)">
+                                <rect width="20.089" height="20.089" fill="#FFF" rx="3.75"/>
+                                <use fill="#000" filter="url(#af)" xlink:href="#ag"/>
+                                <use fill="#1598CB" xlink:href="#ag"/>
+                            </g>
+                            <g fill="#FFF">
+                                <text font-family="Montserrat-SemiBold, Montserrat" font-size="18.75" font-weight="500" letter-spacing=".188" transform="translate(18.75 9.375)">
+                                    <tspan x="0" y="18">Implemented Proposals</tspan>
+                                </text>
+                                <text font-family="MuseoSans-300, Museo Sans" font-size="13.125" font-weight="300" letter-spacing="-.188" transform="translate(18.75 9.375)">
+                                    <tspan x="0" y="32.625">Overtim</tspan> <tspan x="47.263" y="32.625">e</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g mask="url(#ae)">
+                            <g fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                                <text transform="rotate(-90 192.781 31.344)">
+                                    <tspan x="1.223" y="8">2013</tspan>
+                                </text>
+                                <text transform="rotate(-90 192.781 31.344)">
+                                    <tspan x="1.071" y="38.938">2014</tspan>
+                                </text>
+                            </g>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="rotate(-90 285.297 -61.11)">
+                                <tspan x=".948" y="8">2018</tspan>
+                            </text>
+                            <g stroke="#E7E6E6" stroke-linecap="square" stroke-width=".5">
+                                <path d="M163.969 157.094h189.844M163.969 100.563h189.844M163.969 128.406h189.844"/>
+                            </g>
+                            <g fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300">
+                                <text transform="rotate(1 -10141.603 8695.82)">
+                                    <tspan x="2.676" y="8.62">0</tspan>
+                                </text>
+                                <text transform="rotate(1 -8624.502 7178.72)">
+                                    <tspan x="29.208" y="8.62">5</tspan>
+                                </text>
+                                <text transform="rotate(1 -6944.855 5499.072)">
+                                    <tspan x="56.022" y="8.62">10</tspan>
+                                </text>
+                                <text transform="rotate(1 -5319.39 3873.607)">
+                                    <tspan x="84.43" y="8.62">15</tspan>
+                                </text>
+                            </g>
+                            <path stroke="#E7E6E6" stroke-width=".5" d="M350.875 193.125h.344v-7.938h-.344v7.938zM197.828 193.125h.344v-7.938h-.344v7.938z"/>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="rotate(-90 194.688 29.687)">
+                                <tspan x="1.257" y="73.813">2015</tspan>
+                            </text>
+                            <path stroke="#E7E6E6" stroke-width=".5" d="M236.266 193.188h.343v-7.938h-.343v7.938z"/>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="rotate(-90 194.688 29.687)">
+                                <tspan x=".945" y="112.25">2016</tspan>
+                            </text>
+                            <path stroke="#E7E6E6" stroke-width=".5" d="M274.703 193.188h.344v-7.938h-.344v7.938z"/>
+                            <text fill="#77787B" font-family="MuseoSans-300, Museo Sans" font-size="8.438" font-weight="300" transform="rotate(-90 194.688 29.687)">
+                                <tspan x="1.515" y="150.688">2017</tspan>
+                            </text>
+                            <path stroke="#E7E6E6" stroke-width=".5" d="M313.14 193.188h.344v-7.938h-.343v7.938zM165.672 193.188h.344v-7.938h-.344v7.938z"/>
+                            <g fill="#465E7B">
+                                <path d="M163.594 184.938v-5.625h4.687v5.625zM169.995 184.938V184h4.687v.938zM176.395 184.938v-28.125h4.688v28.125zM182.796 184.938v-33.75h4.688v33.75zM189.197 184.938v-5.625h4.688v5.625zM195.598 184.938v-11.25h4.688v11.25zM201.999 184.938v-5.625h4.688v5.625zM208.4 184.938V184h4.687v.938zM214.801 184.938v-39.375h4.688v39.375zM221.202 184.938v-11.25h4.687v11.25zM227.602 184.938v-5.625h4.688v5.625zM234.003 184.938V184h4.688v.938zM240.404 184.938v-16.875h4.688v16.875zM246.805 184.938v-5.625h4.687v5.625zM253.206 184.938v-11.25h4.688v11.25zM259.607 184.938V184h4.687v.938zM266.008 184.938v-16.875h4.688v16.875zM272.408 184.938v-22.5h4.688v22.5zM278.809 184.938v-5.625h4.688v5.625zM285.21 184.938V184h4.688v.938zM291.611 184.938v-28.125h4.688v28.125zM298.012 184.938v-5.625h4.687v5.625zM304.413 184.938v-33.75h4.688v33.75zM310.814 184.938V184h4.687v.938zM317.214 184.938v-11.25h4.688v11.25zM323.615 184.938v-5.625h4.688v5.625zM330.016 184.938v-16.875h4.688v16.875zM336.417 184.938V184h4.688v.938zM342.818 184.938v-5.625h4.688v5.625zM349.219 184.938v-11.25h4.687v11.25z"/>
+                            </g>
+                            <path stroke="#E7E6E6" stroke-linecap="square" stroke-width=".5" d="M163.969 184.938h189.844"/>
+                            <g>
+                                <g transform="translate(18.75 191.313)">
+                                    <use fill="#000" filter="url(#ah)" xlink:href="#ai"/>
+                                    <use fill="#FFF" xlink:href="#ai"/>
+                                </g>
+                                <g transform="translate(32.813 201.625)">
+                                    <text fill="#343534" font-family="MuseoSans-300, Museo Sans" font-size="9.375" font-weight="300">
+                                        <tspan x="14.063" y="9"># of Proposals</tspan>
+                                    </text>
+                                    <circle cx="4.219" cy="5.156" r="4.219" fill="#465E7B"/>
+                                </g>
+                                <g>
+                                    <text fill="#77787B" font-family="MuseoSans-500, Museo Sans" font-size="9.375" letter-spacing=".938" transform="translate(18.75 94.75)">
+                                        <tspan x="0" y="54.938">TOTAL IMPLEMENTED </tspan> <tspan x="0" y="65.938">PROPOSALS OVERTIME</tspan>
+                                    </text>
+                                    <text fill="#404041" font-family="Montserrat-UltraLight, Montserrat" font-size="33.75" font-weight="200" letter-spacing="-.938" transform="translate(18.75 94.75)">
+                                        <tspan x="0" y="33">8</tspan> <tspan x="19.549" y="33">0</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g font-family="Montserrat-SemiBold, Montserrat" font-size="24" font-weight="500" letter-spacing="-.6" mask="url(#c)">
+                <text fill="#1598CB" transform="translate(517 37)">
+                    <tspan x="0" y="23">View &amp; Add Analytics</tspan>
+                </text>
+            </g>
+        </g>
+        <path fill="url(#aj)" d="M0 0h1440v125H0z" transform="translate(0 1315)"/>
+        <g transform="translate(990 1355)">
+            <use fill="#000" filter="url(#ak)" xlink:href="#al"/>
+            <use fill="#FFF" stroke="#FFF" xlink:href="#al"/>
+        </g>
+        <text fill="#808284" font-family="Montserrat-SemiBold, Montserrat" font-size="12" font-weight="500" letter-spacing=".857" transform="translate(990 1355)">
+            <tspan x="52.541" y="27">CANCEL</tspan>
+        </text>
+        <g>
+            <g transform="translate(1170 1355)">
+                <use fill="#000" filter="url(#am)" xlink:href="#an"/>
+                <use fill="#1598CB" stroke="#1598CB" xlink:href="#an"/>
+            </g>
+            <g fill="#FFF">
+                <path d="M1228.91 1385.848h-9.82v-4.13c0-.457.367-.827.82-.827h8.18c.453 0 .82.37.82.826v4.13zm0-17.348h-1.637v4.957a.822.822 0 0 1-.818.826h-6.546a.822.822 0 0 1-.818-.826v-4.957H1215v17.348c0 .912.732 1.652 1.636 1.652h14.728c.904 0 1.636-.74 1.636-1.652v-14.044l-4.09-3.304z"/>
+                <text font-family="Montserrat-SemiBold, Montserrat" font-size="12" font-weight="500" letter-spacing=".857" transform="translate(1214 1368)">
+                    <tspan x="35" y="14">SAVE</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

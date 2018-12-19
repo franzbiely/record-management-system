@@ -83,14 +83,7 @@
                     <app-graph-proposals [reportType]="pane"></app-graph-proposals>
                 </div><!-- .board-pane -->
                 <div class="board-pane">
-                    <app-dash-box [isNew]="isNew"
-                                  [title]="'&nbsp;'"
-                                  [headerRightType]="'action'">
-                        <div class="overlay"></div>
-                        <div class="add-container"> <a (click)="addAnalyticsBox()"><i class="icon-add"></i><span>Add</span></a></div>
-                        <div class="info-item">
-                        </div>
-                    </app-dash-box>
+                    <a (click)="addAnalyticsBox()"><img src="../../../assets/analytics/chart-0.svg" alt="chart-0" style="max-width: 100%; "></a>
                 </div><!-- .board-pane -->
             </div><!-- .board-panes -->
         </div><!-- .report-board -->
@@ -108,7 +101,9 @@
                 <div class="selector-item" *ngFor="let chart of charts; let i = index">
                     <div class="analytics-box" data-id="{{ chart }}">
                         <a (click)="selectAnalyticsBox($event)"></a>
-                        <span><img src="../../../assets/analytics/chart-{{ i + 1 }}.svg" alt="chart-{{ i }}"></span>
+                        <span>
+                            <img src="../../../assets/component/home/chart-{{ i + 1 }}.png" alt="chart-{{ i }}">
+                        </span>
                     </div><!-- .analytics-box -->
                 </div><!-- .selector-item -->
             </div><!-- .selector-items -->

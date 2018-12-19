@@ -200,6 +200,14 @@
                 flex: 0 0 33.333333%;
                 max-width: 33.333333%;
             }
+            .selector-item {
+                &:nth-child(-n+3) {
+                    .analytics-box a {
+                        top: 10px;
+                        left: -2px;
+                    }
+                }
+            }
             span {
                 display: block;
                 padding: 10px 10px 0 10px;

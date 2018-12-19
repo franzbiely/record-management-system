@@ -467,9 +467,12 @@
                                 text-align: right;
                                 color: #c5c5c5;
                             }
-                            .icon-dropdown {
-                                padding-left: 6px;
-                                content: url('../../../assets/component/household-member/arrow-gray.png');
+                            .icon-dropdown{
+                                width: 10px;
+                                cursor: pointer;
+                                padding-left: 5px;
+                                height: 7px;
+                                content: url("../../../assets/arrow-down-gray.svg");
                             }
                             .icon-remove{
                                 cursor:pointer;
