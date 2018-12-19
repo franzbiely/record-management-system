@@ -5,31 +5,37 @@
         <i class="icon-dropdown"></i>
       </summary>
       <ul>
-        <li>
+        <li *ngIf="haveEdit">
+          <a (click)="modifyFunc()">
+            <span class="title">Edit</span>
+            <i class="icon edit-gray"></i>
+          </a>
+        </li>
+        <li *ngIf="haveView">
           <a (click)="viewFunc()">
             <span class="title">View</span>
             <i class="icon view-gray"></i>
           </a>
         </li>
-        <li>
+        <li *ngIf="haveModify">
           <a (click)="modifyFunc()">
             <span class="title">Modify</span>
             <i class="icon modify-gray"></i>
           </a>
         </li>
-        <li>
+        <li *ngIf="haveDuplicate">
           <a>
             <span class="title">Duplicate</span>
             <i class="icon duplicate-gray"></i>
           </a>
         </li>
-        <li>
+        <li *ngIf="haveDelete">
           <a>
             <span class="title">Delete</span>
             <i class="icon delete-gray"></i>
           </a>
         </li>
-        <li>
+        <li *ngIf="haveViewFactSheet">
           <a>
             <span class="title">View Fact Sheet</span>
             <i class="icon fact-sheet-gray"></i>

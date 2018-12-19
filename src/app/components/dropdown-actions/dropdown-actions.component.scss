@@ -101,6 +101,12 @@
     }
 }
 .icon {
+    &.edit-gray {
+        background: url('../../../assets/edit-gray.svg');
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
     &.view-gray {
         background: url('../../../assets/view-gray.svg');
         width: 20px;
@@ -120,7 +126,7 @@
         position: absolute;
     }
     &.delete-gray {
-        background: url('../../../assets/delete-gray.svg');
+        background: url('../../../assets/delete-gray.svg') contain;
         width: 20px;
         height: 20px;
         position: absolute;

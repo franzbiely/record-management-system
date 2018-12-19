@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown-actions',
@@ -7,7 +7,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class DropdownActionsComponent implements OnInit {
 
-
+  haveEdit : boolean = false;
+  haveView : boolean = false;
+  haveModify : boolean = false;
+  haveDuplicate : boolean = false;
+  haveDelete : boolean = false;
+  haveViewFactSheet : boolean = false;
+  @Input() type : 'account';
 
 
 	viewFunc() {
@@ -22,6 +28,20 @@ export class DropdownActionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    switch(this.type) {
+      case 'account' : 
+        this.haveEdit = true;
+        this.haveView = true;
+        this.haveDelete = true;
+        break;
+      default : 
+        this.haveEdit = true;
+        this.haveView = true;
+        this.haveModify = true;
+        this.haveDuplicate = true;
+        this.haveDelete = true;
+        this.haveViewFactSheet = true;
+    }
   }
 
 }
