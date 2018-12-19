@@ -19,6 +19,7 @@ export class ImportAccountsComponent implements OnInit {
 
   showAccountDetailsModal() {
     this.modalStatus.toggleAccountDetails(true);
+    this.modalStatus.toggleImportAccount(false);
   }
 
   closeMe() {

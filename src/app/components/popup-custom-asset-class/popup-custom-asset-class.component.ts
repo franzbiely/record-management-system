@@ -14,6 +14,7 @@ export class PopupCustomAssetClassComponent implements OnInit {
   setModalStatus($value) {
     this.modalStatus.SET_viewPortfolio(false);
     this.modalStatus.SET_assetClass($value);
+    this.modalStatus.toggleAccountDetails(false);
   }
   constructor(private modalStatus: ModalStatusService) { }  
 
