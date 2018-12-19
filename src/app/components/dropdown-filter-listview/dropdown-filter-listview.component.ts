@@ -16,11 +16,11 @@ export class DropdownFilterListviewComponent implements OnInit {
   		2 : false,
   	},
   	proposal : {
-  		0 : false, //all
-  		1 : false,
-  		2 : false,
-  		3 : false,
-  		4 : false,
+  		0 : true, //all
+  		1 : true,
+  		2 : true,
+  		3 : true,
+  		4 : true,
   	}
   }
 

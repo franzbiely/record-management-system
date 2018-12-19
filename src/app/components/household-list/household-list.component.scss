@@ -150,9 +150,14 @@ app-household-member {
                             margin-top: 15px;
                         }
                         .text-radio-button{
-                            font-family: Montserrat, sans-serif;
-                            font-size: 10px;
-                            font-weight: 500;
+                            font-family: "museo-sans";
+                            font-size: 12px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1;
+                            letter-spacing: normal;
+                            color: #414042;
                         }
                         i {
                             width: 15px;
@@ -171,12 +176,15 @@ app-household-member {
                     }
                     .text-search-container{
                         .text-search{
-                            font-family: "Montserrat", sans-serif;
+                            font-family: "Montserrat";
                             font-size: 12px;
-                            text-transform: uppercase;
                             font-weight: 600;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1;
                             letter-spacing: 1px;
                             color: #77787b;
+                            text-transform: uppercase;
                         }
                     }
                 }
@@ -192,7 +200,7 @@ app-household-member {
                             padding: 10px 40px;
                             border: 1px #ddd solid;
                             font-size:12px;
-                            font-family: Montserrat, sans-serif;
+                            font-family: "Montserrat", sans-serif;
                             background: url("../../../assets/component/household-list/search-gray.png") no-repeat 10px 8px;
                             @media only screen and (max-width: 767px){
                                 margin-top: 15px;
@@ -238,12 +246,14 @@ app-household-member {
                             }
                         }
                         .information-container span{
-                            font-family: museo-sans, sans-serif;
-                            color: #77787b;
-                            line-height: 1.22;
-                            font-weight: 500;
+                            font-family: "museo-sans";
                             font-size: 18px;
                             font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.22;
+                            letter-spacing: normal;
+                            color: #77787b;
                         }
                     }
                     .row-2{
@@ -263,9 +273,15 @@ app-household-member {
                                 height: 100%;
                                 border-radius: 6px;
                                 padding: 14px 20px;
-                                border: 1px #ddd solid;
-                                font-size:12px;
-                                font-family: Montserrat, sans-serif;
+                                border: 1px #c5c5c5 solid;
+                                font-family: "museo-sans";
+                                font-size: 14px;
+                                font-weight: 300;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #414042;
                                 @media only screen and (max-width: 767px){
                                    width: auto;
                                    flex:1;
@@ -284,9 +300,15 @@ app-household-member {
                                 height: 100%;
                                 border-radius: 6px;
                                 padding: 14px 20px;
-                                border: 1px #ddd solid;
-                                font-size:12px;
-                                font-family: Montserrat, sans-serif;
+                                border: 1px #c5c5c5 solid;
+                                font-family: "museo-sans";
+                                font-size: 14px;
+                                font-weight: 300;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #414042;
                                 @media only screen and (max-width: 767px){
                                     width: auto;
                                     flex:1;
@@ -294,7 +316,7 @@ app-household-member {
                             }
                         }
                         ::placeholder{
-                            color: #ddd;
+                            color: #c5c5c5;
                         }
                     }
                     .row-3{

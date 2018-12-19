@@ -44,21 +44,30 @@
 .p-text-small-blue{
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: normal;
     line-height: 10px;
     letter-spacing: 0.6px;
     text-align: center;
     color: #1598cb;
 }
-.p-text-small {
+.p-text-small-grey{
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 1px;
-    color: #414042;
+    font-weight: normal;
+    line-height: 10px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color:#77787b;
+}
+.p-text-small {
+    font-family: "museo-sans";
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #414042;
 }
 .dropdown.active .dropdown-content{
     display:inline-block;
