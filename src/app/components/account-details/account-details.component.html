@@ -8,16 +8,58 @@
         </div>
         <div class="box-body">
           <div class="left-section">
-            <div class="overlay"></div>
+            <div class="overlay" *ngIf="enableAccountInfo==false"></div>
             <div class="left-section-content">
+              <form [formGroup]="frmAccountDetails">
               <span class="title-text">Account Information:</span>
-              <div class="text-box-container"><input type="text" class="text-box"></div>
-              <div class="dropdown-container"><div class="dropdown"><span>Manually<span class="asterisk">*</span></span><i class="icon-dropdown"></i></div></div>
+              <div class="text-box-container"><input type="text" placeholder="Account Name *" formControlName="f1" required class="text-box"></div>
+              <div class="dropdown-container">
+                <details>
+                  <summary>
+                    <div class="dropdown"><span>{{frmAI.f2}} <span class="asterisk">*</span></span><i class="icon-dropdown"></i></div>
+                  </summary>
+                  <div class="choices">
+                    <a class="item" (click)="frmAI.f2='Choice A'">Choice A</a>
+                    <a class="item" (click)="frmAI.f2='Choice B'">Choice B</a>
+                  </div>
+                </details>
+              </div>
               <div class="text-box-container"><input type="text" class="text-box" placeholder="Investment Group"></div>
-              <div class="dropdown-container"><div class="dropdown"><span>Manually</span><i class="icon-dropdown"></i></div></div>
+              <div class="dropdown-container">
+                <details>
+                  <summary>
+                    <div class="dropdown"><span>{{frmAI.f4}} <span class="asterisk">*</span></span><i class="icon-dropdown"></i></div>
+                  </summary>
+                  <div class="choices">
+                    <a class="item" (click)="frmAI.f4='Choice A'">Choice A</a>
+                    <a class="item" (click)="frmAI.f4='Choice B'">Choice B</a>
+                  </div>
+                </details>
+              </div>
               <div class="text-box-container"><input type="text" class="text-box"></div>
-              <div class="dropdown-container"><div class="dropdown"><span>IRA (Roth)<span class="asterisk">*</span></span><i class="icon-dropdown"></i></div></div>
-              <div class="dropdown-container"><div class="dropdown"><span>Chris Candelaria<span class="asterisk">*</span></span><i class="icon-dropdown"></i></div></div>
+              <div class="dropdown-container">
+                <details>
+                  <summary>
+                    <div class="dropdown"><span>{{frmAI.f6}} <span class="asterisk">*</span></span><i class="icon-dropdown"></i></div>
+                  </summary>
+                  <div class="choices">
+                    <a class="item" (click)="frmAI.f6='Choice A'">Choice A</a>
+                    <a class="item" (click)="frmAI.f6='Choice B'">Choice B</a>
+                  </div>
+                </details>
+              </div>
+              <div class="dropdown-container">
+                <details>
+                  <summary>
+                    <div class="dropdown"><span>{{frmAI.f7}} <span class="asterisk">*</span></span><i class="icon-dropdown"></i></div>
+                  </summary>
+                  <div class="choices">
+                    <a class="item" (click)="frmAI.f7='Choice A'">Choice A</a>
+                    <a class="item" (click)="frmAI.f7='Choice B'">Choice B</a>
+                  </div>
+                </details>
+              </div>
+              </form>
             </div>
           </div>
           <div class="right-section">
@@ -58,7 +100,7 @@
                         Cash & Cash Alternatives
                         <a class="icon-dropdown"></a>
                       </summary>
-                      <app-popup-custom-asset-class></app-popup-custom-asset-class>
+                      <app-popup-custom-asset-class (selectEvent)="selectPopupCAssets($event)"></app-popup-custom-asset-class>
                     </details>
                   </td>
                   <td>155.75</td>
@@ -75,7 +117,7 @@
                         U.S Large Value Stocks
                         <a class="icon-dropdown"></a>
                       </summary>
-                      <app-popup-custom-asset-class></app-popup-custom-asset-class>
+                      <app-popup-custom-asset-class (selectEvent)="selectPopupCAssets($event)"></app-popup-custom-asset-class>
                     </details>
                   </td>
                   <td>6,316.18</td>
@@ -125,7 +167,7 @@
           </div>
           <div class="btn-container">
             <button (click)="closeMe()" class="btn-cancel">Cancel</button>
-            <button (click)="saveMe()" class="btn-save"><i class="icon-save"></i> <span>Save</span></button>
+            <button (click)="saveMe()" class="btn-save primary" [disabled]="frmAccountDetails.invalid"><i class="icon-save"></i> <span>Save</span></button>
           </div>
         </div>
       </div>

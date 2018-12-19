@@ -13,6 +13,9 @@ export class AppComponent {
       $(document).on('click', 'details', function () {
         $('details').not(this).removeAttr('open');
       });
+      $(document).on('click', 'details *', function () {
+        $(this).closest('details').removeAttr('open');
+      });
     });
   }
 

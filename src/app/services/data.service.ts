@@ -47,5 +47,11 @@ export class DataService {
 	  	this.householdHaveDataSource.next(value);
 	}
 
+	private enableAccountInfoSource = new BehaviorSubject<boolean>(false);
+	public enableAccountInfo = this.enableAccountInfoSource.asObservable();
+	SET_enableAccountInfo(value: boolean) {
+	  	this.enableAccountInfoSource.next(value);
+	}
+
   constructor() { }
 }

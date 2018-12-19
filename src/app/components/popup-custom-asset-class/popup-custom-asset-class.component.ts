@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalStatusService } from "../../services/modal-status.service"
+import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
+import { ModalStatusService } from "../../services/modal-status.service";
 
 @Component({
   selector: 'app-popup-custom-asset-class',
@@ -20,6 +20,12 @@ export class PopupCustomAssetClassComponent implements OnInit {
   ngOnInit() {
     this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
     this.modalStatus.assetClass.subscribe(value => this.assetClassModal = value);
+  }
+
+  @Output() selectEvent = new EventEmitter<boolean>();
+  selectFunc() {
+    this.selectEvent.emit(true);
+    this.modalStatus.SET_assetClass(false);
   }
 
 }
