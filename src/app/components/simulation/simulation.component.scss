@@ -429,6 +429,9 @@ app-dropdown-update-account {
         // width: 0px !important;
         // overflow: hidden;
       }
+      .canvas-container {
+        height: 260px;
+      }
       .row-2{
         padding: 0px !important;
       }
@@ -1141,6 +1144,11 @@ app-dropdown-update-account {
     .progress { 
       background-color: #67c072 !important;
     }
+  }
+  .canvas-container {
+    height: 220px;
+    position:relative;
+    margin-bottom:20px;
   }
   .cpcc-header {
     display: flex;

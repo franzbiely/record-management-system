@@ -63,9 +63,9 @@ export class SimulationComponent implements OnInit {
       },
       tooltips: {
         enabled: true
-      }
+      },
+      responsive : true, maintainAspectRatio: false
     }
-    const responsive_options = { responsive : true, maintainAspectRatio: false }
     const pieb_chart_data = {
       labels: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'],
       datasets: [{
@@ -79,23 +79,23 @@ export class SimulationComponent implements OnInit {
       type: 'doughnut',
       data: piea_chart_data,
       options: piea_chart_options
-    }, responsive_options);
+    });
     this.piea_chart_mobile = new Chart(this.piea_chart_mobile_ref.nativeElement, {
       type: 'doughnut',
       data: piea_chart_data,
       options: piea_chart_options
-    }, responsive_options);
+    });
 
     this.pieb_chart = new Chart(this.pieb_chart_ref.nativeElement, {
       type: 'doughnut',
       data: pieb_chart_data,
       options: piea_chart_options
-    }, responsive_options);
+    });
     this.pieb_chart_mobile = new Chart(this.pieb_chart_mobile_ref.nativeElement, {
       type: 'doughnut',
       data: pieb_chart_data,
       options: piea_chart_options
-    }, responsive_options);
+    });
 
     const line_chart_options = {
       legend: {
@@ -111,7 +111,6 @@ export class SimulationComponent implements OnInit {
       },
       elements: { point:{ radius: 0 } },
       plugins: { datalabels: { display: false } },
-      maintainAspectRatio: true,
       scales: {
         yAxes: [{
           ticks: {
@@ -162,7 +161,8 @@ export class SimulationComponent implements OnInit {
             tooltipEl.style.pointerEvents = 'none';
             tooltipEl.style.height = position.height - 47 + 'px';
         }
-      }
+      },
+      responsive : true, maintainAspectRatio: false
     }
     
     this.recommended_portfolio_chart = new Chart(this.recommended_portfolio_chart_ref.nativeElement, {
@@ -212,7 +212,7 @@ export class SimulationComponent implements OnInit {
           fill: '-1'
         }]
       },
-      options: line_chart_options, responsive : true, maintainAspectRatio: false });
+      options: line_chart_options });
     
     this.current_portfolio_chart = new Chart(this.current_portfolio_chart_ref.nativeElement, {
       type: 'line',
@@ -263,7 +263,7 @@ export class SimulationComponent implements OnInit {
           fill: '-1'
         }]
       },
-      options: line_chart_options, responsive : true, maintainAspectRatio: false });
+      options: line_chart_options});
 }
 
 closeSidebar() {

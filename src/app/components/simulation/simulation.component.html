@@ -126,7 +126,9 @@
                     <button>Current Holdings</button>
                   </div>
                 </div>
-                <canvas height="200" #current_portfolio_chart></canvas>
+                <div class="canvas-container">
+                  <canvas height="200" #current_portfolio_chart></canvas>
+                </div>
                 <div class="progress-chart">
                   <span class="progress"></span>
                 </div>
@@ -187,7 +189,9 @@
               <div class="img-container">
                   <div class="current_portfolio_chart_container recommended">
                       <h3>Recommended Portfolio</h3>
-                      <canvas height="200" #recommended_portfolio_chart></canvas> 
+                      <div class="canvas-container">
+                        <canvas height="200" #recommended_portfolio_chart></canvas> 
+                      </div>
                       <div class="progress-chart">
                         <span class="progress"></span>
                       </div>
