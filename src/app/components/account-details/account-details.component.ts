@@ -30,7 +30,13 @@ export class AccountDetailsComponent implements OnInit {
     this.data.enableAccountInfo.subscribe(value => this.enableAccountInfo = value);
 
     this.frmAccountDetails = this.fb.group({
-        f1: ['', [Validators.required]]
+        f1: ['', [Validators.required]],
+        f2: ['', [Validators.required]],
+        f3: ['', [Validators.required]],
+        f4: ['', [Validators.required]],
+        f5: ['', [Validators.required]],
+        f6: ['', [Validators.required]],
+        f7: ['', [Validators.required]]
     })
   }
 

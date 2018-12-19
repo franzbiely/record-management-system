@@ -13,6 +13,7 @@
               <form [formGroup]="frmAccountDetails">
               <span class="title-text">Account Information:</span>
               <div class="text-box-container"><input type="text" placeholder="Account Name *" formControlName="f1" required class="text-box"></div>
+              <input type="hidden" formControlName="f2" [(ngModel)]="frmAI.f2" required>
               <div class="dropdown-container">
                 <details>
                   <summary>
@@ -24,7 +25,8 @@
                   </div>
                 </details>
               </div>
-              <div class="text-box-container"><input type="text" class="text-box" placeholder="Investment Group"></div>
+              <div class="text-box-container"><input type="text" class="text-box" placeholder="Investment Group" formControlName="f3" required></div>
+              <input type="hidden" formControlName="f4" [(ngModel)]="frmAI.f4" required>
               <div class="dropdown-container">
                 <details>
                   <summary>
@@ -36,7 +38,8 @@
                   </div>
                 </details>
               </div>
-              <div class="text-box-container"><input type="text" class="text-box"></div>
+              <div class="text-box-container"><input type="text" class="text-box" formControlName="f5" required></div>
+              <input type="hidden" formControlName="f6" [(ngModel)]="frmAI.f6" required>
               <div class="dropdown-container">
                 <details>
                   <summary>
@@ -48,6 +51,7 @@
                   </div>
                 </details>
               </div>
+              <input type="hidden" formControlName="f7" [(ngModel)]="frmAI.f7" required>
               <div class="dropdown-container">
                 <details>
                   <summary>
