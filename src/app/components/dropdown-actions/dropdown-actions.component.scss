@@ -126,7 +126,8 @@
         position: absolute;
     }
     &.delete-gray {
-        background: url('../../../assets/delete-gray.svg') contain;
+        background: url('../../../assets/delete-gray.svg');
+        background-size: contain;
         width: 20px;
         height: 20px;
         position: absolute;
