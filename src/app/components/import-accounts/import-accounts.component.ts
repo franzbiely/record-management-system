@@ -8,6 +8,7 @@ import { ModalStatusService } from "../../services/modal-status.service"
 })
 export class ImportAccountsComponent implements OnInit {
   selected_counter: number = 0;
+  active_tab : number;
 	importAccountsModal: boolean = false;
   accountDetailsModal: boolean = false;
   constructor(private modalStatus: ModalStatusService) { }

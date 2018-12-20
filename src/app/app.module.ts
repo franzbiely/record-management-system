@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AccountComponent } from './components/account/account.component';
-import { HomeComponent } from './components/home/home.component';
 import { ListViewScreenComponent } from './screens/list-view-screen/list-view-screen.component';
 import { ListViewComponent } from './components/list-view/list-view.component';
 import { RiskAssessmentComponent } from './components/risk-assessment/risk-assessment.component';
@@ -97,7 +96,8 @@ import { PopupEmailLanguageComponent } from './components/popup-email-language/p
 import { PopupDocumentLanguageComponent } from './components/popup-document-language/popup-document-language.component';
 import { DropdownActionsListviewComponent } from './components/dropdown-actions-listview/dropdown-actions-listview.component';
 import { DropdownActionsPortfolioComponent } from './components/dropdown-actions-portfolio/dropdown-actions-portfolio.component';
-import { DropdownCapitalAppreciationComponent } from './components/dropdown-capital-appreciation/dropdown-capital-appreciation.component'
+import { DropdownCapitalAppreciationComponent } from './components/dropdown-capital-appreciation/dropdown-capital-appreciation.component';
+import { SecurityDropdownAutocompleteComponent } from './components/security-dropdown-autocomplete/security-dropdown-autocomplete.component';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
  // Change this to your upload POST address:
@@ -125,7 +125,6 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     HeaderComponent,
     SidebarComponent,
     AccountComponent,
-    HomeComponent,
     ListViewScreenComponent,
     ListViewComponent,
     RiskAssessmentComponent,
@@ -212,7 +211,8 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     PopupDocumentLanguageComponent,
     DropdownActionsListviewComponent,
     DropdownActionsPortfolioComponent,
-    DropdownCapitalAppreciationComponent
+    DropdownCapitalAppreciationComponent,
+    SecurityDropdownAutocompleteComponent
   ],
   imports: [
     BrowserModule,

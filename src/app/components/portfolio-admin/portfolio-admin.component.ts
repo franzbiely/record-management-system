@@ -18,12 +18,12 @@ export class PortfolioAdminComponent implements OnInit {
     this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
 
   }
-  viewEventReciever() {
+  viewEventReciever(event) {
     this.data.SET_portfolioPopupType('view');
     this.modalStatus.SET_viewPortfolio(true);
     window.scroll(0,0);
   }
-  modifyEventReciever() {
+  modifyEventReciever(event) {
     this.data.SET_portfolioPopupType('edit');
     this.modalStatus.SET_viewPortfolio(true);
     window.scroll(0,0);

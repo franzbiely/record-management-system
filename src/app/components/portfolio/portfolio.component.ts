@@ -24,12 +24,12 @@ export class PortfolioComponent implements OnInit {
     // this.data.SET_proposalSteps(2);
     // this.data.SET_proposal_show_btnNext(false);
   }
-  viewEventReciever() {
+  viewEventReciever(event) {
     this.data.SET_portfolioPopupType('view');
   	this.modalStatus.SET_viewPortfolio(true);
     window.scroll(0,0);
   }
-  modifyEventReciever() {
+  modifyEventReciever(event) {
     this.data.SET_portfolioPopupType('edit');
     this.modalStatus.SET_viewPortfolio(true);
     window.scroll(0,0);

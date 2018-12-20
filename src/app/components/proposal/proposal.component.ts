@@ -19,7 +19,7 @@ export class ProposalComponent implements OnInit {
 	toHousehold() {
 		this.router.navigateByUrl('create-household');
 	}
-	nextReceiver() {
+	nextReceiver(event) {
       this.data.SET_proposal_show_btnNext(false);
       let x = this.currentPage + 1;
       this.data.SET_proposalSteps(x);

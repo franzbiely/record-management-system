@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown-actions-listview',
@@ -11,5 +11,17 @@ export class DropdownActionsListviewComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  viewFunc() {
+  	this.viewEvent.emit(true);
+  }
+  modifyFunc() {
+  	this.modifyEvent.emit(true);
+  }
+
+  @Output() viewEvent = new EventEmitter<boolean>();
+  @Output() modifyEvent = new EventEmitter<boolean>();
+
+
 
 }

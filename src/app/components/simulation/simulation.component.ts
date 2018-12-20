@@ -20,6 +20,7 @@ export class SimulationComponent implements OnInit {
   @ViewChild('pieb_chart_mobile', { read: ElementRef }) private pieb_chart_mobile_ref: ElementRef;
   
 
+  fee_adjustment : number;
 
   isSidebarOpen: boolean = true;
   goalType: string = 'Retirement';

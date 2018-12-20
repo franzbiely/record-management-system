@@ -11,14 +11,14 @@ declare var $ :any;
 })
 export class AdviserSearchComponent implements OnInit {
   enabled: boolean = false;
-  data: object = {
+  data: any = {
     name : 'First & Last Name',
     email : '',
     phone : '',
     address: '',
     firm_name: '',
     login_code: '',
-    avatar: '../../../assets/default-avatar.jpg'
+    avatar : '../../../assets/default-avatar.jpg'
   }
 
   adviserSearchPopupModal: boolean = false;
