@@ -148,13 +148,15 @@
                   <div class="question">
                     <span class="title-question">Question 7:</span>
                     <div class="question-container"><span class="text-question">Return and risk are related. If you want more return you must be willing to take more risk. Pick a point in the graph where you feel comfortable with potential return and risk.</span></div>
-                    <div class="choices-container" (click)="moveStep(8)">
+                    <div class="choices-container">
                       <div class="question7-canvas-container">
-                        <canvas class="q7chart" #q7chart></canvas>
+                        <div class="canvas-container">
+                          <canvas class="q7chart" #q7chart></canvas>
+                        </div>
                         <div class="lbl-canvas">Risk</div>
                         <div class="lbl-canvas verticaltext_content">Return</div>
                       </div>
-                      <button>Continue</button>
+                      <button [disabled]="!btnQ7Continue" (click)="moveStep(8)">Continue</button>
                     </div>
                   </div>
                 </div>

@@ -14,6 +14,7 @@ export class QuestionnaireModalComponent implements OnInit {
   q7chart: any;
   btnNext : boolean = false;
 	questionnaireModal: boolean = false;
+  btnQ7Continue : boolean = false;
   step: number = 1;
   riskStep:number = 1; 
 
@@ -31,7 +32,8 @@ export class QuestionnaireModalComponent implements OnInit {
     console.log('question'+$step);
     var topPos = document.getElementById('question'+$step).offsetTop;
     document.getElementById('body-container').scrollTop = topPos-90;
-    document.getElementById('chartjs-tooltip').style.opacity = '0';
+    if(document.getElementById('chartjs-tooltip'))
+      document.getElementById('chartjs-tooltip').style.opacity = '0';
   }
   riskMoveStepTo($step) {
     this.data.SET_proposal_risk_step($step);
@@ -43,6 +45,7 @@ export class QuestionnaireModalComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+    const that = this;
     const chart_data = {
       labels: ["1", "2", "3", "4", "5", "6", "7", "8"],
       datasets: [{
@@ -50,15 +53,23 @@ export class QuestionnaireModalComponent implements OnInit {
           data: [5, 6, 7, 8, 8.5, 9, 9.5, null],
           backgroundColor: 'white',
           borderWidth: 2,
-          borderColor: 'rgba(197,197,197,1)',
           fill: false,
           spanGaps: true,
-          pointRadius: 10,
+          pointRadius: [10, 10, 10, 10, 10, 10, 10, 10],
+          pointBorderColor: [
+            'rgba(197,197,197,1)',
+            'rgba(197,197,197,1)',
+            'rgba(197,197,197,1)',
+            'rgba(197,197,197,1)',
+            'rgba(197,197,197,1)',
+            'rgba(197,197,197,1)',
+            'rgba(197,197,197,1)'
+          ],
+          pointBorderWidth: [2,2,2,2,2,2,2,2],
           pointHoverRadius: 9,
           pointHoverBorderWidth: 5,
           pointHoverBorderColor: '#1598cb',
           pointHoverBackgroundColor: 'white',
-          pointBorderColor: 'rgba(197,197,197,1)'
       }]
     }
     const chart_options = {
@@ -101,11 +112,34 @@ export class QuestionnaireModalComponent implements OnInit {
               drawBorder: false,
               color: "rgba(0, 0, 0, 0)"
           }
-        }]
+        }],
+        responsive: true,
+        maintainAspectRatio: false,
       },
-      responsive: true,
-      maintainAspectRatio: false,
       events: ['click', 'mousemove'],
+      onClick: function(evt, activeElements) {
+        // console.log(activeElements);
+        var elementIndex = activeElements[0]._index;
+        const obj = this.data.datasets[0].pointBorderColor;
+        // console.log(this.data);
+        const _this = this;
+        Object.keys(obj).forEach(function(key) {
+          console.log(key, elementIndex)
+          if(parseInt(key) === elementIndex) {
+            _this.data.datasets[0].pointBorderColor[key] = '#1598cb';
+            _this.data.datasets[0].pointRadius[key] = 9;
+            _this.data.datasets[0].pointBorderWidth[key] = 5;
+          }
+          else {
+            _this.data.datasets[0].pointBorderColor[key] = 'rgba(197,197,197,1)';
+            _this.data.datasets[0].pointRadius[key] = 10;
+            _this.data.datasets[0].pointBorderWidth[key] = 2;
+          }
+        });
+
+        this.update();
+        that.btnQ7Continue = true;
+      },
       tooltips: {
             enabled: false,
             custom: function( tooltipModel ){
