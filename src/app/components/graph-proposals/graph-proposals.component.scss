@@ -57,6 +57,7 @@
     }
 
     .rab-content {
+        overflow: hidden;
         padding: 20px;
     }
     .rab-chart {
@@ -75,7 +76,6 @@
         & > div {
             position: relative;
             width: 100%;
-            padding-right: 15px;
             padding-left: 15px;
             -ms-flex-preferred-size: 0;
             flex-basis: 0;
@@ -141,8 +141,6 @@
         .rab-inner {
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
             margin-right: -15px;
             margin-left: -15px;
             -ms-flex-align: center;
@@ -156,6 +154,7 @@
             }
             .rab-left-block {
                 flex: 1;
+                padding-right: 0px;
                 width: auto;
             }
             .rab-right-block {
@@ -164,9 +163,9 @@
                 -ms-flex-positive: 1;
                 flex-grow: 1;
                 max-width: 100%;
-                
+                flex: 2;
                 .rab-chart {
-                    width: 140px;
+                    width: 240px;
                 }
             }
         }

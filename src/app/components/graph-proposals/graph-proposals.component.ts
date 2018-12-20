@@ -447,6 +447,8 @@ export class GraphProposalsComponent implements OnInit {
     }
 
     ipoRender() {
+        Chart.defaults.global.responsive = true;
+        Chart.defaults.global.maintainAspectRatio = false;
         function randnum() {
             return Math.floor(Math.random() * (15 - 1 + 1) ) + 1;
         }
@@ -458,32 +460,22 @@ export class GraphProposalsComponent implements OnInit {
                     {
                         backgroundColor: '#475F7A',
                         borderColor: '#475F7A',
-                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum(), randnum()]
                     },
                     {
                         backgroundColor: '#475F7A',
                         borderColor: '#475F7A',
-                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum(), randnum()]
                     },
                     {
                         backgroundColor: '#475F7A',
                         borderColor: '#475F7A',
-                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum(), randnum()]
                     },
                     {
                         backgroundColor: '#475F7A',
                         borderColor: '#475F7A',
-                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
-                    },
-                    {
-                        backgroundColor: '#475F7A',
-                        borderColor: '#475F7A',
-                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
-                    },
-                    {
-                        backgroundColor: '#475F7A',
-                        borderColor: '#475F7A',
-                        data: [randnum(), randnum(), randnum(), randnum(), randnum()]
+                        data: [randnum(), randnum(), randnum(), randnum(), randnum(), randnum()]
                     }
                 ]
             },
@@ -497,14 +489,19 @@ export class GraphProposalsComponent implements OnInit {
                 scales: {
                     yAxes: [{
                         ticks: {
+                            fontSize: 8,
                             max: 15,
-                            stepSize: 5,
-                            beginAtZero: true
+                            stepSize: 5
                         }
                     }],
                     xAxes: [{
-                        minRotation: 0,
-                        maxRotation: 0
+                        beginAtZero: true,
+                        autoSkip: false,
+                        ticks: {
+                            fontSize:8,
+                            maxRotation: 90,
+                            minRotation: 90
+                        }
                     }]
                 },
                 showDatapoints: true,
