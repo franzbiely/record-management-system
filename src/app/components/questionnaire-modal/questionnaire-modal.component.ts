@@ -29,7 +29,6 @@ export class QuestionnaireModalComponent implements OnInit {
   }
   moveStep($step) {
     this.step = $step;
-    console.log('question'+$step);
     var topPos = document.getElementById('question'+$step).offsetTop;
     document.getElementById('body-container').scrollTop = topPos-90;
     if(document.getElementById('chartjs-tooltip'))
@@ -118,13 +117,10 @@ export class QuestionnaireModalComponent implements OnInit {
       },
       events: ['click', 'mousemove'],
       onClick: function(evt, activeElements) {
-        // console.log(activeElements);
         var elementIndex = activeElements[0]._index;
         const obj = this.data.datasets[0].pointBorderColor;
-        // console.log(this.data);
         const _this = this;
         Object.keys(obj).forEach(function(key) {
-          console.log(key, elementIndex)
           if(parseInt(key) === elementIndex) {
             _this.data.datasets[0].pointBorderColor[key] = '#1598cb';
             _this.data.datasets[0].pointRadius[key] = 9;
@@ -135,8 +131,9 @@ export class QuestionnaireModalComponent implements OnInit {
             _this.data.datasets[0].pointRadius[key] = 10;
             _this.data.datasets[0].pointBorderWidth[key] = 2;
           }
+          
         });
-
+        document.getElementById('body-container').scrollTop += 170;
         this.update();
         that.btnQ7Continue = true;
       },
@@ -152,7 +149,6 @@ export class QuestionnaireModalComponent implements OnInit {
                     markup += '<div class="predict-increase">Could grow to: <strong>$2,000,000</strong></div>';
                 markup += '</div>';
 
-                // console.log(tooltipEl.style);
                 if (!tooltipEl) {
                     tooltipEl = document.createElement('div');
                     tooltipEl.id = 'chartjs-tooltip';
