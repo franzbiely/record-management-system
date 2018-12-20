@@ -97,7 +97,10 @@ $primaryfont: "montserrat", sans-serif;
     *::after {
         box-sizing: border-box;
     }
-
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
     .add-container {
         display: flex;
         justify-content: center;
