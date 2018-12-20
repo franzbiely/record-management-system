@@ -83,7 +83,17 @@
                     <app-graph-proposals [reportType]="pane"></app-graph-proposals>
                 </div><!-- .board-pane -->
                 <div class="board-pane">
-                    <a (click)="addAnalyticsBox()"><img src="../../../assets/analytics/chart-0.svg" alt="chart-0" style="max-width: 100%; "></a>
+                
+                    <div class="rms-analytics-box type-add">
+                        <div class="rab-header">
+                            <h2>&nbsp;</h2>
+                            <a href="#" class="rab-header-action"><span></span><span></span><span></span></a>
+                        </div><!-- .rab-header -->
+                        <div class="rab-content-add">
+                            <span (click)="addAnalyticsBox()">Add</span>
+                        </div><!-- .rab-content -->
+                    </div><!-- .rms-analytics-box -->
+
                 </div><!-- .board-pane -->
             </div><!-- .board-panes -->
         </div><!-- .report-board -->
