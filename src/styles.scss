@@ -177,7 +177,7 @@ details{
     letter-spacing: 0.9px;
     text-align: center;
     color: #808284;
-    border: none;
+    border: none !important;
     text-transform: uppercase;
 }
 button {
@@ -185,7 +185,9 @@ button {
 }
 
 .icon-circle-add{
-    content: url('./assets/component/home/add-blue@3x.png');
+    content: url('./assets/icons/add.svg') !important;
+    width: 60px;
+    height: 60px;
 }
 
 .popup {

@@ -476,14 +476,14 @@
                             }
                             .icon-remove{
                                 cursor:pointer;
-                                content: url("../../../assets/component/allocation-detail/exit-white.png")
+                                content: url("../../../assets/exit-white.svg")
                             }
                             .icon-help{
                                 width: 13px;
                                 height: 13px;
                                 object-fit: contain;
                                 margin-left: 5px;
-                                content: url("../../../assets/component/allocation-detail/info-white.png")
+                                content: url("../../../assets/icons/info-white.svg")
                             }
                         }
                     }
@@ -521,7 +521,7 @@
                                 font-weight: bold;
                                 .icon-save{
                                     margin-right: 10px;
-                                    content: url("../../../assets/component/allocation-detail/save-blue.png")
+                                    content: url("../../../assets/icons/save-blue.svg")
                                 }
 
                             }

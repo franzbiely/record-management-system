@@ -56,7 +56,9 @@ $textColor: #ffffff;
         width: 100%;
         height: 100%;
         .icon-big-add {
-            content: url('../../../assets/component/home/add-blue@3x.png');
+            width: 60px;
+            height: 60px;
+            content: url('../../../assets/icons/add.svg');
           }
     }
     @media only screen and (max-width: 767px) {
@@ -174,7 +176,7 @@ $textColor: #ffffff;
           margin-top: -4px;
           color: black;
           input[type=text] {
-            background: url('../../../assets/component/listview/search-gray.png') no-repeat 15px 13px;
+            background: url('../../../assets/icons/search-gray.svg') no-repeat 15px 13px;
             background-size: 19px;
             width: 253px;
             height: 45px;
@@ -220,7 +222,7 @@ $textColor: #ffffff;
           justify-content: space-between;
 
           button {
-            background: url('../../../assets/component/listview/filter-gray-1.png') no-repeat 15px 5px;
+            background: url('../../../assets/icons/filter-gray.svg') no-repeat 15px 5px;
             text-align: left;
             width: 200px;
             height: 40px;
@@ -243,7 +245,7 @@ $textColor: #ffffff;
           .dropdown-icon {
             margin-top: 2px;
             width: 12px;
-            content: url('../../../assets/component/listview/dropdown.png');
+            content: url('../../../assets/icons/arrow-down-gray.svg');
           }
         }
       }
@@ -256,7 +258,7 @@ $textColor: #ffffff;
         width: 100%;
         border-collapse: collapse;
         .icon-dropdown{
-          content: url(../../../assets/component/listview/arrow-gray@3x.png);
+          content: url(../../../assets/arrow-down-gray.svg);
           width: 10px;
           height: 7px;
           padding-left: 6px;

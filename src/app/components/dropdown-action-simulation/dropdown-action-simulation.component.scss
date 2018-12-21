@@ -1,0 +1,130 @@
+.dropdown-actions {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 20;
+    box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+    details {
+        position: relative;
+        border-radius: 0 0 6px 6px;
+        @media only screen and (max-width: 767px){
+            right: 10px;
+            width: 125px;
+            position: absolute;
+        }
+        summary {
+            border-radius: 6px;
+            background-color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: #77787b;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            height: 45px;
+            width: 100px;
+            align-items: center;
+            padding: 0 15px;
+            @media only screen and (max-width: 767px){
+                box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
+                width: auto !important;
+            }
+            &::-webkit-details-marker { 
+                display: none;
+            }
+            &:focus {
+                outline: none;
+            }
+            .icon-dropdown{
+                content: url(../../../assets/component/proposal/3-dots-gray.svg);
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+        ul {
+            padding: 0;
+            margin:0;
+            list-style: none;
+            background-color: white;
+            border-radius: 0px 0px 6px 6px;
+            li:last-child{
+                a{
+                    border-bottom:none;
+                }
+            }
+            li {
+                position:relative;
+                a {
+                    padding: 0 15px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    display:flex;
+                    height:47px;
+                    color: #77787b;
+                    flex: 1;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #e7e6e6;
+                    .title {
+                        flex:1;
+                    }
+                    .icon {
+                        right: 13px;
+                    }
+                }
+            }
+        }
+        &[open] {
+            z-index: 9;
+            box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 50px;
+            summary {
+                border-radius: 6px 6px 0 0 !important;
+                background-color: #1598cb;  
+                color: white; 
+                .title {
+                    display:block;
+                } 
+                .icon-action {
+                    color: #ffff;
+                }
+                .icon-dropdown{
+                    content: url(../../../assets/icons/expand-white.svg) !important;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+.icon {
+    &.proposal-gray {
+        content: url('../../../assets/component/listview/add-proposal-gray.svg');
+        width: 20px;
+        height: 20px;
+    }
+    &.change-gray {
+        content: url('../../../assets/component/listview/change-portfolio-gray.svg');
+        width: 20px;
+        height: 20px;
+    }
+    &.delete-gray {
+        content: url('../../../assets/delete-gray.svg');
+        width: 20px;
+        height: 20px;
+    }
+}

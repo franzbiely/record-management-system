@@ -125,7 +125,7 @@ app-add-security{
                                 }
                             }
                             .icon-dropdown{
-                                content: url("../../../assets/component/account-details/arrow-gray.png")
+                                content: url("../../../assets/icons/arrow-down-gray.svg")
                             }
                             details {
                                 width: 100%;
@@ -195,6 +195,9 @@ app-add-security{
                             td:nth-child(7) {
                                 max-width:30px;
                             }
+                            th:first-child, td:first-child{
+                                padding-left: 20px;
+                            }
                             th{
                                 font-family: "Montserrat", sans-serif;
                                 font-size: 10px;
@@ -221,7 +224,12 @@ app-add-security{
                             tr th:nth-child(5), tr td:nth-child(5) {
                                 text-align: right;
                             }
-                            
+                            td:nth-child(3){
+                                white-space: nowrap;
+                                @media only screen and (max-width: 767px){
+                                    white-space: normal;
+                                }
+                            }
                             tr th:nth-child(4), tr td:nth-child(4),
                             tr th:nth-child(3), tr td:nth-child(3) {
                                 text-align: left;
@@ -352,6 +360,7 @@ app-add-security{
                         }
                         text-transform: uppercase;
                         padding:0px 40px;
+                        width: auto !important;
                         &[disabled] {
                             .icon-save{
                                 content: url(../../../assets/icons/save-blue.svg);
@@ -372,7 +381,7 @@ app-add-security{
 
 .icon-delete{
     cursor: pointer;
-    content: url("../../../assets/component/notification/exit-white.png")
+    content: url("../../../assets/icons/exit-white.svg")
 }
 .icon-expand{
     content: url("../../../assets/icons/expand.svg");

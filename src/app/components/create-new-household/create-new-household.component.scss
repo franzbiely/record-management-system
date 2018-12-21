@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,800,900');
 $mainfont: 'Montserrat', sans-serif;
-$secondaryfont: museo-sans;
+$secondaryfont: "museo-sans";
 .overlay {
   position: fixed;
   display: none;
@@ -13,7 +13,6 @@ $secondaryfont: museo-sans;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 25;
   @media only screen and (max-width: 767px) {
-    display: flex;
   }
 }
 
@@ -116,6 +115,9 @@ $secondaryfont: museo-sans;
   box-shadow: 0 4px 10px 0 rgba(65, 64, 66, 0.18);
   background-image: linear-gradient(to left, #4db6c5, #1598cb);
   position:relative;
+  @media only screen and (max-width: 767px) {
+    height: auto;
+  }
   &:before {
     content: ' ';
     background: url("../../../assets/pattern-top.svg") top left;
@@ -125,6 +127,9 @@ $secondaryfont: museo-sans;
     opacity: 0.4;
     user-select: none;
     height: 100%;
+    @media only screen and (max-width: 767px){
+      width: 100%;
+    }
   }
   &:after {
     content: ' ';
@@ -136,9 +141,10 @@ $secondaryfont: museo-sans;
     bottom:0;
     right:0;
     user-select: none;
-  }
-  @media only screen and (max-width: 767px) {
-    height:140px;
+    @media only screen and (max-width: 767px) {
+      height:25%;
+      width: 145px;
+    }
   }
 
   .header-content {
@@ -261,7 +267,7 @@ $secondaryfont: museo-sans;
       box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
       overflow: hidden;
       @media only screen and (max-width: 767px) {
-        width: 100%;
+        width: 90%;
         margin-top: 20px;
       }
       .box-header {
@@ -297,7 +303,6 @@ $secondaryfont: museo-sans;
 
       .box-content {
         width: auto;
-        max-height: 146px;
         overflow: scroll;
         border-radius: 0 0 6px 6px;
         background-color: #ffffff;
@@ -363,7 +368,7 @@ $secondaryfont: museo-sans;
       width: 20px;
       height: 20px;
       padding-right: 6px;
-      content: url('../../../assets/component/household/edit-icon.png');
+      content: url('../../../assets/icons/edit-white.svg');
     }
     .add-icon {
       display: flex;
@@ -382,7 +387,7 @@ $secondaryfont: museo-sans;
       margin-left: 20px;
       box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
       @media only screen and (max-width: 767px) {
-        width: 100%;
+        width: 90%;
         margin-left: 0px;
       }
 
@@ -418,6 +423,9 @@ $secondaryfont: museo-sans;
       }
 
       .box-content {
+        @media only screen and (max-width: 767px){
+          height: 150px;
+        }
         table {
           width: 100%;
           padding: 5px;

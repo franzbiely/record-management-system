@@ -1,11 +1,11 @@
-<app-household-list *ngIf="openHousehold" (closeMeEvent)="household(false)"></app-household-list>
+
 
 <app-header></app-header>
 <main role="main">
     <app-sidebar [currentPage]="'home'"></app-sidebar>
     
     <div class="rms-dashboard">
-
+        <app-household-list *ngIf="openHousehold" (closeMeEvent)="household(false)"></app-household-list>
         <div class="info-board">
             <div class="board-panes">
                 <div class="board-pane">

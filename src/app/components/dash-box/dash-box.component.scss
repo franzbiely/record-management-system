@@ -126,7 +126,15 @@ $primaryfont: "montserrat", sans-serif;
         justify-content: center;
     }
     .icon-big-add {
-        content: url("../../../assets/component/home/add-blue@3x.png");
+        width: 60px;
+        height: 60px;
+        content: url("../../../assets/icons/add.svg");
+    }
+    .text-add{
+        color: #1598cb;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
     }
     .box-head-title {
         font-family: $primaryfont;

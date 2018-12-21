@@ -189,6 +189,7 @@
         align-items: flex-start;
         app-active-archive {
             margin-right:50px;
+            width: auto !important;
         }
         @media only screen and (max-width: 767px){
             margin-top: 20px;
@@ -207,7 +208,7 @@
             .icon-check{
                 margin-right: 10px;
                 margin-left: 5px;
-                content: url("../../../assets/component/proposal/state-active-white.png");
+                content: url("../../../assets/icons/state-active-white.svg");
             }
         }
         .id-container{

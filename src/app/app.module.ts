@@ -98,6 +98,7 @@ import { DropdownActionsListviewComponent } from './components/dropdown-actions-
 import { DropdownActionsPortfolioComponent } from './components/dropdown-actions-portfolio/dropdown-actions-portfolio.component';
 import { DropdownCapitalAppreciationComponent } from './components/dropdown-capital-appreciation/dropdown-capital-appreciation.component';
 import { SecurityDropdownAutocompleteComponent } from './components/security-dropdown-autocomplete/security-dropdown-autocomplete.component';
+import { DropdownActionSimulationComponent } from './components/dropdown-action-simulation/dropdown-action-simulation.component';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
  // Change this to your upload POST address:
@@ -212,7 +213,8 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     DropdownActionsListviewComponent,
     DropdownActionsPortfolioComponent,
     DropdownCapitalAppreciationComponent,
-    SecurityDropdownAutocompleteComponent
+    SecurityDropdownAutocompleteComponent,
+    DropdownActionSimulationComponent
   ],
   imports: [
     BrowserModule,

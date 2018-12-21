@@ -201,7 +201,7 @@ app-household-member {
                             border: 1px #ddd solid;
                             font-size:12px;
                             font-family: "Montserrat", sans-serif;
-                            background: url("../../../assets/component/household-list/search-gray.png") no-repeat 10px 8px;
+                            background: url("../../../assets/icons/search-gray.svg") no-repeat 10px 8px;
                             @media only screen and (max-width: 767px){
                                 margin-top: 15px;
                             }
@@ -371,7 +371,7 @@ app-household-member {
                             padding-left: 6px;
                             cursor: pointer;
                             width: 10px;
-                            content: url("../../../assets/component/household-list/arrow-gray.png");
+                            content: url("../../../assets/icons/arrow-down-gray.svg");
                         }
                         td {
                             font-family: "museo-sans";

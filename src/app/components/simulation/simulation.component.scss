@@ -150,7 +150,7 @@ app-dropdown-update-account {
       right: 30px;
       width: 20px;
       height: 20px;
-      content: url("../../../assets/component/portfolio/exit-white.png");
+      content: url("../../../assets/exit-white.svg");
     }
     .modal-warn-box {
       padding: 0px 20px;
@@ -168,7 +168,7 @@ app-dropdown-update-account {
         padding: 33px 30px 40px 30px;
         .warning-icon {
           width: 40px;
-          content: url("../../../assets/component/portfolio/warning.png");
+          content: url("../../../assets/icons/warning.svg");
         }
         span {
           margin-top: 24px;
@@ -390,7 +390,7 @@ app-dropdown-update-account {
             width: 20px;
             height: 20px;
             cursor: pointer;
-            content: url("../../../assets/component/simulation/info-white@3x.png");
+            content: url("../../../assets/icons/info-white.svg");
           }
         }
         .dropdown-container {
@@ -413,7 +413,7 @@ app-dropdown-update-account {
             .icon-drop {
               height: 7px;
               width: 10px;
-              content: url("../../../assets/component/simulation/arrow-gray.png");
+              content: url("../../../assets/arrow-down-gray.svg");
             }
           }
         }
@@ -577,9 +577,9 @@ app-dropdown-update-account {
                 .btn-container {
                   .btn-hide {
                     margin-left: 20px;
-                    width: auto;
+                    width: 100px;
                     display: flex;
-                    justify-content: flex-end;
+                    border: none;
                     box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
                     @media only screen and (max-width: 767px) {
                       margin-right: 10px;
@@ -589,7 +589,7 @@ app-dropdown-update-account {
                       margin-right: -1px;
                       height: 20px;
                       width: 20px;
-                      content: url("../../../assets/component/simulation/hide-gray@3x.png");
+                      content: url("../../../assets/icons/hide-gray.svg");
                     }
                   }
                 }
@@ -700,7 +700,6 @@ app-dropdown-update-account {
               background-color: #fafbfc;
               display: flex;
               justify-content: space-between;
-              align-items: center;
               @media only screen and (max-width: 767px) {
                 padding: 0px 0px 0px 30px;
                 height: auto;
@@ -725,37 +724,8 @@ app-dropdown-update-account {
               .flex-right {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
                 .btn-container {
-                  .btn-action {
-                    box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.18);
-                    width: auto;
-                    display: flex;
-                    align-items: center;
-                    @media only screen and (max-width: 767px) {
-                      margin-right: 10px;
-                    }
-                    .action-icon {
-                      display: flex;
-                      align-items: center;
-                      color: gray;
-                      padding-left: 18px;
-                      margin-right: -1px;
-                      height: 20px;
-                      width: 20px;
-                    }
-                  }
-                }
-                .btn-action-text {
-                  font-family: $primaryfont;
-                  font-size: 12px;
-                  font-weight: 600;
-                  font-style: normal;
-                  font-stretch: normal;
-                  line-height: normal;
-                  letter-spacing: 1px;
-                  color: #77787b;
-                  text-transform: uppercase;
+                  margin-top: 20px;
                 }
               }
             }
@@ -1371,4 +1341,7 @@ app-dropdown-update-account {
 }
 ::ng-deep .small-texts .mat-slider-thumb-label-text {
   font-size: 8px !important; 
+}
+::ng-deep .mat-slider-min-value.mat-slider-thumb-label-showing .mat-slider-thumb, .mat-slider-min-value.mat-slider-thumb-label-showing .mat-slider-thumb-label{
+  background-color: #4db6c5 !important;
 }

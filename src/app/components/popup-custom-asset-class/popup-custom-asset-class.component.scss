@@ -7,6 +7,9 @@
     box-shadow: 0 15px 40px 0 rgba(65, 64, 66, 0.2);
     border-radius: 6px;
     z-index: 2;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
     .top{
         display:flex;
         flex-direction: column;
@@ -20,7 +23,7 @@
                 padding:10px 10px 10px 35px;
                 font-family: 'Montserrat', sans-serif;
                 font-size:10px;
-                background: url('../../../assets/component/listview/search-gray.png') no-repeat 9px 7px;
+                background: url('../../../assets/icons/search-gray.svg') no-repeat 9px 7px;
                 background-size: 15px;
             }
         }

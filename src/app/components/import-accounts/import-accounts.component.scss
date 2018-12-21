@@ -104,7 +104,7 @@
                         cursor: pointer;
                         padding-right:6px;
                         width: 20px;
-                        content: url("../../../assets/component/household-list/add-white.png");
+                        content: url("../../../assets/icons/add-white.svg");
                     }
                 }
             }
@@ -207,7 +207,7 @@
                             border: 1px #ddd solid;
                             font-size:12px;
                             font-family: 'montserrat', sans-serif;
-                            background: url("../../../assets/component/household-list/search-gray.png") no-repeat 10px 8px;
+                            background: url("../../../assets/search-gray.svg") no-repeat 10px 8px;
                             @media only screen and (max-width: 767px){
                                 width: auto;
                                 flex: 1;
@@ -255,7 +255,7 @@
                             padding-left: 6px;
                             cursor: pointer;
                             width: 10px;
-                            content: url("../../../assets/component/household-list/arrow-gray.png");
+                            content: url("../../../assets/arrow-down-gray.svg");
                         }
                         td {
                             height: 47px;

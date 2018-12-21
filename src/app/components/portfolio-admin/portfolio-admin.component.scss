@@ -292,7 +292,7 @@ th {
   }
 i{  
     padding-left: 6px;
-    content: url('../../../assets/component/household-member/arrow-gray.png');
+    content: url('../../../assets/arrow-down-gray.svg');
 }
 tr{
     border-bottom: 1px solid #dedede;
@@ -349,7 +349,7 @@ td:first-child{
     }
 
     input[type=text]{
-        background: url('../../../assets/component/listview/search-gray.png') no-repeat 15px 13px;
+        background: url('../../../assets/search-gray.svg') no-repeat 15px 13px;
         background-size: 19px;
         width: 253px;
         height: 45px;
@@ -396,14 +396,14 @@ td:first-child{
     height: 20px;
     width: 20px;
     padding-right: 6px;
-    content: url('../../../assets/component/home/add-white.png');
+    content: url('../../../assets/icons/add-white.svg');
 }
 .filter{
     display: flex;
     justify-content: space-between;
     
     button{
-        background: url('../../../assets/component/listview/filter-gray-1.png') no-repeat  15px 5px;
+        background: url('../../../assets/icons/filter-gray.svg') no-repeat  15px 5px;
         text-align: left;
         width: 200px;
         height: 40px;
@@ -427,7 +427,7 @@ td:first-child{
         margin-top: 2px;
         width:12px;
         float: right;
-        content: url('../../../assets/component/listview/dropdown.png');
+        content: url('../../../assets/arrow-down-gray.svg');
     }
 
 }

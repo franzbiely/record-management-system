@@ -18,6 +18,7 @@
 .household-container{
     z-index: 99;
     display: flex;
+    z-index: 102;
     justify-content: center;
     align-items: center;
     top: 110px;
@@ -165,7 +166,7 @@
                                 .icon-dropdown{
                                     width: 10px;
                                     padding-left: 10px;
-                                    content: url("../../../assets/component/household-member/arrow-gray.png")
+                                    content: url("../../../assets/icons/arrow-down-gray.svg")
                                 }
                                 }
                             }
@@ -351,7 +352,7 @@
                         .icon-save{
                             width: 20px;
                             padding-right: 10px;
-                            content: url("../../../assets/component/household-member/save-blue.png");
+                            content: url("../../../assets/icons/save-blue.svg");
                         }
                         button:last-child{
                             display: flex;

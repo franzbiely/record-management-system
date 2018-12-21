@@ -110,13 +110,13 @@ $mainfont : 'Montserrat', sans-serif;
             height: 12px;
             padding-right: 6px;
             object-fit: contain;
-            content: url('../../../assets/component/header/state-active-white@3x.png');
+            content: url('../../../assets/icons/state-active-white.svg');
             }
             .dropdown-icon {
           
                 width: 10px;
                 height: 7px;
-                content: url('../../../assets/component/household/arrow-white@3x.png');
+                content: url('../../../assets/icons/arrow-white.svg');
             }
          
         }
@@ -260,7 +260,7 @@ $mainfont : 'Montserrat', sans-serif;
     width: 20px;
     height: 20px;
     padding-right: 6px;
-    content: url('../../../assets/component/household/edit-icon.png'); 
+    content: url('../../../assets/icons/edit-white.svg'); 
     }
     .add-icon{
     display: flex;
@@ -268,7 +268,7 @@ $mainfont : 'Montserrat', sans-serif;
     width: 20px;
     height: 20px;
     padding-right: 6px;
-    content: url('../../../assets/component/household/add-white@3x.png'); 
+    content: url('../../../assets/icons/add-white.svg'); 
     }
   
     .box-proposal{

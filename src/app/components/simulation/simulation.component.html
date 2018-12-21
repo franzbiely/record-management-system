@@ -40,21 +40,21 @@
             <div class="slider-container"><div class="slider-content"><mat-slider [(ngModel)]="years_from_now" class="slider" min="1" max="100" step="1" thumbLabel value="2"></mat-slider></div></div>
             <div class="slider-label-container"><div class="slider-label"><span class="label-text">1</span><span class="label-text">110</span></div></div>
             <div class="dropdown-container">
-              <input type="text" placeholder="1" class="" [(ngModel)]="years_from_now" />
+              <input type="text" placeholder="1" class="text-value" [(ngModel)]="years_from_now" />
             </div>
           </div>
 
           <div class="box" *ngIf="goalType!='Retirement' && goalType!='Fund Education'">
             <div class="title-container"><span class="box-title">Target Date amount:</span><app-tooltip>Amount of money <br /> invested towards <br /> the goal.</app-tooltip></div>
             <div class="dropdown-container">
-              <input type="text" placeholder="" value="0" class="" />
+              <input type="text" placeholder="" value="0" class="text-value" />
             </div>
           </div>
           <div class="box small-texts" *ngIf="goalType!='Retirement' && goalType!='Fund Education'">
             <div class="title-container"><span class="box-title">Annual Savings:</span><app-tooltip>Amount of money <br /> invested towards <br /> the goal.</app-tooltip></div>
             <div class="slider-container"><div class="slider-content"><mat-slider [(ngModel)]="annual_savings" class="slider" min="0" max="500000" step="1000" thumbLabel value="1"></mat-slider></div></div>
             <div class="slider-label-container"><div class="slider-label"><span class="label-text">0</span><span class="label-text">$500,000</span></div></div>
-            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">{{annual_savings}}$</span></div></div>
+            <div class="dropdown-container"><div class="dropdown-content"><span class="text-value">${{annual_savings}}</span></div></div>
           </div>
           <div class="box" *ngIf="goalType!='Long-Term Growth' && goalType!='Major Purchase'">
             <div class="title-container"><span class="box-title">Annual Distribution:</span><app-tooltip>Amount of money <br /> invested towards <br /> the goal.</app-tooltip></div>
@@ -199,7 +199,7 @@
               <div class="score-container"><span class="text-small">Capital Appreciation</span><br/><span class="text-small-green">Risk score: 72-86 (82)</span></div>
             </div>
             <div class="flex-right">  
-              <div class="btn-container"><button class="btn-action"><span class="btn-action-text">Actions</span><i class="icon-menu action-icon"></i></button></div>
+              <div class="btn-container"><app-dropdown-action-simulation>  </app-dropdown-action-simulation></div>
             </div>
           </div>
         </div>

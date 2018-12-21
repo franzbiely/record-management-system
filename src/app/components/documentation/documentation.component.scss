@@ -241,7 +241,7 @@
         margin-top: -1px;
         width: 15px;
         height: 15px;
-        content: url('../../../assets/component/header/household-white@3x.png');
+        content: url('../../../assets/icons/household-white.svg');
     }
     .icon-progress{
         position: absolute;
@@ -249,8 +249,7 @@
         height: 12px;
         margin-top: 1px;
         padding-left: 5px;
-      
-        content: url('../../../assets/component/header/status-in-progress-white@3x.png');
+        content: url('../../../assets/icons/status-in-progress-white.svg');
     }
 
     .icon-check{
@@ -260,8 +259,7 @@
         margin-top:-1px;
         margin-left: -2px;
         padding-left: 5px;
-      
-        content: url('../../../assets/component/header/state-active-white@3x.png');
+        content: url('../../../assets/icons/status-in-progress-white.svg');
     }
 
     .logo-holder{flex:2;padding: 5px}
@@ -889,7 +887,7 @@
     .btn-icon-action{
         vertical-align: middle;
         padding-left: 30px;
-        content: url('../../../assets/component/documentation/move-page-light-gray.png');
+        content: url('../../../assets/icons/move-page-light-gray.svg');
         @media only screen and (max-width: 767px){
             padding-left: 20px;
         }
@@ -1048,7 +1046,7 @@
             margin-top: 2px;
             width:12px;
             padding-left: 15px;
-            content: url('../../../assets/component/listview/dropdown.png');   
+            content: url('../../../assets/icons/arrow-down-gray.svg');   
         }
         .required span {
             padding-left: 6px;
@@ -1148,7 +1146,7 @@
                 .drag-icon{
                     height:15px;
                     width: 15px;
-                    content: url('../../../assets/component/documentation/move-page-light-gray.png');
+                    content: url('../../../assets/icons/move-page-light-gray.svg');
                 }
             }
             .left-items{

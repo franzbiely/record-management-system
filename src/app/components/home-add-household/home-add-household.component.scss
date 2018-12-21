@@ -104,7 +104,7 @@ $btnFontSize: 10pt;
     .icon-add{
         top: 5px;
         right: 4px;
-        content: url('../../../assets/component/home/add-white.png');
+        content: url('../../../assets/icons/add-white.svg');
     }
 }
 .text-right{
@@ -250,7 +250,7 @@ $btnFontSize: 10pt;
         .icon-big-add{
             height:60px;
             width: 60px;
-            content: url('../../../assets/component/listview/add-blue@3x.png');
+            content: url('../../../assets/icons/add.svg');
         }
         .documents{
             @extend %container-attr;
