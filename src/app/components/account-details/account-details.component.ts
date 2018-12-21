@@ -15,6 +15,7 @@ export class AccountDetailsComponent implements OnInit {
   importAccountsModal: boolean = false;
 	accountDetailsModal: boolean = false;
   enableAccountInfo : boolean = false;
+  showSuggestion: boolean = false;
   frmAI = {
     f1 : '',
     f2 : 'Manually',
@@ -51,7 +52,17 @@ export class AccountDetailsComponent implements OnInit {
   setQuickAddType(type) {
     this.data.SET_accountDetailsType(type);
   }
-
+  clickSuggestion() {
+    this.showSuggestion = false;
+  }
+  onSearchChange(searchValue : string) {
+    if(searchValue!=''){
+      this.showSuggestion = true;
+    }
+    else {
+      this.showSuggestion = false;
+    }
+  }
   selectPopupCAssets(event) {
     this.data.SET_enableAccountInfo(true);
   }

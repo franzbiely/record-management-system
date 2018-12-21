@@ -287,6 +287,7 @@ app-add-security{
                         .search-box-container{
                             display:flex;   
                             margin-top: 10px;
+                            position: relative;
                             input[type=text]{
                                 font-family: "museo-sans";
                                 font-size: 14px;
@@ -305,7 +306,41 @@ app-add-security{
                                 background: url(../../../assets/search-gray.svg) no-repeat 15px 13px;
 
                             }
-
+                            .searchSuggestions {
+                                font-size: 11px;
+                                border-radius: 10px;
+                                line-height: 1.5;
+                                box-shadow: 0 1px 20px 0 rgba(65, 64, 66, 0.1);
+                                position: absolute;
+                                width: 100%;
+                                background: #fff;
+                                top: 50px;
+                                ul {
+                                    list-style: none;
+                                    padding:0; margin: 0;
+                                    li {
+                                        padding: 0;
+                                        border-bottom: 1px solid #e7e6e6;
+                                        a {
+                                            height: 45px;
+                                            padding: 0 43px;
+                                            display:flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            strong {
+                                                font-weight: 600; 
+                                                color: #414042;
+                                            }
+                                            span {
+                                                text-transform: uppercase;
+                                                color: #77787b;
+                                                font-weight: 300;
+                                                font-size: 11px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }   
 
                     }

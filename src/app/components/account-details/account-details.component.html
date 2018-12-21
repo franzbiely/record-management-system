@@ -81,7 +81,25 @@
             <app-quick-add (click)="quickAdd=true" [ngClass]="{'active' : quickAdd}"></app-quick-add>
             <div class="search-container">
               <span class="search-title">Add security or cash</span>
-              <div class="search-box-container"><input type="text" class="search-box" placeholder="Enter Security ID or Name Mutual Funds..."> </div>
+              <div class="search-box-container">
+                <input type="text" class="search-box" (input)="onSearchChange($event.target.value)" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
+                <div class="searchSuggestions" *ngIf="showSuggestion">
+                    <ul>
+                        <li><a (click)="clickSuggestion()">
+                            <strong>SA US Value Select</strong>
+                            <span>SAVLX</span>
+                        </a></li>
+                        <li><a (click)="clickSuggestion()">
+                            <strong>SA Global Fixed Income Select</strong>
+                            <span>SAFLX</span>
+                        </a></li>
+                        <li><a (click)="clickSuggestion()">
+                            <strong>SA US Small Company Select</strong>
+                            <span>SASLX</span>
+                        </a></li>
+                    </ul>
+                </div>
+              </div>
             </div>
             <div class="table-container">
               <table>
