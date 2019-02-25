@@ -9,10 +9,10 @@
             <div class="group-title"><span>Household Filter</span><span>Select All</span></div>
         </div>
       </div>
-        <div class="item">
+        <div class="item" >
           <div class="item-content">
             <mat-checkbox (change)="checkFilter($event, false)" [checked]="filter_data.household[1]"></mat-checkbox>
-            <div class="vertical-center"><i class="icon-check"></i><span class="title">Defensive</span></div>
+            <div class="vertical-center"><i class="icon-check"></i><span class="title">{{showArchieved==false ? "Defensive" : "Active"}}</span></div>
           </div>
         </div>
         <div class="item">

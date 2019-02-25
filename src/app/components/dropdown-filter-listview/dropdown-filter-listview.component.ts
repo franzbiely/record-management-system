@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown-filter-listview',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DropdownFilterListviewComponent implements OnInit {
 	checkCounter: number = 0;
 	checkAll : boolean = false;
-  
+	@Input() showArchieved:boolean = false;
 	filter_data = {
   	household : {
   		0 : false, //all
