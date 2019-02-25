@@ -10,7 +10,7 @@
             <div class="board-panes">
                 <div class="board-pane">
                     <app-dash-box [isNew]="isNew"
-                                [title]="'Recent Household'"
+                                [title]="'Recent Households'"
                                     [addLabel]="'Add Household'"
                                     [headerRightType]="'add'"
                                     (addHousehold)="household($event)">
@@ -27,7 +27,7 @@
                     
                     <app-dash-box [isNew]="isNew"
                                     [title]="'Recent Proposals'"
-                                    [addLabel]="'Add Proposals'"
+                                    [addLabel]="'Add Proposal'"
                                     [headerRightType]="'add'"
                                     (addHousehold)="household($event)">
                     <div class="info-item" *ngFor="let household of households">
@@ -47,7 +47,7 @@
                 <div class="board-pane">
                     <app-dash-box [isNew]="isNew"
                                     [title]="'Recent Documents'"
-                                    [addLabel]="'Add Documents'">
+                                    [addLabel]="''">
                     <div class="info-item space-between" *ngFor="let household of households">
                                     <div class="flex">
                                         <div class="document-icon">

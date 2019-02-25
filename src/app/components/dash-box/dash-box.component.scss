@@ -143,6 +143,15 @@ $primaryfont: "montserrat", sans-serif;
         display: flex;
         flex-direction: column;
     }
+    .recent-viewed {
+        font-family: $primaryfont;
+        font-size: 12px;
+        font-weight: 300;
+        position: relative;
+        top: 3px;
+        display: flex;
+        flex-direction: column;
+    }
     .sub {
         font-family: $primaryfont;
         font-size: 13px;
