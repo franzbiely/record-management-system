@@ -12,28 +12,35 @@ declare var $: any;
     styleUrls: ["./graph-proposals.component.scss"]
 })
 export class GraphProposalsComponent implements OnInit {
-
+    checkCounter: number = 0;
+    checkAll : boolean = false;
     showCalendar: boolean = false;
     @Input() reportType = 'default';
     @Input() reportTitle = '';
     @Input() reportSubTitle = '';
+    filter_data = {
+        household : {
+            0 : false, //all
+            1 : false,
+            2 : false,
+        }
+    }
+   
+    reportBlock: TemplateRef<any> | null = null;
 
-    reportBlock: TemplateRef<any>|null = null;
-
-    @ViewChild('defReport') defReport: TemplateRef<any>|null = null;
-    @ViewChild('tvpmReport') tvpmReport: TemplateRef<any>|null = null;
-    @ViewChild('tvprReport') tvprReport: TemplateRef<any>|null = null;
-    @ViewChild('tvppReport') tvppReport: TemplateRef<any>|null = null;
-    @ViewChild('pdoReport') pdoReport: TemplateRef<any>|null = null;
-    @ViewChild('tvpsReport') tvpsReport: TemplateRef<any>|null = null;
-    @ViewChild('cpsReport') cpsReport: TemplateRef<any>|null = null;
-    @ViewChild('aumReport') aumReport: TemplateRef<any>|null = null;
-    @ViewChild('ipoReport') ipoReport: TemplateRef<any>|null = null;
+    @ViewChild('defReport') defReport: TemplateRef<any> | null = null;
+    @ViewChild('tvpmReport') tvpmReport: TemplateRef<any> | null = null;
+    @ViewChild('tvprReport') tvprReport: TemplateRef<any> | null = null;
+    @ViewChild('tvppReport') tvppReport: TemplateRef<any> | null = null;
+    @ViewChild('pdoReport') pdoReport: TemplateRef<any> | null = null;
+    @ViewChild('tvpsReport') tvpsReport: TemplateRef<any> | null = null;
+    @ViewChild('cpsReport') cpsReport: TemplateRef<any> | null = null;
+    @ViewChild('aumReport') aumReport: TemplateRef<any> | null = null;
+    @ViewChild('ipoReport') ipoReport: TemplateRef<any> | null = null;
 
     @ViewChild('theChart', {read: ElementRef}) private chartRef: ElementRef;
     chart: any;
 
-    constructor() {}
 
     ngOnInit() {
         switch (this.reportType) {
@@ -83,8 +90,77 @@ export class GraphProposalsComponent implements OnInit {
                 this.reportBlock = this.defReport;
                 break;
         }
-    }
+        $(".dropdown dt a").on('click', function () {
+            $(".dropdown dd div").slideToggle('fast');
+        });
 
+        $(".dropdown dd div li a").on('click', function () {
+            $(".dropdown dd div").hide();
+        });
+        $(document).bind('click', function (e) {
+            var $clicked = $(e.target);
+            
+            if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd div").hide();
+        });
+
+    }
+   
+    validate(searchValue : number) {
+        if(Number.isInteger(searchValue)){
+            console.log('true');
+        }
+	}
+    selectAllToggler(event, type , all) {
+        var data = "";
+        if(event.checked) {
+            Object.keys(this.filter_data[type]).forEach(v => this.filter_data[type][v] = true)	
+            console.log(this.filter_data)
+            this.checkAll = true;
+            this.checkCounter = 4;
+            data = 'All';
+        }
+        else {
+            Object.keys(this.filter_data[type]).forEach(v => this.filter_data[type][v] = false)
+            console.log(this.filter_data)
+            this.checkAll = false;
+            this.checkCounter = 0;
+            data = 'Select State';
+        }
+        $('#selectedData').text(data);
+    }
+    checkFilter(event, isForAll, type) {
+    if(event.checked) {
+        this.checkCounter++;
+        console.log(event.source.id);
+        var data = $('#selectedData').text();
+        if (data === "Select State" || data === null || data == ""){
+            data = type;
+        }else{
+            data = data+","+type;
+        }
+        $('#selectedData').text(data);
+    }
+    else {
+        this.checkCounter--;
+        var data = $('#selectedData').text();
+        if (data === "Select State" || data === null || data == ""){
+            data = type;
+        }else{
+            let splData = data.split(',');
+            let x = splData.length;
+                splData.forEach((e,i)=> { if (e === type ){  splData.splice(i,1); }});
+            data = splData;
+        }
+        if (data.length < 1 || data == undefined) {
+            console.log(data);
+            data = "Select State";
+        }
+        $('#selectedData').text(data);
+        // console.log(event.source.id);
+        // console.log(data);
+    }                                
+       
+    }
     ngAfterViewInit() {
         switch (this.reportType) {
             case 'tvpm':

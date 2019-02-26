@@ -140,15 +140,37 @@
                 <div class="rab-setting-field">
                     <label for="goal">State:</label>
                     <div class="rab-field-select">
-                        <select name="state" id="state">
-                            <option value="" disabled selected>Select State</option>
-                            <option value="one">Option One</option>
-                            <option value="two">Option Two</option>
-                            <option value="three">Option Three</option>
-                        </select>
+                        <dl class="dropdown">
+                            <dt>
+                                <a><span id="selectedData" class="hida">Select State</span></a>
+                            </dt>
+                            <dd>
+                                <div class="mutliSelect">
+                                    <div>
+                                        <div class="item">
+                                            <div class="item-content">
+                                                <mat-checkbox class="all" (change)="selectAllToggler($event, 'household','All')" [checked]="filter_data.household[0]"></mat-checkbox>
+                                                <div class="vertical-center"><span class="title">Select All</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item" >
+                                            <div class="item-content">
+                                              <mat-checkbox class = "active" (change)="checkFilter($event, false, 'Active')" [checked]="filter_data.household[1]"></mat-checkbox>
+                                              <div class="vertical-center"><span class="title">Active</span></div>
+                                            </div>
+                                          </div>
+                                          <div class="item">
+                                            <div class="item-content">
+                                              <mat-checkbox class="archive" (change)="checkFilter($event, false, 'Archive')" [checked]="filter_data.household[2]"></mat-checkbox>
+                                              <div class="vertical-center"><span class="title">Archived</span></div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
                     </div><!-- .rab-field-select -->
                 </div><!-- .rab-setting-field -->
-
                 <div class="rab-setting-field">
                     <label for="goal">Status:</label>
                     <div class="rab-field-select">
