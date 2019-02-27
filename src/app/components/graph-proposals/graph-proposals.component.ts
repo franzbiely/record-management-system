@@ -12,6 +12,7 @@ declare var $: any;
     styleUrls: ["./graph-proposals.component.scss"]
 })
 export class GraphProposalsComponent implements OnInit {
+    checker : boolean = true;
     checkCounter: number = 0;
     checkAll : boolean = false;
     showCalendar: boolean = false;
@@ -90,27 +91,28 @@ export class GraphProposalsComponent implements OnInit {
                 this.reportBlock = this.defReport;
                 break;
         }
-        $(".dropdown dt a").on('click', function () {
-            $(".dropdown dd div").slideToggle('fast');
-        });
-
-        $(".dropdown dd div li a").on('click', function () {
-            $(".dropdown dd div").hide();
-        });
         $(document).bind('click', function (e) {
             var $clicked = $(e.target);
-            
-            if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd div").hide();
+            if (!$clicked.parents().hasClass("dropdown")) $(".multiSelect").hide();
         });
-
     }
-   
+    toggleDropdown(id){
+        $(".multiSelect").hide();
+        if (this.checker){
+            $("#ID"+id).show();
+            this.checker = false;
+        }else {
+            $("#ID"+id).hide();
+            this.checker = !this.checker;
+        }
+        console.log(this.checker);
+    }
     validate(searchValue : number) {
         if(Number.isInteger(searchValue)){
             console.log('true');
         }
 	}
-    selectAllToggler(event, type , all) {
+    selectAllToggler(event, type , all, id) {
         var data = "";
         if(event.checked) {
             Object.keys(this.filter_data[type]).forEach(v => this.filter_data[type][v] = true)	
@@ -126,40 +128,43 @@ export class GraphProposalsComponent implements OnInit {
             this.checkCounter = 0;
             data = 'Select State';
         }
-        $('#selectedData').text(data);
+        $('#'+id).text(data);
+        console.log(id);
     }
-    checkFilter(event, isForAll, type) {
-    if(event.checked) {
-        this.checkCounter++;
-        console.log(event.source.id);
-        var data = $('#selectedData').text();
-        if (data === "Select State" || data === null || data == ""){
-            data = type;
-        }else{
-            data = data+","+type;
+    checkFilter(event, isForAll, type,id) {
+        if(event.checked) {
+            this.checkCounter++;
+            console.log(event.source.id);
+            var data = $('#'+id).text();
+            if (data === "Select State" || data === null || data == "" || data=="All"){
+                data = type;
+            }else{
+                data = data+","+type;
+            }
+            $('#'+id).text(data);
         }
-        $('#selectedData').text(data);
-    }
-    else {
-        this.checkCounter--;
-        var data = $('#selectedData').text();
-        if (data === "Select State" || data === null || data == ""){
-            data = type;
-        }else{
-            let splData = data.split(',');
-            let x = splData.length;
+        else {
+            this.checkCounter--;
+            var data = $('#'+id).text();
+            if (this.checkAll == true){
+                Object.keys(this.filter_data['household']).forEach(v => this.filter_data['household'][v] = false)
+                this.checkAll = false;
+                data = "Select State";
+            }
+            if (data === "Select State" || data === null || data == "" || data=="All"){
+                data = "Select State";
+            }else{
+                let splData = data.split(',');
                 splData.forEach((e,i)=> { if (e === type ){  splData.splice(i,1); }});
-            data = splData;
-        }
-        if (data.length < 1 || data == undefined) {
-            console.log(data);
-            data = "Select State";
-        }
-        $('#selectedData').text(data);
-        // console.log(event.source.id);
-        // console.log(data);
-    }                                
-       
+                data = splData;
+            }
+            if (data.length < 1 || data == undefined) {
+                console.log(data);
+                data = "Select State";
+            }
+            $('#'+id).text(data);
+        }                                
+        console.log(id);
     }
     ngAfterViewInit() {
         switch (this.reportType) {

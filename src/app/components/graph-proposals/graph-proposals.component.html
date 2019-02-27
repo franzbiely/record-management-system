@@ -166,35 +166,35 @@
                 <div class="rab-setting-field">
                     <label for="goal">State:</label>
                     <div class="rab-field-select">
-                        <dl class="dropdown">
-                            <dt>
-                                <a><span id="selectedData" class="hida">Select State</span></a>
-                            </dt>
-                            <dd>
-                                <div class="mutliSelect">
-                                    <div>
-                                        <div class="item">
-                                            <div class="item-content">
-                                                <mat-checkbox class="all" (change)="selectAllToggler($event, 'household','All')" [checked]="filter_data.household[0]"></mat-checkbox>
-                                                <div class="vertical-center"><span class="title">Select All</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="item" >
-                                            <div class="item-content">
-                                              <mat-checkbox class = "active" (change)="checkFilter($event, false, 'Active')" [checked]="filter_data.household[1]"></mat-checkbox>
-                                              <div class="vertical-center"><span class="title">Active</span></div>
-                                            </div>
-                                          </div>
-                                          <div class="item">
-                                            <div class="item-content">
-                                              <mat-checkbox class="archive" (change)="checkFilter($event, false, 'Archive')" [checked]="filter_data.household[2]"></mat-checkbox>
-                                              <div class="vertical-center"><span class="title">Archived</span></div>
-                                            </div>
-                                          </div>
+                        <div class="dropdown">
+                            <div>
+                                <a (click)="toggleDropdown(reportType)" ><span id="{{reportType}}"  class="span-state">Select State</span></a>
+                                <span class="span-state id" style="display: none;">{{reportType}}</span>
+                            </div>
+                            <div id="ID{{reportType}}" class="multiSelect">
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="all" (change)="selectAllToggler($event, 'household','All', reportType)"
+                                            [checked]="filter_data.household[0]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">Select All</span></div>
                                     </div>
                                 </div>
-                            </dd>
-                        </dl>
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="active" (change)="checkFilter($event, false, 'Active', reportType)"
+                                            [checked]="filter_data.household[1]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">Active</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="archive" (change)="checkFilter($event, false, 'Archive', reportType)"
+                                            [checked]="filter_data.household[2]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">Archived</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div><!-- .rab-field-select -->
                 </div><!-- .rab-setting-field -->
                 <div class="rab-setting-field">
