@@ -62,6 +62,125 @@
     }
     .rab-chart {
         height: auto;
+        .graph-container {
+            display: flex;
+            height: 150px;
+            width: 100%;
+            .container-green {
+                flex: 1;
+                width: 90%;
+                height: auto;
+                //border: 1px solid green;
+                flex-direction: column;
+                .green-content-top{
+                    position: relative;
+                    flex:1;
+                    //border: 1px solid black;
+                    height: 50%;
+                    .green-top-text{
+                        font-size: 9px;
+                        position: absolute;
+                        bottom: 11px;
+                        left: 3px;
+                        font-weight: 400;
+                        color: rgb(0, 165, 0);
+                        line-height: normal;
+                        letter-spacing: 1px;
+                    }
+                }
+                .green-content-bottom{
+                    position: relative;
+                    flex:1;
+                    background-color: rgb(86, 174, 88);
+                    border-radius: 9px 0px 0px 9px;
+                    height: 40%;
+                    .green-bottom-text{
+                        position: absolute;
+                        font-size: 9px;
+                        bottom: -14px;
+                        font-weight: 400;
+                        color: rgb(0, 165, 0);
+                        line-height: normal;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+            .container-center {
+                flex: 0.013;
+                height: auto;
+                .center-container-bar{
+                    position: absolute;
+                    flex: 1;
+                    height: 44%;
+                    width: 24%;
+                    left: 39%;
+                    .goal-bar{
+                        position: absolute;
+                        height: 100%;
+                        width: 2%;
+                        background-color: rgb(120, 123, 117);
+                    }
+                    .goal-container{
+                        height: 25%;
+                        width: 100%;
+                        padding: 0px 0px 0px 16px;
+                        border-top-right-radius: 21px;
+                        border-bottom-right-radius: 21px;
+                        box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.1);
+                        .item-goal-text {
+                            font-size: 9px;
+                            position: relative;
+                            top: 0px;
+                        }
+                        .item-goal-value {
+                            font-size: 63%;
+                            position: relative;
+                            top: -5px;
+                        }
+                    }
+                }
+            }
+            .container-blue {
+                flex:1.3;
+                width: 100%;
+                height: auto;
+                //border: 1px solid blue;
+                .blue-content-top{
+                    position: relative;
+                    flex:1;
+                    //border: 1px solid black;
+                    height: 50%;
+                    .blue-top-text{
+                        font-size: 9px;
+                        position: absolute;
+                        bottom: 11px;
+                        left: 3px;
+                        font-weight: 400;
+                        color: rgb(25, 141, 177);
+                        line-height: normal;
+                        letter-spacing: 1px;
+                    }
+                }
+                .blue-content-bottom{
+                    position: relative;
+                    flex:1;
+                    background-color: rgb(27, 141, 193);
+                    border-radius: 0px 9px 9px 0px;
+                    height: 40%;
+                    .blue-bottom-text{
+                        position: absolute;
+                        font-size: 9px;
+                        bottom: -14px;
+                        right: 0px;
+                        font-weight: 400;
+                        color: rgb(25, 141, 177);
+                        line-height: normal;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+        }
     }
     .rab-info {
         display: -ms-flexbox;
