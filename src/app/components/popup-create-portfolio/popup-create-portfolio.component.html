@@ -172,13 +172,14 @@
                                     <th>{{totalAllocation}}%</th>
                                     <th>&nbsp;</th>
                                 </tr>
+                                <div class="allocation-alert"><span class="alert-span">{{alertMessage}}</span></div>
                             </tfoot>
                         </table>
                     </div>
                     <div class="bottom">
                         <div class="btn-container">
                             <button class="btn-cancel" (click)="closeMe()">Cancel</button>
-                            <button class="btn-save" (click)="closeMe()"><i class="icon-save"></i>Save</button>
+                            <button class="btn-save" (click)="onSave ? closeMe() : ''"><i class="icon-save"></i>Save</button>
                         </div>
                     </div>
                 </div>

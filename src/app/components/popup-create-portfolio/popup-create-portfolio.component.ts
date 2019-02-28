@@ -12,8 +12,9 @@ import * as $ from 'jquery';
 export class PopupCreatePortfolioComponent implements OnInit {
 	@ViewChild('graph', { read: ElementRef }) private graph_ref: ElementRef;
 	chart: any;
-
+	alertMessage: string = "";
 	btnNext: boolean = false;
+	onSave: boolean = false;
 	viewPortfolioModal: boolean = false;
 	portfolioPopType : string|'view'|'edit' = 'view';
 	totalAllocation: number = 0;
@@ -125,6 +126,17 @@ export class PopupCreatePortfolioComponent implements OnInit {
 			d = d+c;
 		})
 		this.totalAllocation = d;
+		if (this.totalAllocation !== 100){
+			this.alertMessage = this.totalAllocation < 100 
+				? ((100 - this.totalAllocation) == 1 ? "Need " : "Needs " ) +" more allocation: "+(100 - this.totalAllocation) 
+						: "Allocation "+((this.totalAllocation - 100) == 1 ? "exceed " : "exceeds " )+"up to: "+(this.totalAllocation - 100);
+						$('.allocation-alert').fadeIn('slow');
+						this.onSave = false;
+		}else { 
+			$('.allocation-alert').fadeOut('fast');
+			this.alertMessage = ""
+			this.onSave = true;
+		}
 		this.updateChart();
 	}
 	removeRow(event) {

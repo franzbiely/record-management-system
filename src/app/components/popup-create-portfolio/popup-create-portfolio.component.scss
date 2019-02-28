@@ -596,3 +596,18 @@
    tfoot tr th:nth-child(4){
        text-align: right;
    }
+   tfoot div.allocation-alert{
+    display: none;
+    position: absolute;
+    right: 110px;
+    bottom: 178px;
+    background: #f00;
+    box-shadow: 0 5px 9px 0 rgba(65, 64, 66, 0.2);
+    border-radius: 0px 0px 6px 6px;
+    padding: 4px 13px 5px 13px;
+    .alert-span {
+        font-size: 10px;
+        color: white;
+        font-weight: 600;
+    }
+}
