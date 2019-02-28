@@ -9,15 +9,15 @@
                         <span>Portfolio Risk Score</span>
                     </div>
                     <div class="box-body">
-                        <span class="risk-score">N/A</span>
-                        <div class="footer"><span>Target Risk Name</span></div>
+                        <span class="risk-score">{{targetRange}}</span>
+                        <div class="footer"><span>{{(targetRiskName)}}</span></div>
                     </div>
                 </div>
                 <div class="top-items-container">
                     <div class="text-box-container">
                         <input type="text" class="text-box" placeholder="Enter Portfolio Name">
                     </div>
-                    <div class="dropdown-container"><app-dropdown-capital-appreciation></app-dropdown-capital-appreciation></div>
+                    <div class="dropdown-container"><app-dropdown-capital-appreciation (targetRiskName)="changeName($event)" (targetRange)="changeRange($event)" ></app-dropdown-capital-appreciation></div>
                     <div class="text-portfolio-group">
                         <span>Portfolio Group:</span><br/>
                         <span>Jennica Fernen Portfolios</span>

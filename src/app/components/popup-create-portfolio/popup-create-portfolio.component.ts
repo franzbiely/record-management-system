@@ -11,6 +11,7 @@ import * as $ from 'jquery';
 })
 export class PopupCreatePortfolioComponent implements OnInit {
 	@ViewChild('graph', { read: ElementRef }) private graph_ref: ElementRef;
+	riskStatusDanger : boolean = false; // false means inside the range | true means outside the range
 	chart: any;
 	alertMessage: string = "";
 	btnNext: boolean = false;
@@ -20,6 +21,9 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	totalAllocation: number = 0;
 	haveAllocationData: boolean = false;
 	showSuggestion: boolean = false;
+	targetRiskName : 'TARGET RISK NAME';
+	targetRange : '0';
+	
 	
 	allocation_data = {
 		0 : {
@@ -52,6 +56,8 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	constructor(private modalStatus: ModalStatusService, private data: DataService) { }
 
 	ngOnInit() {
+		this.targetRange = "0";
+		this.targetRiskName = "TARGET RISK NAME";
 		this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
 		this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
 		if (this.portfolioPopType == 'edit'){
@@ -146,8 +152,25 @@ export class PopupCreatePortfolioComponent implements OnInit {
 			this.onSave = isNaN(this.totalAllocation) ? false : true;
 		}
 		this.updateChart();
+		this.updateRiskStatus(this.targetRange, this.totalAllocation)
 	}
 	removeRow(event) {
 		$(event.target).closest('tr').fadeOut();
+	}
+	changeName($event){
+		this.targetRiskName = $event;
+	}
+	changeRange($event){
+		this.targetRange = $event;
+		this.updateRiskStatus($event, this.totalAllocation);
+	}
+	updateRiskStatus(range, total){
+		let data = range.split('-');
+		if (!isNaN(total)){
+			( total >= parseInt(data[0]) && total <= parseInt(data[1]) ) 
+				?  $('.risk-score').css('color', 'green')
+				: $('.risk-score').css('color', 'red')
+		}
+		console.log(this.riskStatusDanger)
 	}
 }

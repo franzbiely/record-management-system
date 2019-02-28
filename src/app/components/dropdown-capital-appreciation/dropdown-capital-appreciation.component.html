@@ -1,7 +1,7 @@
 <div class="btn-container space-left dropdown" (click)="dropdown_active=!dropdown_active" [ngClass]="{'active' : dropdown_active}">
   <button class="btn-cap-app">
-      <div><span class="p-text-small"> Capital Appreciation: </span></div> 
-      <div><span class="uppercase p-text-small-blue"> Risk score range:<strong> 72-86 </strong> </span></div> 
+      <div><span class="p-text-small">{{riskName}} : </span></div> 
+      <div><span class="uppercase p-text-small-blue"> Risk score range:<strong>{{riskRange}}</strong> </span></div> 
       <i class="icon-dropdown"></i>
   </button>
   <div class="dropdown-content">
@@ -9,8 +9,8 @@
       <div class="dropdown-item disabled"><span class="p-text-small">Conservative</span><span class="uppercase p-text-small-grey">Risk score range: <strong>15-29</strong></span></div>
       <div class="dropdown-item disabled"><span class="p-text-small">Balanced</span><span class="uppercase p-text-small-grey">Risk score range: <strong>30-43</strong></span></div>
       <div class="dropdown-item disabled"><span class="p-text-small">Moderate</span><span class="uppercase p-text-small-grey">Risk score range: <strong>44-57</strong></span></div>
-      <div class="dropdown-item"><span class="p-text-small">Moderate Growth</span><span class="uppercase p-text-small-grey">Risk score range: <strong>58-71</strong></span></div>
-      <div class="dropdown-item"><span class="p-text-small">Capital Appreciation</span><span class="uppercase p-text-small-blue">Risk score range: <strong>72-86</strong></span></div>
-      <div class="dropdown-item"><span class="p-text-small">Equity</span><span class="uppercase p-text-small-grey">Risk score range: <strong>87-100</strong></span></div>
+      <div (click)="passDataToTheParent('Moderate Growth','58-71')" class="dropdown-item"><span class="p-text-small">Moderate Growth</span><span class="uppercase p-text-small-grey">Risk score range: <strong>58-71</strong></span></div>
+      <div (click)="passDataToTheParent('Capital Appreciation','72-86')" class="dropdown-item"><span  class="p-text-small">Capital Appreciation</span><span class="uppercase p-text-small-blue">Risk score range: <strong>72-86</strong></span></div>
+      <div (click)="passDataToTheParent('Equity','87-100')" class="dropdown-item"><span  class="p-text-small">Equity</span><span class="uppercase p-text-small-grey">Risk score range: <strong>87-100</strong></span></div>
   </div>
 </div>
