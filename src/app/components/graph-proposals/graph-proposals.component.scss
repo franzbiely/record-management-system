@@ -112,18 +112,17 @@
                     position: absolute;
                     flex: 1;
                     height: 44%;
-                    width: 24%;
                     left: 39%;
                     .goal-bar{
                         position: absolute;
                         height: 100%;
-                        width: 2%;
+                        width: 1px;
                         background-color: rgb(120, 123, 117);
                     }
                     .goal-container{
                         height: 25%;
                         width: 100%;
-                        padding: 0px 0px 0px 16px;
+                        padding: 0px 17px 0px 16px;
                         border-top-right-radius: 21px;
                         border-bottom-right-radius: 21px;
                         box-shadow: 0 1px 6px 0 rgba(65, 64, 66, 0.1);
@@ -377,7 +376,7 @@
             }
             .rab-field-select {
                 padding: 0;
-
+                position: relative;
                 select {
                     display: block;
                     width: 100%;
@@ -397,6 +396,7 @@
                 }
                 .span-state{
                     display: block;
+                    
                     width: 100%;
                     padding: 15px;
                     color: #c5c5c5;
@@ -406,6 +406,7 @@
                     line-height: normal;
                     letter-spacing: normal;
                     border: 0;
+                    white-space: nowrap;
                     outline: none;
                     background-color: transparent;
                     -webkit-appearance: none;
@@ -417,9 +418,10 @@
                     overflow: hidden;
                     border-bottom-right-radius: 10px;
                     position: absolute;
+                    left: 0px;
+                    right: 0px;
                     z-index: 9999999;
                     margin: 1px 0px 0px 0px;
-                    width: 89%;
                     background: #fff;
                     border-radius: 0px 0px 6px 6px;
                     box-shadow: 0 15px 100px 0 rgba(65, 64, 66, 0.3);

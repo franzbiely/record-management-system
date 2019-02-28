@@ -14,6 +14,7 @@ declare var $: any;
 export class GraphProposalsComponent implements OnInit {
     checker : boolean = true;
     checkCounter: number = 0;
+    goalValue : number = 0;
     checkAll : boolean = false;
     showCalendar: boolean = false;
     @Input() reportType = 'default';
@@ -96,6 +97,21 @@ export class GraphProposalsComponent implements OnInit {
             if (!$clicked.parents().hasClass("dropdown")) $(".multiSelect").hide();
         });
     }
+    updateGroupVal() {
+        let val = $("#goal").val().replace(/,/g, '');
+        if (val !== '') { 
+            val = (typeof val === 'string') || val !== '' ? parseInt(val) : val;
+            if (val !== NaN){   
+                this.goalValue = parseInt(val);
+                var parts = val.toString().split(".");
+                parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                val =  parts.join(".");
+                console.log(val, this.goalValue);
+            }
+        }
+        $("#goal").val(val);
+        $("#goal-value").text('$'+val);
+	}
     toggleDropdown(id){
         $(".multiSelect").hide();
         if (this.checker){
