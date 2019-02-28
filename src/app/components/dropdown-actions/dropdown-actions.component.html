@@ -5,7 +5,7 @@
         <i class="icon-dropdown"></i>
       </summary>
       <ul>
-        <li *ngIf="haveEdit">
+        <li *ngIf="toHide ? !haveEdit : haveEdit">
           <a (click)="modifyFunc()">
             <span class="title">Edit</span>
             <i class="icon edit-gray"></i>

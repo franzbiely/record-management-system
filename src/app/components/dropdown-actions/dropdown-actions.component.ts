@@ -8,12 +8,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class DropdownActionsComponent implements OnInit {
 
   haveEdit : boolean = false;
-  haveView : boolean = false;
   haveModify : boolean = false;
+  haveView : boolean = false;
   haveDuplicate : boolean = false;
   haveDelete : boolean = false;
   haveViewFactSheet : boolean = false;
   @Input() type : 'account';
+  @Input() toHide : boolean = false;
 
 
 	viewFunc() {
