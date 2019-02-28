@@ -510,6 +510,12 @@
                                     margin-bottom: 10px;
                                 }
                             }
+                            .btn-close{
+                                @media only screen and (max-width: 767px){
+                                    margin-right: 0px;
+                                    margin-bottom: 10px;
+                                }
+                            }
                             .btn-save{
                                 width: 160px;
                                 height: 45px;

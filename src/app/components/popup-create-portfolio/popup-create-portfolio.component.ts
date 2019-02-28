@@ -54,6 +54,12 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	ngOnInit() {
 		this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
 		this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
+		if (this.portfolioPopType == 'edit'){
+			$('.btn-close').hide();
+		}else {
+			$('.btn-cancel').hide();
+			$('.btn-save').hide();
+		}
 	}
 	ngAfterViewInit() {
 	    this.updateChart();
@@ -126,16 +132,18 @@ export class PopupCreatePortfolioComponent implements OnInit {
 			d = d+c;
 		})
 		this.totalAllocation = d;
+		
 		if (this.totalAllocation !== 100){
 			this.alertMessage = this.totalAllocation < 100 
 				? ((100 - this.totalAllocation) == 1 ? "Need " : "Needs " ) +" more allocation: "+(100 - this.totalAllocation) 
-						: "Allocation "+((this.totalAllocation - 100) == 1 ? "exceed " : "exceeds " )+"up to: "+(this.totalAllocation - 100);
-						$('.allocation-alert').fadeIn('slow');
-						this.onSave = false;
+						: isNaN(this.totalAllocation) ? "Invalid, allocation is NaN" 
+							: "Allocation "+((this.totalAllocation - 100) == 1 ? "exceed " : "exceeds " )+"up to: "+(this.totalAllocation - 100);
+			$('.allocation-alert').fadeIn('slow');
+			this.onSave = false;
 		}else { 
 			$('.allocation-alert').fadeOut('fast');
 			this.alertMessage = ""
-			this.onSave = true;
+			this.onSave = isNaN(this.totalAllocation) ? false : true;
 		}
 		this.updateChart();
 	}
