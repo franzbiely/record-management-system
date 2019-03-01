@@ -14,7 +14,7 @@
     </summary>
     <ng-container *ngIf="type=='proposal'">
       <a class="item" (click)="chooseEvent('Update prices only', this)">Update prices only</a>
-      <a class="item">Update price &amp; positions</a>
+      <a class="item">Update prices &amp; positions</a>
     </ng-container>
     <ng-container *ngIf="type=='simulation-goal'">
       <a class="item" (click)="chooseEvent('Retirement')" *ngIf="selected_title!='Retirement'">Retirement</a>
