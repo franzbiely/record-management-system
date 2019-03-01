@@ -239,8 +239,18 @@ $secondaryfont: "museo-sans";
       }
     }
     .id-container{
-      flex-direction: column;
+      flex-direction: row;
       display: flex;
+      span:first-child{
+        margin-bottom: 7px;
+        position: relative;
+        top: 7px;
+      }
+      span:nth-child(2) {
+        left: 2px;
+        position: relative;
+        top: 3px;
+      }
     }
   }
 }
