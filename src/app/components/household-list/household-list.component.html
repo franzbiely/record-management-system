@@ -46,55 +46,24 @@
 
         <div class="table-container" *ngIf="active_tab==1">
           <table>
-            <tr>
-              <th>Select</th>
-              <th><span>Household name</span><i class="icon-dropdown"></i></th>
-              <th><span>ID</span><i class="icon-dropdown"></i></th>
-              <th><span>First Name</span><i class="icon-dropdown"></i></th>
-              <th><span>Last Name</span><i class="icon-dropdown"></i></th>
-            </tr>
-            <tr [ngClass]="{'selected': selected_index==1}">
-              <td><mat-radio-button (click)="selected_index=1"></mat-radio-button></td>
-              <td>Rhoades Household</td>
-              <td>9305</td>
-              <td>wendy</td>
-              <td>Rhoades</td>
-            </tr>
-            <tr [ngClass]="{'selected': selected_index==2}">
-              <td><mat-radio-button (click)="selected_index=2"></mat-radio-button></td>
-              <td>Rhoades Household</td>
-              <td>9305</td>
-              <td>wendy</td>
-              <td>Rhoades</td>
-            </tr>
-            <tr [ngClass]="{'selected': selected_index==3}">
-              <td><mat-radio-button (click)="selected_index=3"></mat-radio-button></td>
-              <td>Rhoades Household</td>
-              <td>9305</td>
-              <td>wendy</td>
-              <td>Rhoades</td>
-            </tr>
-            <tr [ngClass]="{'selected': selected_index==4}">
-              <td><mat-radio-button (click)="selected_index=4"></mat-radio-button></td>
-              <td>Rhoades Household</td>
-              <td>9305</td>
-              <td>wendy</td>
-              <td>Rhoades</td>
-            </tr>
-            <tr [ngClass]="{'selected': selected_index==5}">
-              <td><mat-radio-button (click)="selected_index=5"></mat-radio-button></td>
-              <td>Rhoades Household</td>
-              <td>9305</td>
-              <td>wendy</td>
-              <td>Rhoades</td>
-            </tr>
-            <tr [ngClass]="{'selected': selected_index==6}">
-              <td><mat-radio-button (click)="selected_index=6"></mat-radio-button></td>
-              <td>Rhoades Household</td>
-              <td>9305</td>
-              <td>wendy</td>
-              <td>Rhoades</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Select</th>
+                <th><span>Household name</span><i class="icon-dropdown"></i></th>
+                <th><span>ID</span><i class="icon-dropdown"></i></th>
+                <th><span>First Name</span><i class="icon-dropdown"></i></th>
+                <th><span>Last Name</span><i class="icon-dropdown"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr [ngClass]="{'selected': selected_index==i}" *ngFor="let item of household_list; let i = index">
+                <td><mat-radio-button (click)="checkboxSelected(i)"></mat-radio-button></td>
+                <td>{{item.name}}</td>
+                <td>{{item.id}}</td>
+                <td>item.fname</td>
+                <td>{{item.lname}}</td>
+              </tr>
+            </tbody>
           </table>
           <div class="row-3">
             <div class="btn-container">

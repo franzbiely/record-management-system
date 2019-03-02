@@ -39,6 +39,8 @@ app-household-member {
         top: 110px;
     }
     .box-content{
+        position: relative;
+        top: 40px;
         width: 1000px;
         box-shadow: 0 15px 30px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
@@ -385,7 +387,7 @@ app-household-member {
                             padding:0 30px;
                             height: 47px;
                         }
-                        tr:first-child{
+                        thead tr:first-child{
                             background-color:#fafbfc;
                         }
                         tr td:first-child, tr th:first-child{
@@ -403,9 +405,17 @@ app-household-member {
                         tr th:last-child, tr td:last-child{
                             text-align:left;
                         }
-                        tr:not(:first-child){
+                        thead tr {
                             border-bottom: 0.5px #e7e6e6 solid;
                         }
+                        tbody {
+                            tr{
+                                border-bottom: 0.5px #e7e6e6 solid;
+                                &:hover{
+                                    background:#f2fafc;
+                                }
+                            }
+                        } 
                         tr.selected {
                             background:#f2fafc;
                         }

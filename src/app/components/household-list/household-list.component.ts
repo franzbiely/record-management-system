@@ -10,7 +10,7 @@ declare var $ :any;
   styleUrls: ['./household-list.component.scss']
 })
 export class HouseholdListComponent implements OnInit {
-  selected_index= 0;
+  selected_index= -1;
 	active_tab = 1; // 2, 3
 	showForm = true;
   openHousehold: boolean = false;
@@ -18,6 +18,106 @@ export class HouseholdListComponent implements OnInit {
   openMemberForm : boolean = false;
   frmOrion : FormGroup;
   frmRedtail : FormGroup;
+
+  private household_list: Array<Object> = [
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    },
+    {
+      'name': 'Rhoades Household',
+      'id': '9305',
+      'fname': 'wendy',
+      'lname': 'Rhoades'
+    }
+];
+
 	closeMe() {
     this.closeMeEvent.emit(true);
     this.modalStatus.SET_household(false);
@@ -26,7 +126,9 @@ export class HouseholdListComponent implements OnInit {
     this.openMemberForm = $event;
   }
   constructor(private modalStatus: ModalStatusService, private fb: FormBuilder) { }
-
+  checkboxSelected(i){
+    this.selected_index = i;
+  }
   ngOnInit() {
     this.modalStatus.household.subscribe(value => this.openHousehold = value);
     this.frmOrion = this.fb.group({
