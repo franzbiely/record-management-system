@@ -142,6 +142,9 @@ app-settings-landing-default {
     line-height: normal;
     letter-spacing: normal;
     color: #404041;
+    span {
+        color:#c5c5c5;
+    }
 }
 .text-box-body {
     height: 170px;
@@ -159,6 +162,23 @@ app-settings-landing-default {
     letter-spacing: normal;
     color: #414042;
     overflow-y: scroll;
+}
+.text-box-body-empty {
+    height: 170px;
+    padding: 15px;
+    font-family: "museo-sans";
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px #e7e6e6;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:#c5c5c5;
+    overflow-y: hidden;
 }
 .edit-text {
     text-transform: uppercase;

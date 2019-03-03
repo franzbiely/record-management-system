@@ -10,6 +10,10 @@ export class SettingComponent implements OnInit {
   popupLandingDefaultModal: boolean = false;
   emailLangModal : boolean = false;
   docuLangModal : boolean = false;
+  defaultPage = 'HOME VIEW';
+  defaultPageTemplate = 'home-page';
+  defaultRAQ = 'Loring Ward Default';
+  defaultDocument = 'Loring Ward Default';
 
   constructor(private modalStatus: ModalStatusService) { }
 
@@ -29,5 +33,19 @@ export class SettingComponent implements OnInit {
   open_docuLang() {
     this.modalStatus.SET_docuLang(true);
   }
-
+  changeDefaultPage($event) {
+    if ($event == 'HOME VIEW'){
+      this.defaultPage = 'HOME VIEW';
+      this.defaultPageTemplate = 'home-page';
+    } else {
+      this.defaultPage = 'LIST VIEW';
+      this.defaultPageTemplate = 'listview-page';
+    }
+  }
+  changeDefaultRAQ($event) {
+    this.defaultRAQ = $event;
+  }
+  changeDefaultDocument($event) {
+    this.defaultDocument = $event;
+  }
 }

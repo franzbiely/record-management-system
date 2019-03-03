@@ -10,7 +10,7 @@
                 <div class="left-section" [ngClass]="{checked: isChecked == 1}">
                     <div class="option" >
                         <span>Home View:</span>
-                        <mat-radio-button  (click)="isChecked=1" [value]="1">Default</mat-radio-button>
+                        <mat-radio-button  (click)="changeDefault(1)" [value]="1">Default</mat-radio-button>
                     </div>
                     <div class="img-container" >
                         <img class="img" src="../../../assets/component/settings/home-page.PNG">
@@ -19,7 +19,7 @@
                 <div class="right-section" [ngClass]="{checked: isChecked==2}">
                     <div class="option" >
                         <span>List View:</span>
-                        <mat-radio-button (click)="isChecked=2" [value]="2">Default</mat-radio-button>
+                        <mat-radio-button (click)="changeDefault(2)" [value]="2">Default</mat-radio-button>
                     </div>
                     <div class="img-container">
                         <img class="img" src="../../../assets/component/settings/listview-page.PNG">
@@ -29,7 +29,7 @@
             </div>
             <div class="btn-container">
                 <button class="btn-cancel" (click)="closeMe()">Cancel</button>
-                <button (click)="closeMe()">
+                <button (click)="onSaveSetting()">
                     <i class="icon-save"></i>
                     <span>Save</span>
                 </button>

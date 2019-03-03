@@ -1,6 +1,6 @@
-<app-popup-landing-page class="global-popup" *ngIf="popupLandingDefaultModal"></app-popup-landing-page>
-<app-popup-email-language class="global-popup" *ngIf="emailLangModal"></app-popup-email-language>
-<app-popup-document-language class="global-popup" *ngIf="docuLangModal"></app-popup-document-language>
+<app-popup-landing-page class="global-popup" [currentPage]="defaultPage" (defaultPage)="changeDefaultPage($event)" *ngIf="popupLandingDefaultModal"></app-popup-landing-page>
+<app-popup-email-language class="global-popup" [currentRAQ]="defaultRAQ" (defaultRAQ)="changeDefaultRAQ($event)" *ngIf="emailLangModal"></app-popup-email-language>
+<app-popup-document-language class="global-popup" [currentDocument]="defaultDocument" (defaultDocument)="changeDefaultDocument($event)" *ngIf="docuLangModal"></app-popup-document-language>
 
 <div class="settings-container ">
     <div class="container flex">
@@ -19,7 +19,7 @@
         <div class="box-body"> 
             <div class="title-box">
               <div>
-                <span class="small-title"> HOME VIEW: </span>
+                <span class="small-title"> {{defaultPage}}: </span>
               </div>
               <div class="flex">
                 <mat-radio-group>
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="content-box">
-              <img src="../../../assets/loring.png">
+              <img src="../../../assets/component/settings/{{defaultPageTemplate}}.PNG">
             </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
           <div class="box-body">
               <div class="title-box">
                 <div>
-                  <p class="small-title"> Loring Ward Default </p> <p class="small-title">Email Language: </p>
+                  <p class="small-title"> {{defaultRAQ}} </p> <p class="small-title">Email Language: </p>
                 </div>
                 <div class="flex">
                   <mat-radio-group>
@@ -75,8 +75,7 @@
                   </mat-radio-group>
                 </div> 
               </div>
-  
-              <div class="text-box-container">
+              <div class="text-box-container" *ngIf="defaultRAQ == 'Loring Ward Default'">
                 <div class="text-box-head">
                   <span> Investor Questionnaire from [Advisor Name] with [Firm Name] </span>
                 </div>
@@ -87,6 +86,17 @@
                         All you have to do is answer a few quick questions about yourself and your risk sentiment. This will be used as the foundation of an investment proposal designed especially for you. <br/><br/> 
                         Click Here to Start  <br/><br/>
                         Please do not reply to this system generated email. If you have any questions, contact [Advisor Name] directly. 
+                  </span>
+                </div>
+              </div>
+              <div class="text-box-container" *ngIf="defaultRAQ != 'Loring Ward Default'">
+                <div class="text-box-head">
+                  <span> Subject </span>
+                </div>
+  
+                <div class="text-box-body-empty">
+                  <span>
+                    Start Typing...
                   </span>
                 </div>
               </div>
@@ -104,10 +114,10 @@
                   <span class="edit-text">edit</span>
                 </div>
             </div>
-          <div class="box-body"> 
+          <div class="box-body"  *ngIf="defaultDocument == 'Loring Ward Default'"> 
               <div class="title-box">
                   <div>
-                      <p class="small-title"> Loring Ward Default </p> <p class="small-title">Email Language: </p>
+                      <p class="small-title"> {{defaultDocument}} </p> <p class="small-title">Email Language: </p>
                   </div>
                   <div class="flex">
                     <mat-radio-group>
@@ -136,6 +146,36 @@
                             Click Here to Start  <br/><br/>
                             Please do not reply to this system generated email. If you have any questions, contact [Advisor Name] directly. 
                       </span>
+                    </div>
+                  </div>
+          </div>
+          <div class="box-body"  *ngIf="defaultDocument != 'Loring Ward Default'"> 
+              <div class="title-box">
+                  <div>
+                      <p class="small-title"> {{defaultDocument}} </p> <p class="small-title">Email Language: </p>
+                  </div>
+                  <div class="flex">
+                    <mat-radio-group>
+                      <div class="flex">
+                        <div>
+                          <mat-radio-button></mat-radio-button>
+                        </div>
+                          <div>
+                            <span class="normat-text"> 
+                              Default 
+                            </span>
+                          </div>
+                      </div>
+                    </mat-radio-group>
+                  </div> 
+                </div>
+                <div class="text-box-container">
+                    <div class="text-box-head">
+                      <span> Subject </span>
+                    </div>
+      
+                    <div class="text-box-body-empty">
+                      <span>Start Typing</span>
                     </div>
                   </div>
           </div>

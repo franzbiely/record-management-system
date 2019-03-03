@@ -6,10 +6,10 @@
                 <span>RAQ Email Language</span>
             </div>
             <div class="box-body">
-                <div class="left-section">
+                <div class="left-section" >
                     <div class="option">
                         <span>Loring Ward Default Email Language:</span>
-                        <mat-radio-button>Default</mat-radio-button>
+                        <mat-radio-button (click)="changeDefault(1)" [checked]="isChecked == 1 ? true : false"  >Default</mat-radio-button>
                     </div>
                     <div class="textbox-container">
                         <div class="recepient"><span>Investor Questionnaire from [Advisor Name] with [Firm Name]</span></div>
@@ -27,7 +27,7 @@
                 <div class="right-section">
                     <div class="option">
                         <span>Type your own Email Language:</span>
-                        <mat-radio-button>Default</mat-radio-button>
+                        <mat-radio-button (click)="changeDefault(2)" [checked]="isChecked == 2 ? true : false"  >Default</mat-radio-button>
                     </div>
                     <div class="textbox-container">
                         <div class="recepient">
@@ -41,7 +41,7 @@
             </div>
             <div class="btn-container">
                 <button class="btn-cancel" (click)="closeMe()">Cancel</button>
-                <button (click)="closeMe()">
+                <button (click)="onSaveDefaultRAQ()">
                     <i class="icon-save"></i>
                     <span>Save</span>
                 </button>
