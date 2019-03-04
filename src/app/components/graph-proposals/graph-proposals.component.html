@@ -163,28 +163,28 @@
                     <div class="rab-field-select">
                         <div class="dropdown">
                             <div>
-                                <a (click)="toggleDropdown(reportType)" ><span id="{{reportType}}"  class="span-state">Select State</span></a>
+                                <a (click)="toggleDropdown(reportType)" ><span id="state{{reportType}}"  class="span-state">Select State</span></a>
                                 <span class="span-state id" style="display: none;">{{reportType}}</span>
                             </div>
                             <div id="ID{{reportType}}" class="multiSelect">
                                 <div class="item">
                                     <div class="item-content">
-                                        <mat-checkbox class="all" (change)="selectAllToggler($event, 'household','All', reportType)"
-                                            [checked]="filter_data.household[0]"></mat-checkbox>
+                                        <mat-checkbox class="all" (change)="selectAllToggler($event, 'state','All', reportType)"
+                                            [checked]="filter_data.state[0]"></mat-checkbox>
                                         <div class="vertical-center"><span class="title">Select All</span></div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="item-content">
-                                        <mat-checkbox class="active" (change)="checkFilter($event, false, 'Active', reportType)"
-                                            [checked]="filter_data.household[1]"></mat-checkbox>
+                                        <mat-checkbox class="active" (change)="checkFilter($event, false, 'state', 'Active', reportType)"
+                                            [checked]="filter_data.state[1]"></mat-checkbox>
                                         <div class="vertical-center"><span class="title">Active</span></div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="item-content">
-                                        <mat-checkbox class="archive" (change)="checkFilter($event, false, 'Archive', reportType)"
-                                            [checked]="filter_data.household[2]"></mat-checkbox>
+                                        <mat-checkbox class="archive" (change)="checkFilter($event, false, 'state', 'Archive', reportType)"
+                                            [checked]="filter_data.state[2]"></mat-checkbox>
                                         <div class="vertical-center"><span class="title">Archived</span></div>
                                     </div>
                                 </div>
@@ -195,16 +195,52 @@
                 <div class="rab-setting-field">
                     <label for="goal">Status:</label>
                     <div class="rab-field-select">
-                        <select name="status" id="status">
-                            <option value="" disabled selected>Select Status</option>
-                            <option value="one">Option One</option>
-                            <option value="two">Option Two</option>
-                            <option value="three">Option Three</option>
-                        </select>
+                        <div class="dropdownStatus">
+                            <div>
+                                <a (click)="toggleDropdownStatus(reportType)" ><span id="status{{reportType}}"  class="span-state">Select Status</span></a>
+                                <span class="span-state stat" style="display: none;">{{reportType}}</span>
+                            </div>
+                            <div id="STATUS{{reportType}}" class="multiSelectStatus">
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="all" (change)="selectAllToggler($event, 'status','All', reportType)"
+                                            [checked]="filter_data.status[0]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">Select All</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="active" (change)="checkFilter($event, false,'status', 'In Progress', reportType)"
+                                            [checked]="filter_data.status[1]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">In Progress</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="sent-questionnaire" (change)="checkFilter($event, false,'status', 'Sent Questionnaire', reportType)"
+                                            [checked]="filter_data.status[2]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">Sent Questionnaire</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="sent-proposal" (change)="checkFilter($event, false,'status', 'Sent Proposal', reportType)"
+                                            [checked]="filter_data.status[3]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">Sent Proposal</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-content">
+                                        <mat-checkbox class="implemented" (change)="checkFilter($event, false,'status', 'Implemented', reportType)"
+                                            [checked]="filter_data.status[4]"></mat-checkbox>
+                                        <div class="vertical-center"><span class="title">Implemented</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div><!-- .rab-field-select -->
                 </div><!-- .rab-setting-field -->
-            </div><!-- .rab-setting-row -->
-
+            </div>
             <div class="rab-setting-row">
                 <div class="rab-setting-field">
                     <label for="goal">Date Range:</label>

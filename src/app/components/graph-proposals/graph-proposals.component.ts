@@ -21,10 +21,17 @@ export class GraphProposalsComponent implements OnInit {
     @Input() reportTitle = '';
     @Input() reportSubTitle = '';
     filter_data = {
-        household : {
+        state : {
             0 : false, //all
             1 : false,
             2 : false,
+        },
+        status : {
+            0 : false, //all
+            1 : false,
+            2 : false,
+            3 : false,
+            4 : false,
         }
     }
    
@@ -95,6 +102,7 @@ export class GraphProposalsComponent implements OnInit {
         $(document).bind('click', function (e) {
             var $clicked = $(e.target);
             if (!$clicked.parents().hasClass("dropdown")) $(".multiSelect").hide();
+            if (!$clicked.parents().hasClass("dropdownStatus")) $(".multiSelectStatus").hide();
         });
     }
     updateGroupVal() {
@@ -123,6 +131,17 @@ export class GraphProposalsComponent implements OnInit {
         }
         console.log(this.checker);
     }
+    toggleDropdownStatus(id){
+        $(".multiSelectStatus").hide();
+        if (this.checker){
+            $("#STATUS"+id).show();
+            this.checker = false;
+        }else {
+            $("#STATUS"+id).hide();
+            this.checker = !this.checker;
+        }
+        console.log(this.checker);
+    }
     validate(searchValue : number) {
         if(Number.isInteger(searchValue)){
             console.log('true');
@@ -130,7 +149,7 @@ export class GraphProposalsComponent implements OnInit {
 	}
     selectAllToggler(event, type , all, id) {
         var data = "";
-        if(event.checked) {
+        if(event.checked || all == 'all') {
             Object.keys(this.filter_data[type]).forEach(v => this.filter_data[type][v] = true)	
             console.log(this.filter_data)
             this.checkAll = true;
@@ -142,45 +161,63 @@ export class GraphProposalsComponent implements OnInit {
             console.log(this.filter_data)
             this.checkAll = false;
             this.checkCounter = 0;
-            data = 'Select State';
+            data = this.checkType(type);
         }
-        $('#'+id).text(data);
-        console.log(id);
+        this.setData(type, id, data);
     }
-    checkFilter(event, isForAll, type,id) {
+    checkFilter(event, isForAll, type, value, id) {
         if(event.checked) {
             this.checkCounter++;
-            console.log(event.source.id);
-            var data = $('#'+id).text();
-            if (data === "Select State" || data === null || data == "" || data=="All"){
-                data = type;
+            var data = this.getData(type, id);
+            if (data === this.checkType(type) || this.checkNull(data) == true || data=="All"){
+                data = value;
             }else{
-                data = data+","+type;
+                data = data+","+value;
+                if ( type == 'state' && this.dataLength(data) == 2){
+                    this.selectAllToggler(event, type , 'all', id); data = "All"; 
+                }
+                if ( type == 'status' && this.dataLength(data) == 4){
+                    this.selectAllToggler(event, type , 'all', id); data = "All"; 
+                }
             }
-            $('#'+id).text(data);
         }
         else {
             this.checkCounter--;
-            var data = $('#'+id).text();
+            var data = this.getData(type, id);
             if (this.checkAll == true){
-                Object.keys(this.filter_data['household']).forEach(v => this.filter_data['household'][v] = false)
+                Object.keys(this.filter_data[type]).forEach(v => this.filter_data[type][v] = false)
                 this.checkAll = false;
-                data = "Select State";
-            }
-            if (data === "Select State" || data === null || data == "" || data=="All"){
-                data = "Select State";
+                data = this.checkType(type);
             }else{
-                let splData = data.split(',');
-                splData.forEach((e,i)=> { if (e === type ){  splData.splice(i,1); }});
-                data = splData;
+                if (data === this.checkType(type) || this.checkNull(data) == true || data=="All"){
+                    data = this.checkType(type);
+                }else{
+                    let splData = data.split(',');
+                    splData.forEach((e,i)=> { if (e === value ){  splData.splice(i,1); }});
+                    data = splData;
+                }
+                if (data.length < 1 || data == undefined) {
+                    console.log(data);
+                    data = this.checkType(type);
+                }
             }
-            if (data.length < 1 || data == undefined) {
-                console.log(data);
-                data = "Select State";
-            }
-            $('#'+id).text(data);
-        }                                
-        console.log(id);
+        }  
+        this.setData(type, id, data);
+    }
+    checkType(val){
+        return val == 'state' ? 'Select State' : 'Select Status';
+    }
+    checkNull(val){
+        return ( val === "" || val === null ) ? true : false;
+    }
+    dataLength(val){
+        return val.split(',').length;
+    }
+    getData(type, id){
+        return $('#'+type+id).text();
+    }
+    setData(type, id, val){
+        $('#'+type+id).text(val); 
     }
     ngAfterViewInit() {
         switch (this.reportType) {
