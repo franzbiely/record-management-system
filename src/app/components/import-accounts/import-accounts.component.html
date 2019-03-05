@@ -46,8 +46,8 @@
           <div class="row-content">
     
             <div class="table-container">
-              <table>
-                <tr>
+              <table class="import-account-table">
+                <thead>
                   <th>Select</th>
                   <th><span>Account name</span><i class="icon-dropdown"></i></th>
                   <th><span>Added</span></th>
@@ -57,7 +57,8 @@
                   <th><span>Account Type</span><i class="icon-dropdown"></i></th>
                   <th><span>Owner</span><i class="icon-dropdown"></i></th>
                   <th><span>Value</span><i class="icon-dropdown"></i></th>
-                </tr>
+                </thead>
+                <tbody>
                 <tr>
                   <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
                   <td>Rhoades IRA</td>
@@ -124,6 +125,7 @@
                   <td>Phillip Rhoades</td>
                   <td>$200,000.00</td>
                 </tr>
+              </tbody>
               </table>
               <div class="row-3">
                 <div class="btn-container">

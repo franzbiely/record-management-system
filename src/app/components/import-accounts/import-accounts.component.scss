@@ -292,9 +292,6 @@
                         tr{
                             border-bottom: 1px #ddd solid;
                         }
-                        th:nth-child(3), td:nth-child(3){
-                            padding-right: 60px;
-                        }
                         th:nth-child(5), th:nth-child(6), th:nth-child(7), td:nth-child(5), td:nth-child(6), th:nth-child(7){
                             text-align: left;
                         }
@@ -317,6 +314,50 @@
                     }
                 }
             }
+        }
+    }
+}
+.import-account-table  {
+    width:100%;
+    thead, tbody tr {   
+        display:table;
+        width:100%;
+        table-layout:fixed;
+    }
+    thead {
+        th{
+            white-space: nowrap;
+        }
+        width: calc(100% - 5px);
+        th:first-child{
+            width: 10%;
+        }
+        th:nth-child(4){
+            width: 20%;
+            text-align: left;
+        }
+        th:nth-child(2){
+            width: 10%;
+        }
+        th:nth-child(3){
+            width: 10%;
+        }
+    } 
+    tbody {
+        display:block;
+        height:150px;
+        overflow:auto;
+        tr td:first-child{
+            width: 10%;
+        }
+        tr td:nth-child(4){
+            width: 20%;
+        }
+        tr td:nth-child(2){
+            width: 10%;
+        }
+        tr td:nth-child(3){
+            width: 10%;
         }
     }
 }

@@ -172,7 +172,7 @@ export class GraphProposalsComponent implements OnInit {
             if (data === this.checkType(type) || this.checkNull(data) == true || data=="All"){
                 data = value;
             }else{
-                data = data+","+value;
+                data = data+",  "+value;
                 if ( type == 'state' && this.dataLength(data) == 2){
                     this.selectAllToggler(event, type , 'all', id); data = "All"; 
                 }
