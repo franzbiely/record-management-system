@@ -41,9 +41,7 @@
           </div>
         </div>
       </div>
-
       <div class="row-content">
-
         <div class="table-container" *ngIf="active_tab==1">
           <table class="household-list-table">
             <thead>
@@ -55,14 +53,16 @@
                 <th><span>Last Name</span><i class="icon-dropdown"></i></th>
               </tr>
             </thead>
-            <tbody>
-                <tr [ngClass]="{'selected': selected_index==i}" *ngFor="let item of household_list; let i = index">
-                  <td><mat-radio-button (click)="checkboxSelected(i)"></mat-radio-button></td>
-                  <td>{{item.name}}</td>
-                  <td>{{item.id}}</td>
-                  <td>item.fname</td>
-                  <td>{{item.lname}}</td>
-                </tr>
+
+            <tbody class="search-results" infinite-scroll [scrollWindow]="false" [infiniteScrollDistance]="scrollDistance"
+            [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
+            (scrolledUp)="onUp()" >
+              <tr [ngClass]="{'selected': selected_index==i+1}" *ngFor="let item of array; let i = index">
+              <td><mat-radio-button (click)="checkboxSelected(i+1)"></mat-radio-button></td>
+              <td>{{item.name}}</td>
+              <td>{{item.id}}</td>
+              <td>item.fname</td>
+              <td>{{item.lname}}</td>
             </tbody>
           </table>
           <div class="row-3">

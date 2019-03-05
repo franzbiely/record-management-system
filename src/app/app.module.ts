@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SortablejsModule } from 'angular-sortablejs';
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
 import { MatTabsModule, MatRadioModule, MatCheckboxModule,
         MatTableModule, MatSliderModule, MAT_CHECKBOX_CLICK_ACTION } from '@angular/material';
@@ -218,6 +219,7 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
   ],
   imports: [
     BrowserModule,
+    InfiniteScrollModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
