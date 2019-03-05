@@ -33,14 +33,12 @@ app-household-member {
     align-items: center;
     padding: 0px 60px;
     z-index: 70;
-    top: 50px;
     @media only screen and (max-width: 767px){
         padding: 0px 10px;
         top: 110px;
     }
     .box-content{
         position: relative;
-        top: 40px;
         width: 1000px;
         box-shadow: 0 15px 30px 0 rgba(65, 64, 66, 0.2);
         border-radius: 6px;
@@ -447,3 +445,44 @@ app-household-member {
             }
         }
     }
+    .household-list-table  {
+        width:100%;
+        thead, tbody tr {   
+            display:table;
+            width:100%;
+            table-layout:fixed;
+        }
+        thead {
+            width: calc(100% - 5px);
+            th:first-child{
+                width: 10%;
+            }
+            th:nth-child(2){
+                width: 30%;
+            }
+            th:nth-child(3){
+                width: 10%;
+            }
+        } 
+        tbody {
+            display:block;
+            height:150px;
+            overflow:auto;
+            tr td:first-child{
+                width: 10%;
+            }
+            tr td:nth-child(2){
+                width: 30%;
+            }
+            tr td:nth-child(3){
+                width: 10%;
+            }
+        }
+    }
+
+
+
+
+    
+    
+    

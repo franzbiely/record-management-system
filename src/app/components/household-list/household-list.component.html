@@ -45,10 +45,10 @@
       <div class="row-content">
 
         <div class="table-container" *ngIf="active_tab==1">
-          <table>
+          <table class="household-list-table">
             <thead>
               <tr>
-                <th>Select</th>
+                <th class="col-sm-1">Select</th>
                 <th><span>Household name</span><i class="icon-dropdown"></i></th>
                 <th><span>ID</span><i class="icon-dropdown"></i></th>
                 <th><span>First Name</span><i class="icon-dropdown"></i></th>
@@ -57,12 +57,12 @@
             </thead>
             <tbody>
                 <tr [ngClass]="{'selected': selected_index==i}" *ngFor="let item of household_list; let i = index">
-                <td><mat-radio-button (click)="checkboxSelected(i)"></mat-radio-button></td>
-                <td>{{item.name}}</td>
-                <td>{{item.id}}</td>
-                <td>item.fname</td>
-                <td>{{item.lname}}</td>
-              </tr>
+                  <td><mat-radio-button (click)="checkboxSelected(i)"></mat-radio-button></td>
+                  <td>{{item.name}}</td>
+                  <td>{{item.id}}</td>
+                  <td>item.fname</td>
+                  <td>{{item.lname}}</td>
+                </tr>
             </tbody>
           </table>
           <div class="row-3">
