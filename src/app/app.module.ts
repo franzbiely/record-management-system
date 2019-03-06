@@ -230,6 +230,7 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     MatSliderModule,
     FormsModule,
     ReactiveFormsModule,
+    SortablejsModule,
     SortablejsModule.forRoot({
       animation: 200,
     }),

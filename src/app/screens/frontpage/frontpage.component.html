@@ -78,7 +78,7 @@
 
             <div class="spacer" style="height: 35px; "></div><!-- .spacer -->
 
-            <div id="report-panes" class="board-panes" *ngIf="reportBoard.s === 'show'">
+            <div id="report-panes" class="board-panes" [sortablejs]="reportType" [sortablejsOptions]="options" *ngIf="reportBoard.s === 'show'">
                 <div class="board-pane" *ngFor="let pane of panes">
                     <app-graph-proposals [reportType]="pane"></app-graph-proposals>
                 </div><!-- .board-pane -->

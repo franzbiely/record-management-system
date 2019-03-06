@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SortablejsOptions } from 'angular-sortablejs';
 
 declare var jquery: any;
 declare var $: any;
@@ -15,6 +16,10 @@ export class FrontpageComponent implements OnInit {
         s: 'show',
         t: 'Hide'
     };
+    
+    options: SortablejsOptions = {
+        group: 'test'
+      };
 
     panes: any = [];
     charts: any = [ 'aum', 'default', 'ipo', 'tvpm', 'tvpr', 'tvpp', 'pdo', 'tvps', 'cps' ];

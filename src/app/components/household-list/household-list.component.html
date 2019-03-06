@@ -58,11 +58,12 @@
             [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
             (scrolledUp)="onUp()" >
               <tr [ngClass]="{'selected': selected_index==i+1}" *ngFor="let item of array; let i = index">
-              <td><mat-radio-button (click)="checkboxSelected(i+1)"></mat-radio-button></td>
+              <td><mat-radio-button (click)="checkboxSelected(selected_index)"></mat-radio-button></td>
               <td>{{item.name}}</td>
               <td>{{item.id}}</td>
               <td>item.fname</td>
               <td>{{item.lname}}</td>
+              </tr>
             </tbody>
           </table>
           <div class="row-3">
