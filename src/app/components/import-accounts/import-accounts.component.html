@@ -58,72 +58,19 @@
                   <th><span>Owner</span><i class="icon-dropdown"></i></th>
                   <th><span>Value</span><i class="icon-dropdown"></i></th>
                 </thead>
-                <tbody>
-                <tr>
+                <tbody class="search-results" infinite-scroll [scrollWindow]="false" [infiniteScrollDistance]="scrollDistance"
+                [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
+                (scrolledUp)="onUp()">
+                <tr  *ngFor="let item of array; let i = index">
                   <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
-                  <td>Rhoades IRA</td>
-                  <td><i class="icon-myclient"></i></td>
-                  <td>ENV Account</td>
-                  <td>Schwab</td>
-                  <td>22345</td>
-                  <td>IRA</td>
-                  <td>Phillip Rhoades</td>
-                  <td>$200,000.00</td>
-                </tr>
-                <tr>
-                  <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
-                  <td>Rhoades IRA</td>
-                  <td><i class="icon-orion"></i></td>
-                  <td>ENV Account</td>
-                  <td>Schwab</td>
-                  <td>22345</td>
-                  <td>IRA</td>
-                  <td>Phillip Rhoades</td>
-                  <td>$200,000.00</td>
-                </tr>
-                <tr>
-                  <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
-                  <td>Rhoades IRA</td>
-                  <td><i class="icon-redtail"></i></td>
-                  <td>ENV Account</td>
-                  <td>Schwab</td>
-                  <td>22345</td>
-                  <td>IRA</td>
-                  <td>Phillip Rhoades</td>
-                  <td>$200,000.00</td>
-                </tr>
-                <tr>
-                  <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
-                  <td>Rhoades IRA</td>
-                  <td><i class="icon-wealth"></i></td>
-                  <td>ENV Account</td>
-                  <td>Schwab</td>
-                  <td>22345</td>
-                  <td>IRA</td>
-                  <td>Phillip Rhoades</td>
-                  <td>$200,000.00</td>
-                </tr>
-                <tr>
-                  <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
-                  <td>Rhoades IRA</td>
-                  <td><i class="icon-orion"></i></td>
-                  <td>ENV Account</td>
-                  <td>Schwab</td>
-                  <td>22345</td>
-                  <td>IRA</td>
-                  <td>Phillip Rhoades</td>
-                  <td>$200,000.00</td>
-                </tr>
-                <tr>
-                  <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
-                  <td>Rhoades IRA</td>
-                  <td><i class="icon-myclient"></i></td>
-                  <td>ENV Account</td>
-                  <td>Schwab</td>
-                  <td>22345</td>
-                  <td>IRA</td>
-                  <td>Phillip Rhoades</td>
-                  <td>$200,000.00</td>
+                  <td>{{item.account_name}}</td>
+                  <td><i class="icon-{{item.added}}"></i></td>
+                  <td>{{item.group}}</td>
+                  <td>{{item.custodian}}</td>
+                  <td>{{item.account}}</td>
+                  <td>{{item.account_type}}</td>
+                  <td>{{item.owner}}</td>
+                  <td>{{item.value}}</td>
                 </tr>
               </tbody>
               </table>
