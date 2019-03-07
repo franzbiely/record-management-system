@@ -5,19 +5,25 @@
         <i class="icon-dropdown"></i>
       </summary>
       <ul>
-        <li>
+        <li *ngIf="add_proposal" >
           <a (click)="viewFunc()">
             <span class="title">Add Proposal</span>
             <i class="icon proposal-gray"></i>
           </a>
         </li>
-        <li>
+        <li *ngIf="change_portfolio" >
           <a (click)="modifyFunc()">
             <span class="title">Change Portfolio</span>
             <i class="icon change-gray"></i>
           </a>
         </li>
-        <li>
+        <li *ngIf="duplicate" >
+            <a (click)="modifyFunc()">
+              <span class="title">Duplicate</span>
+              <i class="icon proposal-gray"></i>
+            </a>
+          </li>
+        <li *ngIf="delete" >
           <a>
             <span class="title">Delete</span>
             <i class="icon delete-gray"></i>

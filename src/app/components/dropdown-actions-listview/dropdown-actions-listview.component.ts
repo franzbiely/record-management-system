@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown-actions-listview',
@@ -6,10 +6,23 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./dropdown-actions-listview.component.scss']
 })
 export class DropdownActionsListviewComponent implements OnInit {
-
+  add_proposal = false;
+  change_portfolio = false;
+  delete = false;
+  duplicate = false;
+  @Input() household = false;
   constructor() { }
 
   ngOnInit() {
+    this.add_proposal = true;
+    this.change_portfolio = true;
+    this.delete = true;
+    if (this.household == true) { 
+      this.add_proposal = false;
+      this.change_portfolio = false;
+      this.duplicate = true;
+    }
+
   }
 
   viewFunc() {
