@@ -35,8 +35,36 @@
       <table>
         <thead>
           <tr>
-            <th *ngFor="let column of columns" [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>{{ column }}</span><i class="icon-dropdown"></i></a>
+            <th (click)="setOrder('name')"
+              [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>name</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+            </th>
+            <th (click)="setOrder('id')"
+              [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>id</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+            </th>
+            <th (click)="setOrder('value')"
+              [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>$ value</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+            </th>
+            <th (click)="setOrder('num')"
+              [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>#</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+            </th>
+            <th (click)="setOrder('state')"
+              [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>state/status</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+            </th>
+            <th (click)="setOrder('created')"
+              [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>created</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+            </th>
+            <th (click)="setOrder('updated')"
+              [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>last updated</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+            </th>
+            <th  [ngClass]="column=='name' ? 'text-left' : 'text-right'">
+              <a><span>actions</span></a>
             </th>
           </tr>
         </thead>
@@ -48,7 +76,7 @@
           </tbody>
         </ng-container>
         <ng-container *ngIf="hasData">
-          <tbody *ngFor="let list of lists">
+          <tbody *ngFor="let list of lists | orderBy: order:reverse:'case-insensitive'">
             <tr width="100%" class="selected-dropdown" [class.active]="list.open">
               <td class="name" [ngClass]="['col-name']" colspan="1"><a (click)="list.open=!list.open"><i
                     [ngClass]="{ 'icon-chevron-down' : list.open == true, 'icon-chevron-right' : list.open  == false}"></i><span

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SortablejsModule } from 'angular-sortablejs';
+import { OrderModule } from 'ngx-order-pipe';
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
@@ -220,6 +221,7 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
   imports: [
     BrowserModule,
     InfiniteScrollModule,
+    OrderModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,

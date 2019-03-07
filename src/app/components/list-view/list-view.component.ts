@@ -1,12 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { ModalStatusService } from "../../services/modal-status.service"
+import { OrderPipe } from 'ngx-order-pipe';
 
 @Component({
   selector: 'app-list-view',
   templateUrl: './list-view.component.html',
   styleUrls: ['./list-view.component.scss'],
-  inputs: ["lists", "expandedElement"],
+  inputs: ["expandedElement"],
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({height: '0px', minHeight: '0', display: 'none'})),
@@ -18,14 +19,30 @@ import { ModalStatusService } from "../../services/modal-status.service"
 export class ListViewComponent implements OnInit {
   hasData:boolean = true;
   @Input() addLabel:string;
+  @Input() lists:any[];
   openHousehold: boolean = false;
-  constructor(private modalStatus: ModalStatusService) { }
 
+  order: string = 'name';
+  reverse: boolean = false;
+  sortedCollection: any[];
 
-  columns = ["name", "id", "$ value", "#", "state/status", "created", "last updated", "actions"];
+  constructor(private modalStatus: ModalStatusService, private orderPipe: OrderPipe) { 
+
+    this.sortedCollection = orderPipe.transform(this.lists, 'name');
+    console.log(this.sortedCollection);
+  }
 
   ngOnInit() {
     this.modalStatus.household.subscribe(value => this.openHousehold = value);
+    console.log(this.lists);
+  }
+
+  setOrder(value: string) {
+    if (this.order === value) {
+      this.reverse = !this.reverse;
+    }
+    console.log(value)
+    this.order = value;
   }
 
   openHouseHoldModal() {
