@@ -102,7 +102,7 @@
                                       </details></td>
                                     <td><input type="text" class="allocation-text" [(ngModel)]="allocation_data[0].data[0].value" 
                                         (keyup)="updateGroupVal()" placeholder="%"/></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event, allocation_data[0].data[0].value)"></i></td>
                                 </tr>
                                 <tr>
                                     <td>SA US Small Company Select</td>
@@ -116,7 +116,7 @@
                                     <td><input [(ngModel)]="allocation_data[1].data[0].value" 
                                             (keyup)="updateGroupVal()"
                                             type="text" class="allocation-text" placeholder="%"></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event, allocation_data[1].data[0].value)"></i></td>
                                 </tr>
                                 <tr>
                                     <td>SA US Value Select</td>
@@ -130,7 +130,7 @@
                                     <td><input [(ngModel)]="allocation_data[1].data[1].value" 
                                         (keyup)="updateGroupVal()"
                                         type="text" class="allocation-text" placeholder="%"></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event)"></i></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event, allocation_data[1].data[1].value )"></i></td>
                                 </tr>
                             </ng-container>
                             <ng-container *ngIf="!haveAllocationData">
@@ -179,7 +179,7 @@
                     <div class="bottom">
                         <div class="btn-container">
                             <button class="btn-cancel" (click)="closeMe()">Cancel</button>
-                            <button class="btn-save" (click)="onSave ? closeMe() : ''"><i class="icon-save"></i>Save</button>
+                            <button class="btn-save" (click)="saveEvent()"><i class="icon-save"></i>Save</button>
                             <button class="btn-close" (click)="closeMe()">Close</button>
                         </div>
                     </div>

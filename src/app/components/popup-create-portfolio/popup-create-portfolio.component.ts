@@ -90,8 +90,21 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		this.data.SET_portfolioPopupType('edit');
 	}
 	saveEvent() {
-		this.modalStatus.SET_viewPortfolio(false);
-		this.data.SET_proposal_show_btnNext(true);
+		if (this.totalAllocation !== 100) {
+			this.alertMessage = this.totalAllocation < 100
+				? ((100 - this.totalAllocation) == 1 ? "Need " : "Needs ") + " more allocation: " + (100 - this.totalAllocation)
+				: isNaN(this.totalAllocation) ? "Invalid, allocation is NaN"
+					: "Allocation " + ((this.totalAllocation - 100) == 1 ? "exceed " : "exceeds ") + "up to: " + (this.totalAllocation - 100);
+			$('.allocation-alert').fadeIn('slow');
+			this.onSave = false;
+		} else {
+			$('.allocation-alert').fadeOut('fast');
+			this.alertMessage = ""
+			this.onSave = isNaN(this.totalAllocation) ? false : true;
+			this.modalStatus.SET_viewPortfolio(false);
+			this.data.SET_proposal_show_btnNext(true);
+		}
+		
 	}
 	toggleModify() {
 		if (this.portfolioPopType==='view') {
@@ -139,23 +152,13 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		})
 		this.totalAllocation = d;
 		
-		if (this.totalAllocation !== 100){
-			this.alertMessage = this.totalAllocation < 100 
-				? ((100 - this.totalAllocation) == 1 ? "Need " : "Needs " ) +" more allocation: "+(100 - this.totalAllocation) 
-						: isNaN(this.totalAllocation) ? "Invalid, allocation is NaN" 
-							: "Allocation "+((this.totalAllocation - 100) == 1 ? "exceed " : "exceeds " )+"up to: "+(this.totalAllocation - 100);
-			$('.allocation-alert').fadeIn('slow');
-			this.onSave = false;
-		}else { 
-			$('.allocation-alert').fadeOut('fast');
-			this.alertMessage = ""
-			this.onSave = isNaN(this.totalAllocation) ? false : true;
-		}
+
 		this.updateChart();
 		this.updateRiskStatus(this.targetRange, this.totalAllocation)
 	}
-	removeRow(event) {
+	removeRow(event, value) {
 		$(event.target).closest('tr').fadeOut();
+		this.totalAllocation = ( this.totalAllocation - value )
 	}
 	changeName($event){
 		this.targetRiskName = $event;
