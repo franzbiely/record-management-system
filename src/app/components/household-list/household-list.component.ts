@@ -24,7 +24,7 @@ export class HouseholdListComponent implements OnInit {
 
   
 
-  selected_index= -1;
+  selected_index= 0;
 	active_tab = 1; // 2, 3
 	showForm = true;
   openHousehold: boolean = false;
@@ -45,7 +45,7 @@ export class HouseholdListComponent implements OnInit {
    }
    
   checkboxSelected(i){
-    this.selected_index = i;
+    this.selected_index = i+1;
   }
   ngOnInit() {
     this.modalStatus.household.subscribe(value => this.openHousehold = value);
