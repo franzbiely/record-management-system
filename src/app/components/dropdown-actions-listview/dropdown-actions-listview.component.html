@@ -17,6 +17,12 @@
             <i class="icon change-gray"></i>
           </a>
         </li>
+        <li *ngIf="change_archive" >
+          <a (click)="modifyFunc()">
+            <span class="title">Archive/ Un-archive</span>
+            <i class="icon archived-gray"></i>
+          </a>
+        </li>
         <li *ngIf="duplicate" >
             <a (click)="modifyFunc()">
               <span class="title">Duplicate</span>

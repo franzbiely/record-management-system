@@ -12,7 +12,7 @@
     <div class="box-head">
         <div>
             <span class="box-head-title">{{title}} <span class="sub" *ngIf="subTitle">{{subTitle}}</span>
-            <span *ngIf="!isNew" ><i class="recent-viewed">Last 5 {{title}} Viewed</i></span></span>
+            <span ><i class="recent-viewed">Last 5 {{title}} Viewed</i></span></span>
         </div>
         <div class="btn-right-space">
             <span class="btn" *ngIf="headerRightType=='add'" (click)="showModalHousehold()">

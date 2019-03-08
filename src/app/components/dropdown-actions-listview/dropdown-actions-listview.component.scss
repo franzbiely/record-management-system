@@ -106,6 +106,11 @@
         width: 20px;
         height: 20px;
     }
+    &.archived-gray {
+        content: url('../../../assets/state-archived-gray.svg');
+        width: 20px;
+        height: 20px;
+    }
     &.change-gray {
         content: url('../../../assets/component/listview/change-portfolio-gray.svg');
         width: 20px;

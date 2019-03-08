@@ -10,16 +10,19 @@ export class DropdownActionsListviewComponent implements OnInit {
   change_portfolio = false;
   delete = false;
   duplicate = false;
+  change_archive = false;
   @Input() household = false;
   constructor() { }
 
   ngOnInit() {
     this.add_proposal = true;
     this.change_portfolio = true;
+    this.change_archive = true;
     this.delete = true;
     if (this.household == true) { 
       this.add_proposal = false;
       this.change_portfolio = false;
+      this.change_archive = false;
       this.duplicate = true;
     }
 
