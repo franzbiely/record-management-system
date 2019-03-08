@@ -106,7 +106,8 @@ export class GraphProposalsComponent implements OnInit {
         });
     }
     updateGroupVal() {
-        let val = $("#goal").val().replace(/,/g, '');
+        let value = $("#goal").val().replace(/,/g, '');
+        let val = value.replace("$", "");
         if (val !== '') { 
             val = (typeof val === 'string') || val !== '' ? parseInt(val) : val;
             if (val !== NaN){   
@@ -117,7 +118,7 @@ export class GraphProposalsComponent implements OnInit {
                 console.log(val, this.goalValue);
             }
         }
-        $("#goal").val(val);
+        $("#goal").val('$'+val);
         $("#goal-value").text('$'+val);
 	}
     toggleDropdown(id){
