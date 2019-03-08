@@ -115,6 +115,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		}
 	}
 	updateChart() {
+		$('.allocation-alert').fadeOut('fast');
 		const chart_data = {
 	      labels: ['Global Short Bonds', 'U.S. Small Neutral Stocks', 'U.S. Large Value Stocks'],
 	      datasets: [{

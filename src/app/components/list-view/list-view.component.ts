@@ -22,6 +22,7 @@ export class ListViewComponent implements OnInit {
   @Input() lists:any[];
   openHousehold: boolean = false;
 
+  icon: string = 'down';
   order: string = 'name';
   reverse: boolean = false;
   sortedCollection: any[];
@@ -41,6 +42,7 @@ export class ListViewComponent implements OnInit {
     if (this.order === value) {
       this.reverse = !this.reverse;
     }
+    this.icon = this.reverse ? 'down' : 'up';
     console.log(value)
     this.order = value;
   }

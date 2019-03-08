@@ -37,31 +37,31 @@
           <tr>
             <th (click)="setOrder('name')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>name</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+              <a><span>name</span><i [ngClass]="reverse && order == 'name' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
             </th>
             <th (click)="setOrder('id')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>id</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+              <a><span>id</span><i [ngClass]="reverse && order == 'id' ? 'icon-up' : 'icon-down'" class="icon-dropdown "></i></a>
             </th>
             <th (click)="setOrder('value')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>$ value</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+              <a><span>$ value</span><i [ngClass]="reverse && order == 'value' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
             </th>
             <th (click)="setOrder('num')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>#</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+              <a><span>#</span><i [ngClass]="reverse && order == 'num' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
             </th>
             <th (click)="setOrder('state')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>state/status</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+              <a><span>state/status</span><i [ngClass]="reverse && order == 'state' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
             </th>
             <th (click)="setOrder('created')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>created</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+              <a><span>created</span><i [ngClass]="reverse && order == 'created' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
             </th>
             <th (click)="setOrder('updated')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>last updated</span><i [hidden]="reverse" class="icon-dropdown icon-down"></i><i [hidden]="!reverse" class="icon-dropdown icon-up"></i></a>
+              <a><span>last updated</span><i [ngClass]="reverse && order == 'updated' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
             </th>
             <th  [ngClass]="column=='name' ? 'text-left' : 'text-right'">
               <a><span>actions</span></a>
