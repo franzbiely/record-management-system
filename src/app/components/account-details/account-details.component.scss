@@ -184,7 +184,7 @@ app-add-security{
                             }
                             td:nth-child(5), td:nth-child(6),
                             th:nth-child(5), th:nth-child(6){
-                                text-align: right;
+                                text-align: center;
                             }
                             td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5),
                             th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5){
@@ -218,11 +218,11 @@ app-add-security{
                                 height: 47px;
                             }
                             tr th:first-child, tr td:first-child {
-                                text-align: left;
+                                text-align: center;
                             }
                             tr th:nth-child(2), tr td:nth-child(2),
                             tr th:nth-child(5), tr td:nth-child(5) {
-                                text-align: right;
+                                text-align: center;
                             }
                             td:nth-child(3){
                                 white-space: nowrap;
@@ -232,7 +232,7 @@ app-add-security{
                             }
                             tr th:nth-child(4), tr td:nth-child(4),
                             tr th:nth-child(3), tr td:nth-child(3) {
-                                text-align: left;
+                                text-align: center;
                             }
 
                             tr:not(:last-child) td{
@@ -244,6 +244,9 @@ app-add-security{
                                 line-height: 1;
                                 letter-spacing: normal;
                                 color: #414042;
+                            }
+                            tr th:nth-child(2), tr th:nth-child(5) {
+                                white-space: nowrap;
                             }
                             tr:last-child td{
                                 font-family: "Montserrat", sans-serif;
