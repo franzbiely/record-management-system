@@ -45,7 +45,7 @@
             </th>
             <th (click)="setOrder('value')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
-              <a><span>$ value</span><i [ngClass]="reverse && order == 'value' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
+              <a><span>($) value</span><i [ngClass]="reverse && order == 'value' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></a>
             </th>
             <th (click)="setOrder('num')"
               [ngClass]="column=='name' ? 'text-left' : 'text-right'">
