@@ -176,8 +176,10 @@ app-add-security{
                             border-radius: 6px;
                             box-shadow: 0 5px 7px 0 rgba(65, 64, 66, 0.1);
                             background-color: #ffffff;
-                            tr:first-child, tr:last-child{
+                            thead, tfoot {
+                                tr:first-child{
                                 background-color: #fafbfc;
+                                }
                             }
                             th, td {
                                 padding:0px 5px;
@@ -194,6 +196,13 @@ app-add-security{
                             }
                             td:nth-child(7) {
                                 max-width:30px;
+                                width: 30px;
+                                text-align: center;
+                            }
+                            tfoot {
+                                tr:first-child, td:first-child{
+                                    padding-left: 20px;
+                                }
                             }
                             th:first-child, td:first-child{
                                 padding-left: 20px;
@@ -210,10 +219,10 @@ app-add-security{
                                 text-transform: uppercase;
                                 height: 47px;
                             }
-                            th:nth-child(2),th:nth-child(3), th:nth-child(4),
-                            td:nth-child(2),td:nth-child(3), td:nth-child(4),{
-                                padding: 0 30px !important;
-                            }
+                            // th:nth-child(2),th:nth-child(3), th:nth-child(4),
+                            // td:nth-child(2),td:nth-child(3), td:nth-child(4){
+                            //     //padding: 0 30px !important;
+                            // }
                             td {
                                 height: 47px;
                             }
@@ -234,21 +243,24 @@ app-add-security{
                             tr th:nth-child(3), tr td:nth-child(3) {
                                 text-align: center;
                             }
-
-                            tr:not(:last-child) td{
-                                font-family: "museo-sans", roboto;
-                                font-size: 11px;
-                                font-weight: 300;
-                                font-style: normal;
-                                font-stretch: normal;
-                                line-height: 1;
-                                letter-spacing: normal;
-                                color: #414042;
+                            tbody {
+                                tr td{
+                                    font-family: "museo-sans", roboto;
+                                    font-size: 11px;
+                                    font-weight: 300;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: 1;
+                                    letter-spacing: normal;
+                                    color: #414042;
+                                }
                             }
+                            
                             tr th:nth-child(2), tr th:nth-child(5) {
                                 white-space: nowrap;
                             }
-                            tr:last-child td{
+                            tfoot{
+                                tr:last-child td{
                                 font-family: "Montserrat", sans-serif;
                                 font-size: 11px;
                                 font-weight: bold;
@@ -259,6 +271,8 @@ app-add-security{
                                 color: #414042;
                                 text-transform: uppercase;
                             }
+                            }
+                            
                             .close-circle {
                                 width: 20px;
                                 height: 20px;
@@ -416,7 +430,56 @@ app-add-security{
         }       
     }
 }
-
+.account-list-table  {
+    width:100%;
+    thead, tbody tr, tfoot tr {   
+        display:table;
+        width:100%;
+        table-layout:fixed;
+    }
+    thead {
+        th:first-child{
+            width: 20%;
+        }
+        th:nth-child(2){
+            width: 10%;
+        }
+        th:nth-child(3){
+            width: 20%;
+        }
+        th:last-child(){
+            width: 10%;
+        }
+    } 
+    tbody {
+        display:block;
+        height:150px;
+        overflow:auto;
+        tr td:first-child, tr td:nth-child(3){
+            width: 20%;
+        }
+        tr td:nth-child(2), tr td:last-child(){
+            width: 10%;
+        }
+    }
+    tfoot {
+        display:block;
+        height:45px;
+        overflow:hidden;
+        tr td:first-child{
+            width: 20%;
+        }
+        tr td:nth-child(2){
+            width: 10%;
+        }
+        tr td:nth-child(3){
+            width: 20%;
+        }
+        tr td:last-child(){
+            width: 10%;
+        }
+    }
+}
 .icon-delete{
     cursor: pointer;
     content: url("../../../assets/icons/exit-white.svg")
