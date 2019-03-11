@@ -1,29 +1,37 @@
 <details class="active-archive-component">
 	<summary>
 		<div class="item" *ngIf="type!='proposal'">
-			<i class="check-icon"></i>
-			<span class="title">Active</span>
+			<i class="{{mainIcon}}-icon"></i>
+			<span id="main" class="title"> {{ main }} </span>
 			<i class="dropdown-icon"></i>
 		</div>
 		<div class="item" *ngIf="type=='proposal'">
-			<i class="icon-progress"></i>
-			<span class="title">In Progress</span>
+			<i class="icon-{{proposalIcon}}"></i>
+			<span id="proposal" class="title"> {{ proposal }} </span>
 			<i class="dropdown-icon"></i>
 		</div>
 	</summary>
-	<div class="item" *ngIf="type!='proposal'">
+	<div class="item" *ngIf="type!='proposal'" (click)="onChangeMain('Active', 'check')">
+		<i class="check-icon"></i>
+		<span class="title">Active</span>
+	</div>
+	<div class="item" *ngIf="type!='proposal'" (click)="onChangeMain('Archive', 'archive')">
 		<i class="archive-icon"></i>
 		<span class="title">Archive</span>
 	</div>
-	<div class="item" *ngIf="type=='proposal'">
+	<div class="item" *ngIf="type=='proposal'" (click)="onChangeProposal('In Progress', 'progress')">
+		<i class="icon-progress"></i>
+		<span class="title">In Progress</span>
+	</div>
+	<div class="item" *ngIf="type=='proposal'" (click)="onChangeProposal('Sent Questionnaire', 'questionnaire')">
 		<i class="icon-questionnaire"></i>
 		<span class="title">Sent Questionnaire</span>
 	</div>
-	<div class="item" *ngIf="type=='proposal'">
+	<div class="item" *ngIf="type=='proposal'" (click)="onChangeProposal('Sent Proposal', 'proposal')">
 		<i class="icon-proposal"></i>
 		<span class="title">Sent Proposal</span>
 	</div>
-	<div class="item" *ngIf="type=='proposal'">
+	<div class="item" *ngIf="type=='proposal'" (click)="onChangeProposal('Implemented', 'implemented')">
 		<i class="icon-implemented"></i>
 		<span class="title">Implemented</span>
 	</div>
