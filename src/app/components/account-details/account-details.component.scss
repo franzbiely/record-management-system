@@ -453,10 +453,13 @@ app-add-security{
     } 
     tbody {
         display:block;
-        height:150px;
+        height:350px;
         overflow:auto;
         tr td:first-child, tr td:nth-child(3){
             width: 20%;
+        }
+        tr td:nth-child(3){
+            position: relative;
         }
         tr td:nth-child(2), tr td:last-child(){
             width: 10%;
