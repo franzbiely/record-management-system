@@ -59,13 +59,24 @@
                     border: 0.5px solid #e7e6e6;
                     padding: 15px;
                     border-radius: 6px 6px 0px 0px;
+                    input {
+                        flex: 1;
+                        width: 90%;
+                        height: 15px;
+                        border: 0px;
+                        text-decoration: none;
+                        margin: 0px 10px 0px 15px;
+                        ::placeholder {
+                            color: #9a9ca0;
+                        }
+                    }
                 }
                 .message-box{
                     font-size: 12px;
                     padding: 10px 15px;
                     border: 0.5px solid #e7e6e6;
                     border-top: none;
-                    height: 170px;
+                    height: 184px;
                     border-radius: 0px 0px 6px 6px;
                     .message-box-content{
                         overflow-y: auto;
@@ -74,6 +85,13 @@
                     a {
                         text-decoration: none;
                         color: black;
+                    }
+                    textarea {
+                        text-align: left;
+                        resize: none;
+                        width: 100%;
+                        height: 100%;
+                        border: 0px;
                     }
                 }
                 .option{

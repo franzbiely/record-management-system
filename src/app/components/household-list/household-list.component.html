@@ -49,8 +49,8 @@
                 <th class="col-sm-1">Select</th>
                 <th (click)="setOrder('name')" ><span>Household name</span><i [ngClass]="reverse && order == 'name' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
                 <th (click)="setOrder('id')" ><span>ID</span><i [ngClass]="reverse && order == 'id' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
-                <th (click)="setOrder('fname')" ><span>First Name</span><i [ngClass]="reverse && order == 'lname' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
-                <th (click)="setOrder('lname')" ><span>Last Name</span><i [ngClass]="reverse && order == 'fname' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                <th (click)="setOrder('fname')" ><span>First Name</span><i [ngClass]="reverse && order == 'fname' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                <th (click)="setOrder('lname')" ><span>Last Name</span><i [ngClass]="reverse && order == 'lname' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
               </tr>
             </thead>
 
