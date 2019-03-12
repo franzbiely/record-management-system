@@ -102,6 +102,20 @@ input[type=text].text-try {
         }
     } 
 }
+.icon-down {
+    cursor: pointer;
+    padding-left: 7px;
+    width: 10px;
+    height: 7px;
+    content: url("../../../assets/arrow-down-gray.svg");
+}
+.icon-up {
+    cursor: pointer;
+    padding-left: 7px;
+    width: 10px;
+    height: 7px;
+    content: url("../../../assets/arrow-up-gray.svg");
+}
 .box-body {
     height:auto;
     width:100%;

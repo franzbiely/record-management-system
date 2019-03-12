@@ -30,97 +30,25 @@
           <table class="table">
             <thead>
             <tr>
-              <th class="align-left">Portfolio name<i class="caret-name"></i></th>
-              <th class="align-right">Risk Score<i class="caret-score"></i></th>
-              <th class="align-right">Risk Name & Range<i class="caret-range"></i></th>
-              <th class="align-left">Portfolio Group<i class="caret-group"></i></th>
-              <th class="align-center">Actions<i class="caret-center"></i></th>
+              <th (click)="setOrder('name')" class="align-left">Portfolio name <i [ngClass]="reverse && order == 'name' ? 'icon-up' : 'icon-down' " ></i></th>
+              <th (click)="setOrder('score')" class="align-right">Risk Score <i [ngClass]="reverse && order == 'score' ? 'icon-up' : 'icon-down' " ></i></th>
+              <th (click)="setOrder('risk')" class="align-right">Risk Name & Range <i [ngClass]="reverse && order == 'risk' ? 'icon-up' : 'icon-down' " ></i></th>
+              <th (click)="setOrder('group')" class="align-left">Portfolio Group <i [ngClass]="reverse && order == 'group' ? 'icon-up' : 'icon-down' " ></i></th>
+              <th class="align-center">Actions</th>
             </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="align-left">Example Advisors - Balanced Select</td>
-                <td class="align-right">29</td>
-                <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                <td class="align-left">Example Advisors Portfolios</td>
+              <tr *ngFor="let item of array | orderBy: order:reverse:'case-insensitive'; let i = index" >
+                <td class="align-left"> {{item.name}} </td>
+                <td class="align-right"> {{item.score}} </td>
+                <td class="align-right"><span>{{item.risk.name}}</span><br/><span class="range-text">{{item.risk.value}}</span></td>
+                <td class="align-left">{{item.group}}</td>
                 <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
-              </tr>
-              <tr>
-                  <td class="align-left">Example Advisors - Balanced Select</td>
-                  <td class="align-right">29</td>
-                  <td class="align-right"><span>Balanced</span><br/><span class="range-text">30-43</span></td>
-                  <td class="align-left">Example Advisors Portfolios</td>
-                  <td class="align-center"><app-dropdown-actions [toHide]=true (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions></td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-
-        
   </div>
   </div>
   </div>
