@@ -253,7 +253,11 @@ app-add-security{
                                     line-height: 1;
                                     letter-spacing: normal;
                                     color: #414042;
-                                }
+                                }tr td:nth-child(2), tr td:nth-child(4), tr td:nth-child(5){
+                                    width: 10% !important;
+                                }tr td:nth-child(4), tr td:nth-child(5){
+                                    width: 15% !important;
+                                } 
                             }
                             
                             tr th:nth-child(2), tr th:nth-child(5) {
@@ -438,6 +442,7 @@ app-add-security{
         table-layout:fixed;
     }
     thead {
+        width: calc(100% - 5px);
         th:first-child{
             width: 20%;
         }
@@ -453,7 +458,7 @@ app-add-security{
     } 
     tbody {
         display:block;
-        height:350px;
+        height:550px;
         overflow:auto;
         tr td:first-child, tr td:nth-child(3){
             width: 20%;
@@ -462,10 +467,11 @@ app-add-security{
             position: relative;
         }
         tr td:nth-child(2), tr td:last-child(){
-            width: 10%;
+            width: 10% !important;
         }
     }
     tfoot {
+
         display:block;
         height:45px;
         overflow:hidden;
