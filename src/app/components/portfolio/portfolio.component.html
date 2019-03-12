@@ -53,33 +53,17 @@
                 <thead>
                     <tr class="last">
                     <th class="align-center">Select</th>
-                    <th class="align-left"><div class="vertical-middle">Portfolio Name <i class="icon-menu"></i></div></th>
-                    <th class="align-right"><span class="vertical-middle">Target Risk Score <i class="icon-menu"></i></span></th>
-                    <th class="align-left" ><div class="vertical-middle">Portfolio Group <i class="icon-menu"></i></div></th>
+                    <th (click)="setOrder('name')"  class="align-left"><div class="vertical-middle">Portfolio Name <i [ngClass]="reverse && order == 'name' ? 'icon-up' : 'icon-down' " ></i></div></th>
+                    <th (click)="setOrder('target.name')"  class="align-right"><span class="vertical-middle">Target Risk Score <i [ngClass]="reverse && order == 'target.name' ? 'icon-up' : 'icon-down' "></i></span></th>
+                    <th (click)="setOrder('group')"  class="align-left" ><div class="vertical-middle">Portfolio Group <i [ngClass]="reverse && order == 'group' ? 'icon-up' : 'icon-down' " ></i></div></th>
                     <th class="align-center">Actions</th>
                 </thead>
                 <tbody>
-                <tr>
+                <tr *ngFor="let item of array | orderBy: order:reverse:'case-insensitive'; let i = index">
                     <td><mat-radio-button (click)="selectRow()"></mat-radio-button></td>
-                    <td>Example Advisor Capital Appreciation - Sustainability</td>
-                    <td class="align-right" ><p>Capital Appreciation</p><span class="uppercase">Risk Score:</span> <span class="bold">87-100 (80)</span></td>
-                    <td >Example Advisor Portfolios</td>
-                    <td class="align-center"><div class="action-container">
-                        <app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></div></td>
-                </tr>
-                <tr>
-                    <td><mat-radio-button (click)="selectRow()"></mat-radio-button></td>
-                    <td>Example Advisor Capital Appreciation - Sustainability</td>
-                    <td class="align-right"><p>Capital Appreciation</p> <span class="uppercase">Risk Score:</span><span class="bold">87-100 (80)</span></td>
-                    <td>Example Advisor Portfolios</td>
-                    <td class="align-center"><div class="action-container">
-                        <app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></div></td>
-                </tr>
-                <tr>
-                    <td><mat-radio-button (click)="selectRow()"></mat-radio-button></td>
-                    <td>Example Advisor Capital Appreciation - Sustainability</td>
-                    <td class="align-right"><p>Capital Appreciation</p><span class="uppercase"> Risk Score: </span><span class="bold">87-100 (80)</span></td>
-                    <td>Example Advisor Portfolios</td>
+                    <td> {{item.name}} </td>
+                    <td class="align-right" ><p> {{ item.target.name }} </p><span class="uppercase">Risk Score:</span> <span class="bold"> {{ item.target.value }} </span></td>
+                    <td > {{item.group}} </td>
                     <td class="align-center"><div class="action-container">
                         <app-dropdown-actions-portfolio (viewEvent)="viewEventReciever($event)" (modifyEvent)="modifyEventReciever($event)"></app-dropdown-actions-portfolio></div></td>
                 </tr>

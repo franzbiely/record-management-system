@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalStatusService } from "../../services/modal-status.service"
 import { DataService } from "../../services/data.service"
+import { OrderPipe } from 'ngx-order-pipe';
 
 @Component({
   selector: 'app-portfolio',
@@ -13,8 +14,39 @@ export class PortfolioComponent implements OnInit {
   dropdown_active : boolean = false;
   btnNext : boolean = false;
 
-  constructor(private modalStatus: ModalStatusService, private data: DataService) {
+  order: string = 'name';
+  reverse: boolean = false;
+  sortedCollection: any[];
 
+  array = [
+    {
+      'name': 'Example Advisor Capital Appreciation - Sustainability 1',
+      'target': {
+              'name' :'Capital Appreciation 1',
+              'value' : '87-100 (80)'
+            },
+      'group' : 'Example Advisor Portfolios 1'
+    },
+    {
+      'name': 'Example Advisor Capital Appreciation - Sustainability 2',
+      'target': {
+              'name' :'Capital Appreciation 2',
+              'value' : '87-100 (80)'
+            },
+      'group' : 'Example Advisor Portfolios 2'
+    },
+    {
+      'name': 'Example Advisor Capital Appreciation - Sustainability 3',
+      'target': {
+              'name' :'Capital Appreciation 3',
+              'value' : '87-100 (80)'
+            },
+      'group' : 'Example Advisor Portfolios 3'
+    }
+  ]
+
+  constructor(private modalStatus: ModalStatusService, private data: DataService, private orderPipe: OrderPipe) {
+    this.sortedCollection = orderPipe.transform(this.array, 'name');
   }
 
   ngOnInit() {
@@ -36,6 +68,13 @@ export class PortfolioComponent implements OnInit {
   }
   selectRow() {
     this.data.SET_proposal_show_btnNext(true);
+  }
+  setOrder(value: string) {
+    if (this.order === value) {
+      this.reverse = !this.reverse;
+    }
+    console.log(value)
+    this.order = value;
   }
   set_dropdown_active(val) {
     this.dropdown_active = val;
