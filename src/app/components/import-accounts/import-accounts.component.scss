@@ -251,12 +251,20 @@
                             text-transform: uppercase;
 
                         }
-                        th .icon-dropdown{
-                            padding-left: 6px;
-                            cursor: pointer;
-                            width: 10px;
-                            content: url("../../../assets/arrow-down-gray.svg");
-                        }
+                        th {
+                            .icon-down{
+                                content: url(../../../assets/arrow-down-gray.svg);
+                                padding-left: 6px;
+                                cursor: pointer;
+                                width: 10px;
+                              }
+                              .icon-up{
+                                content: url(../../../assets/arrow-up-gray.svg);
+                                padding-left: 6px;
+                                cursor: pointer;
+                                width: 10px;
+                              }
+                        } 
                         td {
                             height: 47px;
                             font-family: "museo-sans";
@@ -284,7 +292,7 @@
                             text-align:left;
                         }
                         tr th:last-child, tr td:last-child{
-                            text-align:left;
+                            text-align:center;
                             @media only screen and (max-width: 767px){
                                 text-align: right;
                             }
@@ -345,7 +353,7 @@
     } 
     tbody {
         display:block;
-        height:150px;
+        height:300px;
         overflow:auto;
         tr td:first-child{
             width: 10%;

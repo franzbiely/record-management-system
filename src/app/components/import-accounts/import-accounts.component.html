@@ -49,19 +49,19 @@
               <table class="import-account-table">
                 <thead>
                   <th>Select</th>
-                  <th><span>Account name</span><i class="icon-dropdown"></i></th>
-                  <th><span>Added</span></th>
-                  <th><span>Investment Group</span><i class="icon-dropdown"></i></th>
-                  <th><span>Custodian</span><i class="icon-dropdown"></i></th>
-                  <th><span>Account #</span><i class="icon-dropdown"></i></th>
-                  <th><span>Account Type</span><i class="icon-dropdown"></i></th>
-                  <th><span>Owner</span><i class="icon-dropdown"></i></th>
-                  <th><span>($) Value</span><i class="icon-dropdown"></i></th>
+                  <th (click)="setOrder('account_name')" ><span>Account name</span><i [ngClass]="reverse && order == 'account_name' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th ><span>Added</span></th>
+                  <th (click)="setOrder('group')" ><span>Investment Group</span><i [ngClass]="reverse && order == 'group' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('custodian')" ><span>Custodian</span><i [ngClass]="reverse && order == 'custodian' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('account')" ><span>Account #</span><i [ngClass]="reverse && order == 'account' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('account_type')" ><span>Account Type</span><i [ngClass]="reverse && order == 'account_type' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('owner')" ><span>Owner</span><i [ngClass]="reverse && order == 'owner' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('value')" ><span>($) Value</span><i [ngClass]="reverse && order == 'value' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
                 </thead>
                 <tbody class="search-results" infinite-scroll [scrollWindow]="false" [infiniteScrollDistance]="scrollDistance"
                 [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
                 (scrolledUp)="onUp()">
-                <tr  *ngFor="let item of array; let i = index">
+                <tr  *ngFor="let item of array | orderBy: order:reverse:'case-insensitive'; let i = index">
                   <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
                   <td>{{item.account_name}}</td>
                   <td><i class="icon-{{item.added}}"></i></td>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalStatusService } from "../../services/modal-status.service"
+import { OrderPipe } from 'ngx-order-pipe';
+
 const nisPackage = require('../../../../package.json');
 
 @Component({
@@ -17,20 +19,21 @@ export class ImportAccountsComponent implements OnInit {
   direction = '';
   selected_index = 0;
 
+  order: string = 'account_name';
+  reverse: boolean = false;
+  sortedCollection: any[];
+
   nisVersion = nisPackage.dependencies['ngx-infinite-scroll'];
 
   selected_counter: number = 0;
   active_tab : number;
 	importAccountsModal: boolean = false;
   accountDetailsModal: boolean = false;
-  icon = [
-    'myclient',
-    'orion',
-    'redtail',
-    'wealth'
-  ]
-  constructor(private modalStatus: ModalStatusService) { 
+  icon = ['myclient','orion','redtail','wealth']
+
+  constructor(private modalStatus: ModalStatusService, private orderPipe: OrderPipe) { 
     this.appendItems(0, this.sum);
+    this.sortedCollection = orderPipe.transform(this.array, 'account_name');
    }
 
   ngOnInit() {
@@ -39,15 +42,16 @@ export class ImportAccountsComponent implements OnInit {
   }
 
   addItems(startIndex, endIndex, _method) {
-    for (let i = 0; i < this.sum; ++i) {
+    this.sum = endIndex ;
+    for (let i = startIndex; i < this.sum; i++) {
       this.array[_method]({
-        'account_name': 'Rhoades IRA',
+        'account_name': 'Rhoades IRA'+' '+i,
         'added': this.randomIcon(),
-        'group': 'ENV Account',
-        'custodian': 'Schwab',
+        'group': 'ENV Account'+' '+i,
+        'custodian': 'Schwab'+' '+i,
         'account': '22345',
-        'account_type': 'IRA',
-        'owner': 'Phillip Rhoades',
+        'account_type': 'IRA' +' '+i,
+        'owner': 'Phillip Rhoades'+' '+i,
         'value': '$200,000.00'
       });
     }
@@ -93,6 +97,15 @@ export class ImportAccountsComponent implements OnInit {
   closeMe() {
   	this.modalStatus.toggleImportAccount(false);
   }
+
+  setOrder(value: string) {
+    if (this.order === value) {
+      this.reverse = !this.reverse;
+    }
+    console.log(value)
+    this.order = value;
+  }
+
   selectAccount(event) {
     this.selected_counter = (event.checked) ? this.selected_counter+1 : this.selected_counter-1;
     console.log(this.selected_counter);
