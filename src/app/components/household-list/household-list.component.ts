@@ -1,6 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ModalStatusService } from "../../services/modal-status.service"
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { OrderPipe } from 'ngx-order-pipe';
+
 declare var jquery:any;
 declare var $ :any;
 
@@ -13,12 +15,17 @@ const nisPackage = require('../../../../package.json');
 })
 export class HouseholdListComponent implements OnInit {
   array = [];
-  sum = 100;
-  throttle = 300;
+  sum = 20;
+  throttle = 30;
   scrollDistance = 1;
   scrollUpDistance = 2;
   direction = '';
   modalOpen = false;
+
+  icon: string = 'down';
+  order: string = 'name';
+  reverse: boolean = false;
+  sortedCollection: any[];
 
   nisVersion = nisPackage.dependencies['ngx-infinite-scroll'];
 
@@ -37,11 +44,22 @@ export class HouseholdListComponent implements OnInit {
     this.closeMeEvent.emit(true);
     this.modalStatus.SET_household(false);
   }
+
+  setOrder(value: string) {
+    if (this.order === value) {
+      this.reverse = !this.reverse;
+    }
+    console.log(value)
+    this.order = value;
+  }
+
   memberForm($event) {
     this.openMemberForm = $event;
   }
-  constructor(private modalStatus: ModalStatusService, private fb: FormBuilder) {
+  constructor(private modalStatus: ModalStatusService, private fb: FormBuilder, private orderPipe: OrderPipe) {
     this.appendItems(0, this.sum);
+    this.sortedCollection = orderPipe.transform(this.array, 'name');
+    console.log(this.sortedCollection);
    }
    
   checkboxSelected(i){
@@ -61,10 +79,10 @@ export class HouseholdListComponent implements OnInit {
   addItems(startIndex, endIndex, _method) {
     for (let i = 0; i < this.sum; ++i) {
       this.array[_method]({
-        'name': 'Rhoades Household',
-        'id': '9305',
-        'fname': 'wendy',
-        'lname': 'Rhoades'
+        'name': 'Rhoades Household'+i,
+        'id': '9305'+i,
+        'fname': 'wendy'+i,
+        'lname': 'Rhoades'+i
       });
     }
   }
@@ -95,8 +113,4 @@ export class HouseholdListComponent implements OnInit {
   
     this.direction = 'up';
   }
-  generateWord() {
-    return "hello world!";
-  }
-
 }

@@ -47,21 +47,21 @@
             <thead>
               <tr>
                 <th class="col-sm-1">Select</th>
-                <th><span>Household name</span><i class="icon-dropdown"></i></th>
-                <th><span>ID</span><i class="icon-dropdown"></i></th>
-                <th><span>First Name</span><i class="icon-dropdown"></i></th>
-                <th><span>Last Name</span><i class="icon-dropdown"></i></th>
+                <th (click)="setOrder('name')" ><span>Household name</span><i [ngClass]="reverse && order == 'name' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                <th (click)="setOrder('id')" ><span>ID</span><i [ngClass]="reverse && order == 'id' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                <th (click)="setOrder('fname')" ><span>First Name</span><i [ngClass]="reverse && order == 'lname' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                <th (click)="setOrder('lname')" ><span>Last Name</span><i [ngClass]="reverse && order == 'fname' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
               </tr>
             </thead>
 
             <tbody class="search-results" infinite-scroll [scrollWindow]="false" [infiniteScrollDistance]="scrollDistance"
             [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
             (scrolledUp)="onUp()" >
-              <tr [ngClass]="{'selected': selected_index==i+1}" *ngFor="let item of array; let i = index">
+              <tr [ngClass]="{'selected': selected_index==i+1}" *ngFor="let item of array | orderBy: order:reverse:'case-insensitive'; let i = index">
               <td><mat-radio-button (click)="checkboxSelected(selected_index)"></mat-radio-button></td>
               <td>{{item.name}}</td>
               <td>{{item.id}}</td>
-              <td>item.fname</td>
+              <td>{{item.fname}}</td>
               <td>{{item.lname}}</td>
               </tr>
             </tbody>

@@ -367,12 +367,20 @@ app-household-member {
                             padding: 0px 30px;
                             text-transform: uppercase;
                         }
-                        th .icon-dropdown{
-                            padding-left: 6px;
-                            cursor: pointer;
-                            width: 10px;
-                            content: url("../../../assets/icons/arrow-down-gray.svg");
-                        }
+                        th {
+                            .icon-down{
+                                content: url(../../../assets/arrow-down-gray.svg);
+                                padding-left: 6px;
+                                cursor: pointer;
+                                width: 10px;
+                              }
+                              .icon-up{
+                                content: url(../../../assets/arrow-up-gray.svg);
+                                padding-left: 6px;
+                                cursor: pointer;
+                                width: 10px;
+                              }
+                        } 
                         td {
                             font-family: "museo-sans";
                             font-size: 11px;
