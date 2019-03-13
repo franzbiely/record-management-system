@@ -2,6 +2,7 @@ import { Component, OnInit, Input, SimpleChanges, ElementRef, ViewChild } from '
 import { ModalStatusService } from "../../services/modal-status.service"
 import { DataService } from "../../services/data.service"
 import { Chart } from "chart.js";
+import { OrderPipe } from 'ngx-order-pipe';
 import * as $ from 'jquery';
 
 @Component({
@@ -13,6 +14,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	@ViewChild('graph', { read: ElementRef }) private graph_ref: ElementRef;
 	riskStatusDanger : boolean = false; // false means inside the range | true means outside the range
 	chart: any;
+	count = [0,1];
 	one = false;
 	two = false;
 	three = false;
@@ -31,6 +33,10 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	data_label :any = [];
 	data_color :any = [];
 	
+	icon: string = 'down';
+  order: string = 'security_name';
+  reverse: boolean = false;
+  sortedCollection: any[];
 	
 	allocation_data = {
 		0 : {
@@ -63,7 +69,10 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		}
 	}
 	
-	constructor(private modalStatus: ModalStatusService, private data: DataService) { }
+	constructor(private modalStatus: ModalStatusService, private data: DataService, private orderPipe: OrderPipe) { 
+		this.sortedCollection = orderPipe.transform(this.allocation_data, 'security_name');
+    console.log(this.sortedCollection);
+	}
 
 	ngOnInit() {
 		$('#one').hide();
@@ -89,6 +98,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				security_name : val,
 				asset_class : 'Global Short Bonds',
 				security_id : id,
+				color: this.randomColor(),
 				value : 10
       });
 		}else{
@@ -96,6 +106,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				security_name : val,
 				asset_class : id == 'SAVLX' ? 'U.S. Large Value Stocks' : 'U.S. Small Value Stocks',
 				security_id : id,
+				color: this.randomColor(),
 				value : 10
       });
 		}
@@ -104,6 +115,14 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		this.haveAllocationData = true;
 		this.updateGroupVal();
 	}
+	setOrder(value: string) {
+    if (this.order === value) {
+      this.reverse = !this.reverse;
+    }
+    this.icon = this.reverse ? 'down' : 'up';
+    console.log(value)
+    this.order = value;
+  }
 	onSearchChange(searchValue : string) {
 		if(searchValue!=''){
 			this.showSuggestion = true;

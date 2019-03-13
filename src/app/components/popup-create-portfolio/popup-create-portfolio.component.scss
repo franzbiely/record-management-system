@@ -393,8 +393,20 @@
                                     &:nth-child(2) {
                                         text-align:right;
                                     }
+                                    .icon-down{
+                                        content: url(../../../assets/arrow-down-gray.svg);
+                                        width: 10px;
+                                        height: 7px;
+                                        padding-left: 6px;
+                                      }
+                                      .icon-up{
+                                        content: url(../../../assets/arrow-up-gray.svg);
+                                        width: 10px;
+                                        height: 7px;
+                                        padding-left: 6px;
+                                      }
                                 }
-                                tr th:nth-child(2){
+                                tr th:nth-child(2), tr th:nth-child(4){
                                     white-space: nowrap;
                                 }
                             }
