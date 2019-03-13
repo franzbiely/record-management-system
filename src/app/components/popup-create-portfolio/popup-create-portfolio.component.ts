@@ -40,6 +40,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				security_name : 'SA Global Fixed Income Select',
 				asset_class : 'Global Short Bonds',
 				security_id : 'SAFLX',
+				color: '#aed68f',
 				value : 10
 			}]
 		},
@@ -50,11 +51,13 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				security_name : 'SA US Small Company Select',
 				asset_class : 'U.S. Small Neutral Stocks',
 				security_id : 'SAFLX',
+				color: '#42834f',
 				value : 15
 			}, {
 				security_name : 'SA US Value Select',
 				asset_class : 'U.S. Large Value Stocks',
 				security_id : 'SAFLX',
+				color: '#1598cb',
 				value : 18
 			}]
 		}
@@ -146,15 +149,21 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		}
 	}
 	updateChart() {
-		
-		Object.entries(this.allocation_data).forEach(([key, val]) => {
-			this.data_number[key] = this.allocation_data[key].data[0].value
-			this.data_label[key] = this.allocation_data[key].data[0].asset_class
-			this.data_color[key] = this.randomColor()
-		})
-		console.log(this.data_number)
-		console.log(this.allocation_data[0].data[0].value, this.allocation_data[1].data[0].value, this.allocation_data[1].data[1].value);
 		$('.allocation-alert').fadeOut('fast');
+
+		console.log(this.allocation_data)
+		let x = 0;
+		Object.entries(this.allocation_data).forEach(([key, val]) => {
+			Object.entries(this.allocation_data[key].data).forEach(([i, val]) => {
+				this.data_number[x] = this.allocation_data[key].data[i].value
+				this.data_label[x] = this.allocation_data[key].data[i].asset_class
+				this.data_color[x] = this.allocation_data[key].data[i].color == '' ? this.randomColor() :this.allocation_data[key].data[i].color
+				this.allocation_data[key].data[i].color = this.data_color[x];
+				x= x+1;
+			})
+		})
+		console.log(this.data_label, x)
+		console.log(this.data_number)
 		const chart_data = {
 	      labels: this.data_label,
 	      datasets: [{
@@ -172,7 +181,6 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	      },
 	      responsive : true, maintainAspectRatio: false
 			}
-			console.log(chart_data)
 	    this.chart = new Chart(this.graph_ref.nativeElement, {
 	      type: 'pie',
 	      data: chart_data,
@@ -195,9 +203,11 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		this.updateChart();
 		this.updateRiskStatus(this.targetRange, this.totalAllocation)
 	}
-	removeRow(event, value) {
+	removeRow(event, value, i, identifier) {
 		$(event.target).closest('tr').fadeOut();
-		this.totalAllocation = ( this.totalAllocation - value )
+		this.totalAllocation = ( this.totalAllocation - value );
+		identifier == 'first' ? this.allocation_data[0].data.splice(i,1) : this.allocation_data[1].data.splice(i,1);
+		this.updateChart();
 	}
 	changeName($event){
 		this.targetRiskName = $event;
