@@ -89,9 +89,9 @@
                                 <th>&nbsp;</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <ng-container *ngFor="let x of count;">
-                                <tr *ngFor="let item of allocation_data[x].data | orderBy: order:reverse:'case-insensitive'; let i = index">
+                            <tbody >
+                            <ng-container *ngFor="let items of allocation_data  | orderBy: order:reverse:'case-insensitive'; let x = index">
+                                <tr *ngFor="let item of items.data | orderBy: order:reverse:'case-insensitive'; let i = index">
                                     <td>{{item.security_name}}</td>
                                     <td>{{item.security_id}}</td>
                                     <td><details>
@@ -102,22 +102,8 @@
                                       </details></td>
                                     <td><input type="text" class="allocation-text" [(ngModel)]="item.value" 
                                         (keyup)="updateGroupVal()" placeholder="%"/></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event, item.value, i, 'first')"></i></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event, item.value, i, x)"></i></td>
                                 </tr>
-                                <!-- <tr *ngFor="let item of allocation_data[1].data | orderBy: order:reverse:'case-insensitive'; let i = index">
-                                    <td> {{item.security_name}} </td>
-                                    <td> {{item.security_id}} </td>
-                                    <td><details>
-                                        <summary>
-                                          {{item.asset_class}}<i class="icon-dropdown"></i>
-                                        </summary>
-                                        <app-popup-custom-asset-class></app-popup-custom-asset-class>
-                                      </details></td>
-                                    <td><input [(ngModel)]="item.value" 
-                                            (keyup)="updateGroupVal()"
-                                            type="text" class="allocation-text" placeholder="%"></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event, item.value, i, 'second')"></i></td>
-                                </tr> -->
                             </ng-container>
                             <ng-container *ngIf="!haveAllocationData">
                                 <tr>
