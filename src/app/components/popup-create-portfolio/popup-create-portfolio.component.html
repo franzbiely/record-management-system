@@ -91,46 +91,32 @@
                             </thead>
                             <tbody>
                             <ng-container>
-                                <tr id="one">
-                                    <td>{{allocation_data[0].data[0].security_name}}</td>
-                                    <td>{{allocation_data[0].data[0].security_id}}</td>
+                                <tr *ngFor="let item of allocation_data[0].data; let i = index">
+                                    <td>{{item.security_name}}</td>
+                                    <td>{{item.security_id}}</td>
                                     <td><details>
                                         <summary>
-                                          {{allocation_data[0].data[0].asset_class}} <i class="icon-dropdown"></i>
+                                          {{item.asset_class}}<i class="icon-dropdown"></i>
                                         </summary>
                                         <app-popup-custom-asset-class></app-popup-custom-asset-class>
                                       </details></td>
-                                    <td><input type="text" class="allocation-text" [(ngModel)]="allocation_data[0].data[0].value" 
+                                    <td><input type="text" class="allocation-text" [(ngModel)]="item.value" 
                                         (keyup)="updateGroupVal()" placeholder="%"/></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event, allocation_data[0].data[0].value)"></i></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event, item.value, i, 'first')"></i></td>
                                 </tr>
-                                <tr id="two">
-                                    <td>SA US Small Company Select</td>
-                                    <td>SAFLX</td>
+                                <tr *ngFor="let item of allocation_data[1].data; let i = index">
+                                    <td> {{item.security_name}} </td>
+                                    <td> {{item.security_id}} </td>
                                     <td><details>
                                         <summary>
-                                          U.S. Small Neutral Stocks<i class="icon-dropdown"></i>
+                                          {{item.asset_class}}<i class="icon-dropdown"></i>
                                         </summary>
                                         <app-popup-custom-asset-class></app-popup-custom-asset-class>
                                       </details></td>
-                                    <td><input [(ngModel)]="allocation_data[1].data[0].value" 
+                                    <td><input [(ngModel)]="item.value" 
                                             (keyup)="updateGroupVal()"
                                             type="text" class="allocation-text" placeholder="%"></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event, allocation_data[1].data[0].value)"></i></td>
-                                </tr>
-                                <tr id="three">
-                                    <td>SA US Value Select</td>
-                                    <td>SAFLX</td>
-                                    <td><details>
-                                        <summary>
-                                          U.S. Large Value Stocks<i class="icon-dropdown"></i>
-                                        </summary>
-                                        <app-popup-custom-asset-class></app-popup-custom-asset-class>
-                                      </details></td>
-                                    <td><input [(ngModel)]="allocation_data[1].data[1].value" 
-                                        (keyup)="updateGroupVal()"
-                                        type="text" class="allocation-text" placeholder="%"></td>
-                                    <td><i class="icon-remove" (click)="removeRow($event, allocation_data[1].data[1].value )"></i></td>
+                                    <td><i class="icon-remove" (click)="removeRow($event, item.value, i, 'second')"></i></td>
                                 </tr>
                             </ng-container>
                             <ng-container *ngIf="!haveAllocationData">
