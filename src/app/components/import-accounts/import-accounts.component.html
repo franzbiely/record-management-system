@@ -59,8 +59,8 @@
                   <th (click)="setOrder('value')" ><span>($) Value</span><i [ngClass]="reverse && order == 'value' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
                 </thead>
                 <tbody class="search-results" infinite-scroll [scrollWindow]="false" [infiniteScrollDistance]="scrollDistance"
-                [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
-                (scrolledUp)="onUp()">
+                [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown($event)"
+                (scrolledUp)="onUp($event)">
                 <tr  *ngFor="let item of array | orderBy: order:reverse:'case-insensitive'; let i = index">
                   <td><mat-checkbox (change)="selectAccount($event)"></mat-checkbox></td>
                   <td>{{item.account_name}}</td>

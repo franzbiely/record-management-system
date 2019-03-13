@@ -26,6 +26,7 @@ export class ListViewComponent implements OnInit {
   order: string = 'name';
   reverse: boolean = false;
   sortedCollection: any[];
+  column: string = 'name';
 
   constructor(private modalStatus: ModalStatusService, private orderPipe: OrderPipe) { 
 
