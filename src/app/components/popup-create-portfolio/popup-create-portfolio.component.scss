@@ -394,6 +394,9 @@
                                         text-align:right;
                                     }
                                 }
+                                tr th:nth-child(2){
+                                    white-space: nowrap;
+                                }
                             }
                             tfoot {
                                 th {
