@@ -18,7 +18,10 @@ app-popup-custom-asset-class {
 		background-color: #ffffff;
 		thead {
 			height: 47px;
-  			background-color: #fafbfc;
+			background-color: #fafbfc;
+			tr th:nth-child(2){
+				white-space: nowrap;	
+			}
 		}
 		th {
 			text-align:left;

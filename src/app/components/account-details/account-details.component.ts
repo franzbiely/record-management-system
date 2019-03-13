@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalStatusService } from "../../services/modal-status.service";
 import { DataService } from "../../services/data.service";
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { OrderPipe } from 'ngx-order-pipe';
 
 const nisPackage = require('../../../../package.json');
 
@@ -13,12 +14,19 @@ const nisPackage = require('../../../../package.json');
 export class AccountDetailsComponent implements OnInit {
   frmAccountDetails : FormGroup;
   type: string = '';
+  security_name: string = '';
+  security_id: string = '';
   quickAdd: boolean = false;
   importAccountsModal: boolean = false;
 	accountDetailsModal: boolean = false;
   enableAccountInfo : boolean = false;
   showSuggestion: boolean = false;
   haveAllocationData: boolean = false;
+
+  icon: string = 'down';
+  order: string = 'name';
+  reverse: boolean = false;
+  sortedCollection: any[];
 
   frmAI = {
     f1 : '',
@@ -28,16 +36,18 @@ export class AccountDetailsComponent implements OnInit {
     f7 : 'Chris Candelaria'
   }
   array = [];
-  sum = 100;
-  throttle = 300;
+  sum = 3;
+  throttle = 3;
   scrollDistance = 1;
   scrollUpDistance = 2;
   direction = '';
   
   nisVersion = nisPackage.dependencies['ngx-infinite-scroll'];
 
-  constructor(private modalStatus: ModalStatusService, private data: DataService, private fb: FormBuilder) {
+  constructor(private modalStatus: ModalStatusService, private data: DataService, private fb: FormBuilder, private orderPipe: OrderPipe) {
     this.appendItems(0, this.sum);
+    this.sortedCollection = orderPipe.transform(this.array, 'name');
+    console.log(this.sortedCollection);
    }
 
   ngOnInit() {
@@ -56,17 +66,33 @@ export class AccountDetailsComponent implements OnInit {
     })
   }
 
+  deleteEvent(){
+    alert('jalksdjf')
+  }
+
   addItems(startIndex, endIndex, _method) {
-    for (let i = 0; i < this.sum; ++i) {
-      this.array[_method]({
-        'name': 'International Business Machines Cor',
-        'id': 'IBM',
+    if (this.security_id !== '' && this.security_name !== ''){
+      this.array['push']({
+        'name': this.security_name,
+        'id': this.security_id,
         'asset': 'Cash & Cash Alternatives',
         'quantity': '155.75',
         'allocation': '11%',
         'value': '$20,000.00'
       });
-    }
+    } 
+    // else {
+    //   for (let i = 0; i < this.sum; ++i) {
+    //     this.array[_method]({
+    //       'name': 'International Business Machines Cor',
+    //       'id': 'IBM',
+    //       'asset': 'Cash & Cash Alternatives',
+    //       'quantity': '155.75',
+    //       'allocation': '11%',
+    //       'value': '$20,000.00'
+    //     });
+    //   }
+    // }
   }
   appendItems(startIndex, endIndex) {
     this.addItems(startIndex, endIndex, 'push');
@@ -85,6 +111,15 @@ export class AccountDetailsComponent implements OnInit {
     this.appendItems(start, this.sum);
     
     this.direction = 'down'
+  }
+  
+  setOrder(value: string) {
+    if (this.order === value) {
+      this.reverse = !this.reverse;
+    }
+    this.icon = this.reverse ? 'down' : 'up';
+    console.log(value)
+    this.order = value;
   }
   
   onUp(ev) {
@@ -107,9 +142,13 @@ export class AccountDetailsComponent implements OnInit {
   setQuickAddType(type) {
     this.data.SET_accountDetailsType(type);
   }
-  clickSuggestion() {
+  clickSuggestion(value, id) {
+    this.security_id = id;
+    this.security_name = value;
     this.haveAllocationData = true;
     this.showSuggestion = false;
+    console.log(value, id)
+    this.addItems(value, id, 'push');
   }
   onSearchChange(searchValue : string) {
     if(searchValue!=''){

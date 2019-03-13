@@ -85,15 +85,15 @@
                 <input type="text" class="search-box" (input)="onSearchChange($event.target.value)" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
                 <div class="searchSuggestions" *ngIf="showSuggestion">
                     <ul>
-                        <li><a (click)="clickSuggestion()">
+                        <li><a (click)="clickSuggestion('SA US Value Select','SAVLX')">
                             <strong>SA US Value Select</strong>
                             <span>SAVLX</span>
                         </a></li>
-                        <li><a (click)="clickSuggestion()">
+                        <li><a (click)="clickSuggestion('SA Global Fixed Income Select','SAFLX')">
                             <strong>SA Global Fixed Income Select</strong>
                             <span>SAFLX</span>
                         </a></li>
-                        <li><a (click)="clickSuggestion()">
+                        <li><a (click)="clickSuggestion('SA US Small Company Select','SASLX')">
                             <strong>SA US Small Company Select</strong>
                             <span>SASLX</span>
                         </a></li>
@@ -105,20 +105,20 @@
               <table class="account-list-table">
                 <thead>
                   <tr>
-                  <th>Security Name</th>
-                  <th>Security ID<i class="icon-help"></i></th>
-                  <th>Asset Class</th>
-                  <th>Quantity</th>
-                  <th>Allocation (%)</th>
-                  <th>($) Value</th>
-                  <td>&nbsp;</td>
+                  <th (click)="setOrder('name')" >Security Name<i [ngClass]="reverse && order == 'name' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('id')" >Security ID<i class="icon-help"></i><i [ngClass]="reverse && order == 'id' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('asset')" >Asset Class<i [ngClass]="reverse && order == 'asset' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('quantity')" >Quantity<i [ngClass]="reverse && order == 'quantity' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('allocation')" >Allocation (%)<i [ngClass]="reverse && order == 'allocation' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <th (click)="setOrder('value')" >($) Value<i [ngClass]="reverse && order == 'value' ? 'icon-up' : 'icon-down' " class="icon-dropdown "></i></th>
+                  <td >&nbsp;</td>
                 </tr>
                 </thead>
                 <tbody class="search-results" infinite-scroll [scrollWindow]="false" [infiniteScrollDistance]="scrollDistance"
                 [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
                 (scrolledUp)="onUp()">
                   <ng-container *ngIf="haveAllocationData">
-                    <tr *ngFor="let item of array; let i = index">
+                    <tr *ngFor="let item of array | orderBy: order:reverse:'case-insensitive'; let i = index">
                       <td> {{ item.name}} </td>
                       <td> {{ item.id }} </td>
                       <td>
@@ -133,7 +133,7 @@
                       <td> {{ item.quantity }} </td>
                       <td> {{ item.allocation }} </td>
                       <td> {{ item.value }} </td>
-                      <td><span class="close-circle">X</span></td>
+                      <td (scrolledUp)="deleteEvent()"><span class="close-circle">X</span></td>
                     </tr>
                   </ng-container>
                 </tbody>

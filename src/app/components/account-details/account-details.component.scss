@@ -442,7 +442,7 @@ app-add-security{
         table-layout:fixed;
     }
     thead {
-        width: calc(100% - 5px);
+        //width: calc(100% - 5px);
         th:first-child{
             width: 20%;
         }
@@ -455,8 +455,21 @@ app-add-security{
         th:last-child(){
             width: 10%;
         }
+        .icon-down{
+            content: url(../../../assets/arrow-down-gray.svg);
+            width: 10px;
+            height: 7px;
+            padding-left: 6px;
+          }
+          .icon-up{
+            content: url(../../../assets/arrow-up-gray.svg);
+            width: 10px;
+            height: 7px;
+            padding-left: 6px;
+          }
     } 
     tbody {
+        //width: calc(100% - 5px);
         display:block;
         height:550px;
         overflow:auto;
