@@ -37,22 +37,22 @@
                                 <th class="text-color-3">{{allocation_data[0].label}}</th>
                                 <th class="text-color-3">{{allocation_data[0].value}}%</th>
                             </tr>
-                            <tr>
-                                <td><div class="circle color-3"></div><span>{{allocation_data[0].data[0].asset_class}}</span></td>
-                                <td>{{allocation_data[0].data[0].value}}%</td>
+                            <tr *ngFor="let item of allocation_data[0].data">
+                                <td><div class="circle color-3"></div><span>{{item.asset_class}}</span></td>
+                                <td>{{item.value}}%</td>
                             </tr>
                             <tr>
                                 <th class="text-color-5">{{allocation_data[1].label}}</th>
                                 <th class="text-color-5">{{allocation_data[1].value}}%</th>
                             </tr>
-                            <tr>
-                                <td><div class="circle color-4"></div><span>{{allocation_data[1].data[0].asset_class}}</span></td>
-                                <td>{{allocation_data[1].data[0].value}}%</td>
+                            <tr *ngFor="let item of allocation_data[1].data">
+                                <td><div class="circle color-4"></div><span>{{item.asset_class}}</span></td>
+                                <td>{{item.value}}%</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td><div class="circle color-5"></div><span>{{allocation_data[1].data[1].asset_class}}</span></td>
                                 <td>{{allocation_data[1].data[1].value}}%</td>
-                            </tr>
+                            </tr> -->
                         </table>
                     </div>
                 </div>
@@ -63,15 +63,15 @@
                         <input type="text" class="text-box" (input)="onSearchChange($event.target.value)" placeholder="Enter Security ID or Name: Mutual Funds, ETFs, Stocks">
                         <div class="searchSuggestions" *ngIf="showSuggestion">
                             <ul>
-                                <li><a (click)="clickSuggestion()">
+                                <li><a (click)="clickSuggestion('SA US Value Select','SAVLX','u.s. stocks')">
                                     <strong>SA US Value Select</strong>
                                     <span>SAVLX</span>
                                 </a></li>
-                                <li><a (click)="clickSuggestion()">
+                                <li><a (click)="clickSuggestion('SA Global Fixed Income Select','SAFLX','bonds')">
                                     <strong>SA Global Fixed Income Select</strong>
                                     <span>SAFLX</span>
                                 </a></li>
-                                <li><a (click)="clickSuggestion()">
+                                <li><a (click)="clickSuggestion('SA US Small Company Select','SASLX','u.s. stocks')">
                                     <strong>SA US Small Company Select</strong>
                                     <span>SASLX</span>
                                 </a></li>
@@ -90,8 +90,8 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <ng-container *ngIf="haveAllocationData">
-                                <tr>
+                            <ng-container>
+                                <tr id="one">
                                     <td>{{allocation_data[0].data[0].security_name}}</td>
                                     <td>{{allocation_data[0].data[0].security_id}}</td>
                                     <td><details>
@@ -104,7 +104,7 @@
                                         (keyup)="updateGroupVal()" placeholder="%"/></td>
                                     <td><i class="icon-remove" (click)="removeRow($event, allocation_data[0].data[0].value)"></i></td>
                                 </tr>
-                                <tr>
+                                <tr id="two">
                                     <td>SA US Small Company Select</td>
                                     <td>SAFLX</td>
                                     <td><details>
@@ -118,7 +118,7 @@
                                             type="text" class="allocation-text" placeholder="%"></td>
                                     <td><i class="icon-remove" (click)="removeRow($event, allocation_data[1].data[0].value)"></i></td>
                                 </tr>
-                                <tr>
+                                <tr id="three">
                                     <td>SA US Value Select</td>
                                     <td>SAFLX</td>
                                     <td><details>

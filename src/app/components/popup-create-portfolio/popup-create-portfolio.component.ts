@@ -13,6 +13,9 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	@ViewChild('graph', { read: ElementRef }) private graph_ref: ElementRef;
 	riskStatusDanger : boolean = false; // false means inside the range | true means outside the range
 	chart: any;
+	one = false;
+	two = false;
+	three = false;
 	alertMessage: string = "";
 	btnNext: boolean = false;
 	onSave: boolean = false;
@@ -23,6 +26,10 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	showSuggestion: boolean = false;
 	targetRiskName : 'TARGET RISK NAME';
 	targetRange : '0';
+
+	data_number :any = [];
+	data_label :any = [];
+	data_color :any = [];
 	
 	
 	allocation_data = {
@@ -56,6 +63,9 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	constructor(private modalStatus: ModalStatusService, private data: DataService) { }
 
 	ngOnInit() {
+		$('#one').hide();
+		$('#two').hide();
+		$('#three').hide();
 		this.targetRange = "0";
 		this.targetRiskName = "TARGET RISK NAME";
 		this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
@@ -70,7 +80,23 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	ngAfterViewInit() {
 	    this.updateChart();
 	}
-	clickSuggestion() {
+	clickSuggestion(val,id,type) {
+		if (type == 'bonds'){
+			this.allocation_data[0].data['push']({
+				security_name : val,
+				asset_class : 'Global Short Bonds',
+				security_id : id,
+				value : 10
+      });
+		}else{
+			this.allocation_data[1].data['push']({
+				security_name : val,
+				asset_class : id == 'SAVLX' ? 'U.S. Large Value Stocks' : 'U.S. Small Value Stocks',
+				security_id : id,
+				value : 10
+      });
+		}
+		console.log(this.allocation_data)
 		this.showSuggestion = false;
 		this.haveAllocationData = true;
 		this.updateGroupVal();
@@ -89,6 +115,11 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	editEventReciever($this) {
 		this.data.SET_portfolioPopupType('edit');
 	}
+	
+	randomColor(){
+		return "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+	}
+
 	saveEvent() {
 		if (this.totalAllocation !== 100) {
 			this.alertMessage = this.totalAllocation < 100
@@ -115,16 +146,22 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		}
 	}
 	updateChart() {
+		
+		Object.entries(this.allocation_data).forEach(([key, val]) => {
+			this.data_number[key] = this.allocation_data[key].data[0].value
+			this.data_label[key] = this.allocation_data[key].data[0].asset_class
+			this.data_color[key] = this.randomColor()
+		})
+		console.log(this.data_number)
+		console.log(this.allocation_data[0].data[0].value, this.allocation_data[1].data[0].value, this.allocation_data[1].data[1].value);
 		$('.allocation-alert').fadeOut('fast');
 		const chart_data = {
-	      labels: ['Global Short Bonds', 'U.S. Small Neutral Stocks', 'U.S. Large Value Stocks'],
+	      labels: this.data_label,
 	      datasets: [{
 	          fill: true,
-	          data: [ 
-	          	this.allocation_data[0].data[0].value, this.allocation_data[1].data[0].value, this.allocation_data[1].data[1].value
-	          ],
+	          data: this.data_number,
 	          borderWidth: 0,
-	          backgroundColor : ['#67c078', '#465f7c', '#3d98cb']
+	          backgroundColor : this.data_color
 	      }]
 	    }
 	    const chart_options = {
@@ -134,7 +171,8 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	          datalabels: { display: false }
 	      },
 	      responsive : true, maintainAspectRatio: false
-	    }
+			}
+			console.log(chart_data)
 	    this.chart = new Chart(this.graph_ref.nativeElement, {
 	      type: 'pie',
 	      data: chart_data,
