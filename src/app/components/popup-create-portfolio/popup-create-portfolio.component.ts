@@ -14,6 +14,8 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	@ViewChild('graph', { read: ElementRef }) private graph_ref: ElementRef;
 	riskStatusDanger : boolean = false; // false means inside the range | true means outside the range
 	chart: any;
+	bonds_value = 0;
+	stocks_value = 0;
 	count = [0,1];
 	one = false;
 	two = false;
@@ -38,8 +40,8 @@ export class PopupCreatePortfolioComponent implements OnInit {
   reverse: boolean = false;
   sortedCollection: any[];
 	
-	allocation_data = {
-		0 : {
+	allocation_data = [
+		{
 			label : 'Bonds',
 			value : 0,
 			data : [{
@@ -50,7 +52,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				value : 10
 			}]
 		},
-		1 : {
+		{
 			label : 'U.S. STOCKS',
 			value : 0,
 			data : [{
@@ -67,7 +69,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				value : 18
 			}]
 		}
-	}
+	]
 	
 	constructor(private modalStatus: ModalStatusService, private data: DataService, private orderPipe: OrderPipe) { 
 		this.sortedCollection = orderPipe.transform(this.allocation_data, 'security_name');
@@ -75,9 +77,6 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		$('#one').hide();
-		$('#two').hide();
-		$('#three').hide();
 		this.targetRange = "0";
 		this.targetRiskName = "TARGET RISK NAME";
 		this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
@@ -88,6 +87,21 @@ export class PopupCreatePortfolioComponent implements OnInit {
 			$('.btn-cancel').hide();
 			$('.btn-save').hide();
 		}
+		this.getTotal()
+
+	}
+	getTotal(){
+		this.bonds_value = 0;
+		this.stocks_value = 0;
+		Object.entries(this.allocation_data).forEach(([key, val]) => {
+			Object.entries(this.allocation_data[key].data).forEach(([i, val]) => {
+				if (this.allocation_data[key].label == 'Bonds') {
+						this.bonds_value =  this.bonds_value + this.allocation_data[key].data[i].value
+				} else {
+					this.stocks_value = this.stocks_value + this.allocation_data[key].data[i].value
+				}
+			})
+		})
 	}
 	ngAfterViewInit() {
 	    this.updateChart();
@@ -110,6 +124,7 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				value : 10
       });
 		}
+		this.getTotal();
 		console.log(this.allocation_data)
 		this.showSuggestion = false;
 		this.haveAllocationData = true;
@@ -169,8 +184,6 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	}
 	updateChart() {
 		$('.allocation-alert').fadeOut('fast');
-
-		console.log(this.allocation_data)
 		let x = 0;
 		Object.entries(this.allocation_data).forEach(([key, val]) => {
 			Object.entries(this.allocation_data[key].data).forEach(([i, val]) => {
@@ -181,8 +194,6 @@ export class PopupCreatePortfolioComponent implements OnInit {
 				x= x+1;
 			})
 		})
-		console.log(this.data_label, x)
-		console.log(this.data_number)
 		const chart_data = {
 	      labels: this.data_label,
 	      datasets: [{
@@ -218,15 +229,17 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		})
 		this.totalAllocation = d;
 		
-
+		this.getTotal();
 		this.updateChart();
 		this.updateRiskStatus(this.targetRange, this.totalAllocation)
 	}
 	removeRow(event, value, i, identifier) {
+		alert(i+' '+identifier)
 		$(event.target).closest('tr').fadeOut();
 		this.totalAllocation = ( this.totalAllocation - value );
-		identifier == 'first' ? this.allocation_data[0].data.splice(i,1) : this.allocation_data[1].data.splice(i,1);
+		identifier == 0 ? this.allocation_data[0].data.splice(i,1) : this.allocation_data[1].data.splice(i,1);
 		this.updateChart();
+		this.getTotal();
 	}
 	changeName($event){
 		this.targetRiskName = $event;
