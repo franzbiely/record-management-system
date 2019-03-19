@@ -251,20 +251,7 @@
                             text-transform: uppercase;
 
                         }
-                        th {
-                            .icon-down{
-                                content: url(../../../assets/arrow-down-gray.svg);
-                                padding-left: 6px;
-                                cursor: pointer;
-                                width: 10px;
-                              }
-                              .icon-up{
-                                content: url(../../../assets/arrow-up-gray.svg);
-                                padding-left: 6px;
-                                cursor: pointer;
-                                width: 10px;
-                              }
-                        } 
+                       
                         td {
                             height: 47px;
                             font-family: "museo-sans";
@@ -283,13 +270,13 @@
                             text-align: center;
                         }
                         tr:first-child th:nth-child(2), tr td:nth-child(2){
-                            text-align:left;
+                            text-align:center;
                         }
                         tr:first-child th:nth-child(3), tr td:nth-child(3){
                             text-align:center;
                         }
-                        tr th:nth-child(4), tr td:nth-child(4){
-                            text-align:left;
+                        tr th:nth-child(4), tr td:nth-child(4),tr td:nth-child(7), tr td:nth-child(8){
+                            text-align:center;
                         }
                         tr th:last-child, tr td:last-child{
                             text-align:center;
@@ -300,8 +287,8 @@
                         tr{
                             border-bottom: 1px #ddd solid;
                         }
-                        th:nth-child(5), th:nth-child(6), th:nth-child(7), td:nth-child(5), td:nth-child(6), th:nth-child(7){
-                            text-align: left;
+                        th:nth-child(5), th:nth-child(6), th:nth-child(7), td:nth-child(5), td:nth-child(6), th:nth-child(4){
+                            text-align: center;
                         }
                     }
 
@@ -325,6 +312,19 @@
         }
     }
 }
+
+.icon-down{
+    content: url(../../../assets/arrow-down-gray.svg);
+    padding-left: 6px;
+    cursor: pointer;
+    width: 10px;
+  }
+  .icon-up{
+    content: url(../../../assets/arrow-up-gray.svg);
+    padding-left: 6px;
+    cursor: pointer;
+    width: 10px;
+  }
 .import-account-table  {
     width:100%;
     thead, tbody tr {   
