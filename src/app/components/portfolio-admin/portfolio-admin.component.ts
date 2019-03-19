@@ -146,6 +146,11 @@ export class PortfolioAdminComponent implements OnInit {
     this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
 
   }
+  createEventReciever(event){
+    this.data.SET_portfolioPopupType('new');
+    this.modalStatus.SET_viewPortfolio(true);
+    window.scroll(0,0);
+  }
   viewEventReciever(event) {
     this.data.SET_portfolioPopupType('view');
     this.modalStatus.SET_viewPortfolio(true);
