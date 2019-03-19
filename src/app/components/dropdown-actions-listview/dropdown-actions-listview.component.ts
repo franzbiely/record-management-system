@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-dropdown-actions-listview',
@@ -25,7 +26,12 @@ export class DropdownActionsListviewComponent implements OnInit {
       this.change_archive = false;
       this.duplicate = true;
     }
-
+    $(document).bind('click', function (e) {
+      var $clicked = $(e.target);
+      let $hasDetails = $(".dropdown-actions").find("details");
+      if (!$clicked.parents().hasClass("dropdown-actions")){ $hasDetails.prop('open', false);}
+      console.log($clicked)
+    });
   }
 
   viewFunc() {
