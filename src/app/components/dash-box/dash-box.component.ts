@@ -15,11 +15,23 @@ export class DashBoxComponent implements OnInit {
     @Input() addAction: Function;
     @Input() headerRightType: string;
 
+    recent = '';
+    array = ['Households', 'Proposals', 'Documents'];
+
     modalHousehold: boolean = false;
 
     constructor() { }
 
     ngOnInit() {
+        for (let i = 0; i < this.array.length; i++) {
+            if (this.title === this.getRecent(i)){
+                this.recent = this.array[i]
+            }
+          }
+    }
+
+    getRecent(i){
+        return "Recent "+this.array[i]
     }
 
     @Output() addHousehold = new EventEmitter();
@@ -28,5 +40,4 @@ export class DashBoxComponent implements OnInit {
     showModalHousehold() {
         this.addHousehold.emit(!this.modalHousehold);
     }
-
 }
