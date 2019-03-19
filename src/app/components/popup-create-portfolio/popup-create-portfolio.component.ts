@@ -81,14 +81,14 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		this.targetRiskName = "TARGET RISK NAME";
 		this.modalStatus.viewPortfolio.subscribe(value => this.viewPortfolioModal = value);
 		this.data.portfolioPopupType.subscribe(value => this.portfolioPopType = value);
-		if (this.portfolioPopType == 'edit'){
+		if (this.portfolioPopType == 'edit' || this.portfolioPopType == 'new'){
 			$('.btn-close').hide();
-		}else {
+		} else {
 			$('.btn-cancel').hide();
 			$('.btn-save').hide();
 		}
 		this.getTotal()
-
+		this.updateGroupVal()
 	}
 	getTotal(){
 		this.bonds_value = 0;
@@ -96,12 +96,13 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		Object.entries(this.allocation_data).forEach(([key, val]) => {
 			Object.entries(this.allocation_data[key].data).forEach(([i, val]) => {
 				if (this.allocation_data[key].label == 'Bonds') {
-						this.bonds_value =  this.bonds_value + this.allocation_data[key].data[i].value
+					this.bonds_value =  this.bonds_value + this.allocation_data[key].data[i].value
 				} else {
 					this.stocks_value = this.stocks_value + this.allocation_data[key].data[i].value
 				}
 			})
 		})
+		//this.totalAllocation = (this.bonds_value + this.stocks_value);
 	}
 	ngAfterViewInit() {
 	    this.updateChart();
@@ -156,23 +157,35 @@ export class PopupCreatePortfolioComponent implements OnInit {
 	randomColor(){
 		return "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
 	}
-
-	saveEvent() {
+	NotificationMessage(){
 		if (this.totalAllocation !== 100) {
 			this.alertMessage = this.totalAllocation < 100
 				? ((100 - this.totalAllocation) == 1 ? "Need " : "Needs ") + " more allocation: " + (100 - this.totalAllocation)
 				: isNaN(this.totalAllocation) ? "Invalid, allocation is NaN"
 					: "Allocation " + ((this.totalAllocation - 100) == 1 ? "exceed " : "exceeds ") + "up to: " + (this.totalAllocation - 100);
-			$('.allocation-alert').fadeIn('slow');
+			this.hideMessage(false)
 			this.onSave = false;
 		} else {
-			$('.allocation-alert').fadeOut('fast');
+			this.hideMessage(true)
 			this.alertMessage = ""
 			this.onSave = isNaN(this.totalAllocation) ? false : true;
-			this.modalStatus.SET_viewPortfolio(false);
-			this.data.SET_proposal_show_btnNext(true);
+			return true
 		}
-		
+		this.totalAllocation == 0 ? this.hideMessage(true) :'';
+	}
+	
+	hideMessage(args){
+		if (args){
+			$('.allocation-alert').fadeOut('fast');
+		}else{
+			$('.allocation-alert').fadeIn('fast');
+		}
+	}
+	saveEvent() {
+		if (this.NotificationMessage()){
+			this.modalStatus.SET_viewPortfolio(false);
+		this.data.SET_proposal_show_btnNext(true);
+		}
 	}
 	toggleModify() {
 		if (this.portfolioPopType==='view') {
@@ -183,7 +196,6 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		}
 	}
 	updateChart() {
-		$('.allocation-alert').fadeOut('fast');
 		let x = 0;
 		Object.entries(this.allocation_data).forEach(([key, val]) => {
 			Object.entries(this.allocation_data[key].data).forEach(([i, val]) => {
@@ -232,13 +244,14 @@ export class PopupCreatePortfolioComponent implements OnInit {
 		this.getTotal();
 		this.updateChart();
 		this.updateRiskStatus(this.targetRange, this.totalAllocation)
+		this.NotificationMessage()
 	}
 	removeRow(event, value, i, identifier) {
-		alert(i+' '+identifier)
 		$(event.target).closest('tr').fadeOut();
 		this.totalAllocation = ( this.totalAllocation - value );
 		identifier == 0 ? this.allocation_data[0].data.splice(i,1) : this.allocation_data[1].data.splice(i,1);
 		this.updateChart();
+		this.NotificationMessage()
 		this.getTotal();
 	}
 	changeName($event){
