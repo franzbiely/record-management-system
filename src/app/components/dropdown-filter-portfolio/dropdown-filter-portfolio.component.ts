@@ -26,15 +26,28 @@ export class DropdownFilterPortfolioComponent implements OnInit {
   		3 : true,
   	}
   }
-  constructor() { }
+  constructor() {
+		$(document).on('click', 'details', function () {
+			$('details').not(this).removeAttr('open');
+		});
+		$(document).on('click', '.icon-dropdown', function () {
+			var $parents = $(".caption").parents("div");
+			$parents[0].addClass("has-img-caption"); // select the first div add add the class.
+			$('details').parentsUntil('.dropdown-actions').addClass("has-img-caption");;
+		});
+		$(document).on('click', 'summary', function () {
+			$(this).closest('details').removeAttr('open');
+		});
+		$(document).bind('click', function (e) {
+			var $clicked = $(e.target);
+			let $hasDetails = $(".dropdown-actions").find(".dropdown-filter-portfolio");
+			if (!$clicked.parents().hasClass("dropdown-filter-portfolio")) { $hasDetails.prop('open', false); }
+			console.log($clicked)
+		});
+	 }
 
   ngOnInit() {
-	$(document).bind('click', function (e) {
-		var $clicked = $(e.target);
-		let $hasDetails = $(".dropdown-actions").find("details");
-		if (!$clicked.parents().hasClass("dropdown-filter-portfolio")){ $hasDetails.prop('open', false);}
-		console.log($clicked)
-	  });
+		
   }
 
   selectAllToggler(event, type) {
