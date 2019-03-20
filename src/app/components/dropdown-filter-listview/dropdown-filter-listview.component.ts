@@ -26,20 +26,20 @@ export class DropdownFilterListviewComponent implements OnInit {
   }
 
   constructor() { 
-	   	$(document).on('click', 'details', function () {
-        	$('details').not(this).removeAttr('open');
-		  });
-		$(document).on('click', '.icon-dropdown', function () {
-			var $parents = $( ".caption" ).parents( "div" );
-    		$parents[0].addClass( "has-img-caption" ); // select the first div add add the class.
-			$('details').parentsUntil('.dropdown-actions').addClass( "has-img-caption" );;
-		});
-  }
-
+	$(document).on('click', 'details', function () {
+		$('details').not(this).removeAttr('open');
+	});
+	$(document).on('click', '.icon-dropdown', function () {
+		var $parents = $(".caption").parents("div");
+		$parents[0].addClass("has-img-caption"); // select the first div add add the class.
+		$('details').parentsUntil('.dropdown-actions').addClass("has-img-caption");
+	});
+	
+   }
   ngOnInit() {
-	  $(document).on('click', 'summary', function () {
-		  $(this).closest('details').removeAttr('open');
-	  });
+	$(document).on('click', 'summary', function () {
+		$(this).closest('details').removeAttr('open');
+	});
 	  $(document).bind('click', function (e) {
 		  var $clicked = $(e.target);
 		  let $hasDetails = $(".dropdown-actions").find(".dropdown-filter-listview");
