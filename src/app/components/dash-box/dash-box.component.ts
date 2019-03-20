@@ -16,6 +16,7 @@ export class DashBoxComponent implements OnInit {
     @Input() headerRightType: string;
 
     recent = '';
+    isHidden = false;
     array = ['Households', 'Proposals', 'Documents'];
 
     modalHousehold: boolean = false;
@@ -26,7 +27,10 @@ export class DashBoxComponent implements OnInit {
         for (let i = 0; i < this.array.length; i++) {
             if (this.title === this.getRecent(i)){
                 this.recent = this.array[i]
+                this.isHidden = false
             }
+            if (this.title == this.getRecent(2))
+                this.isHidden = true
           }
     }
 

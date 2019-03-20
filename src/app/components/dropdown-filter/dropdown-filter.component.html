@@ -1,24 +1,26 @@
-<details class="dropdown-filter">
-	<summary>
-		<a class="btn-filter"> <span>FILTER</span><i class="icon-dropdown"></i></a>
-	</summary>
-	<div class="item-container">
-		<div class="item">
-	        <mat-checkbox (change)="checkFilter($event, true)"></mat-checkbox>
-	        <span class="title">Select All</span>
-	    </div>
-	    <div class="item">
-	        <mat-checkbox (change)="checkFilter($event, false)" [(checked)]="checkAll"></mat-checkbox>
-	        <span class="title">Loring Ward Portfolios</span>
-	    </div>
-	    <div class="item">
-	        <mat-checkbox (change)="checkFilter($event, false)" [(checked)]="checkAll"></mat-checkbox>
-	        <span class="title">Example Advisor Portfolios</span>
-	    </div>
-	    <div class="item">
-	        <mat-checkbox (change)="checkFilter($event, false)" [(checked)]="checkAll"></mat-checkbox>
-	        <span class="title">Jennica Fernen Portfolios</span>
-	    </div>
-	    <button class="primary" [disabled]="checkCounter<1">Apply</button>
-	</div>
-</details>
+<section class="dropdown-section">
+	<details class="dropdown-filter">
+		<summary>
+			<a class="btn-filter"> <span>FILTER</span><i class="icon-dropdown"></i></a>
+		</summary>
+		<div class="item-container">
+			<div class="item">
+				<mat-checkbox (change)="checkFilter($event, true)"></mat-checkbox>
+				<span class="title">Select All</span>
+			</div>
+			<div class="item">
+				<mat-checkbox (change)="checkFilter($event, false)" [(checked)]="checkAll"></mat-checkbox>
+				<span class="title">Loring Ward Portfolios</span>
+			</div>
+			<div class="item">
+				<mat-checkbox (change)="checkFilter($event, false)" [(checked)]="checkAll"></mat-checkbox>
+				<span class="title">Example Advisor Portfolios</span>
+			</div>
+			<div class="item">
+				<mat-checkbox (change)="checkFilter($event, false)" [(checked)]="checkAll"></mat-checkbox>
+				<span class="title">Jennica Fernen Portfolios</span>
+			</div>
+			<button class="primary" [disabled]="checkCounter<1">Apply</button>
+		</div>
+	</details>
+</section>

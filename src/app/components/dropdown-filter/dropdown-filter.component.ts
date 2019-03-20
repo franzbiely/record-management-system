@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-dropdown-filter',
@@ -11,6 +12,12 @@ export class DropdownFilterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+		$(document).bind('click', function (e) {
+      var $clicked = $(e.target);
+      let $hasDetails = $(".dropdown-section").find("details");
+      if (!$clicked.parents().hasClass("dropdown-section")){ $hasDetails.prop('open', false);}
+      console.log($clicked)
+    });
   }
 
   checkFilter(event, isForAll) {

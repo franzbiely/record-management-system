@@ -1,7 +1,7 @@
 <div class="dash-box" [ngClass]="{'new' : isNew}">
     <div *ngIf="isNew" class="add-container flex">
         <div class="flex-1" style="margin-top: 50px;">
-            <a (click)="showModalHousehold()"><i class="icon-big-add"></i></a>
+            <a *ngIf="!isHidden" (click)="showModalHousehold()"><i class="icon-big-add"></i></a>
         </div>
         <div class="flex-1">
             <span class="text-add">{{addLabel}} </span>
