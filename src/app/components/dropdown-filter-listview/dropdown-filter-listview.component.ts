@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-dropdown-filter-listview',
@@ -27,6 +28,12 @@ export class DropdownFilterListviewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+	$(document).bind('click', function (e) {
+		var $clicked = $(e.target);
+		let $hasDetails = $(".dropdown-actions").find("details");
+		if (!$clicked.parents().hasClass("dropdown-filter-listview")){ $hasDetails.prop('open', false);}
+		console.log($clicked)
+	  });
   }
 
   selectAllToggler(event, type) {
