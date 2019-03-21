@@ -25,28 +25,32 @@ export class DropdownFilterListviewComponent implements OnInit {
   	}
   }
 
-  constructor() { 
-	$(document).on('click', 'details', function () {
-		$('details').not(this).removeAttr('open');
-	});
-	$(document).on('click', '.icon-dropdown', function () {
-		var $parents = $(".caption").parents("div");
-		$parents[0].addClass("has-img-caption"); // select the first div add add the class.
-		$('details').parentsUntil('.dropdown-actions').addClass("has-img-caption");
-	});
-	
-   }
-  ngOnInit() {
-	$(document).on('click', 'summary', function () {
-		$(this).closest('details').removeAttr('open');
-	});
-	  $(document).bind('click', function (e) {
-		  var $clicked = $(e.target);
-		  let $hasDetails = $(".dropdown-actions").find(".dropdown-filter-listview");
-		  if (!$clicked.parents().hasClass("dropdown-filter-listview")) { $hasDetails.prop('open', false) }
-		  //console.log($clicked)
-	  });
-  }
+	constructor() {
+		$(function () {
+			$(document).on('click', 'details', function () {
+				$('details').not(this).removeAttr('open');
+			});
+			$(document).on('click', '#filter-listview', function () {
+				$('details').not(this).removeAttr('open');
+			});
+			
+		})
+	}
+	ngOnInit() {
+		$(document).on('click', '.icon-dropdown', function () {
+			$('details').not(this).removeAttr('open');
+			$(document).on('click', 'summary', function () {
+				let $hasDetails = $(".dropdown-actions").find("details");
+				$hasDetails.removeAttr('open');
+				$hasDetails.prop('open', false);
+			});
+		});
+		$(document).bind('click', function (e) {
+			var $clicked = $(e.target);
+			let $hasDetails = $(".dropdown-actions").find("details");
+			if (!$clicked.parents().hasClass("dropdown-filter-listview")) { $hasDetails.prop('open', false) }
+		});
+	}
 
   selectAllToggler(event, type) {
   	if(event.checked) {
